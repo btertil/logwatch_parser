@@ -1,0 +1,177 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a25:25cc:0:0:0:0:0 with SMTP id l195csp968052ybl;
+        Thu, 12 Nov 2020 18:47:14 -0800 (PST)
+X-Received: by 2002:a05:651c:1303:: with SMTP id u3mr92596lja.274.1605235394066;
+        Thu, 12 Nov 2020 18:43:14 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJwZNQ0AWSJ4FQDgSP7kOd+MqMCAJE34Tn3pUc9cE5CW0WmWJa1xR8Zyp5bcXGrY0Plsqm0x
+X-Received: by 2002:a05:651c:1303:: with SMTP id u3mr92542lja.274.1605235391643;
+        Thu, 12 Nov 2020 18:43:11 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1605235391; cv=none;
+        d=google.com; s=arc-20160816;
+        b=uXnAq87RzsShrlWvbhKi3abi9OQvlEL+UDjujX39VYOGlw96zS3DDFxmQxfMs2H8jM
+         fZ4QT8vsyamaVU7gVKajy6lNZ8vw8AusvZk0Z6nPJ4T7FUGHSAGp7r3RJiRirR1OGVY4
+         qDR4EPVqMTxhl5hkhb2cTU4BRVCGt1CcYSkVnrDjHKU7UulqQTWmqHVZeMlbDyLeeBXf
+         332+1BqZC1Mr+R0Avz7qZo9r370FaEyeSbGmpEP1dqpg5yDayaZHUadf+38oZJOI1nlh
+         BlCh+vjhztfpQzhMER/7N+9Du3rySl+da82E6/DmrM8vhLbSIT4A8MPLCzY/9LyL0Z8m
+         Gv9Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=3Yj3/95HwCzFb81foEW48b/iz4ne8Pp0IAId4X+rLcs=;
+        b=jscPE+j8VxP87ZNzv8dEEqvdddVxam23w0Cgihejy05+AVbJb/7i7h6GyIShDC8dWW
+         chxGp1tZvXge7S12XH/E4ET7ckTd2rfcEjz7K5asfg8k+KepnFywzCG+noa3yX0QnO03
+         9NQrsX3ivvDMgOdP9ToFPmuro37rNyBIYr0IPr9vi5iBGigS6ozw+n2QoBt3m53lU7fA
+         2gkKvgCU3AkYGMLitaxhybDExxRO2JCDK+VHWQefTY1bO7k3Sg8iYrbXz2NNvugTj/N1
+         XGwQpwT1mjGizG2VMJMHT1qVnmaIKRVJw9MEKX86RGOCYpjgTcg6Bfn7b4hm5nZ1Jsfu
+         1E5w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id a29si2898743lfk.399.2020.11.12.18.43.11
+        for <bondiev@gmail.com>;
+        Thu, 12 Nov 2020 18:43:11 -0800 (PST)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 886B24A8004D; Fri, 13 Nov 2020 03:43:10 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20201113024310.886B24A8004D@vis1.localdomain>
+Date: Fri, 13 Nov 2020 03:43:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Nov 13 03:43:08 2020
+        Date Range Processed: yesterday
+                              ( 2020-Nov-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Nov 12 03:13:10 2020
+ 
+ Last Status:
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25985.cdiff [100%]
+    daily.cld updated (version: 25985, sigs: 4340706, f-level: 63, builder: raynman)
+    Can't query daily.25985.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8905702 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 5 sites probed the server 
+    1.0.226.227
+    185.239.242.45
+    194.26.29.32
+    43.240.100.145
+    45.14.224.153
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /ab2g: 1 Time(s)
+       /ab2h: 1 Time(s)
+       /glCF: 1 Time(s)
+       HTTP/1.1: 1 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /HNAP1: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /admin//config.php: 3 Time(s)
+       /api/jsonws/invoke: 3 Time(s)
+       /boaform/admin/formLogin: 1 Time(s)
+       /cgi-bin/kerbynet?Section=NoAuthREQ&Action ... o;sh%20zero;%22: 4 Time(s)
+       /config/getuser?index=0: 1 Time(s)
+       /console/: 3 Time(s)
+       /currentsetting.htm: 11 Time(s)
+       /elrekt.php: 1 Time(s)
+       /evox/about: 1 Time(s)
+       /goAPIv2/README.md: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... HelloThinkPHP21: 3 Time(s)
+       /mifs/.;/services/LogService: 1 Time(s)
+       /nmaplowercheck1605142281: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /robots.txt: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /solr/admin/info/system?wt=json: 2 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 6 Time(s)
+       /wp-content/plugins/wp-file-manager/readme.txt: 3 Time(s)
+    408 Request Timeout
+       null: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.373K  Bytes accepted                             4,478
+    4.373K  Bytes delivered                            4,478
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.242.132.226 (2626.serwervps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   23G  7.6G  75% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

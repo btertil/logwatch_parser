@@ -1,0 +1,211 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 886E19F20FB2; Fri, 10 May 2019 03:24:11 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190510012412.886E19F20FB2@hrankiety.pl>
+Date: Fri, 10 May 2019 03:24:09 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri May 10 03:24:09 2019
+        Date Range Processed: yesterday
+                              ( 2019-May-09 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu May  9 04:15:10 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25443.cdiff [100%]
+    daily.cld updated (version: 25443, sigs: 1565890, f-level: 63, builder: raynman)
+    bytecode.cvd is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6132233 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    64.222.124.164
+    82.221.105.7
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 9 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 2 Time(s)
+       //wp-login.php: 1 Time(s)
+       //xmlrpc.php: 1 Time(s)
+       /2phpmyadmin/index.php?lang=en: 1 Time(s)
+       /MyAdmin/index.php?lang=en: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /PMA/index.php?lang=en: 1 Time(s)
+       /admin/index.php?lang=en: 1 Time(s)
+       /admin/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /admin/phpmyadmin/index.php?lang=en: 1 Time(s)
+       /beta/wp-content/themes/AdvanceImage5/functions.php: 1 Time(s)
+       /database/index.php?lang=en: 1 Time(s)
+       /db/index.php?lang=en: 1 Time(s)
+       /db/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /db/phpmyadmin/index.php?lang=en: 1 Time(s)
+       /dbadmin/index.php?lang=en: 1 Time(s)
+       /myadmin/index.php?lang=en: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql-admin/index.php?lang=en: 1 Time(s)
+       /mysql/admin/index.php?lang=en: 2 Time(s)
+       /mysql/dbadmin/index.php?lang=en: 2 Time(s)
+       /mysql/index.php?lang=en: 1 Time(s)
+       /mysql/mysqlmanager/index.php?lang=en: 2 Time(s)
+       /mysql/sqlmanager/index.php?lang=en: 2 Time(s)
+       /mysqladmin/index.php?lang=en: 1 Time(s)
+       /mysqlmanager/index.php?lang=en: 1 Time(s)
+       /php-myadmin/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin/index.php?lang=en: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyadmin/index.php?lang=en: 2 Time(s)
+       /phpmy-admin/index.php?lang=en: 1 Time(s)
+       /phpmy/index.php?lang=en: 1 Time(s)
+       /phpmyAdmin/index.php?lang=en: 2 Time(s)
+       /phpmyadmin/index.php?lang=en: 2 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/index.php?lang=en: 2 Time(s)
+       /phpmyadmin3/index.php?lang=en: 2 Time(s)
+       /phpmyadmin4/index.php?lang=en: 1 Time(s)
+       /phppma/index.php?lang=en: 1 Time(s)
+       /pma/index.php?lang=en: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /program/index.php?lang=en: 1 Time(s)
+       /qzone/: 1 Time(s)
+       /shopdb/index.php?lang=en: 1 Time(s)
+       /sitemap.xml: 2 Time(s)
+       /sqlmanager/index.php?lang=en: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp ... dex.php?lang=en: 1 Time(s)
+       http://5.188.210.101/echo.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       11   *Warning: Pre-queue content-filter connection overload 
+        1   SASL authentication failed 
+      138   Miscellaneous warnings 
+ 
+    1.837M  Bytes accepted                         1,926,249
+    1.831M  Bytes delivered                        1,920,045
+ ========   ================================================
+ 
+       42   Accepted                                  29.79%
+       99   Rejected                                  70.21%
+ --------   ------------------------------------------------
+      141   Total                                    100.00%
+ ========   ================================================
+ 
+       99   Reject unknown user                      100.00%
+ --------   ------------------------------------------------
+       99   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       16   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       16   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       56   Connections made      
+       56   Disconnections        
+       42   Removed from queue    
+       40   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    useradd: failed adding user 'postgres', exit code: 9: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       80.158.18.218 (ecs-80-158-18-218.reverse.open-telekom-cloud.com): 6 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    postgresql94-server-9.4.22-1PGDG.rhel6.i686
+    postgresql94-contrib-9.4.22-1PGDG.rhel6.i686
+    postgresql94-9.4.22-1PGDG.rhel6.i686
+    postgresql94-libs-9.4.22-1PGDG.rhel6.i686
+    fail2ban-0.9.6-1.el6.1.noarch
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   13G   38G  25% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

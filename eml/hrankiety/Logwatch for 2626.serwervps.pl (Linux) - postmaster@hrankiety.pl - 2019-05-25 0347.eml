@@ -1,0 +1,200 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id BA6B19F21458; Sat, 25 May 2019 03:47:05 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190525014705.BA6B19F21458@hrankiety.pl>
+Date: Sat, 25 May 2019 03:47:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat May 25 03:47:04 2019
+        Date Range Processed: yesterday
+                              ( 2019-May-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        1   *Warning              
+ 
+ 
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri May 24 03:49:07 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25458.cdiff [100%]
+    daily.cld updated (version: 25458, sigs: 1579156, f-level: 63, builder: raynman)
+    bytecode.cvd is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6145499 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Received 0 file descriptor(s) from systemd.
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Removing stale socket file /tmp/clamd.socket
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ Limits: MaxRecHWP3 limit set to 16.
+ Limits: PCREMatchLimit limit set to 100000.
+ Limits: PCRERecMatchLimit limit set to 5000.
+ Limits: PCREMaxFileSize limit set to 26214400.
+ BlockMax heuristic detection disabled.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 10% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    71.6.147.254
+    91.237.196.40
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       HTTP/1.1: 1 Time(s)
+       null: 4 Time(s)
+    404 Not Found
+       /GponForm/diag_Form?style/: 2 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /admin/: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+    408 Request Timeout
+       null: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       52   *Warning: Pre-queue content-filter connection overload 
+      278   SASL authentication failed 
+      183   Miscellaneous warnings 
+ 
+    2.481M  Bytes accepted                         2,601,863
+    2.475M  Bytes delivered                        2,595,661
+ ========   ================================================
+ 
+       33   Accepted                                  37.50%
+       55   Rejected                                  62.50%
+ --------   ------------------------------------------------
+       88   Total                                    100.00%
+ ========   ================================================
+ 
+       55   Reject unknown user                      100.00%
+ --------   ------------------------------------------------
+       55   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       25   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       25   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      357   Connections made      
+        1   Connections lost      
+      357   Disconnections        
+       33   Removed from queue    
+       30   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+       28   Timeout (inbound)     
+        1   SASL authenticated messages 
+ 
+        1   Postfix start         
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   May 24 00:16:25 2626 postfix/postfix-script[1212]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   May 24 00:16:25 2626 postfix/postfix-script[1210]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   May 24 00:16:25 2626 postfix/postfix-script[1208]: warning: /var/spool/postfix/etc/services and /etc/services differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       80.158.18.218 (ecs-80-158-18-218.reverse.open-telekom-cloud.com): 2 times
+       185.17.41.230 (backup): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   15G   36G  29% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

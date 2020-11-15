@@ -1,0 +1,388 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 3C2A39F21507; Sun,  9 Jun 2019 03:23:15 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190609012315.3C2A39F21507@hrankiety.pl>
+Date: Sun,  9 Jun 2019 03:23:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Jun  9 03:23:10 2019
+        Date Range Processed: yesterday
+                              ( 2019-Jun-08 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Jun  8 04:41:10 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25473.cdiff [100%]
+    daily.cld updated (version: 25473, sigs: 1589915, f-level: 63, builder: raynman)
+    bytecode.cvd is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6156258 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+    404 Not Found
+       /,188.116.4.178: 1 Time(s)
+       /404.jpg: 1 Time(s)
+       /API/DW/Dwplugin/SystemLabel/SiteConfig.htm: 1 Time(s)
+       /API/DW/Dwplugin/TemplateManage/login_site.htm: 1 Time(s)
+       /API/DW/Dwplugin/TemplateManage/manage_site.htm: 1 Time(s)
+       /API/DW/Dwplugin/TemplateManage/save_template.htm: 1 Time(s)
+       /API/DW/Dwplugin/ThirdPartyTags/SiteFactory.xml: 1 Time(s)
+       /Admin/Common/HelpLinks.xml: 1 Time(s)
+       /Admin/Images/LoginImages/admin_text.gif: 1 Time(s)
+       /Admin/Images/LoginImages/admin_top.gif: 1 Time(s)
+       /Admin/Login.aspx: 1 Time(s)
+       /CHANGELOG.txt: 1 Time(s)
+       /CuteSoft_Client/CuteEditor/Help/default.htm: 1 Time(s)
+       /CuteSoft_Client/CuteEditor/ImageEditor/listfiles.aspx: 1 Time(s)
+       /CuteSoft_Client/CuteEditor/Images/log.gif: 1 Time(s)
+       /CuteSoft_Client/CuteEditor/Style/IE.css: 1 Time(s)
+       /Editor.js: 1 Time(s)
+       /Error.aspx: 1 Time(s)
+       /FCK/editor/js/fckeditorcode_ie.js: 1 Time(s)
+       /FCK/fckeditor.js: 1 Time(s)
+       /GponForm/diag_Form?style/: 3 Time(s)
+       /Help: 1 Time(s)
+       /Images/login/biaoti.jpg: 1 Time(s)
+       /Images/login/lefttu.jpg: 1 Time(s)
+       /Images/login/mainlogo.gif: 1 Time(s)
+       /Include/EcsServerApi.js: 1 Time(s)
+       /Install/logo.gif: 1 Time(s)
+       /License.txt: 1 Time(s)
+       /Ntalker/lawfirm.aspx?17: 1 Time(s)
+       /Prompt/images/P_Wrong.gif: 1 Time(s)
+       /Public/Admin/Images/login_main_bg.jpg: 1 Time(s)
+       /README.txt: 1 Time(s)
+       /Scripts/jquery/maticsoft.jquery.min.js: 1 Time(s)
+       /Search.html: 1 Time(s)
+       /Site/Pages/WebResources.ashx/PoweredByKodakImage: 1 Time(s)
+       /Site/SystemThemes/7917A0869761B5458281E40 ... SBanner58px.jpg: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /Template/Default/Skin/user/images/login_back.jpg: 1 Time(s)
+       /User/Login.aspx: 1 Time(s)
+       /UserCenter/css/admin/bgimg/admin_all_bg.png: 1 Time(s)
+       /Wq_StranJF.js: 1 Time(s)
+       /addons/theme/stv1/_static/image/favicon.ico: 1 Time(s)
+       /addons/theme/stv1/_static/ts2/layout.css: 1 Time(s)
+       /addons/theme/stv2/_static/ts2/layout.css: 1 Time(s)
+       /admin: 1 Time(s)
+       /admin.php: 1 Time(s)
+       /admin.php?mod=profile&u_key=123456: 1 Time(s)
+       /admin/: 1 Time(s)
+       /admin/SouthidcEditor/ButtonImage/standard/componentmenu.gif: 1 Time(s)
+       /admin/SouthidcEditor/Dialog/dialog.js: 1 Time(s)
+       /admin/SouthidcEditor/ewebeditor.asp?id=57&style=southidc: 1 Time(s)
+       /admin/admin_login.php?act=login: 1 Time(s)
+       /admin/editor/: 1 Time(s)
+       /admin/images/cal_date_over.gif: 1 Time(s)
+       /admin/inc/xml.xslt: 1 Time(s)
+       /admin/index.php: 1 Time(s)
+       /admin/js/IdSUtil.js: 1 Time(s)
+       /admin/login.asp: 1 Time(s)
+       /admin/login.aspx: 1 Time(s)
+       /admin/login.php: 2 Time(s)
+       /admin/start/index.php: 1 Time(s)
+       /admin/template/article_more/config.htm: 1 Time(s)
+       /administrator/manifests/files/joomla.xml: 1 Time(s)
+       /adminsoft/templates/images/login_bg_top.jpg: 1 Time(s)
+       /advfile/ad12.js: 1 Time(s)
+       /api/api_user.xml: 1 Time(s)
+       /api/v1: 1 Time(s)
+       /app/Tpl/fanwe_1/js/DD_belatedPNG_0.0.8a-min.js: 1 Time(s)
+       /app/home/skins/default/style.css: 1 Time(s)
+       /app/images/login/logo.png: 1 Time(s)
+       /app/images/login/toplogo.gif: 1 Time(s)
+       /app/js/source/wcmlib/WCMConstants.js: 1 Time(s)
+       /app/login.jsp: 1 Time(s)
+       /apps/admin/_static/image/login_box_bg.png: 1 Time(s)
+       /archive/archive.css: 1 Time(s)
+       /archiver: 1 Time(s)
+       /archiver/: 1 Time(s)
+       /asp.net/README.txt: 1 Time(s)
+       /auth/login: 1 Time(s)
+       /back/scripts/jspxcms_choose.js: 1 Time(s)
+       /base/login/login.php: 1 Time(s)
+       /bbs/: 1 Time(s)
+       /bencandy.php: 1 Time(s)
+       /blog/: 1 Time(s)
+       /business/images/index-gg1.jpg: 1 Time(s)
+       /cgi/index.cgi: 1 Time(s)
+       /changelog.txt: 1 Time(s)
+       /ckeditor/ckeditor.js: 1 Time(s)
+       /ckeditor/ckfinder/ckfinder.html: 1 Time(s)
+       /ckeditor/ckfinder/install.txt: 1 Time(s)
+       /ckfinder/ckfinder.html: 1 Time(s)
+       /ckfinder/install.txt: 1 Time(s)
+       /clientscript/vbulletin_ajax_htmlloader.js: 1 Time(s)
+       /common/common.js: 1 Time(s)
+       /common/help/images/helplogo.gif: 1 Time(s)
+       /common/help/images/helplogo_zh.gif: 1 Time(s)
+       /console/auth/reg_newuser.jsp: 1 Time(s)
+       /console/include/not_login.htm: 1 Time(s)
+       /console/js/CTRSRequestParam.js: 1 Time(s)
+       /console/js/CWCMDialogHead.js: 1 Time(s)
+       /coremail/common/help/images/helplogo.gif: 1 Time(s)
+       /coremail/common/help/images/helplogo_zh.gif: 1 Time(s)
+       /custom/SkinTemplate/skin/public/images/sy ... caitong-180.jpg: 1 Time(s)
+       /customdir/images/english_logo.jpg: 1 Time(s)
+       /data/admin/ver.txt: 1 Time(s)
+       /data/images/wap_logo.gif: 1 Time(s)
+       /datacenter/downloadApp/showDownload.do: 1 Time(s)
+       /default/css/em_css.css: 1 Time(s)
+       /default/images/logo.gif: 1 Time(s)
+       /deptWebsiteAction.do: 1 Time(s)
+       /dialog/dialog.js: 1 Time(s)
+       /digg.php: 1 Time(s)
+       /docs.css: 1 Time(s)
+       /docs/: 1 Time(s)
+       /docs/DOCUMENTATION.txt: 1 Time(s)
+       /doku.php: 1 Time(s)
+       /e/master/login.aspx: 1 Time(s)
+       /eams/static/scripts/grade/course/input.js: 1 Time(s)
+       /editor/fckeditor.js: 1 Time(s)
+       /editor/js/fckeditorcode_ie.js: 1 Time(s)
+       /examples/file-manager.html: 1 Time(s)
+       /examples/index.html: 1 Time(s)
+       /examples/readonly.html: 1 Time(s)
+       /extern.php?action=feed&type=atom: 1 Time(s)
+       /extman/default/images/logo.gif: 1 Time(s)
+       /fckeditor.js: 1 Time(s)
+       /fckeditor/editor/dtd/fck_dtd_test.html: 1 Time(s)
+       /fckeditor/editor/filemanager/connectors/p ... .php?Type=Media: 1 Time(s)
+       /fckeditor/editor/js/fckeditorcode_ie.js: 1 Time(s)
+       /fckeditor/fckconfig.js: 1 Time(s)
+       /fckeditor/fckeditor.js: 1 Time(s)
+       /fckeditor/license.txt: 1 Time(s)
+       /feed.asp: 1 Time(s)
+       /forum.php: 1 Time(s)
+       /forum/: 1 Time(s)
+       /forums/list.page: 1 Time(s)
+       /help/ch_gb/images/help-title.gif: 1 Time(s)
+       /help/en/h_authenticate.html: 1 Time(s)
+       /help/user/index.html: 1 Time(s)
+       /helpnew/faq/faq_simple_zh_CN.jsp: 1 Time(s)
+       /history.txt: 1 Time(s)
+       /ids/admin/login.jsp: 1 Time(s)
+       /ids/admin/userhome/forgetPwd.jsp: 1 Time(s)
+       /images/2_11.gif: 1 Time(s)
+       /images/Default_bg_002.gif: 1 Time(s)
+       /images/branding/logo.gif: 1 Time(s)
+       /images/default/post_bt.gif: 1 Time(s)
+       /images/favicon.ico: 1 Time(s)
+       /images/hwem.css: 1 Time(s)
+       /images/login/eyoumail.gif: 1 Time(s)
+       /images/login/icon-up.gif: 1 Time(s)
+       /images/login/logo.gif: 1 Time(s)
+       /images/login9/login_33.jpg: 1 Time(s)
+       /images/login_Name.jpg: 1 Time(s)
+       /images/logo-white.png: 1 Time(s)
+       /images/logo_88x31.gif: 1 Time(s)
+       /images/logo_product-cml.png: 1 Time(s)
+       /images/zh-CN/logo.ico: 1 Time(s)
+       /imagesschool/style1/flash2.jpg: 1 Time(s)
+       /img/pic/login/top-left.jpg: 1 Time(s)
+       /inc/Templates/rss.xslt: 1 Time(s)
+       /inc/playerKinds.xml: 1 Time(s)
+       /inc/rsd.php: 1 Time(s)
+       /include/dedeajax2.js: 1 Time(s)
+       /include/dialog/config.php: 1 Time(s)
+       /include/install_ocx.aspx: 1 Time(s)
+       /includes/general.js: 1 Time(s)
+       /index.cgi: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php?m=admin: 1 Time(s)
+       /index.php?m=admin&c=index&a=login&pc_hash=: 1 Time(s)
+       /index.php?m=search: 1 Time(s)
+       /index.php?m=wap: 1 Time(s)
+       /install: 1 Time(s)
+       /issmall/: 1 Time(s)
+       /jcms/index.jsp: 1 Time(s)
+       /jcms/index_jcms.jsp: 1 Time(s)
+       /js/ajax_x.js: 1 Time(s)
+       /js/buttons.js: 1 Time(s)
+       /kindeditor-min.js: 1 Time(s)
+       /kindeditor.js: 1 Time(s)
+       /ks_inc/ajax.js: 1 Time(s)
+       /lang/en.js: 1 Time(s)
+       /licence.txt: 1 Time(s)
+       /license.txt: 1 Time(s)
+       /list.php: 1 Time(s)
+       /login/Jeecms.do: 1 Time(s)
+       /logo/logo_jw.png: 1 Time(s)
+       /m: 1 Time(s)
+       /maintlogin.jsp: 1 Time(s)
+       /master/login.aspx: 1 Time(s)
+       /max-templates/classic/styles/app.css: 1 Time(s)
+       /media/com_hikashop/js/hikashop.js: 1 Time(s)
+       /member/space/company/info.txt: 1 Time(s)
+       /new_gb/help/images/usage/3.3.gif: 1 Time(s)
+       /next/img/logo.gif: 1 Time(s)
+       /nobody/mobile.htm?Login=Captcha: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /phpmyadmin/docs.css: 1 Time(s)
+       /phpmyadmin/favicon.ico: 1 Time(s)
+       /phpmyadmin/themes/original/img/logo_right.png: 1 Time(s)
+       /plug/publish: 1 Time(s)
+       /plugin.php?id=milu_seotool:sitemap&tpl=no ... l_cron&inajax=1: 1 Time(s)
+       /plugins/anchor/anchor.js: 1 Time(s)
+       /plugins/filemanager/filemanager/js: 1 Time(s)
+       /plus/download.php: 1 Time(s)
+       /plus/heightsearch.php: 1 Time(s)
+       /plus/rssmap.html: 1 Time(s)
+       /plus/sitemap.html: 1 Time(s)
+       /pub/guiedit/guiedit.js: 1 Time(s)
+       /pub/skins/pmwiki/pmwiki.css: 1 Time(s)
+       /public/about.html: 1 Time(s)
+       /public/js/ipb.js: 1 Time(s)
+       /readme.html: 1 Time(s)
+       /rss.aspx: 1 Time(s)
+       /rss.php: 1 Time(s)
+       /script/login.js: 1 Time(s)
+       /script/valid_formdata.js: 1 Time(s)
+       /siteserver/login.aspx: 1 Time(s)
+       /siteserver/upgrade/default.aspx: 1 Time(s)
+       /skin/frontend/default/modern/css/styles.css: 1 Time(s)
+       /static/hgicon.png: 1 Time(s)
+       /static/images/logo/webserver_small.gif: 1 Time(s)
+       /style/default/hdwiki.css: 1 Time(s)
+       /stylesheet.css: 1 Time(s)
+       /system/Login.aspx: 1 Time(s)
+       /system/Update.aspx: 1 Time(s)
+       /system/language/zh-cn.xml: 1 Time(s)
+       /system/skins/default/system.login.htm: 1 Time(s)
+       /template/1/bluewise/_files/jspxcms.css: 1 Time(s)
+       /template/home.htm: 1 Time(s)
+       /templates/jsn_glass_pro/ext/hikashop/jsn_ext_hikashop.css: 1 Time(s)
+       /templates/system/css/system.css: 1 Time(s)
+       /test_404_page/: 1 Time(s)
+       /themes/default/default.css: 1 Time(s)
+       /themes/default/graphics/favicon.ico: 1 Time(s)
+       /themes/default/graphics/horde-power1.png: 1 Time(s)
+       /themes/graphics/horde-power1.png: 1 Time(s)
+       /tools/rss.aspx: 1 Time(s)
+       /tpl/login/user/images/login_bg_1.jpg: 1 Time(s)
+       /tpl/user/tpl1/css/skins/blue.css: 1 Time(s)
+       /uc_server/control/admin/db.php: 1 Time(s)
+       /was/help.jsp: 1 Time(s)
+       /was/main.html: 1 Time(s)
+       /was5/web/index.jsp: 1 Time(s)
+       /wcm/: 1 Time(s)
+       /web2/login_template/1.files/Logo1.jpg: 1 Time(s)
+       /webbuilder/script/locale/wb-lang-zh_CN.js: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /weblog/: 1 Time(s)
+       /whir_system/login.aspx: 1 Time(s)
+       /whir_system/module/security/login.aspx: 1 Time(s)
+       /wp-content: 1 Time(s)
+       /wp-cron.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wp-settings.php: 2 Time(s)
+       /xmlrpc.php: 1 Time(s)
+       /ycportal/js/wbTextBox/showimg.jsp: 1 Time(s)
+       /ymail/images/index_r1_c4.jpg: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        6   *Warning: Pre-queue content-filter connection overload 
+      649   SASL authentication failed 
+     1316   Miscellaneous warnings 
+ 
+    3.042M  Bytes accepted                         3,190,292
+    4.607M  Bytes delivered                        4,831,275
+ ========   ================================================
+ 
+       24   Accepted                                  21.82%
+       86   Rejected                                  78.18%
+ --------   ------------------------------------------------
+      110   Total                                    100.00%
+ ========   ================================================
+ 
+        6   Reject HELO/EHLO                           6.98%
+       80   Reject unknown user                       93.02%
+ --------   ------------------------------------------------
+       86   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       42   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       42   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     2352   Connections made      
+        2   Connections lost      
+     2352   Disconnections        
+       24   Removed from queue    
+       22   Delivered             
+        2   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+       90   Timeout (inbound)     
+        4   Excessive errors in SMTP commands dialog 
+        2   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 20 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 17 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       11T  3.8T  6.5T  37% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

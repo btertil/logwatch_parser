@@ -1,0 +1,242 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 981BC9F2047B; Thu, 14 May 2020 03:47:06 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200514014706.981BC9F2047B@hrankiety.pl>
+Date: Thu, 14 May 2020 03:47:03 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu May 14 03:47:03 2020
+        Date Range Processed: yesterday
+                              ( 2020-May-13 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        1   *Warning              
+ 
+ 
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed May 13 03:27:14 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25810.cdiff [100%]
+    daily.cld updated (version: 25810, sigs: 2383121, f-level: 63, builder: raynman)
+    Can't query daily.25810.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6948117 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Received 0 file descriptor(s) from systemd.
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ Limits: MaxRecHWP3 limit set to 16.
+ Limits: PCREMatchLimit limit set to 100000.
+ Limits: PCRERecMatchLimit limit set to 5000.
+ Limits: PCREMaxFileSize limit set to 26214400.
+ BlockMax heuristic detection disabled.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (Shutting down)
+ INFO (RANDOM_DELAY will be scaled with factor 54% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    45.13.93.82 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 4 sites probed the server 
+    154.126.79.223
+    162.243.144.211
+    66.240.236.119
+    89.77.70.146
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../proc/: 1 Time(s)
+       /: 29 Time(s)
+       /cgi-bin/mainfunction.cgi?action=login&key ... er=a&loginPwd=a: 1 Time(s)
+       /sess-bin/login_session.cgi: 2 Time(s)
+       /setup.cgi: 2 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       null: 5 Time(s)
+    403 Forbidden
+       /iredadmin: 1 Time(s)
+       /iredadmin/static: 1 Time(s)
+       /pocztatoadministrowanie: 1 Time(s)
+       /pocztatoadministrowanie/: 1 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 1 Time(s)
+       //blog/: 1 Time(s)
+       /GponForm/diag_Form?style/: 2 Time(s)
+       /ab2g: 1 Time(s)
+       /ads.txt: 1 Time(s)
+       /adv,/cgi-bin/weblogin.cgi?username=admin% ... 3&password=asdf: 1 Time(s)
+       /api/jsonws/invoke: 3 Time(s)
+       /cgi-bin/mainfunction.cgi: 6 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /doLogin: 2 Time(s)
+       /horde/imp/test.php: 1 Time(s)
+       /hudson: 1 Time(s)
+       /humans.txt: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 2 Time(s)
+       /login?from=0.000000: 1 Time(s)
+       /operator/basic.shtml?id=1337: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pocztatoadministrowanie2/: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /solr/admin/info/system?wt=json: 2 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 4 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+    408 Request Timeout
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       12   *Warning: Pre-queue content-filter connection overload 
+     4918   SASL authentication failed 
+      111   Miscellaneous warnings 
+ 
+    2.124M  Bytes accepted                         2,227,002
+    2.118M  Bytes delivered                        2,220,800
+ ========   ================================================
+ 
+       62   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       62   Total                                    100.00%
+ ========   ================================================
+ 
+     4987   Connections made      
+        1   Connections lost      
+     4988   Disconnections        
+       62   Removed from queue    
+       59   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+       24   Timeout (inbound)     
+        2   SASL authenticated messages 
+ 
+        1   Postfix start         
+        1   Postfix stop          
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   May 13 14:04:01 2626 postfix/postfix-script[1026]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   May 13 14:04:01 2626 postfix/postfix-script[1030]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   May 13 14:04:01 2626 postfix/postfix-script[1028]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   May 13 14:04:01 2626 postfix/postfix-script[1032]: warning: /var/spool/postfix/etc/resolv.conf and /etc/resolv.conf differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> halt  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 49 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 49 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   27G   24G  54% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

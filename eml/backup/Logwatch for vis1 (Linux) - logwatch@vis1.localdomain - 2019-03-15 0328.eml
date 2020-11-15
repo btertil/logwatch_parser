@@ -1,0 +1,273 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:a903:0:0:0:0:0 with SMTP id n3csp4737262jam;
+        Thu, 14 Mar 2019 19:28:10 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqyoxhZdtlq26skoXNj5Ityd+MOdmaYf9AWzPUO1d39IxAaCiqNnSJDNuQfLW/0s21shGr30
+X-Received: by 2002:ac2:548a:: with SMTP id t10mr676228lfk.115.1552616890757;
+        Thu, 14 Mar 2019 19:28:10 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1552616890; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XOHB9Hv9KP8c7KTiG9VR2RXLR397kplWim3+YqGtzfNonL7CkzHW1V2AOPV++oIwQG
+         UtYd3yqXoDt8I5SFADg0X1xk8kg6Q5lXl6qHLglueUMeHERzoqov3+bj25YNWXSB3NQX
+         8+StiV6B9Yze+BVIznOFREtTiz8i6ogNmASgF0BFzoDJdoJx4L2OGAXEWGHYKR3ZK+P+
+         kifOD9qej/TgUUVDo2iblFU7GzOSm1gIlGhoR9rF8ziFG5dsKSPRs5UgLlaidhRUQ0Js
+         XWYgKnSkhK3h2FXdqznAaAzB9XVSgx5lOMzL9VkrSzCvYL003x9UH7dwqDcry3v36La4
+         Ojig==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=DRnBU5b85CyK+pZYbpyLlnipIxVOQboKR99hT0e7ho4=;
+        b=El8zqyUzC0uC/v6No69KbYwsDIGmPfmRl+RKmaPSiZmmfZwNnZUR+FhJgDULq6zSzS
+         TyxkXwWCAxPDuceuZZloAy0ZgBmJky+qGBdM93Rn8iaHrNWff2vI4APymFWWWf8u4rL+
+         wqOGFyevgEUQflGGmwXviBTYYGS5SYQclxNWd3lQrbvlSupM1hqbj7svCDu0+mtHxcTT
+         H0YTlw19OeClF0e6Ondzx6top7r82YKqYdeUq7DTPzNbprwEKEu3hlwfboBuh25NXSEM
+         hbPRM6DpvjurTiF/ls0+vc8sVboKd4r8IJGoigoEQcDzJiuE29NCdPHG+4QhwyIoMGsr
+         cmMQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id g9si550008lfb.44.2019.03.14.19.28.10
+        for <bondiev@gmail.com>;
+        Thu, 14 Mar 2019 19:28:10 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 590854A812C4; Fri, 15 Mar 2019 03:28:09 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190315022809.590854A812C4@vis1.localdomain>
+Date: Fri, 15 Mar 2019 03:28:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Mar 15 03:28:06 2019
+        Date Range Processed: yesterday
+                              ( 2019-Mar-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Mar 14 03:20:11 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.2 Recommended version: 0.101.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25387.cdiff [100%]
+    daily.cld updated (version: 25387, sigs: 1514267, f-level: 63, builder: raynman)
+    bytecode.cld is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6080610 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    185.222.209.77
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /v1/agent/self: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /099.php: 1 Time(s)
+       /1x.php: 1 Time(s)
+       /9678.php: 1 Time(s)
+       /Alarg53.php: 1 Time(s)
+       /Drupal.php: 1 Time(s)
+       /HNAP1/: 2 Time(s)
+       /PMA/index.php: 1 Time(s)
+       /PMA2/index.php: 1 Time(s)
+       /Skri.php: 1 Time(s)
+       /TP/html/public/index.php?s=/index/\\think ... ]=HelloThinkPHP: 1 Time(s)
+       /TP/index.php?s=/index/\\think\\app/invoke ... ]=HelloThinkPHP: 1 Time(s)
+       /TP/public/index.php?s=/index/\\think\\app ... ]=HelloThinkPHP: 1 Time(s)
+       /_404.php: 1 Time(s)
+       /_query.php: 1 Time(s)
+       /acadmin.php: 1 Time(s)
+       /admin/PMA/index.php: 1 Time(s)
+       /admin/index.php: 1 Time(s)
+       /admin/mysql/index.php: 1 Time(s)
+       /admin/phpMyAdmin/index.php: 1 Time(s)
+       /admin/phpmyadmin/index.php: 1 Time(s)
+       /admin/pma/index.php: 1 Time(s)
+       /api/v1/pods: 1 Time(s)
+       /appserv.php: 1 Time(s)
+       /cacti/plugins/weathermap/editor.php: 1 Time(s)
+       /cmd.php: 2 Time(s)
+       /cmdd.php: 1 Time(s)
+       /composer.php: 1 Time(s)
+       /composers.php: 1 Time(s)
+       /conflg.php: 2 Time(s)
+       /d7.php: 1 Time(s)
+       /db.init.php: 1 Time(s)
+       /db__.init.php: 1 Time(s)
+       /db_cts.php: 1 Time(s)
+       /db_desql.php: 1 Time(s)
+       /db_pma.php: 1 Time(s)
+       /dbadmin/index.php: 1 Time(s)
+       /desktop.ini.php: 1 Time(s)
+       /hell.php: 1 Time(s)
+       /help.php: 1 Time(s)
+       /htdocs.php: 1 Time(s)
+       /html/public/index.php?s=/index/\\think\\a ... ]=HelloThinkPHP: 1 Time(s)
+       /hue2.php: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /izom.php: 1 Time(s)
+       /knal.php: 1 Time(s)
+       /lala-dpr.php: 1 Time(s)
+       /lala.php: 1 Time(s)
+       /libraries/joomla/jmails.php?waled=1: 1 Time(s)
+       /libraries/joomla/wl.php?0=1: 1 Time(s)
+       /lindex.php: 1 Time(s)
+       /m.php?pbid=open: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /muhstik.php: 1 Time(s)
+       /muhstik2.php: 1 Time(s)
+       /mx.php: 1 Time(s)
+       /myadmin/index.php: 1 Time(s)
+       /myadmin2/index.php: 1 Time(s)
+       /mysql/admin/index.php: 1 Time(s)
+       /mysql/dbadmin/index.php: 1 Time(s)
+       /mysql/mysqlmanager/index.php: 1 Time(s)
+       /mysql/sqlmanager/index.php: 1 Time(s)
+       /mysql_admin/index.php: 1 Time(s)
+       /mysqladmin/index.php: 1 Time(s)
+       /onvif-http/snapshot?auth=YWRtaW46MTEK: 1 Time(s)
+       /p34ky1337.php: 1 Time(s)
+       /payload.php: 1 Time(s)
+       /phpAdmin/index.php: 1 Time(s)
+       /phpMyAbmin/index.php: 1 Time(s)
+       /phpMyAdm1n/index.php: 1 Time(s)
+       /phpMyAdmin+++---/index.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin1/index.php: 1 Time(s)
+       /phpMyAdmin__/index.php: 1 Time(s)
+       /phpMyAdmina/index.php: 1 Time(s)
+       /phpMyAdminold/index.php: 1 Time(s)
+       /phpMyAdmins/index.php: 1 Time(s)
+       /phpMyAdmion/index.php: 1 Time(s)
+       /phpMyadmi/index.php: 1 Time(s)
+       /phpMyadmin_bak/index.php: 1 Time(s)
+       /phpMydmin/index.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmy/index.php: 1 Time(s)
+       /phpmyadmin-old/index.php: 1 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin0/index.php: 1 Time(s)
+       /phpmyadmin1/index.php: 1 Time(s)
+       /phpmyadmin2/index.php: 1 Time(s)
+       /phppma/index.php: 1 Time(s)
+       /pk1914.php: 1 Time(s)
+       /pma/index.php: 1 Time(s)
+       /pmamy/index.php: 1 Time(s)
+       /pmamy2/index.php: 1 Time(s)
+       /pmd/index.php: 1 Time(s)
+       /pmd_online.php: 1 Time(s)
+       /public/index.php?s=/index/\\think\\app/in ... ]=HelloThinkPHP: 1 Time(s)
+       /pwd/index.php: 1 Time(s)
+       /qaq.php: 1 Time(s)
+       /robots.txt: 2 Time(s)
+       /rxr.php: 1 Time(s)
+       /s.php: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /shaAdmin/index.php: 1 Time(s)
+       /sheep.php: 1 Time(s)
+       /shell.php: 2 Time(s)
+       /shopdb/index.php: 1 Time(s)
+       /sllolx.php: 1 Time(s)
+       /spider.php: 1 Time(s)
+       /t6nv.php: 1 Time(s)
+       /test.php: 1 Time(s)
+       /text.php: 1 Time(s)
+       /thinkphp/html/public/index.php?s=/index/\ ... ]=HelloThinkPHP: 1 Time(s)
+       /thinkphp/public/index.php?s=/index/\\thin ... ]=HelloThinkPHP: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 1 Time(s)
+       /typo3/phpmyadmin/index.php: 1 Time(s)
+       /undx.php: 1 Time(s)
+       /uploader.php: 1 Time(s)
+       /v/index.php: 1 Time(s)
+       /vendor/phpunit/phpunit/README.md: 1 Time(s)
+       /w.php: 1 Time(s)
+       /web/phpMyAdmin/index.php: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /wp-config.php: 1 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php: 1 Time(s)
+       /wpc.php: 1 Time(s)
+       /wpo.php: 1 Time(s)
+       /wuwu11.php: 1 Time(s)
+       /www/phpMyAdmin/index.php: 1 Time(s)
+       /xampp/phpmyadmin/index.php: 1 Time(s)
+       /xshell.php: 1 Time(s)
+       /xw.php: 1 Time(s)
+       /xw1.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   19.452K  Bytes accepted                            19,919
+   19.452K  Bytes delivered                           19,919
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   22G  8.1G  74% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

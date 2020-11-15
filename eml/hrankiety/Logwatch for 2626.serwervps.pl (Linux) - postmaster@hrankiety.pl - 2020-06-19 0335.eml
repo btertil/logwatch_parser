@@ -1,0 +1,154 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id C385B9F20478; Fri, 19 Jun 2020 03:35:22 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200619013522.C385B9F20478@hrankiety.pl>
+Date: Fri, 19 Jun 2020 03:35:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Jun 19 03:35:07 2020
+        Date Range Processed: yesterday
+                              ( 2020-Jun-18 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Jun 18 03:46:23 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25846.cdiff [100%]
+    daily.cld updated (version: 25846, sigs: 2651854, f-level: 63, builder: raynman)
+    Can't query daily.25846.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (7216850 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    185.143.221.215
+    2.47.236.35
+    5.188.206.50
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 9 Time(s)
+       /cgi-bin/mainfunction.cgi?action=login&key ... er=a&loginPwd=a: 1 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       /2015/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /2016/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /2017/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /2018/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /ReportServer: 1 Time(s)
+       /a2billing/admin/Public/index.php: 1 Time(s)
+       /admin//config.php: 1 Time(s)
+       /adv,/cgi-bin/weblogin.cgi?username=admin% ... 3&password=asdf: 2 Time(s)
+       /blog/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /boaform/admin/formLogin: 2 Time(s)
+       /cgi-bin/mainfunction.cgi: 1 Time(s)
+       /cms/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /media/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /news/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /shop/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /site/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /sito/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /test/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /web/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /website/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /wordpress/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /wp-includes/wlwmanifest.xml: 1 Time(s)
+       /wp/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /wp1/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /wp2/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /xmlrpc.php?rsd: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       26   *Warning: Pre-queue content-filter connection overload 
+    37390   SASL authentication failed 
+      102   Miscellaneous warnings 
+ 
+    1.358M  Bytes accepted                         1,423,557
+    1.352M  Bytes delivered                        1,417,355
+ ========   ================================================
+ 
+       49   Accepted                                  87.50%
+        7   Rejected                                  12.50%
+ --------   ------------------------------------------------
+       56   Total                                    100.00%
+ ========   ================================================
+ 
+        7   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        7   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    37498   Connections made      
+        2   Connections lost      
+    37506   Disconnections        
+       49   Removed from queue    
+       47   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        4   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   29G   22G  57% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

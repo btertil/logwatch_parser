@@ -1,0 +1,155 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id D734135A362A; Tue,  4 Jul 2017 03:12:30 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170704011230.D734135A362A@hrankiety.pl>
+Date: Tue,  4 Jul 2017 03:12:25 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Jul  4 03:12:25 2017
+        Date Range Processed: yesterday
+                              ( 2017-Jul-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Jul  3 03:25:59 2017
+ 
+ Last Status:
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-23526.cdiff [100%]
+    Downloading daily-23527.cdiff [100%]
+    Downloading daily-23528.cdiff [100%]
+    daily.cld updated (version: 23528, sigs: 1738488, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 305, sigs: 62, f-level: 63, builder: neo)
+    Database updated (6304799 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /x: 1 Time(s)
+       HTTP/1.1: 1 Time(s)
+    404 Not Found
+       /1.sql: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /backup.sql: 1 Time(s)
+       /backup.sql.bz2: 1 Time(s)
+       /backup.sql.gz: 1 Time(s)
+       /data.sql: 1 Time(s)
+       /db.sql: 1 Time(s)
+       /db.sql.bz2: 1 Time(s)
+       /db.sql.gz: 1 Time(s)
+       /db.sql.zip: 1 Time(s)
+       /db.tar: 1 Time(s)
+       /db.tar.gz: 1 Time(s)
+       /db.zip: 1 Time(s)
+       /db_backup.sql: 1 Time(s)
+       /dbdump.sql: 1 Time(s)
+       /dbdump.sql.gz: 1 Time(s)
+       /dump.gz: 1 Time(s)
+       /dump.sql: 1 Time(s)
+       /dump.sql.gz: 1 Time(s)
+       /dump.sql.tgz: 1 Time(s)
+       /dump.sql.zip: 1 Time(s)
+       /dump.tar: 1 Time(s)
+       /dump.tar.gz: 1 Time(s)
+       /dump.tgz: 1 Time(s)
+       /dump.zip: 1 Time(s)
+       /login/: 1 Time(s)
+       /mysql.sql: 1 Time(s)
+       /mysql.zip: 1 Time(s)
+       /site.sql: 1 Time(s)
+       /sql.gz: 1 Time(s)
+       /sql.sql: 1 Time(s)
+       /sql.tar: 1 Time(s)
+       /sql.tar.gz: 1 Time(s)
+       /sql.tgz: 1 Time(s)
+       /sql.zip: 1 Time(s)
+       /temp.sql: 1 Time(s)
+       /users.sql: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      397   *Warning: Pre-queue content-filter connection overload 
+      657   SASL authentication failed 
+       33   Miscellaneous warnings 
+ 
+  113.240K  Bytes accepted                           115,958
+  107.180K  Bytes delivered                          109,752
+ ========   ================================================
+ 
+       15   Accepted                                  78.95%
+        4   Rejected                                  21.05%
+ --------   ------------------------------------------------
+       19   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        4   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                   50.00%
+        1   4xx Reject sender address                 50.00%
+ --------   ------------------------------------------------
+        2   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      665   Connections made      
+      665   Disconnections        
+       15   Removed from queue    
+       13   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   32G   19G  63% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

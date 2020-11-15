@@ -1,0 +1,279 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id CB666342920; Wed, 21 Oct 2020 03:19:15 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20201021011915.CB666342920@hrankiety.pl>
+Date: Wed, 21 Oct 2020 03:19:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Oct 21 03:19:05 2020
+        Date Range Processed: yesterday
+                              ( 2020-Oct-20 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        1   *Warning              
+ 
+ 
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Tue Oct 20 03:30:19 2020
+ 
+ Last Status:
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25962.cdiff [100%]
+    daily.cld updated (version: 25962, sigs: 4332757, f-level: 63, builder: raynman)
+    Can't query daily.25962.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8897753 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Received 0 file descriptor(s) from systemd.
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Removing stale socket file /tmp/clamd.socket
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ Limits: MaxRecHWP3 limit set to 16.
+ Limits: PCREMatchLimit limit set to 100000.
+ Limits: PCRERecMatchLimit limit set to 5000.
+ Limits: PCREMaxFileSize limit set to 26214400.
+ BlockMax heuristic detection disabled.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (Shutting down)
+ INFO (RANDOM_DELAY will be scaled with factor 75% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    87.251.75.145
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /.env: 2 Time(s)
+       /.local: 1 Time(s)
+       /.production: 1 Time(s)
+       /.remote: 1 Time(s)
+       //admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //dev/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //lib/phpunit/Util/PHP/eval-stdin.php: 1 Time(s)
+       //lib/phpunit/phpunit/Util/PHP/eval-stdin.php: 1 Time(s)
+       //lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //lib/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //new/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //old/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //phpunit/Util/PHP/eval-stdin.php: 1 Time(s)
+       //phpunit/phpunit/Util/PHP/eval-stdin.php: 1 Time(s)
+       //phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //protected/vendor/phpunit/phpunit/src/Uti ... /eval-stdin.php: 1 Time(s)
+       //sites/all/libraries/mailchimp/vendor/php ... /eval-stdin.php: 1 Time(s)
+       //vendor/phpunit/Util/PHP/eval-stdin.php: 1 Time(s)
+       //vendor/phpunit/phpunit/Util/PHP/eval-stdin.php: 1 Time(s)
+       //vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //vendor/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       //wp-content/plugins/cloudflare/vendor/php ... /eval-stdin.php: 1 Time(s)
+       //wp-content/plugins/dzs-videogallery/clas ... /eval-stdin.php: 1 Time(s)
+       //wp-content/plugins/jekyll-exporter/vendo ... /eval-stdin.php: 1 Time(s)
+       //wp-content/plugins/mm-plugin/inc/vendors ... /eval-stdin.php: 1 Time(s)
+       //www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /ReportServer: 1 Time(s)
+       /TP/html/public/index.php: 2 Time(s)
+       /TP/index.php: 2 Time(s)
+       /TP/public/index.php: 2 Time(s)
+       /Telerik.Web.UI.WebResource.axd?type=rau: 2 Time(s)
+       /admin/: 1 Time(s)
+       /admin//config.php: 3 Time(s)
+       /api/jsonws/invoke: 2 Time(s)
+       /boaform/admin/formLogin?username=user&psd=user: 1 Time(s)
+       /cgi-bin/kerbynet?Section=NoAuthREQ&Action ... o;sh%20zero;%22: 15 Time(s)
+       /config/getuser?index=0: 2 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       /elrekt.php: 2 Time(s)
+       /html/public/index.php: 2 Time(s)
+       /hudson: 1 Time(s)
+       /index.php: 2 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 2 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /public/index.php: 2 Time(s)
+       /remote/login: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /solr/admin/info/system?wt=json: 2 Time(s)
+       /thinkphp/html/public/index.php: 2 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 4 Time(s)
+       /wp-content/plugins/wp-file-manager/readme.txt: 2 Time(s)
+       /wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       88   *Warning: Pre-queue content-filter connection overload 
+    18266   SASL authentication failed 
+      275   Miscellaneous warnings 
+ 
+   16.877K  Bytes accepted                            17,282
+   10.832K  Bytes delivered                           11,092
+ ========   ================================================
+ 
+        4   Accepted                                  66.67%
+        2   Rejected                                  33.33%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                    0.20%
+      489   4xx Reject sender address                 99.80%
+ --------   ------------------------------------------------
+      490   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+    18802   Connections made      
+        2   Connections lost      
+    18795   Disconnections        
+        4   Removed from queue    
+        2   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+       52   Timeout (inbound)     
+        1   SASL authenticated messages 
+ 
+        3   Postfix start         
+        3   Postfix stop          
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Oct 20 16:13:50 2626 postfix/postfix-script[24131]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Oct 20 16:13:50 2626 postfix/postfix-script[24129]: warning: /var/spool/postfix/etc/resolv.conf and /etc/resolv.conf differ
+        1   Oct 20 16:29:47 2626 postfix/postfix-script[881]: warning: /var/spool/postfix/etc/resolv.conf and /etc/resolv.conf differ
+        1   Oct 20 16:13:50 2626 postfix/postfix-script[24127]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Oct 20 16:24:24 2626 postfix/postfix-script[24290]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Oct 20 16:24:24 2626 postfix/postfix-script[24286]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Oct 20 16:24:24 2626 postfix/postfix-script[24292]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Oct 20 16:13:50 2626 postfix/postfix-script[24133]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Oct 20 16:29:47 2626 postfix/postfix-script[885]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Oct 20 16:29:47 2626 postfix/postfix-script[883]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Oct 20 16:29:47 2626 postfix/postfix-script[879]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Oct 20 16:24:24 2626 postfix/postfix-script[24288]: warning: /var/spool/postfix/etc/resolv.conf and /etc/resolv.conf differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> reboot  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 2 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   33G   16G  68% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,159 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:490a:0:0:0:0 with SMTP id b10csp8605247ejq;
+        Tue, 12 Nov 2019 18:51:11 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxlL6hjo94uevdQYdKUFQq6nQF+dWPtlrDOHu/znFvMXp5WPCowY4fyhA7uOqoThN95okPm
+X-Received: by 2002:ac2:52b3:: with SMTP id r19mr645182lfm.109.1573613471725;
+        Tue, 12 Nov 2019 18:51:11 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1573613471; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fyJJ+CqmkMuRUskhZlFrS2n6O/jzzBuaKXEOJw+xquVPJpCF9i5eEhJqHXWWwgsHkh
+         igPcYPvU6hvl89LAFXeT8dxXPeRIoXWOaZT96oaOZFyRjXU9UAr3sdJptNd45V8k+/CM
+         gD5ru6kay1Or7y4Aob16CSy57KPLjVdquevZhamaqZyAYdZkxmjnY9qxf9kD/4t/tt+X
+         3wTLLG4l/ijHJezf8u5L/E7lbfj9pzxppmHhpDdoukT2N5xT8IITM3d690YvKGOiW4SJ
+         fANyyvHtdL42uLtpsUV1MfJSAc56Ou7Es5KpYyKuuaLJTJ6rOs8JATwbQVnJQHuIQ9K8
+         nojA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=coQPbtCjnRgLIDO5qiYfiOM7JVjpTPsDoacR6TjAkAI=;
+        b=mwbPiB6LxCrWeue7vFLUtdwKJ0RVdT7WVMtOzN7cE1PmCTcMbPmmVPq90P7SztSrN9
+         gbvcWQUaM06/J16tGaGflb+gtKglWptqMO4GW1bGo92HONZj303wYdkYmC/1XXp+Fr0C
+         0KvkGTwhyp+mfKsEAIgHZjz1Ksy4qWf9u8F88mNzURAJW/WJ2aF+jAcecdEga9JaFqSI
+         JB86xaezHoKbFcKFWB6Md5h7TXXScdLr5Hf3uBdH3cKnEMy2fgRufn2EkCJ3EMDfllHg
+         OLQX5R5Ho+0h9GPY7AtLylqoSE7vEzSCdBeVi6eyHfBnB4pZgsyHBZanXfhL0YsN+hQl
+         svDA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id 17si525297ljj.177.2019.11.12.18.51.11
+        for <bondiev@gmail.com>;
+        Tue, 12 Nov 2019 18:51:11 -0800 (PST)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 450694A80049; Wed, 13 Nov 2019 03:51:10 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191113025110.450694A80049@vis1.localdomain>
+Date: Wed, 13 Nov 2019 03:51:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Nov 13 03:51:07 2019
+        Date Range Processed: yesterday
+                              ( 2019-Nov-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Nov 12 04:43:12 2019
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25630.cdiff [100%]
+    daily.cld updated (version: 25630, sigs: 1980994, f-level: 63, builder: raynman)
+    Can't query daily.25630.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6547337 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    159.138.163.178
+    193.188.22.76
+    90.199.196.10
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       //a2billing/customer/templates/default/footer.tpl: 1 Time(s)
+       /HNAP1: 1 Time(s)
+       /HNAP1/: 2 Time(s)
+       /Polycom/000000000000.cfg: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /evox/about: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /nmaplowercheck1573573396: 1 Time(s)
+       /p/000000000000.cfg: 1 Time(s)
+       /phpmyadmin: 1 Time(s)
+       /provisioning/000000000000.cfg: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /robots.txt: 7 Time(s)
+       /sdk: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.168K  Bytes accepted                             4,268
+    4.168K  Bytes delivered                            4,268
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   25G  5.6G  82% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,143 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:cb0d:0:0:0:0:0 with SMTP id j13csp3662243jap;
+        Wed, 6 Mar 2019 18:11:11 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxBTOK5bUMxwSv2JWgYoR8Hh9UCnQwxgNwAZK69oNF3rStqrGs5RAQg18m8LmvGwhDy+WBU
+X-Received: by 2002:a2e:9786:: with SMTP id y6mr3780004lji.79.1551924671251;
+        Wed, 06 Mar 2019 18:11:11 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1551924671; cv=none;
+        d=google.com; s=arc-20160816;
+        b=IafK+N6e2TKqAr8XximP/pqYCMaPMnzs4xvluuhlW9jzQGrJT1cKuaWW2oUEx2ATkA
+         FfaYTr8dSu4bpm+q4ULzQ6qnLrbhRg4643tVBJc7oy12FLyeN81h6j6afku0AyatDj7S
+         MvfTwEomYnWN2yaVN1GK2vkFb8gUPsaD4Iu8IrOjogrjxjVoDbI7e7oDZE9PKZyOK9TD
+         HWFECYqOP5OAeJ1nFwUQRmx3pbtr/WeRa3Y3zL4cr3qp/HJ5a5xo2DK7LLS92RwcPoF7
+         TM5+mmua41yIjDZY708UZC1sNm7P2OgZuRqMgj/iaS1hAeLldOV5QZqI3LvTBiCwn3pj
+         iAmg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=Jj2ttQ2THMPhUoYDtzbYj/OH5/GDqP97DzUWiv0hCSo=;
+        b=RrvyuRcdFLLe2TDBJVmM9lilzm9JtL9pGiSsLIOSQiPk+KV/l2AB8zDn+A1+kXvmzc
+         43G68ehgvP7mcTpqEqaqeMyZdKiN9gnoBdr/iHdKWOJ/1Sx++Ybdw3viNJ2qIsqDiOJX
+         Xpyg070Jzb5GxqbTTuY4+eXA9BzsG784PQngewu/nU2fbNwdoMhACGbCBszwX+sIw8Cl
+         o+8xJuvvTDuenXB2rSUm+WGbGNeU1KRCSkCj5B7df1yVomenTu9zH/PRCDABE2i2mzBo
+         yl5lZ0Ofxq+Lo/JRCp84+vzaAZ1sjM3OGYBWT5QsNNA6wx7P39x6FbZFIegLUEPTHl4o
+         3FZw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id v17si2582798lje.83.2019.03.06.18.11.10
+        for <bondiev@gmail.com>;
+        Wed, 06 Mar 2019 18:11:11 -0800 (PST)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 19F5F4A812C4; Thu,  7 Mar 2019 03:11:10 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190307021110.19F5F4A812C4@vis1.localdomain>
+Date: Thu,  7 Mar 2019 03:11:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Mar  7 03:11:07 2019
+        Date Range Processed: yesterday
+                              ( 2019-Mar-06 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Mar  6 03:49:10 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.2 Recommended version: 0.101.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25379.cdiff [100%]
+    daily.cld updated (version: 25379, sigs: 2270447, f-level: 63, builder: raynman)
+    bytecode.cld is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6836790 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    141.98.81.185
+    46.161.27.51
+    80.82.77.33
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 18 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 3 Time(s)
+       /mahua/v/20190212/8dfcb2192a5052e5a152b9d8 ... 1191b09c_0.m3u8: 1 Time(s)
+       /robots.txt: 3 Time(s)
+       /sitemap.xml: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   14.362K  Bytes accepted                            14,707
+   14.362K  Bytes delivered                           14,707
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   22G  8.3G  73% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

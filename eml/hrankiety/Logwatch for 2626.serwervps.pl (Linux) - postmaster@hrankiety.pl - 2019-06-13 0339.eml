@@ -1,0 +1,138 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9A19A9F21543; Thu, 13 Jun 2019 03:39:20 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190613013920.9A19A9F21543@hrankiety.pl>
+Date: Thu, 13 Jun 2019 03:39:13 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Jun 13 03:39:13 2019
+        Date Range Processed: yesterday
+                              ( 2019-Jun-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Jun 12 03:26:19 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25477.cdiff [100%]
+    daily.cld updated (version: 25477, sigs: 1591931, f-level: 63, builder: raynman)
+    bytecode.cvd is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6158274 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    106.75.25.86
+    85.14.245.124
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /admin/: 1 Time(s)
+       /admin/index.php?route=common/login: 1 Time(s)
+       /admin/login.php: 1 Time(s)
+       /administrator/index.php: 1 Time(s)
+       /html/.env: 1 Time(s)
+       /hxcdm/cdm/hxcdm.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       29   *Warning: Pre-queue content-filter connection overload 
+     9142   SASL authentication failed 
+      472   Miscellaneous warnings 
+ 
+    3.158M  Bytes accepted                         3,311,477
+    3.199M  Bytes delivered                        3,353,877
+ ========   ================================================
+ 
+       49   Accepted                                  16.17%
+      254   Rejected                                  83.83%
+ --------   ------------------------------------------------
+      303   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                           0.39%
+      253   Reject unknown user                       99.61%
+ --------   ------------------------------------------------
+      254   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       24   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       24   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     9231   Connections made      
+     9230   Disconnections        
+       49   Removed from queue    
+       47   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       11T  3.8T  6.5T  37% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

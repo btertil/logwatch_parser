@@ -1,0 +1,195 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:134d:0:0:0:0 with SMTP id x13csp295978ejb;
+        Tue, 11 Aug 2020 18:41:12 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwWZJKA8zwV2IUpv53o3CQ4nrQsAaJz0vwXQ05ElEb2KVYR5USnIAXFEhgo+CR2M7kB3Ztj
+X-Received: by 2002:a2e:9111:: with SMTP id m17mr4610153ljg.263.1597196472586;
+        Tue, 11 Aug 2020 18:41:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1597196472; cv=none;
+        d=google.com; s=arc-20160816;
+        b=DJ+ohZesrw7Oe+GKfnMDrT1IJE8whGYPFaShfCK74Q1km9D8VsLcMnvllmzzTf5hpA
+         n5FjwFfPQLT0IXSxjFW85+ZBwXFAFQTaS4XdpfGUMOKLYUqQ+BNFmcLGuoMIzOKmvxIr
+         aS4QKcPz/VvKJMzw371FenSe32kTPtAtVWMAbHmptHJZ2Zm/BD5tAOgwctEenp7FPQLr
+         qqJ+dBFJc9nVSBOM5teL075MH66b7azlc5Bu44vd7u5NWOEv9ViGgQFEVRFN4VHXU0pS
+         NlZgJynaYXlpLPmoSFdYyEqIXT+rHJW+h7tQsEX2dViSiYYEi7htxbg02Oqm7zS1uAHa
+         HYVg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=DFlv7+O7c0bziO4ua3NFvlZQyrZiFCgdKlKYkCSWM14=;
+        b=aKGw3E711lieB2RRRzgorgcfETPqo/lU2gI3OF4mek77KAbYv2lgLD/+AajD7sEnPa
+         yaeo+CXvwgTVydXTHuCciZiM2RwNNcwGYHkSOHpHN15jjKX7vf9DGcg4owNLzlQiztKv
+         5O+lqVzlmq+pP0w8Ncz3MAuRtd6MuJem/WdbOOrJTRu6Ue74a2t+mu3VMbip1ocmEQb7
+         89694Jydp+PBglmUwPIFhKUeWtIci5qEuuYI4vkmnFJtYBbb0+IXqb/Nfah5/LJW3Uhw
+         Tgr8dtIS33jbUZ2EMkX1mx4lEq1D/aqfnHJv0gfSKDaOQ096R7xw+ODTBsGQJjfHJ6cl
+         lQpQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id i5si235851ljj.246.2020.08.11.18.41.12
+        for <bondiev@gmail.com>;
+        Tue, 11 Aug 2020 18:41:12 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 165DC4A8004D; Wed, 12 Aug 2020 03:41:10 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200812014111.165DC4A8004D@vis1.localdomain>
+Date: Wed, 12 Aug 2020 03:41:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Aug 12 03:41:08 2020
+        Date Range Processed: yesterday
+                              ( 2020-Aug-11 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Aug 11 03:26:11 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25900.cdiff [100%]
+    daily.cld updated (version: 25900, sigs: 3816878, f-level: 63, builder: raynman)
+    Can't query daily.25900.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8381874 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    82.118.235.147 -> www.google.com:443: 1 Time(s)
+ 
+ A total of 6 sites probed the server 
+    185.143.221.220
+    185.202.2.147
+    35.240.113.244
+    45.141.84.124
+    80.82.78.211
+    87.251.75.145
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 6 Time(s)
+       null: 6 Time(s)
+    404 Not Found
+       /HNAP1: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 2 Time(s)
+       /PHPMYADMIN/scripts/setup.php: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /admin//config.php: 2 Time(s)
+       /boaform/admin/formLogin: 4 Time(s)
+       /cgi-bin/config.exp: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 1 Time(s)
+       /config/getuser?index=0: 5 Time(s)
+       /database/scripts/setup.php: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /evox/about: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /manager/html: 2 Time(s)
+       /my/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /nmaplowercheck1597113083: 1 Time(s)
+       /pHpMyAdMiN/scripts/setup.php: 1 Time(s)
+       /phpAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/index.php?pma_username=root&pm ... $$w0rd&server=1: 1 Time(s)
+       /phpMyAdmin/index.php?pma_username=root&pm ... $w0rd1&server=1: 1 Time(s)
+       /phpMyAdmin/index.php?pma_username=root&pm ... swords&server=1: 1 Time(s)
+       /phpMyAdmin/scripts/db.init.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/db.init.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin1/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /robots.txt: 4 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /sdk: 1 Time(s)
+       /setup.php: 1 Time(s)
+       /sqladm/scripts/setup.php: 1 Time(s)
+       /sqladmin/scripts/setup.php: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /webfig/: 1 Time(s)
+    405 Method Not Allowed
+       www.google.com:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.278K  Bytes accepted                             4,381
+    4.278K  Bytes delivered                            4,381
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.242.132.226 (2626.serwervps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   20G   11G  67% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

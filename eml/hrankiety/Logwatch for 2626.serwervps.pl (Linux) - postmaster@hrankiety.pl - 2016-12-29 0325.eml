@@ -1,0 +1,120 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id BFCC035A1D99; Thu, 29 Dec 2016 03:25:04 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20161229022504.BFCC035A1D99@hrankiety.pl>
+Date: Thu, 29 Dec 2016 03:25:03 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Dec 29 03:25:03 2016
+        Date Range Processed: yesterday
+                              ( 2016-Dec-28 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Dec 28 03:39:05 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (157.25.5.183)...
+    Downloading daily-22784.cdiff [100%]
+    Downloading daily-22785.cdiff [100%]
+    Downloading daily-22786.cdiff [100%]
+    Downloading daily-22787.cdiff [100%]
+    Downloading daily-22788.cdiff [100%]
+    Downloading daily-22789.cdiff [100%]
+    daily.cld updated (version: 22789, sigs: 1192435, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 285, sigs: 57, f-level: 63, builder: bbaker)
+    Database updated (5411282 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /upload/_dispatch.php?lang=en&serv=0&sp=3& ... 8AF37D232&x64=0: 1 Time(s)
+       /your/killing/me/smalls.jpg: 2 Time(s)
+    404 Not Found
+       /HNAP1/: 2 Time(s)
+       /message.php?lang=en&serv=0&sp=3&corp=0&ac ... 8AF37D232&x64=0: 1 Time(s)
+       http://180.163.113.82/check_proxy: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      139   *Warning: Pre-queue content-filter connection overload 
+      182   SASL authentication failed 
+       21   Miscellaneous warnings 
+ 
+  155.103K  Bytes accepted                           158,825
+  149.049K  Bytes delivered                          152,626
+ ========   ================================================
+ 
+       12   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       12   Total                                    100.00%
+ ========   ================================================
+ 
+      193   Connections made      
+      193   Disconnections        
+       12   Removed from queue    
+       10   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        2   Numeric hostname      
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  47% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

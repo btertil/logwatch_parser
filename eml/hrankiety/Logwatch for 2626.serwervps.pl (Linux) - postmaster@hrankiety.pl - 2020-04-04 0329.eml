@@ -1,0 +1,183 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id EDF469F2047B; Sat,  4 Apr 2020 03:29:10 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200404012910.EDF469F2047B@hrankiety.pl>
+Date: Sat,  4 Apr 2020 03:29:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Apr  4 03:29:05 2020
+        Date Range Processed: yesterday
+                              ( 2020-Apr-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Apr  3 04:44:12 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25770.cdiff [100%]
+    daily.cld updated (version: 25770, sigs: 2245232, f-level: 63, builder: raynman)
+    Can't query daily.25770.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6810228 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    23.225.172.10 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 1 sites probed the server 
+    45.136.108.20
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       /boaform/admin/formPing: 2 Time(s)
+       /cgi-bin/mainfunction.cgi?action=login&key ... er=a&loginPwd=a: 5 Time(s)
+       /msdn.cpp: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /WebItemsLevel.cfg: 1 Time(s)
+       /Yealink/WebItemsLevel.cfg: 1 Time(s)
+       /Yealink/y000000000000.cfg: 1 Time(s)
+       /Yealink/y000000000027.cfg: 1 Time(s)
+       /Yealink/y000000000028.cfg: 1 Time(s)
+       /Yealink/y000000000029.cfg: 1 Time(s)
+       /Yealink/y000000000036.cfg: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 4 Time(s)
+       /database/index.php?lang=en: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /hudson: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /mysql/admin/index.php?lang=en: 1 Time(s)
+       /mysql/dbadmin/index.php?lang=en: 1 Time(s)
+       /mysql/index.php?lang=en: 1 Time(s)
+       /mysql/sqlmanager/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /phpMyadmin/index.php?lang=en: 1 Time(s)
+       /phpmyAdmin/index.php?lang=en: 1 Time(s)
+       /phpmyadmin/index.php?lang=en: 1 Time(s)
+       /phpmyadmin1/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2/index.php?lang=en: 1 Time(s)
+       /phpmyadmin3/index.php?lang=en: 1 Time(s)
+       /phpmyadmin4/index.php?lang=en: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /prov/WebItemsLevel.cfg: 1 Time(s)
+       /prov/y000000000000.cfg: 1 Time(s)
+       /prov/y000000000027.cfg: 1 Time(s)
+       /prov/y000000000028.cfg: 1 Time(s)
+       /prov/y000000000029.cfg: 1 Time(s)
+       /prov/y000000000036.cfg: 1 Time(s)
+       /prov/yealink/WebItemsLevel.cfg: 1 Time(s)
+       /prov/yealink/y000000000000.cfg: 1 Time(s)
+       /prov/yealink/y000000000027.cfg: 1 Time(s)
+       /prov/yealink/y000000000028.cfg: 1 Time(s)
+       /prov/yealink/y000000000029.cfg: 1 Time(s)
+       /prov/yealink/y000000000036.cfg: 1 Time(s)
+       /provisioning/WebItemsLevel.cfg: 1 Time(s)
+       /provisioning/y000000000000.cfg: 1 Time(s)
+       /provisioning/y000000000027.cfg: 1 Time(s)
+       /provisioning/y000000000028.cfg: 1 Time(s)
+       /provisioning/y000000000029.cfg: 1 Time(s)
+       /provisioning/y000000000036.cfg: 1 Time(s)
+       /provisioning/yealink/WebItemsLevel.cfg: 1 Time(s)
+       /provisioning/yealink/y000000000000.cfg: 1 Time(s)
+       /provisioning/yealink/y000000000027.cfg: 1 Time(s)
+       /provisioning/yealink/y000000000028.cfg: 1 Time(s)
+       /provisioning/yealink/y000000000029.cfg: 1 Time(s)
+       /provisioning/yealink/y000000000036.cfg: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /y000000000000.cfg: 1 Time(s)
+       /y000000000027.cfg: 1 Time(s)
+       /y000000000028.cfg: 1 Time(s)
+       /y000000000029.cfg: 1 Time(s)
+       /y000000000036.cfg: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      226   *Warning: Pre-queue content-filter connection overload 
+    11403   SASL authentication failed 
+      111   Miscellaneous warnings 
+ 
+    3.079M  Bytes accepted                         3,228,613
+    3.073M  Bytes delivered                        3,222,411
+ ========   ================================================
+ 
+       63   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       63   Total                                    100.00%
+ ========   ================================================
+ 
+    11475   Connections made      
+        1   Connections lost      
+    11474   Disconnections        
+       63   Removed from queue    
+       61   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  51% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

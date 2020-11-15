@@ -1,0 +1,134 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id AF4CA35A26B9; Sat, 13 Jan 2018 03:39:08 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180113023909.AF4CA35A26B9@hrankiety.pl>
+Date: Sat, 13 Jan 2018 03:39:06 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jan 13 03:39:06 2018
+        Date Range Processed: yesterday
+                              ( 2018-Jan-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Jan 12 03:47:31 2018
+ 
+ Last Status:
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 78.46.184.220)
+    Trying host db.local.clamav.net (91.219.236.218)...
+    Downloading daily-24211.cdiff [100%]
+    Downloading daily-24212.cdiff [100%]
+    Downloading daily-24213.cdiff [100%]
+    daily.cld updated (version: 24213, sigs: 1822588, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    Database updated (6388912 signatures) from db.local.clamav.net (IP: 91.219.236.218)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    66.240.192.138
+    89.73.82.159
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 8 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 2 Time(s)
+       /a2billing/common/javascript/misc.js: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /index.action: 2 Time(s)
+       /invoker/JMXInvokerServlet: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 2 Time(s)
+       /xxzy: 1 Time(s)
+    408 Request Timeout
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+     1158   *Warning: Pre-queue content-filter connection overload 
+     1248   SASL authentication failed 
+       49   Miscellaneous warnings 
+ 
+  518.894K  Bytes accepted                           531,347
+  512.842K  Bytes delivered                          525,150
+ ========   ================================================
+ 
+       23   Accepted                                  79.31%
+        6   Rejected                                  20.69%
+ --------   ------------------------------------------------
+       29   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                          50.00%
+        3   Reject sender address                     50.00%
+ --------   ------------------------------------------------
+        6   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     1242   Connections made      
+     1242   Disconnections        
+       23   Removed from queue    
+       21   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.73.82.159 (89-73-82-159.dynamic.chello.pl): 6 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   39G   12G  77% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

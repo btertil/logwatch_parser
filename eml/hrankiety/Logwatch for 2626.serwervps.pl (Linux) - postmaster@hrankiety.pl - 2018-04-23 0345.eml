@@ -1,0 +1,134 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 61A7A9F202E4; Mon, 23 Apr 2018 03:45:11 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180423014511.61A7A9F202E4@hrankiety.pl>
+Date: Mon, 23 Apr 2018 03:45:09 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Apr 23 03:45:09 2018
+        Date Range Processed: yesterday
+                              ( 2018-Apr-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Apr 22 03:32:20 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.4 Recommended version: 0.100.0
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24499.cdiff [100%]
+    Downloading daily-24500.cdiff [100%]
+    Downloading daily-24501.cdiff [100%]
+    daily.cld updated (version: 24501, sigs: 1917090, f-level: 63, builder: neo)
+    Can't query daily.24501.85.1.0.596F2F82.ping.clamav.net
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6483414 signatures) from db.local.clamav.net (IP: 89.111.47.130)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 4 sites probed the server 
+    164.52.24.140
+    185.222.211.18
+    211.23.154.138
+    60.191.38.77
+ 
+ Requests with error response codes
+    400 Bad Request
+       /server.js: 1 Time(s)
+       /x: 1 Time(s)
+       HTTP/1.1: 1 Time(s)
+       null: 4 Time(s)
+       test: 1 Time(s)
+    404 Not Found
+       /index.action: 1 Time(s)
+       /index.do: 1 Time(s)
+       /manager/html: 2 Time(s)
+       /struts2-rest-showcase/orders.xhtml: 1 Time(s)
+       /web.config: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      108   *Warning: Pre-queue content-filter connection overload 
+      775   SASL authentication failed 
+       29   Miscellaneous warnings 
+ 
+  444.729K  Bytes accepted                           455,403
+  436.153K  Bytes delivered                          446,621
+ ========   ================================================
+ 
+       16   Accepted                                  88.89%
+        2   Rejected                                  11.11%
+ --------   ------------------------------------------------
+       18   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      782   Connections made      
+      782   Disconnections        
+       16   Removed from queue    
+       12   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   37G   14G  73% /
+ none             95G  4.0K   95G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

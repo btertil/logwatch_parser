@@ -1,0 +1,91 @@
+Return-Path: <no-reply@rapidssl.com>
+Delivered-To: postmaster@hrankiety.pl
+Received: from des.digicert.com (unknown [34.213.233.92])
+	by hrankiety.pl (Postfix) with ESMTPS id EE4C69F20FEB
+	for <postmaster@hrankiety.pl>; Thu, 21 Feb 2019 11:40:10 +0300 (MSK)
+Date: Thu, 21 Feb 2019 01:40:07 -0700 (MST)
+From: no-reply@rapidssl.com
+To: postmaster@hrankiety.pl
+Message-ID: <1546040270.13280920.1550738407975@digimail02.slc.digicert.com>
+Subject: Subject: [Action Required]: Approve Certificate Request for
+ hrankiety.pl (Order #18037492)
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_13280919_1514596398.1550738407624"
+
+------=_Part_13280919_1514596398.1550738407624
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+ We've received a RapidSSL certificate request for hrankiety.pl.
+
+ Order info:
+ Domain name: hrankiety.pl
+ Order number: 18037492
+ Ordered on: 21 Feb 2019
+ Contact: Bartosz Tertil bondiev@gmail.com
+ Certificate type: DV
+ 
+ What's next?
+
+ Before we can issue your certificate, approve the request to verify that you control hrankiety.pl.
+
+ View the order details and complete the request here (link is valid for 30 days):
+   https://dcv.rapidssl.com/link/domain-control-validation/?t=n012vkxncf1jn4nbrv7qcfkf521lhqx9&o=1562375888
+
+ Contact us if you have questions or need to reject the request here:
+ https://www.rapidssl.com/contact/
+ Support ID: 8894-9287-1994-8879
+
+ Thank you,
+ RapidSSL Customer Support
+ https://www.rapidssl.com/contact/
+
+------=_Part_13280919_1514596398.1550738407624
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>RapidSSL Request</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<body style="margin-top:0;margin-bottom:0;margin-left:0;margin-right:0;">
+    <div>
+      Hello,<br>
+ <br>
+ We've received a RapidSSL certificate request for hrankiety.pl. <br>
+ <br>
+ Order info:<br>
+ Domain name: hrankiety.pl<br>
+ Order number: 18037492
+ <br>Ordered on: 21 Feb 2019
+ <br>Contact: Bartosz Tertil bondiev@gmail.com
+ <br>Certificate type: DV
+ <br>
+ <br>
+ What's next?<br>
+ <br>
+ Before we can issue your certificate, approve the request to verify that you control hrankiety.pl.<br>
+ <br>
+ View the order details and complete the request here (link is valid for 30 days):<br>
+   https://dcv.rapidssl.com/link/domain-control-validation/?t=n012vkxncf1jn4nbrv7qcfkf521lhqx9&o=1562375888<br>
+ <br>
+ Contact us if you have questions or need to reject the request here:<br>
+ https://www.rapidssl.com/contact/<br>
+ Support ID: 8894-9287-1994-8879
+ <br>
+ <br>
+ Thank you,<br>
+ RapidSSL Customer Support<br>
+ https://www.rapidssl.com/contact/<br>
+    </div>
+</body>
+</html>
+
+------=_Part_13280919_1514596398.1550738407624--

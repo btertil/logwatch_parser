@@ -1,0 +1,114 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 640EA35A1E11; Sun, 25 Dec 2016 03:08:04 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20161225020804.640EA35A1E11@hrankiety.pl>
+Date: Sun, 25 Dec 2016 03:08:03 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Dec 25 03:08:03 2016
+        Date Range Processed: yesterday
+                              ( 2016-Dec-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Dec 24 03:27:05 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-22760.cdiff [100%]
+    Downloading daily-22761.cdiff [100%]
+    Downloading daily-22762.cdiff [100%]
+    Downloading daily-22763.cdiff [100%]
+    Downloading daily-22764.cdiff [100%]
+    Downloading daily-22765.cdiff [100%]
+    daily.cld updated (version: 22765, sigs: 1152120, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 285, sigs: 57, f-level: 63, builder: bbaker)
+    Database updated (5370967 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /templets/default/style/dedecms.css: 2 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        4   *Warning: Pre-queue content-filter connection overload 
+       52   SASL authentication failed 
+        7   Miscellaneous warnings 
+ 
+  195.050K  Bytes accepted                           199,731
+  188.996K  Bytes delivered                          193,532
+ ========   ================================================
+ 
+        5   Accepted                                  55.56%
+        4   Rejected                                  44.44%
+ --------   ------------------------------------------------
+        9   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        4   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       58   Connections made      
+       58   Disconnections        
+        5   Removed from queue    
+        3   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  47% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

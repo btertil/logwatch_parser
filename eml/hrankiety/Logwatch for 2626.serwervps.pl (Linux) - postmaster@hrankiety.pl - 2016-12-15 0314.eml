@@ -1,0 +1,135 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 7D6BA35A1DE8; Thu, 15 Dec 2016 03:14:04 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20161215021404.7D6BA35A1DE8@hrankiety.pl>
+Date: Thu, 15 Dec 2016 03:14:03 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Dec 15 03:14:03 2016
+        Date Range Processed: yesterday
+                              ( 2016-Dec-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Dec 14 03:28:04 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (85.254.217.235)...
+    Downloading daily-22706.cdiff [100%]
+    Downloading daily-22707.cdiff [100%]
+    Downloading daily-22708.cdiff [100%]
+    Downloading daily-22709.cdiff [100%]
+    Downloading daily-22710.cdiff [100%]
+    Downloading daily-22711.cdiff [100%]
+    daily.cld updated (version: 22711, sigs: 1030980, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 285, sigs: 57, f-level: 63, builder: bbaker)
+    Database updated (5249827 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    139.162.13.205
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /admin/config.php: 1 Time(s)
+       /login!check.do: 2 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       http://180.163.113.82/check_proxy: 1 Time(s)
+       http://testp4.pospr.waw.pl/testproxy.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      134   *Warning: Pre-queue content-filter connection overload 
+      175   SASL authentication failed 
+       83   Miscellaneous warnings 
+ 
+  640.559K  Bytes accepted                           655,932
+  634.505K  Bytes delivered                          649,733
+ ========   ================================================
+ 
+       36   Accepted                                  61.02%
+       23   Rejected                                  38.98%
+ --------   ------------------------------------------------
+       59   Total                                    100.00%
+ ========   ================================================
+ 
+        7   Reject HELO/EHLO                          30.43%
+       16   Reject sender address                     69.57%
+ --------   ------------------------------------------------
+       23   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        2   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        2   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      221   Connections made      
+      221   Disconnections        
+       36   Removed from queue    
+       34   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        2   Numeric hostname      
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  46% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

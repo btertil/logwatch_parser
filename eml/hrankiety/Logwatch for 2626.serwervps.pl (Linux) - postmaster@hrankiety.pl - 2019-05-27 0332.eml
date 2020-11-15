@@ -1,0 +1,164 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 50F049F21474; Mon, 27 May 2019 03:32:28 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190527013228.50F049F21474@hrankiety.pl>
+Date: Mon, 27 May 2019 03:32:21 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon May 27 03:32:21 2019
+        Date Range Processed: yesterday
+                              ( 2019-May-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun May 26 03:28:19 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25460.cdiff [100%]
+    daily.cld updated (version: 25460, sigs: 1581004, f-level: 63, builder: raynman)
+    bytecode.cvd is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6147347 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    109.199.64.237
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       //wp-login.php: 1 Time(s)
+       /GponForm/diag_Form?style/: 1 Time(s)
+       /dashboardlog: 1 Time(s)
+       /dashboardlog.php: 1 Time(s)
+       /webdav/: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+    408 Request Timeout
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       67   *Warning: Pre-queue content-filter connection overload 
+     2981   SASL authentication failed 
+      240   Miscellaneous warnings 
+ 
+  631.175K  Bytes accepted                           646,323
+  622.601K  Bytes delivered                          637,543
+ ========   ================================================
+ 
+       17   Accepted                                   5.59%
+      287   Rejected                                  94.41%
+ --------   ------------------------------------------------
+      304   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                           0.35%
+      286   Reject unknown user                       99.65%
+ --------   ------------------------------------------------
+      287   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       54   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       54   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     5069   Connections made      
+     5068   Disconnections        
+       17   Removed from queue    
+       13   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        8   Timeout (inbound)     
+        1   SMTP commands dialog error 
+        3   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 81 times
+       80.158.18.218 (ecs-80-158-18-218.reverse.open-telekom-cloud.com): 2 times
+       185.17.41.230 (backup): 2 times
+       137.117.244.55: 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 83 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    kernel-2.6.32-754.14.2.el6.i686
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    kernel-headers-2.6.32-754.14.2.el6.i686
+    kernel-firmware-2.6.32-754.14.2.el6.noarch
+    fail2ban-0.9.6-1.el6.1.noarch
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   15G   36G  29% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

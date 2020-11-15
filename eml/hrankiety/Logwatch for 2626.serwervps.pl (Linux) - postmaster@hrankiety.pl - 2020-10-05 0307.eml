@@ -1,0 +1,150 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 4D38834287B; Mon,  5 Oct 2020 03:07:24 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20201005010724.4D38834287B@hrankiety.pl>
+Date: Mon,  5 Oct 2020 03:07:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Oct  5 03:07:05 2020
+        Date Range Processed: yesterday
+                              ( 2020-Oct-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Oct  4 03:12:06 2020
+ 
+ Last Status:
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25946.cdiff [100%]
+    daily.cld updated (version: 25946, sigs: 4326622, f-level: 63, builder: raynman)
+    Can't query daily.25946.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8891618 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    163.172.168.251 -> www.bing.com:443: 1 Time(s)
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+       HTTP/1.0: 1 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       /.well-known/security.txt: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /admin//config.php: 1 Time(s)
+       /ads.txt: 1 Time(s)
+       /ajax: 1 Time(s)
+       /api/jsonws/invoke: 1 Time(s)
+       /boaform/admin/formLogin?username=adminisp&psd=adminisp: 1 Time(s)
+       /cgi-bin/config.exp: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /hudson: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 2 Time(s)
+       /ocena360/mailto:support@hrankiety.pl: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /solr/admin/info/system?wt=json: 2 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       http://kurczak.waw.pl/4383d76304a0c9d554c9 ... 563aae8ba59426a: 1 Time(s)
+    405 Method Not Allowed
+       www.bing.com:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      141   *Warning: Pre-queue content-filter connection overload 
+    39928   SASL authentication failed 
+      707   Miscellaneous warnings 
+ 
+   14.140K  Bytes accepted                            14,479
+    5.589K  Bytes delivered                            5,723
+ ========   ================================================
+ 
+        5   Accepted                                  71.43%
+        2   Rejected                                  28.57%
+ --------   ------------------------------------------------
+        7   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        2   4xx Reject relay denied                    0.15%
+     1338   4xx Reject sender address                 99.85%
+ --------   ------------------------------------------------
+     1340   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+    41263   Connections made      
+        3   Connections lost      
+    41256   Disconnections        
+        5   Removed from queue    
+        1   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+       30   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 27 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 29 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   32G   16G  67% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

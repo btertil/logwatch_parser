@@ -1,0 +1,169 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:bc50:0:0:0:0 with SMTP id s16csp2561258ejv;
+        Sat, 14 Dec 2019 18:14:13 -0800 (PST)
+X-Google-Smtp-Source: APXvYqyPMVHJWh4yd5W4bUaEo46N1B6bJFYaU8y85QgPIxjUNNCReed1NLzaHLrkUgKwMS3OX5y7
+X-Received: by 2002:ac2:44ce:: with SMTP id d14mr12899198lfm.140.1576376053072;
+        Sat, 14 Dec 2019 18:14:13 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1576376053; cv=none;
+        d=google.com; s=arc-20160816;
+        b=aF8tYM7gQGbTjmxD+7+69x9qm8wikKwzdgrUz7NwFl+SY1nh5sKvuO0la2Pk87CEZc
+         4yrLpJRohx4GgFQFZ630OHuEuBs2kZTJQSh4dCz+4NZTbrxbPsP6k0YLblqPS7Ke2Mx1
+         5NSomdRA13Zlbl+IxrPOp8HymjSdjes3Fd8Ov+BW5PhbyTrQJcmeZb6idZleLwst+VLj
+         Zg/Ydw3tugArmXn5wdcYURNWNGaX5lT+Csh0Npw7qKadPJKXVCZty5E4IlmbSTBp2EMC
+         2LZjqvk8rs0CVVH16OVjwgjqsoJ/hfbh9aQz54ptEsvZETr0bIPrbTYD24Z9MpFKj1dX
+         rpaA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=pcf0KMZIVyUkbZHEz8Ewj0vM67QRcs3pDcwL+vKytsg=;
+        b=b5cb6ba32/BC9gDqLed7hp2o4FwAs72b3UtmpgiSIPfUszDwS+HmBPlY+KXJBxHQYZ
+         NBEGy1ybPudPtlJwn7bXexKg0QucuPFKlFHUFYoTBUKwHfaTnogcaZRdUEb1KkNqtLBI
+         ogmlWr2P7vmq6iD9+d+a3YAZCy5F+UPF3tB4SxUqVA6QhOV6TNSJr4m/NzdQeNULqsCq
+         evKX8zgD33dK8/XTpqz+42SZvUpOz+xikei8dlg2sn89lbn94heXgL9KH6gxv4C2L58n
+         dvcrirB3bKDKtLL/BXcbRG54l/NqEZI0gjSii03Q1EeGJiWbwmcf3P0Hd1GiobXSR10E
+         MLvQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id f3si10964334ljn.102.2019.12.14.18.14.12
+        for <bondiev@gmail.com>;
+        Sat, 14 Dec 2019 18:14:13 -0800 (PST)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 732504A8004D; Sun, 15 Dec 2019 03:14:11 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191215021411.732504A8004D@vis1.localdomain>
+Date: Sun, 15 Dec 2019 03:14:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Dec 15 03:14:08 2019
+        Date Range Processed: yesterday
+                              ( 2019-Dec-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Dec 14 03:35:11 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25662.cdiff [100%]
+    daily.cld updated (version: 25662, sigs: 2049922, f-level: 63, builder: raynman)
+    Can't query daily.25662.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6614918 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    185.153.199.3
+    193.188.22.187
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /contact/6EF0B8049D8397444E0D1AA9U2DQG/markup: 1 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       //admin/config.php?password%5B0%5D=bebydviyx&username=admin: 1 Time(s)
+       /HNAP1/: 2 Time(s)
+       /MAPI/API: 1 Time(s)
+       /WSMAN: 1 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /robots.txt: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    3.866K  Bytes accepted                             3,959
+    3.866K  Bytes delivered                            3,959
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 8 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    python-pip-7.1.0-2.el6.noarch
+    nss-softokn-freebl-3.44.0-6.el6_10.i686
+    nss-softokn-3.44.0-6.el6_10.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   20G   11G  64% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

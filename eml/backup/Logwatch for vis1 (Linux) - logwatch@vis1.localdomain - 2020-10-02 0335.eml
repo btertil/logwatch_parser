@@ -1,0 +1,150 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:a14a:0:0:0:0 with SMTP id bu10csp877129ejb;
+        Thu, 1 Oct 2020 18:39:25 -0700 (PDT)
+X-Received: by 2002:a2e:8907:: with SMTP id d7mr16874lji.206.1601602525535;
+        Thu, 01 Oct 2020 18:35:25 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzGRmYsFuHUV9JG4cjDA8vWaxM4eQY6kfPtj6WYft96k+NCkwsP57FjdCka1+EGuSSCPG9Q
+X-Received: by 2002:a2e:8907:: with SMTP id d7mr16858lji.206.1601602524349;
+        Thu, 01 Oct 2020 18:35:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601602524; cv=none;
+        d=google.com; s=arc-20160816;
+        b=eg8gbeHcxg9vYQP0i/wSx3k22x5JtLzjwrXxjueh9mNpds3jKhULj9o4jVhYqTZUYu
+         nXhIrR8RCfc9/OTmpYBy/aMpLmukS6iMwLS9nIRTfysvxEd4/A0DnfRcQIrfD0L2/u8x
+         NJrjL7gD/UY3zfRqjZwLSVTsWmHnJThu2cX5nQKuZeos5Etm2VA5hSTmNWK3yqWriwJS
+         EuiAjcoNNo3UkGUAlcmafNjcBeM5epIhhzJniqIun15VdN7g3B+1x02K5rey+W7rp56H
+         TPgvxaohBAAqDL5Exrjl1BUfWfYPQCJIFlft9qO4IEqeiVnj4ZhA+EbJWRP7U3H+X+sw
+         MXEg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=JJK6Ik5IDJiKKIFOwOtqwGwBkjxDEwfRxGrlZhscY4M=;
+        b=04ppC49qEAe6PheyCtMS5A5vSmcCvP/btlG/zwSiMYX7eeNEErPf10nbV2UBGrAuHZ
+         IVpKhHe/f1MLxgE7pD9c8iRvtxkE1dFUQTO7f/fcnycqiZROrN2ABmA0NE4U3w5W3TxU
+         lUc6Qb1sZ3vwChyVdTubBO8huR5snNrwU9NP0K8o4PQNypGt9saso2Cjytmf3VMnPRH/
+         QOV3ZSEPix8hhbHhQ1xt3eoC/aJsWMmnoqA8YkplM7K+KfKYgwGshgeuA89x1eADw4ih
+         BSHIv+P/TTcyxQLD8uaNExDQtARAc/sKlPoVVPLpktOPqK3wDseF9FLiqFf+EcgtYtUj
+         zInQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id 140si2522732lfk.346.2020.10.01.18.35.13
+        for <bondiev@gmail.com>;
+        Thu, 01 Oct 2020 18:35:24 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id BF0964A8004F; Fri,  2 Oct 2020 03:35:12 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20201002013512.BF0964A8004F@vis1.localdomain>
+Date: Fri,  2 Oct 2020 03:35:09 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Oct  2 03:35:09 2020
+        Date Range Processed: yesterday
+                              ( 2020-Oct-01 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Oct  1 03:24:11 2020
+ 
+ Last Status:
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25943.cdiff [100%]
+    daily.cld updated (version: 25943, sigs: 4323945, f-level: 63, builder: raynman)
+    Can't query daily.25943.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8888941 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    185.202.1.202
+    80.82.77.33
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../proc/: 2 Time(s)
+       /HNAP1/: 1 Time(s)
+       null: 10 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 1 Time(s)
+       /admin//config.php: 3 Time(s)
+       /api/jsonws/invoke: 2 Time(s)
+       /boaform/admin/formLogin?username=ec8&psd=ec8: 1 Time(s)
+       /epa/scripts/win/nsepa_setup.exe: 1 Time(s)
+       /hudson: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 2 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /robots.txt: 5 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /solr/admin/info/system?wt=json: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.429K  Bytes accepted                             4,535
+    4.429K  Bytes delivered                            4,535
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.242.132.226 (2626.serwervps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   22G  8.7G  72% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

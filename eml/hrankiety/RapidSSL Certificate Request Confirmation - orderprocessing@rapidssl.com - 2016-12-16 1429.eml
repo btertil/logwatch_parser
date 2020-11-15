@@ -1,0 +1,47 @@
+Return-Path: <orderprocessing@rapidssl.com>
+Delivered-To: postmaster@hrankiety.pl
+Received: from authmail1.symauth.com (unknown [69.58.183.55])
+	by hrankiety.pl (Postfix) with ESMTPS id DA8FD35A1DF2
+	for <postmaster@hrankiety.pl>; Fri, 16 Dec 2016 16:29:33 +0300 (MSK)
+Received: from smtp5fo-d1-inf.sso-fo.ilg1.vrsn.com (smtp5fo-d1-inf.sso-fo.ilg1.vrsn.com [10.244.24.61])
+	by authmail1.symauth.com (8.13.8/8.13.8) with ESMTP id uBGDTWek004924;
+	Fri, 16 Dec 2016 13:29:32 GMT
+Date: Fri, 16 Dec 2016 13:29:32 +0000 (GMT)
+From: orderprocessing@rapidssl.com
+To: postmaster@hrankiety.pl
+Message-ID: <813109578.1351481894972376.JavaMail.support@geotrust.com>
+Subject: RapidSSL Certificate Request Confirmation
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-Loop-Check: 
+
+ORDER APPROVAL
+
+Dear Domain Administrator,
+
+You are receiving this email because you are the Domain Administrator for www.hrankiety.pl and the person identified below has requested a RapidSSL certificate for:
+
+www.hrankiety.pl
+hrankiety.pl
+
+
+Applicant Information:
+     Name:   Agnieszka Tertil
+     Email:  admin@hrankiety.pl
+     Phone:  48602204752
+
+Agnieszka Tertil requests that you come to the URL below to review and approve this certificate request:
+
+     https://products.geotrust.com/orders/A.do?p=AcB56olTMqFnhyH9qlwNF
+
+Please follow the above link and click either the I APPROVE or I DO NOT APPROVE button.
+
+When you click I APPROVE the certificate will be issued and emailed to the Applicant, Approver, and Technical contacts.
+
+If you click I DO NOT APPROVE the certificate application will be cancelled.
+
+Thank you,
+RapidSSL Customer Support
+http://www.rapidssl.com/support
+Live Chat: https://www.rapidssl.com/chat

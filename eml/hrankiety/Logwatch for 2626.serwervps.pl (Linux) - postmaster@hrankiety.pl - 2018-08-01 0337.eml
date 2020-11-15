@@ -1,0 +1,172 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9E7979F201D2; Wed,  1 Aug 2018 03:37:15 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180801013715.9E7979F201D2@hrankiety.pl>
+Date: Wed,  1 Aug 2018 03:37:09 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Aug  1 03:37:09 2018
+        Date Range Processed: yesterday
+                              ( 2018-Jul-31 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Jul 31 03:50:17 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24796.cdiff [100%]
+    Downloading daily-24797.cdiff [100%]
+    Downloading daily-24798.cdiff [100%]
+    daily.cld updated (version: 24798, sigs: 2032471, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 326, sigs: 93, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6598813 signatures) from db.local.clamav.net (IP: 104.16.186.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    182.48.105.210
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 7 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /12.php: 1 Time(s)
+       /56.php: 1 Time(s)
+       /9678.php: 1 Time(s)
+       /a2billing/admin/Public/PP_error.php?c=accessdenied: 2 Time(s)
+       /admin/assets/js/views/login.js: 2 Time(s)
+       /ak47.php: 1 Time(s)
+       /angge.php: 1 Time(s)
+       /aotu.php: 1 Time(s)
+       /aw.php: 1 Time(s)
+       /cainiao.php: 1 Time(s)
+       /cgi-bin/luci/;stok=redacted/expert/mainte ... sh%20/tmp/rz%20: 2 Time(s)
+       /cmd.php: 1 Time(s)
+       /conflg.php: 1 Time(s)
+       /data.php: 1 Time(s)
+       /db.init.php: 1 Time(s)
+       /db__.init.php: 1 Time(s)
+       /db_session.init.php: 1 Time(s)
+       /defect.php: 1 Time(s)
+       /fack.php: 1 Time(s)
+       /feixiang.php: 1 Time(s)
+       /hh.php: 1 Time(s)
+       /hm.php: 1 Time(s)
+       /l7.php: 1 Time(s)
+       /l8.php: 1 Time(s)
+       /lindex.php: 1 Time(s)
+       /log.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /min.php: 1 Time(s)
+       /mx.php: 1 Time(s)
+       /mz.php: 1 Time(s)
+       /pe.php: 1 Time(s)
+       /phpstudy.php: 1 Time(s)
+       /q.php: 2 Time(s)
+       /qaq.php: 3 Time(s)
+       /qq.php: 3 Time(s)
+       /recordings/: 2 Time(s)
+       /s.php: 1 Time(s)
+       /sheep.php: 1 Time(s)
+       /ssaa.php: 1 Time(s)
+       /system.php: 1 Time(s)
+       /w.php: 1 Time(s)
+       /wanan.php: 1 Time(s)
+       /wc.php: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /webslee.php: 1 Time(s)
+       /weixiao.php: 1 Time(s)
+       /wshell.php: 1 Time(s)
+       /wuwu11.php: 1 Time(s)
+       /xiao.php: 1 Time(s)
+       /xiaoma.php: 1 Time(s)
+       /xshell.php: 1 Time(s)
+       /xw.php: 1 Time(s)
+       /xw1.php: 1 Time(s)
+       /xx.php: 2 Time(s)
+       /yao.php: 1 Time(s)
+       /yumo.php: 1 Time(s)
+       /zuoshou.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       48   *Warning: Pre-queue content-filter connection overload 
+     7013   SASL authentication failed 
+       45   Miscellaneous warnings 
+ 
+    1.283M  Bytes accepted                         1,345,145
+    1.277M  Bytes delivered                        1,338,939
+ ========   ================================================
+ 
+       25   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       25   Total                                    100.00%
+ ========   ================================================
+ 
+     7075   Connections made      
+     7074   Disconnections        
+       25   Removed from queue    
+       23   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        3   Timeout (inbound)     
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  46% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

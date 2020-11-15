@@ -1,0 +1,134 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id A3E3A35A19C0; Fri,  7 Oct 2016 03:17:07 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20161007011707.A3E3A35A19C0@hrankiety.pl>
+Date: Fri,  7 Oct 2016 03:17:03 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Oct  7 03:17:03 2016
+        Date Range Processed: yesterday
+                              ( 2016-Oct-06 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Oct  6 03:29:05 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-22306.cdiff [100%]
+    Downloading daily-22307.cdiff [100%]
+    Downloading daily-22308.cdiff [100%]
+    Downloading daily-22309.cdiff [100%]
+    Downloading daily-22310.cdiff [100%]
+    Downloading daily-22311.cdiff [100%]
+    daily.cld updated (version: 22311, sigs: 665532, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 283, sigs: 53, f-level: 63, builder: neo)
+    Database updated (4884375 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /admin/config.php: 1 Time(s)
+       /browserconfig.xml: 5 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> support: 2 Time(s)
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+       15   SASL authentication failed 
+      121   Miscellaneous warnings 
+ 
+    4.863M  Bytes accepted                         5,099,153
+    5.034M  Bytes delivered                        5,278,569
+ ========   ================================================
+ 
+      768   Accepted                                  99.87%
+        1   Rejected                                   0.13%
+ --------   ------------------------------------------------
+      769   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      104   Connections made      
+      470   Connections lost      
+      104   Disconnections        
+      768   Removed from queue    
+       80   Delivered             
+      690   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Numeric hostname      
+       10   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.73.65.124 (89-73-65-124.dynamic.chello.pl): 7 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   17G   34G  33% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

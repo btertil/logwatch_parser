@@ -1,0 +1,183 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 17BC59F20432; Thu, 10 May 2018 03:14:14 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180510011414.17BC59F20432@hrankiety.pl>
+Date: Thu, 10 May 2018 03:14:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu May 10 03:14:10 2018
+        Date Range Processed: yesterday
+                              ( 2018-May-09 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed May  9 03:30:27 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.4 Recommended version: 0.100.0
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24550.cdiff [100%]
+    Downloading daily-24551.cdiff [100%]
+    Downloading daily-24552.cdiff [100%]
+    daily.cld updated (version: 24552, sigs: 1938723, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6505047 signatures) from db.local.clamav.net (IP: 91.219.236.218)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    171.13.14.30 -> 133.130.126.119:43: 1 Time(s)
+    171.13.14.4 -> 133.130.126.119:43: 1 Time(s)
+ 
+ A total of 2 sites probed the server 
+    164.52.24.140
+    211.23.154.138
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       null: 2 Time(s)
+       test: 1 Time(s)
+    404 Not Found
+       /PMA/index.php: 3 Time(s)
+       /PMA2/index.php: 3 Time(s)
+       /admin/PMA/index.php: 3 Time(s)
+       /admin/index.php: 3 Time(s)
+       /admin/mysql/index.php: 3 Time(s)
+       /admin/mysql2/index.php: 3 Time(s)
+       /admin/phpMyAdmin/index.php: 3 Time(s)
+       /admin/phpmyadmin/index.php: 2 Time(s)
+       /admin/phpmyadmin2/index.php: 2 Time(s)
+       /admin/pma/index.php: 3 Time(s)
+       /claroline/phpMyAdmin/index.php: 3 Time(s)
+       /db/index.php: 3 Time(s)
+       /dbadmin/index.php: 3 Time(s)
+       /index.action: 2 Time(s)
+       /index.php: 3 Time(s)
+       /manager/html: 1 Time(s)
+       /myadmin/index.php: 3 Time(s)
+       /myadmin2/index.php: 3 Time(s)
+       /mysql-admin/index.php: 3 Time(s)
+       /mysql/index.php: 2 Time(s)
+       /mysqladmin/index.php: 3 Time(s)
+       /phpMyAdmin/index.php: 3 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 3 Time(s)
+       /phpMyAdminold/index.php: 3 Time(s)
+       /phpMyadmin_bak/index.php: 3 Time(s)
+       /phpadmin/index.php: 3 Time(s)
+       /phpma/index.php: 3 Time(s)
+       /phpmyadmin-old/index.php: 2 Time(s)
+       /phpmyadmin/index.php: 2 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 3 Time(s)
+       /phpmyadmin0/index.php: 3 Time(s)
+       /phpmyadmin1/index.php: 3 Time(s)
+       /phpmyadmin2/index.php: 3 Time(s)
+       /plugins/content/plugin_googlemap2_proxy.php?url=: 1 Time(s)
+       /plugins/system/plugin_googlemap2/plugin_g ... _proxy.php?url=: 1 Time(s)
+       /plugins/system/plugin_googlemap2_proxy.php?url=: 1 Time(s)
+       /pma-old/index.php: 3 Time(s)
+       /pma/index.php: 3 Time(s)
+       /pmamy/index.php: 3 Time(s)
+       /pmamy2/index.php: 3 Time(s)
+       /pmd/index.php: 3 Time(s)
+       /tools/phpMyAdmin/index.php: 3 Time(s)
+       /typo3/phpmyadmin/index.php: 3 Time(s)
+       /web/phpMyAdmin/index.php: 3 Time(s)
+       /wls-wsat/CoordinatorPortType: 3 Time(s)
+       /www/phpMyAdmin/index.php: 3 Time(s)
+       /xampp/phpmyadmin/index.php: 3 Time(s)
+    405 Method Not Allowed
+       /: 3 Time(s)
+       133.130.126.119:43: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      257   *Warning: Pre-queue content-filter connection overload 
+     1204   SASL authentication failed 
+       74   Miscellaneous warnings 
+ 
+    1.794M  Bytes accepted                         1,881,317
+    1.788M  Bytes delivered                        1,875,113
+ ========   ================================================
+ 
+       39   Accepted                                  95.12%
+        2   Rejected                                   4.88%
+ --------   ------------------------------------------------
+       41   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      169   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+      169   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     1263   Connections made      
+     1263   Disconnections        
+       39   Removed from queue    
+       37   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   37G   14G  74% /
+ none             95G  4.0K   95G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

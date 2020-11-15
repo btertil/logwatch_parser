@@ -1,0 +1,142 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9201935A2127; Thu,  8 Jun 2017 03:09:08 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170608010908.9201935A2127@hrankiety.pl>
+Date: Thu,  8 Jun 2017 03:09:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Jun  8 03:09:06 2017
+        Date Range Processed: yesterday
+                              ( 2017-Jun-07 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Jun  7 03:34:14 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-23451.cdiff [100%]
+    daily.cld updated (version: 23451, sigs: 2082621, f-level: 63, builder: neo)
+    Downloading bytecode-302.cdiff [100%]
+    Downloading bytecode-303.cdiff [100%]
+    bytecode.cld updated (version: 303, sigs: 59, f-level: 63, builder: anvilleg)
+    Database updated (6301470 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    89.163.146.57
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+    404 Not Found
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /vtigercrm/vtigerservice.php: 2 Time(s)
+       http://180.163.113.82/check_proxy: 1 Time(s)
+       http://testp3.pospr.waw.pl/testproxy.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      772   *Warning: Pre-queue content-filter connection overload 
+      967   SASL authentication failed 
+       59   Miscellaneous warnings 
+ 
+    1.258M  Bytes accepted                         1,319,426
+    1.252M  Bytes delivered                        1,313,220
+ ========   ================================================
+ 
+       26   Accepted                                  81.25%
+        6   Rejected                                  18.75%
+ --------   ------------------------------------------------
+       32   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Reject HELO/EHLO                          83.33%
+        1   Reject sender address                     16.67%
+ --------   ------------------------------------------------
+        6   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       15   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       15   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     1015   Connections made      
+     1015   Disconnections        
+       26   Removed from queue    
+       21   Delivered             
+        3   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        3   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       185.70.76.212: 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   31G   20G  61% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

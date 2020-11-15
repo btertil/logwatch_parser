@@ -1,0 +1,110 @@
+Delivered-To: bondiev@gmail.com
+Received: by 10.112.185.67 with SMTP id fa3csp40091lbc;
+        Sat, 19 Jul 2014 18:18:17 -0700 (PDT)
+X-Received: by 10.180.20.14 with SMTP id j14mr19348480wie.48.1405819096134;
+        Sat, 19 Jul 2014 18:18:16 -0700 (PDT)
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id op3si19263823wjc.12.2014.07.19.18.18.15
+        for <bondiev@gmail.com>;
+        Sat, 19 Jul 2014 18:18:16 -0700 (PDT)
+Received-SPF: none (google.com: root@vis1.localdomain does not designate permitted sender hosts) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: root@vis1.localdomain does not designate permitted sender hosts) smtp.mail=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 741A64A847EC; Sun, 20 Jul 2014 03:18:14 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140720011814.741A64A847EC@vis1.localdomain>
+Date: Sun, 20 Jul 2014 03:18:11 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Jul 20 03:18:11 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jul-19 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Jul 19 03:39:14 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19198.cdiff [100%]
+    Downloading daily-19199.cdiff [100%]
+    daily.cld updated (version: 19199, sigs: 1082718, f-level: 63, builder: shurley)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3506989 signatures) from db.local.clamav.net (IP: 155.98.64.87)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    403 Forbidden
+       /: 1 Time(s)
+    404 Not Found
+       /webdav/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    3.344K  Bytes accepted                             3,424
+    3.344K  Bytes delivered                            3,424
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  7.7G   23G  26% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

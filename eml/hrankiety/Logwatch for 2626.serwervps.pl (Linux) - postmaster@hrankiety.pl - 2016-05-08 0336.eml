@@ -1,0 +1,130 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 936E335A209A; Sun,  8 May 2016 03:36:05 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160508013605.936E335A209A@hrankiety.pl>
+Date: Sun,  8 May 2016 03:36:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun May  8 03:36:04 2016
+        Date Range Processed: yesterday
+                              ( 2016-May-07 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat May  7 03:11:06 2016
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.1 Recommended version: 0.99.2
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-21517.cdiff [100%]
+    daily.cld updated (version: 21517, sigs: 98748, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 277, sigs: 47, f-level: 63, builder: neo)
+    Database updated (4317585 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    118.193.27.3
+    169.229.3.91
+ 
+ Requests with error response codes
+    404 Not Found
+       //admin/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //admin/pma/scripts/setup.php: 1 Time(s)
+       //admin/scripts/setup.php: 1 Time(s)
+       //db/scripts/setup.php: 1 Time(s)
+       //scripts/setup.php: 1 Time(s)
+       /admin/config.php: 2 Time(s)
+       /muieblackcat: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 2 Time(s)
+    501 Not Implemented
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        3   *Warning: Pre-queue content-filter connection overload 
+        1   SASL authentication failed 
+        3   Miscellaneous warnings 
+ 
+    9.794K  Bytes accepted                            10,029
+    3.735K  Bytes delivered                            3,825
+ ========   ================================================
+ 
+        3   Accepted                                  75.00%
+        1   Rejected                                  25.00%
+ --------   ------------------------------------------------
+        4   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject client host                       100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+        6   Connections made      
+        2   Connections lost      
+        6   Disconnections        
+        3   Removed from queue    
+        1   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   13G   38G  25% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

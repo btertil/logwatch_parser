@@ -1,0 +1,240 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id CA0629F20F8E; Thu, 14 Feb 2019 03:27:07 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190214022707.CA0629F20F8E@hrankiety.pl>
+Date: Thu, 14 Feb 2019 03:27:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Feb 14 03:27:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Feb-13 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Feb 13 03:19:15 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.2 Recommended version: 0.101.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25358.cdiff [100%]
+    daily.cld updated (version: 25358, sigs: 2245939, f-level: 63, builder: raynman)
+    bytecode.cld is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6812282 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /.env: 1 Time(s)
+       /.ftpconfig: 1 Time(s)
+       /.remote-sync.json: 1 Time(s)
+       /.vscode/ftp-sync.json: 1 Time(s)
+       /.vscode/settings.json: 1 Time(s)
+       /.vscode/sftp.json: 1 Time(s)
+       /api/.env: 1 Time(s)
+       /api/.ftpconfig: 1 Time(s)
+       /api/.remote-sync.json: 1 Time(s)
+       /api/.vscode/ftp-sync.json: 1 Time(s)
+       /api/.vscode/settings.json: 1 Time(s)
+       /api/.vscode/sftp.json: 1 Time(s)
+       /api/deployment-config.json: 1 Time(s)
+       /api/ftpsync.settings: 1 Time(s)
+       /api/sftp-config.json: 1 Time(s)
+       /beta/.env: 1 Time(s)
+       /beta/.ftpconfig: 1 Time(s)
+       /beta/.remote-sync.json: 1 Time(s)
+       /beta/.vscode/ftp-sync.json: 1 Time(s)
+       /beta/.vscode/settings.json: 1 Time(s)
+       /beta/.vscode/sftp.json: 1 Time(s)
+       /beta/deployment-config.json: 1 Time(s)
+       /beta/ftpsync.settings: 1 Time(s)
+       /beta/sftp-config.json: 1 Time(s)
+       /deployment-config.json: 1 Time(s)
+       /dev/.env: 1 Time(s)
+       /dev/.ftpconfig: 1 Time(s)
+       /dev/.remote-sync.json: 1 Time(s)
+       /dev/.vscode/ftp-sync.json: 1 Time(s)
+       /dev/.vscode/settings.json: 1 Time(s)
+       /dev/.vscode/sftp.json: 1 Time(s)
+       /dev/deployment-config.json: 1 Time(s)
+       /dev/ftpsync.settings: 1 Time(s)
+       /dev/sftp-config.json: 1 Time(s)
+       /ftpsync.settings: 1 Time(s)
+       /js/mage/cookies.js: 1 Time(s)
+       /m/.env: 1 Time(s)
+       /m/.ftpconfig: 1 Time(s)
+       /m/.remote-sync.json: 1 Time(s)
+       /m/.vscode/ftp-sync.json: 1 Time(s)
+       /m/.vscode/settings.json: 1 Time(s)
+       /m/.vscode/sftp.json: 1 Time(s)
+       /m/deployment-config.json: 1 Time(s)
+       /m/ftpsync.settings: 1 Time(s)
+       /m/sftp-config.json: 1 Time(s)
+       /public/.env: 1 Time(s)
+       /public/.ftpconfig: 1 Time(s)
+       /public/.remote-sync.json: 1 Time(s)
+       /public/.vscode/ftp-sync.json: 1 Time(s)
+       /public/.vscode/settings.json: 1 Time(s)
+       /public/.vscode/sftp.json: 1 Time(s)
+       /public/deployment-config.json: 1 Time(s)
+       /public/ftpsync.settings: 1 Time(s)
+       /public/sftp-config.json: 1 Time(s)
+       /sftp-config.json: 1 Time(s)
+       /site/.env: 1 Time(s)
+       /site/.ftpconfig: 1 Time(s)
+       /site/.remote-sync.json: 1 Time(s)
+       /site/.vscode/ftp-sync.json: 1 Time(s)
+       /site/.vscode/settings.json: 1 Time(s)
+       /site/.vscode/sftp.json: 1 Time(s)
+       /site/deployment-config.json: 1 Time(s)
+       /site/ftpsync.settings: 1 Time(s)
+       /site/sftp-config.json: 1 Time(s)
+       /stag/.env: 1 Time(s)
+       /stag/.ftpconfig: 1 Time(s)
+       /stag/.remote-sync.json: 1 Time(s)
+       /stag/.vscode/ftp-sync.json: 1 Time(s)
+       /stag/.vscode/settings.json: 1 Time(s)
+       /stag/.vscode/sftp.json: 1 Time(s)
+       /stag/deployment-config.json: 1 Time(s)
+       /stag/ftpsync.settings: 1 Time(s)
+       /stag/sftp-config.json: 1 Time(s)
+       /stage/.env: 1 Time(s)
+       /stage/.ftpconfig: 1 Time(s)
+       /stage/.remote-sync.json: 1 Time(s)
+       /stage/.vscode/ftp-sync.json: 1 Time(s)
+       /stage/.vscode/settings.json: 1 Time(s)
+       /stage/.vscode/sftp.json: 1 Time(s)
+       /stage/deployment-config.json: 1 Time(s)
+       /stage/ftpsync.settings: 1 Time(s)
+       /stage/sftp-config.json: 1 Time(s)
+       /test/.env: 1 Time(s)
+       /test/.ftpconfig: 1 Time(s)
+       /test/.remote-sync.json: 1 Time(s)
+       /test/.vscode/ftp-sync.json: 1 Time(s)
+       /test/.vscode/settings.json: 1 Time(s)
+       /test/.vscode/sftp.json: 1 Time(s)
+       /test/deployment-config.json: 1 Time(s)
+       /test/ftpsync.settings: 1 Time(s)
+       /test/sftp-config.json: 1 Time(s)
+       /web/.env: 1 Time(s)
+       /web/.ftpconfig: 1 Time(s)
+       /web/.remote-sync.json: 1 Time(s)
+       /web/.vscode/ftp-sync.json: 1 Time(s)
+       /web/.vscode/settings.json: 1 Time(s)
+       /web/.vscode/sftp.json: 1 Time(s)
+       /web/deployment-config.json: 1 Time(s)
+       /web/ftpsync.settings: 1 Time(s)
+       /web/sftp-config.json: 1 Time(s)
+       /website/.env: 1 Time(s)
+       /website/.ftpconfig: 1 Time(s)
+       /website/.remote-sync.json: 1 Time(s)
+       /website/.vscode/ftp-sync.json: 1 Time(s)
+       /website/.vscode/settings.json: 1 Time(s)
+       /website/.vscode/sftp.json: 1 Time(s)
+       /website/deployment-config.json: 1 Time(s)
+       /website/ftpsync.settings: 1 Time(s)
+       /website/sftp-config.json: 1 Time(s)
+       /wordpress/wp-login.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wp/.env: 1 Time(s)
+       /wp/.ftpconfig: 1 Time(s)
+       /wp/.remote-sync.json: 1 Time(s)
+       /wp/.vscode/ftp-sync.json: 1 Time(s)
+       /wp/.vscode/settings.json: 1 Time(s)
+       /wp/.vscode/sftp.json: 1 Time(s)
+       /wp/deployment-config.json: 1 Time(s)
+       /wp/ftpsync.settings: 1 Time(s)
+       /wp/sftp-config.json: 1 Time(s)
+       /www/.env: 1 Time(s)
+       /www/.ftpconfig: 1 Time(s)
+       /www/.remote-sync.json: 1 Time(s)
+       /www/.vscode/ftp-sync.json: 1 Time(s)
+       /www/.vscode/settings.json: 1 Time(s)
+       /www/.vscode/sftp.json: 1 Time(s)
+       /www/deployment-config.json: 1 Time(s)
+       /www/ftpsync.settings: 1 Time(s)
+       /www/sftp-config.json: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      248   *Warning: Pre-queue content-filter connection overload 
+      237   SASL authentication failed 
+       44   Miscellaneous warnings 
+ 
+    1.338M  Bytes accepted                         1,402,585
+    1.332M  Bytes delivered                        1,396,388
+ ========   ================================================
+ 
+       24   Accepted                                  96.00%
+        1   Rejected                                   4.00%
+ --------   ------------------------------------------------
+       25   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      270   Connections made      
+      270   Disconnections        
+       24   Removed from queue    
+       22   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   29G   22G  57% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

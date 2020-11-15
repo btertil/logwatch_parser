@@ -1,0 +1,143 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id CE44B35A1F3B; Wed, 15 Feb 2017 03:06:13 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170215020613.CE44B35A1F3B@hrankiety.pl>
+Date: Wed, 15 Feb 2017 03:06:12 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Feb 15 03:06:12 2017
+        Date Range Processed: yesterday
+                              ( 2017-Feb-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Feb 14 03:26:09 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-23053.cdiff [100%]
+    Downloading daily-23054.cdiff [100%]
+    Downloading daily-23055.cdiff [100%]
+    Downloading daily-23056.cdiff [100%]
+    Downloading daily-23057.cdiff [100%]
+    Downloading daily-23058.cdiff [100%]
+    daily.cld updated (version: 23058, sigs: 1570024, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 290, sigs: 55, f-level: 63, builder: neo)
+    Database updated (5788869 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    66.240.192.138
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /82172316237: 18 Time(s)
+       /ct_if/ctpublic/Check_Exist.php: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+       btertil -> support: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      545   *Warning: Pre-queue content-filter connection overload 
+      731   SASL authentication failed 
+       75   Miscellaneous warnings 
+ 
+    2.834M  Bytes accepted                         2,971,558
+    2.819M  Bytes delivered                        2,956,445
+ ========   ================================================
+ 
+      119   Accepted                                  98.35%
+        2   Rejected                                   1.65%
+ --------   ------------------------------------------------
+      121   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      771   Connections made      
+      771   Disconnections        
+      119   Removed from queue    
+       39   Delivered             
+       75   Sent via SMTP         
+       69   Deferred              
+       72   Deferrals             
+        6   Bounce (remote)       
+        5   DSNs undeliverable    
+ 
+       10   Timeout (inbound)     
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.73.65.124 (89-73-65-124.dynamic.chello.pl): 5 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ SFTP subsystem requests: 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  51% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

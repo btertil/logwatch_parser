@@ -1,0 +1,123 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 618B735A22D1; Thu, 14 Sep 2017 03:44:21 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170914014421.618B735A22D1@hrankiety.pl>
+Date: Thu, 14 Sep 2017 03:44:17 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Sep 14 03:44:17 2017
+        Date Range Processed: yesterday
+                              ( 2017-Sep-13 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Sep 13 03:35:38 2017
+ 
+ Last Status:
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-23815.cdiff [100%]
+    Downloading daily-23816.cdiff [100%]
+    Downloading daily-23817.cdiff [100%]
+    Downloading daily-23818.cdiff [100%]
+    Downloading daily-23819.cdiff [100%]
+    Downloading daily-23820.cdiff [100%]
+    daily.cld updated (version: 23820, sigs: 1742928, f-level: 63, builder: neo)
+    Downloading bytecode-311.cdiff [100%]
+    bytecode.cld updated (version: 311, sigs: 74, f-level: 63, builder: neo)
+    Database updated (6309251 signatures) from db.local.clamav.net (IP: 129.67.1.218)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    60.191.40.196
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 9 Time(s)
+       http://180.163.113.82/check_proxy: 1 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /sftp-config.json: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wp-login.php: 1 Time(s)
+    408 Request Timeout
+       null: 6 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       64   *Warning: Pre-queue content-filter connection overload 
+      368   SASL authentication failed 
+       59   Miscellaneous warnings 
+ 
+  787.124K  Bytes accepted                           806,015
+  781.063K  Bytes delivered                          799,809
+ ========   ================================================
+ 
+       31   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       31   Total                                    100.00%
+ ========   ================================================
+ 
+      379   Connections made      
+      379   Disconnections        
+       31   Removed from queue    
+       29   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   34G   17G  67% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

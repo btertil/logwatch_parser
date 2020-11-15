@@ -1,0 +1,120 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id DBF7D35A1C82; Wed, 31 Aug 2016 03:39:09 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160831013909.DBF7D35A1C82@hrankiety.pl>
+Date: Wed, 31 Aug 2016 03:39:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Aug 31 03:39:08 2016
+        Date Range Processed: yesterday
+                              ( 2016-Aug-30 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Aug 30 03:29:07 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-22151.cdiff [100%]
+    Downloading daily-22152.cdiff [100%]
+    daily.cld updated (version: 22152, sigs: 558596, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 283, sigs: 53, f-level: 63, builder: neo)
+    Database updated (4777439 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /cgi/common.cgi: 1 Time(s)
+       /command.php: 1 Time(s)
+       /hndUnblock.cgi: 1 Time(s)
+       /stssys.htm: 1 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+       34   SASL authentication failed 
+       30   Miscellaneous warnings 
+ 
+    1.046M  Bytes accepted                         1,097,083
+    1.040M  Bytes delivered                        1,090,879
+ ========   ================================================
+ 
+       13   Accepted                                  81.25%
+        3   Rejected                                  18.75%
+ --------   ------------------------------------------------
+       16   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                          66.67%
+        1   Reject sender address                     33.33%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       50   Connections made      
+        1   Connections lost      
+       50   Disconnections        
+       13   Removed from queue    
+       11   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   16G   35G  31% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

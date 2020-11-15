@@ -1,0 +1,233 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:799:0:0:0:0 with SMTP id l25csp6248377ejc;
+        Sun, 29 Sep 2019 18:28:11 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqwZ+w+hRcOYG4x6rpAs7Lnh7+2X4aikAHlBmdVa5uS3TvYWgX2SNLQhtpySyOEMp0M1X94+
+X-Received: by 2002:a2e:7c17:: with SMTP id x23mr9995120ljc.210.1569806891292;
+        Sun, 29 Sep 2019 18:28:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1569806891; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jQAvymctGpO4CxeFtQ8Cfg+Fxaqa6OjlbDUWqFZ1ukW/23gahip8CMHRam1HGJpDbV
+         dz6TYtcW7BvAQPZ7mG780iQ8o6Da+t4YTwfKFvDyDsKwLVcou0UwUhEPguEMoz0MufXv
+         54UvFTlxrOsp/mGIjeQIKFQB/VmQNKlpSDLbinJWYmUGsEoTw8TeZCKsK0x+eI/5sWlE
+         Xhjc8PVhnWh3oP0jEaO+pROiWlgmhJiakYEielYm5Ehq69Mi+ZggkPe5lmObEn4NWj2w
+         HNS6PDyy9o5i5PjJSKLwUQcCbhxPfI5wDNchu8qAmMjhmH28CQx6DTpl3Ao/sb4EbD2o
+         aXWA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=XpGed/ua5zILWp2CNcKS8K1XSyyB3qdmg53XZsVtnKc=;
+        b=zklxrZqmYdBJX3wVylohja290Nu/2BjF0BTmAKLBheSvBOoH6ssS5ahjTjOWDV5MCo
+         MO7nK5jMOxNiGTAxGc14N/RUd638DznjcMmN87dW1BVW6cdqefTyRlp3jbhV9zb6tZ7C
+         AVcxgo03qWwjP6smOY1jUMVtLJUYg8CrB3BTKCzxQGeictPzaqD/A9qVeXsNrJXymPwB
+         nxOUtQ4ABbwX3/yNY6AMxPr7zpKgVBFtdcp0noK5IFDrRkJJqODyGSgSmPLJLptm/uuA
+         NEN/sGbd1kWYtWJ0vICIugO9puRbckMGDxp9Mpj9V0iwAF5JOtxJnUQaJPN7tcGLjiF6
+         hYBg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id v3si10175026ljh.84.2019.09.29.18.28.11
+        for <bondiev@gmail.com>;
+        Sun, 29 Sep 2019 18:28:11 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 402E84A812C2; Mon, 30 Sep 2019 03:28:10 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190930012810.402E84A812C2@vis1.localdomain>
+Date: Mon, 30 Sep 2019 03:28:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Sep 30 03:28:07 2019
+        Date Range Processed: yesterday
+                              ( 2019-Sep-29 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Sep 29 03:07:14 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25586.cdiff [100%]
+    daily.cld updated (version: 25586, sigs: 1783298, f-level: 63, builder: raynman)
+    Can't query daily.25586.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6349641 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    185.156.177.235
+    45.136.108.25
+    85.93.20.170
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../mnt/custom/ProductDefinition: 3 Time(s)
+       /: 98 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /PMA/: 1 Time(s)
+       /PMA2005/: 1 Time(s)
+       /SQLiteManager/main.php: 1 Time(s)
+       /SQlite/main.php: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /admin/: 3 Time(s)
+       /agSearch/SQlite/main.php: 1 Time(s)
+       /dbadmin/: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /hudson/script: 1 Time(s)
+       /index.php: 1 Time(s)
+       /main.php: 1 Time(s)
+       /manager/text/list: 1 Time(s)
+       /myadmin/: 1 Time(s)
+       /mysql/: 1 Time(s)
+       /mysqladmin/: 1 Time(s)
+       /mysqlmanager/: 1 Time(s)
+       /openserver/phpmyadmin/: 1 Time(s)
+       /p/m/a/: 1 Time(s)
+       /php-my-admin/: 1 Time(s)
+       /php-myadmin/: 1 Time(s)
+       /phpMyAdmin-2.2.3/: 1 Time(s)
+       /phpMyAdmin-2.2.6/: 1 Time(s)
+       /phpMyAdmin-2.5.1/: 1 Time(s)
+       /phpMyAdmin-2.5.4/: 1 Time(s)
+       /phpMyAdmin-2.5.5-pl1/: 1 Time(s)
+       /phpMyAdmin-2.5.5-rc1/: 1 Time(s)
+       /phpMyAdmin-2.5.5-rc2/: 1 Time(s)
+       /phpMyAdmin-2.5.5/: 1 Time(s)
+       /phpMyAdmin-2.5.6-rc1/: 1 Time(s)
+       /phpMyAdmin-2.5.6-rc2/: 1 Time(s)
+       /phpMyAdmin-2.5.6/: 1 Time(s)
+       /phpMyAdmin-2.5.7-pl1/: 1 Time(s)
+       /phpMyAdmin-2.5.7/: 1 Time(s)
+       /phpMyAdmin-2.6.0-alpha/: 1 Time(s)
+       /phpMyAdmin-2.6.0-beta2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl3/: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc3/: 1 Time(s)
+       /phpMyAdmin-2.6.0/: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl2/: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl3/: 1 Time(s)
+       /phpMyAdmin-2.6.1-rc1/: 1 Time(s)
+       /phpMyAdmin-2.6.1-rc2/: 1 Time(s)
+       /phpMyAdmin-2.6.1/: 1 Time(s)
+       /phpMyAdmin-2.6.2-beta1/: 1 Time(s)
+       /phpMyAdmin-2.6.2-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.2-rc1/: 2 Time(s)
+       /phpMyAdmin-2.6.2/: 1 Time(s)
+       /phpMyAdmin-2.6.3-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.3/: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.4-pl4/: 1 Time(s)
+       /phpMyAdmin-2.6.4/: 1 Time(s)
+       /phpMyAdmin-2.7.0-beta1/: 1 Time(s)
+       /phpMyAdmin-2.7.0-pl1/: 1 Time(s)
+       /phpMyAdmin-2.7.0-pl2/: 1 Time(s)
+       /phpMyAdmin-2.7.0-rc1/: 1 Time(s)
+       /phpMyAdmin-2.8.0-beta1/: 1 Time(s)
+       /phpMyAdmin-2.8.0.2/: 1 Time(s)
+       /phpMyAdmin-2.8.0.3/: 1 Time(s)
+       /phpMyAdmin-2.8.0.4/: 1 Time(s)
+       /phpMyAdmin-2.8.1-rc1/: 1 Time(s)
+       /phpMyAdmin-2.8.1/: 1 Time(s)
+       /phpMyAdmin-2.8.2/: 1 Time(s)
+       /phpMyAdmin-2/: 1 Time(s)
+       /phpMyAdmin/: 1 Time(s)
+       /phpMyAdmin2/: 1 Time(s)
+       /phpmanager/: 1 Time(s)
+       /phpmy-admin/: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /phpmyadmin2/: 1 Time(s)
+       /pma/: 1 Time(s)
+       /pma2005/: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /robots.txt: 8 Time(s)
+       /sqlite/main.php: 1 Time(s)
+       /sqlitemanager/main.php: 1 Time(s)
+       /sqlmanager/: 1 Time(s)
+       /sqlweb/: 1 Time(s)
+       /test/sqlite/SQLiteManager-1.2.0/SQLiteMan ... -1.2.0/main.php: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /webdb/: 1 Time(s)
+       /websql/: 1 Time(s)
+       http://www.msftncsi.com/ncsi.txt: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.080K  Bytes accepted                             4,178
+    4.080K  Bytes delivered                            4,178
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   24G  6.8G  78% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

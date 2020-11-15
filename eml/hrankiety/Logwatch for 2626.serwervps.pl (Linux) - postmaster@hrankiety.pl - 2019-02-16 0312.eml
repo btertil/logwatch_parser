@@ -1,0 +1,127 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id C84C79F20FA6; Sat, 16 Feb 2019 03:12:16 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190216021216.C84C79F20FA6@hrankiety.pl>
+Date: Sat, 16 Feb 2019 03:12:14 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Feb 16 03:12:14 2019
+        Date Range Processed: yesterday
+                              ( 2019-Feb-15 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Feb 15 03:13:15 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.2 Recommended version: 0.101.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25360.cdiff [100%]
+    daily.cld updated (version: 25360, sigs: 2248724, f-level: 63, builder: raynman)
+    bytecode.cld is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6815067 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    71.6.199.23
+ 
+ Requests with error response codes
+    400 Bad Request
+       null: 8 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /wp/wp-login.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      470   *Warning: Pre-queue content-filter connection overload 
+      469   SASL authentication failed 
+       78   Miscellaneous warnings 
+ 
+  918.024K  Bytes accepted                           940,057
+  911.973K  Bytes delivered                          933,860
+ ========   ================================================
+ 
+       20   Accepted                                   7.41%
+      250   Rejected                                  92.59%
+ --------   ------------------------------------------------
+      270   Total                                    100.00%
+ ========   ================================================
+ 
+      250   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+      250   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       41   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       41   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      530   Connections made      
+      530   Disconnections        
+       20   Removed from queue    
+       18   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   29G   22G  57% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

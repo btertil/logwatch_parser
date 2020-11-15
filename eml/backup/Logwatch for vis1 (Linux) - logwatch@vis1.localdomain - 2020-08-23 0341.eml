@@ -1,0 +1,148 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:814:0:0:0:0 with SMTP id e20csp339147ejd;
+        Sat, 22 Aug 2020 18:41:12 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwj+sfLVzaqQGcgNZ1qukLICxy7vICwlYf16bpwUaATSYwe9Fp6NYKtgUWWkkePe6FQtJZa
+X-Received: by 2002:a19:4f5d:: with SMTP id a29mr44991lfk.107.1598146872019;
+        Sat, 22 Aug 2020 18:41:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1598146872; cv=none;
+        d=google.com; s=arc-20160816;
+        b=w6g9boEuzogdKnPynw1l03PtCZLmWr9jNFxBoAvLQfmjR8aQ0ftfOIWURA1RaXvOWZ
+         00oaEibCm6es9RQ29sUnBTNsfJpjg/tDJhyr69jOEVyLJx7OAVhq6/+Hv3FPZLYTQmvz
+         gA3pZDD5Ve80wL7Mgx7YFvS1uQ9l8ZlvhYYmvbJ/aZD+YxUwcTI+lqZ9esZwuqQ45d2Z
+         370cjMK7M3Rdszlo+t8aFJryHbu8U5jRoZXpcSloYJg5yK/PCpnjlVRK8Ma9iO9gD4oZ
+         BUgK/ilAH6QtVLG40nKp3DA9I8MJwD9/IEFqee+Tdmh7Be9DYOitr/pRXUQrlFtQyD6h
+         Itfw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=XbKr2lrTSoR2hOnTOkp0X4jU/NWQ86fVRyeRqxjt+Y4=;
+        b=p43JiDJCFYSFUYbtZqSczv1PgVb0ORLHrtizF8nCE+Emt4bho0jmol4wbhTSu1+Vjq
+         k4EO0G0d6g1w8h/avtUk2G7CkLcYi3GKspj5RkTzHtYT5eIFg+vw1jjCpW93CIxGbWp/
+         ax/1HQIObozr70gktI1TcaiYci9nRxJTLxLfRv1FtS9cBqlxAcwUXw5bnGDKLI5yhIsJ
+         yRUlXNhSnYSgQ02jVE5cnfT7R8/eShR4aslQEtUuEHXZWQZxgOnB0VfWkbHxfKhIflw7
+         CL155Numv2Xy9f98N3lyAaGoBaI3ZRVPNrLnVOZH4Hd+9mm6ZV8fc9xFVsMsdQVQssqv
+         SHTw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id a17si3268123lfb.13.2020.08.22.18.41.11
+        for <bondiev@gmail.com>;
+        Sat, 22 Aug 2020 18:41:12 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 7CDC94A8004D; Sun, 23 Aug 2020 03:41:10 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200823014110.7CDC94A8004D@vis1.localdomain>
+Date: Sun, 23 Aug 2020 03:41:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Aug 23 03:41:06 2020
+        Date Range Processed: yesterday
+                              ( 2020-Aug-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Aug 22 03:17:11 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25906.cdiff [100%]
+    daily.cld updated (version: 25906, sigs: 4002166, f-level: 63, builder: raynman)
+    Can't query daily.25906.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8567162 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    192.241.233.29
+    202.107.226.3
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /CFIDE/administrator/: 1 Time(s)
+       /api/v1/pods: 2 Time(s)
+       /hudson: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /robots.txt: 5 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.164K  Bytes accepted                             4,264
+    4.164K  Bytes delivered                            4,264
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.242.132.226 (2626.serwervps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   21G  9.8G  68% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

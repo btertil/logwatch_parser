@@ -1,0 +1,207 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id B0D8A35A2047; Fri, 31 Mar 2017 03:11:07 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170331011107.B0D8A35A2047@hrankiety.pl>
+Date: Fri, 31 Mar 2017 03:11:06 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Mar 31 03:11:06 2017
+        Date Range Processed: yesterday
+                              ( 2017-Mar-30 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Mar 30 03:26:11 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    Trying host db.local.clamav.net (195.30.97.3)...
+    Downloading daily-23247.cdiff [100%]
+    Downloading daily-23248.cdiff [100%]
+    Downloading daily-23249.cdiff [100%]
+    daily.cld updated (version: 23249, sigs: 1931324, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 291, sigs: 55, f-level: 63, builder: neo)
+    Database updated (6150169 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    60.191.38.78
+ 
+ Requests with error response codes
+    404 Not Found
+       /admin/config.php: 1 Time(s)
+       /admin/i18n/readme.txt: 1 Time(s)
+       /current_config/Account1: 3 Time(s)
+       /current_config/passwd: 3 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /wp-login.php: 1 Time(s)
+       http://188.116.4.178:80/2phpmyadmin/: 2 Time(s)
+       http://188.116.4.178:80/MyAdmin/: 2 Time(s)
+       http://188.116.4.178:80/PMA/: 2 Time(s)
+       http://188.116.4.178:80/PMA2011/: 2 Time(s)
+       http://188.116.4.178:80/PMA2012/: 2 Time(s)
+       http://188.116.4.178:80/admin/: 2 Time(s)
+       http://188.116.4.178:80/admin/db/: 2 Time(s)
+       http://188.116.4.178:80/admin/pMA/: 2 Time(s)
+       http://188.116.4.178:80/admin/phpMyAdmin/: 2 Time(s)
+       http://188.116.4.178:80/admin/phpmyadmin/: 2 Time(s)
+       http://188.116.4.178:80/admin/sqladmin/: 2 Time(s)
+       http://188.116.4.178:80/admin/sysadmin/: 2 Time(s)
+       http://188.116.4.178:80/admin/web/: 2 Time(s)
+       http://188.116.4.178:80/administrator/PMA/: 2 Time(s)
+       http://188.116.4.178:80/administrator/admin/: 2 Time(s)
+       http://188.116.4.178:80/administrator/db/: 2 Time(s)
+       http://188.116.4.178:80/administrator/phpMyAdmin/: 2 Time(s)
+       http://188.116.4.178:80/administrator/phpmyadmin/: 2 Time(s)
+       http://188.116.4.178:80/administrator/pma/: 2 Time(s)
+       http://188.116.4.178:80/administrator/web/: 2 Time(s)
+       http://188.116.4.178:80/database/: 2 Time(s)
+       http://188.116.4.178:80/db/: 2 Time(s)
+       http://188.116.4.178:80/db/db-admin/: 2 Time(s)
+       http://188.116.4.178:80/db/dbadmin/: 2 Time(s)
+       http://188.116.4.178:80/db/dbweb/: 2 Time(s)
+       http://188.116.4.178:80/db/myadmin/: 2 Time(s)
+       http://188.116.4.178:80/db/phpMyAdmin-3/: 2 Time(s)
+       http://188.116.4.178:80/db/phpMyAdmin/: 2 Time(s)
+       http://188.116.4.178:80/db/phpMyAdmin3/: 2 Time(s)
+       http://188.116.4.178:80/db/phpmyadmin/: 2 Time(s)
+       http://188.116.4.178:80/db/phpmyadmin3/: 2 Time(s)
+       http://188.116.4.178:80/db/webadmin/: 2 Time(s)
+       http://188.116.4.178:80/db/webdb/: 2 Time(s)
+       http://188.116.4.178:80/db/websql/: 2 Time(s)
+       http://188.116.4.178:80/dbadmin/: 2 Time(s)
+       http://188.116.4.178:80/myadmin/: 2 Time(s)
+       http://188.116.4.178:80/mysql-admin/: 2 Time(s)
+       http://188.116.4.178:80/mysql/: 2 Time(s)
+       http://188.116.4.178:80/mysql/admin/: 2 Time(s)
+       http://188.116.4.178:80/mysql/db/: 2 Time(s)
+       http://188.116.4.178:80/mysql/mysqlmanager/: 2 Time(s)
+       http://188.116.4.178:80/mysql/pMA/: 2 Time(s)
+       http://188.116.4.178:80/mysql/pma/: 2 Time(s)
+       http://188.116.4.178:80/mysql/sqlmanager/: 2 Time(s)
+       http://188.116.4.178:80/mysql/web/: 2 Time(s)
+       http://188.116.4.178:80/mysqladmin/: 2 Time(s)
+       http://188.116.4.178:80/mysqlmanager/: 2 Time(s)
+       http://188.116.4.178:80/php-my-admin/: 2 Time(s)
+       http://188.116.4.178:80/php-myadmin/: 2 Time(s)
+       http://188.116.4.178:80/phpMyAdmin-3/: 2 Time(s)
+       http://188.116.4.178:80/phpMyAdmin/: 2 Time(s)
+       http://188.116.4.178:80/phpMyAdmin2/: 2 Time(s)
+       http://188.116.4.178:80/phpMyAdmin3/: 2 Time(s)
+       http://188.116.4.178:80/phpMyAdmin4/: 2 Time(s)
+       http://188.116.4.178:80/phpMyadmin/: 2 Time(s)
+       http://188.116.4.178:80/phpmanager/: 2 Time(s)
+       http://188.116.4.178:80/phpmy-admin/: 2 Time(s)
+       http://188.116.4.178:80/phpmy/: 2 Time(s)
+       http://188.116.4.178:80/phpmyAdmin/: 2 Time(s)
+       http://188.116.4.178:80/phpmyadmin/: 2 Time(s)
+       http://188.116.4.178:80/phpmyadmin2/: 2 Time(s)
+       http://188.116.4.178:80/phpmyadmin3/: 2 Time(s)
+       http://188.116.4.178:80/phpmyadmin4/: 2 Time(s)
+       http://188.116.4.178:80/phppma/: 2 Time(s)
+       http://188.116.4.178:80/pma/: 2 Time(s)
+       http://188.116.4.178:80/pma2011/: 2 Time(s)
+       http://188.116.4.178:80/pma2012/: 2 Time(s)
+       http://188.116.4.178:80/program/: 2 Time(s)
+       http://188.116.4.178:80/shopdb/: 2 Time(s)
+       http://188.116.4.178:80/sql/myadmin/: 2 Time(s)
+       http://188.116.4.178:80/sql/php-myadmin/: 2 Time(s)
+       http://188.116.4.178:80/sql/phpMyAdmin/: 2 Time(s)
+       http://188.116.4.178:80/sql/phpMyAdmin2/: 2 Time(s)
+       http://188.116.4.178:80/sql/phpmanager/: 2 Time(s)
+       http://188.116.4.178:80/sql/phpmy-admin/: 2 Time(s)
+       http://188.116.4.178:80/sql/phpmyadmin2/: 2 Time(s)
+       http://188.116.4.178:80/sql/sql-admin/: 2 Time(s)
+       http://188.116.4.178:80/sql/sql/: 2 Time(s)
+       http://188.116.4.178:80/sql/sqladmin/: 2 Time(s)
+       http://188.116.4.178:80/sql/sqlweb/: 2 Time(s)
+       http://188.116.4.178:80/sql/webadmin/: 2 Time(s)
+       http://188.116.4.178:80/sql/webdb/: 2 Time(s)
+       http://188.116.4.178:80/sql/websql/: 2 Time(s)
+       http://188.116.4.178:80/sqlmanager/: 2 Time(s)
+       http://testp3.pospr.waw.pl/testproxy.php: 1 Time(s)
+    405 Method Not Allowed
+       /webdav/: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      365   *Warning: Pre-queue content-filter connection overload 
+      528   SASL authentication failed 
+       47   Miscellaneous warnings 
+ 
+    6.604M  Bytes accepted                         6,925,165
+    6.598M  Bytes delivered                        6,918,959
+ ========   ================================================
+ 
+       26   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       26   Total                                    100.00%
+ ========   ================================================
+ 
+      550   Connections made      
+      550   Disconnections        
+       26   Removed from queue    
+       23   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   29G   22G  57% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

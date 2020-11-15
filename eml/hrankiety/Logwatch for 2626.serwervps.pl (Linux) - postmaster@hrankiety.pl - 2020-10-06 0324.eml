@@ -1,0 +1,334 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 74969342888; Tue,  6 Oct 2020 03:24:23 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20201006012423.74969342888@hrankiety.pl>
+Date: Tue,  6 Oct 2020 03:24:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Oct  6 03:24:05 2020
+        Date Range Processed: yesterday
+                              ( 2020-Oct-05 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Oct  5 03:07:24 2020
+ 
+ Last Status:
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25947.cdiff [100%]
+    daily.cld updated (version: 25947, sigs: 4327194, f-level: 63, builder: raynman)
+    Can't query daily.25947.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8892190 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 4 sites probed the server 
+    165.225.39.91
+    61.219.11.153
+    71.6.146.186
+    85.128.128.32
+ 
+ Requests with error response codes
+    400 Bad Request
+       /HNAP1/: 1 Time(s)
+       HTTP/1.0: 1 Time(s)
+       null: 10 Time(s)
+    404 Not Found
+       /.env: 2 Time(s)
+       /.well-known/security.txt: 1 Time(s)
+       /1/print.css: 1 Time(s)
+       /123131/print.css: 1 Time(s)
+       /2phpmyadmin/print.css: 1 Time(s)
+       /321/print.css: 1 Time(s)
+       /GponForm/diag_Form?images/: 2 Time(s)
+       /MyAdmin/print.css: 1 Time(s)
+       /MySQLAdmin/print.css: 1 Time(s)
+       /PMA/print.css: 1 Time(s)
+       /PMA2/print.css: 1 Time(s)
+       /PMA2011/print.css: 1 Time(s)
+       /PMA2012/print.css: 1 Time(s)
+       /PMA2013/print.css: 1 Time(s)
+       /PMA2014/print.css: 1 Time(s)
+       /PMA2015/print.css: 1 Time(s)
+       /PMA2016/print.css: 1 Time(s)
+       /PMA2017/print.css: 1 Time(s)
+       /PMA2018/print.css: 1 Time(s)
+       /SQL/print.css: 1 Time(s)
+       /WWW/phpMyAdmin/print.css: 1 Time(s)
+       /__phpMyAdmin/print.css: 1 Time(s)
+       /admin//config.php: 3 Time(s)
+       /admin/PMA/print.css: 1 Time(s)
+       /admin/db/print.css: 1 Time(s)
+       /admin/mysql/print.css: 1 Time(s)
+       /admin/mysql2/print.css: 1 Time(s)
+       /admin/pMA/print.css: 1 Time(s)
+       /admin/phpMyAdmin/print.css: 1 Time(s)
+       /admin/phpmyadmin/print.css: 1 Time(s)
+       /admin/phpmyadmin2/print.css: 1 Time(s)
+       /admin/pma/print.css: 1 Time(s)
+       /admin/print.css: 1 Time(s)
+       /admin/sqladmin/print.css: 1 Time(s)
+       /admin/sysadmin/print.css: 1 Time(s)
+       /admin/web/print.css: 1 Time(s)
+       /adminer-4.0.0.php: 1 Time(s)
+       /administrator/PMA/print.css: 1 Time(s)
+       /administrator/admin/print.css: 1 Time(s)
+       /administrator/db/print.css: 1 Time(s)
+       /administrator/phpMyAdmin/print.css: 1 Time(s)
+       /administrator/phpmyadmin/print.css: 1 Time(s)
+       /administrator/pma/print.css: 1 Time(s)
+       /administrator/web/print.css: 1 Time(s)
+       /api/jsonws/invoke: 2 Time(s)
+       /boaform/admin/formLogin?username=adminisp&psd=adminisp: 1 Time(s)
+       /boaform/admin/formLogin?username=user&psd=user: 1 Time(s)
+       /cgi-bin/web_json.cgi: 2 Time(s)
+       /claroline/phpMyAdmin/print.css: 1 Time(s)
+       /database/print.css: 1 Time(s)
+       /db/db-admin/print.css: 1 Time(s)
+       /db/dbadmin/print.css: 1 Time(s)
+       /db/dbweb/print.css: 1 Time(s)
+       /db/myadmin/print.css: 1 Time(s)
+       /db/phpMyAdmin-3/print.css: 1 Time(s)
+       /db/phpMyAdmin/print.css: 1 Time(s)
+       /db/phpMyAdmin3/print.css: 1 Time(s)
+       /db/phpmyadmin/print.css: 1 Time(s)
+       /db/phpmyadmin3/print.css: 1 Time(s)
+       /db/print.css: 1 Time(s)
+       /db/webadmin/print.css: 1 Time(s)
+       /db/webdb/print.css: 1 Time(s)
+       /db/websql/print.css: 1 Time(s)
+       /dbadmin/print.css: 1 Time(s)
+       /download/print.css: 1 Time(s)
+       /home/btertil/api/v3/meta: 2 Time(s)
+       /hudson: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /myadmin/print.css: 1 Time(s)
+       /myadmin2/print.css: 1 Time(s)
+       /mysql-admin/print.css: 1 Time(s)
+       /mysql/admin/print.css: 1 Time(s)
+       /mysql/db/print.css: 1 Time(s)
+       /mysql/dbadmin/print.css: 1 Time(s)
+       /mysql/mysqlmanager/print.css: 1 Time(s)
+       /mysql/pMA/print.css: 1 Time(s)
+       /mysql/pma/print.css: 1 Time(s)
+       /mysql/print.css: 1 Time(s)
+       /mysql/sqlmanager/print.css: 1 Time(s)
+       /mysql/web/print.css: 1 Time(s)
+       /mysql_admin/print.css: 1 Time(s)
+       /mysqladmin/print.css: 1 Time(s)
+       /mysqlmanager/print.css: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /php-my-admin/print.css: 1 Time(s)
+       /php-myadmin/print.css: 1 Time(s)
+       /php2MyAdmin/print.css: 1 Time(s)
+       /phpAdmin/print.css: 1 Time(s)
+       /phpMyAbmin/print.css: 1 Time(s)
+       /phpMyAdm1n/print.css: 1 Time(s)
+       /phpMyAdmin+++---/print.css: 1 Time(s)
+       /phpMyAdmin-3/print.css: 1 Time(s)
+       /phpMyAdmin-4.4.0/print.css: 1 Time(s)
+       /phpMyAdmin._/print.css: 1 Time(s)
+       /phpMyAdmin._2/print.css: 1 Time(s)
+       /phpMyAdmin.old/print.css: 1 Time(s)
+       /phpMyAdmin/phpMyAdmin/print.css: 1 Time(s)
+       /phpMyAdmin/print.css: 1 Time(s)
+       /phpMyAdmin1/print.css: 1 Time(s)
+       /phpMyAdmin123/print.css: 1 Time(s)
+       /phpMyAdmin2/print.css: 1 Time(s)
+       /phpMyAdmin3/print.css: 1 Time(s)
+       /phpMyAdmin333/print.css: 1 Time(s)
+       /phpMyAdmin4.8.0/print.css: 1 Time(s)
+       /phpMyAdmin4.8.1/print.css: 1 Time(s)
+       /phpMyAdmin4.8.2/print.css: 1 Time(s)
+       /phpMyAdmin4.8.3/print.css: 1 Time(s)
+       /phpMyAdmin4.8.4/print.css: 1 Time(s)
+       /phpMyAdmin4.8.5/print.css: 1 Time(s)
+       /phpMyAdmin4/print.css: 1 Time(s)
+       /phpMyAdmin_111/print.css: 1 Time(s)
+       /phpMyAdmin__/print.css: 1 Time(s)
+       /phpMyAdmin_ai/print.css: 1 Time(s)
+       /phpMyAdmina/print.css: 1 Time(s)
+       /phpMyAdminhf/print.css: 1 Time(s)
+       /phpMyAdminn/print.css: 1 Time(s)
+       /phpMyAdminold/print.css: 1 Time(s)
+       /phpMyAdmins/print.css: 1 Time(s)
+       /phpMyAdmion/print.css: 1 Time(s)
+       /phpMyAdmln/print.css: 1 Time(s)
+       /phpMyadmi/print.css: 1 Time(s)
+       /phpMyadmin/print.css: 1 Time(s)
+       /phpMyadmin_bak/print.css: 1 Time(s)
+       /phpMydmin/print.css: 1 Time(s)
+       /phpNyAdmin/print.css: 1 Time(s)
+       /phpadmin/print.css: 1 Time(s)
+       /phpiMyAdmin/print.css: 1 Time(s)
+       /phpma/print.css: 1 Time(s)
+       /phpmadmin/print.css: 1 Time(s)
+       /phpmy-admin/print.css: 1 Time(s)
+       /phpmy/print.css: 1 Time(s)
+       /phpmyAdmin/print.css: 1 Time(s)
+       /phpmyadm1n/print.css: 1 Time(s)
+       /phpmyadmin-old/print.css: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /phpmyadmin/phpmyadmin/print.css: 1 Time(s)
+       /phpmyadmin/print.css: 1 Time(s)
+       /phpmyadmin0/print.css: 1 Time(s)
+       /phpmyadmin1/print.css: 1 Time(s)
+       /phpmyadmin2/print.css: 1 Time(s)
+       /phpmyadmin2011/print.css: 1 Time(s)
+       /phpmyadmin2012/print.css: 1 Time(s)
+       /phpmyadmin2013/print.css: 1 Time(s)
+       /phpmyadmin2014/print.css: 1 Time(s)
+       /phpmyadmin2015/print.css: 1 Time(s)
+       /phpmyadmin2016/print.css: 1 Time(s)
+       /phpmyadmin2017/print.css: 1 Time(s)
+       /phpmyadmin2018/print.css: 1 Time(s)
+       /phpmyadmin2019/print.css: 1 Time(s)
+       /phpmyadmin2222/print.css: 1 Time(s)
+       /phpmyadmin3/print.css: 1 Time(s)
+       /phpmyadmin3333/print.css: 1 Time(s)
+       /phpmyadmin4/print.css: 1 Time(s)
+       /phppma/print.css: 1 Time(s)
+       /pma-old/print.css: 1 Time(s)
+       /pma/print.css: 1 Time(s)
+       /pma2011/print.css: 1 Time(s)
+       /pma2012/print.css: 1 Time(s)
+       /pma2013/print.css: 1 Time(s)
+       /pma2014/print.css: 1 Time(s)
+       /pma2015/print.css: 1 Time(s)
+       /pma2016/print.css: 1 Time(s)
+       /pma2017/print.css: 1 Time(s)
+       /pma2018/print.css: 1 Time(s)
+       /pma2019/print.css: 1 Time(s)
+       /pmamy/print.css: 1 Time(s)
+       /pmamy2/print.css: 1 Time(s)
+       /pmd/print.css: 1 Time(s)
+       /print.css: 1 Time(s)
+       /program/print.css: 1 Time(s)
+       /pwd/print.css: 1 Time(s)
+       /s/print.css: 1 Time(s)
+       /sbb/print.css: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 2 Time(s)
+       /shaAdmin/print.css: 1 Time(s)
+       /shopdb/print.css: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /solr/admin/info/system?wt=json: 1 Time(s)
+       /sql/myadmin/print.css: 1 Time(s)
+       /sql/php-myadmin/print.css: 1 Time(s)
+       /sql/phpMyAdmin/print.css: 1 Time(s)
+       /sql/phpMyAdmin2/print.css: 1 Time(s)
+       /sql/phpmanager/print.css: 1 Time(s)
+       /sql/phpmy-admin/print.css: 1 Time(s)
+       /sql/phpmyadmin2/print.css: 1 Time(s)
+       /sql/print.css: 1 Time(s)
+       /sql/sql-admin/print.css: 1 Time(s)
+       /sql/sql/print.css: 1 Time(s)
+       /sql/sqladmin/print.css: 1 Time(s)
+       /sql/sqlweb/print.css: 1 Time(s)
+       /sql/webadmin/print.css: 1 Time(s)
+       /sql/webdb/print.css: 1 Time(s)
+       /sql/websql/print.css: 1 Time(s)
+       /sqladmin/print.css: 1 Time(s)
+       /sqlmanager/print.css: 1 Time(s)
+       /tools/phpMyAdmin/print.css: 1 Time(s)
+       /typo3/phpmyadmin/print.css: 1 Time(s)
+       /v/print.css: 1 Time(s)
+       /web/phpMyAdmin/print.css: 1 Time(s)
+       /websql/print.css: 1 Time(s)
+       /wls-wsat/CoordinatorPortType: 12 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/print.css: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /www/phpMyAdmin/print.css: 1 Time(s)
+       /xampp/phpmyadmin/print.css: 1 Time(s)
+    408 Request Timeout
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      232   *Warning: Pre-queue content-filter connection overload 
+    39665   SASL authentication failed 
+      694   Miscellaneous warnings 
+ 
+   11.374K  Bytes accepted                            11,647
+    5.329K  Bytes delivered                            5,457
+ ========   ================================================
+ 
+        3   Accepted                                  37.50%
+        5   Rejected                                  62.50%
+ --------   ------------------------------------------------
+        8   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        5   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        2   4xx Reject relay denied                    0.16%
+     1283   4xx Reject sender address                 99.84%
+ --------   ------------------------------------------------
+     1285   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+    40968   Connections made      
+        3   Connections lost      
+    40968   Disconnections        
+        3   Removed from queue    
+        1   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+       20   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   32G   16G  67% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

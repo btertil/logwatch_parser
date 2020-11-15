@@ -1,0 +1,149 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 3416935A2B34; Mon, 19 Feb 2018 03:21:06 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180219022109.3416935A2B34@hrankiety.pl>
+Date: Mon, 19 Feb 2018 03:20:59 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Feb 19 03:20:58 2018
+        Date Range Processed: yesterday
+                              ( 2018-Feb-18 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Feb 18 03:31:33 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.2 Recommended version: 0.99.3
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24323.cdiff [100%]
+    Downloading daily-24324.cdiff [100%]
+    Downloading daily-24325.cdiff [100%]
+    daily.cld updated (version: 24325, sigs: 1855729, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    Database updated (6422053 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    82.221.105.7
+ 
+ Requests with error response codes
+    400 Bad Request
+       /w00tw00t.at.ISC.SANS.DFind:): 1 Time(s)
+       /x: 1 Time(s)
+       null: 8 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 2 Time(s)
+       //q.php: 2 Time(s)
+       //s.php: 1 Time(s)
+       //sheep.php: 1 Time(s)
+       //slider.php: 1 Time(s)
+       //wuwu11.php: 1 Time(s)
+       //xx.php: 1 Time(s)
+       /123.php: 1 Time(s)
+       /2ed: 3 Time(s)
+       /7: 3 Time(s)
+       /77.php: 1 Time(s)
+       /aaa: 3 Time(s)
+       /administrator/components/com_joomlaupdate ... Restore&factory: 1 Time(s)
+       /ewre3ee.php: 1 Time(s)
+       /hack: 3 Time(s)
+       /hello: 3 Time(s)
+       /l.php: 1 Time(s)
+       /link.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /pyadmin: 3 Time(s)
+       /q.php: 3 Time(s)
+       /sheep.php: 1 Time(s)
+       /sitemap.xml: 2 Time(s)
+       /wuwu11.php: 1 Time(s)
+       /xiaomar.pphp: 1 Time(s)
+       /xmlrpc.php: 1 Time(s)
+       /xx.php: 1 Time(s)
+       /xxx.php: 1 Time(s)
+       /zuoshou.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       60   *Warning: Pre-queue content-filter connection overload 
+      299   SASL authentication failed 
+       25   Miscellaneous warnings 
+ 
+  182.836K  Bytes accepted                           187,224
+  174.273K  Bytes delivered                          178,456
+ ========   ================================================
+ 
+       14   Accepted                                  82.35%
+        3   Rejected                                  17.65%
+ --------   ------------------------------------------------
+       17   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      317   Connections made      
+      317   Disconnections        
+       14   Removed from queue    
+       10   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.73.82.159 (89-73-82-159.dynamic.chello.pl): 5 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 5 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   34G   17G  68% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

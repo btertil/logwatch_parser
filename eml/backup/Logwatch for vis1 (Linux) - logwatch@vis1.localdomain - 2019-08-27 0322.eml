@@ -1,0 +1,145 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:6a0a:0:0:0:0 with SMTP id o10csp4957384ejr;
+        Mon, 26 Aug 2019 18:22:12 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqwvVSi5HMoM8Ti/t0wp1piGJbD3yIKUL68OZXGRtu6Nj4MXvRPXPt0RHzjhGeDUIr0ChlzN
+X-Received: by 2002:a2e:8ed5:: with SMTP id e21mr12386337ljl.156.1566868932646;
+        Mon, 26 Aug 2019 18:22:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1566868932; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kUc3euod3KObi7ZluPVF5cP7Q2By3F2q0YM+jDOU3/5EUeBV9oTik/MYqFwYVJ4IFt
+         8p9+m4KOFk1kyb25JiSsQTjQLd/xxSk8nlbUxwBuN6WUvX6kMMG0Wvn2NbFSZxznXEy1
+         MGkF9EomIgz+UOi9lK1BlkerVGlYWJW801Vo9FOXmJK4IjUh4hXI9HUe/IeapkxYefMo
+         W8T+ZoLwkg4yXvDggxG0DCfPsufFfgQgTnqRUjj+Ts8pKRDsOYtSYJXpjnrMskQ+dQMJ
+         Q+Z8EO93yTPLPN7Vbv+z8NcG8kf/D9dIyHCDVROKdA56pYup2parpCSIOLvpTJIfDn7e
+         GwIw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=arhcSq9rPLcSc9FojaPLDGCKwxZtTjC+a14Ku4XofC8=;
+        b=TQSngS1amA55pxl7xuSsHk78uzYPQFmXP3cp4zK0Q0qMW684gNlDAGvctfpSYSOUYv
+         2Nju59QlBZpH34twksF5POh8QBI+V3t25B46FmMW5rEkTGWMcLdGcDxoBszSqIltNRra
+         yD83ePQHFUDe7Q5GAb6n49m5UR3PLtcWsG53OfF5YWm9Rf3ELn2V4dVSfF0gOe7CW3IK
+         uQrz8O+6cX5YJYOrw2W/khOkUTM/r+CAtvuGjkhQYTueYi9aZRlqeeScFJEIPj7HwRZA
+         LOB2s7aEKtCB2OzZ85JvawtLiLRVfTudIDGB1WeG5ZNrN6H2xvsGrTxIX0E3yX6DGNF1
+         5mHA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id l11si11878795lfd.80.2019.08.26.18.22.12
+        for <bondiev@gmail.com>;
+        Mon, 26 Aug 2019 18:22:12 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id A01964A812C4; Tue, 27 Aug 2019 03:22:11 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190827012211.A01964A812C4@vis1.localdomain>
+Date: Tue, 27 Aug 2019 03:22:09 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Aug 27 03:22:09 2019
+        Date Range Processed: yesterday
+                              ( 2019-Aug-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Aug 26 03:33:13 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25552.cdiff [100%]
+    daily.cld updated (version: 25552, sigs: 1735273, f-level: 63, builder: raynman)
+    Can't query daily.25552.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 330, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6301616 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    169.53.128.149
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /CFIDE/administrator/: 1 Time(s)
+       /a2billing/customer/templates/default/footer.tpl: 1 Time(s)
+       /dana-na/nc/nc_gina_ver.txt: 1 Time(s)
+       /dumpmdm.cmd?/login/login.html: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /robots.txt: 4 Time(s)
+       /vtigercrm/vtigerservice.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   14.619K  Bytes accepted                            14,970
+   14.619K  Bytes delivered                           14,970
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   23G  7.6G  75% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,171 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:f2c8:0:0:0:0 with SMTP id gz8csp685829ejb;
+        Wed, 13 May 2020 18:44:11 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyFvmQ/jhyuzUZOUJJ8ovE6lxuzweimTZy2wbPxsMwZCUL2W4vbOu4f+LhZO2H/5iltJ3oO
+X-Received: by 2002:a2e:8056:: with SMTP id p22mr1132962ljg.266.1589420651517;
+        Wed, 13 May 2020 18:44:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1589420651; cv=none;
+        d=google.com; s=arc-20160816;
+        b=yBa3ZWNd5e1Dq7GIYtfyOhpxOnyFflPKWF52LufvMrXLVw+0Ho/vzzoJ3r/0fYPSxM
+         PVsR1YG87QBXiAl/4TnV63xDEMoWwRPw9gsbawh3mgP6AnZ3WwsnPFo8SKlJHtBjkQC1
+         e+KL09iMQf3sCQBmtcpOMCH/eKG/K+sacu5qW0kB3suBB5A1p20UU1ynRFeBZGs4nkfR
+         LPg/dDcpgyphGdrKBMKFzRWX/ZBJTzB4tMvTi3MLtI0TvYLOOHYb0M8nZoXNLHhJvUOQ
+         PZNPsmhKw/zmr1+buRiPXvh44qM2p1eqzzUSWwtmcwRq0tT006+wB+iswkiPJuGG+12q
+         e0wQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=7Xitu+OKyV5ZchPGkkYtJIDsIYI1fkZ1amDjy7O8Ksw=;
+        b=R5crKCtoj6uQuFwb3eZmTgCDZeIVI8HGuMkymatKDOMNRjFyGQJEWERjlq0tIUt5ol
+         NMEwc41/P9YF6QACIwQ2NFdnwE60VEOI736a+ewZOJgFdaj85yA/Dgtn7KgTNV/zKZzA
+         pbXEBS3dnuijkE5x1lhdTp4vto/3nDp6hFvJ9e4fEhaLN61QYgDPYFT8iPJ+DpIW21wZ
+         z1lUA241+yitr85khVv9RZ7xU4RIkhbbITPDrMLp9Tka7Jv7N/XEGR64lYuoT32qYpRn
+         s975VP1Kc2buAMWLCL0sgg+rKsfaUe8y3etskzFkRsNevr3dli2LkQlsJ/PRLkcv7kp4
+         VmVw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id r79si1082090lff.147.2020.05.13.18.44.11
+        for <bondiev@gmail.com>;
+        Wed, 13 May 2020 18:44:11 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 366D94A8004F; Thu, 14 May 2020 03:44:10 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200514014410.366D94A8004F@vis1.localdomain>
+Date: Thu, 14 May 2020 03:44:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu May 14 03:44:07 2020
+        Date Range Processed: yesterday
+                              ( 2020-May-13 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed May 13 03:07:12 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25810.cdiff [100%]
+    daily.cld updated (version: 25810, sigs: 2383121, f-level: 63, builder: raynman)
+    Can't query daily.25810.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6948117 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    45.13.93.82 -> ip.ws.126.net:443: 1 Time(s)
+    45.13.93.90 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 4 sites probed the server 
+    162.243.144.38
+    2.44.199.95
+    54.172.37.215
+    94.69.153.174
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../proc/: 1 Time(s)
+       /: 224 Time(s)
+       /boaform/admin/formPing: 3 Time(s)
+       /cgi-bin/mainfunction.cgi?action=login&key ... er=a&loginPwd=a: 2 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       /GponForm/diag_Form?style/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /ab2g: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 3 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /hudson: 1 Time(s)
+       /index.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /robots.txt: 2 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wp-login.php: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 2 Time(s)
+    408 Request Timeout
+       null: 19 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    5.121K  Bytes accepted                             5,244
+    5.121K  Bytes delivered                            5,244
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.242.132.226 (2626.serwervps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   23G  7.1G  77% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

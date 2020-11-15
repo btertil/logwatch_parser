@@ -1,0 +1,311 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9F4AD9F200EB; Wed, 26 Sep 2018 03:28:16 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180926012816.9F4AD9F200EB@hrankiety.pl>
+Date: Wed, 26 Sep 2018 03:28:14 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Sep 26 03:28:14 2018
+        Date Range Processed: yesterday
+                              ( 2018-Sep-25 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Sep 25 03:28:12 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24979.cdiff [100%]
+    Downloading daily-24980.cdiff [100%]
+    Downloading daily-24981.cdiff [100%]
+    Downloading daily-24982.cdiff [100%]
+    daily.cld updated (version: 24982, sigs: 2098875, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6665215 signatures) from db.local.clamav.net (IP: 104.16.189.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /login.html: 1 Time(s)
+       12.2.1: 2 Time(s)
+    404 Not Found
+       //cacti/plugins/weathermap/editor.php: 1 Time(s)
+       //plugins/weathermap/editor.php: 1 Time(s)
+       /404.jpg: 1 Time(s)
+       /56.php: 1 Time(s)
+       /9678.php: 1 Time(s)
+       /CuteSoft_Client/CuteEditor/Help/default.htm: 1 Time(s)
+       /Editor.js: 1 Time(s)
+       /FCK/editor/js/fckeditorcode_ie.js: 1 Time(s)
+       /FCK/fckeditor.js: 1 Time(s)
+       /Images/login/biaoti.jpg: 1 Time(s)
+       /Images/login/lefttu.jpg: 1 Time(s)
+       /Images/login/mainlogo.gif: 1 Time(s)
+       /License.txt: 1 Time(s)
+       /PMA/index.php: 2 Time(s)
+       /PMA2/index.php: 2 Time(s)
+       /UserCenter/css/admin/bgimg/admin_all_bg.png: 1 Time(s)
+       /_query.php: 1 Time(s)
+       /addons/theme/stv1/_static/image/favicon.ico: 1 Time(s)
+       /addons/theme/stv1/_static/ts2/layout.css: 1 Time(s)
+       /addons/theme/stv2/_static/ts2/layout.css: 1 Time(s)
+       /admin: 1 Time(s)
+       /admin/SouthidcEditor/ButtonImage/standard/componentmenu.gif: 1 Time(s)
+       /admin/SouthidcEditor/Dialog/dialog.js: 1 Time(s)
+       /admin/SouthidcEditor/ewebeditor.asp?id=57&style=southidc: 1 Time(s)
+       /admin/inc/xml.xslt: 1 Time(s)
+       /admin/index.php: 3 Time(s)
+       /admin/js/IdSUtil.js: 1 Time(s)
+       /admin/mysql/index.php: 2 Time(s)
+       /admin/mysql2/index.php: 2 Time(s)
+       /admin/phpMyAdmin/index.php: 1 Time(s)
+       /admin/phpmyadmin/index.php: 2 Time(s)
+       /admin/phpmyadmin2/index.php: 2 Time(s)
+       /admin/pma/index.php: 2 Time(s)
+       /admin/template/article_more/config.htm: 1 Time(s)
+       /administrator/manifests/files/joomla.xml: 1 Time(s)
+       /ak47.php: 2 Time(s)
+       /ak48.php: 2 Time(s)
+       /aotu.php: 1 Time(s)
+       /app/js/source/wcmlib/WCMConstants.js: 1 Time(s)
+       /app/login.jsp: 1 Time(s)
+       /apps/admin/_static/image/login_box_bg.png: 1 Time(s)
+       /appserv.php: 2 Time(s)
+       /auth/login: 1 Time(s)
+       /bak.php: 1 Time(s)
+       /bencandy.php: 1 Time(s)
+       /cainiao.php: 1 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /cgi/index.cgi: 1 Time(s)
+       /ckeditor/ckeditor.js: 1 Time(s)
+       /ckeditor/ckfinder/ckfinder.html: 1 Time(s)
+       /ckeditor/ckfinder/install.txt: 1 Time(s)
+       /ckfinder/ckfinder.html: 1 Time(s)
+       /ckfinder/install.txt: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 2 Time(s)
+       /cmd.php: 4 Time(s)
+       /cmdd.php: 2 Time(s)
+       /cmv.php: 2 Time(s)
+       /cmx.php: 2 Time(s)
+       /common/help/images/helplogo.gif: 1 Time(s)
+       /conflg.php: 2 Time(s)
+       /console: 1 Time(s)
+       /coremail/common/help/images/helplogo_zh.gif: 1 Time(s)
+       /db.init.php: 2 Time(s)
+       /db/index.php: 2 Time(s)
+       /db__.init.php: 1 Time(s)
+       /db_cts.php: 2 Time(s)
+       /db_desql.php: 2 Time(s)
+       /db_pma.php: 1 Time(s)
+       /db_session.init.php: 1 Time(s)
+       /dbadmin/index.php: 1 Time(s)
+       /default/images/logo.gif: 1 Time(s)
+       /desktop.ini.php: 1 Time(s)
+       /dialog/dialog.js: 1 Time(s)
+       /docs.css: 1 Time(s)
+       /docs/: 1 Time(s)
+       /e/master/login.aspx: 1 Time(s)
+       /editor/fckeditor.js: 1 Time(s)
+       /editor/js/fckeditorcode_ie.js: 1 Time(s)
+       /extman/default/images/logo.gif: 1 Time(s)
+       /fckeditor.js: 1 Time(s)
+       /fckeditor/editor/dtd/fck_dtd_test.html: 1 Time(s)
+       /fckeditor/editor/js/fckeditorcode_ie.js: 1 Time(s)
+       /fckeditor/fckconfig.js: 1 Time(s)
+       /fckeditor/fckeditor.js: 1 Time(s)
+       /fckeditor/license.txt: 1 Time(s)
+       /feixiang.php: 2 Time(s)
+       /hell.php: 2 Time(s)
+       /help-e.php: 2 Time(s)
+       /help.php: 2 Time(s)
+       /help/ch_gb/images/help-title.gif: 1 Time(s)
+       /hm.php: 1 Time(s)
+       /ids/admin/login.jsp: 1 Time(s)
+       /images/login/eyoumail.gif: 1 Time(s)
+       /images/login/icon-up.gif: 1 Time(s)
+       /images/login/logo.gif: 1 Time(s)
+       /images/login9/login_33.jpg: 1 Time(s)
+       /index.cgi: 1 Time(s)
+       /index.php: 2 Time(s)
+       /index.php?m=wap: 1 Time(s)
+       /invoker/JMXInvokerServlet: 1 Time(s)
+       /issmall/: 1 Time(s)
+       /java.php: 2 Time(s)
+       /js/buttons.js: 1 Time(s)
+       /knal.php: 2 Time(s)
+       /l7.php: 1 Time(s)
+       /l8.php: 1 Time(s)
+       /lala.php: 2 Time(s)
+       /license.php: 1 Time(s)
+       /lindex.php: 1 Time(s)
+       /list.php: 1 Time(s)
+       /log.php: 2 Time(s)
+       /logon.php: 1 Time(s)
+       /lol.php: 1 Time(s)
+       /m.php?pbid=open: 1 Time(s)
+       /maintlogin.jsp: 1 Time(s)
+       /muhstik-dpr.php: 1 Time(s)
+       /muhstik.php: 2 Time(s)
+       /muhstik2.php: 2 Time(s)
+       /muhstiks.php: 1 Time(s)
+       /mx.php: 1 Time(s)
+       /myadmin/index.php: 1 Time(s)
+       /myadmin2/index.php: 1 Time(s)
+       /mysql-admin/index.php: 2 Time(s)
+       /mysql/index.php: 2 Time(s)
+       /mysqladmin/index.php: 2 Time(s)
+       /mz.php: 1 Time(s)
+       /new_gb/help/images/usage/3.3.gif: 1 Time(s)
+       /next/img/logo.gif: 1 Time(s)
+       /pe.php: 1 Time(s)
+       /phpAdmin/index.php: 2 Time(s)
+       /phpMyAdm1n/index.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 1 Time(s)
+       /phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 2 Time(s)
+       /phpMyAdmin/scripts/db___.init.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdminold/index.php: 1 Time(s)
+       /phpStudy.php: 2 Time(s)
+       /phpma/index.php: 2 Time(s)
+       /phpmyadm1n/index.php: 2 Time(s)
+       /phpmyadmin-old/index.php: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /phpmyadmin/docs.css: 1 Time(s)
+       /phpmyadmin/favicon.ico: 1 Time(s)
+       /phpmyadmin/index.php: 2 Time(s)
+       /phpmyadmin/scripts/db___.init.php: 2 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/themes/original/img/logo_right.png: 1 Time(s)
+       /phpmyadmin0/index.php: 2 Time(s)
+       /phpmyadmin1/index.php: 2 Time(s)
+       /phpmyadmin2/index.php: 1 Time(s)
+       /phpstudy.php: 2 Time(s)
+       /pma-old/index.php: 2 Time(s)
+       /pma/index.php: 1 Time(s)
+       /pmamy/index.php: 1 Time(s)
+       /pmamy2/index.php: 2 Time(s)
+       /pmd/index.php: 2 Time(s)
+       /pmd_online.php: 1 Time(s)
+       /q.php: 2 Time(s)
+       /qaq.php: 1 Time(s)
+       /qq.php: 2 Time(s)
+       /s.php: 2 Time(s)
+       /scripts/setup.php: 2 Time(s)
+       /sheep.php: 1 Time(s)
+       /shell.php: 4 Time(s)
+       /siteserver/login.aspx: 1 Time(s)
+       /siteserver/upgrade/default.aspx: 1 Time(s)
+       /system.php: 1 Time(s)
+       /test.php: 2 Time(s)
+       /test_404_page/: 1 Time(s)
+       /text.php: 2 Time(s)
+       /tools/phpMyAdmin/index.php: 1 Time(s)
+       /tpl/login/user/images/login_bg_1.jpg: 1 Time(s)
+       /tpl/user/tpl1/css/skins/blue.css: 1 Time(s)
+       /typo3/phpmyadmin/index.php: 2 Time(s)
+       /uploader.php: 1 Time(s)
+       /v/index.php: 2 Time(s)
+       /wc.php: 2 Time(s)
+       /web/phpMyAdmin/index.php: 2 Time(s)
+       /web2/login_template/1.files/Logo1.jpg: 1 Time(s)
+       /webdav/: 2 Time(s)
+       /webslee.php: 1 Time(s)
+       /weixiao.php: 1 Time(s)
+       /wp-admins.php: 2 Time(s)
+       /wp-config.php: 1 Time(s)
+       /wpo.php: 2 Time(s)
+       /wshell.php: 2 Time(s)
+       /wuwu11.php: 2 Time(s)
+       /www/phpMyAdmin/index.php: 1 Time(s)
+       /x.php: 2 Time(s)
+       /xampp/phpmyadmin/index.php: 1 Time(s)
+       /xiao.php: 1 Time(s)
+       /xw.php: 2 Time(s)
+       /xw1.php: 2 Time(s)
+       /xx.php: 2 Time(s)
+       /yao.php: 1 Time(s)
+       /z.php: 2 Time(s)
+       /zuo.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+     1051   SASL authentication failed 
+       66   Miscellaneous warnings 
+ 
+    2.197M  Bytes accepted                         2,303,418
+    2.191M  Bytes delivered                        2,297,212
+ ========   ================================================
+ 
+       37   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       37   Total                                    100.00%
+ ========   ================================================
+ 
+     1082   Connections made      
+     1082   Disconnections        
+       37   Removed from queue    
+       35   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.77.72.8 (89-77-72-8.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   25G   26G  49% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

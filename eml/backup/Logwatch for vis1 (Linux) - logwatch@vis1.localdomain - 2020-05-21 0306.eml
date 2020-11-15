@@ -1,0 +1,159 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:f2c8:0:0:0:0 with SMTP id gz8csp91249ejb;
+        Wed, 20 May 2020 18:06:10 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxmsGZHlMy6Wfh1J+6n+V8pQNmvcCfJRUov/5AIzPu3Q8KkQ/denV4v1DwtGYYVdd2djPYp
+X-Received: by 2002:a19:c8e:: with SMTP id 136mr3696563lfm.72.1590023170683;
+        Wed, 20 May 2020 18:06:10 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1590023170; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VyGA++qIfP658LTjhV5r8NrW13TlYuYRKAG+hbw314Gwwu6WcPmnZmbRmOYC7ZeoLB
+         PwPF3BNpF+/f2BaoBQrV1dHyGKx15p5jl5PnXbhkhSw9XgTqFqmxPX8DU4ikLa0l7b5C
+         rniktXuHNAmHO2h75I3xtzdMrL29Eniw0on4ai9poeCXtgboiRdJ+bS5v3Ekzp1mnZ7t
+         e1F9TJsOUcL+ePKyHJ9w2MreVMfQql4AJdE2VV66kSOHWsH9X6RJaFtMgo6pMw+oeUnu
+         eyQKuvs5XKYjORbI/VvVcZgoVxj5Z4L+UZVXq6rLud/Xm//ZVa7fDw9XBfPE30rM9Jq2
+         QjXQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=VZkD5mxLY7k8H5if+oA1iHUeeCgA3jMa3kx0D/vQvrM=;
+        b=cYveHxaiNAHwDs7O80Xf3xUfDGY0KUAIB17xb+CFo2hu5CuVm9ckIwEjqrDEjI7iwz
+         VHvTev9KY6BbpQxoX5rE/pBbD3UQe3/1Eg+40r5OP2TVOHn9H9Di78fX4Hx0Lf10GTp5
+         lKXadBgsgFhWWE5SlQZkJI7diF52dd9DU6Y8f2sQYflLrlb6RqA1oD4ct1NjyQ7r6+4B
+         8Ie/7xLdz5dJePiIMCEXBArG5T/hclFfoWB/GkKhEqlQRuLqzP/kVsUuicWmPB/mCc2z
+         lnoWfEcHZD/5Hafa63cL/W/g4g1a1q0UK1VeWeT222BkPG+r1Dp7h6mZ3LZiUfALR3h2
+         6iEw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id d8si1152543ljl.526.2020.05.20.18.06.10
+        for <bondiev@gmail.com>;
+        Wed, 20 May 2020 18:06:10 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 905F64A8004F; Thu, 21 May 2020 03:06:09 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200521010609.905F64A8004F@vis1.localdomain>
+Date: Thu, 21 May 2020 03:06:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu May 21 03:06:06 2020
+        Date Range Processed: yesterday
+                              ( 2020-May-20 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed May 20 03:44:12 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25817.cdiff [100%]
+    daily.cld updated (version: 25817, sigs: 2439513, f-level: 63, builder: raynman)
+    Can't query daily.25817.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (7004509 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 4 sites probed the server 
+    116.241.63.252
+    122.116.215.78
+    141.98.83.11
+    162.243.143.39
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 17 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       /0bef: 1 Time(s)
+       /GponForm/diag_Form?style/: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 2 Time(s)
+       /hudson: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /robots.txt: 5 Time(s)
+    408 Request Timeout
+       null: 9 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.631K  Bytes accepted                             4,742
+    4.631K  Bytes delivered                            4,742
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.242.132.226 (2626.serwervps.pl): 8 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 8 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   24G  6.9G  78% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

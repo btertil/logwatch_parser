@@ -1,0 +1,247 @@
+Delivered-To: bondiev@gmail.com
+Received: by 10.194.163.102 with SMTP id yh6csp132591wjb;
+        Sat, 14 Dec 2013 17:02:37 -0800 (PST)
+X-Received: by 10.15.32.73 with SMTP id z49mr9712006eeu.27.1387069356861;
+        Sat, 14 Dec 2013 17:02:36 -0800 (PST)
+Return-Path: <root@vps6.idhosting.pl>
+Received: from vps6.idhosting.pl ([91.231.140.105])
+        by mx.google.com with ESMTP id i1si7470367eev.131.2013.12.14.17.02.36
+        for <bondiev@gmail.com>;
+        Sat, 14 Dec 2013 17:02:36 -0800 (PST)
+Received-SPF: neutral (google.com: 91.231.140.105 is neither permitted nor denied by best guess record for domain of root@vps6.idhosting.pl) client-ip=91.231.140.105;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 91.231.140.105 is neither permitted nor denied by best guess record for domain of root@vps6.idhosting.pl) smtp.mail=root@vps6.idhosting.pl
+Received: by vps6.idhosting.pl (Postfix, from userid 0)
+	id 773DBB82346; Sun, 15 Dec 2013 04:02:05 +0300 (MSK)
+To: bondiev@gmail.com
+From: logwatch@test.idhosting.pl
+Subject: Logwatch for vps6.idhosting.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131215010205.773DBB82346@vps6.idhosting.pl>
+Date: Sun, 15 Dec 2013 04:02:04 +0300 (MSK)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Dec 15 04:02:04 2013
+        Date Range Processed: yesterday
+                              ( 2013-Dec-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vps6.idhosting.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Dec 14 04:02:05 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18236.cdiff [100%]
+    daily.cld updated (version: 18236, sigs: 602174, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (3026443 signatures) from db.local.clamav.net (IP: 212.7.0.71)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    24.12.170.177
+ 
+ Requests with error response codes
+    404 Not Found
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //PMA2005/scripts/setup.php: 1 Time(s)
+       //admin/index.php: 1 Time(s)
+       //admin/phpmyadmin/index.php: 1 Time(s)
+       //admin/phpmyadmin/scripts/setup.php: 2 Time(s)
+       //admin/pma/index.php: 1 Time(s)
+       //admin/pma/scripts/setup.php: 2 Time(s)
+       //admin/scripts/setup.php: 2 Time(s)
+       //admm/scripts/setup.php: 1 Time(s)
+       //admn/scripts/setup.php: 1 Time(s)
+       //databaseadmin/scripts/setup.php: 1 Time(s)
+       //db/index.php: 1 Time(s)
+       //db/scripts/setup.php: 1 Time(s)
+       //dbadmin/index.php: 1 Time(s)
+       //dbadmin/scripts/setup.php: 1 Time(s)
+       //home_page/index.php: 1 Time(s)
+       //index.php: 1 Time(s)
+       //myadmin/index.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //mysql-admin/scripts/setup.php: 1 Time(s)
+       //mysql/index.php: 1 Time(s)
+       //mysql/scripts/setup.php: 1 Time(s)
+       //mysqladmin/: 1 Time(s)
+       //mysqladmin/index.php: 1 Time(s)
+       //mysqladmin/scripts/setup.php: 3 Time(s)
+       //mysqlmanager/scripts/setup.php: 1 Time(s)
+       //p/m/a/scripts/setup.php: 1 Time(s)
+       //php-my-admin/scripts/setup.php: 4 Time(s)
+       //php-myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.2.3/index.php: 1 Time(s)
+       //phpMyAdmin-2.2.3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.2.6/index.php: 1 Time(s)
+       //phpMyAdmin-2.2.6/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.1/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.4/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.5-pl1/index.php: 2 Time(s)
+       //phpMyAdmin-2.5.5-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.5-rc1/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.5-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.5-rc2/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.5-rc2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.5/index.php: 2 Time(s)
+       //phpMyAdmin-2.5.5/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.6-rc1/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.6-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.6-rc2/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.6-rc2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.6/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.6/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.7-pl1/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.7-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.7/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.7/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-alpha/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-alpha2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-beta1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-beta2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-pl3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-rc2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-rc3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-pl3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-rc2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.2-beta1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.2-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.2-rc1/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin-2.6.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.3-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.3-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.3/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin-2.6.4-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-pl3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-pl4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-beta1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0-beta1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0-rc2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0.3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0.4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.1-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2/index.php: 1 Time(s)
+       //phpMyAdmin-2/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin/: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 4 Time(s)
+       //phpadmin/index.php: 1 Time(s)
+       //phpadmin/scripts/setup.php: 1 Time(s)
+       //phpmanager/scripts/setup.php: 1 Time(s)
+       //phpmy-admin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 4 Time(s)
+       //phpmyadmin1/index.php: 1 Time(s)
+       //phpmyadmin1/scripts/setup.php: 2 Time(s)
+       //phpmyadmin2/index.php: 1 Time(s)
+       //phpmyadmin2/scripts/setup.php: 2 Time(s)
+       //pma/scripts/setup.php: 2 Time(s)
+       //pma2005/scripts/setup.php: 1 Time(s)
+       //scripts/setup.php: 2 Time(s)
+       //sqlmanager/scripts/setup.php: 1 Time(s)
+       //sqlweb/scripts/setup.php: 1 Time(s)
+       //typo3/phpmyadmin/scripts/setup.php: 2 Time(s)
+       //web/phpMyAdmin/scripts/setup.php: 2 Time(s)
+       //web/scripts/setup.php: 2 Time(s)
+       //webadmin/scripts/setup.php: 1 Time(s)
+       //webdb/scripts/setup.php: 1 Time(s)
+       //websql/scripts/setup.php: 3 Time(s)
+       //xampp/phpmyadmin/scripts/setup.php: 2 Time(s)
+       /HNAP1/: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 5 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 5 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 5 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 5 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 6 Time(s)
+       /muieblackcat: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   20.539K  Bytes accepted                            21,032
+   20.539K  Bytes delivered                           21,032
+ ========   ================================================
+ 
+        2   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        2   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Removed from queue    
+        1   Delivered             
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       40G  1.9G   39G   5% /
+ none            256M  4.0K  256M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

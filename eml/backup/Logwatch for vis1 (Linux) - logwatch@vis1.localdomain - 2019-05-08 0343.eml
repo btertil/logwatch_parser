@@ -1,0 +1,140 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:aa87:0:0:0:0:0 with SMTP id u7csp4459925jai;
+        Tue, 7 May 2019 18:43:10 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqwueftG3kx2yi9qV/3Ng3knEHIXf1fIhFccKeWaVvvio1gQj75DQf1tgyKP/XibcF3R1sqx
+X-Received: by 2002:a2e:8446:: with SMTP id u6mr19524179ljh.71.1557279790805;
+        Tue, 07 May 2019 18:43:10 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1557279790; cv=none;
+        d=google.com; s=arc-20160816;
+        b=H+PkFhPrPjud0sEG5Dc5Bkpcfmacpip1ac3BLwegZFe1JzSdOxsPjMdKRgtzUwfJAw
+         OphqdFnqS+N0jxsrXLe3+O4gu92W8MwVYbkug/R9qZdoEpCJa23sssFEzEpkIcguEynr
+         YUeD3/n6ipYfTWWqahBYzhtT9SjjS9wlMykQYLSfzBlf0lY0CoRGQQz1Ecj9f9c7ZBhu
+         4Qi+1p+8QyHfawhQw0GFVqcuXFFsJ+0OpH/fVvyC8tOFrpv3lYZujwM2b3Rr3O8+QK8D
+         5VRZwQjnJyKOguTYwWRQJqFBDysdkHeyZa/rJCzbb76h61MeJo7rU+xXnWNgWOd7+Z4f
+         YSpw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=102Cs+Ubn1yY073ldIhiDSKBf5tH/frLXcfzyNSoRIo=;
+        b=fB0t0hPF6lTxoLakhPJIo+DbvNAfUGO81aHW7zNw4pHmFuSYxSBmg2T9QHDxjFvnNj
+         y0mNH06Ey937YV4KdqY3GnOU5CSIkz9RDKPe6wt2CtPy1Q/BRm97LaK+5+uvOEyT4gDl
+         /lccwFhJHR9/LKP1GoqWvM/BW7KQJd7/Do08W5sagKBffTMPicRVNToDdni9iU94vyC0
+         5a8p2kcTQ9/wmvl2yljmSseBMYvog8VpDiHlK18kgEwAqLllL5VOM0gJeStVkkv1GF6y
+         hCNfeS6JiIW6scdqTqyiBOWpIReo9TBLm6a3GdeMqagfTbFEpfy1TW+M6Xm5EkaWNLCe
+         TltQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id x9si10828902ljx.110.2019.05.07.18.43.10
+        for <bondiev@gmail.com>;
+        Tue, 07 May 2019 18:43:10 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id B355F4A812C4; Wed,  8 May 2019 03:43:09 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190508014309.B355F4A812C4@vis1.localdomain>
+Date: Wed,  8 May 2019 03:43:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed May  8 03:43:07 2019
+        Date Range Processed: yesterday
+                              ( 2019-May-07 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue May  7 03:37:10 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25441.cdiff [100%]
+    daily.cld updated (version: 25441, sigs: 1563494, f-level: 63, builder: raynman)
+    bytecode.cvd is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6129837 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    122.169.117.103
+ 
+ Requests with error response codes
+    404 Not Found
+       /acadmin.php: 1 Time(s)
+       /admin//config.php: 1 Time(s)
+       /robots.txt: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    9.982K  Bytes accepted                            10,222
+    9.982K  Bytes delivered                           10,222
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   24G  6.7G  78% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

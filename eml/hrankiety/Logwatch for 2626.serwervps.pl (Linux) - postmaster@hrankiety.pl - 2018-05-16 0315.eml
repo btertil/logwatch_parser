@@ -1,0 +1,145 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id EC2C69F20469; Wed, 16 May 2018 03:15:11 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180516011511.EC2C69F20469@hrankiety.pl>
+Date: Wed, 16 May 2018 03:15:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed May 16 03:15:10 2018
+        Date Range Processed: yesterday
+                              ( 2018-May-15 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue May 15 04:38:14 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.4 Recommended version: 0.100.0
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24568.cdiff [100%]
+    Downloading daily-24569.cdiff [100%]
+    Downloading daily-24570.cdiff [100%]
+    daily.cld updated (version: 24570, sigs: 1947134, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6513458 signatures) from db.local.clamav.net (IP: 89.111.47.130)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    115.236.33.146 -> www.baidu.com:443: 1 Time(s)
+ 
+ A total of 3 sites probed the server 
+    115.236.33.146
+    198.143.155.138
+    80.82.77.33
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+       null: 10 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 1 Time(s)
+       /admin//config.php: 2 Time(s)
+       /blog/xmlrpc.php: 1 Time(s)
+       /index.action: 1 Time(s)
+       /index.do: 1 Time(s)
+       /redirect.php: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /struts2-rest-showcase/orders.xhtml: 1 Time(s)
+       /xmlrpc.php: 1 Time(s)
+       http://checkrealtys.com/3r1ep1lgqypc440u.php: 2 Time(s)
+    405 Method Not Allowed
+       www.baidu.com:443: 1 Time(s)
+    408 Request Timeout
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      175   *Warning: Pre-queue content-filter connection overload 
+     1147   SASL authentication failed 
+       42   Miscellaneous warnings 
+ 
+  915.896K  Bytes accepted                           937,878
+  909.838K  Bytes delivered                          931,674
+ ========   ================================================
+ 
+       23   Accepted                                  95.83%
+        1   Rejected                                   4.17%
+ --------   ------------------------------------------------
+       24   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     1180   Connections made      
+     1180   Disconnections        
+       23   Removed from queue    
+       21   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       46.13.3.30 (46-13-3-30.tmcz.cz): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ **Unmatched Entries**
+ reverse mapping checking getaddrinfo for 46-13-3-30.tmcz.cz [46.13.3.30] failed - POSSIBLE BREAK-IN ATTEMPT! : 1 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   38G   13G  75% /
+ none             95G  4.0K   95G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

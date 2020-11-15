@@ -1,0 +1,333 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 5A2639F20E5D; Sat, 19 Jan 2019 03:32:06 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190119023206.5A2639F20E5D@hrankiety.pl>
+Date: Sat, 19 Jan 2019 03:32:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jan 19 03:32:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Jan-18 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Jan 18 03:17:12 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.2 Recommended version: 0.101.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25305.cdiff [100%]
+    Downloading daily-25306.cdiff [100%]
+    Downloading daily-25307.cdiff [100%]
+    daily.cld updated (version: 25307, sigs: 2212240, f-level: 63, builder: raynman)
+    bytecode.cld is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6778583 signatures) from db.local.clamav.net (IP: 104.16.186.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+    404 Not Found
+       /.git/config: 9 Time(s)
+       /1.php: 2 Time(s)
+       /12.php: 2 Time(s)
+       /1213.php: 2 Time(s)
+       /1hou.php: 2 Time(s)
+       /2.php: 1 Time(s)
+       /3.php: 2 Time(s)
+       /56.php: 2 Time(s)
+       /9510.php: 2 Time(s)
+       /9678.php: 2 Time(s)
+       /HNAP1/: 1 Time(s)
+       /PMA/index.php: 2 Time(s)
+       /PMA2/index.php: 2 Time(s)
+       /_query.php: 1 Time(s)
+       /aaaa.php: 2 Time(s)
+       /admin/PMA/index.php: 2 Time(s)
+       /admin/index.php: 2 Time(s)
+       /admin/mysql/index.php: 2 Time(s)
+       /admin/mysql2/index.php: 2 Time(s)
+       /admin/phpMyAdmin/index.php: 2 Time(s)
+       /admin/phpmyadmin/index.php: 2 Time(s)
+       /admin/phpmyadmin2/index.php: 2 Time(s)
+       /admin/pma/index.php: 2 Time(s)
+       /ak.php: 1 Time(s)
+       /ak47.php: 2 Time(s)
+       /ak48.php: 2 Time(s)
+       /aotu.php: 2 Time(s)
+       /aotu7.php: 2 Time(s)
+       /app.php: 2 Time(s)
+       /appserv.php: 2 Time(s)
+       /aw.php: 2 Time(s)
+       /bak.php: 2 Time(s)
+       /boots.php: 1 Time(s)
+       /cacti/plugins/weathermap/editor.php: 1 Time(s)
+       /cainiao.php: 2 Time(s)
+       /caonma.php: 1 Time(s)
+       /ceshi.php: 2 Time(s)
+       /claroline/phpMyAdmin/index.php: 2 Time(s)
+       /cmd.php: 5 Time(s)
+       /cmdd.php: 2 Time(s)
+       /cmv.php: 2 Time(s)
+       /cmx.php: 2 Time(s)
+       /confg.php: 1 Time(s)
+       /conflg.php: 3 Time(s)
+       /core.php: 1 Time(s)
+       /db.init.php: 1 Time(s)
+       /db/index.php: 2 Time(s)
+       /db__.init.php: 2 Time(s)
+       /db_cts.php: 1 Time(s)
+       /db_dataml.php: 2 Time(s)
+       /db_desql.php: 1 Time(s)
+       /db_pma.php: 1 Time(s)
+       /db_session.init.php: 2 Time(s)
+       /dbadmin/index.php: 2 Time(s)
+       /default.php: 2 Time(s)
+       /defect.php: 2 Time(s)
+       /desktop.ini.php: 2 Time(s)
+       /feixiang.php: 2 Time(s)
+       /h1.php: 2 Time(s)
+       /hell.php: 1 Time(s)
+       /help-e.php: 1 Time(s)
+       /help.php: 3 Time(s)
+       /hh.php: 2 Time(s)
+       /hm.php: 2 Time(s)
+       /htdocs.php: 2 Time(s)
+       /index.php: 1 Time(s)
+       /infoo.php: 2 Time(s)
+       /ip.php: 2 Time(s)
+       /java.php: 1 Time(s)
+       /knal.php: 2 Time(s)
+       /l6.php: 1 Time(s)
+       /l7.php: 2 Time(s)
+       /l8.php: 1 Time(s)
+       /lala-dpr.php: 2 Time(s)
+       /lala.php: 2 Time(s)
+       /license.php: 1 Time(s)
+       /lindex.php: 1 Time(s)
+       /linuxse.php: 2 Time(s)
+       /log.php: 1 Time(s)
+       /logon.php: 1 Time(s)
+       /lol.php: 2 Time(s)
+       /m.php?pbid=open: 2 Time(s)
+       /manager/html: 1 Time(s)
+       /miao.php: 2 Time(s)
+       /min.php: 2 Time(s)
+       /muhstik-dpr.php: 1 Time(s)
+       /muhstik.php: 2 Time(s)
+       /muhstik2.php: 2 Time(s)
+       /muhstiks.php: 2 Time(s)
+       /mx.php: 2 Time(s)
+       /myadmin/index.php: 2 Time(s)
+       /myadmin2/index.php: 1 Time(s)
+       /mysql-admin/index.php: 2 Time(s)
+       /mysql/admin/index.php: 1 Time(s)
+       /mysql/dbadmin/index.php: 2 Time(s)
+       /mysql/index.php: 2 Time(s)
+       /mysql/mysqlmanager/index.php: 2 Time(s)
+       /mysql/sqlmanager/index.php: 1 Time(s)
+       /mysql_admin/index.php: 2 Time(s)
+       /mysqladmin/index.php: 2 Time(s)
+       /mz.php: 1 Time(s)
+       /ou2.php: 2 Time(s)
+       /pe.php: 2 Time(s)
+       /phpAdmin/index.php: 2 Time(s)
+       /phpMyAbmin/index.php: 2 Time(s)
+       /phpMyAdm1n/index.php: 2 Time(s)
+       /phpMyAdmin+++---/index.php: 2 Time(s)
+       /phpMyAdmin-4.4.0/index.php: 2 Time(s)
+       /phpMyAdmin.old/index.php: 2 Time(s)
+       /phpMyAdmin/index.php: 2 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 2 Time(s)
+       /phpMyAdmin/scripts/db___.init.php: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin1/index.php: 2 Time(s)
+       /phpMyAdmin123/index.php: 2 Time(s)
+       /phpMyAdmin__/index.php: 2 Time(s)
+       /phpMyAdmina/index.php: 2 Time(s)
+       /phpMyAdminold/index.php: 2 Time(s)
+       /phpMyAdmion/index.php: 2 Time(s)
+       /phpMyadmi/index.php: 2 Time(s)
+       /phpMyadmin_bak/index.php: 2 Time(s)
+       /phpMydmin/index.php: 1 Time(s)
+       /phpStudy.php: 1 Time(s)
+       /phpadmin/index.php: 2 Time(s)
+       /phpinfi.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmy/index.php: 2 Time(s)
+       /phpmyadm1n/index.php: 1 Time(s)
+       /phpmyadmin/index.php: 2 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 2 Time(s)
+       /phpmyadmin/scripts/db___.init.php: 2 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin1/index.php: 2 Time(s)
+       /phpmyadmin2/index.php: 2 Time(s)
+       /phppma/index.php: 2 Time(s)
+       /phpstudy.php: 2 Time(s)
+       /plugins/weathermap/editor.php: 2 Time(s)
+       /pma-old/index.php: 2 Time(s)
+       /pma/index.php: 2 Time(s)
+       /pmamy/index.php: 2 Time(s)
+       /pmamy2/index.php: 2 Time(s)
+       /pmd/index.php: 2 Time(s)
+       /pmd_online.php: 1 Time(s)
+       /ppx.php: 1 Time(s)
+       /program/index.php: 1 Time(s)
+       /pwd/index.php: 2 Time(s)
+       /python.php: 2 Time(s)
+       /q.php: 4 Time(s)
+       /qaq.php: 2 Time(s)
+       /qaz.php: 1 Time(s)
+       /qq.php: 6 Time(s)
+       /qw.php: 1 Time(s)
+       /qwe.php: 2 Time(s)
+       /s.php: 3 Time(s)
+       /scripts/setup.php: 2 Time(s)
+       /sean.php: 1 Time(s)
+       /sha.php: 1 Time(s)
+       /shaAdmin/index.php: 2 Time(s)
+       /she.php: 1 Time(s)
+       /sheep.php: 2 Time(s)
+       /shell.php: 4 Time(s)
+       /shopdb/index.php: 2 Time(s)
+       /ss.php: 1 Time(s)
+       /ssaa.php: 1 Time(s)
+       /sss.php: 1 Time(s)
+       /system.php: 2 Time(s)
+       /test.php: 4 Time(s)
+       /text.php: 1 Time(s)
+       /tiandi.php: 2 Time(s)
+       /tomcat.php: 2 Time(s)
+       /tools/phpMyAdmin/index.php: 2 Time(s)
+       /typo3/phpmyadmin/index.php: 2 Time(s)
+       /u.php: 1 Time(s)
+       /uploader.php: 2 Time(s)
+       /uuu.php: 1 Time(s)
+       /v/index.php: 1 Time(s)
+       /w.php: 2 Time(s)
+       /wan.php: 2 Time(s)
+       /wanan.php: 2 Time(s)
+       /wc.php: 2 Time(s)
+       /wcp.php: 1 Time(s)
+       /web/phpMyAdmin/index.php: 2 Time(s)
+       /webdav/: 2 Time(s)
+       /webslee.php: 2 Time(s)
+       /weixiao.php: 2 Time(s)
+       /wp-admin/: 1 Time(s)
+       /wp-admins.php: 2 Time(s)
+       /wp-config.php: 2 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php: 2 Time(s)
+       /wpc.php: 2 Time(s)
+       /wpo.php: 2 Time(s)
+       /wshell.php: 2 Time(s)
+       /wuwu11.php: 2 Time(s)
+       /www/phpMyAdmin/index.php: 2 Time(s)
+       /x.php: 2 Time(s)
+       /xampp/phpmyadmin/index.php: 2 Time(s)
+       /xiao.php: 2 Time(s)
+       /xshell.php: 2 Time(s)
+       /xw.php: 2 Time(s)
+       /xw1.php: 2 Time(s)
+       /xx.php: 4 Time(s)
+       /xz.php: 2 Time(s)
+       /yao.php: 2 Time(s)
+       /yumo.php: 2 Time(s)
+       /z.php: 2 Time(s)
+       /zshmindex.php: 2 Time(s)
+       /zuo.php: 1 Time(s)
+       /zuoindex.php: 2 Time(s)
+       /zuos.php: 2 Time(s)
+       /zuoshou.php: 2 Time(s)
+       /zuoshss.php: 1 Time(s)
+       /zuoss.php: 2 Time(s)
+    405 Method Not Allowed
+       /: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      195   *Warning: Pre-queue content-filter connection overload 
+      233   SASL authentication failed 
+      143   Miscellaneous warnings 
+ 
+  915.093K  Bytes accepted                           937,055
+  909.041K  Bytes delivered                          930,858
+ ========   ================================================
+ 
+       27   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       27   Total                                    100.00%
+ ========   ================================================
+ 
+       85   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       85   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      354   Connections made      
+        3   Connections lost      
+      354   Disconnections        
+       27   Removed from queue    
+       24   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   28G   23G  56% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

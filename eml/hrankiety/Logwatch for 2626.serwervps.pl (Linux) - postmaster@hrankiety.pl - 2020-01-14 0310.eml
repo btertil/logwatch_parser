@@ -1,0 +1,512 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 90CF19F2146E; Tue, 14 Jan 2020 03:10:15 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200114021015.90CF19F2146E@hrankiety.pl>
+Date: Tue, 14 Jan 2020 03:10:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Jan 14 03:10:07 2020
+        Date Range Processed: yesterday
+                              ( 2020-Jan-13 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Jan 13 03:34:16 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25692.cdiff [100%]
+    Downloading daily-25693.cdiff [100%]
+    daily.cld updated (version: 25693, sigs: 2131608, f-level: 63, builder: raynman)
+    Can't query daily.25693.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6696604 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    222.186.19.221 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 2 sites probed the server 
+    171.67.70.102
+    41.216.186.89
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 6 Time(s)
+       /card_scan_decoder.php?No=30&door=%60wget: 1 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       /%73%65%65%79%6F%6E/%68%74%6D%6C%6F%66%66% ... %72%76%6C%65%74: 1 Time(s)
+       /%75%73%65%72%2e%70%68%70: 1 Time(s)
+       /%75%73%65%72/%72%65%67%69%73%74%65%72?%65 ... %5f%61%6a%61%78: 1 Time(s)
+       /.env: 1 Time(s)
+       /.well-known/security.txt: 1 Time(s)
+       //cgi-bin/env.sh: 1 Time(s)
+       //cgi-bin/test-cgi: 1 Time(s)
+       /123131/index.php: 1 Time(s)
+       /1ts.php: 1 Time(s)
+       /1x.php: 1 Time(s)
+       /2N/: 1 Time(s)
+       /2n/: 1 Time(s)
+       /421.php: 1 Time(s)
+       /5678.php: 1 Time(s)
+       /99.php: 1 Time(s)
+       /Aastra/: 1 Time(s)
+       /Addpac/: 1 Time(s)
+       /Adminb20474bc/Login.php: 1 Time(s)
+       /Alcatel/: 1 Time(s)
+       /Algo/: 1 Time(s)
+       /App/?content=die(md5(HelloThinkPHP)): 1 Time(s)
+       /Arris/: 1 Time(s)
+       /Astrocom/: 1 Time(s)
+       /Ata/: 1 Time(s)
+       /Audiocodes/: 1 Time(s)
+       /Avaya/: 1 Time(s)
+       /BizTouch/: 1 Time(s)
+       /BroadWorks/: 1 Time(s)
+       /Broadsoft/: 1 Time(s)
+       /Broadworks/: 1 Time(s)
+       /CP/: 1 Time(s)
+       /Cfg/: 1 Time(s)
+       /Cisco/: 1 Time(s)
+       /Conf/: 1 Time(s)
+       /Config/: 1 Time(s)
+       /Configs/: 1 Time(s)
+       /CyberData/: 1 Time(s)
+       /Cyberdata/: 1 Time(s)
+       /Denwa/: 1 Time(s)
+       /Digium/: 1 Time(s)
+       /DrayTek/: 1 Time(s)
+       /ESpace/: 1 Time(s)
+       /Escene/: 1 Time(s)
+       /Espace/: 1 Time(s)
+       /FreeSwitch/: 1 Time(s)
+       /GS/: 1 Time(s)
+       /GXP/: 1 Time(s)
+       /GXV/: 1 Time(s)
+       /Gigaset/: 1 Time(s)
+       /Grandstream/: 1 Time(s)
+       /HNAP1: 1 Time(s)
+       /Htek/: 1 Time(s)
+       /Huawei/: 1 Time(s)
+       /Huawei_eSpace/: 1 Time(s)
+       /Kamailio/: 1 Time(s)
+       /Lancom/: 1 Time(s)
+       /Linksys/: 1 Time(s)
+       /Matrix/: 1 Time(s)
+       /Maxwell/: 1 Time(s)
+       /Mediant/: 1 Time(s)
+       /Mediatrix/: 1 Time(s)
+       /Mitel/: 1 Time(s)
+       /MultiVoip/: 1 Time(s)
+       /Multitech/: 1 Time(s)
+       /MyAdmin/index.php: 1 Time(s)
+       /MyAdmin/scripts/db___.init.php: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /Obihai/: 1 Time(s)
+       /Octtel/: 1 Time(s)
+       /PMA/scripts/db___.init.php: 1 Time(s)
+       /PMA/scripts/setup.php: 1 Time(s)
+       /Panasonic/: 1 Time(s)
+       /Patton/: 1 Time(s)
+       /Polycom/: 1 Time(s)
+       /Prov/: 1 Time(s)
+       /Provision/: 1 Time(s)
+       /Provisioning/: 1 Time(s)
+       /SIP/: 1 Time(s)
+       /SIPCfg/: 1 Time(s)
+       /SPA/: 1 Time(s)
+       /Samsung/: 1 Time(s)
+       /Sangoma/: 1 Time(s)
+       /Siemens/: 1 Time(s)
+       /Sip/: 1 Time(s)
+       /Sipura/: 1 Time(s)
+       /SmartNode/: 1 Time(s)
+       /Smartnode/: 1 Time(s)
+       /Snom/: 1 Time(s)
+       /Sonus/: 1 Time(s)
+       /Spa/: 1 Time(s)
+       /Swissvoice/: 1 Time(s)
+       /Technicolor/: 1 Time(s)
+       /Thomson/: 1 Time(s)
+       /Tiptel/: 1 Time(s)
+       /Touchstone/: 1 Time(s)
+       /Unify/: 1 Time(s)
+       /VOIP/: 1 Time(s)
+       /VTech/: 1 Time(s)
+       /Valcom/: 1 Time(s)
+       /VoIP/: 1 Time(s)
+       /Voip/: 1 Time(s)
+       /Vtech/: 1 Time(s)
+       /Yealink/: 1 Time(s)
+       /Zyxel/: 1 Time(s)
+       /__phpMyAdmin/index.php: 1 Time(s)
+       /aastra/: 1 Time(s)
+       /admin/PMA/index.php: 1 Time(s)
+       /admin/content/sitetree/: 1 Time(s)
+       /admin/index.php/dms/Cisco-SPA-122/: 1 Time(s)
+       /admin/mysql/index.php: 1 Time(s)
+       /admin/phpMyAdmin/index.php: 1 Time(s)
+       /admin/phpmyadmin/index.php: 1 Time(s)
+       /admin/phpmyadmin2/index.php: 1 Time(s)
+       /ajax: 1 Time(s)
+       /alcatel/: 1 Time(s)
+       /algo/: 1 Time(s)
+       /app/provision/: 1 Time(s)
+       /asterisk/phoneprov/: 1 Time(s)
+       /astrocom/: 1 Time(s)
+       /ata/: 1 Time(s)
+       /audiocodes/: 1 Time(s)
+       /avaya/: 1 Time(s)
+       /b.php: 1 Time(s)
+       /bbs.php: 1 Time(s)
+       /bbs/index.php: 1 Time(s)
+       /broadsoft/: 1 Time(s)
+       /cacti/plugins/weathermap/editor.php: 1 Time(s)
+       /cfg/: 1 Time(s)
+       /cisco/: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 1 Time(s)
+       /composer.php: 1 Time(s)
+       /composers.php: 1 Time(s)
+       /conf/: 1 Time(s)
+       /config/: 1 Time(s)
+       /configServlet/: 1 Time(s)
+       /config_server/: 1 Time(s)
+       /config_server/cisco/: 1 Time(s)
+       /config_server/snom/: 1 Time(s)
+       /configs/: 1 Time(s)
+       /db_cts.php: 1 Time(s)
+       /db_pma.php: 1 Time(s)
+       /dbadmin/index.php: 1 Time(s)
+       /dekstop/phone/: 1 Time(s)
+       /denwa/: 1 Time(s)
+       /deskphone/: 1 Time(s)
+       /deskphone/aastra/: 1 Time(s)
+       /desktop.ini.php: 1 Time(s)
+       /desktopphone/: 1 Time(s)
+       /device/: 1 Time(s)
+       /devicecfg/: 1 Time(s)
+       /digium/: 1 Time(s)
+       /dms/: 1 Time(s)
+       /doudou.php: 1 Time(s)
+       /download/index.php: 1 Time(s)
+       /drayTek/: 1 Time(s)
+       /elrekt.php?s=%2f%69%6e%64%65%78%2f%5c%74% ... %6e%6b%50%48%50: 1 Time(s)
+       /evox/about: 1 Time(s)
+       /ffr.php: 1 Time(s)
+       /firmware/: 1 Time(s)
+       /floaw.php: 1 Time(s)
+       /forum.php: 1 Time(s)
+       /forum/index.php: 1 Time(s)
+       /forums.php: 1 Time(s)
+       /forums/index.php: 1 Time(s)
+       /fpbx/: 1 Time(s)
+       /ftmabc.php: 1 Time(s)
+       /ftp/: 1 Time(s)
+       /ftp/grandstream/: 1 Time(s)
+       /getconf/: 1 Time(s)
+       /gigaset/: 1 Time(s)
+       /grandstream/: 1 Time(s)
+       /gs/: 1 Time(s)
+       /gx/: 1 Time(s)
+       /gxp/: 1 Time(s)
+       /gxp_1165/: 1 Time(s)
+       /gxv/: 1 Time(s)
+       /haiyan.php: 1 Time(s)
+       /hd.php: 1 Time(s)
+       /hell.php: 1 Time(s)
+       /help-e.php: 1 Time(s)
+       /help.php: 1 Time(s)
+       /hhh.php: 1 Time(s)
+       /hhhhhh.php: 1 Time(s)
+       /home.php: 1 Time(s)
+       /hs.php: 1 Time(s)
+       /htdocs.php: 1 Time(s)
+       /htek/: 1 Time(s)
+       /huawei/: 1 Time(s)
+       /hue2.php: 1 Time(s)
+       /huoshan.php: 1 Time(s)
+       /images/!.php: 1 Time(s)
+       /images/jsspwneed.php: 1 Time(s)
+       /images/stories/filemga.php?ssp=RfVbHu: 1 Time(s)
+       /images/up.php: 1 Time(s)
+       /indea.php: 1 Time(s)
+       /index.php: 2 Time(s)
+       /index.php/module/action/param1/${@die(md5(HelloThinkPHP))}: 1 Time(s)
+       /index.php?s=%2f%69%6e%64%65%78%2f%5c%74%6 ... %6e%6b%50%48%50: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /index.php?s=/module/action/param1/${@die( ... elloThinkPHP))}: 1 Time(s)
+       /inetpub/: 1 Time(s)
+       /izom.php: 1 Time(s)
+       /java.php: 1 Time(s)
+       /joomla/: 1 Time(s)
+       /kamailio/: 1 Time(s)
+       /kk.php: 1 Time(s)
+       /l.php: 1 Time(s)
+       /lala-dpr.php: 1 Time(s)
+       /lala.php: 1 Time(s)
+       /lancom/: 1 Time(s)
+       /lang.php?f=1: 1 Time(s)
+       /license.php: 1 Time(s)
+       /linksys/: 1 Time(s)
+       /logon.php: 1 Time(s)
+       /management/: 1 Time(s)
+       /meijianxue.php: 1 Time(s)
+       /mitel/: 1 Time(s)
+       /mjx.php: 1 Time(s)
+       /muhstik.php: 1 Time(s)
+       /myadmin/index.php: 1 Time(s)
+       /myadmin/scripts/db___.init.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /myadmin2/index.php: 1 Time(s)
+       /mysql/admin/index.php: 1 Time(s)
+       /mysql/sqlmanager/index.php: 1 Time(s)
+       /mysql_admin/index.php: 1 Time(s)
+       /mysqladmin/index.php: 1 Time(s)
+       /netgen/: 1 Time(s)
+       /nmaplowercheck1578895887: 1 Time(s)
+       /no1.php: 1 Time(s)
+       /obihai/: 1 Time(s)
+       /overrides/: 1 Time(s)
+       /panasonic/: 1 Time(s)
+       /pap2/: 1 Time(s)
+       /payload.php: 2 Time(s)
+       /pbx/: 1 Time(s)
+       /phone/: 1 Time(s)
+       /phoneprov/: 1 Time(s)
+       /phones/: 1 Time(s)
+       /phonesprov/: 1 Time(s)
+       /php2MyAdmin/index.php: 1 Time(s)
+       /phpAdmin/index.php: 1 Time(s)
+       /phpMyAbmin/index.php: 1 Time(s)
+       /phpMyAdmin+++---/index.php: 1 Time(s)
+       /phpMyAdmin-4.4.0/index.php: 1 Time(s)
+       /phpMyAdmin._2/index.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 1 Time(s)
+       /phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/scripts/db___.init.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin1/index.php: 1 Time(s)
+       /phpMyAdmin123/index.php: 1 Time(s)
+       /phpMyAdmin333/index.php: 1 Time(s)
+       /phpMyAdmin4.8.0/index.php: 1 Time(s)
+       /phpMyAdmin4.8.1/index.php: 1 Time(s)
+       /phpMyAdmin4.8.2/index.php: 1 Time(s)
+       /phpMyAdmin4.8.3/index.php: 1 Time(s)
+       /phpMyAdmin4.8.5/index.php: 1 Time(s)
+       /phpMyAdmin__/index.php: 1 Time(s)
+       /phpMyAdmina/index.php: 1 Time(s)
+       /phpMyAdminhf/index.php: 1 Time(s)
+       /phpMyAdminold/index.php: 1 Time(s)
+       /phpMyAdmins/index.php: 1 Time(s)
+       /phpMyAdmion/index.php: 1 Time(s)
+       /phpMyAdmln/index.php: 1 Time(s)
+       /phpMyadmi/index.php: 1 Time(s)
+       /phpMyadmin_bak/index.php: 1 Time(s)
+       /phpMydmin/index.php: 1 Time(s)
+       /phpNyAdmin/index.php: 1 Time(s)
+       /phpadmin/index.php: 1 Time(s)
+       /phpdm.php: 1 Time(s)
+       /phpiMyAdmin/index.php: 1 Time(s)
+       /phpinfo.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmadmin/index.php: 1 Time(s)
+       /phpmyadm1n/index.php: 1 Time(s)
+       /phpmyadmin-old/index.php: 1 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/scripts/db___.init.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin0/index.php: 1 Time(s)
+       /phpmyadmin2/index.php: 1 Time(s)
+       /phpmyadmin2222/index.php: 1 Time(s)
+       /phpmyadmin3333/index.php: 1 Time(s)
+       /phprov/: 1 Time(s)
+       /plugins/weathermap/editor.php: 1 Time(s)
+       /pma-old/index.php: 1 Time(s)
+       /pma/scripts/db___.init.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /pmd/index.php: 1 Time(s)
+       /pmd_online.php: 1 Time(s)
+       /polycom-vvx/: 1 Time(s)
+       /polycom/: 1 Time(s)
+       /prov/: 1 Time(s)
+       /provision/: 1 Time(s)
+       /provisioning/: 1 Time(s)
+       /provisioning/p.php/: 1 Time(s)
+       /pwd/index.php: 1 Time(s)
+       /python.php: 1 Time(s)
+       /qaq.php: 1 Time(s)
+       /qq.php: 1 Time(s)
+       /root11.php: 1 Time(s)
+       /rxr.php: 1 Time(s)
+       /s.php: 1 Time(s)
+       /s/index.php: 1 Time(s)
+       /sangoma/: 1 Time(s)
+       /sbb/index.php: 1 Time(s)
+       /scottch/: 1 Time(s)
+       /scripts/db___.init.php: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /sdk: 1 Time(s)
+       /shaAdmin/index.php: 1 Time(s)
+       /sheep.php: 1 Time(s)
+       /shell.php: 1 Time(s)
+       /shopdb/index.php: 1 Time(s)
+       /siemens/: 1 Time(s)
+       /simpla/: 1 Time(s)
+       /sip/: 1 Time(s)
+       /sipura/: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /snom/: 1 Time(s)
+       /solr/: 1 Time(s)
+       /solr/admin/info/system?wt=json: 1 Time(s)
+       /spa/: 1 Time(s)
+       /spider.php: 1 Time(s)
+       /sql/index.php: 1 Time(s)
+       /swissvoice/: 1 Time(s)
+       /sys/: 1 Time(s)
+       /t32/: 1 Time(s)
+       /t6nv.php: 1 Time(s)
+       /taisui.php: 1 Time(s)
+       /test.php: 2 Time(s)
+       /text.php: 1 Time(s)
+       /tftp/: 1 Time(s)
+       /tftpboot/: 1 Time(s)
+       /tftpphone/: 1 Time(s)
+       /tftproot/: 1 Time(s)
+       /tiptel/: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 1 Time(s)
+       /trixbox/: 1 Time(s)
+       /txt/: 1 Time(s)
+       /typo3/phpmyadmin/index.php: 1 Time(s)
+       /ucs/: 1 Time(s)
+       /unauthenticated/provisioning/: 1 Time(s)
+       /undx.php: 1 Time(s)
+       /unify/: 1 Time(s)
+       /up.php: 1 Time(s)
+       /v/index.php: 1 Time(s)
+       /voip/: 1 Time(s)
+       /voip_provisioning/: 1 Time(s)
+       /vpn/../vpns/cfg/smb.conf: 2 Time(s)
+       /vtech/: 1 Time(s)
+       /vvv.php: 1 Time(s)
+       /wc.php: 1 Time(s)
+       /weathermap/editor.php: 1 Time(s)
+       /web/phpMyAdmin/index.php: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /websql/index.php: 1 Time(s)
+       /woshimengmei.php: 1 Time(s)
+       /wp-config.php: 1 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+       /wpc.php: 1 Time(s)
+       /wpo.php: 1 Time(s)
+       /wuwu11.php: 1 Time(s)
+       /www/phpMyAdmin/index.php: 1 Time(s)
+       /x.php: 1 Time(s)
+       /xampp/phpmyadmin/index.php: 1 Time(s)
+       /xiaoxia.php: 1 Time(s)
+       /xiaxia.php: 1 Time(s)
+       /xiu.php: 1 Time(s)
+       /xml/: 1 Time(s)
+       /xmlservices/: 1 Time(s)
+       /xsser.php: 1 Time(s)
+       /xw.php: 1 Time(s)
+       /xw1.php: 1 Time(s)
+       /xx.php: 1 Time(s)
+       /yealink/: 1 Time(s)
+       /yu.php: 1 Time(s)
+       /yuyang.php: 1 Time(s)
+       /z.php: 1 Time(s)
+       /zyxel/: 1 Time(s)
+       /zzz.php: 1 Time(s)
+       http://5.188.210.101/echo.php: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      327   *Warning: Pre-queue content-filter connection overload 
+    17441   SASL authentication failed 
+       93   Miscellaneous warnings 
+ 
+    2.855M  Bytes accepted                         2,993,853
+    2.849M  Bytes delivered                        2,987,658
+ ========   ================================================
+ 
+       51   Accepted                                  94.44%
+        3   Rejected                                   5.56%
+ --------   ------------------------------------------------
+       54   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    17811   Connections made      
+        1   Connections lost      
+    17814   Disconnections        
+       51   Removed from queue    
+       49   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  46% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,185 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 3CCB69F20478; Thu,  7 May 2020 03:32:18 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200507013218.3CCB69F20478@hrankiety.pl>
+Date: Thu,  7 May 2020 03:32:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu May  7 03:32:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-May-06 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed May  6 03:12:18 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25803.cdiff [100%]
+    daily.cld updated (version: 25803, sigs: 2358438, f-level: 63, builder: raynman)
+    Can't query daily.25803.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6923434 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    45.13.93.82 -> ip.ws.126.net:443: 2 Time(s)
+ 
+ A total of 7 sites probed the server 
+    162.243.138.71
+    162.243.143.235
+    179.189.231.78
+    185.202.2.68
+    41.216.186.89
+    45.136.108.68
+    85.128.128.32
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 11 Time(s)
+       /boaform/admin/formPing: 1 Time(s)
+       /cgi-bin/mainfunction.cgi?action=login&key ... er=a&loginPwd=a: 2 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       null: 8 Time(s)
+    404 Not Found
+       /Admine284f2b9/Login.php: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 2 Time(s)
+       /TP/public/index.php: 2 Time(s)
+       /adv,/cgi-bin/weblogin.cgi?username=admin% ... 3&password=asdf: 3 Time(s)
+       /cgi-bin/mainfunction.cgi: 4 Time(s)
+       /cgi-bin/test-cgi: 10 Time(s)
+       /console: 10 Time(s)
+       /elrekt.php: 1 Time(s)
+       /horde/imp/test.php: 10 Time(s)
+       /html/public/index.php: 2 Time(s)
+       /hudson: 2 Time(s)
+       /index.php: 2 Time(s)
+       /login.action: 10 Time(s)
+       /login/do_login: 8 Time(s)
+       /login?from=-24487672766705943993242180112 ... 09328896.000000: 1 Time(s)
+       /login?from=0.000000: 8 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 9 Time(s)
+       /phpmyadmin/scripts/setup.php: 8 Time(s)
+       /portal/redlion: 2 Time(s)
+       /public/index.php: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /thinkphp/html/public/index.php: 2 Time(s)
+       http://5.188.210.101/echo.php: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 2 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      112   *Warning: Pre-queue content-filter connection overload 
+    29446   SASL authentication failed 
+      127   Miscellaneous warnings 
+ 
+    2.076M  Bytes accepted                         2,176,708
+    2.070M  Bytes delivered                        2,170,506
+ ========   ================================================
+ 
+       62   Accepted                                  98.41%
+        1   Rejected                                   1.59%
+ --------   ------------------------------------------------
+       63   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    29576   Connections made      
+    29576   Disconnections        
+       62   Removed from queue    
+       60   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    tzdata-2020a-1.el6.noarch
+    pgdg-redhat-repo-42.0-11.noarch
+    fail2ban-0.9.6-1.el6.1.noarch
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   27G   24G  53% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

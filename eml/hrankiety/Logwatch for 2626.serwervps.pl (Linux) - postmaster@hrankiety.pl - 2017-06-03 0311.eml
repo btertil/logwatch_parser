@@ -1,0 +1,160 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 0C6C435A167B; Sat,  3 Jun 2017 03:11:09 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170603011109.0C6C435A167B@hrankiety.pl>
+Date: Sat,  3 Jun 2017 03:11:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jun  3 03:11:07 2017
+        Date Range Processed: yesterday
+                              ( 2017-Jun-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Jun  2 03:34:12 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-23436.cdiff [100%]
+    Downloading daily-23437.cdiff [100%]
+    Downloading daily-23438.cdiff [100%]
+    Downloading daily-23439.cdiff [100%]
+    daily.cld updated (version: 23439, sigs: 2081810, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 301, sigs: 58, f-level: 63, builder: anvilleg)
+    Database updated (6300658 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    139.162.7.49
+    163.172.68.183
+ 
+ Requests with error response codes
+    404 Not Found
+       //a2billing/common/javascript/misc.js: 2 Time(s)
+       /current_config/Account1: 1 Time(s)
+       /userlogin/login.aspix?id=1%27and%201=2: 1 Time(s)
+       http://clientapi.ipip.net/echo.php?info=20170602195951: 1 Time(s)
+    501 Not Implemented
+       null: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      521   *Warning: Pre-queue content-filter connection overload 
+      571   SASL authentication failed 
+       26   Miscellaneous warnings 
+ 
+  209.247K  Bytes accepted                           214,269
+  203.187K  Bytes delivered                          208,063
+ ========   ================================================
+ 
+       12   Accepted                                  85.71%
+        2   Rejected                                  14.29%
+ --------   ------------------------------------------------
+       14   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                   14.29%
+        6   4xx Reject sender address                 85.71%
+ --------   ------------------------------------------------
+        7   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      592   Connections made      
+      592   Disconnections        
+       12   Removed from queue    
+       10   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+       10   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       95.90.244.75 (ip5f5af44b.dynamic.kabel-deutschland.de): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+    kernel-2.6.32-696.3.1.el6.i686
+ 
+ Packages Updated:
+    nss-tools-3.28.4-3.el6_9.i686
+    nss-3.28.4-3.el6_9.i686
+    1:cups-libs-1.4.2-78.el6_9.i686
+    initscripts-9.03.58-1.el6.centos.1.i686
+    nss-sysinit-3.28.4-3.el6_9.i686
+    kernel-firmware-2.6.32-696.3.1.el6.noarch
+    sudo-1.8.6p3-28.el6_9.i686
+    fail2ban-0.9.6-1.el6.1.noarch
+    kernel-headers-2.6.32-696.3.1.el6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   30G   21G  60% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

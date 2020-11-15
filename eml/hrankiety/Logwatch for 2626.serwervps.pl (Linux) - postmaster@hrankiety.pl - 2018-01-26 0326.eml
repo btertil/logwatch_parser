@@ -1,0 +1,181 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id DC0FD35A25DD; Fri, 26 Jan 2018 03:26:22 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180126022622.DC0FD35A25DD@hrankiety.pl>
+Date: Fri, 26 Jan 2018 03:26:19 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Jan 26 03:26:18 2018
+        Date Range Processed: yesterday
+                              ( 2018-Jan-25 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Jan 25 03:50:22 2018
+ 
+ Last Status:
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24251.cdiff [100%]
+    Downloading daily-24252.cdiff [100%]
+    Downloading daily-24253.cdiff [100%]
+    daily.cld updated (version: 24253, sigs: 1834864, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    Database updated (6401188 signatures) from db.local.clamav.net (IP: 88.198.202.11)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /Admin/: 1 Time(s)
+       /AdminWeb/: 1 Time(s)
+       /CFIDE/scripts/ajax/: 1 Time(s)
+       /Editor/: 1 Time(s)
+       /FCK/_whatsnew.html: 1 Time(s)
+       /FCK/editor/dialog/fck_about.html: 1 Time(s)
+       /FCKEditorV2/_whatsnew.html: 1 Time(s)
+       /FCKEditorV2/editor/dialog/fck_about.html: 1 Time(s)
+       /FCKeditor/_whatsnew.html: 1 Time(s)
+       /FCKeditor/editor/dialog/fck_about.html: 1 Time(s)
+       /Fck/_whatsnew.html: 1 Time(s)
+       /Fck/editor/dialog/fck_about.html: 1 Time(s)
+       /HTMLEditor/: 1 Time(s)
+       /_whatsnew.html: 1 Time(s)
+       /adm/: 1 Time(s)
+       /admin/: 1 Time(s)
+       /admin888/: 1 Time(s)
+       /admin_area/: 1 Time(s)
+       /admin_manage/: 1 Time(s)
+       /admin_manage_access/: 1 Time(s)
+       /administrator/: 1 Time(s)
+       /checkadmin/: 1 Time(s)
+       /ckeditor/_whatsnew.html: 1 Time(s)
+       /ckeditor/editor/dialog/fck_about.html: 1 Time(s)
+       /common/: 1 Time(s)
+       /control/: 1 Time(s)
+       /da/version.properties: 1 Time(s)
+       /editor/dialog/fck_about.html: 1 Time(s)
+       /fck/_whatsnew.html: 1 Time(s)
+       /fck/editor/dialog/fck_about.html: 1 Time(s)
+       /fck2/_whatsnew.html: 1 Time(s)
+       /fck2/editor/dialog/fck_about.html: 1 Time(s)
+       /fckedit/_whatsnew.html: 1 Time(s)
+       /fckedit/editor/dialog/fck_about.html: 1 Time(s)
+       /fckeditor/_whatsnew.html: 1 Time(s)
+       /fckeditor/editor/dialog/fck_about.html: 1 Time(s)
+       /fileadmin/: 1 Time(s)
+       /getcfg.php: 2 Time(s)
+       /hndUnblock.cgi: 1 Time(s)
+       /html/js/: 1 Time(s)
+       /inc/: 1 Time(s)
+       /inc/editor/: 1 Time(s)
+       /includes/: 1 Time(s)
+       /includes/editor/: 1 Time(s)
+       /javascripts/: 1 Time(s)
+       /javascripts/ajax/: 1 Time(s)
+       /js/: 1 Time(s)
+       /js/ajax/: 1 Time(s)
+       /js/lib/: 1 Time(s)
+       /lib/: 1 Time(s)
+       /manage/: 1 Time(s)
+       /manager/: 1 Time(s)
+       /moderator/: 1 Time(s)
+       /moo: 1 Time(s)
+       /newsadmin/: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /processlogin/: 1 Time(s)
+       /scripts/: 1 Time(s)
+       /scripts/ajax/: 1 Time(s)
+       /sysadm/: 1 Time(s)
+       /sysadmin/: 1 Time(s)
+       /system/: 1 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+       /uploads/: 1 Time(s)
+       /webadmin/: 1 Time(s)
+       /webmaster/: 1 Time(s)
+       /webtop/help/en/images/emc_logo.gif: 1 Time(s)
+       /webtop/version.properties: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      123   *Warning: Pre-queue content-filter connection overload 
+      214   SASL authentication failed 
+       52   Miscellaneous warnings 
+ 
+  701.186K  Bytes accepted                           718,014
+  695.134K  Bytes delivered                          711,817
+ ========   ================================================
+ 
+       25   Accepted                                  89.29%
+        3   Rejected                                  10.71%
+ --------   ------------------------------------------------
+       28   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      232   Connections made      
+        1   Connections lost      
+      232   Disconnections        
+       25   Removed from queue    
+       23   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   32G   19G  64% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,160 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id E2ED49F201D2; Thu,  2 Aug 2018 03:23:11 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180802012311.E2ED49F201D2@hrankiety.pl>
+Date: Thu,  2 Aug 2018 03:23:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Aug  2 03:23:07 2018
+        Date Range Processed: yesterday
+                              ( 2018-Aug-01 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Aug  1 03:37:16 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24799.cdiff [100%]
+    Downloading daily-24800.cdiff [100%]
+    Downloading daily-24801.cdiff [100%]
+    daily.cld updated (version: 24801, sigs: 2033813, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 326, sigs: 93, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6600155 signatures) from db.local.clamav.net (IP: 104.16.187.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       http://180.163.113.82/check_proxy: 1 Time(s)
+    404 Not Found
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 3 Time(s)
+       /PMA2011/scripts/setup.php: 1 Time(s)
+       /PMA2012/scripts/setup.php: 1 Time(s)
+       /PMA2013/scripts/setup.php: 1 Time(s)
+       /PMA2014/scripts/setup.php: 1 Time(s)
+       /PMA2015/scripts/setup.php: 1 Time(s)
+       /PMA2016/scripts/setup.php: 1 Time(s)
+       /admin/assets/js/views/login.js: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /logo.swf: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /myadmin/scripts/setup.php: 3 Time(s)
+       /mysql/scripts/setup.php: 2 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.10.0.0/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.11.11.3/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.11.11/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-3.0.0.0-all-languages/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 3 Time(s)
+       /phpmyadmin/scripts/setup.php: 3 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /phpmyadmin3/scripts/setup.php: 1 Time(s)
+       /phpmyadmin4/scripts/setup.php: 1 Time(s)
+       /phpmyadmin5/scripts/setup.php: 1 Time(s)
+       /phpmyadmin6/scripts/setup.php: 1 Time(s)
+       /phpmyadmin7/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 3 Time(s)
+       /pma2011/scripts/setup.php: 1 Time(s)
+       /pma2012/scripts/setup.php: 1 Time(s)
+       /pma2013/scripts/setup.php: 1 Time(s)
+       /pma2014/scripts/setup.php: 1 Time(s)
+       /pma2015/scripts/setup.php: 1 Time(s)
+       /pma2016/scripts/setup.php: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 3 Time(s)
+       /wp-login.php: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       51   *Warning: Pre-queue content-filter connection overload 
+     6855   SASL authentication failed 
+       27   Miscellaneous warnings 
+ 
+  705.308K  Bytes accepted                           722,235
+  699.247K  Bytes delivered                          716,029
+ ========   ================================================
+ 
+       14   Accepted                                  87.50%
+        2   Rejected                                  12.50%
+ --------   ------------------------------------------------
+       16   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     6842   Connections made      
+     6843   Disconnections        
+       14   Removed from queue    
+       12   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        4   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  46% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

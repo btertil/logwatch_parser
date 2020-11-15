@@ -1,0 +1,132 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id A108235A1EC0; Mon, 30 Jan 2017 03:09:09 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170130020909.A108235A1EC0@hrankiety.pl>
+Date: Mon, 30 Jan 2017 03:09:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Jan 30 03:09:08 2017
+        Date Range Processed: yesterday
+                              ( 2017-Jan-29 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Jan 29 03:08:10 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (62.245.181.53)...
+    Downloading daily-22957.cdiff [100%]
+    Downloading daily-22958.cdiff [100%]
+    Downloading daily-22959.cdiff [100%]
+    Downloading daily-22960.cdiff [100%]
+    Downloading daily-22961.cdiff [100%]
+    Downloading daily-22962.cdiff [100%]
+    daily.cld updated (version: 22962, sigs: 1489198, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 290, sigs: 55, f-level: 63, builder: neo)
+    Database updated (5708043 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /82172316237: 19 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        3   *Warning: Pre-queue content-filter connection overload 
+        7   SASL authentication failed 
+       27   Miscellaneous warnings 
+ 
+    2.569M  Bytes accepted                         2,694,201
+    2.764M  Bytes delivered                        2,898,145
+ ========   ================================================
+ 
+       15   Accepted                                  75.00%
+        5   Rejected                                  25.00%
+ --------   ------------------------------------------------
+       20   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        5   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       22   Connections made      
+       22   Disconnections        
+       15   Removed from queue    
+       11   Delivered             
+        6   Sent via SMTP         
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        1   Numeric hostname      
+        2   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Illegal users from:
+    89.73.65.124 (89-73-65-124.dynamic.chello.pl): 1 time
+ 
+ Users logging in through sshd:
+    btertil:
+       89.73.65.124 (89-73-65-124.dynamic.chello.pl): 3 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ SFTP subsystem requests: 1 Time(s)
+ 
+ **Unmatched Entries**
+ User root from 89-73-65-124.dynamic.chello.pl not allowed because not listed in AllowUsers : 1 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   25G   26G  49% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,141 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 6838F342832; Mon, 10 Aug 2020 03:30:10 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200810013010.6838F342832@hrankiety.pl>
+Date: Mon, 10 Aug 2020 03:30:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Aug 10 03:30:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-Aug-09 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Aug  9 03:32:09 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25898.cdiff [100%]
+    daily.cld updated (version: 25898, sigs: 3807234, f-level: 63, builder: raynman)
+    Can't query daily.25898.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8372230 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    143.92.32.86 -> g.alicdn.com:443: 2 Time(s)
+    143.92.32.86 -> httpbin.org:443: 2 Time(s)
+    143.92.32.86 -> sm.bdimg.com:443: 1 Time(s)
+ 
+ A total of 2 sites probed the server 
+    185.202.2.147
+    92.63.194.66
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /HNAP1/: 1 Time(s)
+       g.alicdn.com:443: 2 Time(s)
+       httpbin.org:443: 2 Time(s)
+       null: 2 Time(s)
+       sm.bdimg.com:443: 1 Time(s)
+    404 Not Found
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /ads.txt: 1 Time(s)
+       /boaform/admin/formLogin: 5 Time(s)
+       /cgi-bin/kerbynet?Section=NoAuthREQ&Action ... o;sh%20zero;%22: 20 Time(s)
+       /config/getuser?index=0: 4 Time(s)
+       /humans.txt: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       49   *Warning: Pre-queue content-filter connection overload 
+    11952   SASL authentication failed 
+       57   Miscellaneous warnings 
+ 
+  713.812K  Bytes accepted                           730,944
+  705.262K  Bytes delivered                          722,188
+ ========   ================================================
+ 
+       29   Accepted                                  90.62%
+        3   Rejected                                   9.38%
+ --------   ------------------------------------------------
+       32   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                          33.33%
+        2   Reject sender address                     66.67%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    12016   Connections made      
+    12015   Disconnections        
+       29   Removed from queue    
+       25   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        2   Timeout (inbound)     
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   30G   18G  63% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

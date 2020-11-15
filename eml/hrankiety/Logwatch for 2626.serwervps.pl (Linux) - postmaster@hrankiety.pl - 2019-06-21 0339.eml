@@ -1,0 +1,166 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 6BA739F215A3; Fri, 21 Jun 2019 03:39:17 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190621013917.6BA739F215A3@hrankiety.pl>
+Date: Fri, 21 Jun 2019 03:39:12 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Jun 21 03:39:12 2019
+        Date Range Processed: yesterday
+                              ( 2019-Jun-20 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Jun 20 03:07:11 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25485.cdiff [100%]
+    daily.cld updated (version: 25485, sigs: 1596921, f-level: 63, builder: raynman)
+    bytecode.cvd is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6163264 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    193.188.22.137
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /moo: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /000000000000.cfg: 2 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /aastra.cfg: 2 Time(s)
+       /admin/images/cal_date_over.gif: 1 Time(s)
+       /admin/login.php: 1 Time(s)
+       /api/.env: 1 Time(s)
+       /app/.env: 2 Time(s)
+       /downloader/index.php: 4 Time(s)
+       /dumpmdm.cmd?/login/login.html: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /errors/503.php: 4 Time(s)
+       /fckeditor/editor/filemanager/connectors/p ... .php?Type=Media: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php/admin/: 4 Time(s)
+       /magento/downloader/index.php: 1 Time(s)
+       /magento/errors/503.php: 1 Time(s)
+       /magento/index.php/admin/: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmy/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /shop/downloader/index.php: 1 Time(s)
+       /shop/errors/503.php: 1 Time(s)
+       /shop/index.php/admin/: 1 Time(s)
+       /store/downloader/index.php: 1 Time(s)
+       /store/errors/503.php: 1 Time(s)
+       /store/index.php/admin/: 1 Time(s)
+       /templates/system/css/system.css: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wp-login.php: 2 Time(s)
+       /y000000000007.cfg: 2 Time(s)
+       /y000000000031.cfg: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+     1303   *Warning: Pre-queue content-filter connection overload 
+     1773   SASL authentication failed 
+      620   Miscellaneous warnings 
+ 
+    1.301M  Bytes accepted                         1,364,224
+    1.295M  Bytes delivered                        1,358,020
+ ========   ================================================
+ 
+       30   Accepted                                   5.08%
+      561   Rejected                                  94.92%
+ --------   ------------------------------------------------
+      591   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Reject HELO/EHLO                           0.71%
+      557   Reject unknown user                       99.29%
+ --------   ------------------------------------------------
+      561   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       97   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       97   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     2240   Connections made      
+        1   Connections lost      
+     2240   Disconnections        
+       30   Removed from queue    
+       28   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       11T  3.8T  6.5T  37% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

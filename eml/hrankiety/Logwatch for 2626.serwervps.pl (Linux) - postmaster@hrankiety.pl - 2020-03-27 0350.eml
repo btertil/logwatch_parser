@@ -1,0 +1,195 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 89E7D9F20476; Fri, 27 Mar 2020 03:50:09 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200327025009.89E7D9F20476@hrankiety.pl>
+Date: Fri, 27 Mar 2020 03:50:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Mar 27 03:50:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-Mar-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Mar 26 03:14:11 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25762.cdiff [100%]
+    daily.cld updated (version: 25762, sigs: 2239415, f-level: 63, builder: raynman)
+    Can't query daily.25762.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6804411 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    47.137.204.13
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       HTTP/1.1: 1 Time(s)
+       https://fxcity.co.kr/: 1 Time(s)
+    404 Not Found
+       /.bash_history: 1 Time(s)
+       /.git/HEAD: 1 Time(s)
+       /2phpmyadmin/scripts/setup.php: 1 Time(s)
+       /Byr0: 1 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /PHPMYADMIN/scripts/setup.php: 1 Time(s)
+       /PMA2011/scripts/setup.php: 1 Time(s)
+       /PMA2012/scripts/setup.php: 1 Time(s)
+       /ReportServer: 1 Time(s)
+       /SQL/scripts/setup.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /_PHPMYADMIN/scripts/setup.php: 1 Time(s)
+       /_pHpMyAdMiN/scripts/setup.php: 1 Time(s)
+       /_phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /_phpmyadmin/scripts/setup.php: 1 Time(s)
+       /admin/index.php: 3 Time(s)
+       /database/scripts/setup.php: 1 Time(s)
+       /db/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /hudson: 1 Time(s)
+       /index.php: 4 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /main/license.txt: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /my/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql/admin/scripts/setup.php: 1 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /p/m/a/scripts/setup.php: 1 Time(s)
+       /pHpMyAdMiN/scripts/setup.php: 1 Time(s)
+       /phpAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmi/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.10.0/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.11.1-all-languages/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.5/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/config.inc.php: 1 Time(s)
+       /phpMyAdmin/scripts/db___.init.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/setup/setup.php: 1 Time(s)
+       /phpMyAds/scripts/setup.php: 1 Time(s)
+       /phpadmin/scripts/setup.php: 1 Time(s)
+       /phpmoadmin/scripts/setup.php: 1 Time(s)
+       /phpmy-admin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/4.2/installing/: 1 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/scripts/config.inc.php: 1 Time(s)
+       /phpmyadmin/scripts/db___.init.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin1/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2011/scripts/setup.php: 1 Time(s)
+       /phpmyadmin3/scripts/setup.php: 1 Time(s)
+       /phpmyadmin4/scripts/setup.php: 1 Time(s)
+       /phppgadmin/scripts/setup.php: 1 Time(s)
+       /phppma/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /pma2011/: 1 Time(s)
+       /pma2012/: 1 Time(s)
+       /public/index.php: 3 Time(s)
+       /reserv/license.txt: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /setup.php: 1 Time(s)
+       /solr/: 2 Time(s)
+       /solr/admin/info/system?wt=json: 1 Time(s)
+       /sqladm/scripts/setup.php: 1 Time(s)
+       /sqladmin/scripts/setup.php: 1 Time(s)
+       /sqlweb/scripts/setup.php: 1 Time(s)
+       /user/register/: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /vpn/index.html: 1 Time(s)
+       /web/license.txt: 1 Time(s)
+       /www/license.txt: 1 Time(s)
+       /~/phpmanager/scripts/setup.php: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       81   *Warning: Pre-queue content-filter connection overload 
+    10170   SASL authentication failed 
+      290   Miscellaneous warnings 
+ 
+   11.894M  Bytes accepted                        12,471,533
+   11.934M  Bytes delivered                       12,514,163
+ ========   ================================================
+ 
+       66   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       66   Total                                    100.00%
+ ========   ================================================
+ 
+    10429   Connections made      
+        1   Connections lost      
+    10429   Disconnections        
+       66   Removed from queue    
+       63   Delivered             
+        4   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  51% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

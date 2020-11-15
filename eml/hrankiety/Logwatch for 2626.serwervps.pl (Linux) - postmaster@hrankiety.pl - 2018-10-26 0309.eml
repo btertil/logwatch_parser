@@ -1,0 +1,183 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 882B99F20296; Fri, 26 Oct 2018 03:09:17 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20181026010917.882B99F20296@hrankiety.pl>
+Date: Fri, 26 Oct 2018 03:09:09 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Oct 26 03:09:09 2018
+        Date Range Processed: yesterday
+                              ( 2018-Oct-25 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Oct 25 03:24:20 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.1 Recommended version: 0.100.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25065.cdiff [100%]
+    Downloading daily-25066.cdiff [100%]
+    Downloading daily-25067.cdiff [100%]
+    daily.cld updated (version: 25067, sigs: 2133244, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6699584 signatures) from db.local.clamav.net (IP: 104.16.186.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    185.222.211.18
+ 
+ Requests with error response codes
+    400 Bad Request
+       null: 1 Time(s)
+    404 Not Found
+       //wp-login.php: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /admin/images/cal_date_over.gif: 1 Time(s)
+       /admin/login.php: 1 Time(s)
+       /auth: 1 Time(s)
+       /blog//wp-login.php: 1 Time(s)
+       /fckeditor/editor/filemanager/connectors/p ... .php?Type=Media: 1 Time(s)
+       /info.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /templates/system/css/system.css: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wordpress//wp-login.php: 1 Time(s)
+       /wp-load.php: 4 Time(s)
+       /wp//wp-login.php: 1 Time(s)
+       http://www.msftncsi.com/ncsi.txt: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       btertil (backup): 1 Time(s)
+ 
+ su:
+    Authentication Failures:
+       btertil(500) -> root: 1 Time(s)
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ sudo:
+    Authentication Failures:
+       btertil(500) -> btertil: 1 Time(s)
+    Unknown Entries:
+       auth could not identify password for [btertil]: 1 Time(s)
+       conversation failed: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      423   *Warning: Pre-queue content-filter connection overload 
+     7706   SASL authentication failed 
+       59   Miscellaneous warnings 
+ 
+    1.940M  Bytes accepted                         2,033,894
+    1.931M  Bytes delivered                        2,024,916
+ ========   ================================================
+ 
+       33   Accepted                                  97.06%
+        1   Rejected                                   2.94%
+ --------   ------------------------------------------------
+       34   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     7823   Connections made      
+     7825   Disconnections        
+       33   Removed from queue    
+       29   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        2   Timeout (inbound)     
+        1   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Failed logins from:
+    185.17.41.230 (backup): 2 times
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 3 times
+       89.77.72.8 (89-77-72-8.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Sudo (secure-log) Begin ------------------------ 
+
+ 
+ ==============================================================================
+ 
+ btertil => root
+ ---------------
+ /usr/bin/yum - 1 Times.
+ 
+ 
+ **Unmatched Entries**
+    pam_unix(sudo:auth): auth could not identify password for [btertil]: 1 Time(s)
+    pam_unix(sudo:auth): conversation failed: 1 Time(s) 
+ ---------------------- Sudo (secure-log) End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  51% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

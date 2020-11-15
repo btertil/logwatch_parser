@@ -1,0 +1,167 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 8188B9F20474; Fri,  1 May 2020 03:24:15 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200501012415.8188B9F20474@hrankiety.pl>
+Date: Fri,  1 May 2020 03:24:06 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri May  1 03:24:06 2020
+        Date Range Processed: yesterday
+                              ( 2020-Apr-30 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Apr 30 03:11:13 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25797.cdiff [100%]
+    daily.cld updated (version: 25797, sigs: 2312312, f-level: 63, builder: raynman)
+    Can't query daily.25797.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6877308 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 5 sites probed the server 
+    125.64.94.211
+    151.84.195.81
+    185.202.2.147
+    198.20.87.98
+    45.143.220.144
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 9 Time(s)
+       /cgi-bin/mainfunction.cgi?action=login&key ... er=a&loginPwd=a: 1 Time(s)
+       /shell?busybox: 1 Time(s)
+       /shell?cd+/tmp;rm+-rf+*;wget+: 1 Time(s)
+       null: 13 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 2 Time(s)
+       /ReportServer: 2 Time(s)
+       /TP/html/public/index.php: 2 Time(s)
+       /TP/index.php: 2 Time(s)
+       /TP/public/index.php: 2 Time(s)
+       /api/jsonws/invoke: 1 Time(s)
+       /cgi-bin/luci: 6 Time(s)
+       /cgi-bin/mainfunction.cgi: 5 Time(s)
+       /clientaccesspolicy.xml: 1 Time(s)
+       /dana-na/auth/url_default/welcome.cgi: 6 Time(s)
+       /elrekt.php: 2 Time(s)
+       /home.asp: 6 Time(s)
+       /html/public/index.php: 2 Time(s)
+       /htmlV/welcomeMain.htm: 6 Time(s)
+       /hudson: 2 Time(s)
+       /index.asp: 6 Time(s)
+       /index.php: 2 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /login.cgi?uri=: 6 Time(s)
+       /manager/html: 1 Time(s)
+       /mnx5/main.css: 1 Time(s)
+       /opl/apl2.php: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 2 Time(s)
+       /portal/redlion: 2 Time(s)
+       /public/index.php: 2 Time(s)
+       /remote/login?lang=en: 6 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /sitemap.xml: 2 Time(s)
+       /thinkphp/html/public/index.php: 2 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /vpn/index.html: 6 Time(s)
+       /x: 2 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      263   *Warning: Pre-queue content-filter connection overload 
+    21115   SASL authentication failed 
+      123   Miscellaneous warnings 
+ 
+    3.265M  Bytes accepted                         3,423,669
+    3.259M  Bytes delivered                        3,417,467
+ ========   ================================================
+ 
+       60   Accepted                                  93.75%
+        4   Rejected                                   6.25%
+ --------   ------------------------------------------------
+       64   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        4   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        2   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        2   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+    21598   Connections made      
+       14   Connections lost      
+    21599   Disconnections        
+       60   Removed from queue    
+       58   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        3   Timeout (inbound)     
+        1   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   27G   24G  53% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

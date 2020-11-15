@@ -1,0 +1,119 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id D64A335A1EAF; Thu, 26 Jan 2017 03:33:11 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170126023311.D64A335A1EAF@hrankiety.pl>
+Date: Thu, 26 Jan 2017 03:33:09 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Jan 26 03:33:09 2017
+        Date Range Processed: yesterday
+                              ( 2017-Jan-25 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Jan 25 03:18:23 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-22939.cdiff [100%]
+    Downloading daily-22940.cdiff [100%]
+    Downloading daily-22941.cdiff [100%]
+    Downloading daily-22942.cdiff [100%]
+    Downloading daily-22943.cdiff [100%]
+    daily.cld updated (version: 22943, sigs: 1438675, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 289, sigs: 57, f-level: 63, builder: neo)
+    Database updated (5657522 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    118.193.27.8
+    66.240.236.119
+    89.248.172.16
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       test: 1 Time(s)
+    404 Not Found
+       /82172316237: 19 Time(s)
+       http://180.163.113.82/check_proxy: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+    501 Not Implemented
+       null: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       71   SASL authentication failed 
+       51   Miscellaneous warnings 
+ 
+    4.476M  Bytes accepted                         4,693,203
+    4.470M  Bytes delivered                        4,687,006
+ ========   ================================================
+ 
+       28   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       28   Total                                    100.00%
+ ========   ================================================
+ 
+       96   Connections made      
+       96   Disconnections        
+       28   Removed from queue    
+       26   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        2   Numeric hostname      
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   25G   26G  49% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 
