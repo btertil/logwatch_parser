@@ -32,7 +32,7 @@ for el in lista:
         #print(el, flag)
         counter += 1
         
-        if counter < 11:
+        if counter < 9999:
             with open("./eml/backup/{}".format(el), "r") as file:
                 lines = file.read()
                 
@@ -68,6 +68,6 @@ for el in lista:
                         
                         #print(line, httpd_flag, sshd_flag)
                 
-                print("\n\nfile: {}\n\thttpd probing ips: {}\n\tssh succesull logins: {}".format(el, ", ".join(httpd_ips), ", ".join(sshd_ips)))
+                print("\n\nfile {}: {}\n\thttpd probing ips: {}\n\tssh succesull logins: {}".format(counter, el, ", ".join(httpd_ips), ", ".join(sshd_ips)))
                     
 
