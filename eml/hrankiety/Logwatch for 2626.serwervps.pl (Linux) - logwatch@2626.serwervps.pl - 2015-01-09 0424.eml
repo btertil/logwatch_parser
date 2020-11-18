@@ -1,0 +1,124 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 2574C111022D3; Fri,  9 Jan 2015 04:24:31 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id CC17E111022D5; Fri,  9 Jan 2015 04:24:30 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150109032430.CC17E111022D5@2626.serwervps.pl>
+Date: Fri,  9 Jan 2015 04:24:26 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Jan  9 04:24:25 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jan-08 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Jan  8 03:18:53 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19890.cdiff [100%]
+    Downloading daily-19891.cdiff [100%]
+    Downloading daily-19892.cdiff [100%]
+    Downloading daily-19893.cdiff [100%]
+    Downloading daily-19894.cdiff [100%]
+    Downloading daily-19895.cdiff [100%]
+    daily.cld updated (version: 19895, sigs: 1303830, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 245, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3728098 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /cgi-bin/test.cgi: 1 Time(s)
+       /css/css: 1 Time(s)
+       /gcgc/gcg/gc.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /rom-0: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       http://s1.bdstatic.com/r/www/cache/static/ ... mi_ade5465d.png: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+ 
+    1.319M  Bytes accepted                         1,383,038
+    1.319M  Bytes delivered                        1,383,038
+ ========   ================================================
+ 
+        7   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        7   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Connections made      
+        5   Disconnections        
+        7   Removed from queue    
+        4   Delivered             
+        1   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   11G   40G  22% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

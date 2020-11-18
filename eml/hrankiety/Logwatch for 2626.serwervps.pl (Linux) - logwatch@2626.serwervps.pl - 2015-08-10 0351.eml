@@ -1,0 +1,187 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id B24CD11103151; Mon, 10 Aug 2015 03:51:54 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 7C5781110315C; Mon, 10 Aug 2015 03:51:54 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150810015154.7C5781110315C@2626.serwervps.pl>
+Date: Mon, 10 Aug 2015 03:51:53 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Aug 10 03:51:50 2015
+        Date Range Processed: yesterday
+                              ( 2015-Aug-09 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        1   *Warning              
+ 
+ 
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Aug  9 03:51:09 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (130.133.110.67)...
+    Downloading daily-20770.cdiff [100%]
+    daily.cld updated (version: 20770, sigs: 1511911, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 266, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (3936183 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 99% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /x: 1 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /slub/: 2 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 3 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   Postfix start         
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Aug  9 14:47:59 2626 postfix/postfix-script[953]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Aug  9 14:47:59 2626 postfix/postfix-script[951]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Aug  9 14:47:59 2626 postfix/postfix-script[949]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> reboot  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       188.146.59.37 (188.146.59.37.nat.umts.dynamic.t-mobile.pl): 4 times
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 3 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ SFTP subsystem requests: 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    gcc-c++-4.4.7-16.el6.i686
+    libstdc++-devel-4.4.7-16.el6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  48% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,178 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id AD5AD11101886; Sat, 12 Jul 2014 03:11:12 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 961CE11101884
+	for <root@2626.serwervps.pl>; Sat, 12 Jul 2014 05:11:12 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id GNWZrLQ4xXDa for <root@2626.serwervps.pl>;
+	Sat, 12 Jul 2014 03:11:09 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id E2CBA11101885; Sat, 12 Jul 2014 03:11:08 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140712011108.E2CBA11101885@2626.serwervps.pl>
+Date: Sat, 12 Jul 2014 03:11:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jul 12 03:11:07 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jul-11 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (19008-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140711013005.7684611101881@2626.serwervps.pl>, mail_id: 6-3FHyA_gAvb, Hits: 0.001, size: 2288, queued_as: 812F111101880, 2030 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (19009-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140711024804.A915211101882@2626.serwervps.pl>, mail_id: kKXOK0TJ71qT, Hits: 0, size: 4828, queued_as: ADB6711101881, 991 ms
+        1   (19009-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Jul 11 04:48:04 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-19177.cdiff not found on remote server (IP: 158.129.196.3)
+    WARNING: getpatch: Can't download daily-19177.cdiff from db.local.clamav.net
+    Downloading daily-19177.cdiff [100%]
+    Downloading daily-19178.cdiff [100%]
+    Downloading daily-19179.cdiff [100%]
+    daily.cld updated (version: 19179, sigs: 1079525, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3503796 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    198.20.69.74
+    89.67.22.229
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /.../etc/passwd: 1 Time(s)
+       //Calendar/install/: 1 Time(s)
+       //WebCalendar/install/: 1 Time(s)
+       //calendar/install/: 1 Time(s)
+       //install/: 1 Time(s)
+       //w6/install/: 1 Time(s)
+       //wc/install/: 1 Time(s)
+       //wcalendar/install/: 1 Time(s)
+       //web/install/: 1 Time(s)
+       //webc/install/: 1 Time(s)
+       //webcalendar/install/: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /etc/passwd: 1 Time(s)
+       /manager/html: 1 Time(s)
+       http://www.msftncsi.com/ncsi.txt: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        6   *Warning: Pre-queue content-filter connection overload 
+      350   SASL authentication failed 
+ 
+   22.946K  Bytes accepted                            23,497
+   22.946K  Bytes delivered                           23,497
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+       98   Connections made      
+       98   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+       40   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    samba-3.6.9-169.el6_5.i686
+    samba-winbind-3.6.9-169.el6_5.i686
+    lzo-2.03-3.1.el6_5.1.i686
+    samba-common-3.6.9-169.el6_5.i686
+    initscripts-9.03.40-2.el6.centos.3.i686
+    samba-client-3.6.9-169.el6_5.i686
+    samba-winbind-clients-3.6.9-169.el6_5.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.6G   26G  16% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

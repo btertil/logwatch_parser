@@ -1,0 +1,130 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id A383311101A7C; Fri, 15 Jan 2016 03:25:42 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id C580C111034CF; Fri, 15 Jan 2016 03:25:40 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160115022540.C580C111034CF@2626.serwervps.pl>
+Date: Fri, 15 Jan 2016 03:25:28 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Jan 15 03:25:27 2016
+        Date Range Processed: yesterday
+                              ( 2016-Jan-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Jan 14 03:22:37 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-21256.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-21256.cdiff from db.local.clamav.net
+    Downloading daily-21256.cdiff [100%]
+    Downloading daily-21257.cdiff [100%]
+    Downloading daily-21258.cdiff [100%]
+    Downloading daily-21259.cdiff [100%]
+    daily.cld updated (version: 21259, sigs: 1797236, f-level: 63, builder: anvilleg)
+    bytecode.cld is up to date (version: 270, sigs: 46, f-level: 63, builder: shurley)
+    Database updated (4221507 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       /CFIDE/administrator/: 1 Time(s)
+       /admin/i18n/readme.txt: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /server-status: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       http://testp2.czar.bielawa.pl/testproxy.php: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 280472650371191: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      213   *Warning: Pre-queue content-filter connection overload 
+      318   SASL authentication failed 
+        2   Miscellaneous warnings 
+ 
+  382.500K  Bytes accepted                           391,680
+  384.352K  Bytes delivered                          393,576
+ ========   ================================================
+ 
+       10   Accepted                                   9.43%
+       96   Rejected                                  90.57%
+ --------   ------------------------------------------------
+      106   Total                                    100.00%
+ ========   ================================================
+ 
+       96   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+       96   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      274   Connections made      
+      274   Disconnections        
+       10   Removed from queue    
+        8   Delivered             
+        1   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  47% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

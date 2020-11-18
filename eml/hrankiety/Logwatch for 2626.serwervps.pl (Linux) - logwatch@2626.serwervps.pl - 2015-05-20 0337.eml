@@ -1,0 +1,151 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 4394F11102BE3; Wed, 20 May 2015 03:37:42 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 40CC911102BF3; Wed, 20 May 2015 03:37:41 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150520013741.40CC911102BF3@2626.serwervps.pl>
+Date: Wed, 20 May 2015 03:37:32 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed May 20 03:37:32 2015
+        Date Range Processed: yesterday
+                              ( 2015-May-19 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue May 19 03:34:26 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-20478.cdiff [100%]
+    Downloading daily-20479.cdiff [100%]
+    Downloading daily-20480.cdiff [100%]
+    Downloading daily-20481.cdiff [100%]
+    Downloading daily-20482.cdiff [100%]
+    Downloading daily-20483.cdiff [100%]
+    daily.cld updated (version: 20483, sigs: 1391757, f-level: 63, builder: neo)
+    Downloading bytecode-255.cdiff [100%]
+    Downloading bytecode-256.cdiff [100%]
+    bytecode.cld updated (version: 256, sigs: 45, f-level: 63, builder: dgoddard)
+    Database updated (3816027 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /admin/config.php: 1 Time(s)
+       /forum/includes/templates/error.tpl: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phph/php/ph.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /rom-0: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+       http://testp2.czar.bielawa.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        3   *Warning: Pre-queue content-filter connection overload 
+      168   SASL authentication failed 
+        2   Miscellaneous warnings 
+ 
+  480.961K  Bytes accepted                           492,504
+  480.961K  Bytes delivered                          492,504
+ ========   ================================================
+ 
+       14   Accepted                                  93.33%
+        1   Rejected                                   6.67%
+ --------   ------------------------------------------------
+       15   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      164   Connections made      
+      164   Disconnections        
+       14   Removed from queue    
+        9   Delivered             
+        3   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   Timeout (inbound)     
+        1   SMTP commands dialog error 
+        3   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 3 times
+       188.147.251.255 (188.147.251.255.nat.umts.dynamic.t-mobile.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    32:bind-libs-9.8.2-0.30.rc1.el6_6.3.i686
+    32:bind-9.8.2-0.30.rc1.el6_6.3.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   18G   33G  36% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

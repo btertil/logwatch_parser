@@ -1,0 +1,143 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 3ACC3111017F4; Sun, 15 Jun 2014 03:56:21 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 244AF11100138
+	for <root@2626.serwervps.pl>; Sun, 15 Jun 2014 05:56:21 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id AjHa_DvY2qKD for <root@2626.serwervps.pl>;
+	Sun, 15 Jun 2014 03:56:19 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id BCEF811101848; Sun, 15 Jun 2014 03:48:11 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140615014811.BCEF811101848@2626.serwervps.pl>
+Date: Sun, 15 Jun 2014 03:48:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Jun 15 03:48:08 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jun-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (23834-09) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140614013008.EEF5911101846@2626.serwervps.pl>, mail_id: IdG77pm-G8kq, Hits: 0.001, size: 2288, queued_as: E47AC11101845, 966 ms
+        1   (00937-16) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140614012911.D039F11101845@2626.serwervps.pl>, mail_id: dGWNowXuCD6Z, Hits: 0, size: 7803, queued_as: ED64611101842, 3680 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sat Jun 14 03:29:12 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19093.cdiff [100%]
+    Downloading daily-19094.cdiff [100%]
+    Downloading daily-19095.cdiff [100%]
+    Downloading daily-19096.cdiff [100%]
+    daily.cld updated (version: 19096, sigs: 990104, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 241, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3414375 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    185.17.41.230
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+    404 Not Found
+       /cgi-bin/php: 1 Time(s)
+       /cgi-bin/php-cgi: 1 Time(s)
+       /cgi-bin/php.cgi: 1 Time(s)
+       /cgi-bin/php4: 1 Time(s)
+       /cgi-bin/php5: 1 Time(s)
+       /sdk/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2 ... vmInventory.xml: 2 Time(s)
+       /sdk/../../../../../..//etc/vmware/hostd/vmInventory.xml: 2 Time(s)
+       http://hotel.qunar.com/render/hoteldiv.jsp ... back=XQScript_4: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        5   *Warning: Pre-queue content-filter connection overload 
+ 
+   31.683K  Bytes accepted                            32,443
+   31.683K  Bytes delivered                           32,443
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+       10   Connections made      
+        1   Connections lost      
+       10   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       91.231.24.215 (rtr-5-215.interkar.pl): 5 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.5G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

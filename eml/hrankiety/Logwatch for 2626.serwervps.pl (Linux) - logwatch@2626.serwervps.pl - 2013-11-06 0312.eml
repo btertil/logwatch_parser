@@ -1,0 +1,315 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 288E846439AC; Wed,  6 Nov 2013 03:12:13 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 0728746439AB
+	for <root@2626.serwervps.pl>; Wed,  6 Nov 2013 05:12:13 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id DtFNvpPEwb5s for <root@2626.serwervps.pl>;
+	Wed,  6 Nov 2013 03:12:10 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 702CF46439AC; Wed,  6 Nov 2013 03:12:10 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131106021210.702CF46439AC@2626.serwervps.pl>
+Date: Wed,  6 Nov 2013 03:12:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Nov  6 03:12:07 2013
+        Date Range Processed: yesterday
+                              ( 2013-Nov-05 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (22240-01) Passed CLEAN {RelayedInternal}, LOCAL [77.55.115.217]:55383 [79.187.43.204] <piotr.juszczak@deltatraining.pl> -> <support@hrankiety.pl>, Message-ID: <02f401ceda18$a1446f10$e3cd4d30$@deltatraining.pl>, mail_id: 2X0STqurvs7l, Hits: 1.276, size: 5779, queued_as: 32EE34643BCC, 2263 ms
+        1   Deleting db files __db.003,__db.004,snmp.db,__db.001,nanny.db,__db.002 in /var/spool/amavisd/db
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (14398-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131105023007.B0F8A4643B72@2626.serwervps.pl>, mail_id: Scr0qZPKwJcX, Hits: 0.001, size: 2165, queued_as: E32604643979, 4047 ms
+        1   (14398-01) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:59484 [127.0.0.1] <btertil@hrankiety.pl> -> <bartosz.tertil@t-mobile.pl>, Message-ID: <303ad0d79f199ed0824783c4ec19d0c9@hrankiety.pl>, mail_id: jWEkrJfrDUy2, Hits: -9.999, size: 983, queued_as: F05E44643B5C, dkim_new=dkim:hrankiety.pl, 1860 ms
+        1   (22239-01) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:47485 [127.0.0.1] <support@hrankiety.pl> -> <piotr.juszczak@deltatraining.pl>, Message-ID: <3b238ef5e684717740800762b25c3cd5@hrankiety.pl>, mail_id: zw5VcPXig0k7, Hits: -9.999, size: 1214, queued_as: A60ED464398F, dkim_new=dkim:hrankiety.pl, 2453 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (14399-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131105020610.694AA4643B72@2626.serwervps.pl>, mail_id: SG3vqXLT-Mx6, Hits: 0, size: 5424, queued_as: F137C4643979, 1622 ms
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Tue Nov  5 03:06:11 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18061.cdiff [100%]
+    Downloading daily-18062.cdiff [100%]
+    Downloading daily-18063.cdiff [100%]
+    Downloading daily-18064.cdiff [100%]
+    Downloading daily-18065.cdiff [100%]
+    Downloading daily-18066.cdiff [100%]
+    daily.cld updated (version: 18066, sigs: 456527, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 228, sigs: 43, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (2880795 signatures) from db.local.clamav.net (IP: 217.18.205.108)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    68.153.217.236 -> www.fbi.gov:80: 2 Time(s)
+ 
+ A total of 1 sites probed the server 
+    41.202.167.18
+ 
+ Requests with error response codes
+    404 Not Found
+       /FastHTTPAuthScanner200test/: 2 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /PMA2005/scripts/setup.php: 1 Time(s)
+       /admin/: 2 Time(s)
+       /admin/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /admin/pma/scripts/setup.php: 1 Time(s)
+       /admin/scripts/setup.php: 1 Time(s)
+       /admm/scripts/setup.php: 1 Time(s)
+       /admn/scripts/setup.php: 1 Time(s)
+       /dashboard: 1 Time(s)
+       /dashboard.php: 1 Time(s)
+       /dashboardlog: 1 Time(s)
+       /dashboardlog.php: 1 Time(s)
+       /databaseadmin/scripts/setup.php: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /favicon.ico: 14 Time(s)
+       /jak: 1 Time(s)
+       /mail/: 17 Time(s)
+       /mail/?_task=logout: 3 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609388073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609448074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609508074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609568073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609628075: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609688073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609748074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609808074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609868074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609928074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383609988074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610048074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610108073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610168073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610228073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610288072: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610348073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610408076: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610468073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610528074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610588074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610648073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610708074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610768074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610828072: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610888074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383610948073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611008073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611068073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611128073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611188072: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611248073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611308074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611368073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611428074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611488073: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611548075: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611608074: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1383611668074: 1 Time(s)
+       /mail/?_task=mail&_refresh=1&_mbox=INBOX&_ ... _=1383611695249: 1 Time(s)
+       /mail/?_task=mail&_refresh=1&_mbox=Junk&_p ... _=1383611690660: 1 Time(s)
+       /mail/?_task=mail&_refresh=1&_mbox=Sent&_p ... _=1383611687154: 1 Time(s)
+       /mail/?_task=mail&_refresh=1&_mbox=Trash&_ ... _=1383611694211: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /mysql-admin/scripts/setup.php: 1 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 2 Time(s)
+       /mysqlmanager/scripts/setup.php: 1 Time(s)
+       /p/m/a/scripts/setup.php: 1 Time(s)
+       /php-my-admin/scripts/setup.php: 2 Time(s)
+       /php-myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.2.3/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.2.6/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.4/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.5-pl1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.5-rc1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.5-rc2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.5/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.6-rc1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.6-rc2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.6/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.7-pl1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.7/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0-alpha/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0-alpha2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0-beta1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0-beta2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl3/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc3/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.0/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl3/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.1-rc1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.1-rc2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.2-beta1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.2-pl1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.2-rc1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.3-pl1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.3-rc1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.3/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.4-pl2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.4-pl3/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.4-pl4/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.4-rc1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.6.4/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.7.0-beta1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.7.0-pl1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.7.0-pl2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.7.0-rc1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.7.0/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.0-beta1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.0-rc1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.0-rc2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.0.1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.0.2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.0.3/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.0.4/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.0/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.1-rc1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.1/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.8.2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 3 Time(s)
+       /phpadmin/scripts/setup.php: 1 Time(s)
+       /phpmanager/scripts/setup.php: 1 Time(s)
+       /phpmy-admin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 3 Time(s)
+       /phpmyadmin1/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /pma2005/scripts/setup.php: 1 Time(s)
+       /pocztarc: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /sqlmanager/scripts/setup.php: 1 Time(s)
+       /sqlweb/scripts/setup.php: 1 Time(s)
+       /typo3/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /vtigercrm/graph.php?current_language=../. ... Accounts&action: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /web/phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /web/scripts/setup.php: 1 Time(s)
+       /webadmin/scripts/setup.php: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /webdb/scripts/setup.php: 1 Time(s)
+       /websql/scripts/setup.php: 2 Time(s)
+       /xampp/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /~root/: 2 Time(s)
+    405 Method Not Allowed
+       www.fbi.gov:80: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       root -> root: 4 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   42.239K  Bytes accepted                            43,253
+   42.239K  Bytes delivered                           43,253
+ ========   ================================================
+ 
+       12   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       12   Total                                    100.00%
+ ========   ================================================
+ 
+        1   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       11   Connections made      
+        1   Connections lost      
+       11   Disconnections        
+       12   Removed from queue    
+        3   Delivered             
+        7   Sent via SMTP         
+        2   Forwarded             
+ 
+        2   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 6 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ SFTP subsystem requests: 1 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/simfs             30G  1.4G   29G   5% /
+ none                  384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,135 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 2675113D822C5; Mon, 10 Mar 2014 03:24:24 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 0490913D8227D
+	for <root@2626.serwervps.pl>; Mon, 10 Mar 2014 05:24:24 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id t8Brpuu40AfA for <root@2626.serwervps.pl>;
+	Mon, 10 Mar 2014 03:24:15 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 6C96B13D8226C; Mon, 10 Mar 2014 03:24:15 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140310022415.6C96B13D8226C@2626.serwervps.pl>
+Date: Mon, 10 Mar 2014 03:24:13 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Mar 10 03:24:12 2014
+        Date Range Processed: yesterday
+                              ( 2014-Mar-09 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (01293-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (01292-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (01292-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140309021815.F128F13D82277@2626.serwervps.pl>, mail_id: pGZKzaHzHDDT, Hits: -0.001, size: 4478, queued_as: 656B313D8226F, 7947 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   (01293-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140309023012.AC4E113D8227D@2626.serwervps.pl>, mail_id: utJRbcQi7egL, Hits: 0, size: 2286, queued_as: 10E5813D8227A, 9543 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Mar  9 03:18:16 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18548.cdiff [100%]
+    Downloading daily-18549.cdiff [100%]
+    Downloading daily-18550.cdiff [100%]
+    Downloading daily-18551.cdiff [100%]
+    Downloading daily-18552.cdiff [100%]
+    Downloading daily-18553.cdiff [100%]
+    Downloading daily-18554.cdiff [100%]
+    Downloading daily-18555.cdiff [100%]
+    Downloading daily-18556.cdiff [100%]
+    Downloading daily-18557.cdiff [100%]
+    daily.cld updated (version: 18557, sigs: 809420, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3233688 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    209.124.202.69
+ 
+ Requests with error response codes
+    400 Bad Request
+       /w00tw00t.at.ISC.SANS.DFind:): 1 Time(s)
+    404 Not Found
+       /HNAP1/: 2 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /actus4/: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   21.906K  Bytes accepted                            22,432
+   21.906K  Bytes delivered                           22,432
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.4G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

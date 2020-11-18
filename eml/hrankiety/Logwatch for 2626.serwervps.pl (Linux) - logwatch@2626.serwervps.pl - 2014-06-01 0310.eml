@@ -1,0 +1,140 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id C9CD611101827; Sun,  1 Jun 2014 03:10:19 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id A215B11101825
+	for <root@2626.serwervps.pl>; Sun,  1 Jun 2014 05:10:19 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id oR-71GA2qXHn for <root@2626.serwervps.pl>;
+	Sun,  1 Jun 2014 03:10:11 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 053AE11101826; Sun,  1 Jun 2014 03:10:09 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140601011010.053AE11101826@2626.serwervps.pl>
+Date: Sun,  1 Jun 2014 03:10:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Jun  1 03:10:07 2014
+        Date Range Processed: yesterday
+                              ( 2014-May-31 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        2   *Warning              
+ 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   (22341-10) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140531013007.0045811101824@2626.serwervps.pl>, mail_id: 3BCVfaFwa6EN, Hits: 0, size: 2288, queued_as: B283911101823, 7687 ms
+        1   (22341-11) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140531014812.9160B11101825@2626.serwervps.pl>, mail_id: gGtJqwXGdZGN, Hits: -0.001, size: 5238, queued_as: AA13211101824, 3256 ms
+        1   (22341-10) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (22439-10) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sat May 31 03:48:13 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19050.cdiff [100%]
+    Downloading daily-19051.cdiff [100%]
+    Downloading daily-19052.cdiff [100%]
+    Downloading daily-19053.cdiff [100%]
+    daily.cld updated (version: 19053, sigs: 974792, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 241, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3399063 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /Cal/install/index.php: 1 Time(s)
+       /Calendar/install/index.php: 1 Time(s)
+       /WebCal/install/index.php: 1 Time(s)
+       /WebCalendar/install/index.php: 1 Time(s)
+       /Webcalendar/install/index.php: 1 Time(s)
+       /cal/install/index.php: 1 Time(s)
+       /calendar/install/index.php: 1 Time(s)
+       /event/install/index.php: 1 Time(s)
+       /events/install/index.php: 1 Time(s)
+       /fbcalendar/install/index.php: 1 Time(s)
+       /install/index.php: 1 Time(s)
+       /menu/install/index.php: 1 Time(s)
+       /schedule/install/index.php: 1 Time(s)
+       /web/install/index.php: 1 Time(s)
+       /webcal/install/index.php: 1 Time(s)
+       /webcalendar/install/index.php: 1 Time(s)
+       /webdav/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        6   *Warning: Pre-queue content-filter connection overload 
+      264   SASL authentication failed 
+ 
+   24.150K  Bytes accepted                            24,730
+   24.150K  Bytes delivered                           24,730
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+       61   Connections made      
+       61   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+        1   Deferred              
+        1   Deferrals             
+ 
+       11   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.5G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

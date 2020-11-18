@@ -1,0 +1,165 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id D321B11102386; Wed,  4 Feb 2015 03:36:05 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id E36DA111025FC; Wed,  4 Feb 2015 03:36:03 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150204023603.E36DA111025FC@2626.serwervps.pl>
+Date: Wed,  4 Feb 2015 03:35:58 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Feb  4 03:35:57 2015
+        Date Range Processed: yesterday
+                              ( 2015-Feb-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Feb  3 03:33:00 2015
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.5 Recommended version: 0.98.6
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-20017.cdiff [100%]
+    Downloading daily-20018.cdiff [100%]
+    Downloading daily-20019.cdiff [100%]
+    Downloading daily-20020.cdiff [100%]
+    Downloading daily-20021.cdiff [100%]
+    Downloading daily-20022.cdiff [100%]
+    daily.cld updated (version: 20022, sigs: 1317769, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 245, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3742037 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /tmUnblock.cgi: 1 Time(s)
+    404 Not Found
+       /8an2PVuA/: 1 Time(s)
+       /hM2idDeh/: 1 Time(s)
+       /mvmv/mvm/mv.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 3 Time(s)
+       /opl/HptLa: 1 Time(s)
+       /opl/tslye.css: 2 Time(s)
+       /oplpg/4kwsQjPz.pl: 1 Time(s)
+       /oplpg/9lwkyc00.php: 1 Time(s)
+       /oplpg/G0ONZjg1.py: 1 Time(s)
+       /oplpg/Gn6GlXOV.htm: 1 Time(s)
+       /oplpg/Gqi3VDno.aspx: 1 Time(s)
+       /oplpg/KgBhLtbi.foobar: 1 Time(s)
+       /oplpg/QDPk2m1d.do: 1 Time(s)
+       /oplpg/UtwcScLJ.jsp: 1 Time(s)
+       /oplpg/ZmaIyEOM.asp: 1 Time(s)
+       /oplpg/geBkewcA.gif: 1 Time(s)
+       /oplpg/pZp3Zz4Z.htmls: 1 Time(s)
+       /oplpg/pz5rSfTh.cgi: 1 Time(s)
+       /oplpg/qMYZG: 1 Time(s)
+       /oplpg/qViykPbR.rb: 1 Time(s)
+       /oplpg/w5RGwMhl.xhtml: 1 Time(s)
+       /oxox/oxo/ox.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 3 Time(s)
+       /pma/scripts/setup.php: 3 Time(s)
+       /pol: 1 Time(s)
+       /tata/tat/ta.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /ymbpZ: 1 Time(s)
+    405 Method Not Allowed
+       /: 2 Time(s)
+       /opl/HptLa: 1 Time(s)
+       /oplpg/qMYZG: 1 Time(s)
+       /ymbpZ: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        5   *Warning: Pre-queue content-filter connection overload 
+        5   SASL authentication failed 
+ 
+  171.100K  Bytes accepted                           175,206
+  169.533K  Bytes delivered                          173,602
+ ========   ================================================
+ 
+       13   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       13   Total                                    100.00%
+ ========   ================================================
+ 
+       19   Connections made      
+       19   Disconnections        
+       13   Removed from queue    
+        6   Delivered             
+        1   Sent via SMTP         
+        4   Forwarded             
+        2   Bounce (local)        
+        2   DSNs undeliverable    
+ 
+        9   Timeout (inbound)     
+        1   SMTP commands dialog error 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 4 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ SFTP subsystem requests: 1 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   13G   38G  26% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

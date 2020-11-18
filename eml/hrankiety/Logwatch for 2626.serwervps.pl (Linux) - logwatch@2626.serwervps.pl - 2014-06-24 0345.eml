@@ -1,0 +1,155 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 60A3C1110185A; Tue, 24 Jun 2014 03:45:11 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 51EC71110180C
+	for <root@2626.serwervps.pl>; Tue, 24 Jun 2014 05:45:11 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id py_JbUZiF7J6 for <root@2626.serwervps.pl>;
+	Tue, 24 Jun 2014 03:45:09 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id D381511101859; Tue, 24 Jun 2014 03:45:08 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140624014508.D381511101859@2626.serwervps.pl>
+Date: Tue, 24 Jun 2014 03:45:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Jun 24 03:45:05 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jun-23 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (30150-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140623013005.6EE091110180B@2626.serwervps.pl>, mail_id: MAg1xMwcmEUU, Hits: 0.001, size: 2288, queued_as: DFFA311101807, 1520 ms
+        1   (30151-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140623012609.6B4F511101807@2626.serwervps.pl>, mail_id: J6_hpCEI9KRD, Hits: 0, size: 4735, queued_as: 90FEE111015CC, 4117 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Jun 23 03:26:09 2014
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.3 Recommended version: 0.98.4
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19122.cdiff [100%]
+    Downloading daily-19123.cdiff [100%]
+    daily.cld updated (version: 19123, sigs: 1000935, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 241, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3425206 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    207.91.57.133
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       http://hotel.qunar.com/render/hoteldiv.jsp ... back=XQScript_4: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        3   *Warning: Pre-queue content-filter connection overload 
+       71   SASL authentication failed 
+ 
+   22.671K  Bytes accepted                            23,215
+   22.671K  Bytes delivered                           23,215
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+       73   Connections made      
+       73   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    kernel-headers-2.6.32-431.20.3.el6.i686
+    avahi-libs-0.6.25-12.el6_5.1.i686
+    tzdata-2014e-1.el6.noarch
+    libtirpc-0.2.1-6.el6_5.2.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.6G   26G  16% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,201 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id CE49813D81EFD; Fri, 29 Nov 2013 03:23:10 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id AA7BE13D81EE6
+	for <root@2626.serwervps.pl>; Fri, 29 Nov 2013 05:23:10 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id qOSH2QbyCW9A for <root@2626.serwervps.pl>;
+	Fri, 29 Nov 2013 03:23:07 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 2D49813D81EFD; Fri, 29 Nov 2013 03:23:07 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131129022307.2D49813D81EFD@2626.serwervps.pl>
+Date: Fri, 29 Nov 2013 03:23:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Nov 29 03:23:04 2013
+        Date Range Processed: yesterday
+                              ( 2013-Nov-28 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (23591-16) Passed CLEAN {RelayedInternal}, LOCAL [91.237.196.4]:23695 [91.237.196.4] <> -> <support@hrankiety.pl>, Message-ID: <ADDACB83AE36A14DBC8DC4C48B271B4B6C3E317A48@ex2007>, mail_id: 03oNEieGcEWj, Hits: 1.274, size: 1098, queued_as: 344B613D81EFD, 578 ms
+        1   (23592-03) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <jacek.cendrowski@scania.pl>, Message-ID: <20131128070644.CF69513D81F18@2626.serwervps.pl>, mail_id: bXIiBCL2gYOE, Hits: 0.01, size: 1260, queued_as: 9B6F613D81EFD, dkim_new=dkim:hrankiety.pl, 901 ms
+        1   (23591-08) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <marcin.fraczkiewicz@scania.pl>, Message-ID: <20131128070645.4A53F13D81F1F@2626.serwervps.pl>, mail_id: vrpwl665m870, Hits: 0.01, size: 1270, queued_as: CD4D013D81F13, dkim_new=dkim:hrankiety.pl, 1005 ms
+        1   (23591-15) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <agnieszkaibartek@gmail.com>, Message-ID: <20131128070645.C1FD613D81F2E@2626.serwervps.pl>, mail_id: nDNl8C2pKl6s, Hits: 0.01, size: 1265, queued_as: 91A4C13D81F11, dkim_new=dkim:hrankiety.pl, 1092 ms
+        1   (23592-08) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <mariusz.karlinski@scania.pl>, Message-ID: <20131128070645.5BA2513D81F22@2626.serwervps.pl>, mail_id: xR_7FsY-dtIC, Hits: 0.01, size: 1265, queued_as: 0916A13D81F11, dkim_new=dkim:hrankiety.pl, 989 ms
+        1   (23592-05) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <lukasz.pokropek@scania.pl>, Message-ID: <20131128070645.305A613D81F1C@2626.serwervps.pl>, mail_id: gZWq1YUzRGwz, Hits: 0.01, size: 1259, queued_as: D774813D81EFD, dkim_new=dkim:hrankiety.pl, 1125 ms
+        1   (19714-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131128020705.2BBB213D81EDE@2626.serwervps.pl>, mail_id: iisX0VH-ND65, Hits: 0, size: 6051, queued_as: 42AF013D81EEF, 2052 ms
+        1   (19713-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131128023005.3E5E513D81F07@2626.serwervps.pl>, mail_id: gBL1E4wsmYkL, Hits: 0.001, size: 2254, queued_as: 8FF4313D81F10, 2422 ms
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (23592-01) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <agata.kokoszczynska@scania.pl>, Message-ID: <20131128070644.5CC7D13D81EE6@2626.serwervps.pl>, mail_id: w6_zMRdIE2t3, Hits: 0.01, size: 1269, queued_as: AAA4F13D81F30, dkim_new=dkim:hrankiety.pl, 2292 ms
+        1   (23591-11) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <pawel.scieszko@scania.pl>, Message-ID: <20131128070645.7E8CE13D81F26@2626.serwervps.pl>, mail_id: jZ10Pyia-X79, Hits: 0.01, size: 1255, queued_as: 10CFD13D81F11, dkim_new=dkim:hrankiety.pl, 1045 ms
+        1   (23591-13) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <tomasz.cwalina@scania.pl>, Message-ID: <20131128070645.A009D13D81F2A@2626.serwervps.pl>, mail_id: B8FFZ31rbahP, Hits: 0.01, size: 1255, queued_as: 5926113D81F11, dkim_new=dkim:hrankiety.pl, 1089 ms
+        1   (23592-10) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <pawel.kurzawa@scania.pl>, Message-ID: <20131128070645.77BA913D81F25@2626.serwervps.pl>, mail_id: UuQADgkq5hEF, Hits: 0.01, size: 1252, queued_as: F215113D81EFD, dkim_new=dkim:hrankiety.pl, 1014 ms
+        1   (23591-10) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <monika.wegrzyk@scania.pl>, Message-ID: <20131128070645.6875A13D81F23@2626.serwervps.pl>, mail_id: kIQBxI-LfVT1, Hits: 0.01, size: 1255, queued_as: EC54313D81EFD, dkim_new=dkim:hrankiety.pl, 1124 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (23592-12) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <piotr.michalski@scania.pl>, Message-ID: <20131128070645.945FF13D81F29@2626.serwervps.pl>, mail_id: tob7Y1Bz-oVg, Hits: 0.01, size: 1257, queued_as: 487E913D81EFD, dkim_new=dkim:hrankiety.pl, 1072 ms
+        1   (23591-06) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <leszek.czapski@scania.pl>, Message-ID: <20131128070645.22A2013D81F1B@2626.serwervps.pl>, mail_id: 0MOjWronQPOY, Hits: 0.01, size: 1255, queued_as: CCD3113D81EE6, dkim_new=dkim:hrankiety.pl, 1110 ms
+        1   (23592-07) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <marcin.orczyk@scania.pl>, Message-ID: <20131128070645.50AFA13D81F20@2626.serwervps.pl>, mail_id: MqWtnabuIGtv, Hits: 0.01, size: 1252, queued_as: F3B1D13D81F11, dkim_new=dkim:hrankiety.pl, 988 ms
+        1   (23592-09) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <pawel.ceglinski@scania.pl>, Message-ID: <20131128070645.70A0813D81F24@2626.serwervps.pl>, mail_id: NDS8bV9aPDys, Hits: 0.01, size: 1258, queued_as: EEB3413D81F11, dkim_new=dkim:hrankiety.pl, 917 ms
+        1   (23592-11) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <piotr.bondar@scania.pl>, Message-ID: <20131128070645.873C813D81F27@2626.serwervps.pl>, mail_id: QJNssbqBBHHq, Hits: 0.01, size: 1248, queued_as: 33D2313D81EFD, dkim_new=dkim:hrankiety.pl, 1186 ms
+        1   (23591-02) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <arkadiusz.brzeminski@scania.pl>, Message-ID: <20131128070644.6C91713D81EFD@2626.serwervps.pl>, mail_id: AnOrwx46oaqk, Hits: 0.01, size: 1276, queued_as: C933213D81F14, dkim_new=dkim:hrankiety.pl, 1043 ms
+        1   (23591-17) Passed CLEAN {RelayedInternal}, LOCAL [91.237.196.4]:23697 [91.237.196.4] <> -> <support@hrankiety.pl>, Message-ID: <ADDACB83AE36A14DBC8DC4C48B271B4B6C3E92EA03@ex2007>, mail_id: Hf1ot030S4If, Hits: 1.275, size: 2005, queued_as: 0DF5913D81F11, 804 ms
+        1   (23592-04) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <katarzyna.ciesielska@scania.pl>, Message-ID: <20131128070645.1023A13D81F1A@2626.serwervps.pl>, mail_id: Mr4Cej6Xp892, Hits: 0.01, size: 1276, queued_as: B4AD313D81EFD, dkim_new=dkim:hrankiety.pl, 1068 ms
+        1   (23592-06) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <magdalena.samoraj@scania.pl>, Message-ID: <20131128070645.43C4B13D81F1E@2626.serwervps.pl>, mail_id: f_rcMDo2kf9z, Hits: 0.01, size: 1267, queued_as: F16F113D81EFD, dkim_new=dkim:hrankiety.pl, 1088 ms
+        1   (23591-04) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <dagmara.lysakowska@scania.pl>, Message-ID: <20131128070644.B38BE13D81F17@2626.serwervps.pl>, mail_id: L0rGhlXDZ36K, Hits: 0.01, size: 1268, queued_as: 7BDBC13D81EE6, dkim_new=dkim:hrankiety.pl, 935 ms
+        1   (23592-15) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <bondiev@gmail.com>, Message-ID: <20131128070645.C9E5213D81F2F@2626.serwervps.pl>, mail_id: 9piKDXi9MIHE, Hits: 0.01, size: 1236, queued_as: 9B01713D81C23, dkim_new=dkim:hrankiety.pl, 1044 ms
+        1   (23592-13) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <tomasz.jaroszewicz@scania.pl>, Message-ID: <20131128070645.A88B613D81F2B@2626.serwervps.pl>, mail_id: LS23Sn6vpiL8, Hits: 0.01, size: 1267, queued_as: 6E71813D81EFD, dkim_new=dkim:hrankiety.pl, 1096 ms
+        1   (23591-01) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <andrzej.tugi@scania.pl>, Message-ID: <20131128070644.6845713D81C23@2626.serwervps.pl>, mail_id: IdEBHrSywAQE, Hits: 0.01, size: 1250, queued_as: A409713D81F14, dkim_new=dkim:hrankiety.pl, 2284 ms
+        1   (23592-16) Passed CLEAN {RelayedInternal}, LOCAL [91.237.196.4]:23707 [91.237.196.4] <> -> <support@hrankiety.pl>, Message-ID: <7D3B9E26A82B2E4381ADE0BC82E0A7FFBEBB87AB2E@ex2007>, mail_id: QFeGtw3BAju7, Hits: 1.275, size: 1088, queued_as: 23FFE13D81C23, 478 ms
+        1   (23592-14) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <tomasz.skalski@scania.pl>, Message-ID: <20131128070645.BEA7D13D81F2D@2626.serwervps.pl>, mail_id: CSJd3mCHGc2I, Hits: 0.01, size: 1255, queued_as: 85DDB13D81EFD, dkim_new=dkim:hrankiety.pl, 1080 ms
+        1   No decoder for       .doc 
+        1   (23592-02) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <artur.szafran@scania.pl>, Message-ID: <20131128070644.77F8813D81F11@2626.serwervps.pl>, mail_id: ZzyBc5B5nHxA, Hits: 0.01, size: 1251, queued_as: B285913D81EFD, dkim_new=dkim:hrankiety.pl, 1943 ms
+        1   (23591-03) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <beata.wieckiewicz@scania.pl>, Message-ID: <20131128070644.9369E13D81F16@2626.serwervps.pl>, mail_id: 0ANDCYKtjLZf, Hits: 0.01, size: 1263, queued_as: 8980E13D81EE6, dkim_new=dkim:hrankiety.pl, 730 ms
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   (23591-12) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <piotr.marcinkowski@scania.pl>, Message-ID: <20131128070645.8DEB013D81F28@2626.serwervps.pl>, mail_id: 6WpZo0N3cP4E, Hits: 0.01, size: 1266, queued_as: 4297C13D81F11, dkim_new=dkim:hrankiety.pl, 1142 ms
+        1   (23591-14) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <tomasz.moson@scania.pl>, Message-ID: <20131128070645.B444013D81F2C@2626.serwervps.pl>, mail_id: Jm1alXApiOYx, Hits: 0.01, size: 1249, queued_as: 74A4613D81F11, dkim_new=dkim:hrankiety.pl, 1099 ms
+        1   (23591-05) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <jacek.dmuchowski@scania.pl>, Message-ID: <20131128070644.EC8EC13D81F19@2626.serwervps.pl>, mail_id: wo8pX0p7fxhV, Hits: 0.01, size: 1260, queued_as: A7DF213D81EE6, dkim_new=dkim:hrankiety.pl, 1129 ms
+        1   No ext program for   .doc, tried: ripole
+        1   (23591-09) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <marek.szarpak@scania.pl>, Message-ID: <20131128070645.5546213D81F21@2626.serwervps.pl>, mail_id: i0x9iTZoYdz1, Hits: 0.01, size: 1251, queued_as: D7EBC13D81EFD, dkim_new=dkim:hrankiety.pl, 1032 ms
+        1   (23591-07) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <lukasz.zielinski@scania.pl>, Message-ID: <20131128070645.3D20D13D81F1D@2626.serwervps.pl>, mail_id: fJtxAQWiXWNr, Hits: 0.01, size: 1262, queued_as: C875913D81EE6, dkim_new=dkim:hrankiety.pl, 960 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Thu Nov 28 03:07:05 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18166.cdiff [100%]
+    Downloading daily-18167.cdiff [100%]
+    Downloading daily-18168.cdiff [100%]
+    Downloading daily-18169.cdiff [100%]
+    Downloading daily-18170.cdiff [100%]
+    daily.cld updated (version: 18170, sigs: 538238, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 233, sigs: 44, f-level: 63, builder: dgoddard)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (2962507 signatures) from db.local.clamav.net (IP: 217.18.205.108)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    218.87.32.245
+ 
+ Requests with error response codes
+    400 Bad Request
+       HTTP/1.1: 1 Time(s)
+    404 Not Found
+       //%63%67%69%2D%62%69%6E/%70%68%70?%2D%64+% ... 70%75%74+%2D%6E: 1 Time(s)
+       /browserconfig.xml: 1 Time(s)
+       /cgi-bin/php: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+       /invoker/JMXInvokerServlet: 1 Time(s)
+       /logs/error_log: 1 Time(s)
+       /mail/config-v1.1.xml?emailaddress=support%40hrankiety.pl: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /vtigercrm/graph.php?current_language=../. ... Accounts&action: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       http://www.google.pl/search?q=site%3Awp.pl: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       root -> root: 2 Time(s)
+       root -> support: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        4   *Warning: Pre-queue content-filter connection overload 
+ 
+  136.671K  Bytes accepted                           139,951
+  136.671K  Bytes delivered                          139,951
+ ========   ================================================
+ 
+       72   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       72   Total                                    100.00%
+ ========   ================================================
+ 
+       13   Connections made      
+       13   Disconnections        
+       72   Removed from queue    
+        5   Delivered             
+       65   Sent via SMTP         
+        2   Forwarded             
+ 
+        2   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 11 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ SFTP subsystem requests: 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/simfs             30G  2.0G   29G   7% /
+ none                  384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

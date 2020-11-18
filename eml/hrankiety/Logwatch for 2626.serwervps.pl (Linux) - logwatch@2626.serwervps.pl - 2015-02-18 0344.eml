@@ -1,0 +1,124 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 6EE4D11102694; Wed, 18 Feb 2015 03:44:45 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 1193411102697; Wed, 18 Feb 2015 03:44:44 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150218024445.1193411102697@2626.serwervps.pl>
+Date: Wed, 18 Feb 2015 03:44:33 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Feb 18 03:44:33 2015
+        Date Range Processed: yesterday
+                              ( 2015-Feb-17 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Feb 17 03:24:44 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-20066.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-20066.cdiff from db.local.clamav.net
+    Downloading daily-20066.cdiff [100%]
+    Downloading daily-20067.cdiff [100%]
+    Downloading daily-20068.cdiff [100%]
+    Downloading daily-20069.cdiff [100%]
+    daily.cld updated (version: 20069, sigs: 1327290, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 246, sigs: 42, f-level: 63, builder: neo)
+    Database updated (3751557 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /back.css: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Authentication Failures:
+       btertil(500) -> root: 1 Time(s)
+    Sessions Opened:
+       btertil -> root: 4 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       41   SASL authentication failed 
+ 
+   29.225K  Bytes accepted                            29,926
+   29.225K  Bytes delivered                           29,926
+ ========   ================================================
+ 
+        7   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        7   Total                                    100.00%
+ ========   ================================================
+ 
+       42   Connections made      
+       42   Disconnections        
+        7   Removed from queue    
+        3   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 8 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 5 Time(s)
+ 
+ SFTP subsystem requests: 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   15G   36G  30% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,161 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id C700411101952; Sat, 23 Aug 2014 03:44:39 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id C361A11101922
+	for <root@2626.serwervps.pl>; Sat, 23 Aug 2014 05:44:39 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id XncuV1nJw0Gj for <root@2626.serwervps.pl>;
+	Sat, 23 Aug 2014 03:44:37 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 1C21F1110192E; Sat, 23 Aug 2014 03:39:10 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140823013910.1C21F1110192E@2626.serwervps.pl>
+Date: Sat, 23 Aug 2014 03:39:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Aug 23 03:39:08 2014
+        Date Range Processed: yesterday
+                              ( 2014-Aug-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (17950-07) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140822010807.32BCA11101951@2626.serwervps.pl>, mail_id: VZCmlIVZKfkO, Hits: 0, size: 5613, queued_as: 6348411101914, 3023 ms
+        1   (21141-06) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140822013011.EC60C11101952@2626.serwervps.pl>, mail_id: U0da_9Llsdjg, Hits: 0.001, size: 2288, queued_as: 713F411101951, 2382 ms
+        1   (21141-06) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN24> line 35865.
+        1   (17950-07) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Aug 22 03:08:07 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19297.cdiff [100%]
+    Downloading daily-19298.cdiff [100%]
+    Downloading daily-19299.cdiff [100%]
+    Downloading daily-19300.cdiff [100%]
+    daily.cld updated (version: 19300, sigs: 1093205, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3517476 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    403 Forbidden
+       /pocztatoadministrowanie/: 5 Time(s)
+    404 Not Found
+       /bzbz/bzb/bz.php: 1 Time(s)
+       /cp.php?m=login: 1 Time(s)
+       /ejej/eje/ej.php: 1 Time(s)
+       /jak: 1 Time(s)
+       /manual/en/programs//index.html: 2 Time(s)
+       /manual/en/programs/index.html: 1 Time(s)
+       /mnmn/mnm/mn.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 4 Time(s)
+       /phpMyAdmin/scripts/setup.php: 4 Time(s)
+       /pma/scripts/setup.php: 4 Time(s)
+       /pocztatoadministrowanie: 1 Time(s)
+       /rouncubemail: 1 Time(s)
+       /server/cp.php?m=login: 1 Time(s)
+       /tktk/tkt/tk.php: 1 Time(s)
+       http://google.com/index.php: 28 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        5   *Warning: Pre-queue content-filter connection overload 
+        4   SASL authentication failed 
+ 
+   25.246K  Bytes accepted                            25,852
+   25.246K  Bytes delivered                           25,852
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+        7   Connections made      
+        7   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.5G   44G  13% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

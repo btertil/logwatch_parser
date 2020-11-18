@@ -1,0 +1,149 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id A0D57111019F5; Fri, 24 Oct 2014 03:26:15 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 7BF37111019F3
+	for <root@2626.serwervps.pl>; Fri, 24 Oct 2014 05:26:15 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id VC1zPQ51DXLX for <root@2626.serwervps.pl>;
+	Fri, 24 Oct 2014 03:26:12 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 25751111019F5; Fri, 24 Oct 2014 03:26:12 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141024012612.25751111019F5@2626.serwervps.pl>
+Date: Fri, 24 Oct 2014 03:26:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Oct 24 03:26:10 2014
+        Date Range Processed: yesterday
+                              ( 2014-Oct-23 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (24834-03) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (24835-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (28422-01) Passed CLEAN {RelayedInternal}, LOCAL [79.96.20.74]:60089 [81.15.254.30] <info@charyton.com> -> <atertil@hrankiety.pl>, Queue-ID: A0B8A111019F0, Message-ID: <BED518C896514FFFA690CA8837BE88EE@Asus>, mail_id: SWWZvhz7g2k5, Hits: -5.345, size: 25808, queued_as: 9A272111019F3, 1980 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (28421-02) Passed CLEAN {RelayedInternal}, LOCAL [83.167.225.169]:55590 [209.85.213.45] <r.sienkiewicz@accord-ece.com> -> <atertil@hrankiety.pl>, Queue-ID: 84FB6111019D2, Message-ID: <CABKWhCyw6zngwJ7mAYdcXReWYRDmpcSPHq2unh60w4_N9h_A7g@mail.gmail.com>, mail_id: jvPCaqn8KAO4, Hits: -5.527, size: 5167, queued_as: BF5A0111019F3, 2158 ms
+        1   (28421-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (24835-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141023013011.ED0AE11101A20@2626.serwervps.pl>, mail_id: H-6DuCbhI6Ts, Hits: 0.001, size: 2289, queued_as: D256111101890, 1745 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (24834-03) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141023013107.6AD5C11101BF3@2626.serwervps.pl>, mail_id: XvgQMow888cm, Hits: 0, size: 5799, queued_as: E3C0E11101A20, 2495 ms
+        1   No ext program for   .doc, tried: ripole
+        1   (28421-01) Passed CLEAN {RelayedInternal}, LOCAL [77.252.105.100]:4209 [77.252.105.98] <katarzyna.majewska@bigram.pl> -> <atertil@hrankiety.pl>, Queue-ID: E509B111019E9, Message-ID: <001e01cfeea7$279fd8d0$76df8a70$@bigram.pl>, mail_id: 1OxoL16Cgker, Hits: 0.574, size: 75056, queued_as: C4FC1111019F0, 2825 ms
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Thu Oct 23 03:31:07 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19526.cdiff [100%]
+    Downloading daily-19527.cdiff [100%]
+    daily.cld updated (version: 19527, sigs: 1219603, f-level: 63, builder: dgoddard)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3643874 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    115.238.250.120 -> www.google.com:443: 1 Time(s)
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+    404 Not Found
+       //cgi-bin/test-cgi: 1 Time(s)
+       //cgi-bin/test.cgi: 1 Time(s)
+       //cgi-bin/test.pl: 1 Time(s)
+       //cgi-bin/test.sh: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+    405 Method Not Allowed
+       www.google.com:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       24   *Warning: Pre-queue content-filter connection overload 
+ 
+  234.294K  Bytes accepted                           239,917
+  234.294K  Bytes delivered                          239,917
+ ========   ================================================
+ 
+       12   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       12   Total                                    100.00%
+ ========   ================================================
+ 
+       32   Connections made      
+       32   Disconnections        
+       12   Removed from queue    
+        5   Delivered             
+        5   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  7.0G   44G  14% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

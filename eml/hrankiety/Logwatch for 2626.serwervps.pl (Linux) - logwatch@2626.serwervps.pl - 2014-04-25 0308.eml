@@ -1,0 +1,116 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 46521111016DC; Fri, 25 Apr 2014 03:08:22 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 3CF7B111016DF
+	for <root@2626.serwervps.pl>; Fri, 25 Apr 2014 05:08:22 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id FuM_EqM_vwXD for <root@2626.serwervps.pl>;
+	Fri, 25 Apr 2014 03:08:14 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 331CF111016DC; Fri, 25 Apr 2014 03:08:13 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140425010814.331CF111016DC@2626.serwervps.pl>
+Date: Fri, 25 Apr 2014 03:08:12 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Apr 25 03:08:11 2014
+        Date Range Processed: yesterday
+                              ( 2014-Apr-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (27408-04) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140424013008.5B2CD11101709@2626.serwervps.pl>, mail_id: RSl_c7Kq_XFO, Hits: 0, size: 2288, queued_as: 77C8711101712, 7863 ms
+        1   (27409-05) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140424014708.CBB4711101713@2626.serwervps.pl>, mail_id: YeePqfqPxTWk, Hits: 0, size: 5155, queued_as: 17B0E11101709, 6379 ms
+        1   (27409-05) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (27408-04) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Thu Apr 24 03:47:09 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18848.cdiff [100%]
+    Downloading daily-18849.cdiff [100%]
+    Downloading daily-18850.cdiff [100%]
+    daily.cld updated (version: 18850, sigs: 905842, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3330110 signatures) from db.local.clamav.net (IP: 217.18.205.108)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    75.86.210.187
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+ 
+   23.907K  Bytes accepted                            24,481
+   23.907K  Bytes delivered                           24,481
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Connections made      
+        4   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.3G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,126 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id E1A5A11103182; Thu, 13 Aug 2015 03:13:24 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 00BB811103192; Thu, 13 Aug 2015 03:13:23 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150813011324.00BB811103192@2626.serwervps.pl>
+Date: Thu, 13 Aug 2015 03:13:20 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Aug 13 03:13:18 2015
+        Date Range Processed: yesterday
+                              ( 2015-Aug-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Aug 12 03:24:25 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-20774.cdiff [100%]
+    Downloading daily-20775.cdiff [100%]
+    Downloading daily-20776.cdiff [100%]
+    Downloading daily-20777.cdiff [100%]
+    daily.cld updated (version: 20777, sigs: 1521342, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 266, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (3945614 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /CFIDE/administrator/: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       http://testp4.pospr.waw.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       93   *Warning: Pre-queue content-filter connection overload 
+       84   SASL authentication failed 
+ 
+  138.696K  Bytes accepted                           142,025
+  138.696K  Bytes delivered                          142,025
+ ========   ================================================
+ 
+        9   Accepted                                  90.00%
+        1   Rejected                                  10.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       99   Connections made      
+       99   Disconnections        
+        9   Removed from queue    
+        7   Delivered             
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 2 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  48% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

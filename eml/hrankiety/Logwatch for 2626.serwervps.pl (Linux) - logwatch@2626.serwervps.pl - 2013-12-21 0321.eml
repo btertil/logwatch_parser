@@ -1,0 +1,141 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 6808813D81A25; Sat, 21 Dec 2013 03:21:12 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 3C89F13D81A23
+	for <root@2626.serwervps.pl>; Sat, 21 Dec 2013 05:21:12 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id JVNw12Hdd8xD for <root@2626.serwervps.pl>;
+	Sat, 21 Dec 2013 03:21:08 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 7815713D81A20; Sat, 21 Dec 2013 03:21:08 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131221022108.7815713D81A20@2626.serwervps.pl>
+Date: Sat, 21 Dec 2013 03:21:06 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Dec 21 03:21:06 2013
+        Date Range Processed: yesterday
+                              ( 2013-Dec-20 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   (18207-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131220023108.9A0A713D81A20@2626.serwervps.pl>, mail_id: NwZ116HCmi1c, Hits: 0, size: 5153, queued_as: B344613D81A1E, 2197 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (18208-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131220023006.BC43C13D81A1E@2626.serwervps.pl>, mail_id: lsNrVTZ8RfIe, Hits: 0.001, size: 2286, queued_as: E2F3C13D81A20, 3064 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Dec 20 03:31:09 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18259.cdiff [100%]
+    Downloading daily-18260.cdiff [100%]
+    Downloading daily-18261.cdiff [100%]
+    Downloading daily-18262.cdiff [100%]
+    daily.cld updated (version: 18262, sigs: 612793, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (3037062 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    216.138.28.213
+    218.87.32.245
+ 
+ Requests with error response codes
+    404 Not Found
+       //CluJaNuL/cmd.jsp?cmd=whoami: 1 Time(s)
+       //bynazi/cmd.jsp?comment=whoami: 1 Time(s)
+       //cgi-bin/php5: 1 Time(s)
+       //idssvc/idssvc.jsp?comment=whoami: 1 Time(s)
+       //iesvc/iesvc.jsp?comment=whoami: 1 Time(s)
+       //jmx-console/HtmlAdaptor: 1 Time(s)
+       //manager/html/upload: 1 Time(s)
+       //wstats/wstats.jsp?comment=whoami: 1 Time(s)
+       //zecmd/zecmd.jsp?comment=whoami: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 6 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 6 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 6 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 6 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 6 Time(s)
+       /vtigercrm/graph.php?current_language=../. ... Accounts&action: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       35   *Warning: Pre-queue content-filter connection overload 
+      277   SASL authentication failed 
+ 
+   23.887K  Bytes accepted                            24,460
+   23.887K  Bytes delivered                           24,460
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+       69   Connections made      
+       69   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+        8   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.1G   28G   7% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

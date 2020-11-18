@@ -1,0 +1,151 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 4020411101CFF; Fri,  5 Dec 2014 03:30:43 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 3B65511101D0A; Fri,  5 Dec 2014 03:30:43 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141205023043.3B65511101D0A@2626.serwervps.pl>
+Date: Fri,  5 Dec 2014 03:30:39 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Dec  5 03:30:39 2014
+        Date Range Processed: yesterday
+                              ( 2014-Dec-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Dec  4 03:16:29 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    Trying host db.local.clamav.net (217.18.205.108)...
+    WARNING: getfile: daily-19716.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-19716.cdiff from db.local.clamav.net
+    Downloading daily-19716.cdiff [100%]
+    Downloading daily-19717.cdiff [100%]
+    Downloading daily-19718.cdiff [100%]
+    Downloading daily-19719.cdiff [100%]
+    Downloading daily-19720.cdiff [100%]
+    Downloading daily-19721.cdiff [100%]
+    Downloading daily-19722.cdiff [100%]
+    daily.cld updated (version: 19722, sigs: 1281989, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3706260 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    82.221.105.6
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /cgi-bin/test.sh: 1 Time(s)
+       /didi/did/di.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+   50.851K  Bytes accepted                            52,071
+   50.851K  Bytes delivered                           52,071
+ ========   ================================================
+ 
+        7   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        7   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Connections made      
+        4   Disconnections        
+        7   Removed from queue    
+        4   Delivered             
+        1   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 3 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    nss-3.16.2.3-3.el6_6.i686
+    nss-tools-3.16.2.3-3.el6_6.i686
+    nss-util-3.16.2.3-2.el6_6.i686
+    nss-sysinit-3.16.2.3-3.el6_6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  7.6G   43G  16% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,134 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 9E76C111015E9; Sun, 13 Apr 2014 03:25:13 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 7DC58111015ED
+	for <root@2626.serwervps.pl>; Sun, 13 Apr 2014 05:25:13 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 2huphPNHknyW for <root@2626.serwervps.pl>;
+	Sun, 13 Apr 2014 03:25:07 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 02B6E111015E9; Sun, 13 Apr 2014 03:25:06 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140413012507.02B6E111015E9@2626.serwervps.pl>
+Date: Sun, 13 Apr 2014 03:25:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Apr 13 03:25:04 2014
+        Date Range Processed: yesterday
+                              ( 2014-Apr-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (00930-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140412010708.89A9D111015C5@2626.serwervps.pl>, mail_id: E-QFMitmCMO7, Hits: -0.001, size: 14172, queued_as: 0809D111015D3, 7266 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No ext program for   .tnef, tried: tnef
+        1   (00931-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140412013010.97C83111015E1@2626.serwervps.pl>, mail_id: 5aTxI6bc1ERH, Hits: 0, size: 2288, queued_as: 189A4111015EA, 7542 ms
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+        1   (02442-01) Passed CLEAN {RelayedInternal}, LOCAL [195.43.84.13]:48102 [91.216.25.2] <info@paczkomaty.pl> -> <atertil@hrankiety.pl>, Message-ID: <20140412140902.B662141BD@paczkomaty.pl>, mail_id: 8zoyEOb2ySCT, Hits: 1.276, size: 229116, queued_as: 05E29111015E1, 5506 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sat Apr 12 03:07:08 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18773.cdiff [100%]
+    Downloading daily-18774.cdiff [100%]
+    Downloading daily-18775.cdiff [100%]
+    Downloading daily-18776.cdiff [100%]
+    Downloading daily-18777.cdiff [100%]
+    Downloading daily-18778.cdiff [100%]
+    daily.cld updated (version: 18778, sigs: 882270, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3306538 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    74.218.151.122
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /php/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /sql/scripts/setup.php: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        4   *Warning: Pre-queue content-filter connection overload 
+ 
+  498.278K  Bytes accepted                           510,237
+  498.278K  Bytes delivered                          510,237
+ ========   ================================================
+ 
+        8   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        8   Total                                    100.00%
+ ========   ================================================
+ 
+        8   Connections made      
+        8   Disconnections        
+        8   Removed from queue    
+        3   Delivered             
+        3   Sent via SMTP         
+        2   Forwarded             
+ 
+        4   Hostname verification errors 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.3G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

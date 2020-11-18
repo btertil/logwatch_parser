@@ -1,0 +1,136 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 9298511101883; Fri, 30 Oct 2015 03:34:50 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 89B4E111018D8; Fri, 30 Oct 2015 03:34:50 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20151030023450.89B4E111018D8@2626.serwervps.pl>
+Date: Fri, 30 Oct 2015 03:34:46 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Oct 30 03:34:46 2015
+        Date Range Processed: yesterday
+                              ( 2015-Oct-29 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Oct 29 03:29:19 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-21020.cdiff [100%]
+    Downloading daily-21021.cdiff [100%]
+    Downloading daily-21022.cdiff [100%]
+    Downloading daily-21023.cdiff [100%]
+    Downloading daily-21024.cdiff [100%]
+    daily.cld updated (version: 21024, sigs: 1639363, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 268, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (4063635 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    141.212.122.128 -> proxytest.zmap.io:80: 1 Time(s)
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+       /x: 1 Time(s)
+    404 Not Found
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+       http://testp4.pospr.waw.pl/testproxy.php: 1 Time(s)
+       http://testp5.mielno.lubin.pl/testproxy.php: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 276643933534896: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 349031191948684: 1 Time(s)
+    405 Method Not Allowed
+       proxytest.zmap.io:80: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       12   *Warning: Pre-queue content-filter connection overload 
+       82   SASL authentication failed 
+ 
+    4.544M  Bytes accepted                         4,765,077
+    4.544M  Bytes delivered                        4,765,077
+ ========   ================================================
+ 
+       11   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       11   Total                                    100.00%
+ ========   ================================================
+ 
+       89   Connections made      
+       89   Disconnections        
+       11   Removed from queue    
+        9   Delivered             
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 1 time
+       127.0.0.1 (localhost.localdomain): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  52% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

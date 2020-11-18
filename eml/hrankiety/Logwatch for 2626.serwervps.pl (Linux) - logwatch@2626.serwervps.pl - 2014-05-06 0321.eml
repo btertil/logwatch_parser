@@ -1,0 +1,137 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 022ED111017F0; Tue,  6 May 2014 03:21:16 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id CC113111017EE
+	for <root@2626.serwervps.pl>; Tue,  6 May 2014 05:21:15 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id bTDq7AoyzlBp for <root@2626.serwervps.pl>;
+	Tue,  6 May 2014 03:21:09 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 54678111017EF; Tue,  6 May 2014 03:21:09 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140506012109.54678111017EF@2626.serwervps.pl>
+Date: Tue,  6 May 2014 03:21:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue May  6 03:21:06 2014
+        Date Range Processed: yesterday
+                              ( 2014-May-05 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (27408-16) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140505013005.5E79F111017EE@2626.serwervps.pl>, mail_id: LW9Qcdwf9cG5, Hits: 0, size: 2288, queued_as: 23A7C11101746, 6674 ms
+        1   (27409-16) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140505012708.7BAEA11101746@2626.serwervps.pl>, mail_id: qk2rqVCk1HJY, Hits: -0.001, size: 4547, queued_as: 715A0111017ED, 5719 ms
+        1   (27408-16) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (27409-16) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon May  5 03:27:08 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    WARNING: getfile: daily-18916.cdiff not found on remote server (IP: 158.129.196.3)
+    WARNING: getpatch: Can't download daily-18916.cdiff from db.local.clamav.net
+    Downloading daily-18916.cdiff [100%]
+    Downloading daily-18917.cdiff [100%]
+    Downloading daily-18918.cdiff [100%]
+    Downloading daily-18919.cdiff [100%]
+    Downloading daily-18920.cdiff [100%]
+    Downloading daily-18921.cdiff [100%]
+    Downloading daily-18922.cdiff [100%]
+    Downloading daily-18923.cdiff [100%]
+    daily.cld updated (version: 18923, sigs: 929766, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3354034 signatures) from db.local.clamav.net (IP: 217.18.205.108)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   22.126K  Bytes accepted                            22,657
+   22.126K  Bytes delivered                           22,657
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    2:ethtool-3.5-1.4.el6_5.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.4G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

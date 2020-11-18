@@ -1,0 +1,170 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id C294B111016BE; Mon, 31 Mar 2014 03:16:17 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 98175111016BC
+	for <root@2626.serwervps.pl>; Mon, 31 Mar 2014 05:16:17 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id dS6WfdFYgeuw for <root@2626.serwervps.pl>;
+	Mon, 31 Mar 2014 03:16:09 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 63DFD111016BE; Mon, 31 Mar 2014 03:16:09 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140331011609.63DFD111016BE@2626.serwervps.pl>
+Date: Mon, 31 Mar 2014 03:16:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Mar 31 03:16:06 2014
+        Date Range Processed: yesterday
+                              ( 2014-Mar-30 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (30220-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (30220-02) Passed CLEAN {RelayedInternal}, LOCAL [74.125.83.47]:44290 [89.67.22.229] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Message-ID: <53380005.8050701@gmail.com>, mail_id: 8VHnv7TfDWi4, Hits: -99.526, size: 2260, queued_as: B70F7111016BC, dkim_sd=20120113:gmail.com, 4942 ms
+        1   (30219-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140330013004.B7A46111016B2@2626.serwervps.pl>, mail_id: 0qnVOSoLKS7v, Hits: 0, size: 2288, queued_as: 1C149111016BB, 7601 ms
+        1   (30220-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140330010909.6C8611110167B@2626.serwervps.pl>, mail_id: a3TksN4CBuQt, Hits: -0.001, size: 5410, queued_as: DFD1A1110169C, 6348 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Mar 30 03:09:09 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    WARNING: getfile: daily-18710.cdiff not found on remote server (IP: 158.129.196.3)
+    WARNING: getpatch: Can't download daily-18710.cdiff from db.local.clamav.net
+    Downloading daily-18710.cdiff [100%]
+    Downloading daily-18711.cdiff [100%]
+    Downloading daily-18712.cdiff [100%]
+    Downloading daily-18713.cdiff [100%]
+    daily.cld updated (version: 18713, sigs: 859527, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3283795 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 54% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 38% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 18% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 64% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 90% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 44% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 72% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 11% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 51% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 92% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 46% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 54% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 76% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 27% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /pocztaadmin/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 10 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+   29.620K  Bytes accepted                            30,331
+   29.620K  Bytes delivered                           30,331
+ ========   ================================================
+ 
+        8   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        8   Total                                    100.00%
+ ========   ================================================
+ 
+        1   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+        6   Connections made      
+        6   Disconnections        
+        8   Removed from queue    
+        3   Delivered             
+        3   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 9 times
+       185.17.41.230 (backup): 6 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ SFTP subsystem requests: 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.2G   26G  14% /
+ none             36G  4.0K   36G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

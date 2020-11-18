@@ -1,0 +1,166 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 4CE3311102286; Wed,  7 Jan 2015 03:26:46 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 233D21110228C; Wed,  7 Jan 2015 03:26:33 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150107022635.233D21110228C@2626.serwervps.pl>
+Date: Wed,  7 Jan 2015 03:26:28 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Jan  7 03:26:27 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jan-06 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Jan  6 03:38:36 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19880.cdiff [100%]
+    Downloading daily-19881.cdiff [100%]
+    Downloading daily-19882.cdiff [100%]
+    Downloading daily-19883.cdiff [100%]
+    Downloading daily-19884.cdiff [100%]
+    Downloading daily-19885.cdiff [100%]
+    daily.cld updated (version: 19885, sigs: 1302659, f-level: 63, builder: neo)
+    Downloading bytecode-245.cdiff [100%]
+    bytecode.cld updated (version: 245, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3726927 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /tmUnblock.cgi: 2 Time(s)
+    404 Not Found
+       //admin/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //admin/pma/scripts/setup.php: 1 Time(s)
+       //admin/scripts/setup.php: 1 Time(s)
+       //db/scripts/setup.php: 1 Time(s)
+       //dbadmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //mysql/scripts/setup.php: 1 Time(s)
+       //mysqladmin/: 1 Time(s)
+       //mysqladmin/scripts/setup.php: 1 Time(s)
+       //php-my-admin/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin-2.5.5-pl1/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.5/index.php: 1 Time(s)
+       //phpMyAdmin-2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin/: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 2 Time(s)
+       //phpadmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 2 Time(s)
+       //phpmyadmin1/scripts/setup.php: 1 Time(s)
+       //phpmyadmin2/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       //scripts/setup.php: 1 Time(s)
+       //typo3/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //web/phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //web/scripts/setup.php: 1 Time(s)
+       //websql/scripts/setup.php: 1 Time(s)
+       //xampp/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /PMA/scripts/setup.php: 1 Time(s)
+       /admin/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /admin/pma/scripts/setup.php: 1 Time(s)
+       /admin/scripts/setup.php: 1 Time(s)
+       /admm/scripts/setup.php: 1 Time(s)
+       /admn/scripts/setup.php: 1 Time(s)
+       /cgi-bin/php: 1 Time(s)
+       /cgi-bin/php4: 1 Time(s)
+       /databaseadmin/scripts/setup.php: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /mysql-admin/scripts/setup.php: 1 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 2 Time(s)
+       /nknk/nkn/nk.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin1/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /sql/scripts/setup.php: 1 Time(s)
+       /typo3/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       http://s1.bdstatic.com/r/www/cache/static/ ... mi_ade5465d.png: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+  865.950K  Bytes accepted                           886,733
+  865.950K  Bytes delivered                          886,733
+ ========   ================================================
+ 
+        5   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        5   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Connections made      
+        1   Disconnections        
+        5   Removed from queue    
+        3   Delivered             
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.68.96.192 (89-68-96-192.dynamic.chello.pl): 4 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   11G   40G  21% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

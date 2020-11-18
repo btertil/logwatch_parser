@@ -1,0 +1,134 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 6397513D822D2; Sat, 15 Mar 2014 03:39:22 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 46D4613D81E85
+	for <root@2626.serwervps.pl>; Sat, 15 Mar 2014 05:39:22 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id K1vMSyaWactc for <root@2626.serwervps.pl>;
+	Sat, 15 Mar 2014 03:39:15 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 1B4CC13D822D0; Sat, 15 Mar 2014 03:39:14 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140315023915.1B4CC13D822D0@2626.serwervps.pl>
+Date: Sat, 15 Mar 2014 03:39:12 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Mar 15 03:39:11 2014
+        Date Range Processed: yesterday
+                              ( 2014-Mar-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        2   *Warning              
+ 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (01140-03) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140314023315.0767E13D81E85@2626.serwervps.pl>, mail_id: T2gQ0lAsSVUp, Hits: -0.001, size: 4393, queued_as: D939D13D81A7C, 40561 ms
+        1   (01140-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (01140-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140314023012.0F80613D81E85@2626.serwervps.pl>, mail_id: xOcLiz1IWOyr, Hits: 0, size: 2286, queued_as: 2ECD113D81A7C, 10959 ms
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   No ext program for   .tnef, tried: tnef
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Mar 14 03:33:15 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18587.cdiff [100%]
+    Downloading daily-18588.cdiff [100%]
+    Downloading daily-18589.cdiff [100%]
+    Downloading daily-18590.cdiff [100%]
+    Downloading daily-18591.cdiff [100%]
+    Downloading daily-18592.cdiff [100%]
+    Downloading daily-18593.cdiff [100%]
+    daily.cld updated (version: 18593, sigs: 820197, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3244465 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       //vtigercrm/test/upload/vtigercrm.txt: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+        1   Miscellaneous warnings 
+ 
+   21.657K  Bytes accepted                            22,177
+   21.657K  Bytes delivered                           22,177
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Connections made      
+        3   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+        1   Deferred              
+        1   Deferrals             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.5G   28G   9% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

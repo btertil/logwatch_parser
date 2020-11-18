@@ -1,0 +1,136 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 1D14211101794; Tue,  3 Mar 2015 04:12:32 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id C9DEB1110179F; Tue,  3 Mar 2015 04:12:31 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150303031231.C9DEB1110179F@2626.serwervps.pl>
+Date: Tue,  3 Mar 2015 04:12:27 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Mar  3 04:12:26 2015
+        Date Range Processed: yesterday
+                              ( 2015-Mar-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Mar  2 03:17:38 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-20130.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-20130.cdiff from db.local.clamav.net
+    Downloading daily-20130.cdiff [100%]
+    Downloading daily-20131.cdiff [100%]
+    Downloading daily-20132.cdiff [100%]
+    Downloading daily-20133.cdiff [100%]
+    daily.cld updated (version: 20133, sigs: 1336456, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 247, sigs: 41, f-level: 63, builder: dgoddard)
+    Database updated (3760722 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /Panel/includes/templates/error.tpl: 1 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /iuiu/iui/iu.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 3 Time(s)
+       /phpMyAdmin/scripts/setup.php: 3 Time(s)
+       /phph/php/ph.php: 2 Time(s)
+       /pma/scripts/setup.php: 3 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /webdav/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       btertil (89-67-185-134.dynamic.chello.pl): 1 Time(s)
+ 
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+   37.626K  Bytes accepted                            38,529
+   37.626K  Bytes delivered                           38,529
+ ========   ================================================
+ 
+        5   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        5   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        5   Removed from queue    
+        3   Delivered             
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Failed logins from:
+    89.67.185.134 (89-67-185-134.dynamic.chello.pl): 1 time
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 4 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: Client disconnecting normally : 2 Time(s)
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   16G   35G  31% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,172 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 7E2CE13D8152F; Wed,  5 Feb 2014 03:38:15 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 6C81F13D80FF7
+	for <root@2626.serwervps.pl>; Wed,  5 Feb 2014 05:38:15 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id qo40TrV0E3ta for <root@2626.serwervps.pl>;
+	Wed,  5 Feb 2014 03:38:09 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id B50D913D8152F; Wed,  5 Feb 2014 03:38:09 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140205023809.B50D913D8152F@2626.serwervps.pl>
+Date: Wed,  5 Feb 2014 03:38:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Feb  5 03:38:07 2014
+        Date Range Processed: yesterday
+                              ( 2014-Feb-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   No ext program for   .tnef, tried: tnef
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (28836-01) Passed CLEAN {RelayedInternal}, LOCAL [209.85.215.171]:64037 [89.67.22.229] <agnieszkaibartek@gmail.com> -> <support@hrankiety.pl>, Message-ID: <52F15EB7.3030403@gmail.com>, mail_id: WsUcR7Ls1cgb, Hits: -98.826, size: 2123, queued_as: 2316F13D8152F, dkim_sd=20120113:gmail.com, 14267 ms
+        1   No ext program for   .doc, tried: ripole
+        1   (26254-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140204033108.2331913D80FF7@2626.serwervps.pl>, mail_id: I_aGm8O598ms, Hits: -0.001, size: 5348, queued_as: 0CCA013D80FF6, 5936 ms
+        1   (26253-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140204023007.940B213D80FF7@2626.serwervps.pl>, mail_id: LDjsdaSaQ1wZ, Hits: 0, size: 2286, queued_as: 5D56013D80FF6, 5770 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Tue Feb  4 04:31:08 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    connect_error: getsockopt(SO_ERROR): fd=5 error=111: Connection refused
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Downloading daily-18431.cdiff [100%]
+    Downloading daily-18432.cdiff [100%]
+    Downloading daily-18433.cdiff [100%]
+    Downloading daily-18434.cdiff [100%]
+    Downloading daily-18435.cdiff [100%]
+    daily.cld updated (version: 18435, sigs: 684763, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    Database updated (3109032 signatures) from db.local.clamav.net (IP: 217.18.205.108)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    75.145.122.181
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /cgi-bin/php-cgi: 1 Time(s)
+       /cgi-bin/php.cgi: 1 Time(s)
+       /cgi-bin/php4: 1 Time(s)
+       /cgi-bin/php5: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+        6   SASL authentication failed 
+ 
+   29.152K  Bytes accepted                            29,852
+   29.152K  Bytes delivered                           29,852
+ ========   ================================================
+ 
+        8   Accepted                                  88.89%
+        1   Rejected                                  11.11%
+ --------   ------------------------------------------------
+        9   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        2   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+        2   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+        9   Connections made      
+        9   Disconnections        
+        8   Removed from queue    
+        3   Delivered             
+        3   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    openldap-2.4.23-34.el6_5.1.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.3G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

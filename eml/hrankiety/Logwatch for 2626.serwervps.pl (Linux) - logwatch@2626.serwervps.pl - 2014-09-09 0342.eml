@@ -1,0 +1,164 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id B798D11101A0E; Tue,  9 Sep 2014 03:42:09 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id ADC5211101A0D
+	for <root@2626.serwervps.pl>; Tue,  9 Sep 2014 05:42:09 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id fFe0G-zydYLJ for <root@2626.serwervps.pl>;
+	Tue,  9 Sep 2014 03:42:07 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id E6CE411101A0E; Tue,  9 Sep 2014 03:42:07 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140909014207.E6CE411101A0E@2626.serwervps.pl>
+Date: Tue,  9 Sep 2014 03:42:06 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Sep  9 03:42:06 2014
+        Date Range Processed: yesterday
+                              ( 2014-Sep-08 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (14720-02) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.170]:65020 [37.30.206.207] <agnieszkaibartek@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: 0304E111019DF, Message-ID: <5516B91B-D53E-4602-8B45-90661F5056BE@gmail.com>, mail_id: jDpWPWa6mPl5, Hits: -99.524, size: 11279, queued_as: E6E5C111019E1, dkim_sd=20120113:gmail.com, 2836 ms
+        1   (14721-02) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.41]:48487 [37.30.206.207] <agnieszkaibartek@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: 6E566111019E1, Message-ID: <FA43EEC7-BCEC-41DB-A6FE-AB649411FE64@gmail.com>, mail_id: oLg09QuMiauZ, Hits: -99.524, size: 11416, queued_as: 787E3111019E2, dkim_sd=20120113:gmail.com, 1940 ms
+        1   (14720-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140908013010.065D8111019CE@2626.serwervps.pl>, mail_id: m8jDBisyypgY, Hits: 0.001, size: 2288, queued_as: 79642111019DA, 4221 ms
+        1   (14721-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (14721-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140908013606.2AA89111019DA@2626.serwervps.pl>, mail_id: 6Vxxz0yxVy6o, Hits: 0, size: 4804, queued_as: 881F1111019DF, 6583 ms
+        1   (14720-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Sep  8 03:36:06 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19343.cdiff [100%]
+    daily.cld updated (version: 19343, sigs: 1098386, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3522657 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    195.154.183.174
+ 
+ Requests with error response codes
+    404 Not Found
+       //cgi-bin/webcm?getpage=../html/menus/menu ... /voip.cfg%20%26: 1 Time(s)
+       /dev/ip.php: 1 Time(s)
+       /dirt/test.php: 1 Time(s)
+       /herpnet/test.php: 1 Time(s)
+       /hybridauth/install.php: 1 Time(s)
+       /m33/test.php: 1 Time(s)
+       /mrnet/test.php: 1 Time(s)
+       /panel/test.php: 1 Time(s)
+       /test.php: 1 Time(s)
+       /z/test.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       98   *Warning: Pre-queue content-filter connection overload 
+       96   SASL authentication failed 
+ 
+   68.303K  Bytes accepted                            69,942
+   68.303K  Bytes delivered                           69,942
+ ========   ================================================
+ 
+       10   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+      105   Connections made      
+      105   Disconnections        
+       10   Removed from queue    
+        4   Delivered             
+        4   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       37.30.206.207 (37.30.206.207.nat.umts.dynamic.t-mobile.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: Normal Shutdown. : 1 Time(s)
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    avahi-libs-0.6.25-12.el6_5.3.i686
+    fail2ban-0.8.14-1.el6.noarch
+    initscripts-9.03.40-2.el6.centos.4.i686
+    cpio-2.10-12.el6_5.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.6G   44G  14% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

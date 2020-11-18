@@ -1,0 +1,161 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 6840013D82072; Fri, 10 Jan 2014 03:17:30 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 55CF713D82070
+	for <root@2626.serwervps.pl>; Fri, 10 Jan 2014 05:17:30 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id QNyx2O4jM9ZT for <root@2626.serwervps.pl>;
+	Fri, 10 Jan 2014 03:17:06 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id CE76C13D82071; Fri, 10 Jan 2014 03:17:06 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140110021706.CE76C13D82071@2626.serwervps.pl>
+Date: Fri, 10 Jan 2014 03:17:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Jan 10 03:17:04 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jan-09 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        6   *Warning              
+ 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   No ext program for   .tnef, tried: tnef
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No ext program for   .doc, tried: ripole
+        1   (06204-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140109023008.A5AA913D81E87@2626.serwervps.pl>, mail_id: eEZSj_aq9bqf, Hits: 0, size: 2286, queued_as: 1800813D81E86, 24348 ms
+        1   (06205-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140109021207.4100313D81E87@2626.serwervps.pl>, mail_id: 7jpU9_MpHF4u, Hits: -0.001, size: 5312, queued_as: 246D713D81E86, 22804 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Thu Jan  9 03:12:07 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18325.cdiff [100%]
+    Downloading daily-18326.cdiff [100%]
+    Downloading daily-18327.cdiff [100%]
+    Downloading daily-18328.cdiff [100%]
+    daily.cld updated (version: 18328, sigs: 640599, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    Database updated (3064868 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ lstat() failed on: /var/spool/amavisd/tmp/amavis-20140109T031207-06205-KZfrQv60/parts
+ lstat() failed on: /var/spool/amavisd/tmp/amavis-20140109T033008-06204-u83Bt_Pw/parts
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    72.24.138.82
+    87.116.161.10
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       HTTP/1.1: 1 Time(s)
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 3 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 3 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 3 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 3 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 3 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /vtigercrm/graph.php?current_language=../. ... Accounts&action: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       28   *Warning: Pre-queue content-filter connection overload 
+ 
+   24.350K  Bytes accepted                            24,934
+   24.350K  Bytes delivered                           24,934
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+       30   Connections made      
+       30   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 2 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.2G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

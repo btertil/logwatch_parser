@@ -1,0 +1,117 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 7144A11103E6A; Thu, 18 Feb 2016 03:17:06 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id D1A9411103E79; Thu, 18 Feb 2016 03:16:57 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160218021659.D1A9411103E79@2626.serwervps.pl>
+Date: Thu, 18 Feb 2016 03:16:50 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Feb 18 03:16:48 2016
+        Date Range Processed: yesterday
+                              ( 2016-Feb-17 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Feb 17 03:50:21 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-21375.cdiff [100%]
+    Downloading daily-21376.cdiff [100%]
+    Downloading daily-21377.cdiff [100%]
+    Downloading daily-21378.cdiff [100%]
+    Downloading daily-21379.cdiff [100%]
+    daily.cld updated (version: 21379, sigs: 1845017, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 271, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (4269289 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /a2billing/: 3 Time(s)
+       /administrator/: 1 Time(s)
+       /hello: 1 Time(s)
+       /rom-0: 3 Time(s)
+       http://testp2.czar.bielawa.pl/testproxy.php: 2 Time(s)
+       http://testp5.mielno.lubin.pl/testproxy.php: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 905255280460553: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      110   *Warning: Pre-queue content-filter connection overload 
+      374   SASL authentication failed 
+        1   Miscellaneous warnings 
+ 
+  155.604K  Bytes accepted                           159,339
+  155.604K  Bytes delivered                          159,339
+ ========   ================================================
+ 
+        7   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        7   Total                                    100.00%
+ ========   ================================================
+ 
+      335   Connections made      
+      335   Disconnections        
+        7   Removed from queue    
+        5   Delivered             
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 4 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  9.3G   41G  19% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

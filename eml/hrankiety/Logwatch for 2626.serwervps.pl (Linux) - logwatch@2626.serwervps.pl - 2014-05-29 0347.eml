@@ -1,0 +1,151 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 79F2911101821; Thu, 29 May 2014 03:47:11 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 67BFA11101820
+	for <root@2626.serwervps.pl>; Thu, 29 May 2014 05:47:11 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id C3Wyzu13snhs for <root@2626.serwervps.pl>;
+	Thu, 29 May 2014 03:47:08 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 219D811101821; Thu, 29 May 2014 03:47:08 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140529014708.219D811101821@2626.serwervps.pl>
+Date: Thu, 29 May 2014 03:47:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu May 29 03:47:05 2014
+        Date Range Processed: yesterday
+                              ( 2014-May-28 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (22439-07) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (22341-07) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140528012908.C2F8B1110181E@2626.serwervps.pl>, mail_id: f2JhXSWCr4CQ, Hits: -0.001, size: 5762, queued_as: 8315F1110181D, 6550 ms
+        1   (22439-07) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140528013005.5032E1110181F@2626.serwervps.pl>, mail_id: sbHA0tLVmgoh, Hits: 0, size: 2288, queued_as: B00141110181E, 6369 ms
+        1   (22341-07) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed May 28 03:29:09 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19036.cdiff [100%]
+    Downloading daily-19037.cdiff [100%]
+    daily.cld updated (version: 19037, sigs: 970172, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 241, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3394443 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    198.20.70.114
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+    404 Not Found
+       http://proxyjudge3.proxyfire.net/fastenv: 1 Time(s)
+    501 Not Implemented
+       null: 4 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       16   *Warning: Pre-queue content-filter connection overload 
+       30   SASL authentication failed 
+ 
+   25.686K  Bytes accepted                            26,302
+   25.686K  Bytes delivered                           26,302
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+       45   Connections made      
+       45   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+        6   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    audit-libs-2.2-4.el6_5.i686
+    libcurl-7.19.7-37.el6_5.3.i686
+    curl-7.19.7-37.el6_5.3.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.5G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

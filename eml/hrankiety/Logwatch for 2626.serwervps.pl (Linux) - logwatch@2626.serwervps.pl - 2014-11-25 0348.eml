@@ -1,0 +1,262 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 081C7111018A6; Tue, 25 Nov 2014 03:48:12 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id D0F3011101C9F; Tue, 25 Nov 2014 03:48:11 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141125024811.D0F3011101C9F@2626.serwervps.pl>
+Date: Tue, 25 Nov 2014 03:48:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Nov 25 03:48:08 2014
+        Date Range Processed: yesterday
+                              ( 2014-Nov-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+       18   *Warning              
+ 
+ 
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Nov 24 03:34:27 2014
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.4 Recommended version: 0.98.5
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-19669.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-19669.cdiff from db.local.clamav.net
+    Downloading daily-19669.cdiff [100%]
+    Downloading daily-19670.cdiff [100%]
+    Downloading daily-19671.cdiff [100%]
+    Downloading daily-19672.cdiff [100%]
+    daily.cld updated (version: 19672, sigs: 1271669, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3695940 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 30% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 99% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /web/scripts/setup.php: 1 Time(s)
+       /websql/scripts/setup.php: 1 Time(s)
+       http://6.url.cn/zc/chs/img/body.png: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Authentication Failures:
+       btertil(500) -> root: 4 Time(s)
+    Sessions Opened:
+       btertil -> root: 10 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Fatal:   General fatal 
+        1   *Warning: Pre-queue content-filter connection overload 
+       21   Miscellaneous warnings 
+ 
+  479.505K  Bytes accepted                           491,013
+  310.239K  Bytes delivered                          317,685
+ ========   ================================================
+ 
+       48   Accepted                                  97.96%
+        1   Rejected                                   2.04%
+ --------   ------------------------------------------------
+       49   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       26   Connections made      
+        1   Connections lost      
+       26   Disconnections        
+       40   Removed from queue    
+       16   Delivered             
+        8   Sent via SMTP         
+        4   Forwarded             
+       20   Deferred              
+      136   Deferrals             
+       12   Expired and returned to sender 
+       12   DSNs undeliverable    
+ 
+      111   Connection failure (outbound) 
+       11   SASL authenticated messages 
+ 
+        8   Postfix start         
+        8   Postfix stop          
+        2   Postfix refresh       
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Nov 24 13:42:38 2626 postfix/postfix-script[844]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Nov 24 15:13:31 2626 postfix/postfix-script[848]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Nov 24 20:31:59 2626 postfix/postfix-script[2821]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Nov 24 20:25:17 2626 postfix/master[2306]: reload -- version 2.11.0, configuration /etc/postfix
+        1   Nov 24 19:59:21 2626 postfix/postfix-script[2105]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Nov 24 19:59:21 2626 postfix/postfix-script[2109]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Nov 24 20:40:57 2626 postfix/postfix-script[2981]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Nov 24 20:25:33 2626 postfix/postfix-script[2597]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Nov 24 13:42:38 2626 postfix/postfix-script[848]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Nov 24 13:25:22 2626 postfix/postfix-script[4901]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Nov 24 13:42:38 2626 postfix/postfix-script[846]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Nov 24 20:40:57 2626 postfix/postfix-script[2979]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Nov 24 20:31:59 2626 postfix/postfix-script[2819]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Nov 24 20:09:03 2626 postfix/postsuper[2366]: Deleted: 5 messages
+        1   Nov 24 19:53:10 2626 postfix/master[856]: reload -- version 2.11.0, configuration /etc/postfix
+        1   Nov 24 15:13:31 2626 postfix/postfix-script[846]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Nov 24 20:25:33 2626 postfix/postfix-script[2599]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Nov 24 20:25:33 2626 postfix/postfix-script[2601]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Nov 24 15:13:31 2626 postfix/postfix-script[850]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Nov 24 13:25:22 2626 postfix/postfix-script[4897]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Nov 24 19:59:21 2626 postfix/postfix-script[2107]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Nov 24 20:06:31 2626 postfix/postfix-script[2296]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Nov 24 20:06:31 2626 postfix/postfix-script[2298]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Nov 24 20:40:57 2626 postfix/postfix-script[2983]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Nov 24 20:06:31 2626 postfix/postfix-script[2300]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Nov 24 20:31:59 2626 postfix/postfix-script[2823]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Nov 24 13:25:22 2626 postfix/postfix-script[4899]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> reboot  as root:  2 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 2 Time(s)
+ 
+ SSHD Started: 4 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 5 times
+       213.158.217.133 (213.158.217.133.pat.umts.dynamic.t-mobile.pl): 3 times
+       185.17.41.230 (backup): 2 times
+       46.205.131.116 (46.205.131.116.nat.umts.dynamic.t-mobile.pl): 1 time
+       178.182.128.169 (178.182.128.169.nat.umts.dynamic.t-mobile.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  7.5G   43G  15% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

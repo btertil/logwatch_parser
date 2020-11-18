@@ -1,0 +1,186 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 26BC146438D7; Wed, 25 Sep 2013 03:13:09 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 0EA174643619
+	for <root@2626.serwervps.pl>; Wed, 25 Sep 2013 05:13:09 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id BEcQLsmV7JGj for <root@2626.serwervps.pl>;
+	Wed, 25 Sep 2013 03:13:06 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 8720746438D7; Wed, 25 Sep 2013 03:13:06 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20130925011306.8720746438D7@2626.serwervps.pl>
+Date: Wed, 25 Sep 2013 03:13:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Sep 25 03:13:04 2013
+        Date Range Processed: yesterday
+                              ( 2013-Sep-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (14976-05) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20130923230608.E60684643661@2626.serwervps.pl>, mail_id: HRhe7SgY9xeV, Hits: 0, size: 8322, queued_as: 446D44643588, 2347 ms
+        1   (20861-02) Passed CLEAN {RelayedInternal}, LOCAL [74.125.83.45]:32838 [188.146.231.27] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Message-ID: <5C168B02-B9E6-4768-91BF-2ED2899E7E3B@gmail.com>, mail_id: 1VggYucqmNfx, Hits: -99.523, size: 3380, queued_as: BC22E46438C9, dkim_sd=20120113:gmail.com, 770 ms
+        1   (14976-04) Passed CLEAN {RelayedInternal}, LOCAL [209.85.215.176]:44423 [89.67.22.229] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Message-ID: <5240A3F0.2030005@gmail.com>, mail_id: QchB30-_yRaj, Hits: -99.525, size: 2079, queued_as: DC31D4643661, dkim_sd=20120113:gmail.com, 2013 ms
+        1   (14975-03) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN23> line 10827.
+        1   (14975-04) Passed CLEAN {RelayedInternal}, LOCAL [209.85.215.176]:44423 [89.67.22.229] <bondiev@gmail.com> -> <postmaster@hrankiety.pl>, Message-ID: <5240A3F0.2030005@gmail.com>, mail_id: D_pWXolnieua, Hits: -99.525, size: 2079, queued_as: 123A04643661, dkim_sd=20120113:gmail.com, 1172 ms
+        1   (20862-01) Passed CLEAN {RelayedInternal}, LOCAL [83.220.101.12]:55246 [83.220.101.12] <Bartosz.Tertil@t-mobile.pl> -> <btertil@hrankiety.pl>, Message-ID: <3885C4A101C04644B7D59E882DDF052109AD932E@ex22.resources.local>, mail_id: 67kanhLW3VJP, Hits: -4.069, size: 2627, queued_as: 288C946438C3, 2050 ms
+        1   (20862-03) Passed CLEAN {RelayedInternal}, LOCAL [69.58.183.55]:12871 [69.58.183.55] <isprenewal@thawte.com> -> <postmaster@hrankiety.pl>, Message-ID: <1372920192.289071380041630607.JavaMail.support@geotrust.com>, mail_id: eFK3NFbFfv_g, Hits: -3.726, size: 1882, queued_as: 50AFA46438C9, 2446 ms
+        1   (14975-03) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:56062 [89.67.22.229] <postmaster@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <52409F29.6020403@hrankiety.pl>, mail_id: 95JyVsQpZ6gE, Hits: -9.999, size: 3505, queued_as: 17CE24643661, dkim_new=dkim:hrankiety.pl, 1472 ms
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No decoder for       .doc 
+        1   Deleting db files __db.003,__db.004,snmp.db,__db.001,nanny.db,__db.002 in /var/spool/amavisd/db
+        1   (14975-05) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:57428 [89.67.22.229] <btertil@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <5240B237.8030000@hrankiety.pl>, mail_id: xm41JLfF7qjU, Hits: -9.999, size: 975, queued_as: 836484643661, dkim_new=dkim:hrankiety.pl, 1623 ms
+        1   (20862-02) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:48794 [127.0.0.1] <postmaster@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <ee8ba684ec3701a432b8305eb6c6b5c2@hrankiety.pl>, mail_id: ZSH7qdlKc6zS, Hits: -9.998, size: 625, queued_as: 3D67646438C9, dkim_new=dkim:hrankiety.pl, 970 ms
+        1   (14976-04) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN23> line 10785.
+        1   (20861-01) Passed CLEAN {RelayedInternal}, LOCAL [83.220.101.12]:17058 [83.220.101.12] <Bartosz.Tertil@t-mobile.pl> -> <postmaster@hrankiety.pl>, Message-ID: <3885C4A101C04644B7D59E882DDF052109ADC401@ex22.resources.local>, mail_id: G3BCultHPuG1, Hits: 1.275, size: 4546, queued_as: D734F46438C7, 2734 ms
+        1   (14975-06) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20130923233002.316504643661@2626.serwervps.pl>, mail_id: YGbgx7ZSEEoz, Hits: 0.001, size: 2074, queued_as: CA4BD4643588, 1599 ms
+        1   (20861-03) Passed CLEAN {RelayedInternal}, LOCAL [69.58.183.55]:48185 [69.58.183.55] <isprenewal@thawte.com> -> <postmaster@hrankiety.pl>, Message-ID: <652232677.31731380040948526.JavaMail.support@geotrust.com>, mail_id: cFa4cR6NuKHH, Hits: -3.726, size: 1880, queued_as: 70FF246438D2, 2083 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Tue Sep 24 03:06:09 2013
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.97.8 Recommended version: 0.98
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cld is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-17887.cdiff [100%]
+    Downloading daily-17888.cdiff [100%]
+    Downloading daily-17889.cdiff [100%]
+    Downloading daily-17890.cdiff [100%]
+    daily.cld updated (version: 17890, sigs: 362238, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 226, sigs: 43, f-level: 63, builder: neo)
+    Database updated (2786506 signatures) from db.local.clamav.net (IP: 212.7.0.71)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /admin/config.php: 1 Time(s)
+       /apple-touch-icon-114x114-precomposed.png: 1 Time(s)
+       /apple-touch-icon-114x114.png: 1 Time(s)
+       /apple-touch-icon-precomposed.png: 1 Time(s)
+       /apple-touch-icon.png: 1 Time(s)
+       /favicon.ico: 14 Time(s)
+       /mail/phpmyadmin: 1 Time(s)
+       /oceny/: 1 Time(s)
+       /phpmyadmin: 3 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/index.php?token=eef33ac69d27ff ... ca&old_usr=root: 5 Time(s)
+       /phpmyadmin/sql.php?db=oc360&table=tbl_rel ... fdc19c9cccf9e2f: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       root -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+        1   Miscellaneous warnings 
+ 
+   82.836K  Bytes accepted                            84,824
+   84.866K  Bytes delivered                           86,903
+ ========   ================================================
+ 
+       25   Accepted                                  96.15%
+        1   Rejected                                   3.85%
+ --------   ------------------------------------------------
+       26   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       12   4xx Reject recipient address              50.00%
+       12   4xx Reject sender address                 50.00%
+ --------   ------------------------------------------------
+       24   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       40   Connections made      
+       40   Disconnections        
+       25   Removed from queue    
+        9   Delivered             
+       15   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   Timeout (inbound)     
+        3   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 2 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    nano-2.0.9-7.el6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/simfs             30G  1.2G   29G   4% /
+ none                  384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

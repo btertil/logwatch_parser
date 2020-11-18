@@ -1,0 +1,186 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 5B5E111101609; Thu, 17 Apr 2014 03:13:13 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 44E041110162C
+	for <root@2626.serwervps.pl>; Thu, 17 Apr 2014 05:13:13 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id kYqrHgHC8Ysb for <root@2626.serwervps.pl>;
+	Thu, 17 Apr 2014 03:13:07 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id AB87C11101609; Thu, 17 Apr 2014 03:13:07 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140417011307.AB87C11101609@2626.serwervps.pl>
+Date: Thu, 17 Apr 2014 03:13:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Apr 17 03:13:05 2014
+        Date Range Processed: yesterday
+                              ( 2014-Apr-16 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (05577-04) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (14590-01) Passed CLEAN {RelayedOutbound}, MYUSERS <root@2626.serwervps.pl> -> <bondiev@gmail.com>, Message-ID: <20140416212143.ADB32111015E8@2626.serwervps.pl>, mail_id: 3NurOiNELP3y, Hits: -0.001, size: 465, queued_as: 5021A11101608, 1580 ms
+        1   (05577-04) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140416013807.C5B291110162A@2626.serwervps.pl>, mail_id: fLGU5KtgmbRb, Hits: -0.001, size: 4576, queued_as: 23DAF11101623, 5286 ms
+        1   (05578-04) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN23> line 2908.
+        1   No ext program for   .tnef, tried: tnef
+        1   (05578-04) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140416013006.896E211101623@2626.serwervps.pl>, mail_id: 8CVT2JfDRCeG, Hits: 0, size: 2288, queued_as: 267D81110161F, 8475 ms
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed Apr 16 03:38:08 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18796.cdiff [100%]
+    Downloading daily-18797.cdiff [100%]
+    Downloading daily-18798.cdiff [100%]
+    Downloading daily-18799.cdiff [100%]
+    Downloading daily-18800.cdiff [100%]
+    Downloading daily-18801.cdiff [100%]
+    Downloading daily-18802.cdiff [100%]
+    Downloading daily-18803.cdiff [100%]
+    Downloading daily-18804.cdiff [100%]
+    daily.cld updated (version: 18804, sigs: 891057, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3315325 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       //phpmyadmin/scripts/setup.php: 2 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+       /muieblackcat: 2 Time(s)
+       /slub/thumbs/a%20(34).jpg: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Fatal:   General fatal 
+      109   *Warning: Connection concurrency limit reached 
+      106   *Warning: Pre-queue content-filter connection overload 
+ 
+   23.563K  Bytes accepted                            24,129
+   23.563K  Bytes delivered                           24,129
+ ========   ================================================
+ 
+        8   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        8   Total                                    100.00%
+ ========   ================================================
+ 
+      220   Connections made      
+      219   Disconnections        
+        8   Removed from queue    
+        2   Delivered             
+        4   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   SMTP commands dialog error 
+ 
+        2   Postfix start         
+        2   Postfix stop          
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Apr 16 23:20:25 2626 postfix/postfix-script[16982]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Apr 16 23:20:17 2626 postfix/postfix-script[16875]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Apr 16 23:20:17 2626 postfix/postfix-script[16873]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Apr 16 23:20:25 2626 postfix/postfix-script[16980]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Apr 16 23:20:25 2626 postfix/postfix-script[16984]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Apr 16 23:20:17 2626 postfix/postfix-script[16871]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    useradd: failed adding user 'postfix', data deleted: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 2 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    nss-softokn-3.14.3-10.el6_5.i686
+    nss-softokn-freebl-3.14.3-10.el6_5.i686
+    3:postfix-2.11.0-0.el6.i386
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.3G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

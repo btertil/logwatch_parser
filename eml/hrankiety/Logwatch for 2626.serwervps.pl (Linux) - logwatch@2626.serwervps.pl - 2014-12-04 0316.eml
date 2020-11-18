@@ -1,0 +1,230 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id D76CA11101CEB; Thu,  4 Dec 2014 03:16:28 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 12DEA11101CEC; Thu,  4 Dec 2014 03:16:27 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141204021628.12DEA11101CEC@2626.serwervps.pl>
+Date: Thu,  4 Dec 2014 03:16:23 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Dec  4 03:16:23 2014
+        Date Range Processed: yesterday
+                              ( 2014-Dec-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Dec  3 03:34:27 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-19652.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-19652.cdiff from db.local.clamav.net
+    Downloading daily-19652.cdiff [100%]
+    Downloading daily-19653.cdiff [100%]
+    Downloading daily-19654.cdiff [100%]
+    Downloading daily-19655.cdiff [100%]
+    Downloading daily-19656.cdiff [100%]
+    Downloading daily-19657.cdiff [100%]
+    Downloading daily-19658.cdiff [100%]
+    Downloading daily-19659.cdiff [100%]
+    Downloading daily-19660.cdiff [100%]
+    Downloading daily-19661.cdiff [100%]
+    Downloading daily-19662.cdiff [100%]
+    Downloading daily-19663.cdiff [100%]
+    Downloading daily-19664.cdiff [100%]
+    Downloading daily-19665.cdiff [100%]
+    Downloading daily-19666.cdiff [100%]
+    Downloading daily-19667.cdiff [100%]
+    Downloading daily-19668.cdiff [100%]
+    Downloading daily-19669.cdiff [100%]
+    Downloading daily-19670.cdiff [100%]
+    Downloading daily-19671.cdiff [100%]
+    Downloading daily-19672.cdiff [100%]
+    Downloading daily-19673.cdiff [100%]
+    Downloading daily-19674.cdiff [100%]
+    Downloading daily-19675.cdiff [100%]
+    Downloading daily-19676.cdiff [100%]
+    Downloading daily-19677.cdiff [100%]
+    Downloading daily-19678.cdiff [100%]
+    Downloading daily-19679.cdiff [100%]
+    Downloading daily-19680.cdiff [100%]
+    Downloading daily-19681.cdiff [100%]
+    Downloading daily-19682.cdiff [100%]
+    Downloading daily-19683.cdiff [100%]
+    Downloading daily-19684.cdiff [100%]
+    Downloading daily-19685.cdiff [100%]
+    Downloading daily-19686.cdiff [100%]
+    Downloading daily-19687.cdiff [100%]
+    Downloading daily-19688.cdiff [100%]
+    Downloading daily-19689.cdiff [100%]
+    Downloading daily-19690.cdiff [100%]
+    Downloading daily-19691.cdiff [100%]
+    Downloading daily-19692.cdiff [100%]
+    Downloading daily-19693.cdiff [100%]
+    Downloading daily-19694.cdiff [100%]
+    Downloading daily-19695.cdiff [100%]
+    Downloading daily-19696.cdiff [100%]
+    Downloading daily-19697.cdiff [100%]
+    Downloading daily-19698.cdiff [100%]
+    Downloading daily-19699.cdiff [100%]
+    Downloading daily-19700.cdiff [100%]
+    Downloading daily-19701.cdiff [100%]
+    Downloading daily-19702.cdiff [100%]
+    Downloading daily-19703.cdiff [100%]
+    Downloading daily-19704.cdiff [100%]
+    Downloading daily-19705.cdiff [100%]
+    Downloading daily-19706.cdiff [100%]
+    Downloading daily-19707.cdiff [100%]
+    Downloading daily-19708.cdiff [100%]
+    Downloading daily-19709.cdiff [100%]
+    Downloading daily-19710.cdiff [100%]
+    Downloading daily-19711.cdiff [100%]
+    Downloading daily-19712.cdiff [100%]
+    Downloading daily-19713.cdiff [100%]
+    Downloading daily-19714.cdiff [100%]
+    Downloading daily-19715.cdiff [100%]
+    daily.cld updated (version: 19715, sigs: 1281237, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3705508 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+    404 Not Found
+       //MyAdmin/scripts/setup.php: 2 Time(s)
+       //myadmin/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin/scripts/setup.php: 2 Time(s)
+       //phpmyadmin/scripts/setup.php: 2 Time(s)
+       //pma/scripts/setup.php: 2 Time(s)
+       /admin/config.php: 4 Time(s)
+       /emem/eme/em.php: 1 Time(s)
+       /muieblackcat: 2 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       http://6.url.cn/zc/chs/img/body.png: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+ 
+   14.707K  Bytes accepted                            15,060
+   14.707K  Bytes delivered                           15,060
+ ========   ================================================
+ 
+        5   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        5   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Connections made      
+        3   Disconnections        
+        5   Removed from queue    
+        2   Delivered             
+        1   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 3 times
+       89.68.96.192 (89-68-96-192.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    clamd-0.98.5-1.el6.i686
+    clamav-0.98.5-1.el6.i686
+    clamav-db-0.98.5-1.el6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  7.6G   43G  16% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

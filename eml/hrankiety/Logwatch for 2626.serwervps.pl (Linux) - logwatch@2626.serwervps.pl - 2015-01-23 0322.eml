@@ -1,0 +1,158 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 00BF91110252B; Fri, 23 Jan 2015 03:27:48 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 5047211102530; Fri, 23 Jan 2015 03:22:50 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150123022251.5047211102530@2626.serwervps.pl>
+Date: Fri, 23 Jan 2015 03:22:45 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Jan 23 03:22:45 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jan-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Jan 22 03:48:57 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19956.cdiff [100%]
+    Downloading daily-19957.cdiff [100%]
+    Downloading daily-19958.cdiff [100%]
+    Downloading daily-19959.cdiff [100%]
+    Downloading daily-19960.cdiff [100%]
+    daily.cld updated (version: 19960, sigs: 1312420, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 245, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3736688 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /bbbb/bbb/bb.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /myadmin/scripts/setup.php: 4 Time(s)
+       /phpMyAdmin/scripts/setup.php: 4 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 4 Time(s)
+       /qcqc/qcq/qc.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /webdav/: 1 Time(s)
+       /ysys/ysy/ys.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       11   *Warning: Pre-queue content-filter connection overload 
+        1   SASL authentication failed 
+        3   Miscellaneous warnings 
+ 
+    9.569M  Bytes accepted                        10,034,250
+   11.341M  Bytes delivered                       11,891,600
+ ========   ================================================
+ 
+       17   Accepted                                  70.83%
+        7   Rejected                                  29.17%
+ --------   ------------------------------------------------
+       24   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Reject unknown user                       71.43%
+        2   Reject client host                        28.57%
+ --------   ------------------------------------------------
+        7   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       38   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       38   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       64   Connections made      
+       64   Disconnections        
+       17   Removed from queue    
+        9   Delivered             
+        7   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   Timeout (inbound)     
+        6   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 12 times
+       89.68.96.192 (89-68-96-192.dynamic.chello.pl): 10 times
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 24 Time(s)
+ 
+ **Unmatched Entries**
+ error: channel_setup_fwd_listener: cannot listen to port: 33333 : 1 time(s)
+ error: bind: Cannot assign requested address : 10 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   13G   38G  25% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,137 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 2D8AE11101AEE; Tue, 30 Sep 2014 03:29:21 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 0008811101AED
+	for <root@2626.serwervps.pl>; Tue, 30 Sep 2014 05:29:19 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id L7ImxCPBI4y1 for <root@2626.serwervps.pl>;
+	Tue, 30 Sep 2014 03:29:09 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id B292011101AEB; Tue, 30 Sep 2014 03:29:08 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140930012908.B292011101AEB@2626.serwervps.pl>
+Date: Tue, 30 Sep 2014 03:29:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Sep 30 03:29:06 2014
+        Date Range Processed: yesterday
+                              ( 2014-Sep-29 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   No ext program for   .tnef, tried: tnef
+        1   (29855-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140929013013.1F9C411101AE7@2626.serwervps.pl>, mail_id: N9OFNOGIA8Qs, Hits: 0.001, size: 2288, queued_as: 83C6D11101AE4, 3144 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (29854-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140929011527.2A4C611101AE4@2626.serwervps.pl>, mail_id: x-HIK7dNqvDU, Hits: 0, size: 5779, queued_as: B2ED611101921, 5207 ms
+        1   (29854-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN23> line 3762.
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Sep 29 03:15:27 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-19447.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-19447.cdiff from db.local.clamav.net
+    Downloading daily-19447.cdiff [100%]
+    Downloading daily-19448.cdiff [100%]
+    Downloading daily-19449.cdiff [100%]
+    Downloading daily-19450.cdiff [100%]
+    daily.cld updated (version: 19450, sigs: 1168058, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3592329 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /dsds/dsd/ds.php: 1 Time(s)
+       /etc/lib/pChart2/examples/index.php: 1 Time(s)
+       /keke/kek/ke.php: 1 Time(s)
+       /manager/html: 2 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /vtigercrm/: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   25.735K  Bytes accepted                            26,353
+   25.735K  Bytes delivered                           26,353
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.7G   44G  14% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,126 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 6A61911102D28; Sun,  7 Jun 2015 03:12:54 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id CA1A311102D29; Sun,  7 Jun 2015 03:12:48 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150607011250.CA1A311102D29@2626.serwervps.pl>
+Date: Sun,  7 Jun 2015 03:12:43 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Jun  7 03:12:42 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jun-06 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Jun  6 03:16:10 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (130.133.110.67)...
+    Downloading daily-20552.cdiff [100%]
+    daily.cld updated (version: 20552, sigs: 1413781, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 256, sigs: 45, f-level: 63, builder: dgoddard)
+    Database updated (3838051 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    141.212.122.82 -> google.com:443: 1 Time(s)
+ 
+ Requests with error response codes
+    404 Not Found
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       //recordings/README.txt: 1 Time(s)
+       //recordings/index.php: 2 Time(s)
+       /manager/html: 16 Time(s)
+       /muieblackcat: 1 Time(s)
+       /recordings/theme/global.css: 1 Time(s)
+       /recordings/theme/header.css: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 3 Time(s)
+    405 Method Not Allowed
+       google.com:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      294   *Warning: Pre-queue content-filter connection overload 
+      351   SASL authentication failed 
+ 
+   13.344K  Bytes accepted                            13,664
+   13.344K  Bytes delivered                           13,664
+ ========   ================================================
+ 
+        4   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        4   Total                                    100.00%
+ ========   ================================================
+ 
+      354   Connections made      
+      354   Disconnections        
+        4   Removed from queue    
+        2   Delivered             
+        2   Forwarded             
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   19G   32G  37% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,151 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 4B53111101847; Mon, 16 Jun 2014 03:15:22 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 2C603111017F4
+	for <root@2626.serwervps.pl>; Mon, 16 Jun 2014 05:15:22 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id bhj4C6VscESu for <root@2626.serwervps.pl>;
+	Mon, 16 Jun 2014 03:15:16 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 0BF29111017F5; Mon, 16 Jun 2014 03:15:15 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140616011516.0BF29111017F5@2626.serwervps.pl>
+Date: Mon, 16 Jun 2014 03:15:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Jun 16 03:15:09 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jun-15 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        2   *Warning              
+ 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   (00937-17) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140615013006.5769511101847@2626.serwervps.pl>, mail_id: QYvfH3DP6nk6, Hits: 0.001, size: 2288, queued_as: DB62C11101846, 3288 ms
+        1   (23834-10) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (00937-17) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN234> line 162515.
+        1   (00937-18) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140615014811.BCEF811101848@2626.serwervps.pl>, mail_id: AjHa_DvY2qKD, Hits: 0, size: 4743, queued_as: 244AF11100138, 1834 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Jun 15 03:48:12 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19097.cdiff [100%]
+    Downloading daily-19098.cdiff [100%]
+    Downloading daily-19099.cdiff [100%]
+    Downloading daily-19100.cdiff [100%]
+    daily.cld updated (version: 19100, sigs: 991496, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 241, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3415767 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    69.15.168.14
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+    404 Not Found
+       /HNAP1/: 2 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       http://www.msftncsi.com/ncsi.txt: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   22.694K  Bytes accepted                            23,239
+   22.694K  Bytes delivered                           23,239
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+        1   Deferred              
+        1   Deferrals             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.5G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

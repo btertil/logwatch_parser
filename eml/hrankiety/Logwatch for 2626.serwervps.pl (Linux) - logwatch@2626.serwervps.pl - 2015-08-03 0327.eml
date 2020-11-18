@@ -1,0 +1,100 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id DBA02111029DC; Mon,  3 Aug 2015 03:27:44 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 0973B11102E89; Mon,  3 Aug 2015 03:27:40 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150803012742.0973B11102E89@2626.serwervps.pl>
+Date: Mon,  3 Aug 2015 03:27:35 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Aug  3 03:27:34 2015
+        Date Range Processed: yesterday
+                              ( 2015-Aug-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Aug  2 03:39:36 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    WARNING: getfile: daily-20751.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-20751.cdiff from db.local.clamav.net
+    Downloading daily-20751.cdiff [100%]
+    Downloading daily-20752.cdiff [100%]
+    Downloading daily-20753.cdiff [100%]
+    Downloading daily-20754.cdiff [100%]
+    daily.cld updated (version: 20754, sigs: 1509133, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 265, sigs: 47, f-level: 63, builder: neo)
+    Database updated (3933405 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /x: 1 Time(s)
+    404 Not Found
+       /admin/config.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 4 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ SFTP subsystem requests: 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  47% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

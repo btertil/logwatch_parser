@@ -1,0 +1,319 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id BB36313D81525; Sat,  7 Dec 2013 03:40:12 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 10C0113D8151A
+	for <root@2626.serwervps.pl>; Sat,  7 Dec 2013 05:40:12 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id pgJ3ZeMckcI7 for <root@2626.serwervps.pl>;
+	Sat,  7 Dec 2013 03:40:08 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id EDC3113D81523; Sat,  7 Dec 2013 03:40:08 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131207024008.EDC3113D81523@2626.serwervps.pl>
+Date: Sat,  7 Dec 2013 03:40:06 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Dec  7 03:40:06 2013
+        Date Range Processed: yesterday
+                              ( 2013-Dec-06 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   No ext program for   .tnef, tried: tnef
+        1   (16686-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131206040625.6D26913D8150A@2626.serwervps.pl>, mail_id: de4NIfjPcSK8, Hits: 0, size: 1010, queued_as: 26A1E13D81513, 1760 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (11625-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131206023912.5CAC813D81513@2626.serwervps.pl>, mail_id: v9jjUcbP0A18, Hits: 0.01, size: 140381, queued_as: F249213D81516, 14513 ms
+        1   (11626-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131206023008.97F5413D8150A@2626.serwervps.pl>, mail_id: X2JVIm62m-fQ, Hits: 0.001, size: 2286, queued_as: DC33D13D81513, 3390 ms
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Dec  6 03:39:13 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18202.cdiff [100%]
+    Downloading daily-18203.cdiff [100%]
+    Downloading daily-18204.cdiff [100%]
+    Downloading daily-18205.cdiff [100%]
+    daily.cld updated (version: 18205, sigs: 577427, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 233, sigs: 44, f-level: 63, builder: dgoddard)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (3001696 signatures) from db.local.clamav.net (IP: 212.7.0.71)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    24.16.65.42
+    89.67.22.229
+ 
+ A total of 2 possible successful probes were detected (the following URLs
+ contain strings that match one or more of a listing of strings that
+ indicate a possible exploit):
+ 
+    /?_test1=c:\\windows\\system32\\cmd.exe&_test2=/etc/passwd&_test3=|/bin/sh&_test4=(SELECT%20*%20FROM%20nonexistent)%20--&_test5=>/no/such/file&_test6=<script>alert(1)</script>&_test7=javascript:alert(1) HTTP Response 200 
+    /ocena360?_test1=c:\\windows\\system32\\cmd.exe&_test2=/etc/passwd&_test3=|/bin/sh&_test4=(SELECT%20*%20FROM%20nonexistent)%20--&_test5=>/no/such/file&_test6=<script>alert(1)</script>&_test7=javascript:alert(1) HTTP Response 301 
+ 
+ Requests with error response codes
+    400 Bad Request
+       /ocena360/../../../../../../../../../../../../etc/passwd: 2 Time(s)
+       /ocena360/../../../../../WEB-INF/web.xml: 2 Time(s)
+       /ocena360/../../../../WEB-INF/web.xml: 2 Time(s)
+       /ocena360/../../../WEB-INF/web.xml: 2 Time(s)
+       /ocena360/../../WEB-INF/web.xml: 4 Time(s)
+       /w00tw00t.at.ISC.SANS.DFind:): 2 Time(s)
+    403 Forbidden
+       /ocena360/.htaccess.aspx-->\">'>'\"<vvv000001v524462>: 1 Time(s)
+       /ocena360/.htaccess.aspx-->\">'>'\"<vvv000017v524462>: 1 Time(s)
+    404 Not Found
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /4642601100602078983: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /cgi-bin/php/%63%67%69%6E/%70%68%70?%2D%64 ... 4+%75%74+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /dashboardlog.php: 1 Time(s)
+       /lpt9: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /nosuchpage123: 2 Time(s)
+       /ocena360/%0A%20-->\">'>'\"<vvv000005v524462>: 1 Time(s)
+       /ocena360/%0A%20-->\">'>'\"<vvv000021v524462>: 1 Time(s)
+       /ocena360/%20src%3D-->\">'>'\"<vvv000004v524462>: 1 Time(s)
+       /ocena360/%20src%3D-->\">'>'\"<vvv000020v524462>: 1 Time(s)
+       /ocena360/%20src%3Dhttp://vega.invalid/%3B?: 2 Time(s)
+       /ocena360/'%20-->\">'>'\"<vvv000007v524462>: 1 Time(s)
+       /ocena360/'%20-->\">'>'\"<vvv000015v524462>: 1 Time(s)
+       /ocena360/'%20-->\">'>'\"<vvv000023v524462>: 1 Time(s)
+       /ocena360/'%20-->\">'>'\"<vvv000031v524462>: 1 Time(s)
+       /ocena360/'%20onMouseOver%3Dvvv000012v524462: 1 Time(s)
+       /ocena360/'%20onMouseOver%3Dvvv000028v524462: 1 Time(s)
+       /ocena360/'%20style%3Dvvv000013v524462: 1 Time(s)
+       /ocena360/'%20style%3Dvvv000029v524462: 1 Time(s)
+       /ocena360/'false': 2 Time(s)
+       /ocena360/'true': 2 Time(s)
+       /ocena360/'uname': 2 Time(s)
+       /ocena360/*/%20-->\">'>'\"<vvv000006v524462>: 1 Time(s)
+       /ocena360/*/%20-->\">'>'\"<vvv000022v524462>: 1 Time(s)
+       /ocena360/-->\">'>'\"<vvv000000v524462>: 1 Time(s)
+       /ocena360/-->\">'>'\"<vvv000016v524462>: 1 Time(s)
+       /ocena360/-0000012345: 2 Time(s)
+       /ocena360/-2147483648: 2 Time(s)
+       /ocena360/-2147483649: 2 Time(s)
+       /ocena360/....//....//....//....//....//.. ... ...//etc/passwd: 4 Time(s)
+       /ocena360/....//....//WEB-INF/web.xml: 4 Time(s)
+       /ocena360/....\\\\....\\\\....\\\\....\\\\ ... \\\\etc\\passwd: 2 Time(s)
+       /ocena360/../../../../../../../../../../../../etc/passwd%00: 2 Time(s)
+       /ocena360/../WEB-INF/web.xml: 2 Time(s)
+       /ocena360/..\\..\\..\\..\\..\\..\\..\\..\\ ... ..\\etc\\passwd: 2 Time(s)
+       /ocena360/..\\..\\..\\..\\..\\..\\..\\..\\ ... .\\..\\boot.ini: 2 Time(s)
+       /ocena360/..\\..\\..\\..\\..\\..\\..\\..\\ ... windows/win.ini: 2 Time(s)
+       /ocena360/..\\..\\WEB-INF/web.xml: 2 Time(s)
+       /ocena360/..\\..\\WEB-INF\\web.xml: 2 Time(s)
+       /ocena360//......//....//WEB-INF/web.xml: 2 Time(s)
+       /ocena360//../....//....//....//....//.... ... ...//etc/passwd: 2 Time(s)
+       /ocena360//vega.invalid/%3B?: 2 Time(s)
+       /ocena360/0000012345: 2 Time(s)
+       /ocena360/0000023456: 2 Time(s)
+       /ocena360/0RPDmm9T.htm: 1 Time(s)
+       /ocena360/0Y1ISOCI.xhtml: 1 Time(s)
+       /ocena360/2147483647: 2 Time(s)
+       /ocena360/2147483648: 2 Time(s)
+       /ocena360/3035098056343467376.php: 1 Time(s)
+       /ocena360/4294967295: 2 Time(s)
+       /ocena360/4294967296: 2 Time(s)
+       /ocena360/4752847025305158301.php: 1 Time(s)
+       /ocena360/4veZzODV.php: 1 Time(s)
+       /ocena360/7908608367378693320.php: 1 Time(s)
+       /ocena360/</textarea>-->\">'>'\"<vvv000002v524462>: 1 Time(s)
+       /ocena360/</textarea>-->\">'>'\"<vvv000018v524462>: 1 Time(s)
+       /ocena360/B4y306pS.htmls: 1 Time(s)
+       /ocena360/C:/boot.ini: 2 Time(s)
+       /ocena360/C:/windows/win.ini: 2 Time(s)
+       /ocena360/C:\\boot.ini: 2 Time(s)
+       /ocena360/C:\\windows\\win.ini: 2 Time(s)
+       /ocena360/CIaBooY0.asp: 1 Time(s)
+       /ocena360/Git1aMQF.aspx: 1 Time(s)
+       /ocena360/MVxWsaFJ.cgi: 1 Time(s)
+       /ocena360/WEB-INF/web.xml: 4 Time(s)
+       /ocena360/WEB-INF\\web.xml: 2 Time(s)
+       /ocena360/ZrtZkTV0.py: 1 Time(s)
+       /ocena360/\"%20-->\">'>'\"<vvv000014v524462>: 1 Time(s)
+       /ocena360/\"%20-->\">'>'\"<vvv000030v524462>: 1 Time(s)
+       /ocena360/\"%20onMouseOver%3Dvvv000010v524462: 1 Time(s)
+       /ocena360/\"%20onMouseOver%3Dvvv000026v524462: 1 Time(s)
+       /ocena360/\"%20src%3D-->\">'>'\"<vvv000003v524462>: 1 Time(s)
+       /ocena360/\"%20src%3D-->\">'>'\"<vvv000019v524462>: 1 Time(s)
+       /ocena360/\"%20src%3Dhttp://vega.invalid/%3B?: 2 Time(s)
+       /ocena360/\"%20style%3Dvvv000011v524462: 1 Time(s)
+       /ocena360/\"%20style%3Dvvv000027v524462: 1 Time(s)
+       /ocena360/\"`false`\": 2 Time(s)
+       /ocena360/\"`true`\": 2 Time(s)
+       /ocena360/\"`uname`\": 2 Time(s)
+       /ocena360/\\....\\\\....\\\\....\\\\....\\ ... \\\\etc\\passwd: 2 Time(s)
+       /ocena360/\\..\\..\\..\\..\\..\\..\\..\\.. ... ..\\etc\\passwd: 2 Time(s)
+       /ocena360/\\..\\..\\..\\..\\..\\WEB-INF\\web.xml: 2 Time(s)
+       /ocena360/\\..\\..\\..\\..\\WEB-INF\\web.xml: 2 Time(s)
+       /ocena360/\\..\\..\\..\\WEB-INF\\web.xml: 2 Time(s)
+       /ocena360/\\..\\..\\WEB-INF\\web.xml: 2 Time(s)
+       /ocena360/\\..\\WEB-INF\\web.xml: 2 Time(s)
+       /ocena360/\\WEB-INF\\web.xml: 2 Time(s)
+       /ocena360/\\\\..\\....\\\\....\\\\....\\\\ ... \\\\etc\\passwd: 2 Time(s)
+       /ocena360/`false`: 2 Time(s)
+       /ocena360/`true`: 2 Time(s)
+       /ocena360/`uname`: 2 Time(s)
+       /ocena360/bogus%0AVega-Inject:bogus: 2 Time(s)
+       /ocena360/bogus%0DVega-Inject:bogus: 2 Time(s)
+       /ocena360/crossdomain.xml: 2 Time(s)
+       /ocena360/delta50.jpg/: 4 Time(s)
+       /ocena360/delta50.jpg/abc123/: 1 Time(s)
+       /ocena360/ekran2s: 1 Time(s)
+       /ocena360/etc/passwd: 2 Time(s)
+       /ocena360/etc/passwd%00: 2 Time(s)
+       /ocena360/extZ3sjl.pl: 1 Time(s)
+       /ocena360/fSw1ncJ2.rb: 1 Time(s)
+       /ocena360/file:..\\..\\..\\..\\..\\..\\..\ ... ..\\etc\\passwd: 2 Time(s)
+       /ocena360/file:/C:/boot.ini: 2 Time(s)
+       /ocena360/file:/C:/windows/win.ini: 4 Time(s)
+       /ocena360/file:/C:\\boot.ini: 2 Time(s)
+       /ocena360/file:/boot.ini: 2 Time(s)
+       /ocena360/file:/etc/passwd: 2 Time(s)
+       /ocena360/file:/etc/passwd%00: 2 Time(s)
+       /ocena360/file:\\..\\..\\..\\..\\..\\..\\. ... ..\\etc\\passwd: 2 Time(s)
+       /ocena360/http://vega.invalid/%3B?: 2 Time(s)
+       /ocena360/javascript:vvv000008v524462: 1 Time(s)
+       /ocena360/javascript:vvv000024v524462: 1 Time(s)
+       /ocena360/lpt9: 1 Time(s)
+       /ocena360/nosuchpage123: 2 Time(s)
+       /ocena360/qjqkO7yO.jsp: 1 Time(s)
+       /ocena360/style.css/: 4 Time(s)
+       /ocena360/style.css/abc123/: 1 Time(s)
+       /ocena360/vbscript:vvv000009v524462: 1 Time(s)
+       /ocena360/vbscript:vvv000025v524462: 1 Time(s)
+       /ocena360/vega%25dn%25dn%25dn%25dn%25dn%25dn%25dn%25dn: 2 Time(s)
+       /ocena360/vega%25nd%25nd%25nd%25nd%25nd%25nd%25nd%25nd: 2 Time(s)
+       /ocena360/vega://invalid/%3B?: 2 Time(s)
+       /ocena360/vega>'>\"></vega><vega>: 2 Time(s)
+       /ocena360/vega>'>\"><vega></vega>: 2 Time(s)
+       /ocena360/wY7do9u3.gif: 1 Time(s)
+       /ocena360/yreEehc3.do: 1 Time(s)
+       /ocena360/~nosuchpage123: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /rUjXBd64/: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /webdav/: 1 Time(s)
+       /~nosuchpage123: 1 Time(s)
+       http://images4.byinter.net/zoom1x334.gif: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+       /PUT-putfile: 1 Time(s)
+       /ocena360: 2 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       btertil (89-67-22-229.dynamic.chello.pl): 1 Time(s)
+       btertil (backup): 1 Time(s)
+ 
+ su:
+    Sessions Opened:
+       btertil -> root: 5 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+  424.070K  Bytes accepted                           434,248
+  424.070K  Bytes delivered                          434,248
+ ========   ================================================
+ 
+        9   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        9   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Connections made      
+        4   Disconnections        
+        9   Removed from queue    
+        3   Delivered             
+        3   Sent via SMTP         
+        3   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Failed logins from:
+    89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+    91.231.140.105 (backup): 1 time
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 13 times
+       91.231.140.105 (backup): 3 times
+       188.116.4.178 (2626.serwervps.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 6 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.2G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

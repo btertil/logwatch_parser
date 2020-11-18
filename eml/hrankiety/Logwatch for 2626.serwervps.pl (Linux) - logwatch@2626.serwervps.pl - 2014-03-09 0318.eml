@@ -1,0 +1,138 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id A083B13D82278; Sun,  9 Mar 2014 03:18:24 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 656B313D8226F
+	for <root@2626.serwervps.pl>; Sun,  9 Mar 2014 05:18:24 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id pGZKzaHzHDDT for <root@2626.serwervps.pl>;
+	Sun,  9 Mar 2014 03:18:16 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id F128F13D82277; Sun,  9 Mar 2014 03:18:15 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140309021815.F128F13D82277@2626.serwervps.pl>
+Date: Sun,  9 Mar 2014 03:18:12 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Mar  9 03:18:12 2014
+        Date Range Processed: yesterday
+                              ( 2014-Mar-08 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (01293-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140308023524.1C76E13D82277@2626.serwervps.pl>, mail_id: D5KJ5TKxvxf3, Hits: -0.001, size: 4221, queued_as: 2A7BE13D8226F, 7068 ms
+        1   (01292-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140308023010.9260213D8226F@2626.serwervps.pl>, mail_id: TC66iwTtgeaG, Hits: 0, size: 2286, queued_as: D847813D82277, 11058 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sat Mar  8 03:35:24 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18541.cdiff [100%]
+    Downloading daily-18542.cdiff [100%]
+    Downloading daily-18543.cdiff [100%]
+    Downloading daily-18544.cdiff [100%]
+    Downloading daily-18545.cdiff [100%]
+    Downloading daily-18546.cdiff [100%]
+    Downloading daily-18547.cdiff [100%]
+    daily.cld updated (version: 18547, sigs: 807260, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3231528 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    97.77.43.166
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       http://www.daydaydata.com/proxy.txt: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   21.153K  Bytes accepted                            21,661
+   21.153K  Bytes delivered                           21,661
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.4G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

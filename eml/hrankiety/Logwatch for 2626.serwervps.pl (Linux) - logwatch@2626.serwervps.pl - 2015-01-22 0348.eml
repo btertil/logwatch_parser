@@ -1,0 +1,216 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 8872711102517; Thu, 22 Jan 2015 03:48:55 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 41F7911102519; Thu, 22 Jan 2015 03:48:55 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150122024855.41F7911102519@2626.serwervps.pl>
+Date: Thu, 22 Jan 2015 03:48:48 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Jan 22 03:48:47 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jan-21 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        1   *Warning              
+ 
+ 
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed Jan 21 03:11:34 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19952.cdiff [100%]
+    Downloading daily-19953.cdiff [100%]
+    Downloading daily-19954.cdiff [100%]
+    Downloading daily-19955.cdiff [100%]
+    daily.cld updated (version: 19955, sigs: 1312178, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 245, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3736446 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 76% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 46% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       //Net_work.xml: 1 Time(s)
+       /tmUnblock.cgi: 2 Time(s)
+    404 Not Found
+       //%63%67%69%2D%62%69%6E/%70%68%70?%2D%64+% ... 70%75%74+%2D%6E: 1 Time(s)
+       /admin: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       12   *Warning: Pre-queue content-filter connection overload 
+       14   SASL authentication failed 
+        3   Miscellaneous warnings 
+ 
+  122.689K  Bytes accepted                           125,634
+  122.689K  Bytes delivered                          125,634
+ ========   ================================================
+ 
+       11   Accepted                                  68.75%
+        5   Rejected                                  31.25%
+ --------   ------------------------------------------------
+       16   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Reject unknown user                      100.00%
+ --------   ------------------------------------------------
+        5   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       84   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       84   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      112   Connections made      
+      112   Disconnections        
+       11   Removed from queue    
+        7   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   SMTP commands dialog error 
+        2   SASL authenticated messages 
+ 
+        1   Postfix start         
+        1   Postfix stop          
+        1   Postfix waiting to terminate 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Jan 21 03:28:02 2626 postfix/postfix-script[887]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Jan 21 03:28:02 2626 postfix/postfix-script[885]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Jan 21 03:28:02 2626 postfix/postfix-script[883]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> reboot  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       89.68.96.192 (89-68-96-192.dynamic.chello.pl): 5 times
+       185.17.41.230 (backup): 4 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 5 Time(s)
+ 
+ **Unmatched Entries**
+ error: bind: Cannot assign requested address : 2 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    openssl-1.0.1e-30.el6_6.5.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   13G   38G  25% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

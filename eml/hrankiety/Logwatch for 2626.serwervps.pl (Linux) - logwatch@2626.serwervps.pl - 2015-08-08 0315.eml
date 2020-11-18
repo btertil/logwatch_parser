@@ -1,0 +1,285 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id E123A111000EF; Sat,  8 Aug 2015 03:15:22 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 96A6B11103131; Sat,  8 Aug 2015 03:15:22 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150808011522.96A6B11103131@2626.serwervps.pl>
+Date: Sat,  8 Aug 2015 03:15:20 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Aug  8 03:15:20 2015
+        Date Range Processed: yesterday
+                              ( 2015-Aug-07 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Aug  7 03:16:31 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    WARNING: getfile: daily-20768.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-20768.cdiff from db.local.clamav.net
+    Downloading daily-20768.cdiff [100%]
+    Downloading daily-20769.cdiff [100%]
+    daily.cld updated (version: 20769, sigs: 1511910, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 266, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (3936182 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /./scripts/setup.php: 1 Time(s)
+       /CFIDE/administrator/: 1 Time(s)
+       /My-php/scripts/setup.php: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /Myphp/scripts/setup.php: 1 Time(s)
+       /_admin/scripts/setup.php: 1 Time(s)
+       /_db/scripts/setup.php: 1 Time(s)
+       /_dbadmin/scripts/setup.php: 1 Time(s)
+       /_myadmin/scripts/setup.php: 1 Time(s)
+       /_myphp/scripts/setup.php: 1 Time(s)
+       /_php/scripts/setup.php: 1 Time(s)
+       /_phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /_phpadmin/scripts/setup.php: 1 Time(s)
+       /_phpmyadmin/scripts/setup.php: 1 Time(s)
+       /_pma/scripts/setup.php: 1 Time(s)
+       /_sql/scripts/setup.php: 1 Time(s)
+       /admin/my/scripts/setup.php: 1 Time(s)
+       /admm/scripts/setup.php: 1 Time(s)
+       /admn/scripts/setup.php: 1 Time(s)
+       /databaseadmin/scripts/setup.php: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /my-php/scripts/setup.php: 1 Time(s)
+       /myAdmin/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mydb/scripts/setup.php: 1 Time(s)
+       /myphp/scripts/setup.php: 1 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /mysql2/scripts/setup.php: 1 Time(s)
+       /mysql_administrator/scripts/setup.php: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /php1/scripts/setup.php: 1 Time(s)
+       /php2/scripts/setup.php: 1 Time(s)
+       /phpMyA/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpadmin/scripts/setup.php: 1 Time(s)
+       /phpas/scripts/setup.php: 1 Time(s)
+       /phpmya/scripts/setup.php: 1 Time(s)
+       /phpmyadm/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin1/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /pma_mydb/scripts/setup.php: 1 Time(s)
+       /pmabd/scripts/setup.php: 1 Time(s)
+       /rom-0: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /sql/scripts/setup.php: 1 Time(s)
+       /sqladm.old/scripts/setup.php: 1 Time(s)
+       /sqladm/scripts/setup.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /webmail2/scripts/setup.php: 1 Time(s)
+       http://testp2.czar.bielawa.pl/testproxy.php: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    useradd: failed adding user 'tcpdump', data deleted: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 2 Time(s)
+ 
+ SSHD Started: 4 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    2:vim-filesystem-7.4.629-5.el6.i686
+ 
+ Packages Updated:
+    httpd-2.2.15-45.el6.centos.i686
+    2:vim-enhanced-7.4.629-5.el6.i686
+    libss-1.41.12-22.el6.i686
+    libuser-0.56.13-8.el6_7.i686
+    glibc-headers-2.12-1.166.el6_7.1.i686
+    1:mod_ssl-2.2.15-45.el6.centos.i686
+    perl-ExtUtils-MakeMaker-6.55-141.el6.i686
+    perl-IO-Compress-Base-2.021-141.el6.i686
+    screen-4.0.3-18.el6.i686
+    policycoreutils-2.0.83-24.el6.i686
+    ncurses-base-5.7-4.20090207.el6.i686
+    elfutils-libelf-0.161-3.el6.i686
+    12:dhclient-4.1.1-49.P1.el6.centos.i686
+    cpp-4.4.7-16.el6.i686
+    hwdata-0.233-14.1.el6.noarch
+    12:dhcp-common-4.1.1-49.P1.el6.centos.i686
+    libcom_err-1.41.12-22.el6.i686
+    sudo-1.8.6p3-19.el6.i686
+    libsemanage-2.0.43-5.1.el6.i686
+    4:perl-Time-HiRes-1.9721-141.el6.i686
+    4:perl-libs-5.10.1-141.el6.i686
+    lsof-4.82-5.el6.i686
+    authconfig-6.1.12-23.el6.i686
+    glibc-devel-2.12-1.166.el6_7.1.i686
+    ncurses-5.7-4.20090207.el6.i686
+    elfutils-libs-0.161-3.el6.i686
+    samba-winbind-3.6.23-20.el6.i686
+    3:perl-version-0.77-141.el6.i686
+    rpm-python-4.8.0-47.el6.i686
+    e2fsprogs-1.41.12-22.el6.i686
+    2:tar-1.23-13.el6.i686
+    centos-release-6-7.el6.centos.12.3.i686
+    1:net-snmp-utils-5.5-54.el6.i686
+    1:perl-Compress-Raw-Zlib-2.021-141.el6.i686
+    gdbm-devel-1.8.0-38.el6.i686
+    2:vim-common-7.4.629-5.el6.i686
+    32:bind-libs-9.8.2-0.37.rc1.el6_7.2.i686
+    rpm-libs-4.8.0-47.el6.i686
+    initscripts-9.03.49-1.el6.centos.i686
+    1:net-snmp-5.5-54.el6.i686
+    ipset-6.11-4.el6.i686
+    sysvinit-tools-2.87-6.dsf.el6.i686
+    openldap-2.4.40-5.el6.i686
+    openssh-5.3p1-111.el6.i686
+    libX11-common-1.6.0-6.el6.noarch
+    mlocate-0.22.2-6.el6.i686
+    samba-winbind-clients-3.6.23-20.el6.i686
+    1:cups-libs-1.4.2-72.el6.i686
+    1:perl-Package-Constants-0.02-141.el6.i686
+    glibc-2.12-1.166.el6_7.1.i686
+    libgomp-4.4.7-16.el6.i686
+    1:perl-Pod-Escapes-1.04-141.el6.i686
+    4:perl-devel-5.10.1-141.el6.i686
+    openssl-1.0.1e-42.el6.i686
+    pcre-7.8-7.el6.i686
+    e2fsprogs-libs-1.41.12-22.el6.i686
+    14:tcpdump-4.0.0-5.20090921gitdf3cb4.2.el6.i686
+    kernel-headers-2.6.32-573.1.1.el6.i686
+    procps-3.2.8-33.el6.i686
+    1:perl-Module-Pluggable-3.90-141.el6.i686
+    1:perl-IO-Zlib-1.09-141.el6.i686
+    libxml2-2.7.6-20.el6.i686
+    libgcc-4.4.7-16.el6.i686
+    grep-2.20-3.el6.i686
+    binutils-2.20.51.0.2-5.43.el6.i686
+    gcc-4.4.7-16.el6.i686
+    4:perl-5.10.1-141.el6.i686
+    libstdc++-4.4.7-16.el6.i686
+    nscd-2.12-1.166.el6_7.1.i686
+    1:perl-Pod-Simple-3.13-141.el6.i686
+    gnutls-2.8.5-18.el6.i686
+    logrotate-3.7.8-23.el6.i686
+    1:perl-Digest-SHA-5.47-141.el6.i686
+    openssh-clients-5.3p1-111.el6.i686
+    openssh-server-5.3p1-111.el6.i686
+    cronie-anacron-1.4.4-15.el6.i686
+    perl-Archive-Tar-1.58-141.el6.i686
+    curl-7.19.7-46.el6.i686
+    perl-Compress-Zlib-2.021-141.el6.i686
+    udev-147-2.63.el6.i686
+    iptables-1.4.7-16.el6.i686
+    samba-client-3.6.23-20.el6.i686
+    elfutils-0.161-3.el6.i686
+    chkconfig-1.3.49.3-5.el6.i686
+    python-libs-2.6.6-64.el6.i686
+    httpd-tools-2.2.15-45.el6.centos.i686
+    module-init-tools-3.9-25.el6.i686
+    cronie-1.4.4-15.el6.i686
+    14:libpcap-1.4.0-4.20130826git2dbcaa1.el6.i686
+    1:quota-3.17-23.el6.i686
+    bash-4.1.2-33.el6.i686
+    iputils-20071127-20.el6.i686
+    iproute-2.6.32-45.el6.i686
+    krb5-libs-1.10.3-42.el6.i686
+    ntsysv-1.3.49.3-5.el6.i686
+    libxcb-1.9.1-3.el6.i686
+    1:net-snmp-libs-5.5-54.el6.i686
+    ncurses-libs-5.7-4.20090207.el6.i686
+    gdbm-1.8.0-38.el6.i686
+    32:bind-9.8.2-0.37.rc1.el6_7.2.i686
+    python-2.6.6-64.el6.i686
+    samba-common-3.6.23-20.el6.i686
+    perl-Test-Harness-3.17-141.el6.i686
+    glibc-common-2.12-1.166.el6_7.1.i686
+    pinentry-0.7.6-8.el6.i686
+    2:ethtool-3.5-6.el6.i686
+    yum-3.2.29-69.el6.centos.noarch
+    2:vim-minimal-7.4.629-5.el6.i686
+    libX11-1.6.0-6.el6.i686
+    libcurl-7.19.7-46.el6.i686
+    1:perl-ExtUtils-ParseXS-2.2003.0-141.el6.i686
+    rpm-4.8.0-47.el6.i686
+    time-1.7-38.el6.i686
+    samba-3.6.23-20.el6.i686
+    perl-IO-Compress-Zlib-2.021-141.el6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  47% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,148 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 4463D1110186C; Tue,  1 Jul 2014 03:34:12 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 2B1391110186B
+	for <root@2626.serwervps.pl>; Tue,  1 Jul 2014 05:34:12 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id W4d-dpvIYFXr for <root@2626.serwervps.pl>;
+	Tue,  1 Jul 2014 03:34:09 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 2117D1110186C; Tue,  1 Jul 2014 03:34:09 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140701013409.2117D1110186C@2626.serwervps.pl>
+Date: Tue,  1 Jul 2014 03:34:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Jul  1 03:34:06 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jun-30 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        2   *Warning              
+ 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   (25938-01) Passed CLEAN {RelayedInternal}, LOCAL [83.220.96.49]:41881 [83.220.96.49] <Bartosz.Tertil@t-mobile.pl> -> <btertil@hrankiety.pl>, Queue-ID: 1EB9C11101867, Message-ID: <3885C4A101C04644B7D59E882DDF05214A433F03@ex22.resources.local>, mail_id: HKmvVjVwUxUH, Hits: -0.24, size: 104912, queued_as: D14DB11101869, 4523 ms
+        1   (25937-01) Passed CLEAN {RelayedInternal}, LOCAL [83.220.101.12]:21839 [83.220.101.12] <Bartosz.Tertil@t-mobile.pl> -> <btertil@hrankiety.pl>, Queue-ID: CF2FA11101869, Message-ID: <3885C4A101C04644B7D59E882DDF05214A433F17@ex22.resources.local>, mail_id: 2pb7kAfDN_zV, Hits: -0.23, size: 2823378, queued_as: 067BA1110186A, 9221 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (17560-03) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140630015009.53E0111101867@2626.serwervps.pl>, mail_id: HA-M9Pk-qK4A, Hits: 0, size: 4152, queued_as: A68E81110181B, 3686 ms
+        1   (17560-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140630013006.BF8CA1110181B@2626.serwervps.pl>, mail_id: CNC5ozRzYR5e, Hits: 0.001, size: 2288, queued_as: 4E72D1110181A, 4097 ms
+        1   (17559-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   No ext program for   .tnef, tried: tnef
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+        1   (17560-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Jun 30 03:50:09 2014
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.3 Recommended version: 0.98.4
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19140.cdiff [100%]
+    Downloading daily-19141.cdiff [100%]
+    daily.cld updated (version: 19141, sigs: 1072139, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3496410 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+    404 Not Found
+       //cgi-bin/php: 1 Time(s)
+       //cgi-bin/php-cgi: 1 Time(s)
+       //cgi-bin/php.cgi: 1 Time(s)
+       //cgi-bin/php4: 1 Time(s)
+       //cgi-bin/php5: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       15   *Warning: Pre-queue content-filter connection overload 
+      333   SASL authentication failed 
+ 
+    5.607M  Bytes accepted                         5,879,038
+    5.607M  Bytes delivered                        5,879,038
+ ========   ================================================
+ 
+       10   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+       10   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+       10   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      165   Connections made      
+      165   Disconnections        
+       10   Removed from queue    
+        4   Delivered             
+        4   Sent via SMTP         
+        2   Forwarded             
+        1   Deferred              
+        1   Deferrals             
+ 
+       55   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.6G   26G  16% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

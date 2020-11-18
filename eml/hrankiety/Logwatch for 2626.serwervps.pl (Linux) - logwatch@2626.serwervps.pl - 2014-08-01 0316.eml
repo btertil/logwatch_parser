@@ -1,0 +1,220 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 2393A111018AA; Fri,  1 Aug 2014 03:16:11 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id F08751110173F
+	for <root@2626.serwervps.pl>; Fri,  1 Aug 2014 05:16:10 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id aErdJ9vKKBtK for <root@2626.serwervps.pl>;
+	Fri,  1 Aug 2014 03:16:08 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 2879F111018AA; Fri,  1 Aug 2014 03:16:08 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140801011608.2879F111018AA@2626.serwervps.pl>
+Date: Fri,  1 Aug 2014 03:16:06 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Aug  1 03:16:06 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jul-31 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (31763-05) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <root@2626.serwervps.pl> -> <agnieszkaibartek@gmail.com>, Message-ID: <20140731210656.48CCA1110189E@2626.serwervps.pl>, mail_id: lSDyapw-HHvP, Hits: 0, size: 1973, queued_as: 563F01110189D, dkim_new=dkim:hrankiety.pl, 1036 ms
+        1   (31764-06) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <root@2626.serwervps.pl> -> <bondiev@gmail.com>, Message-ID: <20140731210656.4D9501110189C@2626.serwervps.pl>, mail_id: o3Sb1PlUnZqK, Hits: 0, size: 1944, queued_as: 5BE641110189E, dkim_new=dkim:hrankiety.pl, 1048 ms
+        1   (31763-03) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <btertil@2626.serwervps.pl> -> <bondiev@gmail.com>, Message-ID: <20140731193552.ADF821110189C@2626.serwervps.pl>, mail_id: XheehNuQfB4e, Hits: 0, size: 1904, queued_as: EB99A1110189F, dkim_new=dkim:hrankiety.pl, 3236 ms
+        1   (31763-03) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (31763-06) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <agnieszkaibartek@gmail.com>, Message-ID: <20140731211354.D0D7B1110189D@2626.serwervps.pl>, mail_id: xkPNzB5pZMvL, Hits: 0, size: 1977, queued_as: 133F01110189E, dkim_new=dkim:hrankiety.pl, 1232 ms
+        1   (31764-05) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <btertil@2626.serwervps.pl> -> <bondiev@gmail.com>, Message-ID: <20140731194557.890F41110189D@2626.serwervps.pl>, mail_id: VPpiim4-J15j, Hits: -0.001, size: 418, queued_as: EBB0D1110189C, dkim_new=dkim:hrankiety.pl, 384 ms
+        1   (31763-04) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <btertil@2626.serwervps.pl> -> <bondiev@gmail.com>, Message-ID: <20140731194333.4C20E1110189C@2626.serwervps.pl>, mail_id: 53zatBHxachI, Hits: 0, size: 1820, queued_as: 5B1B21110189D, dkim_new=dkim:hrankiety.pl, 2058 ms
+        1   (31763-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (31763-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140731013006.7599311101898@2626.serwervps.pl>, mail_id: xGPvU62yq4kb, Hits: 0.001, size: 2288, queued_as: DCCBC11101897, 1417 ms
+        1   (31764-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (31764-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140731012909.EE20D11101897@2626.serwervps.pl>, mail_id: GwA0RdSWNkww, Hits: 0, size: 4705, queued_as: F006311101895, 3689 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (31764-04) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <btertil@2626.serwervps.pl> -> <agnieszkaibartek@gmail.com>, Message-ID: <20140731194333.3DDDE1110189E@2626.serwervps.pl>, mail_id: 9Ag5l_iMAXje, Hits: 0, size: 1849, queued_as: 8A9801110189D, dkim_new=dkim:hrankiety.pl, 1257 ms
+        1   (31764-07) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <support@2626.serwervps.pl> -> <bondiev@gmail.com>, Message-ID: <20140731211354.D70C91110189C@2626.serwervps.pl>, mail_id: sXiu5w12EABX, Hits: 0, size: 1948, queued_as: 1D3371110189F, dkim_new=dkim:hrankiety.pl, 1226 ms
+        1   (31764-03) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (31764-03) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <btertil@2626.serwervps.pl> -> <agnieszkaibartek@gmail.com>, Message-ID: <20140731193552.91E781110189E@2626.serwervps.pl>, mail_id: DZD_IGzu0buT, Hits: 0, size: 1933, queued_as: E39F51110189D, dkim_new=dkim:hrankiety.pl, 3239 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Thu Jul 31 03:29:10 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (62.245.181.53)...
+    Downloading daily-19243.cdiff [100%]
+    Downloading daily-19244.cdiff [100%]
+    Downloading daily-19245.cdiff [100%]
+    Downloading daily-19246.cdiff [100%]
+    Downloading daily-19247.cdiff [100%]
+    Downloading daily-19248.cdiff [100%]
+    daily.cld updated (version: 19248, sigs: 1086816, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3511087 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 77% if used.)
+ INFO (RANDOM_DELAY will be scaled with factor 75% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /CFIDE/administrator/enter.cfm: 1 Time(s)
+       /manager/html: 1 Time(s)
+       http://www.k2proxy.com//hello.html: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Authentication Failures:
+       btertil(500) -> root: 1 Time(s)
+    Sessions Opened:
+       btertil -> root: 6 Time(s)
+       btertil -> support: 3 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+ 
+   61.679K  Bytes accepted                            63,159
+   61.679K  Bytes delivered                           63,159
+ ========   ================================================
+ 
+       24   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       24   Total                                    100.00%
+ ========   ================================================
+ 
+       13   Connections made      
+       13   Disconnections        
+       24   Removed from queue    
+        2   Delivered             
+       20   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   Postfix start         
+        1   Postfix stop          
+        1   Postfix waiting to terminate 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Jul 31 23:57:05 2626 postfix/postfix-script[824]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Jul 31 23:57:05 2626 postfix/postfix-script[822]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Jul 31 23:57:05 2626 postfix/postfix-script[826]: warning: /var/spool/postfix/etc/services and /etc/services differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> reboot  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 28 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.7G   26G  16% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

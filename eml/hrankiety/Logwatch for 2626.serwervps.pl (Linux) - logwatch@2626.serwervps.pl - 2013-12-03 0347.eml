@@ -1,0 +1,303 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 549DB13D810FE; Tue,  3 Dec 2013 03:47:12 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 45A1913D810FD
+	for <root@2626.serwervps.pl>; Tue,  3 Dec 2013 05:47:12 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id G4dhYrRhh6rV for <root@2626.serwervps.pl>;
+	Tue,  3 Dec 2013 03:47:10 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id AFE6413D810FE; Tue,  3 Dec 2013 03:47:10 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131203024710.AFE6413D810FE@2626.serwervps.pl>
+Date: Tue,  3 Dec 2013 03:47:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Dec  3 03:47:07 2013
+        Date Range Processed: yesterday
+                              ( 2013-Dec-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        2   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        2   No ext program for   .tnef, tried: tnef
+        2   No decoder for       .doc 
+        2   No ext program for   .rar, tried: unrar, rar
+        2   No ext program for   .doc, tried: ripole
+        1   (02805-01) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:59215 [127.0.0.1] <support@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <e3b3a70f448894b3a3c406d0c75f902c@hrankiety.pl>, mail_id: EMviThC6iN6D, Hits: -10, size: 547, queued_as: C947F13D80EBC, dkim_new=dkim:hrankiety.pl, 1907 ms
+        1   (02805-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131202023006.0630A13D80F56@2626.serwervps.pl>, mail_id: k4ShmNZZpGSp, Hits: 0.001, size: 2286, queued_as: 1799213D80F4C, 3001 ms
+        1   (02804-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131202022412.301A113D80EBC@2626.serwervps.pl>, mail_id: CI2qnfjvl3-a, Hits: 0, size: 9652, queued_as: 6A1F613D80F31, 3016 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Dec  2 03:24:12 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18183.cdiff [100%]
+    Downloading daily-18184.cdiff [100%]
+    Downloading daily-18185.cdiff [100%]
+    Downloading daily-18186.cdiff [100%]
+    daily.cld updated (version: 18186, sigs: 545637, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 233, sigs: 44, f-level: 63, builder: dgoddard)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (2969906 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 46% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    66.137.224.151
+    69.170.146.67
+    82.119.108.22
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 3 Time(s)
+       /MyAdmin/scripts/setup.php: 2 Time(s)
+       /_phpmyadmin/scripts/setup.php: 2 Time(s)
+       /admin/phpmyadmin/scripts/setup.php: 2 Time(s)
+       /admin/pma/scripts/setup.php: 2 Time(s)
+       /admin/scripts/setup.php: 2 Time(s)
+       /administrator/components/com_joommyadmin/ ... ripts/setup.php: 2 Time(s)
+       /apache-default/phpmyadmin/scripts/setup.php: 2 Time(s)
+       /apple-touch-icon-114x114-precomposed.png: 1 Time(s)
+       /apple-touch-icon-114x114.png: 1 Time(s)
+       /apple-touch-icon-precomposed.png: 1 Time(s)
+       /apple-touch-icon.png: 1 Time(s)
+       /blog/phpmyadmin/scripts/setup.php: 2 Time(s)
+       /cpanelphpmyadmin/scripts/setup.php: 2 Time(s)
+       /cpphpmyadmin/scripts/setup.php: 2 Time(s)
+       /db/scripts/setup.php: 2 Time(s)
+       /dbadmin/scripts/setup.php: 2 Time(s)
+       /forum/phpmyadmin/scripts/setup.php: 2 Time(s)
+       /myadmin/scripts/setup.php: 4 Time(s)
+       /mysql/scripts/setup.php: 2 Time(s)
+       /mysqladmin/scripts/setup.php: 2 Time(s)
+       /php-my-admin/scripts/setup.php: 2 Time(s)
+       /php/phpmyadmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.10.0.0/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.10.0.1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.10.0.2/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.10.0/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.10.1.0/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.10.2.0/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.11.0.0/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.11.1-all-languages/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.11.1.0/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.11.1.1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.11.1.2/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.1-pl2/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.1-pl3/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl3/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl4/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.4-rc1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.5/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.6/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.9/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.0-beta1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.0-pl1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.0-pl2/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.0-rc1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.5/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.6/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.7/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.2.3/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.2/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.3/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.4/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.5/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.6/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.7/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.8/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.9/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.9.0-rc1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.9.0.1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.9.0.2/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.9.0/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.9.1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2.9.2/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-2/scripts/setup.php: 4 Time(s)
+       /phpMyAdmin-3.0.0-rc1-english/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.0.0.0-all-languages/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.0.1.0-english/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.0.1.0/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.0.1.1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.1.0.0-english/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.1.0.0/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.1.1.0-all-languages/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.1.2.0-all-languages/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.1.2.0-english/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.1.2.0/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin-3.4.3.1/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin2/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin3/scripts/setup.php: 2 Time(s)
+       /phpadmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin/scripts/setup.php: 4 Time(s)
+       /pma/scripts/setup.php: 4 Time(s)
+       /scripts/setup.php: 2 Time(s)
+       /typo3/phpmyadmin/scripts/setup.php: 2 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 2 Time(s)
+       /web/phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /web/scripts/setup.php: 2 Time(s)
+       /websql/scripts/setup.php: 2 Time(s)
+       /xampp/phpmyadmin/scripts/setup.php: 2 Time(s)
+    501 Not Implemented
+       null: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       btertil (89-67-22-229.dynamic.chello.pl): 1 Time(s)
+ 
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+ 
+   39.048K  Bytes accepted                            39,985
+   39.048K  Bytes delivered                           39,985
+ ========   ================================================
+ 
+        8   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        8   Total                                    100.00%
+ ========   ================================================
+ 
+        6   Connections made      
+        6   Disconnections        
+        8   Removed from queue    
+        2   Delivered             
+        4   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   SASL authenticated messages 
+ 
+        1   Postfix start         
+        1   Postfix stop          
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Dec  2 22:17:40 2626 postfix/postfix-script[805]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Dec  2 22:17:40 2626 postfix/postfix-script[807]: warning: /var/spool/postfix/etc/services and /etc/services differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> reboot  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Failed logins from:
+    89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 20 times
+       91.231.140.105 (mailing.idhosting.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ SFTP subsystem requests: 2 Time(s)
+ 
+ **Unmatched Entries**
+ reverse mapping checking getaddrinfo for mailing.idhosting.pl [91.231.140.105] failed - POSSIBLE BREAK-IN ATTEMPT! : 1 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.0G   29G   7% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

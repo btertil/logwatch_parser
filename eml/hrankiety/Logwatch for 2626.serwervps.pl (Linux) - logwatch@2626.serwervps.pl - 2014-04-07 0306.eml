@@ -1,0 +1,228 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id B8F1B1110156B; Mon,  7 Apr 2014 03:06:14 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 927FF11101581
+	for <root@2626.serwervps.pl>; Mon,  7 Apr 2014 05:06:14 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id Is-4xVKZ6TLr for <root@2626.serwervps.pl>;
+	Mon,  7 Apr 2014 03:06:08 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 307B71110156B; Mon,  7 Apr 2014 03:06:08 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140407010608.307B71110156B@2626.serwervps.pl>
+Date: Mon,  7 Apr 2014 03:06:06 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Apr  7 03:06:06 2014
+        Date Range Processed: yesterday
+                              ( 2014-Apr-06 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (12678-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (12678-03) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140406015005.F05EA1110157D@2626.serwervps.pl>, mail_id: rb9Ciw1hA3Wz, Hits: -0.001, size: 4766, queued_as: 02E6611101576, 5014 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (12677-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140406013007.ACEA311101576@2626.serwervps.pl>, mail_id: rxDzs91Lpqj8, Hits: 0, size: 2288, queued_as: 20E7811101572, 7369 ms
+        1   (12677-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   No ext program for   .tnef, tried: tnef
+        1   (18110-01) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.171]:62519 [89.67.22.229] <bondiev@gmail.com> -> <support@hrankiety.pl>, Message-ID: <53419C0B.6040308@gmail.com>, mail_id: OhEHvb091udB, Hits: -99.526, size: 3151, queued_as: 4319F1110155A, dkim_sd=20120113:gmail.com, 4958 ms
+        1   (12678-02) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.179]:56152 [89.67.22.229] <bondiev@gmail.com> -> <support@hrankiety.pl>, Message-ID: <32925FFC-E5DE-488E-B241-1D3BA4AAA881@gmail.com>, mail_id: oxnL0ybajW0M, Hits: -99.526, size: 1821, queued_as: 879CB1110156F, dkim_sd=20120113:gmail.com, 1313 ms
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Apr  6 03:50:06 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18743.cdiff [100%]
+    Downloading daily-18744.cdiff [100%]
+    Downloading daily-18745.cdiff [100%]
+    Downloading daily-18746.cdiff [100%]
+    daily.cld updated (version: 18746, sigs: 871270, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3295538 signatures) from db.local.clamav.net (IP: 217.18.205.108)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       //_phpmyadmin/scripts/setup.php: 1 Time(s)
+       //admin/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //admin/pma/scripts/setup.php: 1 Time(s)
+       //admin/scripts/setup.php: 1 Time(s)
+       //administrator/components/com_joommyadmin ... ripts/setup.php: 1 Time(s)
+       //apache-default/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //blog/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //cpanelphpmyadmin/scripts/setup.php: 1 Time(s)
+       //cpphpmyadmin/scripts/setup.php: 1 Time(s)
+       //db/scripts/setup.php: 1 Time(s)
+       //dbadmin/scripts/setup.php: 1 Time(s)
+       //forum/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //mysql/scripts/setup.php: 1 Time(s)
+       //mysqladmin/scripts/setup.php: 1 Time(s)
+       //php-my-admin/scripts/setup.php: 1 Time(s)
+       //php/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.0.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.0.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.1.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.2.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.11.0.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.11.1-all-languages/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.11.1.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.11.1.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.11.1.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-pl3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-pl3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-pl4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.5/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.6/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.9/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-beta1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.5/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.7/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.2.3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.5/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.7/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.8/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.9/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.0-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.0.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.0.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin-3.0.0-rc1-english/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.0.0.0-all-languages/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.0.1.0-english/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.0.1.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.0.1.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.1.0.0-english/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.1.1.0-all-languages/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.1.2.0-english/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.1.2.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.4.3.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin3/scripts/setup.php: 1 Time(s)
+       //phpadmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       //scripts/setup.php: 1 Time(s)
+       //typo3/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //web/phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //web/scripts/setup.php: 1 Time(s)
+       //websql/scripts/setup.php: 1 Time(s)
+       //wp-login.php: 1 Time(s)
+       //xampp/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /blog//wp-login.php: 1 Time(s)
+       /mail/: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /wordpress//wp-login.php: 1 Time(s)
+       /wp//wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      340   *Warning: Pre-queue content-filter connection overload 
+        6   SASL authentication failed 
+ 
+   33.578K  Bytes accepted                            34,384
+   33.578K  Bytes delivered                           34,384
+ ========   ================================================
+ 
+       10   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+        2   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+        2   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      349   Connections made      
+      349   Disconnections        
+       10   Removed from queue    
+        4   Delivered             
+        4   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 5 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.3G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,148 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id BB41711103EDD; Fri, 26 Feb 2016 03:08:14 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 2E3C511103F0B; Fri, 26 Feb 2016 03:08:13 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160226020814.2E3C511103F0B@2626.serwervps.pl>
+Date: Fri, 26 Feb 2016 03:08:01 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Feb 26 03:08:01 2016
+        Date Range Processed: yesterday
+                              ( 2016-Feb-25 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Feb 25 03:28:47 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-21408.cdiff [100%]
+    Downloading daily-21409.cdiff [100%]
+    Downloading daily-21410.cdiff [100%]
+    Downloading daily-21411.cdiff [100%]
+    Downloading daily-21412.cdiff [100%]
+    Downloading daily-21413.cdiff [100%]
+    daily.cld updated (version: 21413, sigs: 1854664, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 271, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (4278936 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (Shutting down)
+ INFO (RANDOM_DELAY will be scaled with factor 93% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+    404 Not Found
+       /404: 1 Time(s)
+       /a2billing/: 1 Time(s)
+       /manager/html: 1 Time(s)
+       http://testp5.mielno.lubin.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+       btertil -> support: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      405   *Warning: Connection concurrency limit reached 
+      624   *Warning: Pre-queue content-filter connection overload 
+      703   SASL authentication failed 
+        4   Miscellaneous warnings 
+ 
+  846.342K  Bytes accepted                           866,654
+  842.807K  Bytes delivered                          863,034
+ ========   ================================================
+ 
+      188   Accepted                                 100.00%
+ --------   ------------------------------------------------
+      188   Total                                    100.00%
+ ========   ================================================
+ 
+     1134   Connections made      
+        1   Connections lost      
+     1134   Disconnections        
+      188   Removed from queue    
+       30   Delivered             
+      126   Sent via SMTP         
+       19   Forwarded             
+      101   Deferred              
+      326   Deferrals             
+        1   Bounce (local)        
+       16   Expired and returned to sender 
+       17   DSNs undeliverable    
+ 
+       74   Timeout (inbound)     
+      133   Enabled PIX workaround 
+        3   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 12 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  9.5G   41G  19% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,121 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id AD87913D81A86; Wed, 25 Dec 2013 03:50:08 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 9143013D81A85
+	for <root@2626.serwervps.pl>; Wed, 25 Dec 2013 05:50:08 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id MC4JvjshHr_z for <root@2626.serwervps.pl>;
+	Wed, 25 Dec 2013 03:50:06 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 4B96E13D81A83; Wed, 25 Dec 2013 03:50:06 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131225025006.4B96E13D81A83@2626.serwervps.pl>
+Date: Wed, 25 Dec 2013 03:50:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Dec 25 03:50:04 2013
+        Date Range Processed: yesterday
+                              ( 2013-Dec-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   (29427-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131224022613.7DE6D13D81A80@2626.serwervps.pl>, mail_id: yJJmPXs29tQS, Hits: 0, size: 5625, queued_as: 9762813D81A82, 4186 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (29426-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131224023007.A52DF13D81A82@2626.serwervps.pl>, mail_id: w6TX5wA1eL9c, Hits: 0.001, size: 2286, queued_as: 0CC2A13D81A80, 18521 ms
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Tue Dec 24 03:26:13 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18275.cdiff [100%]
+    Downloading daily-18276.cdiff [100%]
+    Downloading daily-18277.cdiff [100%]
+    Downloading daily-18278.cdiff [100%]
+    daily.cld updated (version: 18278, sigs: 619108, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (3043377 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    204.210.236.21
+    66.166.212.140
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 2 Time(s)
+       http://37.28.156.211/sprawdza.php: 1 Time(s)
+    501 Not Implemented
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   25.270K  Bytes accepted                            25,876
+   25.270K  Bytes delivered                           25,876
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.1G   28G   7% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

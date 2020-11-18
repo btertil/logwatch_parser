@@ -1,0 +1,230 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 1F0D011102547; Sun, 25 Jan 2015 03:34:05 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id DB8EE11102552; Sun, 25 Jan 2015 03:33:51 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150125023351.DB8EE11102552@2626.serwervps.pl>
+Date: Sun, 25 Jan 2015 03:33:47 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Jan 25 03:33:47 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jan-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Jan 24 03:16:08 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19966.cdiff [100%]
+    Downloading daily-19967.cdiff [100%]
+    Downloading daily-19968.cdiff [100%]
+    Downloading daily-19969.cdiff [100%]
+    Downloading daily-19970.cdiff [100%]
+    daily.cld updated (version: 19970, sigs: 1313701, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 245, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3737969 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       //_phpmyadmin/scripts/setup.php: 1 Time(s)
+       //admin/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //admin/pma/scripts/setup.php: 1 Time(s)
+       //admin/scripts/setup.php: 1 Time(s)
+       //administrator/components/com_joommyadmin ... ripts/setup.php: 1 Time(s)
+       //apache-default/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //blog/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //cpanelphpmyadmin/scripts/setup.php: 1 Time(s)
+       //cpphpmyadmin/scripts/setup.php: 1 Time(s)
+       //db/scripts/setup.php: 1 Time(s)
+       //dbadmin/scripts/setup.php: 1 Time(s)
+       //forum/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //mysql/scripts/setup.php: 1 Time(s)
+       //mysqladmin/scripts/setup.php: 1 Time(s)
+       //php-my-admin/scripts/setup.php: 1 Time(s)
+       //php/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.0.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.0.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.0.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.1.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.10.2.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.11.0.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.11.1-all-languages/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.11.1.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.11.1.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.11.1.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-pl3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-pl3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-pl4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.5/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.6/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.9/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-beta1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.5/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.6/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.7/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.2.3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.5/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.6/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.7/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.8/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.9/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.0-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.0.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.0.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.9.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin-3.0.0-rc1-english/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.0.0.0-all-languages/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.0.1.0-english/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.0.1.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.1.0.0-english/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.1.0.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.1.1.0-all-languages/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.1.2.0-all-languages/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.1.2.0-english/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.1.2.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-3.4.3.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin3/scripts/setup.php: 1 Time(s)
+       //phpadmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       //scripts/setup.php: 1 Time(s)
+       //typo3/phpmyadmin/scripts/setup.php: 1 Time(s)
+       //web/phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //web/scripts/setup.php: 1 Time(s)
+       //websql/scripts/setup.php: 1 Time(s)
+       //xampp/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /awaw/awa/aw.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /ocena360/dashboardlog: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /rom-0: 1 Time(s)
+       /tata/tat/ta.php: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       10   *Warning: Pre-queue content-filter connection overload 
+      110   SASL authentication failed 
+ 
+    1.782M  Bytes accepted                         1,868,930
+    1.782M  Bytes delivered                        1,868,930
+ ========   ================================================
+ 
+        5   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        5   Total                                    100.00%
+ ========   ================================================
+ 
+       21   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       21   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       55   Connections made      
+        1   Connections lost      
+       55   Disconnections        
+        5   Removed from queue    
+        2   Delivered             
+        1   Sent via SMTP         
+        2   Forwarded             
+ 
+        5   Timeout (inbound)     
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Jan 24 00:23:17 2626 postfix/smtpd[13274]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+        1   Jan 24 01:03:31 2626 postfix/smtpd[13608]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 13 times
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 9 times
+       195.116.217.38: 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 22 Time(s)
+ 
+ **Unmatched Entries**
+ channel 2: open failed: connect failed: Connection timed out : 3 time(s)
+ error: channel_setup_fwd_listener: cannot listen to port: 33333 : 1 time(s)
+ error: bind: Cannot assign requested address : 10 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   13G   38G  25% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

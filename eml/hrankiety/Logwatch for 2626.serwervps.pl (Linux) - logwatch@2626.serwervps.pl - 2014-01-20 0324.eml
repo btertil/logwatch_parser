@@ -1,0 +1,202 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 6ACA913D81E55; Mon, 20 Jan 2014 03:24:22 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id A867513D81E51
+	for <root@2626.serwervps.pl>; Mon, 20 Jan 2014 05:24:21 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id C9c79IJhtBG2 for <root@2626.serwervps.pl>;
+	Mon, 20 Jan 2014 03:24:13 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id C42F713D8198E; Mon, 20 Jan 2014 03:24:12 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140120022412.C42F713D8198E@2626.serwervps.pl>
+Date: Mon, 20 Jan 2014 03:24:10 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Jan 20 03:24:09 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jan-19 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        2   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        2   No ext program for   .tnef, tried: tnef
+        2   No decoder for       .doc 
+        2   No ext program for   .rar, tried: unrar, rar
+        2   No ext program for   .doc, tried: ripole
+        1   (31554-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140119024512.41F1D13D81E75@2626.serwervps.pl>, mail_id: FthX-yKh27na, Hits: -0.001, size: 5338, queued_as: 9348B13D81E85, 5401 ms
+        1   (31555-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140119023008.B303413D81E51@2626.serwervps.pl>, mail_id: VOvl84To3C94, Hits: 0, size: 2286, queued_as: 9719813D81E75, 12713 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Jan 19 03:45:12 2014
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98 Recommended version: 0.98.1
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18370.cdiff [100%]
+    daily.cld updated (version: 18370, sigs: 658464, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    Database updated (3082733 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 94% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    50.134.178.230
+ 
+ Requests with error response codes
+    403 Forbidden
+       /ocena360/en/delta50.jpg: 3 Time(s)
+    404 Not Found
+       /4133564439557677699: 1 Time(s)
+       /8865828463340856191: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /ocena360/en/delta50.jpg: 1 Time(s)
+       /ocena360/en/ekran2.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        5   SASL authentication failed 
+ 
+   24.426K  Bytes accepted                            25,012
+   24.426K  Bytes delivered                           25,012
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        8   Connections made      
+        8   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+        6   Timeout (inbound)     
+ 
+        1   Postfix start         
+        1   Postfix stop          
+        1   Postfix waiting to terminate 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Jan 19 12:59:25 2626 postfix/postfix-script[818]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Jan 19 12:59:25 2626 postfix/postfix-script[814]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Jan 19 12:59:25 2626 postfix/postfix-script[816]: warning: /var/spool/postfix/etc/services and /etc/services differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> halt  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 14 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.2G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

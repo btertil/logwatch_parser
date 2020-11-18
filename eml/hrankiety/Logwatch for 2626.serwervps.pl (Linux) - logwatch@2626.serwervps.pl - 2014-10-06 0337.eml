@@ -1,0 +1,147 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 8632F11101B06; Mon,  6 Oct 2014 03:43:39 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 777CA1110196A
+	for <root@2626.serwervps.pl>; Mon,  6 Oct 2014 05:43:39 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id tmW6TmkyKNPc for <root@2626.serwervps.pl>;
+	Mon,  6 Oct 2014 03:43:38 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 337811110196B; Mon,  6 Oct 2014 03:37:19 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141006013719.337811110196B@2626.serwervps.pl>
+Date: Mon,  6 Oct 2014 03:37:17 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Oct  6 03:37:17 2014
+        Date Range Processed: yesterday
+                              ( 2014-Oct-05 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (19700-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141005013007.81BD011101B0D@2626.serwervps.pl>, mail_id: DXX4tLgogq8A, Hits: 0.001, size: 2288, queued_as: 87AD511101B0C, 1915 ms
+        1   (19699-03) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141005013408.B195811101B0F@2626.serwervps.pl>, mail_id: 0Z44V92r8j95, Hits: 0, size: 7511, queued_as: 85F1C11101B0D, 1812 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Oct  5 03:34:09 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-19475.cdiff not found on remote server (IP: 212.7.0.71)
+    WARNING: getpatch: Can't download daily-19475.cdiff from db.local.clamav.net
+    WARNING: getfile: daily-19475.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-19475.cdiff from db.local.clamav.net
+    Trying host db.local.clamav.net (130.133.110.67)...
+    Downloading daily-19475.cdiff [100%]
+    Downloading daily-19476.cdiff [100%]
+    daily.cld updated (version: 19476, sigs: 1180594, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3604865 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    66.240.192.138
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       //vtigercrm/matrix.php?act=f&f=sip_additio ... Fetc%2Fasterisk: 2 Time(s)
+       /mvmv/mvm/mv.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /zmzm/zmz/zm.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      184   *Warning: Pre-queue content-filter connection overload 
+      193   SASL authentication failed 
+ 
+   30.818K  Bytes accepted                            31,558
+   30.818K  Bytes delivered                           31,558
+ ========   ================================================
+ 
+        6   Accepted                                  66.67%
+        3   Rejected                                  33.33%
+ --------   ------------------------------------------------
+        9   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      199   Connections made      
+      199   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.8G   44G  14% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

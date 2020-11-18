@@ -1,0 +1,135 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 5B43411101756; Sat, 28 Feb 2015 03:41:50 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 18A8D1110175C; Sat, 28 Feb 2015 03:41:50 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150228024150.18A8D1110175C@2626.serwervps.pl>
+Date: Sat, 28 Feb 2015 03:41:46 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Feb 28 03:41:46 2015
+        Date Range Processed: yesterday
+                              ( 2015-Feb-27 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Feb 27 03:40:50 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-20112.cdiff [100%]
+    WARNING: getfile: Unknown response from remote server (IP: 195.30.97.3)
+    WARNING: getpatch: Can't download daily-20113.cdiff from db.local.clamav.net
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    Trying host db.local.clamav.net (195.30.97.3)...
+    Downloading daily-20113.cdiff [100%]
+    Downloading daily-20114.cdiff [100%]
+    Downloading daily-20115.cdiff [100%]
+    Downloading daily-20116.cdiff [100%]
+    Downloading daily-20117.cdiff [100%]
+    WARNING: getfile: Unknown response from remote server (IP: 195.30.97.3)
+    WARNING: getpatch: Can't download daily-20118.cdiff from db.local.clamav.net
+    Downloading daily-20118.cdiff [100%]
+    daily.cld updated (version: 20118, sigs: 1334400, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 246, sigs: 42, f-level: 63, builder: neo)
+    Database updated (3758667 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /tmUnblock.cgi: 1 Time(s)
+    404 Not Found
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phph/php/ph.php: 2 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        4   *Warning: Pre-queue content-filter connection overload 
+       52   SASL authentication failed 
+ 
+   15.340K  Bytes accepted                            15,708
+   15.340K  Bytes delivered                           15,708
+ ========   ================================================
+ 
+        4   Accepted                                  80.00%
+        1   Rejected                                  20.00%
+ --------   ------------------------------------------------
+        5   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       16   Connections made      
+       16   Disconnections        
+        4   Removed from queue    
+        2   Delivered             
+        2   Forwarded             
+ 
+        1   Timeout (inbound)     
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   15G   36G  30% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

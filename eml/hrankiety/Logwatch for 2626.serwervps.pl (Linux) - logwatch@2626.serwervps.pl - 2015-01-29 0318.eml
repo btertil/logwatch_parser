@@ -1,0 +1,228 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id B330D111025BF; Thu, 29 Jan 2015 03:18:30 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id D1DD9111025C0; Thu, 29 Jan 2015 03:18:28 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150129021828.D1DD9111025C0@2626.serwervps.pl>
+Date: Thu, 29 Jan 2015 03:18:23 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Jan 29 03:18:22 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jan-28 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        1   *Warning              
+ 
+ 
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed Jan 28 03:22:40 2015
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.5 Recommended version: 0.98.6
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19982.cdiff [100%]
+    Downloading daily-19983.cdiff [100%]
+    Downloading daily-19984.cdiff [100%]
+    Downloading daily-19985.cdiff [100%]
+    Downloading daily-19986.cdiff [100%]
+    daily.cld updated (version: 19986, sigs: 1315237, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 245, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3739505 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 18% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+    404 Not Found
+       //%63%67%69%2D%62%69%6E/%70%68%70?%2D%64+% ... 70%75%74+%2D%6E: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /cgi-bin/php: 1 Time(s)
+       /cgi-bin/php-cgi: 1 Time(s)
+       /cgi-bin/php.cgi: 1 Time(s)
+       /cgi-bin/php4: 1 Time(s)
+       /cgi-bin/php5: 1 Time(s)
+       /cgi-bin/place.cgi: 1 Time(s)
+       /ftft/ftf/ft.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /oplpg/ankieta.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       btertil (89-67-185-134.dynamic.chello.pl): 1 Time(s)
+ 
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+       btertil -> postgres: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        9   *Warning: Pre-queue content-filter connection overload 
+       50   SASL authentication failed 
+ 
+    3.700M  Bytes accepted                         3,879,644
+    3.698M  Bytes delivered                        3,878,041
+ ========   ================================================
+ 
+       13   Accepted                                  92.86%
+        1   Rejected                                   7.14%
+ --------   ------------------------------------------------
+       14   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       72   Connections made      
+       72   Disconnections        
+       13   Removed from queue    
+        7   Delivered             
+        4   Forwarded             
+        1   Deferred              
+        8   Deferrals             
+        1   Bounce (local)        
+        1   Expired and returned to sender 
+        2   DSNs undeliverable    
+ 
+       18   Timeout (inbound)     
+ 
+        1   Postfix start         
+        1   Postfix stop          
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Jan 28 02:22:29 2626 postfix/postfix-script[940]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Jan 28 02:22:29 2626 postfix/postfix-script[938]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Jan 28 02:22:29 2626 postfix/postfix-script[936]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> reboot  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Failed logins from:
+    89.67.185.134 (89-67-185-134.dynamic.chello.pl): 1 time
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 21 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: Client disconnecting normally : 7 Time(s)
+    11: disconnected by user : 3 Time(s)
+ 
+ SFTP subsystem requests: 1 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   13G   38G  26% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

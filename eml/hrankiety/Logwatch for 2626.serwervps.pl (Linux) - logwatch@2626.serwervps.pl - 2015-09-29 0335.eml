@@ -1,0 +1,98 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 3A846111034FF; Tue, 29 Sep 2015 03:36:08 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 7226B1110350A; Tue, 29 Sep 2015 03:36:04 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150929013604.7226B1110350A@2626.serwervps.pl>
+Date: Tue, 29 Sep 2015 03:35:53 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Sep 29 03:35:53 2015
+        Date Range Processed: yesterday
+                              ( 2015-Sep-28 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Sep 28 03:26:20 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    WARNING: getfile: daily-20939.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-20939.cdiff from db.local.clamav.net
+    Downloading daily-20939.cdiff [100%]
+    Downloading daily-20940.cdiff [100%]
+    Downloading daily-20941.cdiff [100%]
+    daily.cld updated (version: 20941, sigs: 1591397, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 268, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (4015669 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /admin/config.php: 1 Time(s)
+       /admin/scripts/setup.php: 1 Time(s)
+       /xmprpc.php: 1 Time(s)
+       http://testp3.pospr.waw.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       94.65.107.83 (ppp-94-65-107-83.home.otenet.gr): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   25G   26G  50% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

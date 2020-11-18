@@ -1,0 +1,142 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id DC4CD11101C81; Sun, 23 Nov 2014 03:45:17 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id CC46911101C7F
+	for <root@2626.serwervps.pl>; Sun, 23 Nov 2014 05:45:17 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id F6PSxiS39pbh for <root@2626.serwervps.pl>;
+	Sun, 23 Nov 2014 03:45:15 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 5591311101C81; Sun, 23 Nov 2014 03:45:15 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141123024515.5591311101C81@2626.serwervps.pl>
+Date: Sun, 23 Nov 2014 03:45:09 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Nov 23 03:45:09 2014
+        Date Range Processed: yesterday
+                              ( 2014-Nov-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (20640-08) Passed CLEAN {RelayedInternal}, LOCAL [83.167.225.169]:33929 [209.85.160.178] <r.sienkiewicz@accord-ece.com> -> <atertil@hrankiety.pl>, Queue-ID: 0A26B11101C32, Message-ID: <CABKWhCxjGMMnhE==3jZjsdmE-=cSTyE7SeBWdxfWXxbyZtza3w@mail.gmail.com>, mail_id: Gtkrkr1NycX2, Hits: -6.222, size: 7900, queued_as: 2127811101C72, 1910 ms
+        1   (20640-07) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141122023015.7785711101C71@2626.serwervps.pl>, mail_id: 7N40fe9Bvmeb, Hits: 0.001, size: 2287, queued_as: 5350711101C65, 4668 ms
+        1   (20641-07) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141122023711.EB82311101C72@2626.serwervps.pl>, mail_id: 5A1vHGCYCpip, Hits: 0, size: 9544, queued_as: CEA1911101C71, 7860 ms
+        1   (20641-06) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.172]:53725 [89.67.22.229] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: 9AF4011101C63, Message-ID: <546FCAB8.7070609@gmail.com>, mail_id: HMBhmcnw4F6a, Hits: -99.514, size: 31726, queued_as: B92E311101C65, dkim_sd=20120113:gmail.com, 2920 ms
+        1   (20640-08) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN24> line 3324.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sat Nov 22 03:37:12 2014
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.4 Recommended version: 0.98.5
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-19660.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-19660.cdiff from db.local.clamav.net
+    Downloading daily-19660.cdiff [100%]
+    Downloading daily-19661.cdiff [100%]
+    Downloading daily-19662.cdiff [100%]
+    Downloading daily-19663.cdiff [100%]
+    Downloading daily-19664.cdiff [100%]
+    daily.cld updated (version: 19664, sigs: 1268695, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3692966 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    62.210.93.52
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+       /w00tw00t.at.ISC.SANS.DFind:): 1 Time(s)
+    404 Not Found
+       //cgi-bin/webcm?getpage=../html/menus/menu ... p/voip.cfg%20%2: 1 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /checkupdate.asmx: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+  115.256K  Bytes accepted                           118,022
+  115.256K  Bytes delivered                          118,022
+ ========   ================================================
+ 
+       10   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+        7   Connections made      
+        7   Disconnections        
+       10   Removed from queue    
+        4   Delivered             
+        4   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  7.4G   43G  15% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

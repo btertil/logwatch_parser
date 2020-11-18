@@ -1,0 +1,195 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id B13C4111018E3; Sun,  3 Aug 2014 03:39:12 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id A2651111018E2
+	for <root@2626.serwervps.pl>; Sun,  3 Aug 2014 05:39:12 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 2p94NkYgPd_e for <root@2626.serwervps.pl>;
+	Sun,  3 Aug 2014 03:39:10 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id EE449111018E3; Sun,  3 Aug 2014 03:39:09 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140803013909.EE449111018E3@2626.serwervps.pl>
+Date: Sun,  3 Aug 2014 03:39:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Aug  3 03:39:07 2014
+        Date Range Processed: yesterday
+                              ( 2014-Aug-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (04344-19) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [213.158.217.173]:31361 [213.158.217.173] <support@hrankiety.pl> -> <atertil@gmail.com>, Queue-ID: 32019111018DC, Message-ID: <D2C3CC18-D8F9-481B-840B-81EEC3B95FC4@hrankiety.pl>, mail_id: C2RRJxUuqIIo, Hits: -9.998, size: 1660, queued_as: CF439111018DD, dkim_new=dkim:hrankiety.pl, 492 ms
+        1   (04344-09) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140802013005.0F1F4111018C7@2626.serwervps.pl>, mail_id: ayDchXmdAdOu, Hits: 0.001, size: 2288, queued_as: 7A3A4111018C6, 1408 ms
+        1   (04344-20) Passed CLEAN {RelayedInternal}, LOCAL [77.55.115.217]:58487 [213.158.216.72] <agnieszka.tertil@deltatraining.pl> -> <support@hrankiety.pl>, Queue-ID: DA4A911101687, Message-ID: <92CBB64D-484B-40D2-98D2-B88074301475@deltatraining.pl>, mail_id: ZRG_QWwvuR-T, Hits: 1.274, size: 789, queued_as: B5ABE111018E0, 841 ms
+        1   (03504-19) Passed CLEAN {RelayedInternal}, LOCAL [209.85.213.176]:61316 [209.85.213.176] <atertil@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 126DD111018DD, Message-ID: <CAAdVhM86fyK_mpKbbPaee9bc_LXYp_POzvtJxFO9OM-N4GYtWQ@mail.gmail.com>, mail_id: A2cWE2MOQX85, Hits: -99.525, size: 2549, queued_as: 034A3111018DF, dkim_sd=20120113:gmail.com, 660 ms
+        1   (03504-17) Passed CLEAN {RelayedInternal}, LOCAL [213.158.194.142]:24351 [213.158.194.142] <Bartek.Tertil@eranet.pl> -> <support@hrankiety.pl>, Queue-ID: 5662D111018DA, Message-ID: <43CF9908-5BC8-4A17-B28C-DDE66909AFF8@eranet.pl>, mail_id: MctelBjj7eb8, Hits: 1.274, size: 811, queued_as: 63936111018DB, 5042 ms
+        1   (03504-09) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140802013510.58441111018C8@2626.serwervps.pl>, mail_id: UQdBPep523iZ, Hits: 0, size: 22416, queued_as: A360D111018C7, 4303 ms
+        1   (12405-01) Passed CLEAN {RelayedInternal}, LOCAL [77.55.115.217]:11911 [178.181.238.225] <agnieszka.tertil@deltatraining.pl> -> <support@hrankiety.pl>, Queue-ID: 0C677111018E0, Message-ID: <91644C5F-95CD-4A0F-8B23-A48B859BB75B@deltatraining.pl>, mail_id: iQemqAXSdAbr, Hits: 1.275, size: 2697450, queued_as: BDFD1111018B3, 1712 ms
+        1   (03504-18) Passed CLEAN {RelayedInternal}, LOCAL [209.85.223.181]:58247 [209.85.223.181] <atertil@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 27024111018DC, Message-ID: <CAAdVhM8oBGK-HFFHEX+kP0vRXN3H0SePOPpFLghJ_6GR=LXORQ@mail.gmail.com>, mail_id: l-HZ9eXTikJZ, Hits: -99.525, size: 1764, queued_as: EB8F9111018DD, dkim_sd=20120113:gmail.com, 538 ms
+        1   (03504-10) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (04344-15) Passed CLEAN {RelayedInternal}, LOCAL [213.158.194.142]:11015 [213.158.194.142] <Bartek.Tertil@eranet.pl> -> <support@hrankiety.pl>, Queue-ID: BCF0D111018D4, Message-ID: <83611CBB-23BC-43CD-AF79-61BD4332E861@eranet.pl>, mail_id: w3YzEw-Z_eMs, Hits: 1.274, size: 820, queued_as: 2E858111018D6, 407 ms
+        1   (03504-10) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:63314 [89.67.22.229] <support@hrankiety.pl> -> <bondiev@gmail.com>, Queue-ID: F2FD6111018C9, Message-ID: <53DCB550.50605@hrankiety.pl>, mail_id: ZRlA_td3yNua, Hits: -10, size: 770, queued_as: AA468111018CA, dkim_new=dkim:hrankiety.pl, 662 ms
+        1   (04344-17) Passed CLEAN {RelayedInternal}, LOCAL [209.85.217.170]:40164 [209.85.217.170] <bondiev@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 8A77F111018D9, Message-ID: <CAEfY=SRqRBZYO9FygKf7rgSJEMJUX9_=VGYhLG3J8gz-JUBU7g@mail.gmail.com>, mail_id: pNyFOHDue1Ne, Hits: -99.524, size: 14788, queued_as: 63940111018DA, dkim_sd=20120113:gmail.com, 1664 ms
+        1   (04344-08) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [178.182.159.209]:49824 [178.182.159.209] <btertil@hrankiety.pl> -> <bondiev@gmail.com>, Queue-ID: 8494E111018C4, Message-ID: <231257C7-0E3D-4E71-A525-08941C413C9D@hrankiety.pl>, mail_id: d9YszN0lTTSr, Hits: -9.998, size: 1101, queued_as: 56379111018C6, dkim_new=dkim:hrankiety.pl, 562 ms
+        1   (03504-08) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.169]:35649 [178.182.159.209] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: 522D2111018C4, Message-ID: <4E0BC665-2F25-47A7-BA8E-E750F8F64786@gmail.com>, mail_id: nWmwaZMbqmBy, Hits: -99.524, size: 2575, queued_as: C3A60111018C6, dkim_sd=20120113:gmail.com, 1397 ms
+        1   (04344-14) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.41]:41284 [213.158.217.173] <bondiev@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 795BC111018D3, Message-ID: <1B15D67F-F930-4D40-B9FF-44FABE66A366@gmail.com>, mail_id: M4VRaZH5HyzL, Hits: -99.526, size: 1798, queued_as: 37173111018D4, dkim_sd=20120113:gmail.com, 4669 ms
+        1   (04344-06) Passed CLEAN {RelayedInternal}, LOCAL [209.85.215.50]:62409 [209.85.215.50] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: C7A2B111015B2, Message-ID: <CAEfY=SSVQshvgYoxOf0oKqbHeM39AB4UxCqmUAm-n=6+Oepu2Q@mail.gmail.com>, mail_id: iSYrFbFf5s85, Hits: -99.524, size: 14915, queued_as: 710D811101713, dkim_sd=20120113:gmail.com, 2456 ms
+        1   (03504-06) Passed CLEAN {RelayedInternal}, LOCAL [209.85.215.50]:57384 [209.85.215.50] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: AB5D311101713, Message-ID: <CAEfY=SS=tOasLcbBm9OLxkLs2-NeVPXAMheC8a3X2o7hEcO8wQ@mail.gmail.com>, mail_id: WRNO5C70eEI5, Hits: -99.525, size: 6977, queued_as: 65FBF111018C2, dkim_sd=20120113:gmail.com, 1583 ms
+        1   (03504-11) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.172]:50806 [188.147.218.199] <bondiev@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 794F1111018CD, Message-ID: <9FEC9B69-C11D-4DD2-B491-7B9F2306DE81@gmail.com>, mail_id: Zc1wBWyKyhk7, Hits: -99.526, size: 1835, queued_as: 175E2111018CF, dkim_sd=20120113:gmail.com, 519 ms
+        1   (04344-07) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [178.182.159.209]:49811 [178.182.159.209] <btertil@hrankiety.pl> -> <bondiev@gmail.com>, Queue-ID: 3BA49111018C2, Message-ID: <A989FA29-D92F-46A6-957F-E7896446417F@hrankiety.pl>, mail_id: uT0NfU9c9VHI, Hits: -10, size: 614, queued_as: D5862111018C3, dkim_new=dkim:hrankiety.pl, 480 ms
+        1   (04344-18) Passed CLEAN {RelayedInternal}, LOCAL [212.77.101.5]:9802 [212.77.101.5] <jtertil@wp.pl> -> <support@hrankiety.pl>, Queue-ID: 3CC9F111018DB, Message-ID: <uvyqa7cfkj3pbe1x5v75l37q.1406993743914@email.android.com>, mail_id: oD95ZSGGCQUU, Hits: 1.176, size: 2070, queued_as: B179F111018DC, dkim_sd=1024a:wp.pl, 435 ms
+        1   (03504-13) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.171]:52105 [213.158.217.173] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: F20DF111018D2, Message-ID: <9CAA40D8-A66E-4ABA-8B3C-CF8389B33BEA@gmail.com>, mail_id: 8awsgWNhvgkm, Hits: -99.526, size: 1801, queued_as: B4E9C111018D3, dkim_sd=20120113:gmail.com, 4681 ms
+        1   (03504-07) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.179]:37980 [178.182.159.209] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: DD567111018C3, Message-ID: <1D2C2D7A-D78A-4190-B716-7DA87682A7DE@gmail.com>, mail_id: N-ghkCBXHg_x, Hits: -99.524, size: 2170, queued_as: DF1BF111018C4, dkim_sd=20120113:gmail.com, 1700 ms
+        1   (04344-16) Passed CLEAN {RelayedInternal}, LOCAL [213.158.194.142]:43810 [213.158.194.142] <Bartek.Tertil@eranet.pl> -> <support@hrankiety.pl>, Queue-ID: 8E7A9111018D6, Message-ID: <FCA34C8B-FF42-4A06-B09A-93FB8A55ED52@eranet.pl>, mail_id: KN4ymVPJowDq, Hits: 1.274, size: 994, queued_as: A3C2E111018D7, 5075 ms
+        1   (04344-11) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.181]:49841 [89.67.22.229] <bondiev@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 8F7E2111018C9, Message-ID: <53DCB55F.9040608@gmail.com>, mail_id: 8Ds5CzDwwtsx, Hits: -99.525, size: 2147, queued_as: 42AEB111018CA, dkim_sd=20120113:gmail.com, 599 ms
+        1   (04344-13) Passed CLEAN {RelayedInternal}, LOCAL [213.158.194.142]:23426 [213.158.194.142] <Bartek.Tertil@eranet.pl> -> <btertil@hrankiety.pl>, Queue-ID: 57F57111018D0, Message-ID: <2E7827EE-0129-48EB-8BD4-1F165835E0BA@eranet.pl>, mail_id: v-fDW5eFBxHN, Hits: 1.274, size: 829, queued_as: 6D2B0111018D2, 5060 ms
+        1   (03504-15) Passed CLEAN {RelayedInternal}, LOCAL [213.158.194.142]:43810 [213.158.194.142] <Bartek.Tertil@eranet.pl> -> <btertil@hrankiety.pl>, Queue-ID: 8E7A9111018D6, Message-ID: <FCA34C8B-FF42-4A06-B09A-93FB8A55ED52@eranet.pl>, mail_id: YEABAYjkMIdI, Hits: 1.274, size: 994, queued_as: A75BB111018D8, 5077 ms
+        1   (03504-12) Passed CLEAN {RelayedInternal}, LOCAL [209.85.217.178]:61050 [209.85.217.178] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: A7ABE111018CF, Message-ID: <CAEfY=SRqRBZYO9FygKf7rgSJEMJUX9_=VGYhLG3J8gz-JUBU7g@mail.gmail.com>, mail_id: 3nY107C0TKjV, Hits: -99.524, size: 14788, queued_as: CCA6F111018D0, dkim_sd=20120113:gmail.com, 3903 ms
+        1   (03504-20) Passed CLEAN {RelayedInternal}, LOCAL [77.55.115.217]:11911 [178.181.238.225] <agnieszka.tertil@deltatraining.pl> -> <atertil@hrankiety.pl>, Queue-ID: 0C677111018E0, Message-ID: <91644C5F-95CD-4A0F-8B23-A48B859BB75B@deltatraining.pl>, mail_id: wK6aH5QpaxeZ, Hits: 1.275, size: 2697450, queued_as: 6FA2A111018E2, 1246 ms
+        1   (04344-10) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.177]:63143 [89.67.22.229] <bondiev@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 3B9FC111018C8, Message-ID: <53DCAEF7.1080603@gmail.com>, mail_id: ZAgRUp2gTL_A, Hits: -99.526, size: 1858, queued_as: 773F4111018C9, dkim_sd=20120113:gmail.com, 1142 ms
+        1   (03504-14) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.49]:54975 [213.158.217.173] <bondiev@gmail.com> -> <support@hrankiety.pl>, Queue-ID: A10D2111018D3, Message-ID: <A6B53C8A-28DC-43E1-864C-9C7C8B9938EA@gmail.com>, mail_id: BxfnsnJP6EFq, Hits: -99.526, size: 1819, queued_as: 65857111018D4, dkim_sd=20120113:gmail.com, 4696 ms
+        1   (04344-12) Passed CLEAN {RelayedInternal}, MYUSERS LOCAL [213.158.217.173]:24259 [213.158.217.173] <postmaster@hrankiety.pl> -> <support@hrankiety.pl>, Queue-ID: 6D86F111018CF, Message-ID: <1788B649-771A-4CBB-8CA8-4B5B3A699302@hrankiety.pl>, mail_id: CaICvA3vkNXz, Hits: -10, size: 618, queued_as: B996A111018D0, dkim_new=dkim:hrankiety.pl, 752 ms
+        1   (03504-16) Passed CLEAN {RelayedInternal}, LOCAL [213.158.194.142]:41943 [213.158.194.142] <Bartek.Tertil@eranet.pl> -> <support@hrankiety.pl>, Queue-ID: B597B111018D8, Message-ID: <A6EDB60D-C072-4A19-92C7-7DC1D5FCC226@eranet.pl>, mail_id: 8A8xBOE68OIu, Hits: 1.274, size: 868, queued_as: C10DB111018D9, 5037 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sat Aug  2 03:35:10 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19251.cdiff [100%]
+    Downloading daily-19252.cdiff [100%]
+    Downloading daily-19253.cdiff [100%]
+    Downloading daily-19254.cdiff [100%]
+    daily.cld updated (version: 19254, sigs: 1087638, f-level: 63, builder: shurley)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3511909 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+    404 Not Found
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //db/: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin/: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /ocena360/mail: 1 Time(s)
+       /vtigercrm/: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 3 Time(s)
+       btertil -> support: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        4   *Warning: Server configuration error 
+        1   SASL authentication failed 
+       16   Miscellaneous warnings 
+ 
+    7.968M  Bytes accepted                         8,354,815
+   10.541M  Bytes delivered                       11,053,259
+ ========   ================================================
+ 
+       62   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       62   Total                                    100.00%
+ ========   ================================================
+ 
+        9   4xx Reject recipient address              69.23%
+        4   4xx Reject server configuration error     30.77%
+ --------   ------------------------------------------------
+       13   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       72   Connections made      
+       72   Disconnections        
+       62   Removed from queue    
+       27   Delivered             
+       35   Sent via SMTP         
+        2   Forwarded             
+ 
+        5   SASL authenticated messages 
+ 
+        2   Postfix start         
+        2   Postfix stop          
+        2   Postfix refresh       
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Aug  2 16:51:35 2626 postfix/postfix-script[11848]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Aug  2 16:35:14 2626 postfix/postfix-script[11529]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Aug  2 16:51:08 2626 postfix/master[11537]: reload -- version 2.11.0, configuration /etc/postfix
+        1   Aug  2 16:35:35 2626 postfix/master[11537]: reload -- version 2.11.0, configuration /etc/postfix
+        1   Aug  2 16:51:35 2626 postfix/postfix-script[11850]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Aug  2 16:35:14 2626 postfix/postfix-script[11531]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Aug  2 16:35:14 2626 postfix/postfix-script[11527]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Aug  2 16:51:35 2626 postfix/postfix-script[11852]: warning: /var/spool/postfix/etc/services and /etc/services differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 3 times
+       195.116.217.38: 2 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  4.8G   46G  10% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

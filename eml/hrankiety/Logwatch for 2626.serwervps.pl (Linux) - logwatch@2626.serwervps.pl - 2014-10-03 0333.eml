@@ -1,0 +1,200 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id DC9FC11101B04; Fri,  3 Oct 2014 03:33:10 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id D5C6711101B03
+	for <root@2626.serwervps.pl>; Fri,  3 Oct 2014 05:33:10 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id tRUbTtBKGtmK for <root@2626.serwervps.pl>;
+	Fri,  3 Oct 2014 03:33:09 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 3C56211101B04; Fri,  3 Oct 2014 03:33:09 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141003013309.3C56211101B04@2626.serwervps.pl>
+Date: Fri,  3 Oct 2014 03:33:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Oct  3 03:33:07 2014
+        Date Range Processed: yesterday
+                              ( 2014-Oct-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (10582-01) Passed CLEAN {RelayedInternal}, LOCAL [83.167.225.169]:43532 [209.85.213.51] <r.sienkiewicz@accord-ece.com> -> <atertil@hrankiety.pl>, Queue-ID: AC72711101AFB, Message-ID: <CABKWhCyBROOd2EtC8oA2rah4Zot2eFMt6O_5ewV1+Y_Jur56Eg@mail.gmail.com>, mail_id: QatYxIkBFG_a, Hits: -5.324, size: 8584, queued_as: 39A1A11101AFC, 2354 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (06630-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (06629-03) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141002014708.9020311101B00@2626.serwervps.pl>, mail_id: N-GF96qnIWDp, Hits: 0, size: 6593, queued_as: 1CD2211101AFF, 2518 ms
+        1   (10582-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (06630-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141002013009.4EB4811101AFF@2626.serwervps.pl>, mail_id: YlWgzQfHTyLr, Hits: 0.001, size: 2288, queued_as: A48A011101902, 3145 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (10582-02) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.170]:36262 [89.67.22.229] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: 5329411101B01, Message-ID: <542DAFA2.60100@gmail.com>, mail_id: D-ci4HONKemK, Hits: -99.525, size: 2410, queued_as: 2DEC511101B02, dkim_sd=20120113:gmail.com, 1784 ms
+        1   No ext program for   .doc, tried: ripole
+        1   (10583-01) Passed CLEAN {RelayedInternal}, LOCAL [83.167.225.169]:59810 [209.85.160.169] <r.sienkiewicz@accord-ece.com> -> <atertil@hrankiety.pl>, Queue-ID: 4443811101AF5, Message-ID: <CABKWhCzN6rstAoSYcytwy4SQ7USRczFez_fnqV-pH0waECWEMQ@mail.gmail.com>, mail_id: IDQlrt_AiCgx, Hits: -5.284, size: 227768, queued_as: DF23411101B01, 2401 ms
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Thu Oct  2 03:47:08 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-19458.cdiff not found on remote server (IP: 158.129.196.3)
+    WARNING: getpatch: Can't download daily-19458.cdiff from db.local.clamav.net
+    Downloading daily-19458.cdiff [100%]
+    Downloading daily-19459.cdiff [100%]
+    Downloading daily-19460.cdiff [100%]
+    Downloading daily-19461.cdiff [100%]
+    Downloading daily-19462.cdiff [100%]
+    daily.cld updated (version: 19462, sigs: 1172944, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3597215 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /tmUnblock.cgi: 3 Time(s)
+    403 Forbidden
+       /cgi-bin/: 1 Time(s)
+    404 Not Found
+       //cgi-bin/php: 1 Time(s)
+       //cgi-bin/php-cgi: 1 Time(s)
+       //cgi-bin/php5: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /etc/lib/pChart2/examples/index.php: 1 Time(s)
+       /fhfh/fhf/fh.php: 1 Time(s)
+       /fyfy/fyf/fy.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin/scripts/setup.php: 5 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 5 Time(s)
+       /tqtq/tqt/tq.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wvwv/wvw/wv.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      184   *Warning: Pre-queue content-filter connection overload 
+      181   SASL authentication failed 
+ 
+  495.985K  Bytes accepted                           507,889
+  495.985K  Bytes delivered                          507,889
+ ========   ================================================
+ 
+       12   Accepted                                  85.71%
+        2   Rejected                                  14.29%
+ --------   ------------------------------------------------
+       14   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      194   Connections made      
+        1   Connections lost      
+      194   Disconnections        
+       12   Removed from queue    
+        5   Delivered             
+        5   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 4 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: User disconnected : 1 Time(s)
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    php-gd-5.3.3-27.el6_5.2.i686
+    php-mysql-5.3.3-27.el6_5.2.i686
+    1:net-snmp-utils-5.5-49.el6_5.4.i686
+    php-ldap-5.3.3-27.el6_5.2.i686
+    php-xml-5.3.3-27.el6_5.2.i686
+    1:net-snmp-libs-5.5-49.el6_5.4.i686
+    php-imap-5.3.3-27.el6_5.2.i686
+    php-common-5.3.3-27.el6_5.2.i686
+    php-cli-5.3.3-27.el6_5.2.i686
+    php-mbstring-5.3.3-27.el6_5.2.i686
+    php-pgsql-5.3.3-27.el6_5.2.i686
+    php-pdo-5.3.3-27.el6_5.2.i686
+    1:net-snmp-5.5-49.el6_5.4.i686
+    php-5.3.3-27.el6_5.2.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.7G   44G  14% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 
