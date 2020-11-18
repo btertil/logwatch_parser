@@ -11,21 +11,27 @@ sshd_end = " ---------------------- SSHD End -------------------------"
 
 # regexp używane do znajdowania ip i dat
 ip_pattern = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
-date_pattern = r"\d{4}\-d{2}\-d{2}"
+date_pattern = r"\d{4}\-\d{2}\-\d{2}"
 
 # logi serwera prod i backup
-# lista = os.listdir("eml/hrankiety/")
-lista = os.listdir("eml/backup/")
+logs = [("backup", "./eml/backup/" + i) for i in os.listdir("eml/backup/")]
+logs += [("hrankiety", "./eml/hrankiety/" + i) for i in os.listdir("eml/hrankiety/")]
 
 counter = 0
 
 # Każdy mail z logawatch jest parsowany po kolei
-for el in lista:
-    flag = False
-    if "Logwatch for " in el:
+for log_tuple in logs:
+
+    log_srv = log_tuple[0]
+    log_msg = log_tuple[1]
+
+    # only logwatch messages / mails
+    if "Logwatch for " in log_msg:
+
         counter += 1
-        
-        with open("./eml/backup/{}".format(el), "r") as file:
+        date_msg = re.findall(date_pattern, log_msg)[0]
+
+        with open("{}".format(log_msg), "r") as file:
             lines = file.read()
 
             # re-setting flags for a new file / message
@@ -37,18 +43,18 @@ for el in lista:
 
             # parse log messages line by line
             for line in lines.split("\n"):
-                if line not in (""," ", "\n"):
+                if line not in ("", " ", "\n"):
 
                     # is it httpd line?
-                    if httpd_flag == False and httpd_begin in line:
+                    if not httpd_flag and httpd_begin in line:
                         httpd_flag = True
-                    if httpd_flag == True and httpd_end in line:
+                    if httpd_flag and httpd_end in line:
                         httpd_flag = False
 
                     # is it sshd line?
-                    if sshd_flag == False and sshd_begin in line:
+                    if not sshd_flag and sshd_begin in line:
                         sshd_flag = True
-                    if sshd_flag == True and sshd_end in line:
+                    if sshd_flag and sshd_end in line:
                         sshd_flag = False
 
                     if httpd_flag:
@@ -57,7 +63,7 @@ for el in lista:
                     if sshd_flag:
                         sshd_ips += re.findall(ip_pattern, line)
 
-            print("\n\nfile {}: {}\n\thttpd probing ips: {}\n\tssh succesull logins: {}"
-                  .format(counter, el, ", ".join(httpd_ips), ", ".join(sshd_ips)))
+            print("\n\nfile {}: {} ({}): {}\n\thttpd probing ips: {}\n\tssh succesull logins: {}"
+                  .format(counter, log_srv, date_msg, log_msg, ", ".join(httpd_ips), ", ".join(sshd_ips)))
                     
 
