@@ -1,5 +1,6 @@
 import re
 import os
+import psycopg2
 
 
 # definicja specjalnych linii
@@ -19,51 +20,93 @@ logs += [("hrankiety", "./eml/hrankiety/" + i) for i in os.listdir("eml/hrankiet
 
 counter = 0
 
-# Każdy mail z logawatch jest parsowany po kolei
-for log_tuple in logs:
+try:
+    conn = psycopg2.connect(
+        user="bartek",
+        password="Aga",
+        host="192.168.0.201",
+        port="5432",
+        database="logwatch_parser"
+    )
 
-    log_srv = log_tuple[0]
-    log_msg = log_tuple[1]
+    cursor = conn.cursor()
 
-    # only logwatch messages / mails
-    if "Logwatch for " in log_msg:
+    print("Database connection established")
 
-        counter += 1
-        date_msg = re.findall(date_pattern, log_msg)[0]
+    # format inserta
+    insert_sql = "insert into logwatch_entries (server, log_date, service, ip, comment, logwatch_file) values "
+    first_insert = True
 
-        with open("{}".format(log_msg), "r") as file:
-            lines = file.read()
+    # Każdy mail z logawatch jest parsowany po kolei
+    for log_tuple in logs:
 
-            # re-setting flags for a new file / message
-            httpd_flag = False
-            sshd_flag = False
+        log_srv = log_tuple[0]
+        log_msg = log_tuple[1]
 
-            httpd_ips = []
-            sshd_ips = []
+        # only logwatch messages / mails
+        if "Logwatch for " in log_msg:
 
-            # parse log messages line by line
-            for line in lines.split("\n"):
-                if line not in ("", " ", "\n"):
+            counter += 1
+            date_msg = re.findall(date_pattern, log_msg)[0]
 
-                    # is it httpd line?
-                    if not httpd_flag and httpd_begin in line:
-                        httpd_flag = True
-                    if httpd_flag and httpd_end in line:
-                        httpd_flag = False
+            with open("{}".format(log_msg), "r") as file:
+                lines = file.read()
 
-                    # is it sshd line?
-                    if not sshd_flag and sshd_begin in line:
-                        sshd_flag = True
-                    if sshd_flag and sshd_end in line:
-                        sshd_flag = False
+                # re-setting flags for a new file / message
+                httpd_flag = False
+                sshd_flag = False
 
-                    if httpd_flag:
-                        httpd_ips += re.findall(ip_pattern, line)
+                httpd_ips = []
+                sshd_ips = []
 
-                    if sshd_flag:
-                        sshd_ips += re.findall(ip_pattern, line)
+                # parse log messages line by line
+                for line in lines.split("\n"):
+                    if line not in ("", " ", "\n"):
 
-            print("\n\nfile {}: {} ({}): {}\n\thttpd probing ips: {}\n\tssh succesull logins: {}"
-                  .format(counter, log_srv, date_msg, log_msg, ", ".join(httpd_ips), ", ".join(sshd_ips)))
-                    
+                        # is it httpd line?
+                        if not httpd_flag and httpd_begin in line:
+                            httpd_flag = True
+                        if httpd_flag and httpd_end in line:
+                            httpd_flag = False
+
+                        # is it sshd line?
+                        if not sshd_flag and sshd_begin in line:
+                            sshd_flag = True
+                        if sshd_flag and sshd_end in line:
+                            sshd_flag = False
+
+                        if httpd_flag:
+                            httpd_ips = re.findall(ip_pattern, line)
+                            if len(httpd_ips) > 0:
+                                for ip in httpd_ips:
+                                    if not first_insert:
+                                        insert_sql += ", "
+                                    if first_insert:
+                                        first_insert = False
+                                    insert_sql += "(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
+                                        .format(log_srv, date_msg, ip, log_msg)
+
+                        if sshd_flag:
+                            sshd_ips = re.findall(ip_pattern, line)
+                            if len(sshd_ips) > 0:
+                                for ip in sshd_ips:
+                                    if not first_insert:
+                                        insert_sql += ", "
+                                    if first_insert:
+                                        first_insert = False
+
+                                    insert_sql += "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
+                                        .format(log_srv, date_msg, ip, log_msg)
+
+    cursor.execute(insert_sql)
+    conn.commit()
+    # print(insert_sql)
+
+    cursor.close()
+    conn.close()
+
+
+except psycopg2.Error as err:
+    print("Not able to connect to database " + str(err))
+
 
