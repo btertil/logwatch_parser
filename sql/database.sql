@@ -25,9 +25,31 @@ select count(*) ile_distinct from (select distinct server, log_date, service, ip
 select * from public.logwatch_entries where server = 'backup' and log_date = '2013-12-10';
 
 
+-- views
 
+-- all logs for backup and hrankiety
+create view public.hrankiety_ips as select * from public.logwatch_entries where server = 'hrankiety';
+create view public.backup_ips as select * from public.logwatch_entries where server = 'backup';
+
+-- httpd view
+create view public.httpd_ips as select * from public.logwatch_entries where service = 'httpd';
+select ip, count(*) hrankiety_httpd_actions from public.hrankiety_ips where service = 'httpd' group by ip order by count(*) desc;
+select ip, count(*) backup_httpd_actions from public.backup_ips where service = 'httpd' group by ip order by count(*) desc;
+
+
+-- sshd view
+create view public.sshd_ips as select * from public.logwatch_entries where service = 'sshd';
+select ip, count(*) hrankiety_sshd_actions from public.hrankiety_ips where service = 'sshd' group by ip order by count(*) desc;
+select ip, count(*) backup_sshd_actions from public.backup_ips where service = 'sshd' group by ip order by count(*) desc;
+
+
+-- TODO: min_date, max_date (backup_sshd_min_date, ....)
+
+-- quality check
+-- --------------
 
 -- find duplicates
+create view public.hrankiety_httpd_ips as select ip,
 select
     id,
     server,
@@ -54,3 +76,4 @@ select ip, count(*) ile from public.logwatch_entries where service = 'httpd' gro
 
 -- jakie ip się logowały przez ssh
 select ip, count(*) ile from public.logwatch_entries where service = 'sshd' group by ip order by count(*) desc;
+
