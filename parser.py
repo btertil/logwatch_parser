@@ -47,6 +47,8 @@ try:
         if "Logwatch for " in log_msg:
 
             counter += 1
+
+            # zawsze jedna data tylko w nazwie wiadomości z logwatch
             date_msg = re.findall(date_pattern, log_msg)[0]
 
             with open("{}".format(log_msg), "r") as file:
@@ -98,9 +100,10 @@ try:
                                     insert_sql += "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
                                         .format(log_srv, date_msg, ip, log_msg)
 
-    cursor.execute(insert_sql)
-    conn.commit()
-    # print(insert_sql)
+    # DO NOT RUN !!! this APPEND DATA TO DATABASE
+    # cursor.execute(insert_sql)
+    # conn.commit()
+    print(insert_sql)
 
     cursor.close()
     conn.close()
