@@ -1,2 +1,3 @@
-.ptp-sync/
+.ptp-sync/*
 .pydevproject
+sql/.ptp-sync/*
