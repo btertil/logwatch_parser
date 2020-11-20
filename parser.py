@@ -35,6 +35,7 @@ try:
 
     # format inserta
     insert_sql = "insert into logwatch_entries (server, log_date, service, ip, comment, logwatch_file) values "
+    insert_sql_all = []
     first_insert = True
 
     # Każdy mail z logawatch jest parsowany po kolei
@@ -61,6 +62,10 @@ try:
                 httpd_ips = []
                 sshd_ips = []
 
+                # placeholder for all insert statement (file level)
+                # it might have duplicates as a single ip can be mentioned several times on different lines
+                # Eg: (like rev dns, httpd probes with proxy + ip, etc), later it will be filtered by set()
+
                 # parse log messages line by line
                 for line in lines.split("\n"):
                     if line not in ("", " ", "\n"):
@@ -82,30 +87,50 @@ try:
                             if len(httpd_ips) > 0:
                                 for ip in set(httpd_ips):
                                     if not first_insert:
-                                        insert_sql += ", "
+                                        # insert_sql += ", "
+                                        pass
                                     if first_insert:
                                         first_insert = False
-                                    insert_sql += "(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
-                                        .format(log_srv, date_msg, ip, log_msg)
+                                    # insert_sql += "(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
+                                    #     .format(log_srv, date_msg, ip, log_msg)
+                                    insert_sql_all += ["(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
+                                        .format(log_srv, date_msg, ip, log_msg)]
 
                         if sshd_flag:
                             sshd_ips = re.findall(ip_pattern, line)
                             if len(sshd_ips) > 0:
                                 for ip in set(sshd_ips):
                                     if not first_insert:
-                                        insert_sql += ", "
+                                        # insert_sql += ", "
+                                        pass
                                     if first_insert:
                                         first_insert = False
 
-                                    insert_sql += "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
-                                        .format(log_srv, date_msg, ip, log_msg)
+                                    # insert_sql += "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
+                                    #     .format(log_srv, date_msg, ip, log_msg)
+                                    insert_sql_all += ["(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')" \
+                                        .format(log_srv, date_msg, ip, log_msg)]
+
+    # inserting only unique enties as some of ips might be duplicated because mentioned several times
+    # within sshd or httpd sections
+    values = ", ".join(set(insert_sql_all))
+    insert_sql += values
+    # print(insert_sql_all)
+    # print(insert_sql)
+
+    # print(insert_sql_all)
+
+    # debug:
+    # print("\nFile level debug:\n")
+    # print("insert_sql_all:\n" + ", ".join(insert_sql_all))
+    # print("set(insert_sql_all):\n" + ", ".join(set(insert_sql_all)))
 
     # DO NOT RUN !!! this APPEND DATA TO DATABASE
     # cursor.execute(insert_sql)
     # conn.commit()
 
     # debug:
-    print(insert_sql)
+    # print("\n\nFinal insert_sql:\n" + insert_sql)
 
     cursor.close()
     conn.close()
