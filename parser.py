@@ -36,7 +36,6 @@ try:
     # format inserta
     insert_sql = "insert into logwatch_entries (server, log_date, service, ip, comment, logwatch_file) values "
     insert_sql_all = []
-    first_insert = True
 
     # Każdy mail z logawatch jest parsowany po kolei
     for log_tuple in logs:
@@ -86,13 +85,6 @@ try:
                             httpd_ips = re.findall(ip_pattern, line)
                             if len(httpd_ips) > 0:
                                 for ip in set(httpd_ips):
-                                    if not first_insert:
-                                        # insert_sql += ", "
-                                        pass
-                                    if first_insert:
-                                        first_insert = False
-                                    # insert_sql += "(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
-                                    #     .format(log_srv, date_msg, ip, log_msg)
                                     insert_sql_all += ["(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
                                         .format(log_srv, date_msg, ip, log_msg)]
 
@@ -100,14 +92,6 @@ try:
                             sshd_ips = re.findall(ip_pattern, line)
                             if len(sshd_ips) > 0:
                                 for ip in set(sshd_ips):
-                                    if not first_insert:
-                                        # insert_sql += ", "
-                                        pass
-                                    if first_insert:
-                                        first_insert = False
-
-                                    # insert_sql += "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
-                                    #     .format(log_srv, date_msg, ip, log_msg)
                                     insert_sql_all += ["(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')" \
                                         .format(log_srv, date_msg, ip, log_msg)]
 
@@ -115,15 +99,6 @@ try:
     # within sshd or httpd sections
     values = ", ".join(set(insert_sql_all))
     insert_sql += values
-    # print(insert_sql_all)
-    # print(insert_sql)
-
-    # print(insert_sql_all)
-
-    # debug:
-    # print("\nFile level debug:\n")
-    # print("insert_sql_all:\n" + ", ".join(insert_sql_all))
-    # print("set(insert_sql_all):\n" + ", ".join(set(insert_sql_all)))
 
     # DO NOT RUN !!! this APPEND DATA TO DATABASE
     # cursor.execute(insert_sql)
