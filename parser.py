@@ -113,13 +113,3 @@ try:
 
 except psycopg2.Error as err:
     print("Not able to connect to database " + str(err))
-
-# TODO: parser musi ignorować numery ip w httpd logu, które nie są probami, jak np:
-#  ...
-#  http://188.116.4.178:80/MyAdmin/: 2 Time(s)
-#  ...
-
-# TODO: parser musi ignorować numery ip w sshd logu, które są duplikatami z rev dns, np:
-#  ...
-#  178.181.227.147 (178.181.227.147.nat.umts.dynamic.t-mobile.pl): 1 time <- tu set pomoże bo to na poziomie 1 linii
-#  ...
