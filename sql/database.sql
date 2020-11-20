@@ -1,4 +1,4 @@
--- drop table if exists public.logwatch_entries;
+-- drop table if exists public.logwatch_entries cascade;
 
 
 -- create table if not exists public.logwatch_entries (
@@ -18,25 +18,31 @@
 
 
 -- find duplicates
-select
-    server,
-    log_date,
-    service,
-    ip,
-    logwatch_file,
-    count(*) ile
-from public.logwatch_entries
-group by
-    server,
-    log_date,
-    service,
-    ip,
-    logwatch_file
-having count(*) > 1
-limit 10;
+
+drop view if exists public.v_duplicates;
+create or replace view public.v_duplicates as
+    select
+        server,
+        log_date,
+        service,
+        ip,
+        logwatch_file,
+        count(*) ile
+    from public.logwatch_entries
+    group by
+        server,
+        log_date,
+        service,
+        ip,
+        logwatch_file
+    having count(*) > 1;
+
+select * from public.v_duplicates;
+select count(*) duplicates from public.v_duplicates;
 
 -- przykłądowe rekordy
 select * from public.logwatch_entries limit 30;
+select * from public.logwatch_entries order by 1 desc limit 30;
 
 -- count and count distinct
 select count(*) ile_all  from public.logwatch_entries;
