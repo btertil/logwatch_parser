@@ -139,15 +139,3 @@ create or replace view public.v_backup_sshd_ips as
 select * from public.v_backup_sshd_ips;
 
 
-
-
--- analiza
-
--- jakie ip testowały httpd
-select ip, count(*) ile, min(log_date) min_date, max(log_date) max_date from public.logwatch_entries where service = 'httpd' group by ip order by count(*) desc;
-
--- jakie ip się logowały przez ssh
-select ip, count(*) ile, min(log_date) min_date, max(log_date) max_date from public.logwatch_entries where service = 'sshd' group by ip order by count(*) desc;
-
-
--- TODO: oddzielnie analiza.sql a oddzielnie database.sql
