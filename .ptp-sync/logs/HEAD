@@ -77,3 +77,6 @@ d0edd23f972a20a83c9fa1b785a0b80a78396510 3cf1dc62bbbc52895e04f789b3e7243f64da7a4
 e5262edff16b10220f9e787f38eab0faa755a492 e01422d22f754d7fe16ee57c7d67c49e4e73bb72 PTP <ptp-dev@eclipse.org> 1605727973 +0100	merge ptp-push: Fast-forward
 e01422d22f754d7fe16ee57c7d67c49e4e73bb72 b12e581ef0292db7ed92390f1f0fe4f6facd2ee6 PTP <ptp-dev@eclipse.org> 1605733411 +0100	merge ptp-push: Fast-forward
 b12e581ef0292db7ed92390f1f0fe4f6facd2ee6 8578d5ed559e2c037b85cc5ee08a7c18ad7ae417 PTP <ptp-dev@eclipse.org> 1605733592 +0100	merge ptp-push: Fast-forward
+8578d5ed559e2c037b85cc5ee08a7c18ad7ae417 233df94ff8788991819cfda286e25a8779b91bdc PTP <ptp-dev@eclipse.org> 1605904759 +0100	commit: Eclipse Automatic Commit
+233df94ff8788991819cfda286e25a8779b91bdc f1fc7bc665a63c5435d408f669c572f7744b72a0 PTP <ptp-dev@eclipse.org> 1605904759 +0100	commit: Eclipse Automatic Commit
+f1fc7bc665a63c5435d408f669c572f7744b72a0 60d8072a490db8dcabc2b355a91835e09ed098a2 PTP <ptp-dev@eclipse.org> 1605904759 +0100	commit: Eclipse Automatic Commit
