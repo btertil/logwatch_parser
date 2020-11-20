@@ -80,7 +80,7 @@ try:
                         if httpd_flag:
                             httpd_ips = re.findall(ip_pattern, line)
                             if len(httpd_ips) > 0:
-                                for ip in httpd_ips:
+                                for ip in set(httpd_ips):
                                     if not first_insert:
                                         insert_sql += ", "
                                     if first_insert:
@@ -91,7 +91,7 @@ try:
                         if sshd_flag:
                             sshd_ips = re.findall(ip_pattern, line)
                             if len(sshd_ips) > 0:
-                                for ip in sshd_ips:
+                                for ip in set(sshd_ips):
                                     if not first_insert:
                                         insert_sql += ", "
                                     if first_insert:
@@ -103,6 +103,8 @@ try:
     # DO NOT RUN !!! this APPEND DATA TO DATABASE
     # cursor.execute(insert_sql)
     # conn.commit()
+
+    # debug:
     print(insert_sql)
 
     cursor.close()
@@ -112,4 +114,12 @@ try:
 except psycopg2.Error as err:
     print("Not able to connect to database " + str(err))
 
+# TODO: parser musi ignorować numery ip w httpd logu, które nie są probami, jak np:
+#  ...
+#  http://188.116.4.178:80/MyAdmin/: 2 Time(s)
+#  ...
 
+# TODO: parser musi ignorować numery ip w sshd logu, które są duplikatami z rev dns, np:
+#  ...
+#  178.181.227.147 (178.181.227.147.nat.umts.dynamic.t-mobile.pl): 1 time <- tu set pomoże bo to na poziomie 1 linii
+#  ...
