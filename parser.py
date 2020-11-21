@@ -85,15 +85,17 @@ try:
                             httpd_ips = re.findall(ip_pattern, line)
                             if len(httpd_ips) > 0:
                                 for ip in set(httpd_ips):
-                                    insert_sql_all += ["(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
-                                        .format(log_srv, date_msg, ip, log_msg)]
+                                    line_add = "(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
+                                        .format(log_srv, date_msg, ip, log_msg)
+                                    insert_sql_all += [line_add]
 
                         if sshd_flag:
                             sshd_ips = re.findall(ip_pattern, line)
                             if len(sshd_ips) > 0:
                                 for ip in set(sshd_ips):
-                                    insert_sql_all += ["(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')" \
-                                        .format(log_srv, date_msg, ip, log_msg)]
+                                    line_add = "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
+                                        .format(log_srv, date_msg, ip, log_msg)
+                                    insert_sql_all += [line_add]
 
     # inserting only unique enties as some of ips might be duplicated because mentioned several times
     # within sshd or httpd sections
