@@ -25,4 +25,7 @@ select * from public.v_backup_sshd_ips where ip not in (select ip from public.v_
 select * from public.v_agg_only_sshd_ips limit 10;
 
 -- only httpd
-select * from public.v_agg_only_httpd_ips limit 10;
+select * from public.v_agg_only_httpd_ips order by 1 desc;
+
+-- quality check
+select * from public.logwatch_entries where ip like  '\_%';

@@ -41,8 +41,9 @@ select * from public.v_duplicates;
 select count(*) duplicates from public.v_duplicates;
 
 -- przykłądowe rekordy
-select * from public.logwatch_entries limit 30;
-select * from public.logwatch_entries order by 1 desc limit 30;
+select * from public.logwatch_entries order by ip limit 30;
+select * from public.logwatch_entries order by ip desc limit 30;
+
 
 -- count and count distinct
 select count(*) ile_all  from public.logwatch_entries;

@@ -12,7 +12,7 @@ sshd_begin = " --------------------- SSHD Begin ------------------------"
 sshd_end = " ---------------------- SSHD End -------------------------"
 
 # regexp używane do znajdowania ip i dat
-ip_pattern = r"\w\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
+ip_pattern = r" \d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
 date_pattern = r"\d{4}\-\d{2}\-\d{2}"
 
 # logi serwera prod i backup
