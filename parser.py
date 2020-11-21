@@ -107,7 +107,7 @@ try:
 
 
 except psycopg2.Error as err:
-    print("Not able to connect to database " + str(err))
+    print("Database problem:\n" + str(err.pgerror))
 
 
 # TODO: poprawić odpowiednie psycopg2 errors: połąć czenie z bazą i błąd SQL
