@@ -1,6 +1,7 @@
 import re
 import os
 import psycopg2
+from dbsettings import db_settings as dbs
 
 
 # definicja specjalnych linii
@@ -21,16 +22,8 @@ logs += [("hrankiety", "./eml/hrankiety/" + i) for i in os.listdir("eml/hrankiet
 counter = 0
 
 try:
-    conn = psycopg2.connect(
-        user="bartek",
-        password="Aga",
-        host="192.168.0.201",
-        port="5432",
-        database="logwatch_parser"
-    )
-
+    conn = psycopg2.connect(**dbs)
     cursor = conn.cursor()
-
     print("Database connection established")
 
     # format inserta
@@ -115,3 +108,6 @@ try:
 
 except psycopg2.Error as err:
     print("Not able to connect to database " + str(err))
+
+
+# TODO: poprawić odpowiednie psycopg2 errors: połąć czenie z bazą i błąd SQL
