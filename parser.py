@@ -12,7 +12,7 @@ sshd_begin = " --------------------- SSHD Begin ------------------------"
 sshd_end = " ---------------------- SSHD End -------------------------"
 
 # regexp używane do znajdowania ip i dat
-ip_pattern = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
+ip_pattern = r"\w\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
 date_pattern = r"\d{4}\-\d{2}\-\d{2}"
 
 # logi serwera prod i backup
@@ -79,7 +79,7 @@ try:
                             if len(httpd_ips) > 0:
                                 for ip in set(httpd_ips):
                                     line_add = "(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
-                                        .format(log_srv, date_msg, ip, log_msg)
+                                        .format(log_srv, date_msg, ip.lstrip(), log_msg)
                                     insert_sql_all += [line_add]
 
                         if sshd_flag:
@@ -87,12 +87,13 @@ try:
                             if len(sshd_ips) > 0:
                                 for ip in set(sshd_ips):
                                     line_add = "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
-                                        .format(log_srv, date_msg, ip, log_msg)
+                                        .format(log_srv, date_msg, ip.lstrip(), log_msg)
                                     insert_sql_all += [line_add]
 
     # inserting only unique enties as some of ips might be duplicated because mentioned several times
     # within sshd or httpd sections
-    values = ", ".join(set(insert_sql_all))
+    unique_inserts = set(insert_sql_all)
+    values = ", ".join(unique_inserts)
     insert_sql += values
 
     # DO NOT RUN !!! this APPEND DATA TO DATABASE
@@ -101,6 +102,7 @@ try:
 
     # debug:
     # print("\n\nFinal insert_sql:\n" + insert_sql)
+    print("Unique inserts: " + str(len(unique_inserts)))
 
     cursor.close()
     conn.close()
