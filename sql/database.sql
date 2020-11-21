@@ -139,3 +139,51 @@ create or replace view public.v_backup_sshd_ips as
 select * from public.v_backup_sshd_ips;
 
 
+-- only httpd but not sshd
+create or replace view public.v_only_httpd_ips as
+    select *
+    from public.v_httpd_ips
+    where ip not in (select ip from public.v_sshd_ips)
+;
+
+select * from public.v_only_httpd_ips limit 10;
+
+
+create or replace view public.v_agg_only_httpd_ips as
+    select
+        ip,
+        count(*) httpd_probes,
+        min(log_date) httpd_probes_min_date,
+        max(log_date) httpd_probes_max_date
+    from public.v_httpd_ips
+    where ip not in (select ip from public.v_sshd_ips)
+    group by ip
+    order by count(*) desc
+;
+
+select * from public.v_agg_only_httpd_ips limit 10;
+
+
+-- only sshd but not httpd
+create or replace view public.v_only_sshd_ips as
+    select *
+    from public.v_sshd_ips
+    where ip not in (select ip from public.v_httpd_ips)
+;
+
+select * from public.v_only_sshd_ips limit 10;
+
+
+create or replace view public.v_agg_only_sshd_ips as
+    select
+        ip,
+        count(*) sshd_logins,
+        min(log_date) sshd_logins_min_date,
+        max(log_date) sshd_logins_max_date
+    from public.v_sshd_ips
+    where ip not in (select ip from public.v_httpd_ips)
+    group by ip
+    order by count(*) desc
+;
+
+select * from public.v_agg_only_sshd_ips limit 10;
