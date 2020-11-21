@@ -109,7 +109,4 @@ try:
 
 
 except psycopg2.Error as err:
-    print("Database problem:\n" + str(err.pgerror))
-
-
-# TODO: poprawić odpowiednie psycopg2 errors: połąć czenie z bazą i błąd SQL
+    print("Database problem:\n" + str(err))
