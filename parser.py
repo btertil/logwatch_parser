@@ -108,12 +108,13 @@ if __name__ == "__main__":
             try:
                 cursor.execute(insert_sql)
                 conn.commit()
+                print("[+] OK, all rows successfully inserted!")
+
             except psycopg2.Error as err:
                 print("[-] Insert failed:\n" + str(err))
 
         cursor.close()
         conn.close()
-        print("[+] OK, all rows successfully inserted!")
 
     except psycopg2.Error as err:
         print("[-] Database problem:\n" + str(err))
