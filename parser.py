@@ -21,92 +21,99 @@ logs += [("hrankiety", "./eml/hrankiety/" + i) for i in os.listdir("eml/hrankiet
 
 counter = 0
 
-try:
-    conn = psycopg2.connect(**dbs)
-    cursor = conn.cursor()
-    print("Database connection established")
+if __name__ == "__main__":
 
-    # format inserta
-    insert_sql = "insert into logwatch_entries (server, log_date, service, ip, comment, logwatch_file) values "
-    insert_sql_all = []
+    insert = False
 
-    # Każdy mail z logawatch jest parsowany po kolei
-    for log_tuple in logs:
+    try:
+        conn = psycopg2.connect(**dbs)
+        cursor = conn.cursor()
+        print("[+] Database connection established")
 
-        log_srv = log_tuple[0]
-        log_msg = log_tuple[1]
+        # format inserta
+        insert_sql = "insert into logwatch_entries (server, log_date, service, ip, comment, logwatch_file) values "
+        insert_sql_all = []
 
-        # only logwatch messages / mails
-        if "Logwatch for " in log_msg:
+        # Każdy mail z logawatch jest parsowany po kolei
+        for log_tuple in logs:
 
-            counter += 1
+            log_srv = log_tuple[0]
+            log_msg = log_tuple[1]
 
-            # zawsze jedna data tylko w nazwie wiadomości z logwatch
-            date_msg = re.findall(date_pattern, log_msg)[0]
+            # only logwatch messages / mails
+            if "Logwatch for " in log_msg:
 
-            with open("{}".format(log_msg), "r") as file:
-                lines = file.read()
+                counter += 1
 
-                # re-setting flags for a new file / message
-                httpd_flag = False
-                sshd_flag = False
+                # zawsze jedna data tylko w nazwie wiadomości z logwatch
+                date_msg = re.findall(date_pattern, log_msg)[0]
 
-                httpd_ips = []
-                sshd_ips = []
+                with open("{}".format(log_msg), "r") as file:
+                    lines = file.read()
 
-                # placeholder for all insert statement (file level)
-                # it might have duplicates as a single ip can be mentioned several times on different lines
-                # Eg: (like rev dns, httpd probes with proxy + ip, etc), later it will be filtered by set()
+                    # re-setting flags for a new file / message
+                    httpd_flag = False
+                    sshd_flag = False
 
-                # parse log messages line by line
-                for line in lines.split("\n"):
-                    if line not in ("", " ", "\n"):
+                    httpd_ips = []
+                    sshd_ips = []
 
-                        # is it httpd line?
-                        if not httpd_flag and httpd_begin in line:
-                            httpd_flag = True
-                        if httpd_flag and httpd_end in line:
-                            httpd_flag = False
+                    # placeholder for all insert statement (file level)
+                    # it might have duplicates as a single ip can be mentioned several times on different lines
+                    # Eg: (like rev dns, httpd probes with proxy + ip, etc), later it will be filtered by set()
 
-                        # is it sshd line?
-                        if not sshd_flag and sshd_begin in line:
-                            sshd_flag = True
-                        if sshd_flag and sshd_end in line:
-                            sshd_flag = False
+                    # parse log messages line by line
+                    for line in lines.split("\n"):
+                        if line not in ("", " ", "\n"):
 
-                        if httpd_flag:
-                            httpd_ips = re.findall(ip_pattern, line)
-                            if len(httpd_ips) > 0:
-                                for ip in set(httpd_ips):
-                                    line_add = "(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
-                                        .format(log_srv, date_msg, ip.lstrip(), log_msg)
-                                    insert_sql_all += [line_add]
+                            # is it httpd line?
+                            if not httpd_flag and httpd_begin in line:
+                                httpd_flag = True
+                            if httpd_flag and httpd_end in line:
+                                httpd_flag = False
 
-                        if sshd_flag:
-                            sshd_ips = re.findall(ip_pattern, line)
-                            if len(sshd_ips) > 0:
-                                for ip in set(sshd_ips):
-                                    line_add = "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
-                                        .format(log_srv, date_msg, ip.lstrip(), log_msg)
-                                    insert_sql_all += [line_add]
+                            # is it sshd line?
+                            if not sshd_flag and sshd_begin in line:
+                                sshd_flag = True
+                            if sshd_flag and sshd_end in line:
+                                sshd_flag = False
 
-    # inserting only unique enties as some of ips might be duplicated because mentioned several times
-    # within sshd or httpd sections
-    unique_inserts = set(insert_sql_all)
-    values = ", ".join(unique_inserts)
-    insert_sql += values
+                            if httpd_flag:
+                                httpd_ips = re.findall(ip_pattern, line)
+                                if len(httpd_ips) > 0:
+                                    for ip in set(httpd_ips):
+                                        line_add = "(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
+                                            .format(log_srv, date_msg, ip.lstrip(), log_msg)
+                                        insert_sql_all += [line_add]
 
-    # DO NOT RUN !!! this APPEND DATA TO DATABASE
-    # cursor.execute(insert_sql)
-    # conn.commit()
+                            if sshd_flag:
+                                sshd_ips = re.findall(ip_pattern, line)
+                                if len(sshd_ips) > 0:
+                                    for ip in set(sshd_ips):
+                                        line_add = "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
+                                            .format(log_srv, date_msg, ip.lstrip(), log_msg)
+                                        insert_sql_all += [line_add]
 
-    # debug:
-    # print("\n\nFinal insert_sql:\n" + insert_sql)
-    print("Unique inserts: " + str(len(unique_inserts)))
+        # inserting only unique enties as some of ips might be duplicated because mentioned several times
+        # within sshd or httpd sections
+        unique_inserts = set(insert_sql_all)
+        values = ", ".join(unique_inserts)
+        insert_sql += values
 
-    cursor.close()
-    conn.close()
+        print("[+] Logwatch messages/logs parsed: " + str(counter))
+        print("[+] Unique inserts: " + str(len(unique_inserts)))
 
+        # DO NOT RUN !!! this APPEND DATA TO DATABASE
+        if insert:
+            try:
+                cursor.execute(insert_sql)
+                conn.commit()
+            except psycopg2.Error as err:
+                print("[-] Insert failed:\n" + str(err))
 
-except psycopg2.Error as err:
-    print("Database problem:\n" + str(err))
+        cursor.close()
+        conn.close()
+        print("[+] OK, all rows successfully inserted!")
+
+    except psycopg2.Error as err:
+        print("[-] Database problem:\n" + str(err))

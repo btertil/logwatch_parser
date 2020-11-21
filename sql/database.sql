@@ -19,7 +19,6 @@
 
 -- find duplicates
 
-drop view if exists public.v_duplicates;
 create or replace view public.v_duplicates as
     select
         server,
@@ -144,8 +143,7 @@ select * from public.v_backup_sshd_ips;
 create or replace view public.v_only_httpd_ips as
     select *
     from public.v_httpd_ips
-    where ip not in (select ip from public.v_sshd_ips)
-;
+    where ip not in (select ip from public.v_sshd_ips);
 
 select * from public.v_only_httpd_ips limit 10;
 
