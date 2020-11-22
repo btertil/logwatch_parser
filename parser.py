@@ -21,6 +21,19 @@ logs += [("hrankiety", "./eml/hrankiety/" + i) for i in os.listdir("eml/hrankiet
 
 counter = 0
 
+
+def isipv4(addr):
+    try:
+        octets = [int(i) for i in addr.split(".")]
+        o0 = (octets[0] >= 0) & (octets[0] <= 255)
+        o1 = (octets[1] >= 0) & (octets[1] <= 255)
+        o2 = (octets[2] >= 0) & (octets[2] <= 255)
+        o3 = (octets[3] >= 0) & (octets[3] <= 255)
+        return o0 & o1 & o2 & o3
+    except ValueError:
+        return False
+
+
 if __name__ == "__main__":
 
     insert = False
@@ -82,17 +95,19 @@ if __name__ == "__main__":
                                 httpd_ips = re.findall(ip_pattern, line)
                                 if len(httpd_ips) > 0:
                                     for ip in set(httpd_ips):
-                                        line_add = "(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
-                                            .format(log_srv, date_msg, ip.lstrip(), log_msg)
-                                        insert_sql_all += [line_add]
+                                        if isipv4(ip):
+                                            line_add = "(\'{}\', \'{}\', \'httpd\', \'{}\', \'httpd probing\', \'{}\')"\
+                                                .format(log_srv, date_msg, ip.lstrip(), log_msg)
+                                            insert_sql_all += [line_add]
 
                             if sshd_flag:
                                 sshd_ips = re.findall(ip_pattern, line)
                                 if len(sshd_ips) > 0:
                                     for ip in set(sshd_ips):
-                                        line_add = "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
-                                            .format(log_srv, date_msg, ip.lstrip(), log_msg)
-                                        insert_sql_all += [line_add]
+                                        if isipv4(ip):
+                                            line_add = "(\'{}\', \'{}\', \'sshd\', \'{}\', \'ssh logged-in\', \'{}\')"\
+                                                .format(log_srv, date_msg, ip.lstrip(), log_msg)
+                                            insert_sql_all += [line_add]
 
         # inserting only unique enties as some of ips might be duplicated because mentioned several times
         # within sshd or httpd sections
