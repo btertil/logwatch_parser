@@ -132,7 +132,7 @@ if __name__ == "__main__":
         insert_sql += values
 
         print("[+] Logwatch messages/logs parsed: " + str(counter))
-        print("[+] Unique inserts: " + str(len(unique_inserts)))
+        print("[+] Unique inserts (ip, service, server and date entries): " + str(len(unique_inserts)))
 
         # DO NOT RUN !!! this APPEND DATA TO DATABASE
         if replace_flag:
