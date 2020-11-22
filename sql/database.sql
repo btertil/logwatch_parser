@@ -8,7 +8,8 @@
 --     service varchar(32),
 --     ip varchar(15),
 --     comment varchar(250),
---     logwatch_file varchar(250)
+--     logwatch_file varchar(250),
+--     entered timestamp default current_timestamp
 -- );
 
 

@@ -1,6 +1,8 @@
 import re
 import os
+import sys
 import psycopg2
+from dbsqls import drop_logwatch_entries_sql, create_logwatch_entries_sql, create_views_list
 from dbsettings import db_settings as dbs
 
 
@@ -19,10 +21,13 @@ date_pattern = r"\d{4}\-\d{2}\-\d{2}"
 logs = [("backup", "./eml/backup/" + i) for i in os.listdir("eml/backup/")]
 logs += [("hrankiety", "./eml/hrankiety/" + i) for i in os.listdir("eml/hrankiety/")]
 
+# ole plików sparsowano
 counter = 0
 
 
+# funkcja do spr czy zmatchowano z patternem ipv4
 def isipv4(addr):
+
     try:
         octets = [int(i) for i in addr.split(".")]
         o0 = (octets[0] >= 0) & (octets[0] <= 255)
@@ -30,13 +35,24 @@ def isipv4(addr):
         o2 = (octets[2] >= 0) & (octets[2] <= 255)
         o3 = (octets[3] >= 0) & (octets[3] <= 255)
         return o0 & o1 & o2 & o3
+
     except ValueError:
         return False
 
 
 if __name__ == "__main__":
 
-    insert = False
+    replace_flag = False
+
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "-r" or sys.argv[1] == "--replace":
+            print("[!] NOTE! -r or --replace parameter provided, all logwatch data will be replaced in the database")
+            replace_flag = True
+        else:
+            print("[-] Unknown parameter: " + sys.argv[1])
+            print("Run parser without additional arguments if you want to parse logs only")
+            print("Use: \"-r\" or \"--replace\" if you want to replace all existing data in logwatch_parser database")
+            exit(1)
 
     try:
         conn = psycopg2.connect(**dbs)
@@ -119,11 +135,26 @@ if __name__ == "__main__":
         print("[+] Unique inserts: " + str(len(unique_inserts)))
 
         # DO NOT RUN !!! this APPEND DATA TO DATABASE
-        if insert:
+        if replace_flag:
             try:
+                cursor.execute(drop_logwatch_entries_sql)
+                conn.commit()
+                print("[+] The existing logwach table has been successfully dropped", flush=True)
+                cursor.execute(create_logwatch_entries_sql)
+                conn.commit()
+                print("[+] The new logwach table has been successfully created", flush=True)
+
                 cursor.execute(insert_sql)
                 conn.commit()
-                print("[+] OK, all rows successfully inserted!")
+                print("[+] OK, all rows successfully inserted!", flush=True)
+
+                v_cnt = 0
+                for v in create_views_list:
+                    cursor.execute(v)
+                    conn.commit()
+                    v_cnt += 1
+
+                print("[+] Analytical views created: " + str(v_cnt), flush=True)
 
             except psycopg2.Error as err:
                 print("[-] Insert failed:\n" + str(err))
