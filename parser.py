@@ -61,6 +61,10 @@ if __name__ == "__main__":
 
         # format inserta
         insert_sql = "insert into logwatch_entries (server, log_date, service, ip, comment, logwatch_file) values "
+
+        # placeholder for all insert statement (file level)
+        # it might have duplicates as a single ip can be mentioned several times on different lines
+        # Eg: (like rev dns, httpd probes with proxy + ip, etc), later it will be filtered by set()
         insert_sql_all = []
 
         # Każdy mail z logawatch jest parsowany po kolei
@@ -86,10 +90,6 @@ if __name__ == "__main__":
 
                     httpd_ips = []
                     sshd_ips = []
-
-                    # placeholder for all insert statement (file level)
-                    # it might have duplicates as a single ip can be mentioned several times on different lines
-                    # Eg: (like rev dns, httpd probes with proxy + ip, etc), later it will be filtered by set()
 
                     # parse log messages line by line
                     for line in lines.split("\n"):
