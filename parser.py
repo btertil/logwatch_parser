@@ -148,6 +148,9 @@ if __name__ == "__main__":
                 conn.commit()
                 print("[+] OK, all rows successfully inserted!", flush=True)
 
+                cursor.execute("ANALYZE public.logwatch_entries")
+                print("[+] Statistics calculated", flush=True)
+
                 v_cnt = 0
                 for v in create_views_list:
                     cursor.execute(v)
@@ -155,6 +158,7 @@ if __name__ == "__main__":
                     v_cnt += 1
 
                 print("[+] Analytical views created: " + str(v_cnt), flush=True)
+                print("[+] Done!", flush=True)
 
             except psycopg2.Error as err:
                 print("[-] Insert failed:\n" + str(err))
