@@ -14,6 +14,7 @@ select * from public.v_hrankiety_sshd_ips h, public.v_backup_sshd_ips b where b.
 select * from public.v_hrankiety_httpd_ips h, public.v_backup_httpd_ips b where b.ip = h.ip;
 
 
+
 -- ONLY prod sshd ips
 select * from public.v_hrankiety_sshd_ips where ip not in (select ip from public.v_backup_sshd_ips);
 
@@ -29,3 +30,4 @@ select * from public.v_agg_only_httpd_ips order by 1 desc;
 
 -- quality check
 select * from public.logwatch_entries where ip like  '\_%';
+
