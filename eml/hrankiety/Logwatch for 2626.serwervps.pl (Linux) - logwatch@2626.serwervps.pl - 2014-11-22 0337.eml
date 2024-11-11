@@ -1,0 +1,176 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 2F83E11101C72; Sat, 22 Nov 2014 03:37:20 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id CEA1911101C71
+	for <root@2626.serwervps.pl>; Sat, 22 Nov 2014 05:37:19 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 5A1vHGCYCpip for <root@2626.serwervps.pl>;
+	Sat, 22 Nov 2014 03:37:12 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id EB82311101C72; Sat, 22 Nov 2014 03:37:11 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141122023711.EB82311101C72@2626.serwervps.pl>
+Date: Sat, 22 Nov 2014 03:37:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Nov 22 03:37:07 2014
+        Date Range Processed: yesterday
+                              ( 2014-Nov-21 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (16421-06) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141121021515.3156411101C6A@2626.serwervps.pl>, mail_id: AqkozmIUSZJa, Hits: 3.099, size: 120592, queued_as: DF37B11101C69, 12005 ms
+        1   (20640-05) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:52642 [89.67.22.229] <atertil@hrankiety.pl> -> <r.sienkiewicz@accord-ece.com>, Queue-ID: 0309211101C75, Message-ID: <546F8C07.5000404@hrankiety.pl>, mail_id: Yibdowvdz7jh, Hits: -9.988, size: 8168, queued_as: 222F311101C77, dkim_new=dkim:hrankiety.pl, 5887 ms
+        1   (20640-03) Passed CLEAN {RelayedInternal}, LOCAL [217.74.65.155]:35898 [91.226.196.12] <malgorzata.kocher@interia.pl> -> <atertil@hrankiety.pl>, Queue-ID: C71D711101C3B, Message-ID: <418B2B7662304D35A9C8E3FD624FC695@Gosiadell>, mail_id: dzdha3tygMp4, Hits: 0.107, size: 11355, queued_as: 0038B11101C72, dkim_sd=biztos:interia.pl, 1080 ms
+        1   (20641-04) Passed CLEAN {RelayedInternal}, LOCAL [212.85.96.52]:49816 [212.85.96.52] <iwent@hot.pl> -> <atertil@hrankiety.pl>, Queue-ID: 9F4D011101C70, Message-ID: <318A1D67-8CE2-40B1-8A83-599CD92320AC@hot.pl>, mail_id: DTyoNUIq0_vx, Hits: 1.276, size: 5671, queued_as: 9DAF511101C71, 1934 ms
+        1   (20641-01) Passed CLEAN {RelayedInternal}, LOCAL [83.167.225.169]:38009 [209.85.160.181] <r.sienkiewicz@accord-ece.com> -> <atertil@hrankiety.pl>, Queue-ID: 1D50A11101C5D, Message-ID: <CABKWhCxa=brr7qn0Oyv_QoE38rt3w26cv_pPZyx7TzDhVLSpmQ@mail.gmail.com>, mail_id: 1ygfSztyaaWh, Hits: -6.304, size: 6321, queued_as: 4937F11101C6D, 1087 ms
+        1   (20640-04) Passed CLEAN {RelayedInternal}, LOCAL [83.220.96.49]:21593 [83.220.96.49] <Bartosz.Tertil@t-mobile.pl> -> <btertil@hrankiety.pl>, Queue-ID: 36D1F11101C6F, Message-ID: <3885C4A101C04644B7D59E882DDF05214A46264D@ex23.resources.local>, mail_id: bninzH9Xpt39, Hits: 1.275, size: 33094, queued_as: C4A3211101C70, 2527 ms
+        1   (16422-06) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141121023018.5AC1011101C6B@2626.serwervps.pl>, mail_id: TC2IhsAbxbQb, Hits: 0.001, size: 2287, queued_as: 85C9311101C6A, 4877 ms
+        1   (20640-02) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:50933 [89.67.22.229] <atertil@hrankiety.pl> -> <r.sienkiewicz@accord-ece.com>, Queue-ID: EA79911101C6D, Message-ID: <546F1162.9040601@hrankiety.pl>, mail_id: 51ZO-G4txp4A, Hits: -9.998, size: 14572, queued_as: D353111101C3B, dkim_new=dkim:hrankiety.pl, 1744 ms
+        1   (20641-05) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:52680 [89.67.22.229] <atertil@hrankiety.pl> -> <joanna_gargala@wsip.pl>, Queue-ID: A54D111101C77, Message-ID: <546F8ED6.3000309@hrankiety.pl>, mail_id: jYhrF4aY333E, Hits: -8.681, size: 241312, queued_as: 3316811101C79, dkim_new=dkim:hrankiety.pl, 1993 ms
+        1   (20641-02) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:50958 [89.67.22.229] <atertil@hrankiety.pl> -> <Mariusz_Szymecki@wsip.pl>, Queue-ID: B410611101C3B, Message-ID: <546F134D.5090408@hrankiety.pl>, mail_id: 2zX30y75YOPB, Hits: -9.998, size: 246266, queued_as: 7A88811101C6E, dkim_new=dkim:hrankiety.pl, 2147 ms
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No decoder for       .doc 
+        1   (20640-01) Passed CLEAN {RelayedInternal}, LOCAL [85.128.74.254]:58297 [79.124.124.155] <Izabela_Traczyk@wsip.pl> -> <atertil@hrankiety.pl>, Queue-ID: 0DF9C11101C37, Message-ID: <001901d00567$190e91e0$4b2bb5a0$@wsip.pl>, mail_id: RVLpC1WcM9Sy, Hits: 1.275, size: 35515, queued_as: 2410211101C5D, 2871 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (20640-06) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:52689 [89.67.22.229] <atertil@hrankiety.pl> -> <damian_augustyn@wsip.pl>, Queue-ID: 6766111101C77, Message-ID: <546F8F50.7090907@hrankiety.pl>, mail_id: v1L1aar0PDBZ, Hits: -8.681, size: 238786, queued_as: D4DCB11101C7A, dkim_new=dkim:hrankiety.pl, 2040 ms
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+        1   (20641-03) Passed CLEAN {RelayedInternal}, LOCAL [83.167.225.169]:44861 [209.85.213.52] <r.sienkiewicz@accord-ece.com> -> <atertil@hrankiety.pl>, Queue-ID: D2D5411101C6E, Message-ID: <CABKWhCw4jb77aanECBKChzmMxy+3JrEUF9LubaWwRs7Ch7crXA@mail.gmail.com>, mail_id: iK9rKKuL_Wgx, Hits: -6.654, size: 13950, queued_as: 46E0211101C6F, 2270 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Nov 21 03:15:15 2014
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.4 Recommended version: 0.98.5
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19655.cdiff [100%]
+    Downloading daily-19656.cdiff [100%]
+    Downloading daily-19657.cdiff [100%]
+    Downloading daily-19658.cdiff [100%]
+    Downloading daily-19659.cdiff [100%]
+    daily.cld updated (version: 19659, sigs: 1267776, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3692047 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+       /w00tw00t.at.ISC.SANS.DFind:): 1 Time(s)
+    404 Not Found
+       /.well-known/autoconfig/mail/config-v1.1.x ... %40hrankiety.pl: 1 Time(s)
+       /3gwyXuke.htm: 1 Time(s)
+       /A8cwMlkb.xhtml: 1 Time(s)
+       /CSHrxacT.pl: 1 Time(s)
+       /FsYCzjLh.asp: 1 Time(s)
+       /P13vQx4m.cgi: 1 Time(s)
+       /YD0XN0N4.jsp: 1 Time(s)
+       /Ynnwxg2W.htmls: 1 Time(s)
+       /ahMmeWKC.aspx: 1 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /hEbYB4fc/: 1 Time(s)
+       /hsEHdrR0.php: 1 Time(s)
+       /iaZPWWNb.foobar: 1 Time(s)
+       /ivSFJHgN.do: 1 Time(s)
+       /kgdTEyVR/: 1 Time(s)
+       /ko/opzdeil.php: 2 Time(s)
+       /ko/tslye.css: 3 Time(s)
+       /mail/config-v1.1.xml?emailaddress=btertil%40hrankiety.pl: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /shsh/shs/sh.php: 1 Time(s)
+       /sq4vHS36.py: 1 Time(s)
+       /uRjOfOYn.gif: 1 Time(s)
+       /wJeFHJ1A.rb: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        4   *Warning: Pre-queue content-filter connection overload 
+ 
+    1.992M  Bytes accepted                         2,088,963
+    1.992M  Bytes delivered                        2,088,963
+ ========   ================================================
+ 
+       28   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       28   Total                                    100.00%
+ ========   ================================================
+ 
+       39   Connections made      
+       39   Disconnections        
+       28   Removed from queue    
+        8   Delivered             
+       18   Sent via SMTP         
+        2   Forwarded             
+ 
+       11   SMTP protocol violations 
+        5   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 4 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  7.4G   43G  15% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

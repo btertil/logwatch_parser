@@ -1,0 +1,120 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 2547235A1E1E; Tue, 27 Dec 2016 04:44:05 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20161227034405.2547235A1E1E@hrankiety.pl>
+Date: Tue, 27 Dec 2016 04:44:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Dec 27 04:44:04 2016
+        Date Range Processed: yesterday
+                              ( 2016-Dec-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Dec 26 03:13:07 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-22772.cdiff [100%]
+    Downloading daily-22773.cdiff [100%]
+    Downloading daily-22774.cdiff [100%]
+    Downloading daily-22775.cdiff [100%]
+    Downloading daily-22776.cdiff [100%]
+    Downloading daily-22777.cdiff [100%]
+    daily.cld updated (version: 22777, sigs: 1181227, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 285, sigs: 57, f-level: 63, builder: bbaker)
+    Database updated (5400074 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /xmlrpc.php: 1 Time(s)
+       http://testp3.pospr.waw.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       12   *Warning: Pre-queue content-filter connection overload 
+       91   SASL authentication failed 
+        7   Miscellaneous warnings 
+ 
+   47.884K  Bytes accepted                            49,033
+   41.830K  Bytes delivered                           42,834
+ ========   ================================================
+ 
+        5   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        5   Total                                    100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       94   Connections made      
+       94   Disconnections        
+        5   Removed from queue    
+        3   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 1 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  47% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

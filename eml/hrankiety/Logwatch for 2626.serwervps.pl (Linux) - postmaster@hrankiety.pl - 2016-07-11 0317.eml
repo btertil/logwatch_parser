@@ -1,0 +1,143 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 2583135A1A62; Mon, 11 Jul 2016 03:17:12 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160711011712.2583135A1A62@hrankiety.pl>
+Date: Mon, 11 Jul 2016 03:17:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Jul 11 03:17:10 2016
+        Date Range Processed: yesterday
+                              ( 2016-Jul-10 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Jul 10 03:09:09 2016
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.1 Recommended version: 0.99.2
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-21869.cdiff [100%]
+    Downloading daily-21870.cdiff [100%]
+    Downloading daily-21871.cdiff [100%]
+    Downloading daily-21872.cdiff [100%]
+    Downloading daily-21873.cdiff [100%]
+    Downloading daily-21874.cdiff [100%]
+    daily.cld updated (version: 21874, sigs: 403359, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 283, sigs: 53, f-level: 63, builder: neo)
+    Database updated (4622202 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    169.229.3.91
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /index.php: 1 Time(s)
+       /phpmyadmin: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Authentication Failures:
+       btertil(500) -> root: 1 Time(s)
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       17   SASL authentication failed 
+        9   Miscellaneous warnings 
+ 
+   35.540K  Bytes accepted                            36,393
+   26.964K  Bytes delivered                           27,611
+ ========   ================================================
+ 
+        7   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        7   Total                                    100.00%
+ ========   ================================================
+ 
+       19   Connections made      
+       19   Disconnections        
+        7   Removed from queue    
+        3   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       188.146.130.251 (188.146.130.251.nat.umts.dynamic.t-mobile.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    fail2ban-0.9.3-1.el6.1.noarch
+    tzdata-2016f-1.el6.noarch
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   14G   37G  28% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

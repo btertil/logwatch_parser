@@ -1,0 +1,460 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 828C911101B12; Mon, 10 Nov 2014 03:18:15 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 5D3B811101B11
+	for <root@2626.serwervps.pl>; Mon, 10 Nov 2014 05:18:15 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 6px_27DIFi8J for <root@2626.serwervps.pl>;
+	Mon, 10 Nov 2014 03:18:11 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id BD30311101B12; Mon, 10 Nov 2014 03:18:11 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141110021811.BD30311101B12@2626.serwervps.pl>
+Date: Mon, 10 Nov 2014 03:18:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Nov 10 03:18:08 2014
+        Date Range Processed: yesterday
+                              ( 2014-Nov-09 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (00931-06) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141109023012.8075911101B11@2626.serwervps.pl>, mail_id: AL5cP6DoKMTp, Hits: 0.001, size: 2287, queued_as: 48072111001C3, 4489 ms
+        1   (00931-06) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (00932-04) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141109021208.D2DC311101B84@2626.serwervps.pl>, mail_id: RqQLI3QyXqQq, Hits: 0, size: 7205, queued_as: D365011101B82, 4766 ms
+        1   (00932-04) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Nov  9 03:12:09 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19599.cdiff [100%]
+    Downloading daily-19600.cdiff [100%]
+    Downloading daily-19601.cdiff [100%]
+    Downloading daily-19602.cdiff [100%]
+    daily.cld updated (version: 19602, sigs: 1254441, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3678712 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /CSNews.cgi: 1 Time(s)
+       /Gozila.cgi: 1 Time(s)
+       /_mt/mt.cgi: 1 Time(s)
+       /admin.cgi: 1 Time(s)
+       /administrator.cgi: 1 Time(s)
+       /agora.cgi: 1 Time(s)
+       /aktivate/cgi-bin/catgy.cgi: 1 Time(s)
+       /analyse.cgi: 1 Time(s)
+       /apiv7/appledaily/article/issue/20120511/a ... 4104/format/xml: 1 Time(s)
+       /apps/web/vs_diag.cgi: 1 Time(s)
+       /axis-cgi/buffer/command.cgi: 1 Time(s)
+       /b2-include/b2edit.showposts.phpHTTP/1.0: 1 Time(s)
+       /bandwidth/index.cgi: 1 Time(s)
+       /bigconf.cgi: 1 Time(s)
+       /cart.cgi: 1 Time(s)
+       /cartcart.cgi: 1 Time(s)
+       /catalog/index.cgi: 1 Time(s)
+       /cgi-bin-sdb/printenvHTTP/1.0: 1 Time(s)
+       /cgi-bin/.cobalt/alert/service.cgi: 1 Time(s)
+       /cgi-bin/.cobalt/message/message.cgi: 1 Time(s)
+       /cgi-bin/.cobalt/siteUserMod/siteUserMod.cgi: 1 Time(s)
+       /cgi-bin/.namazu.cgi: 1 Time(s)
+       /cgi-bin/14all-1.1.cgi: 1 Time(s)
+       /cgi-bin/14all.cgi: 1 Time(s)
+       /cgi-bin/AT-admin.cgi: 1 Time(s)
+       /cgi-bin/AT-generate.cgi: 1 Time(s)
+       /cgi-bin/AnyBoard.cgi: 1 Time(s)
+       /cgi-bin/BBS/bbs_forum.cgi: 1 Time(s)
+       /cgi-bin/CSMailto.cgi: 1 Time(s)
+       /cgi-bin/CSMailto/CSMailto.cgi: 1 Time(s)
+       /cgi-bin/FileSeek.cgi: 1 Time(s)
+       /cgi-bin/FileSeek2.cgi: 1 Time(s)
+       /cgi-bin/FormHandler.cgi: 1 Time(s)
+       /cgi-bin/FormMail.cgi: 1 Time(s)
+       /cgi-bin/ImageFolio/admin/admin.cgi: 1 Time(s)
+       /cgi-bin/MachineInfoHTTP/1.0: 1 Time(s)
+       /cgi-bin/YaBB/YaBB.cgi: 1 Time(s)
+       /cgi-bin/a1stats/a1disp3.cgi: 1 Time(s)
+       /cgi-bin/a1stats/a1disp4.cgi: 1 Time(s)
+       /cgi-bin/add_ftp.cgi: 1 Time(s)
+       /cgi-bin/addbanner.cgi: 1 Time(s)
+       /cgi-bin/adduser.cgi: 1 Time(s)
+       /cgi-bin/admin.cgi: 1 Time(s)
+       /cgi-bin/admin.plHTTP/1.0: 1 Time(s)
+       /cgi-bin/admin/admin.cgi: 1 Time(s)
+       /cgi-bin/admin/setup.cgi: 1 Time(s)
+       /cgi-bin/adminhot.cgi: 1 Time(s)
+       /cgi-bin/adminwww.cgi: 1 Time(s)
+       /cgi-bin/af.cgi: 1 Time(s)
+       /cgi-bin/aglimpse.cgi: 1 Time(s)
+       /cgi-bin/alienform.cgi: 1 Time(s)
+       /cgi-bin/architext_query.cgi: 1 Time(s)
+       /cgi-bin/astrocam.cgi: 1 Time(s)
+       /cgi-bin/auction/auction.cgi: 1 Time(s)
+       /cgi-bin/auktion.cgi: 1 Time(s)
+       /cgi-bin/ax-admin.cgi: 1 Time(s)
+       /cgi-bin/ax.cgi: 1 Time(s)
+       /cgi-bin/axs.cgi: 1 Time(s)
+       /cgi-bin/badmin.cgi: 1 Time(s)
+       /cgi-bin/banner.cgi: 1 Time(s)
+       /cgi-bin/bannereditor.cgi: 1 Time(s)
+       /cgi-bin/bb-ack.shHTTP/1.0: 1 Time(s)
+       /cgi-bin/bb-hist.shHTTP/1.0: 1 Time(s)
+       /cgi-bin/bb-histlog.shHTTP/1.0: 1 Time(s)
+       /cgi-bin/bb-hostsvc.shHTTP/1.0: 1 Time(s)
+       /cgi-bin/bb-rep.shHTTP/1.0: 1 Time(s)
+       /cgi-bin/bb-replog.shHTTP/1.0: 1 Time(s)
+       /cgi-bin/bbs_forum.cgi: 1 Time(s)
+       /cgi-bin/bigconf.cgi: 1 Time(s)
+       /cgi-bin/bizdb1-search.cgi: 1 Time(s)
+       /cgi-bin/blog/mt-check.cgi: 1 Time(s)
+       /cgi-bin/blog/mt-load.cgi: 1 Time(s)
+       /cgi-bin/bnbform.cgi: 1 Time(s)
+       /cgi-bin/book.cgi: 1 Time(s)
+       /cgi-bin/boozt/admin/index.cgi: 1 Time(s)
+       /cgi-bin/bsguest.cgi: 1 Time(s)
+       /cgi-bin/bslist.cgi: 1 Time(s)
+       /cgi-bin/build.cgi: 1 Time(s)
+       /cgi-bin/bulk/bulk.cgi: 1 Time(s)
+       /cgi-bin/c_download.cgi: 1 Time(s)
+       /cgi-bin/cached_feed.cgi: 1 Time(s)
+       /cgi-bin/calendar/index.cgi: 1 Time(s)
+       /cgi-bin/cartmanager.cgi: 1 Time(s)
+       /cgi-bin/cbmc/forums.cgi: 1 Time(s)
+       /cgi-bin/ccvsblame.cgi: 1 Time(s)
+       /cgi-bin/cgforum.cgi: 1 Time(s)
+       /cgi-bin/cgi_processHTTP/1.0: 1 Time(s)
+       /cgi-bin/classified.cgi: 1 Time(s)
+       /cgi-bin/classifieds.cgi: 1 Time(s)
+       /cgi-bin/classifieds/classifieds.cgi: 1 Time(s)
+       /cgi-bin/classifieds/index.cgi: 1 Time(s)
+       /cgi-bin/commandit.cgi: 1 Time(s)
+       /cgi-bin/commerce.cgi: 1 Time(s)
+       /cgi-bin/common/listrec.plHTTP/1.0: 1 Time(s)
+       /cgi-bin/compatible.cgi: 1 Time(s)
+       /cgi-bin/csChatRBox.cgi: 1 Time(s)
+       /cgi-bin/csGuestBook.cgi: 1 Time(s)
+       /cgi-bin/csLiveSupport.cgi: 1 Time(s)
+       /cgi-bin/csNews.cgi: 1 Time(s)
+       /cgi-bin/csNewsPro.cgi: 1 Time(s)
+       /cgi-bin/csPassword.cgi: 1 Time(s)
+       /cgi-bin/csPassword/csPassword.cgi: 1 Time(s)
+       /cgi-bin/csSearch.cgi: 1 Time(s)
+       /cgi-bin/csv_db.cgi: 1 Time(s)
+       /cgi-bin/cvslog.cgi: 1 Time(s)
+       /cgi-bin/cvsquery.cgi: 1 Time(s)
+       /cgi-bin/cvsqueryform.cgi: 1 Time(s)
+       /cgi-bin/day5datacopier.cgi: 1 Time(s)
+       /cgi-bin/day5datanotifier.cgi: 1 Time(s)
+       /cgi-bin/db_manager.cgi: 1 Time(s)
+       /cgi-bin/dbman/db.cgi: 1 Time(s)
+       /cgi-bin/dcforum.cgi: 1 Time(s)
+       /cgi-bin/dfire.cgi: 1 Time(s)
+       /cgi-bin/diagnose.cgi: 1 Time(s)
+       /cgi-bin/dig.cgi: 1 Time(s)
+       /cgi-bin/directorypro.cgi: 1 Time(s)
+       /cgi-bin/download.cgi: 1 Time(s)
+       /cgi-bin/emu/html/emumail.cgi: 1 Time(s)
+       /cgi-bin/emumail.cgi: 1 Time(s)
+       /cgi-bin/emumail/emumail.cgi: 1 Time(s)
+       /cgi-bin/environ.cgi: 1 Time(s)
+       /cgi-bin/ezadmin.cgi: 1 Time(s)
+       /cgi-bin/ezboard.cgi: 1 Time(s)
+       /cgi-bin/ezman.cgi: 1 Time(s)
+       /cgi-bin/ezshopper/loadpage.cgi: 1 Time(s)
+       /cgi-bin/ezshopper/search.cgi: 1 Time(s)
+       /cgi-bin/ezshopper2/loadpage.cgi: 1 Time(s)
+       /cgi-bin/ezshopper3/loadpage.cgi: 1 Time(s)
+       /cgi-bin/faqmanager.cgi: 1 Time(s)
+       /cgi-bin/finger.cgi: 1 Time(s)
+       /cgi-bin/flexform.cgi: 1 Time(s)
+       /cgi-bin/fom.cgi: 1 Time(s)
+       /cgi-bin/fom/fom.cgi: 1 Time(s)
+       /cgi-bin/gH.cgi: 1 Time(s)
+       /cgi-bin/gbadmin.cgi: 1 Time(s)
+       /cgi-bin/gbook/gbook.cgi: 1 Time(s)
+       /cgi-bin/getdoc.cgi: 1 Time(s)
+       /cgi-bin/gm-authors.cgi: 1 Time(s)
+       /cgi-bin/gm.cgi: 1 Time(s)
+       /cgi-bin/guestbook.cgi: 1 Time(s)
+       /cgi-bin/handler.cgi: 1 Time(s)
+       /cgi-bin/handler/netsonarHTTP/1.0: 1 Time(s)
+       /cgi-bin/hitview.cgi: 1 Time(s)
+       /cgi-bin/hsx.cgi: 1 Time(s)
+       /cgi-bin/html2chtml.cgi: 1 Time(s)
+       /cgi-bin/html2wml.cgi: 1 Time(s)
+       /cgi-bin/htsearch.cgi: 1 Time(s)
+       /cgi-bin/icatHTTP/1.0: 1 Time(s)
+       /cgi-bin/if/admin/nph-build.cgi: 1 Time(s)
+       /cgi-bin/ikonboard/help.cgi: 1 Time(s)
+       /cgi-bin/imageFolio.cgi: 1 Time(s)
+       /cgi-bin/infosrch.cgi: 1 Time(s)
+       /cgi-bin/jammail.plHTTP/1.0: 1 Time(s)
+       /cgi-bin/journal.cgi: 1 Time(s)
+       /cgi-bin/loadpage.cgi: 1 Time(s)
+       /cgi-bin/log-reader.cgi: 1 Time(s)
+       /cgi-bin/login.cgi: 1 Time(s)
+       /cgi-bin/lookwho.cgi: 1 Time(s)
+       /cgi-bin/lwgate.cgi: 1 Time(s)
+       /cgi-bin/magiccard.cgi: 1 Time(s)
+       /cgi-bin/mail/emumail.cgi: 1 Time(s)
+       /cgi-bin/mail/nph-mr.cgi: 1 Time(s)
+       /cgi-bin/maillist.cgi: 1 Time(s)
+       /cgi-bin/mailnews.cgi: 1 Time(s)
+       /cgi-bin/main.cgi: 1 Time(s)
+       /cgi-bin/main_menu.plHTTP/1.0: 1 Time(s)
+       /cgi-bin/man.shHTTP/1.0: 1 Time(s)
+       /cgi-bin/mini_logger.cgi: 1 Time(s)
+       /cgi-bin/mmstdod.cgi: 1 Time(s)
+       /cgi-bin/moin.cgi: 1 Time(s)
+       /cgi-bin/mojo/mojo.cgi: 1 Time(s)
+       /cgi-bin/mrtg.cgi: 1 Time(s)
+       /cgi-bin/mt-static/mt-check.cgi: 1 Time(s)
+       /cgi-bin/mt/mt-check.cgi: 1 Time(s)
+       /cgi-bin/mt/mt-load.cgi: 1 Time(s)
+       /cgi-bin/musicqueue.cgi: 1 Time(s)
+       /cgi-bin/myguestbook.cgi: 1 Time(s)
+       /cgi-bin/netauth.cgi: 1 Time(s)
+       /cgi-bin/netpad.cgi: 1 Time(s)
+       /cgi-bin/newsdesk.cgi: 1 Time(s)
+       /cgi-bin/nlog-smb.cgi: 1 Time(s)
+       /cgi-bin/nph-emumail.cgi: 1 Time(s)
+       /cgi-bin/nph-exploitscanget.cgi: 1 Time(s)
+       /cgi-bin/nph-publish.cgi: 1 Time(s)
+       /cgi-bin/nph-test.cgi: 1 Time(s)
+       /cgi-bin/pagelog.cgi: 1 Time(s)
+       /cgi-bin/pbcgi.cgi: 1 Time(s)
+       /cgi-bin/perlshop.cgi: 1 Time(s)
+       /cgi-bin/pfdispaly.cgi: 1 Time(s)
+       /cgi-bin/pfdisplay.cgi: 1 Time(s)
+       /cgi-bin/phf.cgi: 1 Time(s)
+       /cgi-bin/photo/manage.cgi: 1 Time(s)
+       /cgi-bin/photo/protected/manage.cgi: 1 Time(s)
+       /cgi-bin/php.cgi: 1 Time(s)
+       /cgi-bin/pollit/Poll_It_SSI_v2.0.cgi: 1 Time(s)
+       /cgi-bin/pollssi.cgi: 1 Time(s)
+       /cgi-bin/postcards.cgi: 1 Time(s)
+       /cgi-bin/powerup/r.cgi: 1 Time(s)
+       /cgi-bin/printenvHTTP/1.0: 1 Time(s)
+       /cgi-bin/probecontrol.cgi: 1 Time(s)
+       /cgi-bin/profile.cgi: 1 Time(s)
+       /cgi-bin/publisher/search.cgi: 1 Time(s)
+       /cgi-bin/quickstore.cgi: 1 Time(s)
+       /cgi-bin/quizme.cgi: 1 Time(s)
+       /cgi-bin/r.cgi: 1 Time(s)
+       /cgi-bin/ratlog.cgi: 1 Time(s)
+       /cgi-bin/register.cgi: 1 Time(s)
+       /cgi-bin/replicator/webpage.cgi/HTTP/1.0: 1 Time(s)
+       /cgi-bin/responder.cgi: 1 Time(s)
+       /cgi-bin/robadmin.cgi: 1 Time(s)
+       /cgi-bin/sbcgi/sitebuilder.cgi: 1 Time(s)
+       /cgi-bin/scoadminreg.cgi: 1 Time(s)
+       /cgi-bin/search.cgi: 1 Time(s)
+       /cgi-bin/search/search.cgi: 1 Time(s)
+       /cgi-bin/searchHTTP/1.0: 1 Time(s)
+       /cgi-bin/shop.cgi: 1 Time(s)
+       /cgi-bin/shopper.cgi: 1 Time(s)
+       /cgi-bin/shopplus.cgi: 1 Time(s)
+       /cgi-bin/showcheckins.cgi: 1 Time(s)
+       /cgi-bin/simplestguest.cgi: 1 Time(s)
+       /cgi-bin/simplestmail.cgi: 1 Time(s)
+       /cgi-bin/smartsearch.cgi: 1 Time(s)
+       /cgi-bin/smartsearch/smartsearch.cgi: 1 Time(s)
+       /cgi-bin/snorkerz.batHTTP/1.0: 1 Time(s)
+       /cgi-bin/snorkerz.cmdHTTP/1.0: 1 Time(s)
+       /cgi-bin/spin_client.cgi: 1 Time(s)
+       /cgi-bin/start.cgi: 1 Time(s)
+       /cgi-bin/store.cgi: 1 Time(s)
+       /cgi-bin/store/agora.cgi: 1 Time(s)
+       /cgi-bin/store/index.cgi: 1 Time(s)
+       /cgi-bin/survey.cgi: 1 Time(s)
+       /cgi-bin/talkback.cgi: 1 Time(s)
+       /cgi-bin/technote/main.cgi: 1 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /cgi-bin/test.cgi: 1 Time(s)
+       /cgi-bin/test/test.cgi: 1 Time(s)
+       /cgi-bin/test2.plHTTP/1.0: 1 Time(s)
+       /cgi-bin/testing_whateverHTTP/1.0: 1 Time(s)
+       /cgi-bin/tidfinder.cgi: 1 Time(s)
+       /cgi-bin/tigvote.cgi: 1 Time(s)
+       /cgi-bin/title.cgi: 1 Time(s)
+       /cgi-bin/traffic.cgi: 1 Time(s)
+       /cgi-bin/troops.cgi: 1 Time(s)
+       /cgi-bin/ttawebtop.cgi/HTTP/1.0: 1 Time(s)
+       /cgi-bin/ultraboard.cgi: 1 Time(s)
+       /cgi-bin/upload.cgi: 1 Time(s)
+       /cgi-bin/urlcount.cgi: 1 Time(s)
+       /cgi-bin/viewcvs.cgi: 1 Time(s)
+       /cgi-bin/viralator.cgi: 1 Time(s)
+       /cgi-bin/virgil.cgi: 1 Time(s)
+       /cgi-bin/vote.cgi: 1 Time(s)
+       /cgi-bin/vpasswd.cgi: 1 Time(s)
+       /cgi-bin/w3mman2html.cgi: 1 Time(s)
+       /cgi-bin/way-board/way-board.cgi: 1 Time(s)
+       /cgi-bin/webbbs.cgi: 1 Time(s)
+       /cgi-bin/webcart/webcart.cgi: 1 Time(s)
+       /cgi-bin/webdist.cgi: 1 Time(s)
+       /cgi-bin/webif.cgi: 1 Time(s)
+       /cgi-bin/webmail/html/emumail.cgi: 1 Time(s)
+       /cgi-bin/webmap.cgi: 1 Time(s)
+       /cgi-bin/webspirs.cgi: 1 Time(s)
+       /cgi-bin/whois.cgi: 1 Time(s)
+       /cgi-bin/whois/whois.cgi: 1 Time(s)
+       /cgi-bin/whois_raw.cgi: 1 Time(s)
+       /cgi-bin/wrapHTTP/1.0: 1 Time(s)
+       /cgi-bin/wwwboard.cgi.cgi: 1 Time(s)
+       /cgi-bin/zml.cgi: 1 Time(s)
+       /cgi-mod/index.cgi: 1 Time(s)
+       /cgi-sys/FormMail-clone.cgi: 1 Time(s)
+       /cgi-sys/addalink.cgi: 1 Time(s)
+       /cgi-sys/defaultwebpage.cgi: 1 Time(s)
+       /cgi-sys/domainredirect.cgi: 1 Time(s)
+       /cgi-sys/entropybanner.cgi: 1 Time(s)
+       /cgi-sys/entropysearch.cgi: 1 Time(s)
+       /cgi-sys/helpdesk.cgi: 1 Time(s)
+       /cgi-sys/mchat.cgi: 1 Time(s)
+       /cgi-sys/randhtml.cgi: 1 Time(s)
+       /cgi-sys/realhelpdesk.cgi: 1 Time(s)
+       /cgi-sys/realsignup.cgi: 1 Time(s)
+       /cgi-sys/signup.cgi: 1 Time(s)
+       /cgistartHTTP/1.0: 1 Time(s)
+       /connector.cgi: 1 Time(s)
+       /cp/rac/nsManager.cgi: 1 Time(s)
+       /create_release.shHTTP/1.0: 1 Time(s)
+       /csPassword.cgi: 1 Time(s)
+       /dcadmin.cgi: 1 Time(s)
+       /dcboard.cgi: 1 Time(s)
+       /dcforum.cgi: 1 Time(s)
+       /dcforum/dcforum.cgi: 1 Time(s)
+       /debug.cgi: 1 Time(s)
+       /details.cgi: 1 Time(s)
+       /download.cgi: 1 Time(s)
+       /edittag/edittag.cgi: 1 Time(s)
+       /emumail.cgi: 1 Time(s)
+       /enter_bug.cgi: 1 Time(s)
+       /ez2000/ezadmin.cgi: 1 Time(s)
+       /fcgi-bin/echo2HTTP/1.0: 1 Time(s)
+       /fcgi-bin/echoHTTP/1.0: 1 Time(s)
+       /hitmatic/analyse.cgi: 1 Time(s)
+       /hndUnblock.cgi: 1 Time(s)
+       /html/cgi-bin/cgicsoHTTP/1.0: 1 Time(s)
+       /index.cgi: 1 Time(s)
+       /info.cgi: 1 Time(s)
+       /infosrch.cgi: 1 Time(s)
+       /left.cgi: 1 Time(s)
+       /login.cgi: 1 Time(s)
+       /mailview.cgi: 1 Time(s)
+       /megabook/admin.cgi: 1 Time(s)
+       /ministats/admin.cgi: 1 Time(s)
+       /mods/apage/apage.cgi: 1 Time(s)
+       /ncbook.cgi: 1 Time(s)
+       /newpro.cgi: 1 Time(s)
+       /newsletter.shHTTP/1.0: 1 Time(s)
+       /oem_webstage/cgi-bin/oemapp_cgi: 1 Time(s)
+       /page.cgi: 1 Time(s)
+       /parse_xml.cgi: 1 Time(s)
+       /photo/manage.cgi: 1 Time(s)
+       /photodata/manage.cgi: 1 Time(s)
+       /print.cgi: 1 Time(s)
+       /process_bug.cgi: 1 Time(s)
+       /pub/english.cgi: 1 Time(s)
+       /quikmail/nph-emumail.cgi: 1 Time(s)
+       /quikstore.cgi: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   29.904K  Bytes accepted                            30,622
+   29.904K  Bytes delivered                           30,622
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 3 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  7.2G   43G  15% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

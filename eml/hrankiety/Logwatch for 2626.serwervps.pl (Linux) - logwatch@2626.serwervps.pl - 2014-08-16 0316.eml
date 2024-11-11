@@ -1,0 +1,256 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 486E711101932; Sat, 16 Aug 2014 03:16:16 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 26B841110167F
+	for <root@2626.serwervps.pl>; Sat, 16 Aug 2014 05:16:16 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id OrfJOer7G6gS for <root@2626.serwervps.pl>;
+	Sat, 16 Aug 2014 03:16:12 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 8D4CB11101932; Sat, 16 Aug 2014 03:16:12 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140816011612.8D4CB11101932@2626.serwervps.pl>
+Date: Sat, 16 Aug 2014 03:16:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Aug 16 03:16:10 2014
+        Date Range Processed: yesterday
+                              ( 2014-Aug-15 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (00889-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (00890-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140815013018.D35701110191E@2626.serwervps.pl>, mail_id: 6UVTpKprThun, Hits: 0.001, size: 2288, queued_as: B5A1B111018FF, 3888 ms
+        1   (00889-07) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [178.182.131.225]:45859 [178.182.131.225] <support@hrankiety.pl> -> <agnieszkaibartek@gmail.com>, Queue-ID: C7DCC111018E6, Message-ID: <53EE7CDD.7070107@hrankiety.pl>, mail_id: SToCROIEjKtb, Hits: -9.262, size: 4817, queued_as: A1BBF1110155B, dkim_new=dkim:hrankiety.pl, 1690 ms
+        1   (00889-09) Passed CLEAN {RelayedInternal}, MYUSERS LOCAL [178.182.131.225]:41996 [178.182.131.225] <postmaster@hrankiety.pl> -> <support@hrankiety.pl>, Queue-ID: 3DAD4111018E6, Message-ID: <53EE7DAC.4040904@hrankiety.pl>, mail_id: zMrGS9HgYzoG, Hits: -9.999, size: 1217, queued_as: 241E91110192F, dkim_new=dkim:hrankiety.pl, 797 ms
+        1   (00889-06) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [178.182.131.225]:42545 [178.182.131.225] <support@hrankiety.pl> -> <bondiev@gmail.com>, Queue-ID: 7B9C9111018E6, Message-ID: <53EE7C5F.3020807@hrankiety.pl>, mail_id: 2z7rMoUVJbbs, Hits: -9.999, size: 1193, queued_as: A576611101927, dkim_new=dkim:hrankiety.pl, 915 ms
+        1   (00890-04) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.173]:40135 [178.180.66.30] <agnieszkaibartek@gmail.com> -> <support@hrankiety.pl>, Queue-ID: CEE6F11100D79, Message-ID: <53EE69DC.9020402@gmail.com>, mail_id: 6qLA3f5He2Qi, Hits: -99.525, size: 2143, queued_as: 915E0111017F2, dkim_sd=20120113:gmail.com, 2621 ms
+        1   (00889-03) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.181]:34418 [178.180.66.30] <agnieszkaibartek@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 31B2A11100B0F, Message-ID: <53EE11A5.7090808@gmail.com>, mail_id: TXLn9UL1shdP, Hits: -99.525, size: 2154, queued_as: 200DD111015AC, dkim_sd=20120113:gmail.com, 1867 ms
+        1   (00889-05) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.170]:64940 [178.180.66.30] <bondiev@gmail.com> -> <postmaster@hrankiety.pl>, Queue-ID: E8586111017F2, Message-ID: <53EE6AF1.8030707@gmail.com>, mail_id: R7KcVfuJelP4, Hits: -99.525, size: 2169, queued_as: D92DD11101837, dkim_sd=20120113:gmail.com, 854 ms
+        1   (00889-02) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.173]:39434 [178.181.179.16] <bondiev@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 633881110191F, Message-ID: <53EDF8DA.6050602@gmail.com>, mail_id: EGa3WkRC3eyV, Hits: -99.525, size: 2149, queued_as: BB72411101921, dkim_sd=20120113:gmail.com, 2114 ms
+        1   (00889-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140815015012.3A4081110191F@2626.serwervps.pl>, mail_id: 90ci6qX_AH2Z, Hits: 0, size: 4990, queued_as: 79E0B1110191E, 9059 ms
+        1   (00890-07) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.41]:55883 [178.182.131.225] <agnieszkaibartek@gmail.com> -> <support@hrankiety.pl>, Queue-ID: A94741110155B, Message-ID: <53EE7CEB.9070104@gmail.com>, mail_id: r-eUdhppf1D1, Hits: -99.514, size: 8230, queued_as: 85E80111018E6, dkim_sd=20120113:gmail.com, 1820 ms
+        1   (00890-08) Passed CLEAN {RelayedInternal}, MYUSERS LOCAL [178.182.131.225]:34428 [178.182.131.225] <support@hrankiety.pl> -> <postmaster@hrankiety.pl>, Queue-ID: 917CC111018E6, Message-ID: <53EE7D62.1010107@hrankiety.pl>, mail_id: LrVclGvpNbCW, Hits: -9.999, size: 900, queued_as: 6D3B71110192D, dkim_new=dkim:hrankiety.pl, 748 ms
+        1   (00889-08) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.181]:49670 [178.182.131.225] <bondiev@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 768FA1110155B, Message-ID: <53EE7D1C.20005@gmail.com>, mail_id: t_VwwBLc7FfO, Hits: -99.525, size: 2758, queued_as: 4887A111018E6, dkim_sd=20120113:gmail.com, 750 ms
+        1   (00890-05) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.173]:53103 [178.182.131.225] <bondiev@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 943B911101837, Message-ID: <53EE7C2D.9090100@gmail.com>, mail_id: hepLO0n9RlgT, Hits: -99.525, size: 2142, queued_as: C959F111018E6, dkim_sd=20120113:gmail.com, 4142 ms
+        1   (00889-04) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.44]:41399 [178.180.66.30] <bondiev@gmail.com> -> <support@hrankiety.pl>, Queue-ID: 6A07D111015AC, Message-ID: <53EE4C5B.1000009@gmail.com>, mail_id: EgGX7RyXlcQx, Hits: -99.525, size: 2116, queued_as: 4357711101837, dkim_sd=20120113:gmail.com, 1874 ms
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No decoder for       .doc 
+        1   (00890-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (00890-06) Passed CLEAN {RelayedInternal}, MYUSERS LOCAL [178.182.131.225]:39207 [178.182.131.225] <support@hrankiety.pl> -> <support@hrankiety.pl>, Queue-ID: 4AE6D111018E6, Message-ID: <53EE7CC9.3040107@hrankiety.pl>, mail_id: ODY8CuJjiBe8, Hits: -9.999, size: 1314, queued_as: 6C25E11101928, dkim_new=dkim:hrankiety.pl, 1009 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (00890-02) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.173]:39434 [178.181.179.16] <bondiev@gmail.com> -> <postmaster@hrankiety.pl>, Queue-ID: 633881110191F, Message-ID: <53EDF8DA.6050602@gmail.com>, mail_id: 2QE1lppRwW6J, Hits: -99.525, size: 2149, queued_as: B81D611101920, dkim_sd=20120113:gmail.com, 2099 ms
+        1   (00890-03) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:47029 <support@hrankiety.pl> -> <bondiev@gmail.com>, Queue-ID: 05F44111015AC, Message-ID: <6e0d73f0671c0d60bafaa9e9b290bcf6@hrankiety.pl>, mail_id: qT8xCogmvjX5, Hits: -9.999, size: 861, queued_as: 26BCF11101924, dkim_new=dkim:hrankiety.pl, 1079 ms
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Aug 15 03:50:12 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19281.cdiff [100%]
+    Downloading daily-19282.cdiff [100%]
+    daily.cld updated (version: 19282, sigs: 1090365, f-level: 63, builder: dgoddard)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3514636 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 56% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    185.17.41.230
+    24.183.59.240
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /.well-known/autoconfig/mail/config-v1.1.x ... %40hrankiety.pl: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /autodiscover/autodiscover.xml: 6 Time(s)
+       /mail/config-v1.1.xml?emailaddress=btertil%40hrankiety.pl: 1 Time(s)
+       /sdk/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2 ... vmInventory.xml: 2 Time(s)
+       /sdk/../../../../../..//etc/vmware/hostd/vmInventory.xml: 2 Time(s)
+       http://www.k2proxy.com//hello.html: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Authentication Failures:
+       btertil(500) -> atertil: 1 Time(s)
+       btertil(500) -> root: 1 Time(s)
+    Sessions Opened:
+       btertil -> root: 5 Time(s)
+       btertil -> atertil: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      101   *Warning: Pre-queue content-filter connection overload 
+        7   SASL authentication failed 
+ 
+  103.242K  Bytes accepted                           105,720
+  105.341K  Bytes delivered                          107,869
+ ========   ================================================
+ 
+       35   Accepted                                  77.78%
+       10   Rejected                                  22.22%
+ --------   ------------------------------------------------
+       45   Total                                    100.00%
+ ========   ================================================
+ 
+        7   Reject HELO/EHLO                          70.00%
+        3   Reject client host                        30.00%
+ --------   ------------------------------------------------
+       10   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      191   Connections made      
+       24   Connections lost      
+      191   Disconnections        
+       35   Removed from queue    
+       14   Delivered             
+       20   Sent via SMTP         
+        2   Forwarded             
+ 
+        6   SASL authenticated messages 
+ 
+        1   Postfix start         
+        1   Postfix stop          
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Aug 15 01:53:29 2626 postfix/postfix-script[834]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Aug 15 01:53:29 2626 postfix/postfix-script[832]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Aug 15 01:53:29 2626 postfix/postfix-script[836]: warning: /var/spool/postfix/etc/services and /etc/services differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> reboot  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 2 Time(s)
+ 
+ SSHD Started: 4 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 9 times
+       178.182.194.179 (178.182.194.179.nat.umts.dynamic.t-mobile.pl): 5 times
+       178.180.66.30 (178.180.66.30.nat.umts.dynamic.t-mobile.pl): 2 times
+       178.181.179.16 (178.181.179.16.nat.umts.dynamic.t-mobile.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 8 Time(s)
+ 
+ SFTP subsystem requests: 1 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    openssl-1.0.1e-16.el6_5.15.i686
+    nscd-2.12-1.132.el6_5.3.i686
+    glibc-common-2.12-1.132.el6_5.3.i686
+    glibc-headers-2.12-1.132.el6_5.3.i686
+    glibc-devel-2.12-1.132.el6_5.3.i686
+    glibc-2.12-1.132.el6_5.3.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.1G   44G  13% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

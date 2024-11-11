@@ -1,0 +1,153 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 1139213D81EA9; Tue, 19 Nov 2013 04:26:09 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 01D1313D81E80
+	for <root@2626.serwervps.pl>; Tue, 19 Nov 2013 06:26:09 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id njgEKRX5s2JU for <root@2626.serwervps.pl>;
+	Tue, 19 Nov 2013 04:26:07 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id CCDC313D81EA3; Tue, 19 Nov 2013 04:26:07 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131119032607.CCDC313D81EA3@2626.serwervps.pl>
+Date: Tue, 19 Nov 2013 04:26:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Nov 19 04:26:05 2013
+        Date Range Processed: yesterday
+                              ( 2013-Nov-18 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   No ext program for   .tnef, tried: tnef
+        1   (06150-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131118023004.3619A13D81E9D@2626.serwervps.pl>, mail_id: 7ceCRFHaytU3, Hits: 0.25, size: 2167, queued_as: 827B313D81E99, 2225 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (06151-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131118023107.02F5E13D81E9D@2626.serwervps.pl>, mail_id: APRBmhBkWPYc, Hits: 0, size: 5161, queued_as: AEAC213D81E99, 1720 ms
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Nov 18 03:31:07 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18121.cdiff [100%]
+    Downloading daily-18122.cdiff [100%]
+    Downloading daily-18123.cdiff [100%]
+    Downloading daily-18124.cdiff [100%]
+    daily.cld updated (version: 18124, sigs: 511239, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 231, sigs: 44, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (2935508 signatures) from db.local.clamav.net (IP: 217.18.205.108)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    217.219.98.122
+ 
+ Requests with error response codes
+    404 Not Found
+       /CFIDE/administrator/: 1 Time(s)
+       /cgi-bin/php: 2 Time(s)
+       /cgi-bin/php-cgi: 1 Time(s)
+       /cgi-bin/php.cgi: 1 Time(s)
+       /cgi-bin/php4: 3 Time(s)
+       /dashboardlog: 1 Time(s)
+       /favicon.ico: 8 Time(s)
+       /manager/html: 1 Time(s)
+       /vtigercrm/graph.php?current_language=../. ... Accounts&action: 1 Time(s)
+       /webdav/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       root -> root: 3 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   23.562K  Bytes accepted                            24,127
+   23.562K  Bytes delivered                           24,127
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 21 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 5 Time(s)
+    13: Unable to authenticate : 1 Time(s)
+ 
+ SFTP subsystem requests: 5 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/simfs             30G  1.4G   29G   5% /
+ none                  384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

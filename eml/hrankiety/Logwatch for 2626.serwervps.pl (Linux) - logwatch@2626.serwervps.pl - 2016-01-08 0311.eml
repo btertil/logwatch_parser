@@ -1,0 +1,116 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id EB22911103A17; Fri,  8 Jan 2016 03:12:12 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id DAAE211103B7F; Fri,  8 Jan 2016 03:11:56 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160108021202.DAAE211103B7F@2626.serwervps.pl>
+Date: Fri,  8 Jan 2016 03:11:48 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Jan  8 03:11:48 2016
+        Date Range Processed: yesterday
+                              ( 2016-Jan-07 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Jan  7 03:35:49 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (62.245.181.53)...
+    Downloading daily-21230.cdiff [100%]
+    Downloading daily-21231.cdiff [100%]
+    daily.cld updated (version: 21231, sigs: 1788282, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 270, sigs: 46, f-level: 63, builder: shurley)
+    Database updated (4212553 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /cgi-bin/test-cgi: 1 Time(s)
+       /invoker/EJBInvokerServlet: 1 Time(s)
+       http://testp4.pospr.waw.pl/testproxy.php: 1 Time(s)
+    405 Method Not Allowed
+       /webdav/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       73   SASL authentication failed 
+ 
+   23.815M  Bytes accepted                        24,971,632
+   23.815M  Bytes delivered                       24,971,632
+ ========   ================================================
+ 
+       22   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       22   Total                                    100.00%
+ ========   ================================================
+ 
+       34   Connections made      
+       34   Disconnections        
+       22   Removed from queue    
+       17   Delivered             
+        3   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   Excessive errors in SMTP commands dialog 
+        4   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  46% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

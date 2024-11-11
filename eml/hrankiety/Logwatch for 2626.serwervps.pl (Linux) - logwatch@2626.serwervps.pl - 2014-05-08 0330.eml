@@ -1,0 +1,156 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id C3E35111017F3; Thu,  8 May 2014 03:30:20 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id B0E60111017F1
+	for <root@2626.serwervps.pl>; Thu,  8 May 2014 05:30:20 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id bkWR9ByWcr8U for <root@2626.serwervps.pl>;
+	Thu,  8 May 2014 03:30:15 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 0B00E111017F4; Thu,  8 May 2014 03:30:15 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140508013015.0B00E111017F4@2626.serwervps.pl>
+Date: Thu,  8 May 2014 03:30:12 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu May  8 03:30:12 2014
+        Date Range Processed: yesterday
+                              ( 2014-May-07 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (27409-18) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140507012107.E225211101700@2626.serwervps.pl>, mail_id: HBbILZCoa0-I, Hits: -0.001, size: 4375, queued_as: DED5A1110159F, 5882 ms
+        1   (27409-19) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (27408-18) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140507013007.9001A111017F0@2626.serwervps.pl>, mail_id: 9LsMds0FbG_w, Hits: 0, size: 2288, queued_as: B8A0111101700, 11206 ms
+        1   (27408-18) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (27409-18) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (27409-19) Passed CLEAN {RelayedInternal}, LOCAL [74.125.83.54]:65207 [89.67.22.229] <agnieszkaibartek@gmail.com> -> <support@hrankiety.pl>, Queue-ID: CD705111017F0, Message-ID: <536A6D91.2010400@gmail.com>, mail_id: UoBsoNxF0E8D, Hits: -99.526, size: 2108, queued_as: 98D7C111017F1, dkim_sd=20120113:gmail.com, 4588 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed May  7 03:21:08 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18931.cdiff [100%]
+    Downloading daily-18932.cdiff [100%]
+    Downloading daily-18933.cdiff [100%]
+    Downloading daily-18934.cdiff [100%]
+    Downloading daily-18935.cdiff [100%]
+    daily.cld updated (version: 18935, sigs: 935005, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3359273 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    99.59.101.233
+ 
+ Requests with error response codes
+    400 Bad Request
+       /languages/flags/ptt_bbrr.gif: 1 Time(s)
+       <title>JBoss: 1 Time(s)
+    404 Not Found
+       /CFIDE/administrator/enter.cfm: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /status?full=true: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+ 
+   26.291K  Bytes accepted                            26,922
+   26.291K  Bytes delivered                           26,922
+ ========   ================================================
+ 
+        8   Accepted                                  88.89%
+        1   Rejected                                  11.11%
+ --------   ------------------------------------------------
+        9   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        1   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+        7   Connections made      
+        7   Disconnections        
+        8   Removed from queue    
+        3   Delivered             
+        3   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 2 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.4G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,295 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 0621511101804; Thu, 15 May 2014 03:16:22 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id E26B011101802
+	for <root@2626.serwervps.pl>; Thu, 15 May 2014 05:16:21 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id qAsm0h2Kzsby for <root@2626.serwervps.pl>;
+	Thu, 15 May 2014 03:16:13 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 3A53A11101803; Thu, 15 May 2014 03:16:11 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140515011612.3A53A11101803@2626.serwervps.pl>
+Date: Thu, 15 May 2014 03:16:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu May 15 03:16:08 2014
+        Date Range Processed: yesterday
+                              ( 2014-May-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (16110-10) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN23> line 13138.
+        1   (13826-10) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140514014914.1E2AD11101802@2626.serwervps.pl>, mail_id: wVoGoLd2_BHb, Hits: -0.001, size: 7349, queued_as: 0B2E211101801, 5785 ms
+        1   (16110-10) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140514013006.1593F11101801@2626.serwervps.pl>, mail_id: Ids5RibUL5_C, Hits: 0, size: 2288, queued_as: 68E1E11101800, 9322 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed May 14 03:49:14 2014
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.1 Recommended version: 0.98.3
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18974.cdiff [100%]
+    Downloading daily-18975.cdiff [100%]
+    Downloading daily-18976.cdiff [100%]
+    Downloading daily-18977.cdiff [100%]
+    Downloading daily-18978.cdiff [100%]
+    daily.cld updated (version: 18978, sigs: 950182, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3374450 signatures) from db.local.clamav.net (IP: 217.18.205.108)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    75.176.84.52
+ 
+ Requests with error response codes
+    400 Bad Request
+       /hrankiety.pl: 1 Time(s)
+       /languages/flags/ptt_bbrr.gif: 1 Time(s)
+       HTTP/1.1: 2 Time(s)
+       hrankiety.pl: 2 Time(s)
+    404 Not Found
+       /..php: 1 Time(s)
+       /./..php: 1 Time(s)
+       /././..php: 1 Time(s)
+       /./././..php: 1 Time(s)
+       /./././././thereIsNoWayThat-You-CanBeThere.php: 1 Time(s)
+       /./././././thereIsNoWayThat-You-CanBeThere/: 1 Time(s)
+       /././././Content-Disposition:%20inline/: 1 Time(s)
+       /././././Content-Length:%2077/: 1 Time(s)
+       /././././Content-Type:%20text/plain;%20charset=us-ascii/: 1 Time(s)
+       /././././Date:%20Thu,%2017%20Apr%202014%20 ... :39%20+0200.php: 1 Time(s)
+       /././././Date:%20Thu,%2017%20Apr%202014%2005:06:39%20+0200/: 1 Time(s)
+       /././././From%20root@localhost.localdomain ... 5:06:39%202014/: 1 Time(s)
+       /././././From%20root@localhost.localdomain ... 6:39%202014.php: 1 Time(s)
+       /././././Lines:%208/: 1 Time(s)
+       /././././MIME-Version:%201.0/: 1 Time(s)
+       /././././Status:%20RO/: 1 Time(s)
+       /././././Subject:%20rootmaillin.php: 1 Time(s)
+       /././././Subject:%20rootmaillin/: 1 Time(s)
+       /././././To:%20support@hrankiety.pl.php: 1 Time(s)
+       /././././To:%20support@hrankiety.pl/: 1 Time(s)
+       /././././User-Agent:%20Mutt/1.5.21%20(2010-09-15)/: 1 Time(s)
+       /././././cze,/: 1 Time(s)
+       /././././dobre/: 1 Time(s)
+       /././././rootmail/: 1 Time(s)
+       /././././thereIsNoWayThat-You-CanBeThere.php: 1 Time(s)
+       /././././thereIsNoWayThat-You-CanBeThere/: 1 Time(s)
+       /././././z%20lina/: 1 Time(s)
+       /././././zauwazylem%20ze%20nie%20wiem%20cz ... 20na%20support/: 1 Time(s)
+       /./././Content-Disposition:%20inline.php: 1 Time(s)
+       /./././Content-Disposition:%20inline/: 1 Time(s)
+       /./././Content-Length:%2077.php: 1 Time(s)
+       /./././Content-Length:%2077/: 1 Time(s)
+       /./././Content-Type:%20text/plain;%20charset=us-ascii.php: 1 Time(s)
+       /./././Content-Type:%20text/plain;%20charset=us-ascii/: 1 Time(s)
+       /./././Date:%20Thu,%2017%20Apr%202014%2005:06:39%20+0200.php: 1 Time(s)
+       /./././Date:%20Thu,%2017%20Apr%202014%2005:06:39%20+0200/: 1 Time(s)
+       /./././From%20root@localhost.localdomain%2 ... 5:06:39%202014/: 1 Time(s)
+       /./././From%20root@localhost.localdomain%2 ... 6:39%202014.php: 1 Time(s)
+       /./././Lines:%208.php: 1 Time(s)
+       /./././Lines:%208/: 1 Time(s)
+       /./././MIME-Version:%201.0.php: 1 Time(s)
+       /./././MIME-Version:%201.0/: 1 Time(s)
+       /./././Status:%20RO.php: 1 Time(s)
+       /./././Status:%20RO/: 1 Time(s)
+       /./././Subject:%20rootmaillin.php: 1 Time(s)
+       /./././Subject:%20rootmaillin/: 1 Time(s)
+       /./././To:%20support@hrankiety.pl.php: 1 Time(s)
+       /./././To:%20support@hrankiety.pl/: 1 Time(s)
+       /./././User-Agent:%20Mutt/1.5.21%20(2010-09-15).php: 1 Time(s)
+       /./././User-Agent:%20Mutt/1.5.21%20(2010-09-15)/: 1 Time(s)
+       /./././cze,.php: 1 Time(s)
+       /./././cze,/: 1 Time(s)
+       /./././dobre.php: 1 Time(s)
+       /./././dobre/: 1 Time(s)
+       /./././rootmail.php: 1 Time(s)
+       /./././rootmail/: 1 Time(s)
+       /./././thereIsNoWayThat-You-CanBeThere.php: 1 Time(s)
+       /./././thereIsNoWayThat-You-CanBeThere/: 1 Time(s)
+       /./././z%20lina.php: 1 Time(s)
+       /./././z%20lina/: 1 Time(s)
+       /./././zauwazylem%20ze%20nie%20wiem%20czy% ... 20na%20support/: 1 Time(s)
+       /./././zauwazylem%20ze%20nie%20wiem%20czy% ... a%20support.php: 1 Time(s)
+       /././Content-Disposition:%20inline.php: 1 Time(s)
+       /././Content-Disposition:%20inline/: 1 Time(s)
+       /././Content-Length:%2077.php: 1 Time(s)
+       /././Content-Length:%2077/: 1 Time(s)
+       /././Content-Type:%20text/plain;%20charset=us-ascii.php: 1 Time(s)
+       /././Content-Type:%20text/plain;%20charset=us-ascii/: 1 Time(s)
+       /././Date:%20Thu,%2017%20Apr%202014%2005:06:39%20+0200.php: 1 Time(s)
+       /././Date:%20Thu,%2017%20Apr%202014%2005:06:39%20+0200/: 1 Time(s)
+       /././From%20root@localhost.localdomain%20T ... 5:06:39%202014/: 1 Time(s)
+       /././From%20root@localhost.localdomain%20T ... 6:39%202014.php: 1 Time(s)
+       /././Lines:%208.php: 1 Time(s)
+       /././Lines:%208/: 1 Time(s)
+       /././MIME-Version:%201.0.php: 1 Time(s)
+       /././MIME-Version:%201.0/: 1 Time(s)
+       /././Status:%20RO.php: 1 Time(s)
+       /././Status:%20RO/: 1 Time(s)
+       /././Subject:%20rootmaillin.php: 1 Time(s)
+       /././Subject:%20rootmaillin/: 1 Time(s)
+       /././To:%20support@hrankiety.pl.php: 1 Time(s)
+       /././To:%20support@hrankiety.pl/: 1 Time(s)
+       /././User-Agent:%20Mutt/1.5.21%20(2010-09-15).php: 1 Time(s)
+       /././User-Agent:%20Mutt/1.5.21%20(2010-09-15)/: 1 Time(s)
+       /././cze,.php: 1 Time(s)
+       /././cze,/: 1 Time(s)
+       /././dobre.php: 1 Time(s)
+       /././dobre/: 1 Time(s)
+       /././rootmail.php: 1 Time(s)
+       /././rootmail/: 1 Time(s)
+       /././thereIsNoWayThat-You-CanBeThere.php: 1 Time(s)
+       /././thereIsNoWayThat-You-CanBeThere/: 1 Time(s)
+       /././z%20lina.php: 1 Time(s)
+       /././z%20lina/: 1 Time(s)
+       /././zauwazylem%20ze%20nie%20wiem%20czy%20 ... 20na%20support/: 1 Time(s)
+       /././zauwazylem%20ze%20nie%20wiem%20czy%20 ... a%20support.php: 1 Time(s)
+       /./Content-Disposition:%20inline.php: 1 Time(s)
+       /./Content-Disposition:%20inline/: 1 Time(s)
+       /./Content-Length:%2077.php: 1 Time(s)
+       /./Content-Length:%2077/: 1 Time(s)
+       /./Content-Type:%20text/plain;%20charset=us-ascii.php: 1 Time(s)
+       /./Content-Type:%20text/plain;%20charset=us-ascii/: 1 Time(s)
+       /./Date:%20Thu,%2017%20Apr%202014%2005:06:39%20+0200.php: 1 Time(s)
+       /./Date:%20Thu,%2017%20Apr%202014%2005:06:39%20+0200/: 1 Time(s)
+       /./From%20root@localhost.localdomain%20Thu ... 5:06:39%202014/: 1 Time(s)
+       /./From%20root@localhost.localdomain%20Thu ... 6:39%202014.php: 1 Time(s)
+       /./Lines:%208.php: 1 Time(s)
+       /./Lines:%208/: 1 Time(s)
+       /./MIME-Version:%201.0.php: 1 Time(s)
+       /./MIME-Version:%201.0/: 1 Time(s)
+       /./Status:%20RO.php: 1 Time(s)
+       /./Status:%20RO/: 1 Time(s)
+       /./Subject:%20rootmaillin.php: 1 Time(s)
+       /./Subject:%20rootmaillin/: 1 Time(s)
+       /./To:%20support@hrankiety.pl.php: 1 Time(s)
+       /./To:%20support@hrankiety.pl/: 1 Time(s)
+       /./User-Agent:%20Mutt/1.5.21%20(2010-09-15).php: 1 Time(s)
+       /./User-Agent:%20Mutt/1.5.21%20(2010-09-15)/: 1 Time(s)
+       /./cze,.php: 1 Time(s)
+       /./cze,/: 1 Time(s)
+       /./dobre.php: 1 Time(s)
+       /./dobre/: 1 Time(s)
+       /./rootmail.php: 1 Time(s)
+       /./rootmail/: 1 Time(s)
+       /./thereIsNoWayThat-You-CanBeThere.php: 1 Time(s)
+       /./thereIsNoWayThat-You-CanBeThere/: 1 Time(s)
+       /./z%20lina.php: 1 Time(s)
+       /./z%20lina/: 1 Time(s)
+       /./zauwazylem%20ze%20nie%20wiem%20czy%20do ... 20na%20support/: 1 Time(s)
+       /./zauwazylem%20ze%20nie%20wiem%20czy%20do ... a%20support.php: 1 Time(s)
+       /2971506490133938071: 1 Time(s)
+       /Content-Disposition:%20inline.php: 1 Time(s)
+       /Content-Disposition:%20inline/: 1 Time(s)
+       /Content-Length:%2077.php: 1 Time(s)
+       /Content-Length:%2077/: 1 Time(s)
+       /Content-Type:%20text/plain;%20charset=us-ascii.php: 1 Time(s)
+       /Content-Type:%20text/plain;%20charset=us-ascii/: 1 Time(s)
+       /Date:%20Thu,%2017%20Apr%202014%2005:06:39%20+0200.php: 1 Time(s)
+       /Date:%20Thu,%2017%20Apr%202014%2005:06:39%20+0200/: 1 Time(s)
+       /From%20root@localhost.localdomain%20Thu%2 ... 5:06:39%202014/: 1 Time(s)
+       /From%20root@localhost.localdomain%20Thu%2 ... 6:39%202014.php: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /Lines:%208.php: 1 Time(s)
+       /Lines:%208/: 1 Time(s)
+       /MIME-Version:%201.0.php: 1 Time(s)
+       /MIME-Version:%201.0/: 1 Time(s)
+       /Status:%20RO.php: 1 Time(s)
+       /Status:%20RO/: 1 Time(s)
+       /Subject:%20rootmaillin.php: 1 Time(s)
+       /Subject:%20rootmaillin/: 1 Time(s)
+       /To:%20support@hrankiety.pl.php: 1 Time(s)
+       /To:%20support@hrankiety.pl/: 1 Time(s)
+       /User-Agent:%20Mutt/1.5.21%20(2010-09-15).php: 1 Time(s)
+       /User-Agent:%20Mutt/1.5.21%20(2010-09-15)/: 1 Time(s)
+       /apple-touch-icon-precomposed.png: 1 Time(s)
+       /apple-touch-icon.png: 1 Time(s)
+       /cp_errordocument.shtml: 1 Time(s)
+       /cze,.php: 1 Time(s)
+       /cze,/: 1 Time(s)
+       /dobre.php: 1 Time(s)
+       /dobre/: 1 Time(s)
+       /recordings/README.txt: 1 Time(s)
+       /rootmail.php: 1 Time(s)
+       /rootmail/: 1 Time(s)
+       /thereIsNoWayThat-You-CanBeThere.php: 1 Time(s)
+       /thereIsNoWayThat-You-CanBeThere/: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       /z%20lina.php: 1 Time(s)
+       /z%20lina/: 1 Time(s)
+       /zauwazylem%20ze%20nie%20wiem%20czy%20dota ... 20na%20support/: 1 Time(s)
+       /zauwazylem%20ze%20nie%20wiem%20czy%20dota ... a%20support.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+   30.350K  Bytes accepted                            31,078
+   30.350K  Bytes delivered                           31,078
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Connections made      
+        4   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.4G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

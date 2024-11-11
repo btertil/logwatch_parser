@@ -1,0 +1,114 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 2939735A1EA0; Tue, 24 Jan 2017 03:24:06 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170124022406.2939735A1EA0@hrankiety.pl>
+Date: Tue, 24 Jan 2017 03:24:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Jan 24 03:24:05 2017
+        Date Range Processed: yesterday
+                              ( 2017-Jan-23 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Jan 23 03:46:07 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-22927.cdiff [100%]
+    Downloading daily-22928.cdiff [100%]
+    Downloading daily-22929.cdiff [100%]
+    Downloading daily-22930.cdiff [100%]
+    Downloading daily-22931.cdiff [100%]
+    Downloading daily-22932.cdiff [100%]
+    daily.cld updated (version: 22932, sigs: 1417511, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 288, sigs: 58, f-level: 63, builder: bbaker)
+    Database updated (5636359 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /x: 1 Time(s)
+    404 Not Found
+       /82172316237: 18 Time(s)
+       /manager/html: 1 Time(s)
+       /r/z.php: 1 Time(s)
+       /recordings/index.php: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+       33   Miscellaneous warnings 
+ 
+    2.262M  Bytes accepted                         2,372,098
+    2.256M  Bytes delivered                        2,365,901
+ ========   ================================================
+ 
+       18   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       18   Total                                    100.00%
+ ========   ================================================
+ 
+       17   Connections made      
+       17   Disconnections        
+       18   Removed from queue    
+       16   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Numeric hostname      
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  48% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

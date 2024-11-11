@@ -1,0 +1,418 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id D763D4643587; Wed, 18 Sep 2013 03:32:10 +0400 (MSD)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id D191F4643586
+	for <root@2626.serwervps.pl>; Wed, 18 Sep 2013 03:32:10 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 4gWkUQVkMrIS for <root@2626.serwervps.pl>;
+	Wed, 18 Sep 2013 03:32:08 +0400 (MSD)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 06C2A4643587; Wed, 18 Sep 2013 03:32:08 +0400 (MSD)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20130917233208.06C2A4643587@2626.serwervps.pl>
+Date: Wed, 18 Sep 2013 03:32:05 +0400 (MSD)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Sep 18 03:32:05 2013
+        Date Range Processed: yesterday
+                              ( 2013-Sep-17 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        4   Deleting db files __db.003,__db.004,snmp.db,__db.001,nanny.db,__db.002 in /var/spool/amavisd/db
+        4   No decoder for       .doc 
+        4   No ext program for   .rar, tried: unrar, rar
+        4   No ext program for   .tnef, tried: tnef
+        4   No ext program for   .doc, tried: ripole
+        1   (00931-01) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:33273 [127.0.0.1] <btertil@hrankiety.pl> -> <agnieszka.tertil@deltatraining.pl>, Message-ID: <adc58ae819068f679168cbebc22f08d9@hrankiety.pl>, mail_id: u2n4bQ1AALda, Hits: -10, size: 576, queued_as: 6EB074641052, dkim_new=dkim:hrankiety.pl, 1367 ms
+        1   (00930-01) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:33273 [127.0.0.1] <btertil@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <adc58ae819068f679168cbebc22f08d9@hrankiety.pl>, mail_id: Ud_5lRF9Vwvs, Hits: -10, size: 576, queued_as: 6B5B54641051, dkim_new=dkim:hrankiety.pl, 1359 ms
+        1   (00931-04) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20130917002706.6861C4641050@2626.serwervps.pl>, mail_id: ggpCo3_CEoM5, Hits: 0, size: 20362, queued_as: EAF08464104D, 2512 ms
+        1   (00930-03) Passed CLEAN {RelayedInternal}, MYUSERS LOCAL [46.30.218.53]:57108 [46.30.218.53] <btertil@hrankiety.pl> -> <btertil@hrankiety.pl>, Message-ID: <5237A0A1.6090804@hrankiety.pl>, mail_id: 48EdASaX5MbS, Hits: -10, size: 698, queued_as: 7AF764641050, dkim_new=dkim:hrankiety.pl, 1131 ms
+        1   (00931-03) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [46.30.218.53]:57108 [46.30.218.53] <btertil@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <5237A0A1.6090804@hrankiety.pl>, mail_id: NKNq1VUv9dhq, Hits: -10, size: 698, queued_as: A38CA4641050, dkim_new=dkim:hrankiety.pl, 1305 ms
+        1   (00931-02) Passed CLEAN {RelayedInternal}, MYNETS/MYUSERS LOCAL [127.0.0.1]:33273 [127.0.0.1] <btertil@hrankiety.pl> -> <postmaster@hrankiety.pl>, Message-ID: <adc58ae819068f679168cbebc22f08d9@hrankiety.pl>, mail_id: 6iAPWGmjOk1A, Hits: -10, size: 576, queued_as: DEF1E4641053, dkim_new=dkim:hrankiety.pl, 372 ms
+        1   (00930-04) Passed CLEAN {RelayedInternal}, MYUSERS LOCAL [46.30.218.53]:57108 [46.30.218.53] <btertil@hrankiety.pl> -> <postmaster@hrankiety.pl>, Message-ID: <5237A0A1.6090804@hrankiety.pl>, mail_id: YGyjaqZrf3T5, Hits: -10, size: 698, queued_as: DAA1346415B6, dkim_new=dkim:hrankiety.pl, 371 ms
+        1   (00930-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20130916233002.4306B46415B5@2626.serwervps.pl>, mail_id: NrHhdCZtKFJU, Hits: 0.001, size: 2074, queued_as: 8788846415B4, 1245 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Tue Sep 17 04:27:06 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 54, sigs: 1044387, f-level: 60, builder: sven)
+    Downloading daily-17862.cdiff [100%]
+    Downloading daily-17863.cdiff [100%]
+    Downloading daily-17864.cdiff [100%]
+    Downloading daily-17865.cdiff [100%]
+    Downloading daily-17866.cdiff [100%]
+    daily.cld updated (version: 17866, sigs: 1729970, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 225, sigs: 42, f-level: 63, builder: dgoddard)
+    Database updated (2774399 signatures) from db.local.clamav.net (IP: 217.18.205.108)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /.well-known/autoconfig/mail/config-v1.1.x ... %40hrankiety.pl: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /apple-touch-icon-144x144-precomposed.png: 1 Time(s)
+       /apple-touch-icon-144x144.png: 1 Time(s)
+       /apple-touch-icon-precomposed.png: 1 Time(s)
+       /apple-touch-icon.png: 1 Time(s)
+       /favicon.ico: 6 Time(s)
+       /info: 1 Time(s)
+       /iredmail: 1 Time(s)
+       /iredmail.php: 1 Time(s)
+       /mail/config-v1.1.xml?emailaddress=btertil%40hrankiety.pl: 1 Time(s)
+       /oceny/: 1 Time(s)
+       /oceny/index.php: 1 Time(s)
+       /phpmyadmin: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Init Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ /etc/init/serial.conf:32: Unknown stanza
+ /etc/init/tty.conf:10: Unknown stanza
+ 
+ ---------------------- Init End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Authentication Failures:
+       btertil(500) -> root: 2 Time(s)
+    Sessions Opened:
+       root -> root: 7 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       40   *Warning: Pre-queue content-filter connection overload 
+       40   SASL authentication failed 
+ 
+   78.752K  Bytes accepted                            80,642
+   81.240K  Bytes delivered                           83,190
+ ========   ================================================
+ 
+       14   Accepted                                  46.67%
+       16   Rejected                                  53.33%
+ --------   ------------------------------------------------
+       30   Total                                    100.00%
+ ========   ================================================
+ 
+       13   Reject relay denied                       81.25%
+        3   Reject unknown user                       18.75%
+ --------   ------------------------------------------------
+       16   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       71   Connections made      
+       71   Disconnections        
+       14   Removed from queue    
+        5   Delivered             
+       11   Sent via SMTP         
+        2   Forwarded             
+ 
+        2   Timeout (inbound)     
+        2   SASL authenticated messages 
+ 
+        3   Postfix start         
+        3   Postfix stop          
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Sep 17 14:07:41 2626 postfix/postfix-script[800]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Sep 17 12:18:41 2626 postfix/postfix-script[800]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Sep 17 00:17:52 2626 postfix/postfix-script[826]: warning: /var/spool/postfix/etc/services and /etc/services differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ New Groups:
+    wbpriv (88)
+ 
+ 
+ Userhelper executed applications:
+    root -> halt  as root:  1 Time(s)
+    root -> reboot  as root:  1 Time(s)
+ 
+ **Unmatched Entries**
+    groupadd: group added to /etc/group: name=wbpriv, GID=88: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=wbpriv: 1 Time(s)
+    useradd: failed adding user 'tcpdump', data deleted: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 4 Time(s)
+ 
+ SSHD Started: 10 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       46.30.218.53: 34 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    checkpolicy-2.0.22-1.el6.i686
+    2:nmap-5.51-2.el6.i686
+    samba-winbind-3.6.9-151.el6_4.1.i686
+    dbus-glib-0.86-6.el6.i686
+    12:dhcp-common-4.1.1-34.P1.el6_4.1.i686
+    ustr-1.0.4-9.1.el6.i686
+    libsemanage-2.0.43-4.2.el6.i686
+    policycoreutils-2.0.83-19.30.el6.i686
+    nss-tools-3.14.3-4.el6_4.i686
+    libselinux-utils-2.0.94-5.3.el6_4.1.i686
+ 
+ Packages Updated:
+    gnutls-2.8.5-10.el6_4.2.i686
+    gpm-libs-1.20.6-12.el6.i686
+    less-436-10.el6.i686
+    libselinux-2.0.94-5.3.el6_4.1.i686
+    chkconfig-1.3.49.3-2.el6.i686
+    man-pages-3.22-20.el6.noarch
+    libblkid-2.17.2-12.9.el6_4.3.i686
+    yum-metadata-parser-1.1.2-16.el6.i686
+    elfutils-libs-0.152-1.el6.i686
+    libattr-2.4.44-7.el6.i686
+    2:vim-common-7.2.411-1.8.el6.i686
+    db4-utils-4.7.25-18.el6_4.i686
+    libuser-0.56.13-5.el6.i686
+    1:dbus-libs-1.2.24-7.el6_3.i686
+    e2fsprogs-1.41.12-14.el6_4.2.i686
+    filesystem-2.4.30-3.el6.i686
+    bash-4.1.2-15.el6_4.i686
+    libgcrypt-1.4.5-9.el6_2.2.i686
+    iputils-20071127-17.el6_4.i686
+    nss-sysinit-3.14.3-4.el6_4.i686
+    libsepol-2.0.41-4.el6.i686
+    tcp_wrappers-7.6-57.el6.i686
+    audit-libs-2.2-2.el6.i686
+    grep-2.6.3-3.el6.i686
+    gmp-4.3.1-7.el6_2.2.i686
+    jwhois-4.0-19.el6.i686
+    glib2-2.22.5-7.el6.i686
+    iptables-1.4.7-9.el6.i686
+    elfutils-0.152-1.el6.i686
+    fipscheck-lib-1.2.0-7.el6.i686
+    curl-7.19.7-37.el6_4.i686
+    ftp-0.17-53.el6.i686
+    mailcap-2.1.31-2.el6.noarch
+    libtasn1-2.3-3.el6_2.1.i686
+    2:xinetd-2.3.14-38.el6.i686
+    readline-6.0-4.el6.i686
+    python-libs-2.6.6-37.el6_4.i686
+    fipscheck-1.2.0-7.el6.i686
+    keyutils-libs-1.4-4.el6.i686
+    module-init-tools-3.9-21.el6_4.i686
+    passwd-0.77-4.el6_2.2.i686
+    sudo-1.8.6p3-7.el6.i686
+    elfutils-libelf-0.152-1.el6.i686
+    14:tcpdump-4.0.0-3.20090921gitdf3cb4.2.el6.i686
+    centos-release-6-4.el6.centos.10.i686
+    pcre-7.8-6.el6.i686
+    libnih-1.0.1-7.el6.i686
+    hwdata-0.233-7.9.el6.noarch
+    glibc-common-2.12-1.107.el6_4.4.i686
+    2:shadow-utils-4.1.4.2-13.el6.i686
+    1:net-snmp-utils-5.5-44.el6_4.4.i686
+    pinentry-0.7.6-6.el6.i686
+    rpm-4.8.0-32.el6.i686
+    libxml2-2.7.6-12.el6_4.1.i686
+    pam-1.1.1-13.el6.i686
+    rsync-3.0.6-9.el6.i686
+    libgssglue-0.1-11.el6.i686
+    libss-1.41.12-14.el6_4.2.i686
+    libtiff-3.9.4-9.el6_3.i686
+    samba-winbind-clients-3.6.9-151.el6_4.1.i686
+    12:dhclient-4.1.1-34.P1.el6_4.1.i686
+    libnl-1.1.4-1.el6_4.i686
+    tcsh-6.17-24.el6.i686
+    2:vim-enhanced-7.2.411-1.8.el6.i686
+    rpm-python-4.8.0-32.el6.i686
+    openldap-2.4.23-32.el6_4.1.i686
+    gzip-1.3.12-19.el6_4.i686
+    yum-plugin-fastestmirror-1.1.30-14.el6.noarch
+    2:libpng-1.2.49-1.el6_2.i686
+    coreutils-libs-8.4-19.el6_4.2.i686
+    libstdc++-4.4.7-3.el6.i686
+    setup-2.8.14-20.el6.noarch
+    e2fsprogs-libs-1.41.12-14.el6_4.2.i686
+    util-linux-ng-2.17.2-12.9.el6_4.3.i686
+    cyrus-sasl-lib-2.1.23-13.el6_3.1.i686
+    mingetty-1.08-5.el6.i686
+    openssl-1.0.0-27.el6_4.2.i686
+    1:quota-3.17-18.el6.i686
+    sysvinit-tools-2.87-4.dsf.el6.i686
+    samba-3.6.9-151.el6_4.1.i686
+    libuuid-2.17.2-12.9.el6_4.3.i686
+    krb5-libs-1.10.3-10.el6_4.6.i686
+    1:telnet-0.17-47.el6_3.1.i686
+    python-urlgrabber-3.9.1-8.el6.noarch
+    gawk-3.1.7-10.el6.i686
+    procps-3.2.8-25.el6.i686
+    ca-certificates-2010.63-3.el6_1.5.noarch
+    python-2.6.6-37.el6_4.i686
+    samba-common-3.6.9-151.el6_4.1.i686
+    screen-4.0.3-16.el6.i686
+    samba-client-3.6.9-151.el6_4.1.i686
+    wget-1.12-1.8.el6.i686
+    authconfig-6.1.12-13.el6.i686
+    ntsysv-1.3.49.3-2.el6.i686
+    initscripts-9.03.38-1.el6.centos.2.i686
+    net-tools-1.60-110.el6_2.i686
+    openssh-5.3p1-84.1.el6.i686
+    cyrus-sasl-2.1.23-13.el6_3.1.i686
+    libssh2-1.4.2-1.el6.i686
+    nss-softokn-3.14.3-3.el6_4.i686
+    lsof-4.82-4.el6.i686
+    tzdata-2013c-2.el6.noarch
+    glibc-2.12-1.107.el6_4.4.i686
+    1:cups-libs-1.4.2-50.el6_4.5.i686
+    cpio-2.10-11.el6_3.i686
+    tcp_wrappers-libs-7.6-57.el6.i686
+    avahi-libs-0.6.25-12.el6.i686
+    1:net-snmp-libs-5.5-44.el6_4.4.i686
+    yum-3.2.29-40.el6.centos.noarch
+    libtirpc-0.2.1-6.el6_4.i686
+    nss-softokn-freebl-3.14.3-3.el6_4.i686
+    nspr-4.9.5-2.el6_4.i686
+    2:tar-1.23-11.el6.i686
+    cronie-1.4.4-7.el6.i686
+    libtdb-1.2.10-1.el6.i686
+    libgcc-4.4.7-3.el6.i686
+    upstart-0.6.5-12.el6_4.1.i686
+    redhat-logos-60.0.14-12.el6.centos.noarch
+    32:bind-9.8.2-0.17.rc1.el6_4.6.i686
+    stunnel-4.29-3.el6_4.i686
+    nscd-2.12-1.107.el6_4.4.i686
+    libcap-2.16-5.5.el6.i686
+    ncompress-4.2.4-54.el6_2.1.i686
+    logrotate-3.7.8-16.el6.i686
+    sed-4.2.1-10.el6.i686
+    libcurl-7.19.7-37.el6_4.i686
+    1:net-snmp-5.5-44.el6_4.4.i686
+    openssh-server-5.3p1-84.1.el6.i686
+    man-1.6f-32.el6.i686
+    libgpg-error-1.7-4.el6.i686
+    nss-util-3.14.3-3.el6_4.i686
+    2:ethtool-3.5-1.el6.i686
+    apr-1.3.9-5.el6_2.i686
+    which-2.19-6.el6.i686
+    coreutils-8.4-19.el6_4.2.i686
+    nss-3.14.3-4.el6_4.i686
+    db4-4.7.25-18.el6_4.i686
+    2:vim-minimal-7.2.411-1.8.el6.i686
+    lm_sensors-libs-3.1.1-17.el6.i686
+    rpcbind-0.2.0-11.el6.i686
+    newt-0.52.11-3.el6.i686
+    binutils-2.20.51.0.2-5.36.el6.i686
+    libcom_err-1.41.12-14.el6_4.2.i686
+    openssh-clients-5.3p1-84.1.el6.i686
+    32:bind-libs-9.8.2-0.17.rc1.el6_4.6.i686
+    libtalloc-2.0.7-2.el6.i686
+    mlocate-0.22.2-4.el6.i686
+    rsyslog-5.8.10-7.el6_4.i686
+    expat-2.0.1-11.el6_2.i686
+    rpm-libs-4.8.0-32.el6.i686
+    cronie-anacron-1.4.4-7.el6.i686
+    iproute-2.6.32-23.el6.i686
+    1:make-3.81-20.el6.i686
+    udev-147-2.46.el6.i686
+    newt-python-0.52.11-3.el6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/simfs             30G  1.2G   29G   4% /
+ none                  384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

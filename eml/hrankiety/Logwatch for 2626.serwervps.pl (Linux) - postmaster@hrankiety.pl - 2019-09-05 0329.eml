@@ -1,0 +1,236 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 265B19F21924; Thu,  5 Sep 2019 03:29:07 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190905012907.265B19F21924@hrankiety.pl>
+Date: Thu,  5 Sep 2019 03:29:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Sep  5 03:29:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Sep-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Sep  4 03:25:06 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25561.cdiff [100%]
+    daily.cld updated (version: 25561, sigs: 1747964, f-level: 63, builder: raynman)
+    Can't query daily.25561.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 330, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6314307 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 4 sites probed the server 
+    141.98.81.79
+    193.188.22.56
+    45.227.255.100
+    93.174.95.106
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../mnt/custom/ProductDefinition: 9 Time(s)
+       null: 11 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       /.well-known/security.txt: 1 Time(s)
+       /1x.php: 1 Time(s)
+       /App.php?_=15626b20474bc: 1 Time(s)
+       /App/?content=die(md5(HelloThinkPHP)): 1 Time(s)
+       /Drupal.php: 1 Time(s)
+       /MyAdmin/scripts/db___.init.php: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /PMA/scripts/db___.init.php: 1 Time(s)
+       /PMA/scripts/setup.php: 1 Time(s)
+       /TP/html/public/index.php: 2 Time(s)
+       /TP/index.php: 2 Time(s)
+       /TP/public/index.php: 2 Time(s)
+       /_async/AsyncResponseService: 1 Time(s)
+       /_query.php: 1 Time(s)
+       /ak.php: 1 Time(s)
+       /appserv.php: 1 Time(s)
+       /b.php: 1 Time(s)
+       /baidoubi.php: 1 Time(s)
+       /cacti/plugins/weathermap/editor.php: 1 Time(s)
+       /cmd.php: 2 Time(s)
+       /cmdd.php: 1 Time(s)
+       /cmv.php: 1 Time(s)
+       /composer.php: 1 Time(s)
+       /composers.php: 1 Time(s)
+       /coonig.php: 1 Time(s)
+       /d7.php: 1 Time(s)
+       /db_cts.php: 1 Time(s)
+       /desktop.ini.php: 1 Time(s)
+       /doudou.php: 1 Time(s)
+       /elrekt.php: 2 Time(s)
+       /elrekt.php?s=%2f%69%6e%64%65%78%2f%5c%74% ... %6e%6b%50%48%50: 1 Time(s)
+       /floaw.php: 1 Time(s)
+       /hd.php: 1 Time(s)
+       /hell.php: 1 Time(s)
+       /help-e.php: 1 Time(s)
+       /help.php: 1 Time(s)
+       /hhhhhh.php: 1 Time(s)
+       /home.php: 1 Time(s)
+       /htdocs.php: 1 Time(s)
+       /html/public/index.php: 2 Time(s)
+       /hue2.php: 1 Time(s)
+       /huoshan.php: 1 Time(s)
+       /images/!.php: 1 Time(s)
+       /images/attari.php: 1 Time(s)
+       /images/jsspwneed.php: 1 Time(s)
+       /images/stories/cmd.php: 1 Time(s)
+       /images/stories/filemga.php?ssp=RfVbHu: 1 Time(s)
+       /images/up.php: 1 Time(s)
+       /images/vuln.php: 1 Time(s)
+       /index.php: 2 Time(s)
+       /index.php/module/action/param1/${@die(md5(HelloThinkPHP))}: 1 Time(s)
+       /index.php?s=%2f%69%6e%64%65%78%2f%5c%74%6 ... %6e%6b%50%48%50: 1 Time(s)
+       /index.php?s=/module/action/param1/${@die( ... elloThinkPHP))}: 1 Time(s)
+       /invoker/EJBInvokerServlet: 1 Time(s)
+       /izom.php: 2 Time(s)
+       /java.php: 1 Time(s)
+       /knal.php: 1 Time(s)
+       /lala-dpr.php: 1 Time(s)
+       /lang.php?f=1: 1 Time(s)
+       /license.php: 1 Time(s)
+       /log.php: 1 Time(s)
+       /logon.php: 1 Time(s)
+       /lol.php: 1 Time(s)
+       /meijianxue.php: 1 Time(s)
+       /muhstik-dpr.php: 1 Time(s)
+       /muhstik.php: 1 Time(s)
+       /muhstik2.php: 1 Time(s)
+       /muhstiks.php: 1 Time(s)
+       /myadmin/scripts/db___.init.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /new_license.php: 1 Time(s)
+       /no1.php: 1 Time(s)
+       /payload.php: 2 Time(s)
+       /phpMyAdmin/scripts/db___.init.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/db___.init.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /plugins/weathermap/editor.php: 1 Time(s)
+       /pma/scripts/db___.init.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /pmd_online.php: 1 Time(s)
+       /public/index.php: 2 Time(s)
+       /python.php: 1 Time(s)
+       /remote/login: 1 Time(s)
+       /remote/login?lang=en: 1 Time(s)
+       /rxr.php: 1 Time(s)
+       /sane.php: 1 Time(s)
+       /scripts/db___.init.php: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /shell.php: 2 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /spider.php: 1 Time(s)
+       /t6nv.php: 1 Time(s)
+       /test.php: 1 Time(s)
+       /text.php: 1 Time(s)
+       /thinkphp/html/public/index.php: 2 Time(s)
+       /undx.php: 1 Time(s)
+       /up.php: 1 Time(s)
+       /uploader.php: 1 Time(s)
+       /weathermap/editor.php: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /wp-config.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wpc.php: 1 Time(s)
+       /wpo.php: 1 Time(s)
+       /x.php: 1 Time(s)
+       /xiaoxia.php: 1 Time(s)
+       /yuyang.php: 1 Time(s)
+       /z.php: 1 Time(s)
+       /zz.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       29   *Warning: Pre-queue content-filter connection overload 
+      210   SASL authentication failed 
+      125   Miscellaneous warnings 
+ 
+    1.972M  Bytes accepted                         2,067,593
+    1.966M  Bytes delivered                        2,061,391
+ ========   ================================================
+ 
+       40   Accepted                                  41.67%
+       56   Rejected                                  58.33%
+ --------   ------------------------------------------------
+       96   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                           1.79%
+       55   Reject unknown user                       98.21%
+ --------   ------------------------------------------------
+       56   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      238   Connections made      
+      238   Disconnections        
+       40   Removed from queue    
+       37   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   19G   32G  38% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

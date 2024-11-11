@@ -1,0 +1,137 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 8E34D9F2115D; Sat, 23 Mar 2019 03:40:07 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190323024007.8E34D9F2115D@hrankiety.pl>
+Date: Sat, 23 Mar 2019 03:40:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Mar 23 03:40:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Mar-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Mar 22 03:33:09 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.2 Recommended version: 0.101.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25395.cdiff [100%]
+    daily.cld updated (version: 25395, sigs: 1526391, f-level: 63, builder: raynman)
+    bytecode.cld is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6092734 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /.ftpconfig: 1 Time(s)
+       /.idea/WebServers.xml: 1 Time(s)
+       /.remote-sync.json: 1 Time(s)
+       /.vscode/ftp-sync.json: 1 Time(s)
+       /.vscode/sftp.json: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /admin//config.php: 1 Time(s)
+       /cgi-bin/config.exp: 1 Time(s)
+       /deployment-config.json: 1 Time(s)
+       /horde/imp/test.php: 2 Time(s)
+       /horde3/imp/test.php: 2 Time(s)
+       /imp/test.php: 2 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /sftp-config.json: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       47   *Warning: Pre-queue content-filter connection overload 
+      102   SASL authentication failed 
+      109   Miscellaneous warnings 
+ 
+    2.002M  Bytes accepted                         2,098,762
+    1.996M  Bytes delivered                        2,092,565
+ ========   ================================================
+ 
+       39   Accepted                                  95.12%
+        2   Rejected                                   4.88%
+ --------   ------------------------------------------------
+       41   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       41   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       41   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      138   Connections made      
+       11   Connections lost      
+      138   Disconnections        
+       39   Removed from queue    
+       37   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       160.44.195.226 (ecs-160-44-195-226.reverse.open-telekom-cloud.com): 10 times
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 4 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 10 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   30G   21G  59% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

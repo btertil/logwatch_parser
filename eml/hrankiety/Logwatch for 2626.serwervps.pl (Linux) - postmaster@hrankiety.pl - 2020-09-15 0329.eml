@@ -1,0 +1,170 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 6C93A3427BA; Tue, 15 Sep 2020 03:29:11 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200915012911.6C93A3427BA@hrankiety.pl>
+Date: Tue, 15 Sep 2020 03:29:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Sep 15 03:29:05 2020
+        Date Range Processed: yesterday
+                              ( 2020-Sep-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Sep 14 03:15:07 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25929.cdiff [100%]
+    daily.cld updated (version: 25929, sigs: 4316395, f-level: 63, builder: raynman)
+    Can't query daily.25929.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8881391 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    203.189.239.116 -> sm.bdimg.com:443: 1 Time(s)
+ 
+ A total of 1 sites probed the server 
+    88.18.162.144
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /ftptest.cgi?loginuse=&loginpas=: 2 Time(s)
+       /set_ftp.cgi?loginuse=&loginpas=&next_url= ... +%2Fbin%2Fsh%29: 2 Time(s)
+       login.cgi: 2 Time(s)
+       sm.bdimg.com:443: 1 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 1 Time(s)
+       ///wp-content/plugins/wp-file-manager/lib/ ... tor.minimal.php: 1 Time(s)
+       ///wp-content/plugins/wp-file-manager/lib/files/admin.php: 1 Time(s)
+       //2020///wp-content/plugins/wp-file-manage ... files/admin.php: 1 Time(s)
+       //2020///wp-content/plugins/wp-file-manage ... tor.minimal.php: 1 Time(s)
+       //2020//wp-content/plugins/wp-file-manager ... tor.minimal.php: 1 Time(s)
+       //blog///wp-content/plugins/wp-file-manage ... files/admin.php: 1 Time(s)
+       //blog///wp-content/plugins/wp-file-manage ... tor.minimal.php: 1 Time(s)
+       //blog//wp-content/plugins/wp-file-manager ... tor.minimal.php: 1 Time(s)
+       //demo///wp-content/plugins/wp-file-manage ... files/admin.php: 1 Time(s)
+       //demo///wp-content/plugins/wp-file-manage ... tor.minimal.php: 1 Time(s)
+       //demo//wp-content/plugins/wp-file-manager ... tor.minimal.php: 1 Time(s)
+       //home///wp-content/plugins/wp-file-manage ... files/admin.php: 1 Time(s)
+       //home///wp-content/plugins/wp-file-manage ... tor.minimal.php: 1 Time(s)
+       //home//wp-content/plugins/wp-file-manager ... tor.minimal.php: 1 Time(s)
+       //new///wp-content/plugins/wp-file-manager ... files/admin.php: 1 Time(s)
+       //new///wp-content/plugins/wp-file-manager ... tor.minimal.php: 1 Time(s)
+       //new//wp-content/plugins/wp-file-manager/ ... tor.minimal.php: 1 Time(s)
+       //old///wp-content/plugins/wp-file-manager ... files/admin.php: 1 Time(s)
+       //old///wp-content/plugins/wp-file-manager ... tor.minimal.php: 1 Time(s)
+       //old//wp-content/plugins/wp-file-manager/ ... tor.minimal.php: 1 Time(s)
+       //wordpress///wp-content/plugins/wp-file-m ... files/admin.php: 1 Time(s)
+       //wordpress///wp-content/plugins/wp-file-m ... tor.minimal.php: 1 Time(s)
+       //wordpress//wp-content/plugins/wp-file-ma ... tor.minimal.php: 1 Time(s)
+       //wp-content/plugins/wp-file-manager/lib/p ... tor.minimal.php: 1 Time(s)
+       //wp///wp-content/plugins/wp-file-manager/ ... files/admin.php: 1 Time(s)
+       //wp///wp-content/plugins/wp-file-manager/ ... tor.minimal.php: 1 Time(s)
+       //wp//wp-content/plugins/wp-file-manager/l ... tor.minimal.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /admin//config.php: 3 Time(s)
+       /ads.txt: 1 Time(s)
+       /ajax: 1 Time(s)
+       /boaform/admin/formLogin: 3 Time(s)
+       /cgi-bin/mainfunction.cgi: 1 Time(s)
+       /cgi-bin/nobody/Search.cgi?action=cgi_quer ... &password=admin: 2 Time(s)
+       /hudson: 1 Time(s)
+       /humans.txt: 1 Time(s)
+       /index.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 4 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /wp-content/plugins/wp-file-manager/lib/ph ... tor.minimal.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+    408 Request Timeout
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       83   *Warning: Pre-queue content-filter connection overload 
+     9733   SASL authentication failed 
+      117   Miscellaneous warnings 
+ 
+    2.745M  Bytes accepted                         2,878,063
+    2.739M  Bytes delivered                        2,871,873
+ ========   ================================================
+ 
+       65   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       65   Total                                    100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     9757   Connections made      
+        2   Connections lost      
+     9757   Disconnections        
+       65   Removed from queue    
+       63   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   31G   17G  66% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,162 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id A71F69F201CF; Wed, 17 Oct 2018 03:49:08 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20181017014908.A71F69F201CF@hrankiety.pl>
+Date: Wed, 17 Oct 2018 03:49:06 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Oct 17 03:49:06 2018
+        Date Range Processed: yesterday
+                              ( 2018-Oct-16 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Oct 16 03:10:23 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.1 Recommended version: 0.100.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25038.cdiff [100%]
+    Downloading daily-25039.cdiff [100%]
+    Downloading daily-25040.cdiff [100%]
+    daily.cld updated (version: 25040, sigs: 2122685, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6689025 signatures) from db.local.clamav.net (IP: 104.16.189.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+    404 Not Found
+       /HNAP1: 1 Time(s)
+       /blog/wp-login.php: 1 Time(s)
+       /evox/about: 1 Time(s)
+       /manager/html: 3 Time(s)
+       /nmaplowercheck1539686842: 1 Time(s)
+       /sdk: 1 Time(s)
+       /search.php: 1 Time(s)
+       /wls-wsat/CoordinatorPortType: 1 Time(s)
+       /wordpress/wp-login.php: 1 Time(s)
+       /wp-content/themes/twentyseventeen/404.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wp/wp-login.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      478   *Warning: Pre-queue content-filter connection overload 
+      473   SASL authentication failed 
+       41   Miscellaneous warnings 
+ 
+    1.347M  Bytes accepted                         1,412,773
+    1.341M  Bytes delivered                        1,406,567
+ ========   ================================================
+ 
+       23   Accepted                                  92.00%
+        2   Rejected                                   8.00%
+ --------   ------------------------------------------------
+       25   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      501   Connections made      
+      501   Disconnections        
+       23   Removed from queue    
+       21   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.77.72.8 (89-77-72-8.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+    kernel-2.6.32-754.6.3.el6.i686
+ 
+ Packages Updated:
+    12:dhclient-4.1.1-63.P1.el6.centos.i686
+    nss-tools-3.36.0-9.el6_10.i686
+    nss-3.36.0-9.el6_10.i686
+    12:dhcp-common-4.1.1-63.P1.el6.centos.i686
+    mailx-12.4-10.el6_10.i686
+    kernel-headers-2.6.32-754.6.3.el6.i686
+    fail2ban-0.9.6-1.el6.1.noarch
+    yum-3.2.29-81.el6.centos.0.1.noarch
+    nss-sysinit-3.36.0-9.el6_10.i686
+    kernel-firmware-2.6.32-754.6.3.el6.noarch
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   25G   26G  50% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,123 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 64D99111025D9; Sat, 31 Jan 2015 03:23:36 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id A99DA111025DC; Sat, 31 Jan 2015 03:23:30 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150131022331.A99DA111025DC@2626.serwervps.pl>
+Date: Sat, 31 Jan 2015 03:23:24 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jan 31 03:23:23 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jan-30 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Jan 30 03:46:48 2015
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.5 Recommended version: 0.98.6
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19993.cdiff [100%]
+    Downloading daily-19994.cdiff [100%]
+    Downloading daily-19995.cdiff [100%]
+    Downloading daily-19996.cdiff [100%]
+    Downloading daily-19997.cdiff [100%]
+    Downloading daily-19998.cdiff [100%]
+    daily.cld updated (version: 19998, sigs: 1316120, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 245, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3740388 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /tktk/tkt/tk.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        3   *Warning: Pre-queue content-filter connection overload 
+ 
+    7.561M  Bytes accepted                         7,928,564
+    7.645M  Bytes delivered                        8,016,806
+ ========   ================================================
+ 
+       14   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       14   Total                                    100.00%
+ ========   ================================================
+ 
+       10   Connections made      
+       10   Disconnections        
+       14   Removed from queue    
+        8   Delivered             
+        7   Sent via SMTP         
+        2   Forwarded             
+        2   Deferred              
+        4   Deferrals             
+        1   DSNs delivered        
+ 
+        4   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 2 times
+       185.17.41.230 (backup): 2 times
+       213.158.219.201 (213.158.219.201.pat.umts.dynamic.t-mobile.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: Client disconnecting normally : 1 Time(s)
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   13G   38G  26% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,374 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 635699F2064F; Mon, 25 May 2020 03:49:09 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200525014909.635699F2064F@hrankiety.pl>
+Date: Mon, 25 May 2020 03:49:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon May 25 03:49:05 2020
+        Date Range Processed: yesterday
+                              ( 2020-May-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun May 24 03:46:07 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25821.cdiff [100%]
+    daily.cld updated (version: 25821, sigs: 2465067, f-level: 63, builder: raynman)
+    Can't query daily.25821.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (7030063 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    146.88.240.11
+    185.202.2.147
+    185.242.22.43
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FAND%2F%2A%2A%2F% ... 2F%27%%27%3D%27: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FAND%2F%2A%2A%2F1 ... 2F%27%%27%3D%27: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FAND%2F%2A%2A%2F2 ... 2F%27%%27%3D%27: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FAND%2F%2A%2A%2F4 ... 2F%27%%27%3D%27: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FAND%2F%2A%2A%2F6 ... 2F%27%%27%3D%27: 2 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FAND%2F%2A%2A%2F9 ... 2F%27%%27%3D%27: 2 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FAND%2F%2A%2A%2FS ... 2F%27%%27%3D%27: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FORDER%2F%2A%2A%2 ... 2F%2A%2A%2FFSGb: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FUNION%2F%2A%2A%2 ... 2F%2A%2A%2FBztA: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FUNION%2F%2A%2A%2 ... 2F%2A%2A%2FCieX: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FUNION%2F%2A%2A%2 ... 2F%2A%2A%2FNOAt: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FUNION%2F%2A%2A%2 ... 2F%2A%2A%2FaNqu: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FUNION%2F%2A%2A%2 ... 2F%2A%2A%2FhpEc: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FUNION%2F%2A%2A%2 ... 2F%2A%2A%2FvXiR: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FUNION%2F%2A%2A%2 ... 2F%2A%2A%2FxVqh: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FUNION%2F%2A%2A%2 ... 2F%2A%2A%2FxbIV: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FUNION%2F%2A%2A%2 ... 2F%2A%2A%2FyDys: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FUNION%2F%2A%2A%2 ... 2F%2A%2A%2FzZIV: 1 Time(s)
+       /ocena360/%%27%2F%2A%2A%2FWAITFOR%2F%2A%2A ... 2F%27%%27%3D%27: 1 Time(s)
+       /ocena360/%%27%3BSELECT%2F%2A%2A%2FDBMS_PI ... %2A%2A%2FDUAL--: 1 Time(s)
+       /ocena360/%%27%3BSELECT%2F%2A%2A%2FPG_SLEEP%285%29--: 1 Time(s)
+       /ocena360/%%27%3BWAITFOR%2F%2A%2A%2FDELAY% ... 70%3A0%3A5%27--: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       //login_sid.lua: 2 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /admin/connection/: 1 Time(s)
+       /api/jsonws/invoke: 2 Time(s)
+       /cgi-bin/mainfunction.cgi: 2 Time(s)
+       /dns-query?dns=AAABAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /hudson: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 3 Time(s)
+       /m/calendar/Calendar.html: 1 Time(s)
+       /ocena360/%20AND%20%28SELECT%201899%20FROM ... 20BY%20x%29a%29: 1 Time(s)
+       /ocena360/%20AND%20%28SELECT%201899%20FROM ... 29a%29--%20hIpZ: 1 Time(s)
+       /ocena360/%20AND%20%28SELECT%207990%20FROM ... 29%29%29uigZ%29: 1 Time(s)
+       /ocena360/%20AND%20%28SELECT%207990%20FROM ... igZ%29--%20Idxa: 1 Time(s)
+       /ocena360/%20AND%201606%3D%28SELECT%201606 ... %29%29--%20xaPT: 1 Time(s)
+       /ocena360/%20AND%201606%3D%28SELECT%201606 ... SLEEP%285%29%29: 1 Time(s)
+       /ocena360/%20AND%203301%3D3301: 1 Time(s)
+       /ocena360/%20AND%203301%3D3301--%20umIx: 1 Time(s)
+       /ocena360/%20AND%203321%3D3389: 1 Time(s)
+       /ocena360/%20AND%206318%3D%28SELECT%20UPPE ... 0FROM%20DUAL%29: 1 Time(s)
+       /ocena360/%20AND%206318%3D%28SELECT%20UPPE ... UAL%29--%20YTgi: 1 Time(s)
+       /ocena360/%20AND%208408%20IN%20%28SELECT%2 ... %28113%29%29%29: 1 Time(s)
+       /ocena360/%20AND%208408%20IN%20%28SELECT%2 ... %29%29--%20BPKm: 1 Time(s)
+       /ocena360/%20AND%208553%3D4719--%20ehne: 1 Time(s)
+       /ocena360/%20AND%208673%3DDBMS_PIPE.RECEIV ... %2870%29%2C5%29: 1 Time(s)
+       /ocena360/%20AND%208673%3DDBMS_PIPE.RECEIV ... 2C5%29--%20TLOg: 1 Time(s)
+       /ocena360/%20AND%209469%3DCAST%28%28CHR%28 ... AS%20NUMERIC%29: 1 Time(s)
+       /ocena360/%20AND%209469%3DCAST%28%28CHR%28 ... RIC%29--%20YbKH: 1 Time(s)
+       /ocena360/%20ORDER%20BY%201--%20HiCX: 1 Time(s)
+       /ocena360/%20ORDER%20BY%201--%20Vwng: 1 Time(s)
+       /ocena360/%20WAITFOR%20DELAY%20%270%3A0%3A5%27: 1 Time(s)
+       /ocena360/%20WAITFOR%20DELAY%20%270%3A0%3A5%27--%20WtNn: 1 Time(s)
+       /ocena360/%27%20AND%20%28SELECT%201899%20F ... vq%27%3D%27vbvq: 1 Time(s)
+       /ocena360/%27%20AND%20%28SELECT%207990%20F ... CJ%27%3D%27PBCJ: 1 Time(s)
+       /ocena360/%27%20AND%201606%3D%28SELECT%201 ... hv%27%3D%27kKhv: 1 Time(s)
+       /ocena360/%27%20AND%203301%3D3301%20AND%20 ... VL%27%3D%27PSVL: 1 Time(s)
+       /ocena360/%27%20AND%206318%3D%28SELECT%20U ... Dc%27%3D%27dgDc: 1 Time(s)
+       /ocena360/%27%20AND%208408%20IN%20%28SELEC ... cy%27%3D%27Escy: 1 Time(s)
+       /ocena360/%27%20AND%208673%3DDBMS_PIPE.REC ... BP%27%3D%27HjBP: 1 Time(s)
+       /ocena360/%27%20AND%208763%3D8372%20AND%20 ... jc%27%3D%27dTjc: 1 Time(s)
+       /ocena360/%27%20AND%209469%3DCAST%28%28CHR ... lm%27%3D%27Qzlm: 1 Time(s)
+       /ocena360/%27%20ORDER%20BY%201--%20lzDu: 1 Time(s)
+       /ocena360/%27%20WAITFOR%20DELAY%20%270%3A0 ... jY%27%3D%27ubjY: 1 Time(s)
+       /ocena360/%27%29%20AND%20%28SELECT%201899% ... tV%27%3D%27ETtV: 1 Time(s)
+       /ocena360/%27%29%20AND%20%28SELECT%207990% ... YI%27%3D%27SoYI: 1 Time(s)
+       /ocena360/%27%29%20AND%201606%3D%28SELECT% ... ZR%27%3D%27SVZR: 1 Time(s)
+       /ocena360/%27%29%20AND%203301%3D3301%20AND ... eM%27%3D%27RceM: 1 Time(s)
+       /ocena360/%27%29%20AND%206318%3D%28SELECT% ... IZ%27%3D%27trIZ: 1 Time(s)
+       /ocena360/%27%29%20AND%207562%3D7562%20AND ... wN%27%3D%27BYwN: 1 Time(s)
+       /ocena360/%27%29%20AND%208408%20IN%20%28SE ... CH%27%3D%27fFCH: 1 Time(s)
+       /ocena360/%27%29%20AND%208673%3DDBMS_PIPE. ... Vi%27%3D%27tAVi: 1 Time(s)
+       /ocena360/%27%29%20AND%209469%3DCAST%28%28 ... zl%27%3D%27lqzl: 1 Time(s)
+       /ocena360/%27%29%20ORDER%20BY%201--%20OgYU: 1 Time(s)
+       /ocena360/%27%29%20WAITFOR%20DELAY%20%270% ... VF%27%3D%27paVF: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FAND%2F%2A%2A%2 ... Bk%27%3D%27fuBk: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FAND%2F%2A%2A%2 ... MY%27%3D%27SrMY: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FAND%2F%2A%2A%2 ... SY%27%3D%27WeSY: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FAND%2F%2A%2A%2 ... ZI%27%3D%27lbZI: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FAND%2F%2A%2A%2 ... dE%27%3D%27KedE: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FAND%2F%2A%2A%2 ... fj%27%3D%27Swfj: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FAND%2F%2A%2A%2 ... gb%27%3D%27aNgb: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FAND%2F%2A%2A%2 ... xH%27%3D%27pxxH: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FAND%2F%2A%2A%2 ... yN%27%3D%27HtyN: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FORDER%2F%2A%2A ... 2F%2A%2A%2FGZbi: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FORDER%2F%2A%2A ... 2F%2A%2A%2FngGJ: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FUNION%2F%2A%2A ... 2F%2A%2A%2FCGPp: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FUNION%2F%2A%2A ... 2F%2A%2A%2FGQbN: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FUNION%2F%2A%2A ... 2F%2A%2A%2FOSke: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FUNION%2F%2A%2A ... 2F%2A%2A%2FRdQM: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FUNION%2F%2A%2A ... 2F%2A%2A%2FTUOK: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FUNION%2F%2A%2A ... 2F%2A%2A%2FZuok: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FUNION%2F%2A%2A ... 2F%2A%2A%2FcKIJ: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FUNION%2F%2A%2A ... 2F%2A%2A%2FotEX: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FUNION%2F%2A%2A ... 2F%2A%2A%2FpgHF: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FUNION%2F%2A%2A ... 2F%2A%2A%2FvgQp: 1 Time(s)
+       /ocena360/%27%29%2F%2A%2A%2FWAITFOR%2F%2A% ... Qn%27%3D%27NJQn: 1 Time(s)
+       /ocena360/%27%29%3BSELECT%20DBMS_PIPE.RECE ... 20FROM%20DUAL--: 1 Time(s)
+       /ocena360/%27%29%3BSELECT%20PG_SLEEP%285%29--: 1 Time(s)
+       /ocena360/%27%29%3BSELECT%2F%2A%2A%2FDBMS_ ... %2A%2A%2FDUAL--: 1 Time(s)
+       /ocena360/%27%29%3BSELECT%2F%2A%2A%2FPG_SLEEP%285%29--: 1 Time(s)
+       /ocena360/%27%29%3BWAITFOR%20DELAY%20%270%3A0%3A5%27--: 1 Time(s)
+       /ocena360/%27%29%3BWAITFOR%2F%2A%2A%2FDELA ... 70%3A0%3A5%27--: 1 Time(s)
+       /ocena360/%27%2C%2C%28%2C%28%22%29%29%2C: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FAND%2F%2A%2A%2F%2 ... TO%27%3D%27zDTO: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FAND%2F%2A%2A%2F15 ... Ky%27%3D%27sUKy: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FAND%2F%2A%2A%2F24 ... HH%27%3D%27aVHH: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FAND%2F%2A%2A%2F45 ... Hw%27%3D%27fqHw: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FAND%2F%2A%2A%2F64 ... oj%27%3D%27Oroj: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FAND%2F%2A%2A%2F70 ... us%27%3D%27Gqus: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FAND%2F%2A%2A%2F90 ... Bw%27%3D%27RmBw: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FAND%2F%2A%2A%2F92 ... cH%27%3D%27KXcH: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FAND%2F%2A%2A%2FSL ... wl%27%3D%27Kiwl: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FORDER%2F%2A%2A%2F ... 2F%2A%2A%2FGEvK: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FORDER%2F%2A%2A%2F ... 2F%2A%2A%2FNaKF: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FAvkT: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FKGod: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FLJpo: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FSaAr: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FeGrv: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2Fksch: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FledZ: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FobNR: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FowXN: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FuRVA: 1 Time(s)
+       /ocena360/%27%2F%2A%2A%2FWAITFOR%2F%2A%2A% ... dR%27%3D%27QMdR: 1 Time(s)
+       /ocena360/%27%3BSELECT%20DBMS_PIPE.RECEIVE ... 20FROM%20DUAL--: 1 Time(s)
+       /ocena360/%27%3BSELECT%20PG_SLEEP%285%29--: 1 Time(s)
+       /ocena360/%27%3BSELECT%2F%2A%2A%2FDBMS_PIP ... %2A%2A%2FDUAL--: 1 Time(s)
+       /ocena360/%27%3BSELECT%2F%2A%2A%2FPG_SLEEP%285%29--: 1 Time(s)
+       /ocena360/%27%3BWAITFOR%20DELAY%20%270%3A0%3A5%27--: 1 Time(s)
+       /ocena360/%27%3BWAITFOR%2F%2A%2A%2FDELAY%2 ... 70%3A0%3A5%27--: 1 Time(s)
+       /ocena360/%27MTVjxU%3C%27%22%3Eowygfl: 1 Time(s)
+       /ocena360/%27dnLlcK%3C%27%22%3EYzyPbr: 1 Time(s)
+       /ocena360/%28SELECT%20%28CASE%20WHEN%20%28 ... %29%20END%29%29: 2 Time(s)
+       /ocena360/%28SELECT%202937%20FROM%28SELECT ... 20BY%20x%29a%29: 1 Time(s)
+       /ocena360/%28SELECT%20CONCAT%28CONCAT%28%2 ... 7qjvvq%27%29%29: 1 Time(s)
+       /ocena360/%28SELECT%2F%2A%2A%2F%28CASE%2F% ... %2A%2FEND%29%29: 2 Time(s)
+       /ocena360/%28SELECT%2F%2A%2A%2F%28CHR%2811 ... %28113%29%29%29: 1 Time(s)
+       /ocena360/%28SELECT%2F%2A%2A%2F1251%2F%2A% ... A%2A%2Fx%29a%29: 1 Time(s)
+       /ocena360/%28SELECT%2F%2A%2A%2FCHAR%28113% ... HAR%28113%29%29: 1 Time(s)
+       /ocena360/%28SELECT%2F%2A%2A%2FCONCAT%280x ... 16b707671%29%29: 1 Time(s)
+       /ocena360/%29%20AND%20%28SELECT%201899%20F ... 0%288348%3D8348: 1 Time(s)
+       /ocena360/%29%20AND%20%28SELECT%207990%20F ... 0%281356%3D1356: 1 Time(s)
+       /ocena360/%29%20AND%201606%3D%28SELECT%201 ... 0%283448%3D3448: 1 Time(s)
+       /ocena360/%29%20AND%201610%3D4493%20AND%20%287875%3D7875: 1 Time(s)
+       /ocena360/%29%20AND%203301%3D3301%20AND%20%287924%3D7924: 1 Time(s)
+       /ocena360/%29%20AND%206318%3D%28SELECT%20U ... 0%289311%3D9311: 1 Time(s)
+       /ocena360/%29%20AND%208408%20IN%20%28SELEC ... 0%284588%3D4588: 1 Time(s)
+       /ocena360/%29%20AND%208673%3DDBMS_PIPE.REC ... 0%281280%3D1280: 1 Time(s)
+       /ocena360/%29%20AND%209469%3DCAST%28%28CHR ... 0%285560%3D5560: 1 Time(s)
+       /ocena360/%29%20ORDER%20BY%201--%20KWPH: 1 Time(s)
+       /ocena360/%29%20WAITFOR%20DELAY%20%270%3A0 ... 0%285582%3D5582: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FAND%2F%2A%2A%2F%2 ... F%282851%3D2851: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FAND%2F%2A%2A%2F15 ... F%288455%3D8455: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FAND%2F%2A%2A%2F24 ... F%282914%3D2914: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FAND%2F%2A%2A%2F45 ... F%285344%3D5344: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FAND%2F%2A%2A%2F64 ... F%288906%3D8906: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FAND%2F%2A%2A%2F70 ... F%282804%3D2804: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FAND%2F%2A%2A%2F90 ... F%286850%3D6850: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FAND%2F%2A%2A%2F92 ... F%284982%3D4982: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FAND%2F%2A%2A%2FSL ... F%287366%3D7366: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FORDER%2F%2A%2A%2F ... 2F%2A%2A%2FDlfo: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FORDER%2F%2A%2A%2F ... 2F%2A%2A%2FZmGD: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FBJoJ: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FEdzc: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FNbPc: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FTRHo: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FWWUB: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FWsar: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FaTmj: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2ForTE: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FsoIs: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FUNION%2F%2A%2A%2F ... 2F%2A%2A%2FwjEH: 1 Time(s)
+       /ocena360/%29%2F%2A%2A%2FWAITFOR%2F%2A%2A% ... F%284458%3D4458: 1 Time(s)
+       /ocena360/%29%3BSELECT%20DBMS_PIPE.RECEIVE ... 20FROM%20DUAL--: 1 Time(s)
+       /ocena360/%29%3BSELECT%20PG_SLEEP%285%29--: 1 Time(s)
+       /ocena360/%29%3BSELECT%2F%2A%2A%2FDBMS_PIP ... %2A%2A%2FDUAL--: 1 Time(s)
+       /ocena360/%29%3BSELECT%2F%2A%2A%2FPG_SLEEP%285%29--: 1 Time(s)
+       /ocena360/%29%3BWAITFOR%20DELAY%20%270%3A0%3A5%27--: 1 Time(s)
+       /ocena360/%29%3BWAITFOR%2F%2A%2A%2FDELAY%2 ... 70%3A0%3A5%27--: 1 Time(s)
+       /ocena360/%2C%27.%28%29%2C%22%29%29%28: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F%28SE ... 2F%2A%2A%2FYUFy: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F%28SE ... A%2A%2Fx%29a%29: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F1582% ... 2A%2FNUMERIC%29: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F1582% ... 2F%2A%2A%2FKEeP: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F2444% ... %2866%29%2C5%29: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F2444% ... 2F%2A%2A%2FLFNB: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F4550% ... 2A%2A%2FDUAL%29: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F4550% ... 2F%2A%2A%2FkDsi: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F5292%3D7916: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F6413% ... 2F%2A%2A%2Fqcdt: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F6413% ... SLEEP%285%29%29: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F8016% ... 2F%2A%2A%2FXevA: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F9035% ... 2F%2A%2A%2FQzJs: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F9035%3D9035: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F9237% ... %28113%29%29%29: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2F9237% ... 2F%2A%2A%2FyGNe: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2FSLEEP ... 2F%2A%2A%2FNJZL: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FAND%2F%2A%2A%2FSLEEP%285%29: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FORDER%2F%2A%2A%2FBY% ... 2F%2A%2A%2FKLJq: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FORDER%2F%2A%2A%2FBY% ... 2F%2A%2A%2FUzah: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FORDER%2F%2A%2A%2FBY% ... 2F%2A%2A%2FZIQe: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FORDER%2F%2A%2A%2FBY% ... 2F%2A%2A%2FhImv: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FBRTx: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FBkjc: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FCbbC: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FFdab: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FHKah: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FKGxF: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FLAeb: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FLyrv: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FWYCS: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FXWMG: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FYxjl: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FaaPS: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2Faqqz: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FcMGy: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2Fiqcm: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FjIhP: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FmgCc: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FqLPL: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FvJnw: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FUNION%2F%2A%2A%2FALL ... 2F%2A%2A%2FzynI: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FWAITFOR%2F%2A%2A%2FD ... %270%3A0%3A5%27: 1 Time(s)
+       /ocena360/%2F%2A%2A%2FWAITFOR%2F%2A%2A%2FD ... 2F%2A%2A%2FJCNQ: 1 Time(s)
+       /ocena360/%3BSELECT%20DBMS_PIPE.RECEIVE_ME ... 20FROM%20DUAL--: 1 Time(s)
+       /ocena360/%3BSELECT%20PG_SLEEP%285%29--: 1 Time(s)
+       /ocena360/%3BSELECT%2F%2A%2A%2FDBMS_PIPE.R ... %2A%2A%2FDUAL--: 1 Time(s)
+       /ocena360/%3BSELECT%2F%2A%2A%2FPG_SLEEP%285%29--: 1 Time(s)
+       /ocena360/%3BWAITFOR%20DELAY%20%270%3A0%3A5%27--: 1 Time(s)
+       /ocena360/%3BWAITFOR%2F%2A%2A%2FDELAY%2F%2 ... 70%3A0%3A5%27--: 1 Time(s)
+       /ocena360/1833: 1 Time(s)
+       /ocena360/5870: 1 Time(s)
+       /ocena360/https%3A%2F%2Fhrankiety.pl%3A443%2Focena360%2F%2A: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /public/hydra.php?xcmd=cmd.exe%20/c%20powe ... ahppzwv2320.exe: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /public/index.php?s=/index/\\think\\app/in ... );?^>>hydra.php: 1 Time(s)
+       /public/index.php?s=index/think\\app/invok ... ahppzwv2320.exe: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /solr/admin/info/system?wt=json: 3 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 6 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       68   *Warning: Pre-queue content-filter connection overload 
+     8295   SASL authentication failed 
+       56   Miscellaneous warnings 
+ 
+  388.316K  Bytes accepted                           397,636
+  379.742K  Bytes delivered                          388,856
+ ========   ================================================
+ 
+       30   Accepted                                  83.33%
+        6   Rejected                                  16.67%
+ --------   ------------------------------------------------
+       36   Total                                    100.00%
+ ========   ================================================
+ 
+        6   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        6   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     8412   Connections made      
+        1   Connections lost      
+     8412   Disconnections        
+       30   Removed from queue    
+       26   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 5 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   28G   23G  55% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

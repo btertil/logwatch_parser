@@ -1,0 +1,109 @@
+Delivered-To: bondiev@gmail.com
+Received: by 10.112.217.2 with SMTP id ou2csp284203lbc;
+        Mon, 30 Dec 2013 17:02:37 -0800 (PST)
+X-Received: by 10.180.74.45 with SMTP id q13mr45796735wiv.47.1388451756928;
+        Mon, 30 Dec 2013 17:02:36 -0800 (PST)
+Return-Path: <root@vps6.idhosting.pl>
+Received: from vps6.idhosting.pl ([91.231.140.105])
+        by mx.google.com with ESMTP id i1si55099100eev.89.2013.12.30.17.02.36
+        for <bondiev@gmail.com>;
+        Mon, 30 Dec 2013 17:02:36 -0800 (PST)
+Received-SPF: neutral (google.com: 91.231.140.105 is neither permitted nor denied by best guess record for domain of root@vps6.idhosting.pl) client-ip=91.231.140.105;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 91.231.140.105 is neither permitted nor denied by best guess record for domain of root@vps6.idhosting.pl) smtp.mail=root@vps6.idhosting.pl
+Received: by vps6.idhosting.pl (Postfix, from userid 0)
+	id 066E8B82457; Tue, 31 Dec 2013 04:02:05 +0300 (MSK)
+To: bondiev@gmail.com
+From: logwatch@test.idhosting.pl
+Subject: Logwatch for vps6.idhosting.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131231010206.066E8B82457@vps6.idhosting.pl>
+Date: Tue, 31 Dec 2013 04:02:04 +0300 (MSK)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Dec 31 04:02:04 2013
+        Date Range Processed: yesterday
+                              ( 2013-Dec-30 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vps6.idhosting.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Dec 30 04:02:05 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18303.cdiff [100%]
+    daily.cld updated (version: 18303, sigs: 630101, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (3054370 signatures) from db.local.clamav.net (IP: 193.1.193.64)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /admin/common/ie.css: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   20.576K  Bytes accepted                            21,070
+   20.576K  Bytes delivered                           21,070
+ ========   ================================================
+ 
+        2   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        2   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Removed from queue    
+        1   Delivered             
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       40G  1.7G   39G   5% /
+ none            256M  4.0K  256M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

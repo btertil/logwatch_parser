@@ -1,0 +1,200 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:5fc1:0:0:0:0 with SMTP id k1csp3492191ejv;
+        Sun, 26 Apr 2020 18:49:11 -0700 (PDT)
+X-Google-Smtp-Source: APiQypIwtDx05LQ7+8/jcL20WlathwN7fPoz/hGtf8ZD8QBsOimiVvdjy6Q0eGpLoju1vpxcCgD1
+X-Received: by 2002:a2e:8658:: with SMTP id i24mr11944625ljj.287.1587952151635;
+        Sun, 26 Apr 2020 18:49:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1587952151; cv=none;
+        d=google.com; s=arc-20160816;
+        b=y9Uj839Eofj81VMQUXsYkZmWec5qN+I+YnMpvxl/bVN9JIFZlxdnqF5LES/ct1SVGQ
+         GmZsIqK2hxyxrLqAlokLbViTeFl630sOFdu+2mhqqhw0lhHTRsYlW0D6VEazynGgvpGv
+         b9iS3v8IADV5/0VF+QxsCEaDRo3Qeu8k2wPQDJVxgRjhjXwPnlM6ir8rGQUCSGvvfdkW
+         walcb5flQESRr2ioF/kZwn+eVZPZOm7Vlnew5hcbEr1LQhnpvJezrZc27VD2M+HEfiZO
+         jZiM/FJvGks28W7B1QTowxCuTn8SHhfTZaFCmNINyiqk7Yr3OCIcQYcJ7F61zmECywFX
+         9bmQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=R6clV6CgseS0xRhvcs1xZjYJEpHy8lkXq6ojLaSU90I=;
+        b=OBMJ/wMyft3S2FHHCvIO7shJBLUs2Y4GCdL9FJ7HRd00b397S6ZKNwuBavfxkmGTNq
+         i63lUvlSfYTFmsuGrc8JHgzfgtLQP0wAOBaAjcCWNhE34A8nJ61D2U0QoU8noGeCMVa1
+         /BozY5JANDON0sHtGfwJTHqeitKHivOCkzr2/7UanNY4r0V8SRtYeScDQE9BP9x2sMtn
+         FT9ouiVaoJwVNpt36H2wLgiYDbpqib245W8/IMkC1UWdtnXTLgp3Flh+DZ5lkEvRD7qU
+         M1aZsnkjH1nrl0LST8BsIEsXeURXLmshIDm8bCnzm+ldm+7sUctUYxVKbosz9hVlEcr9
+         WYYA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id o6si6814122ljg.185.2020.04.26.18.49.11
+        for <bondiev@gmail.com>;
+        Sun, 26 Apr 2020 18:49:11 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 91C9D4A8004D; Mon, 27 Apr 2020 03:49:10 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200427014910.91C9D4A8004D@vis1.localdomain>
+Date: Mon, 27 Apr 2020 03:49:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Apr 27 03:49:08 2020
+        Date Range Processed: yesterday
+                              ( 2020-Apr-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Apr 26 03:12:12 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25793.cdiff [100%]
+    daily.cld updated (version: 25793, sigs: 2287391, f-level: 63, builder: raynman)
+    Can't query daily.25793.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6852387 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    45.13.93.82 -> ip.ws.126.net:443: 1 Time(s)
+    45.13.93.90 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 2 sites probed the server 
+    185.202.2.147
+    45.141.87.4
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 9 Time(s)
+       /boaform/admin/formPing: 1 Time(s)
+       /cgi-bin/mainfunction.cgi?action=login&key ... er=a&loginPwd=a: 1 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       //Admin/scripts/setup.php: 1 Time(s)
+       //MyAdmin/scripts/setup.php: 2 Time(s)
+       //login_sid.lua: 2 Time(s)
+       //myadmin/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin/scripts/setup.php: 2 Time(s)
+       //phpmyadmin/scripts/setup.php: 2 Time(s)
+       //pma/scripts/setup.php: 2 Time(s)
+       /2phpmyadmin/index.php?lang=en: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /SQLite/main.php: 1 Time(s)
+       /SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /SQLiteManager/main.php: 1 Time(s)
+       /SQlite/main.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /adv,/cgi-bin/weblogin.cgi?username=admin% ... 3&password=asdf: 1 Time(s)
+       /agSearch/SQlite/main.php: 1 Time(s)
+       /ajax: 1 Time(s)
+       /cgi-bin/luci: 7 Time(s)
+       /cgi-bin/mainfunction.cgi: 4 Time(s)
+       /dana-na/auth/url_default/welcome.cgi: 7 Time(s)
+       /database/index.php?lang=en: 1 Time(s)
+       /home.asp: 5 Time(s)
+       /htmlV/welcomeMain.htm: 7 Time(s)
+       /index.asp: 7 Time(s)
+       /login.cgi?uri=: 5 Time(s)
+       /main.php: 1 Time(s)
+       /muieblackcat: 2 Time(s)
+       /myadmin/index.php?lang=en: 1 Time(s)
+       /mysql/admin/index.php?lang=en: 1 Time(s)
+       /mysql/dbadmin/index.php?lang=en: 1 Time(s)
+       /mysql/index.php?lang=en: 1 Time(s)
+       /mysql/mysqlmanager/index.php?lang=en: 1 Time(s)
+       /mysql/sqlmanager/index.php?lang=en: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /phpMyadmin/index.php?lang=en: 1 Time(s)
+       /phpmy/index.php?lang=en: 1 Time(s)
+       /phpmyAdmin/index.php?lang=en: 1 Time(s)
+       /phpmyadmin/index.php?lang=en: 1 Time(s)
+       /phpmyadmin1/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2/index.php?lang=en: 1 Time(s)
+       /phpmyadmin3/index.php?lang=en: 1 Time(s)
+       /phpmyadmin4/index.php?lang=en: 1 Time(s)
+       /phppma/index.php?lang=en: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /remote/login?lang=en: 7 Time(s)
+       /robots.txt: 4 Time(s)
+       /shopdb/index.php?lang=en: 1 Time(s)
+       /sqlite/main.php: 1 Time(s)
+       /sqlitemanager/main.php: 1 Time(s)
+       /test/sqlite/SQLiteManager-1.2.0/SQLiteMan ... -1.2.0/main.php: 1 Time(s)
+       /vpn/index.html: 5 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp ... dex.php?lang=en: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.755K  Bytes accepted                             4,869
+    4.755K  Bytes delivered                            4,869
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   23G  7.6G  75% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

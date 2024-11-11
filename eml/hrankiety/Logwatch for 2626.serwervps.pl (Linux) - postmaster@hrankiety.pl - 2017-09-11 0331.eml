@@ -1,0 +1,163 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 95D4335A251C; Mon, 11 Sep 2017 03:31:45 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170911013145.95D4335A251C@hrankiety.pl>
+Date: Mon, 11 Sep 2017 03:31:24 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Sep 11 03:31:24 2017
+        Date Range Processed: yesterday
+                              ( 2017-Sep-10 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Sep 10 03:33:41 2017
+ 
+ Last Status:
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-23798.cdiff [100%]
+    Downloading daily-23799.cdiff [100%]
+    Downloading daily-23800.cdiff [100%]
+    Downloading daily-23801.cdiff [100%]
+    Downloading daily-23802.cdiff [100%]
+    daily.cld updated (version: 23802, sigs: 1742898, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 310, sigs: 72, f-level: 63, builder: neo)
+    Database updated (6309219 signatures) from db.local.clamav.net (IP: 91.219.236.218)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    162.205.47.68
+    60.191.48.203
+    93.174.95.106
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       HTTP/1.1: 1 Time(s)
+       null: 9 Time(s)
+    404 Not Found
+       //a2billing/admin/Public/index.php: 1 Time(s)
+       //administrator: 1 Time(s)
+       //wp-login.php: 1 Time(s)
+       /Blog/wp-login.php: 1 Time(s)
+       /Joomla/administrator: 1 Time(s)
+       /MySQLDumper: 1 Time(s)
+       /SQLite/SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /SQLiteManager/main.php: 1 Time(s)
+       /SQlite/main.php: 1 Time(s)
+       /Wordpress/wp-login.php: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /blog/wp-login.php: 1 Time(s)
+       /cms/administrator: 1 Time(s)
+       /jenkins/script: 1 Time(s)
+       /jmx-console: 1 Time(s)
+       /joomla/administrator: 1 Time(s)
+       /login: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /msd: 1 Time(s)
+       /msd1.24.4: 1 Time(s)
+       /msd1.24stable: 1 Time(s)
+       /mySqlDumper: 1 Time(s)
+       /myadmin: 1 Time(s)
+       /mysql: 2 Time(s)
+       /mysqldumper: 1 Time(s)
+       /phpMyAdmin: 1 Time(s)
+       /phpMyAdmin-4.2.1-all-languages: 1 Time(s)
+       /phpMyAdmin-4.2.1-english: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /script: 1 Time(s)
+       /sql: 2 Time(s)
+       /sqlite/main.php: 1 Time(s)
+       /sqlitemanager/main.php: 1 Time(s)
+       /status?full=true: 1 Time(s)
+       /typo3/phpmyadmin: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /webadmin: 1 Time(s)
+       /webdav: 1 Time(s)
+       /wordpress/wp-login.php: 1 Time(s)
+       /wp/wp-login.php: 1 Time(s)
+       /xampp/phpmyadmin: 1 Time(s)
+    408 Request Timeout
+       null: 4 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+     1044   *Warning: Pre-queue content-filter connection overload 
+     1384   SASL authentication failed 
+       18   Miscellaneous warnings 
+ 
+  147.384K  Bytes accepted                           150,921
+  138.806K  Bytes delivered                          142,137
+ ========   ================================================
+ 
+       13   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       13   Total                                    100.00%
+ ========   ================================================
+ 
+     1395   Connections made      
+        1   Connections lost      
+     1395   Disconnections        
+       13   Removed from queue    
+        9   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   34G   17G  67% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

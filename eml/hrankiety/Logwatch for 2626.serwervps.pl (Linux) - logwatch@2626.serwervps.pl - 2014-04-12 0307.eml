@@ -1,0 +1,289 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 397FD111015C5; Sat, 12 Apr 2014 03:07:16 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 0809D111015D3
+	for <root@2626.serwervps.pl>; Sat, 12 Apr 2014 05:07:16 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id E-QFMitmCMO7 for <root@2626.serwervps.pl>;
+	Sat, 12 Apr 2014 03:07:08 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 89A9D111015C5; Sat, 12 Apr 2014 03:07:08 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140412010708.89A9D111015C5@2626.serwervps.pl>
+Date: Sat, 12 Apr 2014 03:07:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Apr 12 03:07:05 2014
+        Date Range Processed: yesterday
+                              ( 2014-Apr-11 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        2   No decoder for       .doc 
+        2   No ext program for   .rar, tried: unrar, rar
+        2   No ext program for   .tnef, tried: tnef
+        2   No ext program for   .doc, tried: ripole
+        2   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+        1   (29497-02) Passed CLEAN {RelayedInternal}, LOCAL [195.43.84.13]:59545 [91.216.25.2] <info@paczkomaty.pl> -> <atertil@hrankiety.pl>, Message-ID: <20140411153955.C40C41A0C9@paczkomaty.pl>, mail_id: HoQfgstEMYjp, Hits: 1.276, size: 186611, queued_as: 7E857111015DC, 5374 ms
+        1   (30298-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (30297-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (29498-01) Passed CLEAN {RelayedInternal}, LOCAL [94.42.100.26]:48664 [94.42.100.26] <www-data@8a.pl> -> <atertil@hrankiety.pl>, Message-ID: <8e7b82810f11b5a5f024152a22fcd710@8a.pl>, mail_id: lFQAzUpQgGdh, Hits: 2, size: 5005, queued_as: 457DD111015DB, 4205 ms
+        1   (30298-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140411011006.76298111015CB@2626.serwervps.pl>, mail_id: QoR7HXkIZKC7, Hits: -0.001, size: 9964, queued_as: 0891F111015CA, 8481 ms
+        1   (30297-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140411013006.6328F111015D3@2626.serwervps.pl>, mail_id: D3wQ48o-mawz, Hits: 0, size: 2288, queued_as: 18FC8111015D0, 10480 ms
+        1   (29497-01) Passed CLEAN {RelayedInternal}, LOCAL [94.42.100.26]:54881 [94.42.100.26] <www-data@8a.pl> -> <atertil@hrankiety.pl>, Message-ID: <e968b9bb09c4ea249b4d05257d97a822@8a.pl>, mail_id: tpR7ea6lYzQt, Hits: 2, size: 4561, queued_as: 5DADC111015C9, 4292 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Apr 11 03:10:06 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (85.254.217.235)...
+    Downloading daily-18767.cdiff [100%]
+    Downloading daily-18768.cdiff [100%]
+    Downloading daily-18769.cdiff [100%]
+    Downloading daily-18770.cdiff [100%]
+    Downloading daily-18771.cdiff [100%]
+    Downloading daily-18772.cdiff [100%]
+    daily.cld updated (version: 18772, sigs: 880415, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3304683 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 20% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    54.205.59.63
+ 
+ Requests with error response codes
+    404 Not Found
+       /.git/HEAD: 2 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+       /phpMyAdmin/main.php: 1 Time(s)
+       /phpmyadmin/main.php: 1 Time(s)
+       /slub/thumbs/a%20(34).jpg: 4 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Named Begin ------------------------ 
+
+ 
+ Received control channel commands
+    reload: 1 Time(s)
+    stop: 1 Time(s)
+ 
+ **Unmatched Entries**
+    Warning: 'empty-zones-enable/disable-empty-zone' not set: disabling RFC 1918 empty zones: 1 Time(s)
+    error (address not available) resolving './DNSKEY/IN': 2001:500:1::803f:235#53: 5 Time(s)
+    error (address not available) resolving './DNSKEY/IN': 2001:500:2f::f#53: 4 Time(s)
+    error (address not available) resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53: 7 Time(s)
+    error (address not available) resolving './DNSKEY/IN': 2001:503:c27::2:30#53: 2 Time(s)
+    error (address not available) resolving './DNSKEY/IN': 2001:7fd::1#53: 1 Time(s)
+    error (address not available) resolving './DNSKEY/IN': 2001:dc3::35#53: 1 Time(s)
+    error (address not available) resolving './NS/IN': 2001:500:1::803f:235#53: 4 Time(s)
+    error (address not available) resolving './NS/IN': 2001:500:2f::f#53: 4 Time(s)
+    error (address not available) resolving './NS/IN': 2001:503:ba3e::2:30#53: 6 Time(s)
+    error (address not available) resolving './NS/IN': 2001:503:c27::2:30#53: 1 Time(s)
+    error (address not available) resolving './NS/IN': 2001:7fd::1#53: 1 Time(s)
+    error (address not available) resolving './NS/IN': 2001:dc3::35#53: 1 Time(s)
+    error (address not available) resolving 'dlv.isc.org/DNSKEY/IN': 2001:4f8:0:2::19#53: 11 Time(s)
+    error (address not available) resolving 'dlv.isc.org/DNSKEY/IN': 2001:4f8:0:2::20#53: 10 Time(s)
+    error (address not available) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:2c::254#53: 2 Time(s)
+    error (address not available) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:60::29#53: 6 Time(s)
+    error (address not available) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:60::30#53: 10 Time(s)
+    error (address not available) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:71::29#53: 6 Time(s)
+    error (address not available) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:71::30#53: 6 Time(s)
+    error (address not available) resolving 'dlv.isc.org/DNSKEY/IN': 2001:500:c::1#53: 1 Time(s)
+    error (address not available) resolving 'ns.isc.afilias-nst.info/A/IN': 2a01:8840:9::1#53: 1 Time(s)
+    error (address not available) resolving 'ns.isc.afilias-nst.info/AAAA/IN': 2a01:8840:9::1#53: 1 Time(s)
+    error (address not available) resolving 'ns1.isc.ultradns.net/A/IN': 2001:502:f3ff::1#53: 2 Time(s)
+    error (address not available) resolving 'ns1.isc.ultradns.net/A/IN': 2610:a1:1015::1#53: 1 Time(s)
+    error (address not available) resolving 'ns1.isc.ultradns.net/A/IN': 2610:a1:1016::1#53: 1 Time(s)
+    error (address not available) resolving 'ns1.isc.ultradns.net/AAAA/IN': 2001:502:f3ff::1#53: 2 Time(s)
+    error (address not available) resolving 'ns1.isc.ultradns.net/AAAA/IN': 2610:a1:1015::1#53: 1 Time(s)
+    error (address not available) resolving 'ns1.isc.ultradns.net/AAAA/IN': 2610:a1:1016::1#53: 1 Time(s)
+    error (address not available) resolving 'ns2.isc.ultradns.net/A/IN': 2001:502:f3ff::1#53: 1 Time(s)
+    error (address not available) resolving 'ns2.isc.ultradns.net/AAAA/IN': 2001:502:f3ff::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns3.ultradns.org/A/IN': 2001:500:40::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns3.ultradns.org/A/IN': 2001:500:b::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns3.ultradns.org/A/IN': 2001:500:e::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns3.ultradns.org/A/IN': 2001:500:f::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns3.ultradns.org/AAAA/IN': 2001:500:40::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns3.ultradns.org/AAAA/IN': 2001:500:b::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns3.ultradns.org/AAAA/IN': 2001:500:e::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns3.ultradns.org/AAAA/IN': 2001:500:f::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns4.ultradns.org/A/IN': 2001:500:b::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns4.ultradns.org/A/IN': 2001:500:e::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns4.ultradns.org/A/IN': 2001:500:f::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns4.ultradns.org/AAAA/IN': 2001:500:b::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns4.ultradns.org/AAAA/IN': 2001:500:e::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns4.ultradns.org/AAAA/IN': 2001:500:f::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns5.ultradns.info/A/IN': 2001:500:49::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns5.ultradns.info/A/IN': 2001:502:f3ff::1#53: 1 Time(s)
+    error (address not available) resolving 'pdns5.ultradns.info/AAAA/IN': 2001:500:49::1#53: 1 Time(s)
+    reading built-in trusted keys from file '/etc/named.iscdlv.key': 1 Time(s)
+    sizing zone task pool based on 6 zones: 1 Time(s)
+    using built-in DLV key for view _default: 1 Time(s)
+ 
+ ---------------------- Named End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       12   *Warning: Pre-queue content-filter connection overload 
+        1   Miscellaneous warnings 
+ 
+  422.952K  Bytes accepted                           433,103
+  422.952K  Bytes delivered                          433,103
+ ========   ================================================
+ 
+       12   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       12   Total                                    100.00%
+ ========   ================================================
+ 
+        1   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       28   Connections made      
+        5   Connections lost      
+       28   Disconnections        
+       12   Removed from queue    
+        5   Delivered             
+        5   Sent via SMTP         
+        2   Forwarded             
+ 
+        4   Hostname verification errors 
+ 
+        1   Postfix start         
+        1   Postfix stop          
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Apr 11 23:11:44 2626 postfix/postfix-script[813]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Apr 11 23:11:44 2626 postfix/postfix-script[817]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Apr 11 23:11:44 2626 postfix/postfix-script[815]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> reboot  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 3 times
+       185.17.41.230 (backup): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ SFTP subsystem requests: 1 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.3G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

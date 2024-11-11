@@ -1,0 +1,138 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 5FEA211101711; Fri,  9 May 2014 03:36:17 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 5790511101706
+	for <root@2626.serwervps.pl>; Fri,  9 May 2014 05:36:17 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id G_9kkdxQelZX for <root@2626.serwervps.pl>;
+	Fri,  9 May 2014 03:36:11 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 6481611101710; Fri,  9 May 2014 03:36:11 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140509013611.6481611101710@2626.serwervps.pl>
+Date: Fri,  9 May 2014 03:36:09 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri May  9 03:36:09 2014
+        Date Range Processed: yesterday
+                              ( 2014-May-08 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (27409-20) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140508013015.0B00E111017F4@2626.serwervps.pl>, mail_id: bkWR9ByWcr8U, Hits: -0.001, size: 5950, queued_as: B0E60111017F1, 5750 ms
+        1   (27408-19) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140508013010.91261111017F1@2626.serwervps.pl>, mail_id: MqVh-UgmaKKQ, Hits: 0, size: 2288, queued_as: A3A411110154D, 7065 ms
+        1   (27408-19) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Thu May  8 03:30:15 2014
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.1 Recommended version: 0.98.3
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    WARNING: getfile: daily-18936.cdiff not found on remote server (IP: 158.129.196.3)
+    WARNING: getpatch: Can't download daily-18936.cdiff from db.local.clamav.net
+    Downloading daily-18936.cdiff [100%]
+    Downloading daily-18937.cdiff [100%]
+    Downloading daily-18938.cdiff [100%]
+    Downloading daily-18939.cdiff [100%]
+    Downloading daily-18940.cdiff [100%]
+    Downloading daily-18941.cdiff [100%]
+    Downloading daily-18942.cdiff [100%]
+    daily.cld updated (version: 18942, sigs: 936304, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3360572 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    177.142.172.113
+ 
+ Requests with error response codes
+    400 Bad Request
+       /w00tw00t.at.ISC.SANS.DFind:): 1 Time(s)
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpTest/zologize/axa.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /reports/rwservlet/showenv: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       31   *Warning: Connection concurrency limit reached 
+       81   *Warning: Pre-queue content-filter connection overload 
+        5   SASL authentication failed 
+ 
+   26.242K  Bytes accepted                            26,872
+   26.242K  Bytes delivered                           26,872
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+      139   Connections made      
+      134   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+       24   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.4G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

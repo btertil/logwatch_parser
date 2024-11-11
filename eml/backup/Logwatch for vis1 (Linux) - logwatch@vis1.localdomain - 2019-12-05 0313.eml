@@ -1,0 +1,151 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:bc50:0:0:0:0 with SMTP id s16csp1279495ejv;
+        Wed, 4 Dec 2019 18:13:11 -0800 (PST)
+X-Google-Smtp-Source: APXvYqypPPyDyIx/kE5UjSaKSq9YlUAqEvriAcPuHBwAFR4IdQLXCuCDz/TY/maUC9xXFS3tOtSW
+X-Received: by 2002:ac2:4436:: with SMTP id w22mr3760334lfl.185.1575511990995;
+        Wed, 04 Dec 2019 18:13:10 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1575511990; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jWhN9P0vL4drOvK4dCe1sTtObYtw7k62mSL+c08CMfijM1DAfmYVLkUQC2s9/fuuZD
+         jFAd0+6Dmv4Ck63UZKUpemGPqgJ0AL8eu6HImQrb7wi1e7aNSh/6qU/8E4rzN0Y5yXSU
+         x8hvBSZDMZv9nLcZW2by8qi/n4aWTnce4jjcXZkSuRAH9ADIxfYJ0c1+ymuZRB1zYAmo
+         96GuvDaPsBgW2hAEJLndelVRk4WibhDZ5yAMqSPruQNIpv5P4f5mnaemnfjhgW/YMnsY
+         a4D5QjIYt/+3NubcqKwt4hqZsFfYVZsG975tCTn+xPEdDuQBT+CpC1wZDWJcQUpBFpyC
+         5Pvg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=6VeHh8gqxQX/jgsFW2c02uvak/ABpWsyupVcGJeQjzI=;
+        b=x/tqKdtmSQnYS9YD8QEhIxqVkZzF7UNqZMC2vA3GXGs5vF4N21INuPECfEukHZ07Kj
+         gofxhWPPsaBSmWosqPoDnAJeYee1aRqRUw/jnIkSinsVQqVm0QDOOGpPlYP5AQ7PyVlo
+         oBBnul0ta4qhyH75jtOVXsBcMfIg8nqdrDSJlm+ZDsxKQz3myas0kyOfez1BJMt/r4Xf
+         2SMEyoSwI/gC5+shMb9EhyHatty4IcT3OwPs866Ym+VVOD3Ul/Kxg2wHTYQBT7AZC8zw
+         iBYzLEsLEIAWXuOYEjsQ0OaTXS4d9ryYnCLBdvtN5Qj1wCmLJlNcAgoGBsjBfbJUIotK
+         e1eg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id 142si2868137lfb.22.2019.12.04.18.13.10
+        for <bondiev@gmail.com>;
+        Wed, 04 Dec 2019 18:13:10 -0800 (PST)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 8EF804A80049; Thu,  5 Dec 2019 03:13:09 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191205021309.8EF804A80049@vis1.localdomain>
+Date: Thu,  5 Dec 2019 03:13:06 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Dec  5 03:13:06 2019
+        Date Range Processed: yesterday
+                              ( 2019-Dec-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Dec  4 03:13:14 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25652.cdiff [100%]
+    daily.cld updated (version: 25652, sigs: 2024968, f-level: 63, builder: raynman)
+    Can't query daily.25652.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6589964 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    193.188.22.187
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /shell?busybox: 1 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 2 Time(s)
+       /cgi-bin/config.exp: 1 Time(s)
+       /editBlackAndWhiteList: 2 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /images.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 3 Time(s)
+       /manager/html: 2 Time(s)
+       /public/index.php: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.130K  Bytes accepted                             4,229
+    4.130K  Bytes delivered                            4,229
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 6 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 6 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   19G   12G  63% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

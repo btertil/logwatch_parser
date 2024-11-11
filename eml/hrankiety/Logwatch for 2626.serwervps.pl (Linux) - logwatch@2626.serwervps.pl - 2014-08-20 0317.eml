@@ -1,0 +1,185 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 6362C1110194C; Wed, 20 Aug 2014 03:17:16 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 1C47E1110194B
+	for <root@2626.serwervps.pl>; Wed, 20 Aug 2014 05:17:16 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id Tj6s0AO1Ew-S for <root@2626.serwervps.pl>;
+	Wed, 20 Aug 2014 03:17:11 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 3534A1110194C; Wed, 20 Aug 2014 03:17:10 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140820011711.3534A1110194C@2626.serwervps.pl>
+Date: Wed, 20 Aug 2014 03:17:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Aug 20 03:17:08 2014
+        Date Range Processed: yesterday
+                              ( 2014-Aug-19 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (17950-03) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:50086 [89.67.22.229] <support@hrankiety.pl> -> <agnieszkaibartek@gmail.com>, Queue-ID: DEBC111101949, Message-ID: <53F3B3C1.40107@hrankiety.pl>, mail_id: K2-oH548oz2r, Hits: -9.999, size: 618043, queued_as: 5927F1110194B, dkim_new=dkim:hrankiety.pl, 4399 ms
+        1   (00890-19) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN24> line 19433.
+        1   (00889-19) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.169]:61374 [89.67.22.229] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: 3513B11101944, Message-ID: <53F2FE73.7040803@gmail.com>, mail_id: 77uodpTvzx6b, Hits: -99.525, size: 2240, queued_as: 3768B11101947, dkim_sd=20120113:gmail.com, 1778 ms
+        1   (17950-04) Passed CLEAN {RelayedInternal}, MYUSERS LOCAL [89.67.22.229]:50086 [89.67.22.229] <support@hrankiety.pl> -> <btertil@hrankiety.pl>, Queue-ID: DEBC111101949, Message-ID: <53F3B3C1.40107@hrankiety.pl>, mail_id: lVvk7oZpacyV, Hits: -9.999, size: 618043, queued_as: 5BE8F1110194C, dkim_new=dkim:hrankiety.pl, 1928 ms
+        1   (00890-19) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.41]:51637 [89.67.22.229] <agnieszkaibartek@gmail.com> -> <atertil@hrankiety.pl>, Queue-ID: 17EAC11101918, Message-ID: <53F288C0.6090905@gmail.com>, mail_id: 7cexG3FrNIu4, Hits: -99.513, size: 9838, queued_as: A3F0D11101925, dkim_sd=20120113:gmail.com, 2422 ms
+        1   (00890-20) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140819020618.147BF11101944@2626.serwervps.pl>, mail_id: Es5i96vOLTqs, Hits: 0, size: 8988, queued_as: 17CAE11101943, 2640 ms
+        1   (00889-20) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (21141-01) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:50086 [89.67.22.229] <support@hrankiety.pl> -> <agnieszka.tertil@deltatraining.pl>, Queue-ID: DEBC111101949, Message-ID: <53F3B3C1.40107@hrankiety.pl>, mail_id: PodxuPi8_XDq, Hits: -9.999, size: 618043, queued_as: 3EA061110194A, dkim_new=dkim:hrankiety.pl, 4393 ms
+        1   (17950-01) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:49740 [89.67.22.229] <support@hrankiety.pl> -> <agnieszka.tertil@deltatraining.pl>, Queue-ID: E076911100DE4, Message-ID: <53F39BAC.1090508@hrankiety.pl>, mail_id: WuU6Cw7cAqUj, Hits: -9.999, size: 116403, queued_as: 0F2C311101949, dkim_new=dkim:hrankiety.pl, 3861 ms
+        1   (00889-18) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140819013006.C918111101943@2626.serwervps.pl>, mail_id: 8qVT1HP9lrS3, Hits: 0.001, size: 2288, queued_as: C17A111101925, 1968 ms
+        1   (21141-02) Passed CLEAN {RelayedInternal}, MYUSERS LOCAL [89.67.22.229]:50086 [89.67.22.229] <support@hrankiety.pl> -> <atertil@hrankiety.pl>, Queue-ID: DEBC111101949, Message-ID: <53F3B3C1.40107@hrankiety.pl>, mail_id: SunGXYzHQK6Z, Hits: -9.999, size: 618043, queued_as: 22B801110194B, dkim_new=dkim:hrankiety.pl, 1699 ms
+        1   (00889-20) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:49740 [89.67.22.229] <support@hrankiety.pl> -> <agnieszkaibartek@gmail.com>, Queue-ID: E076911100DE4, Message-ID: <53F39BAC.1090508@hrankiety.pl>, mail_id: BUowsAUUcIzv, Hits: -9.999, size: 116403, queued_as: 0295E11101948, dkim_new=dkim:hrankiety.pl, 3623 ms
+        1   (17950-02) Passed CLEAN {RelayedInternal}, MYUSERS LOCAL [89.67.22.229]:49747 [89.67.22.229] <support@hrankiety.pl> -> <btertil@hrankiety.pl>, Queue-ID: 2B73211100DE4, Message-ID: <53F39BDB.5070003@hrankiety.pl>, mail_id: AhSL_FMdTZCp, Hits: -8.706, size: 119564, queued_as: 6114111101949, dkim_new=dkim:hrankiety.pl, 985 ms
+        1   (00889-18) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Tue Aug 19 04:06:19 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19290.cdiff [100%]
+    Downloading daily-19291.cdiff [100%]
+    Downloading daily-19292.cdiff [100%]
+    daily.cld updated (version: 19292, sigs: 1092550, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3516821 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 91% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    75.144.96.172
+    89.67.22.229
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /admin/cp.php?m=login: 1 Time(s)
+       /asdwer/bins.php: 1 Time(s)
+       /cp.php?m=login: 1 Time(s)
+       /sdk/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2 ... vmInventory.xml: 2 Time(s)
+       /sdk/../../../../../..//etc/vmware/hostd/vmInventory.xml: 2 Time(s)
+       /server/cp.php?m=login: 1 Time(s)
+       /webalizer/cp.php?m=login: 1 Time(s)
+       /whynot/bins.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        4   *Warning: Pre-queue content-filter connection overload 
+        1   SASL authentication failed 
+ 
+    3.573M  Bytes accepted                         3,746,762
+    5.452M  Bytes delivered                        5,717,294
+ ========   ================================================
+ 
+       20   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       20   Total                                    100.00%
+ ========   ================================================
+ 
+       24   Connections made      
+        1   Connections lost      
+       24   Disconnections        
+       20   Removed from queue    
+        7   Delivered             
+       15   Sent via SMTP         
+        2   Forwarded             
+ 
+        2   Timeout (inbound)     
+        3   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    atertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 2 times
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 27 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    fail2ban-0.8.13-2.el6.noarch
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.4G   44G  13% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

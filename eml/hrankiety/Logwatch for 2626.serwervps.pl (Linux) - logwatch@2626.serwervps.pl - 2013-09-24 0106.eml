@@ -1,0 +1,190 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 570594643661; Tue, 24 Sep 2013 03:06:11 +0400 (MSD)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 446D44643588
+	for <root@2626.serwervps.pl>; Tue, 24 Sep 2013 03:06:11 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id HRhe7SgY9xeV for <root@2626.serwervps.pl>;
+	Tue, 24 Sep 2013 03:06:08 +0400 (MSD)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id E60684643661; Tue, 24 Sep 2013 03:06:08 +0400 (MSD)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20130923230608.E60684643661@2626.serwervps.pl>
+Date: Tue, 24 Sep 2013 03:06:04 +0400 (MSD)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Sep 24 03:06:04 2013
+        Date Range Processed: yesterday
+                              ( 2013-Sep-23 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (14976-01) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:49408 [89.67.22.229] <btertil@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <524027CE.8080400@hrankiety.pl>, mail_id: MPVUy3d13xTK, Hits: -10, size: 793715, queued_as: AA0334643651, dkim_new=dkim:hrankiety.pl, 1973 ms
+        1   Deleting db files __db.003,__db.004,snmp.db,__db.001,nanny.db,__db.002 in /var/spool/amavisd/db
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (11323-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20130922234106.07AA14643638@2626.serwervps.pl>, mail_id: CYAbOAhryfKD, Hits: 0, size: 5144, queued_as: 377E546435C3, 1177 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (14976-02) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:49635 [89.67.22.229] <postmaster@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <52402A6D.8080506@hrankiety.pl>, mail_id: RzA5edTDgiVT, Hits: -10, size: 884, queued_as: 707884643651, dkim_new=dkim:hrankiety.pl, 425 ms
+        1   (11322-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20130922233003.3F3B24643638@2626.serwervps.pl>, mail_id: GZRLCnHB4MWS, Hits: 0.001, size: 2074, queued_as: B0A5346435C3, 2422 ms
+        1   (14975-01) Passed CLEAN {RelayedInternal}, LOCAL [209.85.215.170]:46595 [89.67.22.229] <bondiev@gmail.com> -> <postmaster@hrankiety.pl>, Message-ID: <5240272B.4000205@gmail.com>, mail_id: L57hhWKTjrw8, Hits: -99.516, size: 794863, queued_as: 1D44C4643651, dkim_sd=20120113:gmail.com, 1616 ms
+        1   (14975-02) Passed CLEAN {RelayedInternal}, LOCAL [209.85.215.181]:46116 [89.67.22.229] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Message-ID: <52402B15.6040501@gmail.com>, mail_id: PiUQzArlWrhG, Hits: -99.525, size: 2096, queued_as: 6108C4643658, dkim_sd=20120113:gmail.com, 558 ms
+        1   No ext program for   .doc, tried: ripole
+        1   (14976-03) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.54]:52685 [89.67.22.229] <bondiev@gmail.com> -> <postmaster@hrankiety.pl>, Message-ID: <52402B04.4030805@gmail.com>, mail_id: tTEGNs8Hvi13, Hits: -99.525, size: 2238, queued_as: 7FCD24643658, dkim_sd=20120113:gmail.com, 525 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Sep 23 03:41:06 2013
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.97.8 Recommended version: 0.98
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cld is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: Unknown response from remote server (IP: 195.30.97.3)
+    WARNING: getpatch: Can't download daily-17886.cdiff from db.local.clamav.net
+    Downloading daily-17886.cdiff [100%]
+    daily.cld updated (version: 17886, sigs: 360144, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 226, sigs: 43, f-level: 63, builder: neo)
+    Database updated (2784412 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    190.145.23.28
+    74.57.212.95
+ 
+ Requests with error response codes
+    400 Bad Request
+       /w00tw00t.at.ISC.SANS.DFind:): 1 Time(s)
+    403 Forbidden
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1379945605262: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1379945992267: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /admin/common/ie.css: 1 Time(s)
+       /favicon.ico: 7 Time(s)
+       /phpMyAdmin/translators.html: 2 Time(s)
+       /phpmyadmin/translators.html: 2 Time(s)
+       /vtigercrm/graph.php?current_language=../. ... Accounts&action: 1 Time(s)
+    500 Internal Server Error
+       /mail/: 3 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1379945424263: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1379945484262: 1 Time(s)
+       /mail/?_task=mail&_mbox=INBOX&_folderlist= ... _=1379945544264: 1 Time(s)
+       /phpmyadmin/: 6 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       btertil (89-67-22-229.dynamic.chello.pl): 1 Time(s)
+ 
+ su:
+    Sessions Opened:
+       root -> root: 7 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Connection concurrency limit reached 
+     2033   *Warning: Pre-queue content-filter connection overload 
+     2033   SASL authentication failed 
+        1   Miscellaneous warnings 
+ 
+    3.066M  Bytes accepted                         3,214,945
+    3.066M  Bytes delivered                        3,214,945
+ ========   ================================================
+ 
+       16   Accepted                                  84.21%
+        3   Rejected                                  15.79%
+ --------   ------------------------------------------------
+       19   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject relay denied                       66.67%
+        1   Reject HELO/EHLO                          33.33%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        5   4xx Reject recipient address               9.43%
+       48   4xx Reject sender address                 90.57%
+ --------   ------------------------------------------------
+       53   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     2079   Connections made      
+     2079   Disconnections        
+       16   Removed from queue    
+        5   Delivered             
+        9   Sent via SMTP         
+        2   Forwarded             
+ 
+        2   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Failed logins from:
+    89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 7 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/simfs             30G  1.2G   29G   4% /
+ none                  384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

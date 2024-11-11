@@ -1,0 +1,125 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 3D20435A177A; Sat, 25 Jun 2016 03:37:06 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160625013706.3D20435A177A@hrankiety.pl>
+Date: Sat, 25 Jun 2016 03:37:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jun 25 03:37:05 2016
+        Date Range Processed: yesterday
+                              ( 2016-Jun-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Jun 24 03:09:14 2016
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.1 Recommended version: 0.99.2
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    Trying host db.local.clamav.net (62.245.181.53)...
+    Downloading daily-21774.cdiff [100%]
+    Downloading daily-21775.cdiff [100%]
+    Downloading daily-21776.cdiff [100%]
+    Downloading daily-21777.cdiff [100%]
+    Downloading daily-21778.cdiff [100%]
+    daily.cld updated (version: 21778, sigs: 336827, f-level: 63, builder: neo)
+    Downloading bytecode-282.cdiff [100%]
+    Downloading bytecode-283.cdiff [100%]
+    bytecode.cld updated (version: 283, sigs: 53, f-level: 63, builder: neo)
+    Database updated (4555670 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       \xe6\x85IG\xde.\xf0\xb5\x9f\xef\xcf\xec: 1 Time(s)
+    404 Not Found
+       /_IKitWBzkpOHMiLhllc2SFr4WHnOHpuf?id=rawdp ... puxdxjthnuazohc: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       http://testp4.pospr.waw.pl/testproxy.php: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 497700022091983: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        9   *Warning: Pre-queue content-filter connection overload 
+       13   SASL authentication failed 
+       16   Miscellaneous warnings 
+ 
+  362.265K  Bytes accepted                           370,959
+  356.206K  Bytes delivered                          364,755
+ ========   ================================================
+ 
+        9   Accepted                                  90.00%
+        1   Rejected                                  10.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       18   Connections made      
+       18   Disconnections        
+        9   Removed from queue    
+        7   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   14G   37G  28% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

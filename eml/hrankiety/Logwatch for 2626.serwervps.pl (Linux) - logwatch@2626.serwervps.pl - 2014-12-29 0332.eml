@@ -1,0 +1,121 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 8E75C11101EA2; Mon, 29 Dec 2014 03:32:54 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id D16B211101ECA; Mon, 29 Dec 2014 03:32:46 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141229023246.D16B211101ECA@2626.serwervps.pl>
+Date: Mon, 29 Dec 2014 03:32:39 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Dec 29 03:32:39 2014
+        Date Range Processed: yesterday
+                              ( 2014-Dec-28 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Dec 28 03:08:02 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19844.cdiff [100%]
+    Downloading daily-19845.cdiff [100%]
+    Downloading daily-19846.cdiff [100%]
+    Downloading daily-19847.cdiff [100%]
+    daily.cld updated (version: 19847, sigs: 1297674, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 244, sigs: 44, f-level: 63, builder: dgoddard)
+    Database updated (3721943 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    46.183.216.200
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /tmUnblock.cgi: 2 Time(s)
+       /w00tw00t.at.ISC.SANS.DFind:): 1 Time(s)
+    404 Not Found
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /vtigercrm/: 2 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        3   *Warning: Pre-queue content-filter connection overload 
+ 
+   14.391K  Bytes accepted                            14,736
+   14.391K  Bytes delivered                           14,736
+ ========   ================================================
+ 
+        5   Accepted                                  83.33%
+        1   Rejected                                  16.67%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        4   Connections made      
+        4   Disconnections        
+        5   Removed from queue    
+        3   Delivered             
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  9.2G   41G  19% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

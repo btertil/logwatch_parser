@@ -1,0 +1,187 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:95c4:0:0:0:0:0 with SMTP id b62-v6csp1499744jai;
+        Fri, 1 Jun 2018 18:39:13 -0700 (PDT)
+X-Received: by 2002:a19:c608:: with SMTP id w8-v6mr7051157lff.64.1527903313884;
+        Fri, 01 Jun 2018 18:35:13 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKL745tlq1YWfZFb6/zX758NT1itaw+JTT8orH7zQtgc8PMjX8r1DpocyMwWMHXKAko3HheB
+X-Received: by 2002:a19:c608:: with SMTP id w8-v6mr7051123lff.64.1527903311885;
+        Fri, 01 Jun 2018 18:35:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1527903311; cv=none;
+        d=google.com; s=arc-20160816;
+        b=EEMyTgRywP78npUIQzoEGO69N30sBVd9Y+3iZA8v7J0knKGdgkh+J8S1aZN78Ig3T9
+         HPYM3vHVeoRUS8TuoUBL1SFONrYQDhkXvpH3o4uK6CbMR9UICkefoiImwK4y6Lh+C5/Q
+         dZyYiRdKLs/LWfQW0zApHwpazzoUvwbShw1DgShE64UbzCQaRel2NDvwCtOqL9UewSug
+         Dgllql5W4DE9wa9JKXzxS/VI4+fzlyUspWSfdYmpLtPK/iHAfcJe8/iJFf8W9vbUB1sK
+         1yxzGY8da2UZQJQbPXO9OjeWxPEBM8cdiyGtpF6Ao0rfYsbHVC5Dlvr6RbxvKE3OOIEj
+         tApg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to:arc-authentication-results;
+        bh=65MADf6gRuuoZVxKgHRv3NeHELgfBYW/QZb2/EEks30=;
+        b=c2Ollf4VDaEGF3wQt5bPn5OqkWl1A0/JaOyiS5GK1R8MXs0tPY97r6LaQlEO9bCqrS
+         FVA+S3VSVsIK9PLgmbhqBkPbH/UaOdw13QF7IhPt8kJJWRFuSRCo/Oq1qF6bg027E0mG
+         FxD8rvnmpCXKsjcioABLyLUgrpQwpQiC+S7pSjw8W7M3TocU+4fzRtKc6SuYzpjnKz/v
+         Uy/ehJgdNDuKDewzig5LL3x+XylSXsP2j4o56P0c1nNED/A5lP31r4vVwsRYu2VPe/29
+         XPjiuP1wFbV52wrx9XZzYF82azIUJkR07gYm/84aiTGlz02iJn5t9GJhyODJHvOdIgTP
+         076w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id x14-v6si17921252lji.212.2018.06.01.18.35.11
+        for <bondiev@gmail.com>;
+        Fri, 01 Jun 2018 18:35:11 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 8AC7F4A83ABF; Sat,  2 Jun 2018 03:35:10 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180602013510.8AC7F4A83ABF@vis1.localdomain>
+Date: Sat,  2 Jun 2018 03:35:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jun  2 03:35:08 2018
+        Date Range Processed: yesterday
+                              ( 2018-Jun-01 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Jun  1 03:24:11 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.4 Recommended version: 0.100.0
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24619.cdiff [100%]
+    Downloading daily-24620.cdiff [100%]
+    Downloading daily-24621.cdiff [100%]
+    daily.cld updated (version: 24621, sigs: 1970382, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6536706 signatures) from db.local.clamav.net (IP: 104.16.189.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /PMA/index.php: 1 Time(s)
+       /PMA2/index.php: 1 Time(s)
+       /admin/PMA/index.php: 1 Time(s)
+       /admin/index.php: 1 Time(s)
+       /admin/mysql/index.php: 1 Time(s)
+       /admin/mysql2/index.php: 1 Time(s)
+       /admin/phpMyAdmin/index.php: 1 Time(s)
+       /admin/phpmyadmin/index.php: 1 Time(s)
+       /admin/phpmyadmin2/index.php: 1 Time(s)
+       /admin/pma/index.php: 1 Time(s)
+       /ccvv: 1 Time(s)
+       /cgi-bin/Middle/WsgiHttp.py: 1 Time(s)
+       /cgi-bin/w3s/WsgiHttp.py: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 1 Time(s)
+       /db/index.php: 1 Time(s)
+       /dbadmin/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /myadmin/index.php: 1 Time(s)
+       /myadmin2/index.php: 1 Time(s)
+       /mysql-admin/index.php: 1 Time(s)
+       /mysql/index.php: 1 Time(s)
+       /mysqladmin/index.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 1 Time(s)
+       /phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdminold/index.php: 1 Time(s)
+       /phpMyadmin_bak/index.php: 1 Time(s)
+       /phpadmin/index.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmyadmin-old/index.php: 1 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin0/index.php: 1 Time(s)
+       /phpmyadmin1/index.php: 1 Time(s)
+       /phpmyadmin2/index.php: 1 Time(s)
+       /pma-old/index.php: 1 Time(s)
+       /pma/index.php: 1 Time(s)
+       /pmamy/index.php: 1 Time(s)
+       /pmamy2/index.php: 1 Time(s)
+       /pmd/index.php: 1 Time(s)
+       /time/: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 1 Time(s)
+       /typo3/phpmyadmin/index.php: 1 Time(s)
+       /web/phpMyAdmin/index.php: 1 Time(s)
+       /wls-wsat/CoordinatorPortType: 1 Time(s)
+       /www/phpMyAdmin/index.php: 1 Time(s)
+       /xampp/phpmyadmin/index.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    5.509K  Bytes accepted                             5,641
+    5.509K  Bytes delivered                            5,641
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 112 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 112 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   23G  7.4G  76% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,229 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id A0FCF1110168E; Fri, 28 Mar 2014 03:10:11 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 901C41110168C
+	for <root@2626.serwervps.pl>; Fri, 28 Mar 2014 05:10:11 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id JLqmMcDzguVH for <root@2626.serwervps.pl>;
+	Fri, 28 Mar 2014 03:10:06 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 105621110168E; Fri, 28 Mar 2014 03:10:06 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140328021006.105621110168E@2626.serwervps.pl>
+Date: Fri, 28 Mar 2014 03:10:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Mar 28 03:10:04 2014
+        Date Range Processed: yesterday
+                              ( 2014-Mar-27 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        2   No decoder for       .doc 
+        2   No ext program for   .rar, tried: unrar, rar
+        2   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        2   No ext program for   .tnef, tried: tnef
+        2   No ext program for   .doc, tried: ripole
+        1   (02342-01) Passed CLEAN {RelayedInternal}, LOCAL [83.220.101.12]:58502 [83.220.101.12] <Bartosz.Tertil@t-mobile.pl> -> <support@hrankiety.pl>, Message-ID: <3885C4A101C04644B7D59E882DDF05214A403C05@ex23.resources.local>, mail_id: F2b4Czropb1o, Hits: 1.274, size: 7000, queued_as: 593FF11101679, 20035 ms
+        1   (02342-03) Passed CLEAN {RelayedInternal}, LOCAL [74.125.83.51]:55909 [89.67.22.229] <agnieszkaibartek@gmail.com> -> <support@hrankiety.pl>, Message-ID: <5334ACC8.1040400@gmail.com>, mail_id: 0pLaZCAsh5HY, Hits: -99.526, size: 2114, queued_as: 870F911100D9B, dkim_sd=20120113:gmail.com, 4013 ms
+        1   (02341-01) Passed CLEAN {RelayedInternal}, LOCAL [74.125.83.45]:61215 [89.67.22.229] <agnieszkaibartek@gmail.com> -> <support@hrankiety.pl>, Message-ID: <5334A6E5.4030209@gmail.com>, mail_id: AWufLmyturiH, Hits: -99.526, size: 2110, queued_as: CD6761110167F, dkim_sd=20120113:gmail.com, 4117 ms
+        1   (01022-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140327023024.994CE13D822E5@2626.serwervps.pl>, mail_id: EIZH5Vmf-314, Hits: 0, size: 2286, queued_as: B21D713D821D8, 11062 ms
+        1   (01021-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140327024528.9959C13D822E5@2626.serwervps.pl>, mail_id: R41kjx1bXqem, Hits: 0, size: 5585, queued_as: C903613D821D8, 9855 ms
+        1   (02341-02) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:50832 [89.67.22.229] <support@hrankiety.pl> -> <agnieszkaibartek@gmail.com>, Message-ID: <759C1060-D1C1-4887-AAFE-D54470AB9B0D@hrankiety.pl>, mail_id: iNvGstjMiHbG, Hits: -9.999, size: 1009, queued_as: 2BADB1110168B, dkim_new=dkim:hrankiety.pl, 4842 ms
+        1   (02342-02) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:35103 [127.0.0.1] <support@hrankiety.pl> -> <agnieszkaibartek@gmail.com>, Message-ID: <c0eecd8039f92ad8ded5462b23d4df01@hrankiety.pl>, mail_id: B-NBGOFzTFFo, Hits: -10, size: 882, queued_as: 2ECF511101681, dkim_new=dkim:hrankiety.pl, 5107 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Thu Mar 27 03:45:29 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18690.cdiff [100%]
+    Downloading daily-18691.cdiff [100%]
+    Downloading daily-18692.cdiff [100%]
+    Downloading daily-18693.cdiff [100%]
+    Downloading daily-18694.cdiff [100%]
+    Downloading daily-18695.cdiff [100%]
+    daily.cld updated (version: 18695, sigs: 854864, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3279132 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (RANDOM_DELAY will be scaled with factor 77% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    70.48.228.172
+ 
+ Requests with error response codes
+    404 Not Found
+       //%63%67%69%2d%62%69%6e/%70%68%70?%2d%64+% ... 70%75%74+%2d%6e: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php/%63%67%69%6E/%70%68%70?%2D%64 ... 4+%75%74+%2D%6E: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+       /daszboardlog: 1 Time(s)
+       /daszboardlog.php: 1 Time(s)
+       /mail: 1 Time(s)
+       /ocena360/dashboard: 2 Time(s)
+       /ocena360/dashboardlog: 2 Time(s)
+       /ocena360/daszboardlog.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 3 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   63.412K  Bytes accepted                            64,934
+   56.092K  Bytes delivered                           57,438
+ ========   ================================================
+ 
+       17   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       17   Total                                    100.00%
+ ========   ================================================
+ 
+        6   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+        6   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       18   Connections made      
+       18   Disconnections        
+       17   Removed from queue    
+        4   Delivered             
+       10   Sent via SMTP         
+        2   Forwarded             
+        1   Deferred              
+        8   Deferrals             
+        1   Expired and returned to sender 
+        1   DSNs undeliverable    
+ 
+        2   SASL authenticated messages 
+ 
+        2   Postfix start         
+        2   Postfix stop          
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Mar 27 23:28:02 2626 postfix/postfix-script[4020]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Mar 27 23:28:02 2626 postfix/postfix-script[4022]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Mar 27 00:13:03 2626 postfix/postfix-script[989]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Mar 27 23:28:02 2626 postfix/postfix-script[4018]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+        1   Mar 27 00:13:03 2626 postfix/postfix-script[993]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Mar 27 00:13:03 2626 postfix/postfix-script[991]: warning: /var/spool/postfix/etc/services and /etc/services differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Userhelper executed applications:
+    root -> reboot  as root:  1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 3 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.0G   27G  14% /
+ none             36G  4.0K   36G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

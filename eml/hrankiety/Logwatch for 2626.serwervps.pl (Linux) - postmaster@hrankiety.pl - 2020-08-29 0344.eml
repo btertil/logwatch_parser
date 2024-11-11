@@ -1,0 +1,165 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id ED60D342832; Sat, 29 Aug 2020 03:44:08 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200829014408.ED60D342832@hrankiety.pl>
+Date: Sat, 29 Aug 2020 03:44:03 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Aug 29 03:44:03 2020
+        Date Range Processed: yesterday
+                              ( 2020-Aug-28 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Aug 28 03:33:06 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25912.cdiff [100%]
+    daily.cld updated (version: 25912, sigs: 4092895, f-level: 63, builder: raynman)
+    Can't query daily.25912.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8657891 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 4 sites probed the server 
+    128.199.1.215
+    137.74.132.220
+    185.142.236.40
+    185.202.2.147
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       /../../../../../../../../../../../../etc/passwd: 1 Time(s)
+       null: 11 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       /.well-known/security.txt: 1 Time(s)
+       //wp-login.php: 1 Time(s)
+       /admin//config.php: 2 Time(s)
+       /blog/wp-login.php: 2 Time(s)
+       /blog/xmlrpc.php: 1 Time(s)
+       /cgi-bin/kerbynet?Section=NoAuthREQ&Action ... o;sh%20zero;%22: 14 Time(s)
+       /core/.env: 1 Time(s)
+       /core/Database/.env: 1 Time(s)
+       /cronlab/.env: 1 Time(s)
+       /login: 1 Time(s)
+       /manager/html: 2 Time(s)
+       /manager/text/list: 1 Time(s)
+       /owa/auth/logon.aspx?replaceCurrent=1&url= ... ety.pl%2Fowa%2F: 4 Time(s)
+       /phpMyAdmin/index.php: 1 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /pma/index.php: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /sitemaps/.env: 1 Time(s)
+       /test/wp-login.php: 1 Time(s)
+       /wordpress/xmlrpc.php: 1 Time(s)
+       /wp-admin/admin-ajax.php?action=revslider_ ... ./wp-config.php: 1 Time(s)
+       /wp-config.bak: 1 Time(s)
+       /wp-config.php.1: 1 Time(s)
+       /wp-config.php.backup: 1 Time(s)
+       /wp-config.php.bak: 1 Time(s)
+       /wp-config.php.disabled: 1 Time(s)
+       /wp-config.php.new: 1 Time(s)
+       /wp-config.php.old: 1 Time(s)
+       /wp-config.php.orig: 1 Time(s)
+       /wp-config.php.save: 1 Time(s)
+       /wp-config.php.swp: 1 Time(s)
+       /wp-config.php_: 1 Time(s)
+       /wp-config.php_orig: 1 Time(s)
+       /wp-config.php~: 1 Time(s)
+       /wp-login.php: 5 Time(s)
+       /xmlrpc.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      219   *Warning: Pre-queue content-filter connection overload 
+    10235   SASL authentication failed 
+       97   Miscellaneous warnings 
+ 
+    1.326M  Bytes accepted                         1,389,927
+    1.320M  Bytes delivered                        1,383,737
+ ========   ================================================
+ 
+       52   Accepted                                  28.42%
+      131   Rejected                                  71.58%
+ --------   ------------------------------------------------
+      183   Total                                    100.00%
+ ========   ================================================
+ 
+      131   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+      131   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+    10291   Connections made      
+        1   Connections lost      
+    10293   Disconnections        
+       52   Removed from queue    
+       50   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   31G   18G  65% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

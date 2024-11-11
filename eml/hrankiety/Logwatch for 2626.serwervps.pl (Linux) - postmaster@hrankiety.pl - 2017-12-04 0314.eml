@@ -1,0 +1,131 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 966CC35A4742; Mon,  4 Dec 2017 03:14:33 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20171204021433.966CC35A4742@hrankiety.pl>
+Date: Mon,  4 Dec 2017 03:14:29 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Dec  4 03:14:29 2017
+        Date Range Processed: yesterday
+                              ( 2017-Dec-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Dec  3 03:13:02 2017
+ 
+ Last Status:
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24093.cdiff [100%]
+    Downloading daily-24094.cdiff [100%]
+    Downloading daily-24095.cdiff [100%]
+    daily.cld updated (version: 24095, sigs: 1795189, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 318, sigs: 75, f-level: 63, builder: raynman)
+    Database updated (6361513 signatures) from db.local.clamav.net (IP: 129.67.1.218)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    5.8.18.125
+    66.240.205.34
+ 
+ Requests with error response codes
+    400 Bad Request
+       null: 2 Time(s)
+    404 Not Found
+       //%63%67%69%2D%62%69%6E/%70%68%70?%2D%64+% ... 70%75%74+%2D%6E: 1 Time(s)
+       //wp-login.php: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /SQLite/main.php: 1 Time(s)
+       /SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /SQLiteManager/main.php: 1 Time(s)
+       /SQlite/main.php: 1 Time(s)
+       /a2billing/common/javascript/misc.js: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /agSearch/SQlite/main.php: 1 Time(s)
+       /hudson/script: 1 Time(s)
+       /main.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /script: 1 Time(s)
+       /sqlite/main.php: 1 Time(s)
+       /sqlitemanager/main.php: 1 Time(s)
+       /test/sqlite/SQLiteManager-1.2.0/SQLiteMan ... -1.2.0/main.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       http://testp3.pospr.waw.pl/testproxy.php: 1 Time(s)
+       http://www.msftncsi.com/ncsi.txt: 1 Time(s)
+    405 Method Not Allowed
+       /: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      604   *Warning: Pre-queue content-filter connection overload 
+     1006   SASL authentication failed 
+       15   Miscellaneous warnings 
+ 
+  154.532K  Bytes accepted                           158,241
+  145.970K  Bytes delivered                          149,473
+ ========   ================================================
+ 
+       10   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+     1019   Connections made      
+     1019   Disconnections        
+       10   Removed from queue    
+        6   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   36G   15G  72% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

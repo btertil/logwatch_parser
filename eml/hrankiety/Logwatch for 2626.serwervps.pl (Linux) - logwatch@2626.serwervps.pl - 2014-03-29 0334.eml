@@ -1,0 +1,179 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id BE935111016AC; Sat, 29 Mar 2014 03:34:12 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id B2C63111016A5
+	for <root@2626.serwervps.pl>; Sat, 29 Mar 2014 05:34:12 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id f5UxJaXm-uhj for <root@2626.serwervps.pl>;
+	Sat, 29 Mar 2014 03:34:06 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id C4E25111016AC; Sat, 29 Mar 2014 03:34:06 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140329023406.C4E25111016AC@2626.serwervps.pl>
+Date: Sat, 29 Mar 2014 03:34:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Mar 29 03:34:05 2014
+        Date Range Processed: yesterday
+                              ( 2014-Mar-28 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (27135-01) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [178.180.94.65]:50975 [178.180.94.65] <support@hrankiety.pl> -> <Bartosz.Tertil@t-mobile.pl>, Message-ID: <52780781-FBFE-4018-BA50-4A98493AF73A@hrankiety.pl>, mail_id: 0bEPzHbAY_ZZ, Hits: -9.998, size: 6277, queued_as: 9736A111016A0, dkim_new=dkim:hrankiety.pl, 6067 ms
+        1   (02341-04) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140328021006.105621110168E@2626.serwervps.pl>, mail_id: JLqmMcDzguVH, Hits: -0.001, size: 9834, queued_as: 901C41110168C, 5494 ms
+        1   (02342-05) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140328023005.99D9F11101695@2626.serwervps.pl>, mail_id: VH0miEbEV5QH, Hits: 0, size: 2286, queued_as: 9208611101692, 6898 ms
+        1   (02342-04) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:47414 [127.0.0.1] <support@hrankiety.pl> -> <bartosz.tertil@t-mobile.pl>, Message-ID: <c53c07dd6bb84121c8d2a3b4da047a08@hrankiety.pl>, mail_id: uGKZty0_0t6P, Hits: -10, size: 638, queued_as: D13341110168E, dkim_new=dkim:hrankiety.pl, 1064 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (27136-01) Passed CLEAN {RelayedInternal}, LOCAL [83.220.96.49]:35413 [83.220.96.49] <Bartosz.Tertil@t-mobile.pl> -> <support@hrankiety.pl>, Message-ID: <3885C4A101C04644B7D59E882DDF05214A403EFB@ex23.resources.local>, mail_id: PAN7sU_WAELQ, Hits: -6.194, size: 7015, queued_as: 3ABA61110167D, 4996 ms
+        1   (02341-03) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140327230203.673661110168C@2626.serwervps.pl>, mail_id: yHK6cv8mTyoI, Hits: -0.001, size: 9834, queued_as: D7FE21110168B, 5437 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Mar 28 03:10:06 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    WARNING: getfile: daily-18696.cdiff not found on remote server (IP: 158.129.196.3)
+    WARNING: getpatch: Can't download daily-18696.cdiff from db.local.clamav.net
+    Downloading daily-18696.cdiff [100%]
+    Downloading daily-18697.cdiff [100%]
+    Downloading daily-18698.cdiff [100%]
+    Downloading daily-18699.cdiff [100%]
+    Downloading daily-18700.cdiff [100%]
+    Downloading daily-18701.cdiff [100%]
+    Downloading daily-18702.cdiff [100%]
+    Downloading daily-18703.cdiff [100%]
+    Downloading daily-18704.cdiff [100%]
+    Downloading daily-18705.cdiff [100%]
+    Downloading daily-18706.cdiff [100%]
+    daily.cld updated (version: 18706, sigs: 857466, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3281734 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /admin/config.php: 1 Time(s)
+       /ocena360/dashboardlog: 1 Time(s)
+       /p_/webdav/xmltools/minidom/xml/sax/saxutils/os/popen2: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       /webmail: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   97.073K  Bytes accepted                            99,403
+   97.073K  Bytes delivered                           99,403
+ ========   ================================================
+ 
+       15   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       15   Total                                    100.00%
+ ========   ================================================
+ 
+        5   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+        5   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       14   Connections made      
+       14   Disconnections        
+       15   Removed from queue    
+        4   Delivered             
+        8   Sent via SMTP         
+        3   Forwarded             
+ 
+        1   Timeout (inbound)     
+        2   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 4 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 1 Time(s)
+ 
+ SFTP subsystem requests: 1 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    samba-winbind-3.6.9-168.el6_5.i686
+    samba-common-3.6.9-168.el6_5.i686
+    samba-winbind-clients-3.6.9-168.el6_5.i686
+    samba-client-3.6.9-168.el6_5.i686
+    samba-3.6.9-168.el6_5.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.0G   27G  14% /
+ none             36G  4.0K   36G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

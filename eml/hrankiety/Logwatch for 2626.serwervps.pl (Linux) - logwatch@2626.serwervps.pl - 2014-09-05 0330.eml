@@ -1,0 +1,169 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id A8306111019B3; Fri,  5 Sep 2014 03:30:12 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id A6A83111019A7
+	for <root@2626.serwervps.pl>; Fri,  5 Sep 2014 05:30:12 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id H37VL8-MDoDX for <root@2626.serwervps.pl>;
+	Fri,  5 Sep 2014 03:30:09 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id A0AED111019B2; Fri,  5 Sep 2014 03:30:09 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140905013009.A0AED111019B2@2626.serwervps.pl>
+Date: Fri,  5 Sep 2014 03:30:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Sep  5 03:30:07 2014
+        Date Range Processed: yesterday
+                              ( 2014-Sep-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (05121-01) Passed CLEAN {RelayedInternal}, LOCAL [69.58.183.55]:26080 [69.58.183.55] <isprenewal@thawte.com> -> <postmaster@hrankiety.pl>, Queue-ID: 0FB6911101962, Message-ID: <1395187900.9201409841038744.JavaMail.support@geotrust.com>, mail_id: GAwBykepDfIO, Hits: -3.726, size: 1875, queued_as: 6728D11101992, 7129 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (31623-03) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140904013007.F1EF81110199C@2626.serwervps.pl>, mail_id: yLBA1MNTiil1, Hits: 0.001, size: 2288, queued_as: 973C311101998, 3529 ms
+        1   (31624-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140904011305.A746D11101995@2626.serwervps.pl>, mail_id: CNmCAxMVM1s6, Hits: 0, size: 5571, queued_as: E124A111018C1, 2211 ms
+        1   (31624-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   No ext program for   .tnef, tried: tnef
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Thu Sep  4 03:13:06 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (195.30.97.3)...
+    Downloading daily-19329.cdiff [100%]
+    Downloading daily-19330.cdiff [100%]
+    Downloading daily-19331.cdiff [100%]
+    Downloading daily-19332.cdiff [100%]
+    Downloading daily-19333.cdiff [100%]
+    Downloading daily-19334.cdiff [100%]
+    daily.cld updated (version: 19334, sigs: 1096077, f-level: 63, builder: shurley)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3520348 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    67.240.136.139
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+    404 Not Found
+       /CFIDE/administrator/enter.cfm: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /Panel/inc/config.php: 1 Time(s)
+       /api/process.php: 1 Time(s)
+       /cc/process.php: 1 Time(s)
+       /inc/config.php: 1 Time(s)
+       /lzlz/lzl/lz.php: 1 Time(s)
+       /mad/inc/config.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 4 Time(s)
+       /phpMyAdmin/scripts/setup.php: 4 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 4 Time(s)
+       /process.php: 1 Time(s)
+       /sasa/sas/sa.php: 1 Time(s)
+       /uhuh/uhu/uh.php: 1 Time(s)
+       /ujuj/uju/uj.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wkwk/wkw/wk.php: 1 Time(s)
+       /z/api/process.php: 1 Time(s)
+       http://hotel.qunar.com/render/hoteldiv.jsp ... back=XQScript_4: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       17   *Warning: Pre-queue content-filter connection overload 
+      167   SASL authentication failed 
+ 
+   29.246K  Bytes accepted                            29,948
+   29.246K  Bytes delivered                           29,948
+ ========   ================================================
+ 
+        8   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        8   Total                                    100.00%
+ ========   ================================================
+ 
+       44   Connections made      
+       44   Disconnections        
+        8   Removed from queue    
+        3   Delivered             
+        3   Sent via SMTP         
+        2   Forwarded             
+ 
+       23   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.5G   44G  13% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

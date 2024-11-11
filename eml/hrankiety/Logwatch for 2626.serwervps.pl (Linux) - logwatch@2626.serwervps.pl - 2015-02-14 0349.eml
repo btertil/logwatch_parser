@@ -1,0 +1,162 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 3654A11102633; Sat, 14 Feb 2015 03:52:52 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id C317B11102635; Sat, 14 Feb 2015 03:49:59 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150214024959.C317B11102635@2626.serwervps.pl>
+Date: Sat, 14 Feb 2015 03:49:48 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Feb 14 03:49:48 2015
+        Date Range Processed: yesterday
+                              ( 2015-Feb-13 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Feb 13 03:09:31 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-20059.cdiff [100%]
+    Downloading daily-20060.cdiff [100%]
+    Downloading daily-20061.cdiff [100%]
+    Downloading daily-20062.cdiff [100%]
+    daily.cld updated (version: 20062, sigs: 1324264, f-level: 63, builder: jesler)
+    Downloading bytecode-246.cdiff [100%]
+    bytecode.cld updated (version: 246, sigs: 42, f-level: 63, builder: neo)
+    Database updated (3748531 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    85.25.103.50
+ 
+ Requests with error response codes
+    400 Bad Request
+       HTTP/1.1: 2 Time(s)
+    404 Not Found
+       //%63%67%69%2D%62%69%6E/%70%68%70?%2D%64+% ... 70%75%74+%2D%6E: 1 Time(s)
+       /admin/module-builtin.xml: 1 Time(s)
+       /back.css: 1 Time(s)
+       /cgi-bin-sdb/printenv: 1 Time(s)
+       /cgi-bin/bash: 1 Time(s)
+       /cgi-bin/contact.cgi: 2 Time(s)
+       /cgi-bin/defaultwebpage.cgi: 1 Time(s)
+       /cgi-bin/env.cgi: 1 Time(s)
+       /cgi-bin/fire.cgi: 2 Time(s)
+       /cgi-bin/forum.cgi: 2 Time(s)
+       /cgi-bin/hello.cgi: 2 Time(s)
+       /cgi-bin/index.cgi: 1 Time(s)
+       /cgi-bin/login.cgi: 1 Time(s)
+       /cgi-bin/main.cgi: 2 Time(s)
+       /cgi-bin/meme.cgi: 1 Time(s)
+       /cgi-bin/php: 2 Time(s)
+       /cgi-bin/php4: 1 Time(s)
+       /cgi-bin/php5: 1 Time(s)
+       /cgi-bin/php5-cli: 1 Time(s)
+       /cgi-bin/recent.cgi: 1 Time(s)
+       /cgi-bin/sat-ir-web.pl: 2 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /cgi-bin/test-cgi.pl: 2 Time(s)
+       /cgi-bin/test.cgi: 2 Time(s)
+       /cgi-bin/test.sh: 2 Time(s)
+       /cgi-bin/tools/tools.pl: 2 Time(s)
+       /cgi-mod/index.cgi: 2 Time(s)
+       /cgi-sys/defaultwebpage.cgi: 1 Time(s)
+       /cgi-sys/entropysearch.cgi: 2 Time(s)
+       /cgi-sys/php5: 2 Time(s)
+       /knkn/knk/kn.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phppath/cgi_wrapper: 2 Time(s)
+       /phppath/php: 2 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       19   *Warning: Pre-queue content-filter connection overload 
+       15   SASL authentication failed 
+        1   Miscellaneous warnings 
+ 
+   28.609K  Bytes accepted                            29,296
+   28.609K  Bytes delivered                           29,296
+ ========   ================================================
+ 
+        5   Accepted                                  25.00%
+       15   Rejected                                  75.00%
+ --------   ------------------------------------------------
+       20   Total                                    100.00%
+ ========   ================================================
+ 
+       15   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+       15   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       21   Connections made      
+       21   Disconnections        
+        5   Removed from queue    
+        3   Delivered             
+        2   Forwarded             
+ 
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ SFTP subsystem requests: 1 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   15G   36G  29% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

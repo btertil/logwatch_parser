@@ -1,0 +1,226 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 95D2D9F2047B; Fri,  3 Apr 2020 04:44:11 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200403024411.95D2D9F2047B@hrankiety.pl>
+Date: Fri,  3 Apr 2020 04:44:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Apr  3 04:44:05 2020
+        Date Range Processed: yesterday
+                              ( 2020-Apr-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Apr  2 03:51:10 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25769.cdiff [100%]
+    daily.cld updated (version: 25769, sigs: 2244041, f-level: 63, builder: raynman)
+    Can't query daily.25769.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6809037 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    23.225.172.10 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 1 sites probed the server 
+    83.84.57.40
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+       /boaform/admin/formPing: 2 Time(s)
+       /cgi-bin/mainfunction.cgi?action=login&key ... er=a&loginPwd=a: 1 Time(s)
+       /incl/image_test.shtml?camnbr=%3c%21--%23e ... mp/s%22%20--%3e: 1 Time(s)
+    404 Not Found
+       //a2billing/customer/templates/default/footer.tpl: 1 Time(s)
+       /2phpmyadmin/index.php?lang=en: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /MyAdmin/index.php?lang=en: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /PMA/index.php?lang=en: 1 Time(s)
+       /PMA2011/scripts/setup.php: 1 Time(s)
+       /PMA2012/scripts/setup.php: 1 Time(s)
+       /PMA2013/scripts/setup.php: 1 Time(s)
+       /PMA2014/scripts/setup.php: 1 Time(s)
+       /PMA2015/scripts/setup.php: 1 Time(s)
+       /PMA2016/scripts/setup.php: 1 Time(s)
+       /ReportServer: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 3 Time(s)
+       /TP/public/index.php: 3 Time(s)
+       /admin/: 1 Time(s)
+       /admin/db/index.php?lang=en: 1 Time(s)
+       /admin/index.php?lang=en: 1 Time(s)
+       /admin/pMA/index.php?lang=en: 1 Time(s)
+       /admin/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /admin/phpmyadmin/index.php?lang=en: 1 Time(s)
+       /admin/sqladmin/index.php?lang=en: 1 Time(s)
+       /admin/sysadmin/index.php?lang=en: 1 Time(s)
+       /admin/web/index.php?lang=en: 1 Time(s)
+       /ajax: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 4 Time(s)
+       /database/index.php?lang=en: 1 Time(s)
+       /db/index.php?lang=en: 1 Time(s)
+       /db/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /db/phpmyadmin/index.php?lang=en: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/index.php?lang=en: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 2 Time(s)
+       /hudson: 1 Time(s)
+       /index.action: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /myadmin/index.php?lang=en: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql-admin/index.php?lang=en: 1 Time(s)
+       /mysql/admin/index.php?lang=en: 1 Time(s)
+       /mysql/dbadmin/index.php?lang=en: 1 Time(s)
+       /mysql/index.php?lang=en: 1 Time(s)
+       /mysql/mysqlmanager/index.php?lang=en: 1 Time(s)
+       /mysql/pma/index.php?lang=en: 1 Time(s)
+       /mysql/scripts/setup.php: 2 Time(s)
+       /mysql/sqlmanager/index.php?lang=en: 1 Time(s)
+       /mysqladmin/index.php?lang=en: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /mysqlmanager/index.php?lang=en: 1 Time(s)
+       /php-myadmin/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin-2.10.0.0/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.11.11.3/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.11.11/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-3.0.0.0-all-languages/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyadmin/index.php?lang=en: 1 Time(s)
+       /phpmy-admin/index.php?lang=en: 1 Time(s)
+       /phpmy/index.php?lang=en: 1 Time(s)
+       /phpmyAdmin/index.php?lang=en: 1 Time(s)
+       /phpmyadmin/index.php?lang=en: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin1/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /phpmyadmin3/index.php?lang=en: 1 Time(s)
+       /phpmyadmin3/scripts/setup.php: 1 Time(s)
+       /phpmyadmin4/index.php?lang=en: 1 Time(s)
+       /phpmyadmin4/scripts/setup.php: 1 Time(s)
+       /phpmyadmin5/scripts/setup.php: 1 Time(s)
+       /phpmyadmin6/scripts/setup.php: 1 Time(s)
+       /phpmyadmin7/scripts/setup.php: 1 Time(s)
+       /phppma/index.php?lang=en: 1 Time(s)
+       /pma/index.php?lang=en: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /pma2011/scripts/setup.php: 1 Time(s)
+       /pma2012/scripts/setup.php: 1 Time(s)
+       /pma2013/scripts/setup.php: 1 Time(s)
+       /pma2014/scripts/setup.php: 1 Time(s)
+       /pma2015/scripts/setup.php: 1 Time(s)
+       /pma2016/scripts/setup.php: 1 Time(s)
+       /program/index.php?lang=en: 1 Time(s)
+       /public/index.php: 2 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /shopdb/index.php?lang=en: 1 Time(s)
+       /slub/: 3 Time(s)
+       /slub/thumbs/a%20(34).jpg: 1 Time(s)
+       /sqlmanager/index.php?lang=en: 1 Time(s)
+       /thinkphp/html/public/index.php: 2 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp ... dex.php?lang=en: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      143   *Warning: Pre-queue content-filter connection overload 
+    12122   SASL authentication failed 
+      112   Miscellaneous warnings 
+ 
+    3.508M  Bytes accepted                         3,678,348
+    3.502M  Bytes delivered                        3,672,146
+ ========   ================================================
+ 
+       62   Accepted                                  98.41%
+        1   Rejected                                   1.59%
+ --------   ------------------------------------------------
+       63   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    12220   Connections made      
+       11   Connections lost      
+    12219   Disconnections        
+       62   Removed from queue    
+       60   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        2   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  51% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,166 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id C41C2342910; Sun, 18 Oct 2020 03:36:18 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20201018013618.C41C2342910@hrankiety.pl>
+Date: Sun, 18 Oct 2020 03:36:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Oct 18 03:36:05 2020
+        Date Range Processed: yesterday
+                              ( 2020-Oct-17 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Oct 17 03:27:19 2020
+ 
+ Last Status:
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25959.cdiff [100%]
+    daily.cld updated (version: 25959, sigs: 4331398, f-level: 63, builder: raynman)
+    Can't query daily.25959.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8896394 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    222.186.136.150 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 3 sites probed the server 
+    125.64.94.135
+    185.202.2.147
+    61.219.11.153
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       HTTP/1.0: 2 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       /////nette.micro?callback=shell_exec&cmd=ifconfig: 3 Time(s)
+       //Admin/scripts/setup.php: 1 Time(s)
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //mysql/scripts/setup.php/db/scripts/setup ... ripts/setup.php: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /ab2g: 1 Time(s)
+       /ab2h: 1 Time(s)
+       /admin//config.php: 2 Time(s)
+       /api/jsonws/invoke: 2 Time(s)
+       /boaform/admin/formLogin?username=adminisp&psd=adminisp: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 2 Time(s)
+       /lj2017/login: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /pv/000000000000.cfg: 1 Time(s)
+       /requested.html: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /solr/admin/info/system?wt=json: 2 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wp-content/plugins/wp-file-manager/readme.txt: 2 Time(s)
+       /wp-login.php: 4 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       86   *Warning: Pre-queue content-filter connection overload 
+    27981   SASL authentication failed 
+      248   Miscellaneous warnings 
+ 
+   12.713K  Bytes accepted                            13,018
+    6.668K  Bytes delivered                            6,828
+ ========   ================================================
+ 
+        3   Accepted                                  42.86%
+        4   Rejected                                  57.14%
+ --------   ------------------------------------------------
+        7   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        4   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        3   4xx Reject relay denied                    0.72%
+      416   4xx Reject sender address                 99.28%
+ --------   ------------------------------------------------
+      419   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+    28417   Connections made      
+        1   Connections lost      
+    28417   Disconnections        
+        3   Removed from queue    
+        1   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   33G   16G  68% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

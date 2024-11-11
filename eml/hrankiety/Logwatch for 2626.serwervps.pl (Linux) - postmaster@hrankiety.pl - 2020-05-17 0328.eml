@@ -1,0 +1,172 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 8A9309F2047B; Sun, 17 May 2020 03:28:05 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200517012805.8A9309F2047B@hrankiety.pl>
+Date: Sun, 17 May 2020 03:28:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun May 17 03:28:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-May-16 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat May 16 03:48:05 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25813.cdiff [100%]
+    daily.cld updated (version: 25813, sigs: 2399042, f-level: 63, builder: raynman)
+    Can't query daily.25813.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6964038 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    45.13.93.82 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 5 sites probed the server 
+    183.129.159.245
+    185.143.221.212
+    185.202.2.147
+    54.175.238.98
+    67.204.43.141
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 13 Time(s)
+       /shell?busybox: 1 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       //Admin/scripts/setup.php: 1 Time(s)
+       //Admin/scripts/setup.php/MyAdmin/scripts/ ... ripts/setup.php: 1 Time(s)
+       //MyAdmin/scripts/setup.php: 2 Time(s)
+       //myadmin/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin/scripts/setup.php: 2 Time(s)
+       //phpmyadmin/scripts/setup.php: 2 Time(s)
+       //pma/scripts/setup.php: 2 Time(s)
+       /1/license.txt: 1 Time(s)
+       /Mondo/lang/sys/login.aspx: 2 Time(s)
+       /adv,/cgi-bin/weblogin.cgi?username=admin% ... 3&password=asdf: 1 Time(s)
+       /api/jsonws/invoke: 1 Time(s)
+       /atom.xml: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 2 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /feed: 1 Time(s)
+       /feed/: 1 Time(s)
+       /feeds: 1 Time(s)
+       /feeds/: 1 Time(s)
+       /horde/imp/test.php: 1 Time(s)
+       /index.atom: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /index.rdf: 1 Time(s)
+       /index.rss: 1 Time(s)
+       /index.xml: 1 Time(s)
+       /login.html: 1 Time(s)
+       /login?from=0.000000: 1 Time(s)
+       /muieblackcat: 2 Time(s)
+       /new/license.txt: 1 Time(s)
+       /owa/auth/logon.aspx?replaceCurrent=1&url= ... ety.pl%2fowa%2f: 3 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /rss.xml: 1 Time(s)
+       /solr/admin/info/system?wt=json: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       /w/license.txt: 1 Time(s)
+       /wordpress/license.txt: 1 Time(s)
+       /wp-login.php: 3 Time(s)
+       /wp/license.txt: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+    408 Request Timeout
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        8   *Warning: Pre-queue content-filter connection overload 
+      347   SASL authentication failed 
+       43   Miscellaneous warnings 
+ 
+  585.300K  Bytes accepted                           599,347
+  579.243K  Bytes delivered                          593,145
+ ========   ================================================
+ 
+       22   Accepted                                  84.62%
+        4   Rejected                                  15.38%
+ --------   ------------------------------------------------
+       26   Total                                    100.00%
+ ========   ================================================
+ 
+        4   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        4   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      408   Connections made      
+      410   Disconnections        
+       22   Removed from queue    
+       20   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+       36   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   27G   24G  54% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

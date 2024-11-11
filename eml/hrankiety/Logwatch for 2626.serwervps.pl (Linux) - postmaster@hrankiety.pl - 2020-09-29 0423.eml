@@ -1,0 +1,265 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id B1C0B3427BA; Tue, 29 Sep 2020 04:23:05 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200929022305.B1C0B3427BA@hrankiety.pl>
+Date: Tue, 29 Sep 2020 04:23:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Sep 29 04:23:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-Sep-28 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Sep 28 03:31:16 2020
+ 
+ Last Status:
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25940.cdiff [100%]
+    daily.cld updated (version: 25940, sigs: 4323474, f-level: 63, builder: raynman)
+    Can't query daily.25940.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8888470 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    122.224.129.237 -> www.baidu.com:443: 1 Time(s)
+    202.107.207.228 -> www.baidu.com:443: 1 Time(s)
+ 
+ A total of 4 sites probed the server 
+    185.202.2.147
+    202.107.207.228
+    66.240.205.34
+    87.251.75.145
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../proc/: 2 Time(s)
+       /: 14 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /PMA/: 1 Time(s)
+       /PMA2005/: 1 Time(s)
+       /SQLite/main.php: 1 Time(s)
+       /SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /SQLiteManager/main.php: 1 Time(s)
+       /SQlite/main.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /VWmC: 1 Time(s)
+       /admin/: 1 Time(s)
+       /admin//config.php: 3 Time(s)
+       /agSearch/SQlite/main.php: 1 Time(s)
+       /api/jsonws/invoke: 2 Time(s)
+       /boaform/admin/formLogin?username=admin&psd=admin: 1 Time(s)
+       /config/getuser?index=0: 3 Time(s)
+       /dbadmin/: 1 Time(s)
+       /hudson/script: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 2 Time(s)
+       /main.php: 1 Time(s)
+       /myadmin/: 1 Time(s)
+       /mysql-admin/: 1 Time(s)
+       /mysql/: 1 Time(s)
+       /mysqladmin/: 1 Time(s)
+       /mysqlmanager/: 1 Time(s)
+       /openserver/phpmyadmin/: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /p/m/a/: 1 Time(s)
+       /php-my-admin/: 1 Time(s)
+       /php-myadmin/: 1 Time(s)
+       /phpMyAdmin-2.2.3/: 1 Time(s)
+       /phpMyAdmin-2.2.6/: 1 Time(s)
+       /phpMyAdmin-2.5.1/: 1 Time(s)
+       /phpMyAdmin-2.5.4/: 1 Time(s)
+       /phpMyAdmin-2.5.5-pl1/: 1 Time(s)
+       /phpMyAdmin-2.5.5-rc1/: 1 Time(s)
+       /phpMyAdmin-2.5.5-rc2/: 1 Time(s)
+       /phpMyAdmin-2.5.5/: 1 Time(s)
+       /phpMyAdmin-2.5.6-rc1/: 1 Time(s)
+       /phpMyAdmin-2.5.6-rc2/: 1 Time(s)
+       /phpMyAdmin-2.5.6/: 1 Time(s)
+       /phpMyAdmin-2.5.7-pl1/: 1 Time(s)
+       /phpMyAdmin-2.5.7/: 1 Time(s)
+       /phpMyAdmin-2.6.0-alpha/: 1 Time(s)
+       /phpMyAdmin-2.6.0-alpha2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-beta1/: 1 Time(s)
+       /phpMyAdmin-2.6.0-beta2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl3/: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc1/: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc3/: 1 Time(s)
+       /phpMyAdmin-2.6.0/: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl2/: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl3/: 1 Time(s)
+       /phpMyAdmin-2.6.1-rc1/: 1 Time(s)
+       /phpMyAdmin-2.6.1-rc2/: 1 Time(s)
+       /phpMyAdmin-2.6.1/: 1 Time(s)
+       /phpMyAdmin-2.6.2-beta1/: 1 Time(s)
+       /phpMyAdmin-2.6.2-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.2-rc1/: 2 Time(s)
+       /phpMyAdmin-2.6.2/: 1 Time(s)
+       /phpMyAdmin-2.6.3-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.3-rc1/: 1 Time(s)
+       /phpMyAdmin-2.6.3/: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.4-pl2/: 1 Time(s)
+       /phpMyAdmin-2.6.4-pl3/: 1 Time(s)
+       /phpMyAdmin-2.6.4-pl4/: 1 Time(s)
+       /phpMyAdmin-2.6.4-rc1/: 1 Time(s)
+       /phpMyAdmin-2.6.4/: 1 Time(s)
+       /phpMyAdmin-2.7.0-beta1/: 1 Time(s)
+       /phpMyAdmin-2.7.0-pl1/: 1 Time(s)
+       /phpMyAdmin-2.7.0-pl2/: 1 Time(s)
+       /phpMyAdmin-2.7.0-rc1/: 1 Time(s)
+       /phpMyAdmin-2.7.0/: 1 Time(s)
+       /phpMyAdmin-2.8.0-beta1/: 1 Time(s)
+       /phpMyAdmin-2.8.0-rc1/: 1 Time(s)
+       /phpMyAdmin-2.8.0-rc2/: 1 Time(s)
+       /phpMyAdmin-2.8.0.1/: 1 Time(s)
+       /phpMyAdmin-2.8.0.2/: 1 Time(s)
+       /phpMyAdmin-2.8.0.3/: 1 Time(s)
+       /phpMyAdmin-2.8.0.4/: 1 Time(s)
+       /phpMyAdmin-2.8.0/: 1 Time(s)
+       /phpMyAdmin-2.8.1-rc1/: 1 Time(s)
+       /phpMyAdmin-2.8.1/: 1 Time(s)
+       /phpMyAdmin-2.8.2/: 1 Time(s)
+       /phpMyAdmin-2/: 1 Time(s)
+       /phpMyAdmin/: 1 Time(s)
+       /phpMyAdmin2/: 1 Time(s)
+       /phpmanager/: 1 Time(s)
+       /phpmy-admin/: 1 Time(s)
+       /phpmyAdmin/: 2 Time(s)
+       /phpmyAdmin4.8.5/: 2 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /phpmyadmin2/: 1 Time(s)
+       /pmA/: 2 Time(s)
+       /pmD/: 2 Time(s)
+       /pma/: 1 Time(s)
+       /pma2005/: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /script: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /solr/admin/info/system?wt=json: 2 Time(s)
+       /sqlite/main.php: 1 Time(s)
+       /sqlitemanager/main.php: 1 Time(s)
+       /sqlmanager/: 1 Time(s)
+       /sqlweb/: 1 Time(s)
+       /test/sqlite/SQLiteManager-1.2.0/SQLiteMan ... -1.2.0/main.php: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /webadmin/: 1 Time(s)
+       /webdb/: 1 Time(s)
+       /websql/: 1 Time(s)
+       http://www.msftncsi.com/ncsi.txt: 1 Time(s)
+    405 Method Not Allowed
+       www.baidu.com:443: 2 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      124   *Warning: Pre-queue content-filter connection overload 
+      150   SASL authentication failed 
+      189   Miscellaneous warnings 
+ 
+  627.538K  Bytes accepted                           642,599
+  621.493K  Bytes delivered                          636,409
+ ========   ================================================
+ 
+       30   Accepted                                  93.75%
+        2   Rejected                                   6.25%
+ --------   ------------------------------------------------
+       32   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        2   4xx Reject relay denied                    1.20%
+      164   4xx Reject sender address                 98.80%
+ --------   ------------------------------------------------
+      166   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      348   Connections made      
+        2   Connections lost      
+      347   Disconnections        
+       30   Removed from queue    
+       27   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        5   Timeout (inbound)     
+        1   SMTP commands dialog error 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 14 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 15 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   32G   16G  67% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,167 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 4D6A413D81A69; Fri,  7 Feb 2014 03:36:16 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 3AA5413D81A67
+	for <root@2626.serwervps.pl>; Fri,  7 Feb 2014 05:36:16 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id KOxz0yaMbhk3 for <root@2626.serwervps.pl>;
+	Fri,  7 Feb 2014 03:36:10 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 97B5413D81A68; Fri,  7 Feb 2014 03:36:10 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140207023610.97B5413D81A68@2626.serwervps.pl>
+Date: Fri,  7 Feb 2014 03:36:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Feb  7 03:36:08 2014
+        Date Range Processed: yesterday
+                              ( 2014-Feb-06 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        2   (00814-01) INFO: removed bare CR from 1 header line(s)
+        1   (00814-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140206023016.99C2013D81A67@2626.serwervps.pl>, mail_id: XlltJ3XhLXJW, Hits: 0, size: 2286, queued_as: 74E2013D81611, 8743 ms
+        1   (00813-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140206024408.2E3B413D81A67@2626.serwervps.pl>, mail_id: uqpA7ZFb4QdI, Hits: -0.001, size: 7018, queued_as: 4F31D13D81611, 5110 ms
+        1   (00813-01) Passed CLEAN {RelayedOutbound}, MYUSERS <support@hrankiety.pl> -> <agnieszkaibartek@gmail.com>, Message-ID: <52f2c6b9.ujL1VO2AkYvVFV7V%support@hrankiety.pl>, mail_id: M7-8JjBcI2up, Hits: -0.001, size: 484, queued_as: 33A6113D81611, dkim_new=dkim:hrankiety.pl, 1563 ms
+        1   (00814-01) Passed BAD-HEADER-8 {RelayedOutbound}, MYUSERS <root@2626.serwervps.pl> -> <bondiev@gmail.com>, Message-ID: <20140205231716.70F0D13D81A67@2626.serwervps.pl>, mail_id: 8WArjcfriCRq, Hits: -0.001, size: 415, queued_as: 1D67713D81611, dkim_new=dkim:hrankiety.pl, 3392 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Thu Feb  6 03:44:08 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18439.cdiff [100%]
+    Downloading daily-18440.cdiff [100%]
+    Downloading daily-18441.cdiff [100%]
+    Downloading daily-18442.cdiff [100%]
+    daily.cld updated (version: 18442, sigs: 687391, f-level: 63, builder: neo)
+    Downloading bytecode-236.cdiff [100%]
+    bytecode.cld updated (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3111659 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    213.135.185.105
+    66.31.2.253
+    67.182.99.240
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 3 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+       /slub/thumbs/a%20(34).jpg: 2 Time(s)
+    501 Not Implemented
+       null: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        7   *Warning: Pre-queue content-filter connection overload 
+        3   SASL authentication failed 
+ 
+   32.995K  Bytes accepted                            33,787
+   32.995K  Bytes delivered                           33,787
+ ========   ================================================
+ 
+       10   Accepted                                  76.92%
+        3   Rejected                                  23.08%
+ --------   ------------------------------------------------
+       13   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       11   Connections made      
+       11   Disconnections        
+       10   Removed from queue    
+        2   Delivered             
+        6   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 1 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    yum-plugin-fastestmirror-1.1.30-17.el6_5.noarch
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.3G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

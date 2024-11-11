@@ -1,0 +1,185 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9CFFC9F20432; Mon,  7 May 2018 03:40:17 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180507014017.9CFFC9F20432@hrankiety.pl>
+Date: Mon,  7 May 2018 03:40:11 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon May  7 03:40:11 2018
+        Date Range Processed: yesterday
+                              ( 2018-May-06 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun May  6 03:18:20 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.4 Recommended version: 0.100.0
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24541.cdiff [100%]
+    Downloading daily-24542.cdiff [100%]
+    Downloading daily-24543.cdiff [100%]
+    daily.cld updated (version: 24543, sigs: 1934866, f-level: 63, builder: neo)
+    Can't query daily.24543.85.1.0.9D1905B7.ping.clamav.net
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6501190 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    37.10.71.246
+ 
+ Requests with error response codes
+    400 Bad Request
+       /axis-cgi/jpg/image.cgi: 1 Time(s)
+       /x: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /GponForm/diag_Form?images/: 2 Time(s)
+       /MyAdmin/scripts/setup.php: 2 Time(s)
+       /PMA/index.php: 1 Time(s)
+       /PMA2/index.php: 1 Time(s)
+       /aa/: 1 Time(s)
+       /admin/index.php: 1 Time(s)
+       /admin/mysql/index.php: 1 Time(s)
+       /admin/mysql2/index.php: 1 Time(s)
+       /admin/phpmyadmin/index.php: 1 Time(s)
+       /admin/phpmyadmin2/index.php: 1 Time(s)
+       /admin/pma/index.php: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 1 Time(s)
+       /dbadmin/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /jmx-console/HtmlAdaptor?action=inspectMBe ... %3DMainDeployer: 2 Time(s)
+       /myadmin/: 2 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /myadmin2/index.php: 1 Time(s)
+       /mysql-admin/index.php: 1 Time(s)
+       /mysql/index.php: 1 Time(s)
+       /mysqladmin/index.php: 1 Time(s)
+       /phpMyAdmin/: 2 Time(s)
+       /phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdminold/index.php: 1 Time(s)
+       /phpMyadmin_bak/index.php: 1 Time(s)
+       /phpadmin/index.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmyadmin-old/index.php: 1 Time(s)
+       /phpmyadmin/: 2 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin0/index.php: 1 Time(s)
+       /phpmyadmin1/index.php: 1 Time(s)
+       /phpmyadmin2/index.php: 1 Time(s)
+       /pma-old/index.php: 1 Time(s)
+       /pma/: 2 Time(s)
+       /pma/index.php: 1 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /pmamy2/index.php: 1 Time(s)
+       /pmd/index.php: 1 Time(s)
+       /sql/: 2 Time(s)
+       /tools/phpMyAdmin/index.php: 1 Time(s)
+       /user/register?element_parents=account/mai ... mat=drupal_ajax: 2 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 2 Time(s)
+       /web/phpMyAdmin/index.php: 1 Time(s)
+       /webfig/roteros.info: 1 Time(s)
+       /wls-wsat/CoordinatorPortType: 1 Time(s)
+       /www/phpMyAdmin/index.php: 1 Time(s)
+       /xampp/phpmyadmin/index.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      117   *Warning: Pre-queue content-filter connection overload 
+      999   SASL authentication failed 
+       15   Miscellaneous warnings 
+ 
+  268.387K  Bytes accepted                           274,828
+  259.811K  Bytes delivered                          266,046
+ ========   ================================================
+ 
+        9   Accepted                                  90.00%
+        1   Rejected                                  10.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     1034   Connections made      
+        1   Connections lost      
+     1034   Disconnections        
+        9   Removed from queue    
+        5   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+       56   Timeout (inbound)     
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   37G   14G  74% /
+ none             95G  4.0K   95G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

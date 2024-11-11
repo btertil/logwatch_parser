@@ -1,0 +1,151 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id E42B211101AE4; Mon, 29 Sep 2014 03:15:32 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id B2ED611101921
+	for <root@2626.serwervps.pl>; Mon, 29 Sep 2014 05:15:32 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id x-HIK7dNqvDU for <root@2626.serwervps.pl>;
+	Mon, 29 Sep 2014 03:15:27 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 2A4C611101AE4; Mon, 29 Sep 2014 03:15:26 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140929011527.2A4C611101AE4@2626.serwervps.pl>
+Date: Mon, 29 Sep 2014 03:15:25 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Sep 29 03:15:25 2014
+        Date Range Processed: yesterday
+                              ( 2014-Sep-28 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No ext program for   .tnef, tried: tnef
+        1   (29854-01) Passed CLEAN {RelayedInternal}, LOCAL [83.167.225.169]:45922 [209.85.213.172] <r.sienkiewicz@accord-ece.com> -> <atertil@hrankiety.pl>, Queue-ID: 7317D11101953, Message-ID: <CABKWhCw=-mT9mk-niVnz6row1cWWJuoo53yUBPT3A-MnEe_MRA@mail.gmail.com>, mail_id: lsaQNVqYdehh, Hits: -5.135, size: 282849, queued_as: 1CE2511101AE4, 3305 ms
+        1   (26739-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140928013038.02EEC11101953@2626.serwervps.pl>, mail_id: vAa16AniY9Jx, Hits: 0.001, size: 2288, queued_as: 9F476111015C2, 3569 ms
+        1   (29855-01) Passed CLEAN {RelayedInternal}, LOCAL [83.167.225.169]:53040 [209.85.223.172] <r.sienkiewicz@accord-ece.com> -> <atertil@hrankiety.pl>, Queue-ID: 405E811101A4E, Message-ID: <CABKWhCy1xAoZ3r123UTiuTOhLSzE6o82QqYboQw3tt6wpxzUJA@mail.gmail.com>, mail_id: FhEU6RburZ4l, Hits: -4.972, size: 2662344, queued_as: 9E64311101AE4, 3960 ms
+        1   (26740-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140928011016.D925F11101ADF@2626.serwervps.pl>, mail_id: p0jK-DGnXIyF, Hits: 0, size: 6259, queued_as: 7366B11101ADD, 4448 ms
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Sep 28 03:10:17 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19443.cdiff [100%]
+    Downloading daily-19444.cdiff [100%]
+    Downloading daily-19445.cdiff [100%]
+    Downloading daily-19446.cdiff [100%]
+    daily.cld updated (version: 19446, sigs: 1164775, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3589046 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    188.138.9.50
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /languages/flags/ptt_bbrr.gif: 1 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+    403 Forbidden
+       /cgi-bin/: 1 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /bpbp/bpb/bp.php: 1 Time(s)
+       /cgi-bin/hi: 1 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /jwjw/jwj/jw.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin/scripts/setup.php: 5 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 5 Time(s)
+       /sfsf/sfs/sf.php: 1 Time(s)
+       /ssss/sss/ss.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    5.645M  Bytes accepted                         5,919,169
+    5.645M  Bytes delivered                        5,919,169
+ ========   ================================================
+ 
+       10   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+        6   Connections made      
+        6   Disconnections        
+       10   Removed from queue    
+        4   Delivered             
+        4   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.7G   44G  14% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

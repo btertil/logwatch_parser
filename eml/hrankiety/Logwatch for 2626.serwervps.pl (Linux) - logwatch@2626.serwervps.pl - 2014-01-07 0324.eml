@@ -1,0 +1,140 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 7714913D81E51; Tue,  7 Jan 2014 03:24:31 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 522D313D81E4E
+	for <root@2626.serwervps.pl>; Tue,  7 Jan 2014 05:24:31 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id qZ8r4h07NdlC for <root@2626.serwervps.pl>;
+	Tue,  7 Jan 2014 03:24:08 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 3B52813D81E51; Tue,  7 Jan 2014 03:24:07 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140107022408.3B52813D81E51@2626.serwervps.pl>
+Date: Tue,  7 Jan 2014 03:24:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Jan  7 03:24:05 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jan-06 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        6   *Warning              
+ 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   No ext program for   .tnef, tried: tnef
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (30341-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140106023007.255D313D81AA7@2626.serwervps.pl>, mail_id: wP-DqtKAkP0b, Hits: 0, size: 2286, queued_as: 0F11813D81115, 22889 ms
+        1   (30342-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140106020608.70E7313D81AA7@2626.serwervps.pl>, mail_id: q5TZX98LY_Sj, Hits: -0.001, size: 5230, queued_as: 0FB9B13D81115, 23666 ms
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Jan  6 03:06:08 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    daily.cld is up to date (version: 18317, sigs: 636260, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ lstat() failed on: /var/spool/amavisd/tmp/amavis-20140106T030608-30342-2H0PnGsl/parts
+ lstat() failed on: /var/spool/amavisd/tmp/amavis-20140106T033007-30341-LXDbRho7/parts
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    87.116.161.10
+ 
+ Requests with error response codes
+    404 Not Found
+       //cgi-bin/php: 1 Time(s)
+       //cgi-bin/php-cgi: 1 Time(s)
+       //cgi-bin/php.cgi: 1 Time(s)
+       //cgi-bin/php4: 1 Time(s)
+       //cgi-bin/php5: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 3 Time(s)
+       /cgi-bin/php?-d+allow_url_include%3Don+-d+ ... atus_env%3D0+-n: 1 Time(s)
+       /myadmin/scripts/setup.php: 3 Time(s)
+       /phpMyAdmin/scripts/setup.php: 3 Time(s)
+       /phpmyadmin/scripts/setup.php: 3 Time(s)
+       /pma/scripts/setup.php: 3 Time(s)
+       /vtigercrm/graph.php?current_language=../. ... Accounts&action: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+   24.109K  Bytes accepted                            24,688
+   24.109K  Bytes delivered                           24,688
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Connections made      
+        3   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.2G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

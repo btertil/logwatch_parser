@@ -1,0 +1,130 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id A6AD39F21CD4; Sat,  2 Nov 2019 03:29:08 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191102022908.A6AD39F21CD4@hrankiety.pl>
+Date: Sat,  2 Nov 2019 03:29:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Nov  2 03:29:04 2019
+        Date Range Processed: yesterday
+                              ( 2019-Nov-01 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Nov  1 03:14:09 2019
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25619.cdiff [100%]
+    daily.cld updated (version: 25619, sigs: 1965888, f-level: 63, builder: raynman)
+    Can't query daily.25619.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6532231 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    41.216.186.89
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       //a2billing/customer/templates/default/footer.tpl: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /editBlackAndWhiteList: 5 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 2 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       91   *Warning: Pre-queue content-filter connection overload 
+     6996   SASL authentication failed 
+      124   Miscellaneous warnings 
+ 
+  251.103K  Bytes accepted                           257,129
+  245.053K  Bytes delivered                          250,934
+ ========   ================================================
+ 
+       24   Accepted                                  33.33%
+       48   Rejected                                  66.67%
+ --------   ------------------------------------------------
+       72   Total                                    100.00%
+ ========   ================================================
+ 
+       48   Reject unknown user                      100.00%
+ --------   ------------------------------------------------
+       48   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     7048   Connections made      
+     7048   Disconnections        
+       24   Removed from queue    
+       21   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   21G   30G  42% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

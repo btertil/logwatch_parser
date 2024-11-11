@@ -1,0 +1,489 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id F16784641050; Tue, 17 Sep 2013 04:27:08 +0400 (MSD)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id EAF08464104D
+	for <root@2626.serwervps.pl>; Tue, 17 Sep 2013 04:27:08 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id ggpCo3_CEoM5 for <root@2626.serwervps.pl>;
+	Tue, 17 Sep 2013 04:27:06 +0400 (MSD)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 6861C4641050; Tue, 17 Sep 2013 04:27:06 +0400 (MSD)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20130917002706.6861C4641050@2626.serwervps.pl>
+Date: Tue, 17 Sep 2013 04:27:03 +0400 (MSD)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Sep 17 04:27:04 2013
+        Date Range Processed: yesterday
+                              ( 2013-Sep-16 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        3   No ext program for   .rar, tried: unrar, rar
+        3   No decoder for       .doc 
+        3   No ext program for   .tnef, tried: tnef
+        3   No ext program for   .doc, tried: ripole
+        2   Deleting db files __db.003,__db.004,snmp.db,__db.001,nanny.db,__db.002 in /var/spool/amavisd/db
+        1   (00875-04) Passed CLEAN {RelayedInternal}, LOCAL [209.85.215.171]:39176 [46.30.218.53] <bondiev@gmail.com> -> <postmaster@hrankiety.pl>, Message-ID: <52364106.5080509@gmail.com>, mail_id: AQTmcfJMMGLU, Hits: -99.516, size: 2084, queued_as: 2BF00464104D, dkim_sd=20120113:gmail.com, 4746 ms
+        1   (00875-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20130915233002.8C259464104D@2626.serwervps.pl>, mail_id: D5NzaZBuC6GT, Hits: 0, size: 2074, queued_as: 1BB99464104C, 525 ms
+        1   (02082-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (02081-01) Passed CLEAN {RelayedInternal}, MYNETS/MYUSERS LOCAL [127.0.0.1]:49422 [127.0.0.1] <btertil@hrankiety.pl> -> <btertil@hrankiety.pl>, Message-ID: <ac76e718af8eeaacf0a64cd4a9c3e5b6@hrankiety.pl>, mail_id: qMX2lUU0dFxL, Hits: -10, size: 550, queued_as: 4F07D4641052, dkim_new=dkim:hrankiety.pl, 1322 ms
+        1   (02082-01) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:49422 [127.0.0.1] <btertil@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <ac76e718af8eeaacf0a64cd4a9c3e5b6@hrankiety.pl>, mail_id: RIsuE51f2iSO, Hits: -10, size: 550, queued_as: 3F8004641051, dkim_new=dkim:hrankiety.pl, 1298 ms
+        1   (00875-05) Passed CLEAN {RelayedInternal}, LOCAL [74.125.83.43]:40993 [46.30.218.53] <agnieszkaibartek@gmail.com> -> <postmaster@hrankiety.pl>, Message-ID: <523653E5.3070109@gmail.com>, mail_id: HN-taRukhRgU, Hits: -97.026, size: 6329, queued_as: 55E3B4641051, dkim_sd=20120113:gmail.com, 5728 ms
+        1   (00875-01) Passed CLEAN {RelayedInternal}, MYNETS/MYUSERS LOCAL [127.0.0.1]:43182 [127.0.0.1] <postmaster@hrankiety.pl> -> <postmaster@hrankiety.pl>, Message-ID: <ec961aea9a91b035b25e10e566615931@hrankiety.pl>, mail_id: Up5uODdVD1oO, Hits: -10, size: 564, queued_as: CE639464104D, dkim_new=dkim:hrankiety.pl, 1256 ms
+        1   (00875-03) Passed CLEAN {RelayedInternal}, LOCAL [209.85.215.172]:58626 [46.30.218.53] <bondiev@gmail.com> -> <postmaster@hrankiety.pl>, Message-ID: <52364239.1000304@gmail.com>, mail_id: slHE4KZQdOGO, Hits: -99.516, size: 1850, queued_as: CE205464104D, dkim_sd=20120113:gmail.com, 5429 ms
+        1   (00874-03) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [46.30.218.53]:51736 [46.30.218.53] <postmaster@hrankiety.pl> -> <agnieszka.tertil@deltatraining.pl>, Message-ID: <523644A6.9070307@hrankiety.pl>, mail_id: 4dec1LTklzUu, Hits: -10, size: 690, queued_as: E7797464104D, dkim_new=dkim:hrankiety.pl, 391 ms
+        1   (00874-01) Passed CLEAN {RelayedOutbound}, MYNETS/MYUSERS LOCAL [127.0.0.1]:43251 [127.0.0.1] <postmaster@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <c581b688f3ba5ea26afd75fa9ed33d05@hrankiety.pl>, mail_id: 0BIien_wa3VF, Hits: -10, size: 559, queued_as: 2E7A4464104D, dkim_new=dkim:hrankiety.pl, 433 ms
+        1   (00874-02) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [46.30.218.53]:51631 [46.30.218.53] <postmaster@hrankiety.pl> -> <bondiev@gmail.com>, Message-ID: <52364393.4010300@hrankiety.pl>, mail_id: wML7VSMJADQs, Hits: -10, size: 682, queued_as: D16F0464104D, dkim_new=dkim:hrankiety.pl, 390 ms
+        1   (00874-04) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [46.30.218.53]:53164 [46.30.218.53] <postmaster@hrankiety.pl> -> <agnieszkaibartek@gmail.com>, Message-ID: <52364F0D.8050802@hrankiety.pl>, mail_id: iRpa3eXOBsBu, Hits: -10, size: 722, queued_as: 6453C4641051, dkim_new=dkim:hrankiety.pl, 399 ms
+        1   (02082-02) Passed CLEAN {RelayedInternal}, LOCAL [74.125.83.54]:54086 [46.30.218.53] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Message-ID: <8B629D1A-2676-4BCD-8693-72F4D827EB14@gmail.com>, mail_id: Xu0DATajn27f, Hits: -99.525, size: 2008, queued_as: 979634641051, dkim_sd=20120113:gmail.com, 1150 ms
+        1   Deleting db files  in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Sep 16 03:10:16 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 54, sigs: 1044387, f-level: 60, builder: sven)
+    WARNING: getfile: daily-17074.cdiff not found on remote server (IP: 157.25.5.183)
+    WARNING: getpatch: Can't download daily-17074.cdiff from db.local.clamav.net
+    WARNING: getfile: Unknown response from remote server (IP: 195.30.97.3)
+    WARNING: getpatch: Can't download daily-17074.cdiff from db.local.clamav.net
+    WARNING: getfile: daily-17074.cdiff not found on remote server (IP: 62.245.181.53)
+    WARNING: getpatch: Can't download daily-17074.cdiff from db.local.clamav.net
+    WARNING: Incremental update failed, trying to download daily.cvd
+    Downloading daily.cvd [100%]
+    daily.cvd updated (version: 17861, sigs: 1722992, f-level: 63, builder: neo)
+    Downloading bytecode.cvd [100%]
+    bytecode.cvd updated (version: 225, sigs: 42, f-level: 63, builder: dgoddard)
+    Database updated (2767421 signatures) from db.local.clamav.net (IP: 158.129.196.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    76.103.215.236
+    91.231.140.105
+ 
+ Requests with error response codes
+    404 Not Found
+       /.well-known/autoconfig/mail/config-v1.1.x ... %40hrankiety.pl: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /PMA/main.php: 2 Time(s)
+       /admin/main.php: 2 Time(s)
+       /favicon.ico: 11 Time(s)
+       /mail/config-v1.1.xml?emailaddress=postmaster%40hrankiety.pl: 1 Time(s)
+       /myadmin/main.php: 2 Time(s)
+       /mysql/main.php: 2 Time(s)
+       /phpMyAdmin/main.php: 2 Time(s)
+       /phpmyadmin: 1 Time(s)
+       /phpmyadmin/main.php: 2 Time(s)
+       /phpmysadmin: 1 Time(s)
+       /phppath/php: 1 Time(s)
+       /sdk/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2 ... vmInventory.xml: 4 Time(s)
+       /sdk/../../../../../..//etc/vmware/hostd/vmInventory.xml: 4 Time(s)
+       /sql/main.php: 2 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       root (46.30.218.53): 1 Time(s)
+ 
+ su:
+    Authentication Failures:
+       btertil(500) -> root: 1 Time(s)
+    Sessions Opened:
+       root -> root: 5 Time(s)
+       root -> supportforvps2626: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       92   *Warning: Pre-queue content-filter connection overload 
+ 
+   47.912K  Bytes accepted                            49,062
+   48.449K  Bytes delivered                           49,612
+ ========   ================================================
+ 
+       24   Accepted                                  77.42%
+        7   Rejected                                  22.58%
+ --------   ------------------------------------------------
+       31   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject relay denied                       42.86%
+        4   Reject unknown user                       57.14%
+ --------   ------------------------------------------------
+        7   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        6   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+        6   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      140   Connections made      
+      140   Disconnections        
+       24   Removed from queue    
+        7   Delivered             
+       17   Sent via SMTP         
+        1   Forwarded             
+ 
+        1   Timeout (inbound)     
+        4   Hostname verification errors 
+        6   SASL authenticated messages 
+ 
+        2   Postfix start         
+        1   Postfix stop          
+        1   Postfix waiting to terminate 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ New Users:
+    btertil (500)
+    supportforvps2626 (501)
+    clam (498)
+    dovecot (97)
+    dovenull (497)
+    postfix (89)
+    mysql (27)
+    amavis (496)
+    vmail (2000)
+    iredadmin (2001)
+    iredapd (2002)
+    policyd (2003)
+ 
+ New Groups:
+    btertil (500)
+    supportforvps2626 (501)
+    clam (498)
+    dovecot (97)
+    dovenull (497)
+    postdrop (90)
+    postfix (89)
+    mysql (27)
+    amavis (496)
+    vmail (2000)
+    iredadmin (2001)
+    iredapd (2002)
+    policyd (2003)
+ 
+ 
+ Userhelper executed applications:
+    root -> halt  as root:  2 Time(s)
+    root -> reboot  as root:  2 Time(s)
+ 
+ **Unmatched Entries**
+    groupadd: group added to /etc/group: name=amavis, GID=496: 1 Time(s)
+    groupadd: group added to /etc/group: name=clam, GID=498: 1 Time(s)
+    groupadd: group added to /etc/group: name=dovecot, GID=97: 1 Time(s)
+    groupadd: group added to /etc/group: name=dovenull, GID=497: 1 Time(s)
+    groupadd: group added to /etc/group: name=iredadmin, GID=2001: 1 Time(s)
+    groupadd: group added to /etc/group: name=iredapd, GID=2002: 1 Time(s)
+    groupadd: group added to /etc/group: name=mysql, GID=27: 1 Time(s)
+    groupadd: group added to /etc/group: name=policyd, GID=2003: 1 Time(s)
+    groupadd: group added to /etc/group: name=postdrop, GID=90: 1 Time(s)
+    groupadd: group added to /etc/group: name=postfix, GID=89: 1 Time(s)
+    groupadd: group added to /etc/group: name=vmail, GID=2000: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=amavis: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=clam: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=dovecot: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=dovenull: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=iredadmin: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=iredapd: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=mysql: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=policyd: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=postdrop: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=postfix: 1 Time(s)
+    groupadd: group added to /etc/gshadow: name=vmail: 1 Time(s)
+    useradd: add 'postfix' to group 'mail': 1 Time(s)
+    useradd: add 'postfix' to shadow group 'mail': 1 Time(s)
+    usermod: add 'amavis' to group 'amavis': 1 Time(s)
+    usermod: add 'amavis' to shadow group 'amavis': 1 Time(s)
+    usermod: add 'clam' to group 'amavis': 1 Time(s)
+    usermod: add 'clam' to shadow group 'amavis': 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- sendmail Begin (detail=3) ------------------------ 
+
+ 
+ 
+ STATISTICS
+ ----------
+ 
+ Sendmail was started 3 time(s)
+ 
+ Messages To Recipients:  0
+ Addressed Recipients:    0
+ Bytes Transferred:       0
+ Messages No Valid Rcpts: 0
+ 
+ ---------------------- sendmail End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 7 Time(s)
+ 
+ SSHD Started: 16 Time(s)
+ 
+ Illegal users from:
+    46.30.218.53: 1 time
+ 
+ Login attempted when not in AllowUsers list:
+    root : 1 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       46.30.218.53: 15 times
+       ::1 (localhost): 1 time
+       91.231.140.105 (mailing.idhosting.pl): 1 time
+    root:
+       46.30.218.53: 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ SFTP subsystem requests: 1 Time(s)
+ 
+ **Unmatched Entries**
+ reverse mapping checking getaddrinfo for mailing.idhosting.pl [91.231.140.105] failed - POSSIBLE BREAK-IN ATTEMPT! : 1 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    amavisd-new-2.8.0-4.el6.noarch
+    1:perl-IO-Zlib-1.09-131.el6_4.i686
+    perl-IO-Compress-Zlib-2.020-131.el6_4.i686
+    epel-release-6-8.noarch
+    1:mod_ssl-2.2.15-29.el6.centos.i686
+    perl-Archive-Zip-1.30-2.el6.noarch
+    perl-IO-stringy-2.110-10.1.el6.noarch
+    mysql-5.1.69-1.el6_4.i686
+    perl-MIME-tools-5.427-4.el6.noarch
+    perl-XML-NamespaceSupport-1.10-3.el6.noarch
+    perl-HTML-Tagset-3.20-4.el6.noarch
+    php-mbstring-5.3.3-23.el6_4.i686
+    perl-Crypt-OpenSSL-Bignum-0.04-8.1.el6.i686
+    1:perl-TimeDate-1.16-11.1.el6.noarch
+    portreserve-0.0.4-9.el6.i686
+    perl-DBI-1.609-4.el6.i686
+    arj-3.10.22-12.el6.i686
+    p7zip-plugins-9.20.1-2.el6.i686
+    2:dovecot-managesieve-0.2.6-22.el6.i686
+    python-babel-0.9.4-5.1.el6.noarch
+    1:perl-LDAP-0.40-1.el6.noarch
+    4:perl-devel-5.10.1-131.el6_4.i686
+    perl-DBD-SQLite-1.27-3.el6.i686
+    perl-Crypt-OpenSSL-RSA-0.25-10.1.el6.i686
+    file-5.04-15.el6.i686
+    perl-Net-Server-0.97-7.el6.noarch
+    perl-Unix-Syslog-1.1-3.el6.i686
+    php-common-5.3.3-23.el6_4.i686
+    perl-GSSAPI-0.26-6.el6.i686
+    2:dovecot-pigeonhole-0.2.6-22.el6.i686
+    perl-Net-DNS-0.65-4.el6.i686
+    perl-Test-Harness-3.17-131.el6_4.i686
+    libXpm-3.5.10-2.el6.i686
+    perl-BerkeleyDB-0.43-3.el6.i686
+    perl-Archive-Tar-1.58-131.el6_4.i686
+    php-ldap-5.3.3-23.el6_4.i686
+    perl-Crypt-OpenSSL-Random-0.04-9.1.el6.i686
+    2:perl-Convert-UUlib-1.4-1.el6.i686
+    dialog-1.1-9.20080819.1.el6.i686
+    4:perl-Time-HiRes-1.9721-131.el6_4.i686
+    clamd-0.97.8-1.el6.i686
+    php-gd-5.3.3-23.el6_4.i686
+    perl-Digest-HMAC-1.01-22.el6.noarch
+    perl-Mail-SPF-2.8.0-2.el6.noarch
+    perl-DBD-MySQL-4.013-3.el6.i686
+    clamav-db-0.97.8-1.el6.i686
+    1:perl-Package-Constants-0.02-131.el6_4.i686
+    php-5.3.3-23.el6_4.i686
+    postgresql-libs-8.4.13-1.el6_3.i686
+    cabextract-1.3-3.el6.i686
+    1:perl-Digest-SHA-5.47-131.el6_4.i686
+    perl-ExtUtils-MakeMaker-6.55-131.el6_4.i686
+    perl-Convert-BinHex-1.119-10.1.el6.noarch
+    nomarch-1.4-6.el6.i686
+    perl-Text-Iconv-1.7-6.el6.i686
+    python-cherrypy-3.2.2-3.el6.noarch
+    awstats-7.0-3.el6.noarch
+    perl-Convert-TNEF-0.17-10.el6.noarch
+    mod_wsgi-3.2-3.el6.i686
+    perl-HTML-Parser-3.64-2.el6.i686
+    acl-2.2.49-6.el6.i686
+    1:perl-ExtUtils-ParseXS-2.2003.0-131.el6_4.i686
+    gamin-python-0.1.10-9.el6.i686
+    perl-IO-Multiplex-1.13-1.el6.noarch
+    MySQL-python-1.2.3-0.3.c1.1.el6.i686
+    policyd-1.82-6.el6.i386
+    perl-Encode-Detect-1.01-2.el6.i686
+    1:dovecot-2.0.21-0_136.el6.i686
+    perl-Date-Manip-6.24-1.el6.noarch
+    perl-Compress-Zlib-2.020-131.el6_4.i686
+    perl-URI-1.40-2.el6.noarch
+    perl-IO-Socket-INET6-2.56-4.el6.noarch
+    freeze-2.5.0-11.el6.i686
+    perl-libwww-perl-5.833-2.el6.noarch
+    perl-Razor-Agent-2.85-6.el6.i686
+    unzoo-4.4-7.el6.i686
+    1:perl-Error-0.17015-4.el6.noarch
+    perl-YAML-Syck-1.07-4.el6.i686
+    perl-NetAddr-IP-4.027-7.el6.i686
+    perl-XML-SAX-Writer-0.50-8.el6.noarch
+    python-webpy-0.37-2.el6.noarch
+    mysql-libs-5.1.69-1.el6_4.i686
+    libX11-common-1.5.0-4.el6.noarch
+    perl-Net-SSLeay-1.35-9.el6.i686
+    clamav-0.97.8-1.el6.i686
+    libjpeg-turbo-1.2.1-1.el6.i686
+    3:postfix-2.6.6-2.3.el6.i386
+    php-xml-5.3.3-23.el6_4.i686
+    libXau-1.0.6-4.el6.i686
+    mysql-server-5.1.69-1.el6_4.i686
+    perl-Authen-SASL-2.13-2.el6.noarch
+    1:mod_auth_mysql-3.0.0-11.el6_0.1.i686
+    perl-Digest-SHA1-2.12-2.el6.i686
+    p7zip-9.20.1-2.el6.i686
+    perl-XML-SAX-0.96-7.el6.noarch
+    lzop-1.02-0.9.rc1.el6.i686
+    perl-IO-Compress-Base-2.020-131.el6_4.i686
+    perl-MailTools-2.04-4.el6.noarch
+    fail2ban-0.8.10-1.el6.noarch
+    php-cli-5.3.3-23.el6_4.i686
+    perl-XML-Filter-BufferText-1.01-8.el6.noarch
+    perl-IO-Socket-SSL-1.31-2.el6.noarch
+    libxslt-1.1.26-2.el6_3.1.i686
+    spamassassin-3.3.1-2.el6.i686
+    1:perl-Compress-Raw-Zlib-2.020-131.el6_4.i686
+    perl-Convert-ASN1-0.22-1.el6.noarch
+    php-pgsql-5.3.3-23.el6_4.i686
+    libc-client-2007e-11.el6.i686
+    libmspack-0.4-0.1.alpha.el6.i686
+    dos2unix-3.1-37.el6.i686
+    libX11-1.5.0-4.el6.i686
+    1:perl-XML-LibXML-1.70-5.el6.i686
+    python-jinja2-2.2.1-1.el6.i686
+    lzo-2.03-3.1.el6.i686
+    freetype-2.3.11-14.el6_3.1.i686
+    php-imap-5.3.3-23.el6_4.i686
+    patch-2.6-6.el6.i686
+    python-inotify-0.9.1-1.el6.noarch
+    php-pdo-5.3.3-23.el6_4.i686
+    perl-Mail-DKIM-0.37-2.el6.noarch
+    lrzip-0.614-1.el6.i686
+    perl-Socket6-0.23-3.el6.i686
+    php-mysql-5.3.3-23.el6_4.i686
+    altermime-0.3.10-3.el6.i686
+    perl-Net-LibIDN-0.12-3.el6.i686
+    libxcb-1.8.1-1.el6.i686
+    logwatch-7.3.6-49.el6.noarch
+ 
+ Packages Updated:
+    1:perl-Pod-Escapes-1.04-131.el6_4.i686
+    4:perl-libs-5.10.1-131.el6_4.i686
+    crontabs-1.10-33.el6.noarch
+    1:perl-Pod-Simple-3.13-131.el6_4.i686
+    httpd-2.2.15-29.el6.centos.i686
+    4:perl-5.10.1-131.el6_4.i686
+    tmpwatch-2.9.16-4.el6.i686
+    file-libs-5.04-15.el6.i686
+    1:perl-Module-Pluggable-3.90-131.el6_4.i686
+    httpd-tools-2.2.15-29.el6.centos.i686
+    zlib-1.2.3-29.el6.i686
+    libacl-2.2.49-6.el6.i686
+    3:perl-version-0.77-131.el6_4.i686
+ 
+ Packages Erased:
+    libjpeg
+    sendmail-cf
+    sendmail
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/simfs             30G  1.1G   29G   4% /
+ none                  384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

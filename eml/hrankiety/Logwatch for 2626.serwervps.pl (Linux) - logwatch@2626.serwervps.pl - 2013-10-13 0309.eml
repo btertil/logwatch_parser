@@ -1,0 +1,154 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 995E54643948; Sun, 13 Oct 2013 03:09:08 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 7E1624643910
+	for <root@2626.serwervps.pl>; Sun, 13 Oct 2013 05:09:08 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id sn732iMn74OO for <root@2626.serwervps.pl>;
+	Sun, 13 Oct 2013 03:09:06 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id E1C554643912; Sun, 13 Oct 2013 03:09:05 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131013010905.E1C554643912@2626.serwervps.pl>
+Date: Sun, 13 Oct 2013 03:09:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Oct 13 03:09:04 2013
+        Date Range Processed: yesterday
+                              ( 2013-Oct-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   No ext program for   .tnef, tried: tnef
+        1   Deleting db files __db.003,__db.004,snmp.db,__db.001,nanny.db,__db.002 in /var/spool/amavisd/db
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (16796-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131012013003.75FDF4643912@2626.serwervps.pl>, mail_id: WvXQd_n7uq7G, Hits: 0.001, size: 2167, queued_as: DD1F546414AC, 12370 ms
+        1   (16795-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20131012012005.D6FC54643912@2626.serwervps.pl>, mail_id: 4AtleSo0rujG, Hits: 0, size: 6605, queued_as: 4D40D4643954, 2407 ms
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sat Oct 12 03:20:06 2013
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.97.8 Recommended version: 0.98
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cld is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-17955.cdiff [100%]
+    Downloading daily-17956.cdiff [100%]
+    daily.cld updated (version: 17956, sigs: 406977, f-level: 63, builder: dgoddard)
+    bytecode.cld is up to date (version: 228, sigs: 43, f-level: 63, builder: neo)
+    Database updated (2831245 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /favicon.ico: 3 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       root -> root: 3 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+ 
+   27.801K  Bytes accepted                            28,468
+   27.801K  Bytes delivered                           28,468
+ ========   ================================================
+ 
+        6   Accepted                                  85.71%
+        1   Rejected                                  14.29%
+ --------   ------------------------------------------------
+        7   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       46   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       46   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       50   Connections made      
+       50   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 14 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 4 Time(s)
+ 
+ SFTP subsystem requests: 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/simfs             30G  1.3G   29G   5% /
+ none                  384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

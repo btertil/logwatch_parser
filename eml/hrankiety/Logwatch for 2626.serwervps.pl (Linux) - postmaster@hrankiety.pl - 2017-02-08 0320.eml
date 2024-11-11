@@ -1,0 +1,117 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 7F04435A1EFE; Wed,  8 Feb 2017 03:20:06 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170208022006.7F04435A1EFE@hrankiety.pl>
+Date: Wed,  8 Feb 2017 03:20:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Feb  8 03:20:05 2017
+        Date Range Processed: yesterday
+                              ( 2017-Feb-07 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Feb  7 03:09:07 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (157.25.5.183)...
+    Downloading daily-23011.cdiff [100%]
+    Downloading daily-23012.cdiff [100%]
+    Downloading daily-23013.cdiff [100%]
+    Downloading daily-23014.cdiff [100%]
+    Downloading daily-23015.cdiff [100%]
+    Downloading daily-23016.cdiff [100%]
+    daily.cld updated (version: 23016, sigs: 1510798, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 290, sigs: 55, f-level: 63, builder: neo)
+    Database updated (5729643 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /82172316237: 19 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      189   SASL authentication failed 
+       31   Miscellaneous warnings 
+ 
+    6.833M  Bytes accepted                         7,164,691
+    6.827M  Bytes delivered                        7,158,494
+ ========   ================================================
+ 
+       18   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       18   Total                                    100.00%
+ ========   ================================================
+ 
+      181   Connections made      
+      181   Disconnections        
+       18   Removed from queue    
+       15   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.73.65.124 (89-73-65-124.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   25G   26G  50% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,138 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id EE3559F21F97; Wed,  4 Dec 2019 03:25:10 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191204022510.EE3559F21F97@hrankiety.pl>
+Date: Wed,  4 Dec 2019 03:25:06 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Dec  4 03:25:06 2019
+        Date Range Processed: yesterday
+                              ( 2019-Dec-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Dec  3 03:49:10 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25651.cdiff [100%]
+    daily.cld updated (version: 25651, sigs: 2022989, f-level: 63, builder: raynman)
+    Can't query daily.25651.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6587985 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 4 sites probed the server 
+    198.108.67.128
+    66.240.192.138
+    74.63.227.26
+    85.128.128.32
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       /scripts/ajaxPortal.lua: 1 Time(s)
+       null: 14 Time(s)
+    404 Not Found
+       //admin/config.php?password%5B0%5D=bebydviyx&username=admin: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /_cat/indices: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 2 Time(s)
+       /install/lib/ajaxHandlers/ajaxServerSettin ... %7Cmd5sum%20%23: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /version: 1 Time(s)
+       /wp-load.php?up2018info=f: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       25   *Warning: Pre-queue content-filter connection overload 
+     8840   SASL authentication failed 
+      275   Miscellaneous warnings 
+ 
+    1.262M  Bytes accepted                         1,323,762
+    1.257M  Bytes delivered                        1,317,567
+ ========   ================================================
+ 
+       39   Accepted                                  20.97%
+      147   Rejected                                  79.03%
+ --------   ------------------------------------------------
+      186   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                           0.68%
+      146   Reject unknown user                       99.32%
+ --------   ------------------------------------------------
+      147   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     8900   Connections made      
+     8897   Disconnections        
+       39   Removed from queue    
+       37   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       80.158.18.218 (ecs-80-158-18-218.reverse.open-telekom-cloud.com): 22 times
+       185.17.41.230 (backup): 2 times
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 25 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   22G   29G  44% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

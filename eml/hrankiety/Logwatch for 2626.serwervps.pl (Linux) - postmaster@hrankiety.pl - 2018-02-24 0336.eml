@@ -1,0 +1,124 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9E6F835A31D4; Sat, 24 Feb 2018 03:36:21 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180224023621.9E6F835A31D4@hrankiety.pl>
+Date: Sat, 24 Feb 2018 03:36:18 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Feb 24 03:36:18 2018
+        Date Range Processed: yesterday
+                              ( 2018-Feb-23 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Feb 23 03:46:53 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.2 Recommended version: 0.99.3
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24338.cdiff [100%]
+    Downloading daily-24339.cdiff [100%]
+    Downloading daily-24340.cdiff [100%]
+    daily.cld updated (version: 24340, sigs: 1859026, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    Database updated (6425350 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 5 Time(s)
+    404 Not Found
+       //%63%67%69%2D%62%69%6E/%70%68%70?%2D%64+% ... 70%75%74+%2D%6E: 1 Time(s)
+       /cgi-bin/php: 1 Time(s)
+       /cgi-bin/php-cgi: 1 Time(s)
+       /cgi-bin/php.cgi: 1 Time(s)
+       /cgi-bin/php4: 1 Time(s)
+       /cgi-bin/php5: 1 Time(s)
+       /cgi-bin/php5-cli: 1 Time(s)
+       /cgi-bin/test.cgi: 1 Time(s)
+       /cgi-sys/php5: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       60   *Warning: Pre-queue content-filter connection overload 
+      115   SASL authentication failed 
+       38   Miscellaneous warnings 
+ 
+  258.136K  Bytes accepted                           264,331
+  252.084K  Bytes delivered                          258,134
+ ========   ================================================
+ 
+       17   Accepted                                  73.91%
+        6   Rejected                                  26.09%
+ --------   ------------------------------------------------
+       23   Total                                    100.00%
+ ========   ================================================
+ 
+        6   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        6   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      146   Connections made      
+      146   Disconnections        
+       17   Removed from queue    
+       15   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.73.82.159 (89-73-82-159.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   35G   16G  70% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

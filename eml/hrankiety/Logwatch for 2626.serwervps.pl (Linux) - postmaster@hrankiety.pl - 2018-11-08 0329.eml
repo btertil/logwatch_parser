@@ -1,0 +1,176 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id D74949F207A7; Thu,  8 Nov 2018 03:29:05 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20181108022905.D74949F207A7@hrankiety.pl>
+Date: Thu,  8 Nov 2018 03:29:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Nov  8 03:29:04 2018
+        Date Range Processed: yesterday
+                              ( 2018-Nov-07 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Nov  7 03:14:12 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25095.cdiff [100%]
+    Downloading daily-25096.cdiff [100%]
+    Downloading daily-25097.cdiff [100%]
+    daily.cld updated (version: 25097, sigs: 2143734, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6710074 signatures) from db.local.clamav.net (IP: 104.16.185.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       12.2.1: 1 Time(s)
+       http://180.163.113.82/check_proxy: 1 Time(s)
+    404 Not Found
+       //wp-login.php: 1 Time(s)
+       /PMA/index.php: 2 Time(s)
+       /PMA2/index.php: 2 Time(s)
+       /admin/PMA/index.php: 2 Time(s)
+       /admin/index.php: 2 Time(s)
+       /admin/mysql/index.php: 2 Time(s)
+       /admin/mysql2/index.php: 2 Time(s)
+       /admin/phpMyAdmin/index.php: 2 Time(s)
+       /admin/phpmyadmin/index.php: 2 Time(s)
+       /admin/phpmyadmin2/index.php: 2 Time(s)
+       /admin/pma/index.php: 2 Time(s)
+       /claroline/phpMyAdmin/index.php: 2 Time(s)
+       /db/index.php: 2 Time(s)
+       /dbadmin/index.php: 2 Time(s)
+       /index.php: 2 Time(s)
+       /myadmin/index.php: 2 Time(s)
+       /myadmin2/index.php: 2 Time(s)
+       /mysql-admin/index.php: 2 Time(s)
+       /mysql/index.php: 2 Time(s)
+       /mysqladmin/index.php: 2 Time(s)
+       /phpAdmin/index.php: 2 Time(s)
+       /phpMyAbmin/index.php: 2 Time(s)
+       /phpMyAdm1n/index.php: 2 Time(s)
+       /phpMyAdmin+++---/index.php: 2 Time(s)
+       /phpMyAdmin-4.4.0/index.php: 2 Time(s)
+       /phpMyAdmin.old/index.php: 2 Time(s)
+       /phpMyAdmin/index.php: 2 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 2 Time(s)
+       /phpMyAdmin__/index.php: 2 Time(s)
+       /phpMyAdminold/index.php: 2 Time(s)
+       /phpMyAdmion/index.php: 2 Time(s)
+       /phpMyadmi/index.php: 2 Time(s)
+       /phpMyadmin_bak/index.php: 2 Time(s)
+       /phpadmin/index.php: 2 Time(s)
+       /phpma/index.php: 2 Time(s)
+       /phpmyadm1n/index.php: 2 Time(s)
+       /phpmyadmin-old/index.php: 2 Time(s)
+       /phpmyadmin/index.php: 2 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 2 Time(s)
+       /phpmyadmin0/index.php: 2 Time(s)
+       /phpmyadmin1/index.php: 2 Time(s)
+       /phpmyadmin2/index.php: 2 Time(s)
+       /pma-old/index.php: 2 Time(s)
+       /pma/index.php: 2 Time(s)
+       /pmamy/index.php: 2 Time(s)
+       /pmamy2/index.php: 2 Time(s)
+       /pmd/index.php: 2 Time(s)
+       /polycom: 1 Time(s)
+       /shaAdmin/index.php: 2 Time(s)
+       /tools/phpMyAdmin/index.php: 2 Time(s)
+       /typo3/phpmyadmin/index.php: 2 Time(s)
+       /user/register/: 1 Time(s)
+       /v/index.php: 2 Time(s)
+       /web/phpMyAdmin/index.php: 2 Time(s)
+       /webdav/: 2 Time(s)
+       /wp-login.php: 1 Time(s)
+       /www/phpMyAdmin/index.php: 2 Time(s)
+       /xampp/phpmyadmin/index.php: 2 Time(s)
+    405 Method Not Allowed
+       /: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      543   *Warning: Pre-queue content-filter connection overload 
+      640   SASL authentication failed 
+       73   Miscellaneous warnings 
+ 
+    1.286M  Bytes accepted                         1,348,382
+    1.280M  Bytes delivered                        1,342,183
+ ========   ================================================
+ 
+       33   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       33   Total                                    100.00%
+ ========   ================================================
+ 
+       11   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       11   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      663   Connections made      
+      663   Disconnections        
+       33   Removed from queue    
+       31   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Excessive errors in SMTP commands dialog 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  51% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,139 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 6B8119F20457; Sun,  5 Jan 2020 03:10:12 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200105021012.6B8119F20457@hrankiety.pl>
+Date: Sun,  5 Jan 2020 03:10:06 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Jan  5 03:10:06 2020
+        Date Range Processed: yesterday
+                              ( 2020-Jan-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Jan  4 03:46:09 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25683.cdiff [100%]
+    daily.cld updated (version: 25683, sigs: 2089353, f-level: 63, builder: raynman)
+    Can't query daily.25683.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6654349 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    222.186.19.221 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 4 sites probed the server 
+    185.153.199.3
+    193.37.255.114
+    66.240.192.138
+    85.128.128.32
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+       /?0628182016134805143312: 1 Time(s)
+       /shell?busybox: 1 Time(s)
+       /view/index.shtml: 1 Time(s)
+       null: 19 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 3 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /sitemap.xml: 3 Time(s)
+       /solr/admin/info/system?wt=json: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        9   *Warning: Pre-queue content-filter connection overload 
+    11377   SASL authentication failed 
+       39   Miscellaneous warnings 
+ 
+  470.950K  Bytes accepted                           482,253
+  464.900K  Bytes delivered                          476,058
+ ========   ================================================
+ 
+       22   Accepted                                  95.65%
+        1   Rejected                                   4.35%
+ --------   ------------------------------------------------
+       23   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    11417   Connections made      
+        1   Connections lost      
+    11418   Disconnections        
+       22   Removed from queue    
+       17   Delivered             
+        3   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        3   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  46% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

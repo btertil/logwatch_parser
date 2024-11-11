@@ -1,0 +1,288 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:aa87:0:0:0:0:0 with SMTP id u7csp2228341jai;
+        Thu, 4 Apr 2019 18:22:11 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzXrKXWwASN0PnC27p4BIZXS7bJiiIbP/hvPwAg0F7meGsRxgjFoKt5RAouDnAFc9EYnO9h
+X-Received: by 2002:a2e:7114:: with SMTP id m20mr5188960ljc.120.1554427331518;
+        Thu, 04 Apr 2019 18:22:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1554427331; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FDoxt1Xsm4gfheAkS9j0eeoJTc8EdnU6xz2qyRHLQD5C+NL9s3qTjWkC4yXHLf5dqF
+         4xuG2mG9B2cjlhoPF3gC1TyrdvvaB4o9M5Nx4G06kB6lmLjJEFxhmtdv/PuqOvKDjRSe
+         T/yeBpvlabZx9YEO4erI/SIfP0ci0VG0vPh0TlG9W1hHZTTK/Mq6ucWqW4SbNwSyWsaN
+         3i+hqdv0Be8ruIrjZn125/rqOrtOdmPIcFwoqCVZldmkHchNFWhKF2Tpp32D+KSUdXLa
+         +ryIT4ttTP0N3VTQFNZ3EY8nZZsLgqCfZtK9FHkWwLyRyHMp3L8cirwev8s2iEFHDf27
+         mOZA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=iRMltOT/oWof9DmuUuwTLYYDQGV3CaWahjrLHLX4MTY=;
+        b=ovqFlDUPdTAOLlpsgRZ7f6ETcpX98269M9kXuevyivCGkJ4yAtE9T8mtYzCRbAhhnp
+         zh0Nn7SyWJyWsFd5qu0RirWGePnmhjFNhzdvvOWSAG8o0qJVn3dcBib/uqa8wVdG7j/U
+         h/jPAzINgmb/yIxAPmxXevVM0teeQBhLexLpUwDj1cdvY+H83RCLWSdoHfbamDPlKaIk
+         Tjb6crxxNqsZlmihvE2x1OoQhMjP5LMdHD8RLk+YExFxoPDgOlt+/vHrNQ5oEyAPDd94
+         QbPonwWiAE+xQaMrGlBUXZJNHbiRr4pJoQrpp9QHMZ867Lx+M8OPLyYndFQ8HvBnCcH0
+         fbFQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id p27si14159274lja.90.2019.04.04.18.22.11
+        for <bondiev@gmail.com>;
+        Thu, 04 Apr 2019 18:22:11 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 45CAB4A812C2; Fri,  5 Apr 2019 03:22:10 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190405012210.45CAB4A812C2@vis1.localdomain>
+Date: Fri,  5 Apr 2019 03:22:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Apr  5 03:22:07 2019
+        Date Range Processed: yesterday
+                              ( 2019-Apr-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Apr  4 03:45:11 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.2 Recommended version: 0.101.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25408.cdiff [100%]
+    daily.cld updated (version: 25408, sigs: 1541049, f-level: 63, builder: raynman)
+    bytecode.cld is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6107392 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    140.109.214.67
+    46.161.27.51
+ 
+ Requests with error response codes
+    400 Bad Request
+       null: 1 Time(s)
+    404 Not Found
+       /099.php: 1 Time(s)
+       /2phpmyadmin/index.php?lang=en: 1 Time(s)
+       /Appe62911b9.php: 1 Time(s)
+       /HNAP1/: 4 Time(s)
+       /MyAdmin/index.php?lang=en: 1 Time(s)
+       /PMA/index.php?lang=en: 1 Time(s)
+       /PMA2011/index.php?lang=en: 1 Time(s)
+       /PMA2012/index.php?lang=en: 1 Time(s)
+       /PMA2013/index.php?lang=en: 1 Time(s)
+       /PMA2014/index.php?lang=en: 1 Time(s)
+       /PMA2015/index.php?lang=en: 1 Time(s)
+       /PMA2016/index.php?lang=en: 1 Time(s)
+       /PMA2017/index.php?lang=en: 1 Time(s)
+       /PMA2018/index.php?lang=en: 1 Time(s)
+       /Skri.php: 1 Time(s)
+       /_404.php: 1 Time(s)
+       /admin//config.php: 1 Time(s)
+       /admin/db/index.php?lang=en: 1 Time(s)
+       /admin/index.php?lang=en: 1 Time(s)
+       /admin/pMA/index.php?lang=en: 1 Time(s)
+       /admin/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /admin/phpmyadmin/index.php?lang=en: 1 Time(s)
+       /admin/sqladmin/index.php?lang=en: 1 Time(s)
+       /admin/sysadmin/index.php?lang=en: 1 Time(s)
+       /admin/web/index.php?lang=en: 1 Time(s)
+       /admin/wp-login.php: 1 Time(s)
+       /administrator/PMA/index.php?lang=en: 1 Time(s)
+       /administrator/admin/index.php?lang=en: 1 Time(s)
+       /administrator/db/index.php?lang=en: 1 Time(s)
+       /administrator/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /administrator/phpmyadmin/index.php?lang=en: 1 Time(s)
+       /administrator/pma/index.php?lang=en: 1 Time(s)
+       /administrator/web/index.php?lang=en: 1 Time(s)
+       /database/index.php?lang=en: 1 Time(s)
+       /db.init.php: 1 Time(s)
+       /db/db-admin/index.php?lang=en: 1 Time(s)
+       /db/dbadmin/index.php?lang=en: 1 Time(s)
+       /db/dbweb/index.php?lang=en: 1 Time(s)
+       /db/index.php?lang=en: 1 Time(s)
+       /db/myadmin/index.php?lang=en: 1 Time(s)
+       /db/phpMyAdmin-3/index.php?lang=en: 1 Time(s)
+       /db/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /db/phpMyAdmin3/index.php?lang=en: 1 Time(s)
+       /db/phpmyadmin/index.php?lang=en: 1 Time(s)
+       /db/phpmyadmin3/index.php?lang=en: 1 Time(s)
+       /db/webadmin/index.php?lang=en: 1 Time(s)
+       /db/webdb/index.php?lang=en: 1 Time(s)
+       /db/websql/index.php?lang=en: 1 Time(s)
+       /db_desql.php: 1 Time(s)
+       /db_session.init.php: 1 Time(s)
+       /dbadmin/index.php?lang=en: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php?lang=en: 1 Time(s)
+       /java.php: 1 Time(s)
+       /lapan.php: 1 Time(s)
+       /m.php?pbid=open: 1 Time(s)
+       /mahua/v/20190212/8dfcb2192a5052e5a152b9d8 ... 1191b09c_0.m3u8: 1 Time(s)
+       /mx.php: 1 Time(s)
+       /myadmin/index.php?lang=en: 1 Time(s)
+       /mysql-admin/index.php?lang=en: 1 Time(s)
+       /mysql/admin/index.php?lang=en: 1 Time(s)
+       /mysql/db/index.php?lang=en: 1 Time(s)
+       /mysql/dbadmin/index.php?lang=en: 1 Time(s)
+       /mysql/index.php?lang=en: 1 Time(s)
+       /mysql/mysqlmanager/index.php?lang=en: 1 Time(s)
+       /mysql/pMA/index.php?lang=en: 1 Time(s)
+       /mysql/pma/index.php?lang=en: 1 Time(s)
+       /mysql/sqlmanager/index.php?lang=en: 1 Time(s)
+       /mysql/web/index.php?lang=en: 1 Time(s)
+       /mysqladmin/index.php?lang=en: 1 Time(s)
+       /mysqlmanager/index.php?lang=en: 1 Time(s)
+       /news/wp-login.php: 2 Time(s)
+       /p34ky1337.php: 1 Time(s)
+       /php-my-admin/index.php?lang=en: 1 Time(s)
+       /php-myadmin/index.php?lang=en: 1 Time(s)
+       /php2MyAdmin/index.php: 1 Time(s)
+       /phpMyAbmin/index.php: 1 Time(s)
+       /phpMyAdmin-3/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin._/index.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 1 Time(s)
+       /phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin2/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin3/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin4/index.php?lang=en: 1 Time(s)
+       /phpMyadmin/index.php?lang=en: 1 Time(s)
+       /phpMydmin/index.php: 1 Time(s)
+       /phpiMyAdmin/index.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmy-admin/index.php?lang=en: 1 Time(s)
+       /phpmy/index.php?lang=en: 1 Time(s)
+       /phpmyAdmin/index.php?lang=en: 1 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2011/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2012/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2013/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2014/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2015/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2016/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2017/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2018/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2019/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2222/index.php: 1 Time(s)
+       /phpmyadmin3/index.php?lang=en: 1 Time(s)
+       /phpmyadmin4/index.php?lang=en: 1 Time(s)
+       /phppma/index.php?lang=en: 1 Time(s)
+       /pk1914.php: 1 Time(s)
+       /pma-old/index.php: 1 Time(s)
+       /pma/index.php?lang=en: 1 Time(s)
+       /pma2011/index.php?lang=en: 1 Time(s)
+       /pma2012/index.php?lang=en: 1 Time(s)
+       /pma2013/index.php?lang=en: 1 Time(s)
+       /pma2014/index.php?lang=en: 1 Time(s)
+       /pma2015/index.php?lang=en: 1 Time(s)
+       /pma2016/index.php?lang=en: 1 Time(s)
+       /pma2017/index.php?lang=en: 1 Time(s)
+       /pma2018/index.php?lang=en: 1 Time(s)
+       /pma2019/index.php?lang=en: 1 Time(s)
+       /politic/wp-login.php: 2 Time(s)
+       /portal/wp-login.php: 2 Time(s)
+       /program/index.php: 1 Time(s)
+       /program/index.php?lang=en: 1 Time(s)
+       /qaq.php: 1 Time(s)
+       /robots.txt: 3 Time(s)
+       /sheep.php: 1 Time(s)
+       /shopdb/index.php?lang=en: 1 Time(s)
+       /sql/myadmin/index.php?lang=en: 1 Time(s)
+       /sql/php-myadmin/index.php?lang=en: 1 Time(s)
+       /sql/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /sql/phpMyAdmin2/index.php?lang=en: 1 Time(s)
+       /sql/phpmanager/index.php?lang=en: 1 Time(s)
+       /sql/phpmy-admin/index.php?lang=en: 1 Time(s)
+       /sql/phpmyadmin2/index.php?lang=en: 1 Time(s)
+       /sql/sql-admin/index.php?lang=en: 1 Time(s)
+       /sql/sql/index.php?lang=en: 1 Time(s)
+       /sql/sqladmin/index.php?lang=en: 1 Time(s)
+       /sql/sqlweb/index.php?lang=en: 1 Time(s)
+       /sql/webadmin/index.php?lang=en: 1 Time(s)
+       /sql/webdb/index.php?lang=en: 1 Time(s)
+       /sql/websql/index.php?lang=en: 1 Time(s)
+       /sqlmanager/index.php?lang=en: 1 Time(s)
+       /version: 1 Time(s)
+       /w.php: 1 Time(s)
+       /wp-admins.php: 1 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp ... dex.php?lang=en: 1 Time(s)
+       /xw1.php: 1 Time(s)
+       /xx.php: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    9.685K  Bytes accepted                             9,917
+    9.685K  Bytes delivered                            9,917
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   23G  7.6G  75% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

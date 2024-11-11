@@ -1,0 +1,139 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 95EAA9F2186F; Wed, 21 Aug 2019 03:16:08 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190821011608.95EAA9F2186F@hrankiety.pl>
+Date: Wed, 21 Aug 2019 03:16:06 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Aug 21 03:16:06 2019
+        Date Range Processed: yesterday
+                              ( 2019-Aug-20 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Aug 20 03:20:07 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25546.cdiff [100%]
+    daily.cld updated (version: 25546, sigs: 1727460, f-level: 63, builder: raynman)
+    Can't query daily.25546.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 330, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6293803 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    85.93.20.170
+    92.63.194.15
+ 
+ Requests with error response codes
+    400 Bad Request
+       /crontab.php: 1 Time(s)
+       /msdn.cpp: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       //wp-login.php: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /acadmin.php: 1 Time(s)
+       /admin//config.php: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /cpanel: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /secure/ContactAdministrators!default.jspa: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        5   *Warning: Pre-queue content-filter connection overload 
+     1845   SASL authentication failed 
+      234   Miscellaneous warnings 
+ 
+  862.094K  Bytes accepted                           882,784
+  856.037K  Bytes delivered                          876,582
+ ========   ================================================
+ 
+       35   Accepted                                  16.28%
+      180   Rejected                                  83.72%
+ --------   ------------------------------------------------
+      215   Total                                    100.00%
+ ========   ================================================
+ 
+      180   Reject unknown user                      100.00%
+ --------   ------------------------------------------------
+      180   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     1894   Connections made      
+     1894   Disconnections        
+       35   Removed from queue    
+       33   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        9   Excessive errors in SMTP commands dialog 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 2 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 4 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   19G   32G  37% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,159 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 503011110386F; Thu, 26 Nov 2015 03:44:28 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 39CC011103882; Thu, 26 Nov 2015 03:44:28 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20151126024428.39CC011103882@2626.serwervps.pl>
+Date: Thu, 26 Nov 2015 03:44:24 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Nov 26 03:44:24 2015
+        Date Range Processed: yesterday
+                              ( 2015-Nov-25 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Nov 25 03:50:15 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-21091.cdiff [100%]
+    Downloading daily-21092.cdiff [100%]
+    Downloading daily-21093.cdiff [100%]
+    Downloading daily-21094.cdiff [100%]
+    daily.cld updated (version: 21094, sigs: 1699349, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 270, sigs: 46, f-level: 63, builder: shurley)
+    Database updated (4123620 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (Shutting down)
+ INFO (RANDOM_DELAY will be scaled with factor 63% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    141.212.122.112 -> proxytest.zmap.io:80: 1 Time(s)
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       //cgi-bin/test-cgi: 1 Time(s)
+       /browserconfig.xml: 1 Time(s)
+       /home: 1 Time(s)
+       /ocena360/daszboard: 1 Time(s)
+       /ocena360/daszboardlog.php: 1 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 795201275819795: 1 Time(s)
+    405 Method Not Allowed
+       proxytest.zmap.io:80: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 5 Time(s)
+       btertil -> support: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        8   *Warning: Pre-queue content-filter connection overload 
+        9   SASL authentication failed 
+ 
+  420.969K  Bytes accepted                           431,072
+  390.299K  Bytes delivered                          399,666
+ ========   ================================================
+ 
+      124   Accepted                                  90.51%
+       13   Rejected                                   9.49%
+ --------   ------------------------------------------------
+      137   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                           7.69%
+       12   Reject sender address                     92.31%
+ --------   ------------------------------------------------
+       13   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       29   Connections made      
+       29   Disconnections        
+      124   Removed from queue    
+       23   Delivered             
+       67   Sent via SMTP         
+       18   Forwarded             
+       67   Deferred              
+      342   Deferrals             
+        2   Bounce (local)        
+       14   Expired and returned to sender 
+       16   DSNs undeliverable    
+ 
+        3   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 24 times
+       185.17.41.230 (backup): 2 times
+       178.181.227.147 (178.181.227.147.nat.umts.dynamic.t-mobile.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ SFTP subsystem requests: 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   22G   29G  44% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

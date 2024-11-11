@@ -1,0 +1,227 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id C3A479F20432; Sun, 13 May 2018 03:44:17 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180513014417.C3A479F20432@hrankiety.pl>
+Date: Sun, 13 May 2018 03:44:14 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun May 13 03:44:14 2018
+        Date Range Processed: yesterday
+                              ( 2018-May-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat May 12 03:41:07 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.4 Recommended version: 0.100.0
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24559.cdiff [100%]
+    Downloading daily-24560.cdiff [100%]
+    Downloading daily-24561.cdiff [100%]
+    daily.cld updated (version: 24561, sigs: 1943209, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6509533 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    137.226.113.9
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       /.ftpconfig: 1 Time(s)
+       /.remote-sync.json: 1 Time(s)
+       /.vscode/ftp-sync.json: 1 Time(s)
+       /FileZilla.xml: 1 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /PMA/index.php: 2 Time(s)
+       /PMA2/index.php: 2 Time(s)
+       /WS_FTP.INI: 1 Time(s)
+       /WS_FTP.ini: 1 Time(s)
+       /WinSCP.ini: 1 Time(s)
+       /admin//config.php: 3 Time(s)
+       /admin/PMA/index.php: 2 Time(s)
+       /admin/index.php: 3 Time(s)
+       /admin/mysql/index.php: 2 Time(s)
+       /admin/mysql2/index.php: 2 Time(s)
+       /admin/phpMyAdmin/index.php: 2 Time(s)
+       /admin/phpmyadmin/index.php: 2 Time(s)
+       /admin/phpmyadmin2/index.php: 2 Time(s)
+       /admin/pma/index.php: 3 Time(s)
+       /blog/: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 3 Time(s)
+       /db/index.php: 3 Time(s)
+       /dbadmin/index.php: 3 Time(s)
+       /deployment-config.json: 1 Time(s)
+       /filezilla.xml: 1 Time(s)
+       /index.php: 3 Time(s)
+       /lfm.php: 1 Time(s)
+       /myadmin/index.php: 2 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /myadmin2/index.php: 2 Time(s)
+       /mysql-admin/index.php: 2 Time(s)
+       /mysql/index.php: 3 Time(s)
+       /mysqladmin/index.php: 2 Time(s)
+       /phpMyAdmin.old/index.php: 3 Time(s)
+       /phpMyAdmin/index.php: 2 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 3 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdminold/index.php: 3 Time(s)
+       /phpMyadmin_bak/index.php: 3 Time(s)
+       /phpadmin/index.php: 2 Time(s)
+       /phpma/index.php: 3 Time(s)
+       /phpmyadmin: 1 Time(s)
+       /phpmyadmin-old/index.php: 3 Time(s)
+       /phpmyadmin/index.php: 2 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 3 Time(s)
+       /phpmyadmin0/index.php: 2 Time(s)
+       /phpmyadmin1/index.php: 2 Time(s)
+       /phpmyadmin2/index.php: 2 Time(s)
+       /pma-old/index.php: 3 Time(s)
+       /pma/index.php: 2 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /pmamy/index.php: 2 Time(s)
+       /pmamy2/index.php: 2 Time(s)
+       /pmd/index.php: 2 Time(s)
+       /servlet?p=login&q=loginForm&jumpto=status: 1 Time(s)
+       /sftp-config.json: 1 Time(s)
+       /sitemanager.xml: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 3 Time(s)
+       /typo3/phpmyadmin/index.php: 3 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /web/phpMyAdmin/index.php: 3 Time(s)
+       /winscp.ini: 1 Time(s)
+       /wls-wsat/CoordinatorPortType: 3 Time(s)
+       /ws_ftp.ini: 1 Time(s)
+       /www/phpMyAdmin/index.php: 3 Time(s)
+       /xampp/phpmyadmin/index.php: 2 Time(s)
+    405 Method Not Allowed
+       /: 3 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       69   *Warning: Pre-queue content-filter connection overload 
+      969   SASL authentication failed 
+       20   Miscellaneous warnings 
+ 
+  667.510K  Bytes accepted                           683,530
+  661.451K  Bytes delivered                          677,326
+ ========   ================================================
+ 
+       12   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       12   Total                                    100.00%
+ ========   ================================================
+ 
+      991   Connections made      
+      991   Disconnections        
+       12   Removed from queue    
+       10   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    useradd: failed adding user 'postgres', exit code: 9: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.73.82.159 (89-73-82-159.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+    kernel-2.6.32-696.28.1.el6.i686
+ 
+ Packages Updated:
+    postgresql94-9.4.18-1PGDG.rhel6.i686
+    postgresql94-libs-9.4.18-1PGDG.rhel6.i686
+    kernel-headers-2.6.32-696.28.1.el6.i686
+    tzdata-2018e-3.el6.noarch
+    postgresql94-server-9.4.18-1PGDG.rhel6.i686
+    fail2ban-0.9.6-1.el6.1.noarch
+    postgresql94-contrib-9.4.18-1PGDG.rhel6.i686
+    kernel-firmware-2.6.32-696.28.1.el6.noarch
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   38G   13G  75% /
+ none             95G  4.0K   95G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,172 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id B16E19F20520; Mon, 21 May 2018 03:47:10 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180521014710.B16E19F20520@hrankiety.pl>
+Date: Mon, 21 May 2018 03:47:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon May 21 03:47:08 2018
+        Date Range Processed: yesterday
+                              ( 2018-May-20 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun May 20 03:15:22 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.4 Recommended version: 0.100.0
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24583.cdiff [100%]
+    Downloading daily-24584.cdiff [100%]
+    Downloading daily-24585.cdiff [100%]
+    daily.cld updated (version: 24585, sigs: 1953203, f-level: 63, builder: neo)
+    Can't query daily.24585.85.1.0.6810BB8A.ping.clamav.net
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6519527 signatures) from db.local.clamav.net (IP: 104.16.187.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    164.52.24.140
+    46.165.232.195
+    60.191.38.77
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 3 Time(s)
+       test: 1 Time(s)
+    404 Not Found
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /PMA2/index.php: 1 Time(s)
+       /admin//config.php: 1 Time(s)
+       /admin/PMA/index.php: 1 Time(s)
+       /admin/index.php: 1 Time(s)
+       /admin/mysql/index.php: 1 Time(s)
+       /admin/mysql2/index.php: 1 Time(s)
+       /admin/phpMyAdmin/index.php: 1 Time(s)
+       /admin/phpmyadmin2/index.php: 1 Time(s)
+       /admin/pma/index.php: 1 Time(s)
+       /ccvv: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 1 Time(s)
+       /db/index.php: 1 Time(s)
+       /dbadmin/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /login.html: 2 Time(s)
+       /myadmin/index.php: 1 Time(s)
+       /myadmin2/index.php: 1 Time(s)
+       /mysql-admin/index.php: 1 Time(s)
+       /mysql/index.php: 1 Time(s)
+       /mysqladmin/index.php: 1 Time(s)
+       /phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdminold/index.php: 1 Time(s)
+       /phpMyadmin_bak/index.php: 1 Time(s)
+       /phpadmin/index.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmyadmin-old/index.php: 1 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin0/index.php: 1 Time(s)
+       /phpmyadmin1/index.php: 1 Time(s)
+       /phpmyadmin2/index.php: 1 Time(s)
+       /pma-old/index.php: 1 Time(s)
+       /pma/index.php: 1 Time(s)
+       /pmamy/index.php: 1 Time(s)
+       /pmamy2/index.php: 1 Time(s)
+       /pmd/index.php: 1 Time(s)
+       /recordings//theme/main.css: 2 Time(s)
+       /typo3/phpmyadmin/index.php: 1 Time(s)
+       /web/phpMyAdmin/index.php: 1 Time(s)
+       /wls-wsat/CoordinatorPortType: 1 Time(s)
+       /www/phpMyAdmin/index.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+     2071   *Warning: Pre-queue content-filter connection overload 
+     2345   SASL authentication failed 
+       34   Miscellaneous warnings 
+ 
+  802.771K  Bytes accepted                           822,038
+  794.195K  Bytes delivered                          813,256
+ ========   ================================================
+ 
+       20   Accepted                                  90.91%
+        2   Rejected                                   9.09%
+ --------   ------------------------------------------------
+       22   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                          50.00%
+        1   Reject client host                        50.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     2934   Connections made      
+     2934   Disconnections        
+       20   Removed from queue    
+       16   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        3   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   38G   13G  75% /
+ none             95G  4.0K   95G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

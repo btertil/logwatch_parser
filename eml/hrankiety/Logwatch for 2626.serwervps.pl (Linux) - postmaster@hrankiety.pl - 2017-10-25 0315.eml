@@ -1,0 +1,190 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id EABFD35A3964; Wed, 25 Oct 2017 03:15:31 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20171025011531.EABFD35A3964@hrankiety.pl>
+Date: Wed, 25 Oct 2017 03:15:28 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Oct 25 03:15:28 2017
+        Date Range Processed: yesterday
+                              ( 2017-Oct-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Oct 24 03:36:21 2017
+ 
+ Last Status:
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-23979.cdiff [100%]
+    Downloading daily-23980.cdiff [100%]
+    Downloading daily-23981.cdiff [100%]
+    daily.cld updated (version: 23981, sigs: 1760863, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 313, sigs: 73, f-level: 63, builder: neo)
+    Database updated (6327185 signatures) from db.local.clamav.net (IP: 91.219.236.218)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    164.52.0.141
+    77.72.83.110
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       null: 3 Time(s)
+       test: 1 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 3 Time(s)
+       /PMA/scripts/setup.php: 1 Time(s)
+       /SQLite/main.php: 1 Time(s)
+       /SQLiteManager/main.php: 1 Time(s)
+       /Struts2XMLHelloWorld/User/home.action: 1 Time(s)
+       /admin/agent/default.action: 1 Time(s)
+       /agSearch/SQlite/main.php: 1 Time(s)
+       /article/article.action: 1 Time(s)
+       /blogs/wp-login.php: 1 Time(s)
+       /browse/browse.action: 1 Time(s)
+       /cgi-bin/test: 7 Time(s)
+       /cgi-bin/test-cgi: 7 Time(s)
+       /cgi-bin/test.cgi: 7 Time(s)
+       /cms/wp-login.php: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /frame/first.action: 1 Time(s)
+       /home/login.action: 1 Time(s)
+       /index.action: 1 Time(s)
+       /index.jsp: 1 Time(s)
+       /login.action: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /mysql/scripts/setup.php: 2 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /news/wp-login.php: 2 Time(s)
+       /notFound.action: 1 Time(s)
+       /phpMyAdmin/scripts.setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 3 Time(s)
+       /phpMyAdmin2/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 3 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 3 Time(s)
+       /scripts/setup.php: 2 Time(s)
+       /showcase.action: 1 Time(s)
+       /site/wp-login.php: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /sql/scripts/setup.php: 1 Time(s)
+       /sqlite/main.php: 1 Time(s)
+       /sqlitemanager/main.php: 1 Time(s)
+       /status?full=true: 18 Time(s)
+       /struts-2.3.20.1/login.action: 1 Time(s)
+       /struts-2.3.20.3/login.action: 1 Time(s)
+       /struts-2.3.20/login.action: 1 Time(s)
+       /struts-2.3.24.1/login.action: 1 Time(s)
+       /struts-2.3.24.3/login.action: 1 Time(s)
+       /struts-2.3.24/login.action: 1 Time(s)
+       /struts-2.3.28/login.action: 1 Time(s)
+       /struts-2.3.29/login.action: 1 Time(s)
+       /struts-2.3.31/login.action: 1 Time(s)
+       /struts-2.5-BETA1/login.action: 1 Time(s)
+       /struts-2.5-BETA3/login.action: 1 Time(s)
+       /struts-2.5.10.1-src/login.action: 1 Time(s)
+       /struts-2.5.10.1/login.action: 1 Time(s)
+       /struts-2.5.10/login.action: 1 Time(s)
+       /struts-2.5.2/login.action: 1 Time(s)
+       /struts-2.5/login.action: 1 Time(s)
+       /struts/login.action: 1 Time(s)
+       /struts2-showcase/login.action: 1 Time(s)
+       /struts2-showcase/showcase.action: 1 Time(s)
+       /struts2/login.action: 1 Time(s)
+       /struts2_2.3.15.1-showcase/showcase.action: 1 Time(s)
+       /test/wp-login.php: 1 Time(s)
+       /user/registrationPage.action: 1 Time(s)
+       /vportal/web/gateway: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /web/Index.action: 1 Time(s)
+       /web/wp-login.php: 1 Time(s)
+       /wordpress/wp-login.php: 2 Time(s)
+       /wp-login.php: 1 Time(s)
+       /xampp/phpmyadmin/scripts/setup.php: 2 Time(s)
+       http://s.4cdn.org/image/title/24.jpg: 1 Time(s)
+       http://www.msftncsi.com/ncsi.txt: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      582   *Warning: Pre-queue content-filter connection overload 
+     1039   SASL authentication failed 
+       47   Miscellaneous warnings 
+ 
+  435.891K  Bytes accepted                           446,352
+  429.832K  Bytes delivered                          440,148
+ ========   ================================================
+ 
+       23   Accepted                                  82.14%
+        5   Rejected                                  17.86%
+ --------   ------------------------------------------------
+       28   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        5   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     1069   Connections made      
+     1069   Disconnections        
+       23   Removed from queue    
+       21   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   35G   16G  69% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

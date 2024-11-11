@@ -1,0 +1,153 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id A69589F2036D; Tue, 31 Dec 2019 04:40:11 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191231034011.A69589F2036D@hrankiety.pl>
+Date: Tue, 31 Dec 2019 04:40:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Dec 31 04:40:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Dec-30 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Dec 30 03:40:11 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25678.cdiff [100%]
+    daily.cld updated (version: 25678, sigs: 2082745, f-level: 63, builder: raynman)
+    Can't query daily.25678.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6647741 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    222.186.19.221 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 5 sites probed the server 
+    185.156.177.234
+    41.216.186.131
+    5.101.0.209
+    5.101.64.77
+    85.93.20.170
+ 
+ A total of 1 possible successful probes were detected (the following URLs
+ contain strings that match one or more of a listing of strings that
+ indicate a possible exploit):
+ 
+    /?a=display&templateFile=/etc/passwd HTTP Response 200 
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../mnt/custom/ProductDefinition: 3 Time(s)
+       /: 9 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       null: 5 Time(s)
+    404 Not Found
+       /.env: 2 Time(s)
+       /.git/config: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /Telerik.Web.UI.WebResource.axd?type=rau: 1 Time(s)
+       /admin/config.php?password[]=bebydviyx&username=admin: 1 Time(s)
+       /api/v1/pods: 1 Time(s)
+       /cfg/000000000000.cfg: 1 Time(s)
+       /cfg/aastra.cfg: 1 Time(s)
+       /cfg/y000000000000.cfg: 1 Time(s)
+       /editBlackAndWhiteList: 3 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /login_sid.lua: 2 Time(s)
+       /manager/html: 1 Time(s)
+       /phpmyadmin/: 3 Time(s)
+       /slub/: 2 Time(s)
+       /solr/admin/info/system?wt=json: 1 Time(s)
+       /spa112.cfg: 1 Time(s)
+       http://5.188.210.101/echo.php: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+     3195   *Warning: Pre-queue content-filter connection overload 
+    16289   SASL authentication failed 
+       63   Miscellaneous warnings 
+ 
+    1.127M  Bytes accepted                         1,182,039
+    1.121M  Bytes delivered                        1,175,844
+ ========   ================================================
+ 
+       33   Accepted                                  94.29%
+        2   Rejected                                   5.71%
+ --------   ------------------------------------------------
+       35   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    11814   Connections made      
+        1   Connections lost      
+    11813   Disconnections        
+       33   Removed from queue    
+       31   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  45% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

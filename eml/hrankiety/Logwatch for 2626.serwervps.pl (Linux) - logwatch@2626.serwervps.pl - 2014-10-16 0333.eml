@@ -1,0 +1,147 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 8059711101BC7; Thu, 16 Oct 2014 03:33:10 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 7A91611101BC5
+	for <root@2626.serwervps.pl>; Thu, 16 Oct 2014 05:33:10 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 6xaJ_KTiAxQ3 for <root@2626.serwervps.pl>;
+	Thu, 16 Oct 2014 03:33:08 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 447E811101BC6; Thu, 16 Oct 2014 03:33:08 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141016013308.447E811101BC6@2626.serwervps.pl>
+Date: Thu, 16 Oct 2014 03:33:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Oct 16 03:33:05 2014
+        Date Range Processed: yesterday
+                              ( 2014-Oct-15 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (28588-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141015013013.79ECC11101BBC@2626.serwervps.pl>, mail_id: 4Ud--JvnQFGQ, Hits: 0.001, size: 2288, queued_as: 1025D11101BBB, 9185 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (28589-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141015010610.551E011101BB8@2626.serwervps.pl>, mail_id: b2P9fH2AvNqA, Hits: 0, size: 6098, queued_as: 4961C11101BBB, 3784 ms
+        1   (28588-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed Oct 15 03:06:10 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19508.cdiff [100%]
+    Downloading daily-19509.cdiff [100%]
+    Downloading daily-19510.cdiff [100%]
+    Downloading daily-19511.cdiff [100%]
+    Downloading daily-19512.cdiff [100%]
+    WARNING: getfile: daily-19513.cdiff not found on remote server (IP: 62.245.181.53)
+    WARNING: getpatch: Can't download daily-19513.cdiff from db.local.clamav.net
+    Downloading daily-19513.cdiff [100%]
+    daily.cld updated (version: 19513, sigs: 1206071, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3630342 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    198.20.69.74
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /tmUnblock.cgi: 4 Time(s)
+    404 Not Found
+       /jdjd/jdj/jd.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /xwxw/xwx/xw.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       18   *Warning: Pre-queue content-filter connection overload 
+       18   SASL authentication failed 
+ 
+   26.670K  Bytes accepted                            27,310
+   26.670K  Bytes delivered                           27,310
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+       20   Connections made      
+       20   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.9G   44G  14% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

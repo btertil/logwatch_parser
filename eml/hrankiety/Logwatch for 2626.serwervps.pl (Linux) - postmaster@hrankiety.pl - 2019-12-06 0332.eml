@@ -1,0 +1,127 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9D1069F21F97; Fri,  6 Dec 2019 03:32:06 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191206023206.9D1069F21F97@hrankiety.pl>
+Date: Fri,  6 Dec 2019 03:32:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Dec  6 03:32:04 2019
+        Date Range Processed: yesterday
+                              ( 2019-Dec-05 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Dec  5 03:49:09 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25653.cdiff [100%]
+    daily.cld updated (version: 25653, sigs: 2027652, f-level: 63, builder: raynman)
+    Can't query daily.25653.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6592648 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    185.153.199.102
+    193.188.22.187
+ 
+ Requests with error response codes
+    400 Bad Request
+       /images.php: 1 Time(s)
+       /msdn.cpp: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       /administrator/index.php: 1 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       /upgrade.aspx?a1=a51599c6: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+       /wp/wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       24   *Warning: Pre-queue content-filter connection overload 
+     2915   SASL authentication failed 
+      350   Miscellaneous warnings 
+ 
+    1.919M  Bytes accepted                         2,012,601
+    1.913M  Bytes delivered                        2,006,406
+ ========   ================================================
+ 
+       49   Accepted                                  20.16%
+      194   Rejected                                  79.84%
+ --------   ------------------------------------------------
+      243   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                           1.03%
+      192   Reject unknown user                       98.97%
+ --------   ------------------------------------------------
+      194   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     2955   Connections made      
+     2954   Disconnections        
+       49   Removed from queue    
+       47   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 40 times
+       185.17.41.230 (backup): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 41 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   22G   29G  44% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

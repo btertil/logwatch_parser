@@ -1,0 +1,137 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 229E19F21A0F; Mon, 23 Sep 2019 03:50:09 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190923015009.229E19F21A0F@hrankiety.pl>
+Date: Mon, 23 Sep 2019 03:50:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Sep 23 03:50:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Sep-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Sep 22 03:45:25 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25579.cdiff [100%]
+    daily.cld updated (version: 25579, sigs: 1774211, f-level: 63, builder: raynman)
+    Can't query daily.25579.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6340554 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 4 sites probed the server 
+    171.67.70.80
+    218.75.37.18
+    41.216.186.89
+    88.247.23.81
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../mnt/custom/ProductDefinition: 1 Time(s)
+       /: 3 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       //a2billing/customer/templates/default/footer.tpl: 1 Time(s)
+       //about.php: 1 Time(s)
+       //recordings/: 1 Time(s)
+       //vtigercrm/vtigerservice.php: 1 Time(s)
+       /cm/: 1 Time(s)
+       /evox/about: 2 Time(s)
+       /manager/html: 2 Time(s)
+       /manager/text/list: 1 Time(s)
+       /nmaplowercheck1569149019: 2 Time(s)
+    408 Request Timeout
+       null: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      163   *Warning: Pre-queue content-filter connection overload 
+     6477   SASL authentication failed 
+       40   Miscellaneous warnings 
+ 
+  882.345K  Bytes accepted                           903,521
+  873.771K  Bytes delivered                          894,741
+ ========   ================================================
+ 
+       22   Accepted                                  88.00%
+        3   Rejected                                  12.00%
+ --------   ------------------------------------------------
+       25   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     6508   Connections made      
+     6508   Disconnections        
+       22   Removed from queue    
+       18   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       80.158.18.218 (ecs-80-158-18-218.reverse.open-telekom-cloud.com): 1 time
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 4 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   20G   31G  39% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

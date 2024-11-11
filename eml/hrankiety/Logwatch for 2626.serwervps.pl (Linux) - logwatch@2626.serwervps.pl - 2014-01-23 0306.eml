@@ -1,0 +1,514 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id E5F1B13D81610; Thu, 23 Jan 2014 03:06:17 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id C0C4C13D8100C
+	for <root@2626.serwervps.pl>; Thu, 23 Jan 2014 05:06:17 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id ygT6_PHHN2vO for <root@2626.serwervps.pl>;
+	Thu, 23 Jan 2014 03:06:09 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 1C18113D81008; Thu, 23 Jan 2014 03:06:09 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140123020609.1C18113D81008@2626.serwervps.pl>
+Date: Thu, 23 Jan 2014 03:06:06 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Jan 23 03:06:06 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jan-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   No ext program for   .tnef, tried: tnef
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (06511-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140122023307.9720713D81008@2626.serwervps.pl>, mail_id: TwNK-24glUyG, Hits: -0.001, size: 5242, queued_as: 57CAB13D8100C, 5884 ms
+        1   No ext program for   .doc, tried: ripole
+        1   (06512-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140122023009.6C71113D80FF5@2626.serwervps.pl>, mail_id: 8SQbmMvnNg6T, Hits: 0, size: 2286, queued_as: 2A2C313D81008, 7742 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed Jan 22 03:33:08 2014
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98 Recommended version: 0.98.1
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18377.cdiff [100%]
+    Downloading daily-18378.cdiff [100%]
+    Downloading daily-18379.cdiff [100%]
+    Downloading daily-18380.cdiff [100%]
+    daily.cld updated (version: 18380, sigs: 662730, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    Database updated (3086999 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    58.213.141.194
+    70.169.51.130
+ 
+ Requests with error response codes
+    400 Bad Request
+       HTTP/1.1: 1 Time(s)
+    404 Not Found
+       /./scripts/setup.php: 1 Time(s)
+       //cgi-bin/php: 1 Time(s)
+       //cgi-bin/php-cgi: 1 Time(s)
+       //cgi-bin/php.cgi: 1 Time(s)
+       //cgi-bin/php3: 1 Time(s)
+       //cgi-bin/php4: 1 Time(s)
+       //cgi-bin/php5: 1 Time(s)
+       //cgi-bin/php_cgi: 1 Time(s)
+       /3rdparty/phpMyAdmin/setup.php: 1 Time(s)
+       /81/phpmyadmin/setup.php: 1 Time(s)
+       /Admin/phpMyAdmin/setup.php: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /My-php/scripts/setup.php: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 5 Time(s)
+       /Myphp/scripts/setup.php: 1 Time(s)
+       /PMA/: 2 Time(s)
+       /PMA2005/: 2 Time(s)
+       /PMA2005/scripts/setup.php: 5 Time(s)
+       /PMA2005/setup.php: 2 Time(s)
+       /SSLMySQLAdmin/setup.php: 1 Time(s)
+       /_PHPMYADMIN/setup.php: 1 Time(s)
+       /_admin/scripts/setup.php: 1 Time(s)
+       /_admin/setup.php: 1 Time(s)
+       /_db/scripts/setup.php: 1 Time(s)
+       /_dbadmin/scripts/setup.php: 1 Time(s)
+       /_myadmin/scripts/setup.php: 1 Time(s)
+       /_myphp/scripts/setup.php: 1 Time(s)
+       /_php/scripts/setup.php: 1 Time(s)
+       /_phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /_phpadmin/scripts/setup.php: 1 Time(s)
+       /_phpmyadmin/scripts/setup.php: 1 Time(s)
+       /_pma/scripts/setup.php: 1 Time(s)
+       /_sql/scripts/setup.php: 1 Time(s)
+       /admin/: 2 Time(s)
+       /admin/my/scripts/setup.php: 1 Time(s)
+       /admin/mysql/setup.php: 1 Time(s)
+       /admin/phpmyadmin/scripts/setup.php: 5 Time(s)
+       /admin/pma/scripts/setup.php: 5 Time(s)
+       /admin/pma/setup.php: 1 Time(s)
+       /admin/scripts/setup.php: 5 Time(s)
+       /admin/setup.php: 2 Time(s)
+       /admin/sql/setup.php: 1 Time(s)
+       /administrator/components/com_joommyadmin/ ... admin/setup.php: 1 Time(s)
+       /adminmysql/setup.php: 1 Time(s)
+       /admm/scripts/setup.php: 6 Time(s)
+       /admm/setup.php: 1 Time(s)
+       /admn/scripts/setup.php: 6 Time(s)
+       /admn/setup.php: 1 Time(s)
+       /apache-default/phpmyadmin/setup.php: 1 Time(s)
+       /bbs/data/setup.php: 1 Time(s)
+       /blog/phpmyadmin/setup.php: 1 Time(s)
+       /cgi-bin/php: 1 Time(s)
+       /cgi-bin/php-cgi: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php4: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cpadmin/setup.php: 1 Time(s)
+       /cpadmindb/setup.php: 1 Time(s)
+       /cpanelmysql/setup.php: 1 Time(s)
+       /cpanelphpmyadmin/setup.php: 1 Time(s)
+       /cpanelsql/setup.php: 1 Time(s)
+       /cpdbadmin/setup.php: 1 Time(s)
+       /cpphpmyadmin/setup.php: 1 Time(s)
+       /database/setup.php: 1 Time(s)
+       /databaseadmin/scripts/setup.php: 6 Time(s)
+       /databaseadmin/setup.php: 1 Time(s)
+       /db/scripts/setup.php: 6 Time(s)
+       /dbAdmin2/setup.php: 1 Time(s)
+       /dbadm/setup.php: 1 Time(s)
+       /dbadmin/: 2 Time(s)
+       /dbadmin/scripts/setup.php: 6 Time(s)
+       /dbadmin/setup.php: 2 Time(s)
+       /dbsql/setup.php: 1 Time(s)
+       /dbweb/setup.php: 1 Time(s)
+       /forum/phpmyadmin/setup.php: 1 Time(s)
+       /htdocs/setup.php: 1 Time(s)
+       /httpdocs/setup.php: 1 Time(s)
+       /my-php/scripts/setup.php: 1 Time(s)
+       /myAdmin/scripts/setup.php: 1 Time(s)
+       /myadmin/: 2 Time(s)
+       /myadmin/scripts/setup.php: 11 Time(s)
+       /myadmin/setup.php: 2 Time(s)
+       /mydatadmin/setup.php: 1 Time(s)
+       /mydb/scripts/setup.php: 1 Time(s)
+       /myphp/scripts/setup.php: 1 Time(s)
+       /mysql-admin/: 2 Time(s)
+       /mysql-admin/scripts/setup.php: 5 Time(s)
+       /mysql-admin/setup.php: 2 Time(s)
+       /mysql/: 2 Time(s)
+       /mysql/scripts/setup.php: 6 Time(s)
+       /mysql/setup.php: 2 Time(s)
+       /mysql2/scripts/setup.php: 1 Time(s)
+       /mysql_administrator/scripts/setup.php: 1 Time(s)
+       /mysqladmin/: 2 Time(s)
+       /mysqladmin/scripts/setup.php: 11 Time(s)
+       /mysqladmin/setup.php: 2 Time(s)
+       /mysqladminconfig/setup.php: 1 Time(s)
+       /mysqlmanager/: 2 Time(s)
+       /mysqlmanager/scripts/setup.php: 5 Time(s)
+       /mysqlmanager/setup.php: 3 Time(s)
+       /p/m/a/: 2 Time(s)
+       /p/m/a/scripts/setup.php: 5 Time(s)
+       /p/m/a/setup.php: 3 Time(s)
+       /padmin/setup.php: 1 Time(s)
+       /php-my-admin/: 2 Time(s)
+       /php-my-admin/scripts/setup.php: 10 Time(s)
+       /php-my-admin/setup.php: 3 Time(s)
+       /php-myadmin/: 2 Time(s)
+       /php-myadmin/scripts/setup.php: 5 Time(s)
+       /php-myadmin/setup.php: 3 Time(s)
+       /php/phpmyadmin/setup.php: 1 Time(s)
+       /php/setup.php: 1 Time(s)
+       /php1/scripts/setup.php: 1 Time(s)
+       /php2/scripts/setup.php: 1 Time(s)
+       /phpMyA/scripts/setup.php: 1 Time(s)
+       /phpMyAdmi/setup.php: 1 Time(s)
+       /phpMyAdmin-2.2.3/: 2 Time(s)
+       /phpMyAdmin-2.2.3/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.2.3/setup.php: 2 Time(s)
+       /phpMyAdmin-2.2.6/: 2 Time(s)
+       /phpMyAdmin-2.2.6/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.2.6/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.1/: 2 Time(s)
+       /phpMyAdmin-2.5.1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.4/: 2 Time(s)
+       /phpMyAdmin-2.5.4/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.4/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.5-pl1/: 2 Time(s)
+       /phpMyAdmin-2.5.5-pl1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.5-pl1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.5-rc1/: 2 Time(s)
+       /phpMyAdmin-2.5.5-rc1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.5-rc1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.5-rc2/: 2 Time(s)
+       /phpMyAdmin-2.5.5-rc2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.5-rc2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.5/: 2 Time(s)
+       /phpMyAdmin-2.5.5/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.5/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.6-rc1/: 2 Time(s)
+       /phpMyAdmin-2.5.6-rc1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.6-rc1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.6-rc2/: 2 Time(s)
+       /phpMyAdmin-2.5.6-rc2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.6-rc2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.6/: 2 Time(s)
+       /phpMyAdmin-2.5.6/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.6/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.7-pl1/: 2 Time(s)
+       /phpMyAdmin-2.5.7-pl1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.7-pl1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.5.7/: 2 Time(s)
+       /phpMyAdmin-2.5.7/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.5.7/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0-alpha/: 2 Time(s)
+       /phpMyAdmin-2.6.0-alpha/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0-alpha/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0-alpha2/: 2 Time(s)
+       /phpMyAdmin-2.6.0-alpha2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0-alpha2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0-beta1/: 2 Time(s)
+       /phpMyAdmin-2.6.0-beta1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0-beta1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0-beta2/: 2 Time(s)
+       /phpMyAdmin-2.6.0-beta2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0-beta2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0-pl1/: 2 Time(s)
+       /phpMyAdmin-2.6.0-pl1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0-pl1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0-pl2/: 2 Time(s)
+       /phpMyAdmin-2.6.0-pl2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0-pl2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0-pl3/: 2 Time(s)
+       /phpMyAdmin-2.6.0-pl3/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0-pl3/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0-rc1/: 2 Time(s)
+       /phpMyAdmin-2.6.0-rc1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0-rc1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0-rc2/: 2 Time(s)
+       /phpMyAdmin-2.6.0-rc2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0-rc2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0-rc3/: 2 Time(s)
+       /phpMyAdmin-2.6.0-rc3/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0-rc3/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.0/: 2 Time(s)
+       /phpMyAdmin-2.6.0/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.0/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.1-pl1/: 2 Time(s)
+       /phpMyAdmin-2.6.1-pl1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.1-pl1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.1-pl2/: 2 Time(s)
+       /phpMyAdmin-2.6.1-pl2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.1-pl2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.1-pl3/: 2 Time(s)
+       /phpMyAdmin-2.6.1-pl3/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.1-pl3/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.1-rc1/: 2 Time(s)
+       /phpMyAdmin-2.6.1-rc1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.1-rc1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.1-rc2/: 2 Time(s)
+       /phpMyAdmin-2.6.1-rc2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.1-rc2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.1/: 2 Time(s)
+       /phpMyAdmin-2.6.1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.2-beta1/: 2 Time(s)
+       /phpMyAdmin-2.6.2-beta1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.2-beta1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.2-pl1/: 2 Time(s)
+       /phpMyAdmin-2.6.2-pl1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.2-pl1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.2-rc1/: 4 Time(s)
+       /phpMyAdmin-2.6.2-rc1/scripts/setup.php: 10 Time(s)
+       /phpMyAdmin-2.6.2-rc1/setup.php: 4 Time(s)
+       /phpMyAdmin-2.6.2/: 2 Time(s)
+       /phpMyAdmin-2.6.2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.3-pl1/: 2 Time(s)
+       /phpMyAdmin-2.6.3-pl1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.3-pl1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.3-rc1/: 2 Time(s)
+       /phpMyAdmin-2.6.3-rc1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.3-rc1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.3/: 4 Time(s)
+       /phpMyAdmin-2.6.3/scripts/setup.php: 10 Time(s)
+       /phpMyAdmin-2.6.3/setup.php: 4 Time(s)
+       /phpMyAdmin-2.6.4-pl1/: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.4-pl1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl2/: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.4-pl2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl3/: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl3/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.4-pl3/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl4/: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl4/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.4-pl4/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.4-rc1/: 2 Time(s)
+       /phpMyAdmin-2.6.4-rc1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.4-rc1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.6.4/: 2 Time(s)
+       /phpMyAdmin-2.6.4/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.6.4/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.0-beta1/: 2 Time(s)
+       /phpMyAdmin-2.7.0-beta1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.7.0-beta1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.0-pl1/: 2 Time(s)
+       /phpMyAdmin-2.7.0-pl1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.7.0-pl1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.0-pl2/: 2 Time(s)
+       /phpMyAdmin-2.7.0-pl2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.7.0-pl2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.0-rc1/: 2 Time(s)
+       /phpMyAdmin-2.7.0-rc1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.7.0-rc1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.7.0/: 2 Time(s)
+       /phpMyAdmin-2.7.0/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.7.0/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.0-beta1/: 2 Time(s)
+       /phpMyAdmin-2.8.0-beta1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.0-beta1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.0-rc1/: 2 Time(s)
+       /phpMyAdmin-2.8.0-rc1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.0-rc1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.0-rc2/: 2 Time(s)
+       /phpMyAdmin-2.8.0-rc2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.0-rc2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.0.1/: 2 Time(s)
+       /phpMyAdmin-2.8.0.1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.0.1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.0.2/: 2 Time(s)
+       /phpMyAdmin-2.8.0.2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.0.2/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.0.3/: 2 Time(s)
+       /phpMyAdmin-2.8.0.3/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.0.3/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.0.4/: 2 Time(s)
+       /phpMyAdmin-2.8.0.4/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.0.4/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.0/: 2 Time(s)
+       /phpMyAdmin-2.8.0/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.0/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.1-rc1/: 2 Time(s)
+       /phpMyAdmin-2.8.1-rc1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.1-rc1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.1/: 2 Time(s)
+       /phpMyAdmin-2.8.1/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.1/setup.php: 2 Time(s)
+       /phpMyAdmin-2.8.2/: 2 Time(s)
+       /phpMyAdmin-2.8.2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2.8.2/setup.php: 2 Time(s)
+       /phpMyAdmin-2/: 2 Time(s)
+       /phpMyAdmin-2/scripts/setup.php: 5 Time(s)
+       /phpMyAdmin-2/setup.php: 3 Time(s)
+       /phpMyAdmin-3/setup.php: 1 Time(s)
+       /phpMyAdmin-4/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 16 Time(s)
+       /phpMyAdmin1/setup.php: 1 Time(s)
+       /phpMyAdmin2/: 2 Time(s)
+       /phpMyAdmin2/setup.php: 3 Time(s)
+       /phpMyAds/setup.php: 1 Time(s)
+       /phpadmin/scripts/setup.php: 6 Time(s)
+       /phpas/scripts/setup.php: 1 Time(s)
+       /phpdb/setup.php: 1 Time(s)
+       /phpldapadmin/setup.php: 1 Time(s)
+       /phpm/setup.php: 1 Time(s)
+       /phpmanager/: 2 Time(s)
+       /phpmanager/scripts/setup.php: 5 Time(s)
+       /phpmanager/setup.php: 3 Time(s)
+       /phpmy-admin/: 2 Time(s)
+       /phpmy-admin/scripts/setup.php: 5 Time(s)
+       /phpmy-admin/setup.php: 3 Time(s)
+       /phpmy/setup.php: 1 Time(s)
+       /phpmya/scripts/setup.php: 1 Time(s)
+       /phpmyad-sys/setup.php: 1 Time(s)
+       /phpmyad/setup.php: 1 Time(s)
+       /phpmyadm/scripts/setup.php: 1 Time(s)
+       /phpmyadmin.old/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 16 Time(s)
+       /phpmyadmin/translators.html: 2 Time(s)
+       /phpmyadmin1/scripts/setup.php: 6 Time(s)
+       /phpmyadmin2/: 2 Time(s)
+       /phpmyadmin2/scripts/setup.php: 6 Time(s)
+       /phpmyadmin2/setup.php: 2 Time(s)
+       /phpmyadmin3/setup.php: 1 Time(s)
+       /phppgadmin/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 11 Time(s)
+       /pma2005/: 2 Time(s)
+       /pma2005/scripts/setup.php: 5 Time(s)
+       /pma2005/setup.php: 2 Time(s)
+       /pma2006/setup.php: 1 Time(s)
+       /pma2007/setup.php: 1 Time(s)
+       /pma2008/setup.php: 1 Time(s)
+       /pma_mydb/scripts/setup.php: 1 Time(s)
+       /pmabd/scripts/setup.php: 1 Time(s)
+       /pmadmin/setup.php: 1 Time(s)
+       /roundcube/setup.php: 1 Time(s)
+       /scripts/setup.php: 3 Time(s)
+       /sl2/data/setup.php: 1 Time(s)
+       /sql/scripts/setup.php: 1 Time(s)
+       /sqladm.old/scripts/setup.php: 1 Time(s)
+       /sqladm/scripts/setup.php: 1 Time(s)
+       /sqladmin/setup.php: 1 Time(s)
+       /sqlmanager/: 2 Time(s)
+       /sqlmanager/scripts/setup.php: 5 Time(s)
+       /sqlmanager/setup.php: 3 Time(s)
+       /sqlweb/: 2 Time(s)
+       /sqlweb/scripts/setup.php: 5 Time(s)
+       /sqlweb/setup.php: 3 Time(s)
+       /typo3/phpmyadmin/scripts/setup.php: 5 Time(s)
+       /typo3/phpmyadmin/setup.php: 1 Time(s)
+       /vhcs2/tools/pma/setup.php: 1 Time(s)
+       /vtigercrm/graph.php?current_language=../. ... Accounts&action: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /web/phpMyAdmin/scripts/setup.php: 5 Time(s)
+       /web/phpmyadmin/setup.php: 1 Time(s)
+       /web/scripts/setup.php: 5 Time(s)
+       /web/setup.php: 1 Time(s)
+       /webadmin/: 2 Time(s)
+       /webadmin/scripts/setup.php: 5 Time(s)
+       /webadmin/setup.php: 3 Time(s)
+       /webdb/: 2 Time(s)
+       /webdb/scripts/setup.php: 5 Time(s)
+       /webdb/setup.php: 3 Time(s)
+       /webmail2/scripts/setup.php: 1 Time(s)
+       /websql/: 2 Time(s)
+       /websql/scripts/setup.php: 10 Time(s)
+       /websql/setup.php: 2 Time(s)
+       /wp-content/plugins/wp-phpmyadmin/wp-phpmy ... admin/setup.php: 1 Time(s)
+       /wp-phpmyadmin/phpmyadmin/setup.php: 1 Time(s)
+       /wp-phpmyadmin/setup.php: 1 Time(s)
+       /xampp/phpmyadmin/scripts/setup.php: 5 Time(s)
+       /xampp/phpmyadmin/setup.php: 1 Time(s)
+       /~/phpmanager/setup.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   24.145K  Bytes accepted                            24,724
+   24.145K  Bytes delivered                           24,724
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 10 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.3G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

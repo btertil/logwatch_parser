@@ -1,0 +1,117 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 3378D35A336F; Tue, 13 Mar 2018 04:32:04 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180313033205.3378D35A336F@hrankiety.pl>
+Date: Tue, 13 Mar 2018 04:31:56 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Mar 13 04:31:56 2018
+        Date Range Processed: yesterday
+                              ( 2018-Mar-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Mar 12 03:23:16 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.3 Recommended version: 0.99.4
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24383.cdiff [100%]
+    Downloading daily-24384.cdiff [100%]
+    Downloading daily-24385.cdiff [100%]
+    daily.cld updated (version: 24385, sigs: 1874561, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6440885 signatures) from db.local.clamav.net (IP: 5.9.38.226)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /Public/gec/web/img/lgoinbg1m2.jpg: 1 Time(s)
+       /zx425/defaultf/login: 2 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 1 Time(s)
+       /CFIDE/administrator/: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /webdav: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      316   *Warning: Pre-queue content-filter connection overload 
+      372   SASL authentication failed 
+       35   Miscellaneous warnings 
+ 
+  767.979K  Bytes accepted                           786,411
+  761.928K  Bytes delivered                          780,214
+ ========   ================================================
+ 
+       18   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       18   Total                                    100.00%
+ ========   ================================================
+ 
+      390   Connections made      
+      391   Disconnections        
+       18   Removed from queue    
+       16   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   36G   15G  71% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

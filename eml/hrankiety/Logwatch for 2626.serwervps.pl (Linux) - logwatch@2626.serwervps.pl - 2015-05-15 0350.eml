@@ -1,0 +1,118 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 16B2E11102B80; Fri, 15 May 2015 03:50:55 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 6EEB111102B8B; Fri, 15 May 2015 03:50:54 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150515015054.6EEB111102B8B@2626.serwervps.pl>
+Date: Fri, 15 May 2015 03:50:45 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri May 15 03:50:44 2015
+        Date Range Processed: yesterday
+                              ( 2015-May-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu May 14 03:33:35 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-20451.cdiff [100%]
+    Downloading daily-20452.cdiff [100%]
+    Downloading daily-20453.cdiff [100%]
+    Downloading daily-20454.cdiff [100%]
+    daily.cld updated (version: 20454, sigs: 1387244, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 254, sigs: 45, f-level: 63, builder: anvilleg)
+    Database updated (3811514 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /admin/config.php: 1 Time(s)
+       /landing: 1 Time(s)
+       /manager/html: 7 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phph/php/ph.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /rom-0: 1 Time(s)
+       http://testp5.mielno.lubin.pl/testproxy.php: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       92   SASL authentication failed 
+ 
+   35.399K  Bytes accepted                            36,249
+   35.399K  Bytes delivered                           36,249
+ ========   ================================================
+ 
+        7   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        7   Total                                    100.00%
+ ========   ================================================
+ 
+       21   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       21   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      115   Connections made      
+      115   Disconnections        
+        7   Removed from queue    
+        5   Delivered             
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   18G   33G  36% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,170 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 9D21C11101EA1; Sun, 26 Apr 2015 03:10:42 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 7A0DB111029F9; Sun, 26 Apr 2015 03:10:40 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150426011041.7A0DB111029F9@2626.serwervps.pl>
+Date: Sun, 26 Apr 2015 03:10:34 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Apr 26 03:10:34 2015
+        Date Range Processed: yesterday
+                              ( 2015-Apr-25 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Apr 25 03:07:07 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    Trying host db.local.clamav.net (157.25.5.183)...
+    Downloading daily-20371.cdiff [100%]
+    Downloading daily-20372.cdiff [100%]
+    Downloading daily-20373.cdiff [100%]
+    Downloading daily-20374.cdiff [100%]
+    Downloading daily-20375.cdiff [100%]
+    daily.cld updated (version: 20375, sigs: 1378034, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 250, sigs: 42, f-level: 63, builder: neo)
+    Database updated (3802301 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       HTTP/1.1: 14 Time(s)
+    404 Not Found
+       /README: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /cgi-bin-sdb/printenv: 13 Time(s)
+       /cgi-bin/bash: 13 Time(s)
+       /cgi-bin/contact.cgi: 13 Time(s)
+       /cgi-bin/defaultwebpage.cgi: 13 Time(s)
+       /cgi-bin/env.cgi: 13 Time(s)
+       /cgi-bin/fire.cgi: 12 Time(s)
+       /cgi-bin/forum.cgi: 14 Time(s)
+       /cgi-bin/hello.cgi: 14 Time(s)
+       /cgi-bin/index.cgi: 13 Time(s)
+       /cgi-bin/login.cgi: 12 Time(s)
+       /cgi-bin/main.cgi: 14 Time(s)
+       /cgi-bin/meme.cgi: 11 Time(s)
+       /cgi-bin/php: 14 Time(s)
+       /cgi-bin/php4: 14 Time(s)
+       /cgi-bin/php5: 13 Time(s)
+       /cgi-bin/php5-cli: 15 Time(s)
+       /cgi-bin/recent.cgi: 13 Time(s)
+       /cgi-bin/sat-ir-web.pl: 15 Time(s)
+       /cgi-bin/test-cgi: 15 Time(s)
+       /cgi-bin/test-cgi.pl: 14 Time(s)
+       /cgi-bin/test.cgi: 13 Time(s)
+       /cgi-bin/test.sh: 10 Time(s)
+       /cgi-bin/tools/tools.pl: 13 Time(s)
+       /cgi-mod/index.cgi: 13 Time(s)
+       /cgi-sys/defaultwebpage.cgi: 13 Time(s)
+       /cgi-sys/entropysearch.cgi: 13 Time(s)
+       /cgi-sys/php5: 14 Time(s)
+       /includes/templates/error.tpl: 1 Time(s)
+       /mail/README: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phph/php/ph.php: 1 Time(s)
+       /phppath/cgi_wrapper: 13 Time(s)
+       /phppath/php: 12 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /rc/README: 1 Time(s)
+       /rom-0: 1 Time(s)
+       /roundcube/README: 1 Time(s)
+       /roundcubemail/README: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       /webmail/README: 1 Time(s)
+       http://testp4.pospr.waw.pl/testproxy.php: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+      232   SASL authentication failed 
+ 
+   17.408K  Bytes accepted                            17,826
+   17.408K  Bytes delivered                           17,826
+ ========   ================================================
+ 
+        4   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        4   Total                                    100.00%
+ ========   ================================================
+ 
+      233   Connections made      
+      233   Disconnections        
+        4   Removed from queue    
+        2   Delivered             
+        2   Forwarded             
+ 
+      206   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 2 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   18G   33G  35% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,252 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 97BF69F2071A; Tue,  6 Nov 2018 04:50:08 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20181106035008.97BF69F2071A@hrankiety.pl>
+Date: Tue,  6 Nov 2018 04:50:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Nov  6 04:50:07 2018
+        Date Range Processed: yesterday
+                              ( 2018-Nov-05 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Nov  5 03:16:15 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25089.cdiff [100%]
+    Downloading daily-25090.cdiff [100%]
+    Downloading daily-25091.cdiff [100%]
+    daily.cld updated (version: 25091, sigs: 2141662, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6708002 signatures) from db.local.clamav.net (IP: 104.16.186.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    38.141.44.42
+    85.128.128.32
+ 
+ Requests with error response codes
+    400 Bad Request
+       /cgi-bin/nobody/Search.cgi?action=cgi_quer ... &password=admin: 1 Time(s)
+       null: 5 Time(s)
+    404 Not Found
+       //administrator: 1 Time(s)
+       //main.php: 1 Time(s)
+       //wp-login.php: 1 Time(s)
+       /Admin: 1 Time(s)
+       /Blog/wp-login.php: 1 Time(s)
+       /DB: 1 Time(s)
+       /DBAdmin: 1 Time(s)
+       /DBadmin: 1 Time(s)
+       /Dumper: 1 Time(s)
+       /Joomla/administrator: 1 Time(s)
+       /MYAdmin: 1 Time(s)
+       /MYadmin: 1 Time(s)
+       /MyAdmin: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /MySQL: 1 Time(s)
+       /MySQLDumper: 1 Time(s)
+       /MySQLManager: 1 Time(s)
+       /MySqlManager: 1 Time(s)
+       /PHPMYADMIN: 1 Time(s)
+       /SQLite-Manager/main.php: 1 Time(s)
+       /SQLite/SQLite-Manager/main.php: 1 Time(s)
+       /SQLite/SQLite-manager/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.0.4/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.0.5/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.0.6/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.1.0/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.1.1/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.1.2/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.1.3/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.2.0/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.2.2/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.2.3/main.php: 1 Time(s)
+       /SQLite/SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /SQLite/SQLitemanager/main.php: 1 Time(s)
+       /SQLite/sqlite-manager/main.php: 1 Time(s)
+       /SQLite/sqlitemanager/main.php: 1 Time(s)
+       /SQLiteManager-1.0.4/main.php: 1 Time(s)
+       /SQLiteManager-1.0.5/main.php: 1 Time(s)
+       /SQLiteManager-1.0.6/main.php: 1 Time(s)
+       /SQLiteManager-1.1.0/main.php: 1 Time(s)
+       /SQLiteManager-1.1.1/main.php: 1 Time(s)
+       /SQLiteManager-1.1.2/main.php: 1 Time(s)
+       /SQLiteManager-1.1.3/main.php: 1 Time(s)
+       /SQLiteManager-1.2.0/main.php: 1 Time(s)
+       /SQLiteManager-1.2.2/main.php: 1 Time(s)
+       /SQLiteManager-1.2.3/main.php: 1 Time(s)
+       /SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /SQLiteManager/main.php: 1 Time(s)
+       /SQlite/main.php: 1 Time(s)
+       /WordPress/wp-login.php: 1 Time(s)
+       /Wordpress/wp-login.php: 1 Time(s)
+       /acadmin.php: 1 Time(s)
+       /admin/wp-login.php: 1 Time(s)
+       /blog/wp-login.php: 1 Time(s)
+       /cms/: 1 Time(s)
+       /cms/administrator: 1 Time(s)
+       /drupal/: 1 Time(s)
+       /drupal7/: 1 Time(s)
+       /drupal8/: 1 Time(s)
+       /dump: 1 Time(s)
+       /dumper: 1 Time(s)
+       /jenkins/script: 1 Time(s)
+       /joomla/administrator: 1 Time(s)
+       /login: 1 Time(s)
+       /login.php: 1 Time(s)
+       /msd: 1 Time(s)
+       /msd1.21: 1 Time(s)
+       /msd1.24.4: 1 Time(s)
+       /msd1.24stable: 1 Time(s)
+       /msddump: 1 Time(s)
+       /msddumper: 1 Time(s)
+       /msdump: 1 Time(s)
+       /mySqlDumper: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql: 1 Time(s)
+       /mysqldump: 1 Time(s)
+       /mysqldumper: 1 Time(s)
+       /phpMyAdmin/PMA: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /script: 1 Time(s)
+       /sql: 1 Time(s)
+       /sqlite-manager/main.php: 1 Time(s)
+       /sqlite/SQLite-Manager/main.php: 1 Time(s)
+       /sqlite/SQLite-manager/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.0.4/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.0.5/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.0.6/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.1.0/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.1.1/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.1.2/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.1.3/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.2.0/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.2.2/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.2.3/main.php: 1 Time(s)
+       /sqlite/SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /sqlite/SQLitemanager/main.php: 1 Time(s)
+       /sqlite/main.php: 1 Time(s)
+       /sqlite/sqlite-manager/main.php: 1 Time(s)
+       /sqlite/sqlitemanager/main.php: 1 Time(s)
+       /sqlitemanager-1.0.4/main.php: 1 Time(s)
+       /sqlitemanager-1.0.5/main.php: 1 Time(s)
+       /sqlitemanager-1.0.6/main.php: 1 Time(s)
+       /sqlitemanager-1.1.0/main.php: 1 Time(s)
+       /sqlitemanager-1.1.1/main.php: 1 Time(s)
+       /sqlitemanager-1.1.2/main.php: 1 Time(s)
+       /sqlitemanager-1.1.3/main.php: 1 Time(s)
+       /sqlitemanager-1.2.0/main.php: 1 Time(s)
+       /sqlitemanager-1.2.2/main.php: 1 Time(s)
+       /sqlitemanager-1.2.3/main.php: 1 Time(s)
+       /sqlitemanager-1.2.4/main.php: 1 Time(s)
+       /sqlitemanager/main.php: 1 Time(s)
+       /status?full=true: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /webdav: 1 Time(s)
+       /wordpress/wp-login.php: 1 Time(s)
+       /wordpress1/wp-login.php: 1 Time(s)
+       /wordpress2/wp-login.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wp/wp-login.php: 1 Time(s)
+       /wpress/wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      561   *Warning: Pre-queue content-filter connection overload 
+      631   SASL authentication failed 
+       47   Miscellaneous warnings 
+ 
+    1.104M  Bytes accepted                         1,157,114
+    1.098M  Bytes delivered                        1,150,915
+ ========   ================================================
+ 
+       25   Accepted                                  96.15%
+        1   Rejected                                   3.85%
+ --------   ------------------------------------------------
+       26   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      694   Connections made      
+      694   Disconnections        
+       25   Removed from queue    
+       23   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.77.72.8 (89-77-72-8.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  51% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

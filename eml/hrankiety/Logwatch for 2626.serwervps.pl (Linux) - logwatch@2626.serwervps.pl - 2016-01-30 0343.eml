@@ -1,0 +1,128 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 5259011103D01; Sat, 30 Jan 2016 03:43:20 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id E8B3211103D0C; Sat, 30 Jan 2016 03:43:19 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160130024319.E8B3211103D0C@2626.serwervps.pl>
+Date: Sat, 30 Jan 2016 03:43:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jan 30 03:43:08 2016
+        Date Range Processed: yesterday
+                              ( 2016-Jan-29 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Jan 29 03:18:38 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-21314.cdiff [100%]
+    Downloading daily-21315.cdiff [100%]
+    Downloading daily-21316.cdiff [100%]
+    Downloading daily-21317.cdiff [100%]
+    Downloading daily-21318.cdiff [100%]
+    daily.cld updated (version: 21318, sigs: 1822730, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 271, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (4247002 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /manager/html: 1 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       http://testp5.mielno.lubin.pl/testproxy.php: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 364770731924025: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+       btertil -> support: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+       27   SASL authentication failed 
+ 
+   79.182K  Bytes accepted                            81,082
+   79.182K  Bytes delivered                           81,082
+ ========   ================================================
+ 
+       57   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       57   Total                                    100.00%
+ ========   ================================================
+ 
+       31   Connections made      
+       31   Disconnections        
+       57   Removed from queue    
+        5   Delivered             
+       50   Sent via SMTP         
+        2   Forwarded             
+ 
+       44   Enabled PIX workaround 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 7 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ SFTP subsystem requests: 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs      7.2T  3.8T  3.1T  56% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

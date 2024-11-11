@@ -1,0 +1,235 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id C03AB11103557; Sun,  4 Oct 2015 03:38:32 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id BA4A811103562; Sun,  4 Oct 2015 03:38:32 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20151004013832.BA4A811103562@2626.serwervps.pl>
+Date: Sun,  4 Oct 2015 03:38:28 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Oct  4 03:38:28 2015
+        Date Range Processed: yesterday
+                              ( 2015-Oct-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Oct  3 04:20:33 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (85.254.217.235)...
+    Downloading daily-20952.cdiff [100%]
+    daily.cld updated (version: 20952, sigs: 1589971, f-level: 63, builder: jesler)
+    bytecode.cld is up to date (version: 268, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (4014243 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       HTTP/1.1: 1 Time(s)
+    404 Not Found
+       //PMA2005/scripts/setup.php: 1 Time(s)
+       //admin/phpmyadmin/scripts/setup.php: 2 Time(s)
+       //admin/pma/scripts/setup.php: 2 Time(s)
+       //admin/scripts/setup.php: 2 Time(s)
+       //admm/scripts/setup.php: 1 Time(s)
+       //admn/scripts/setup.php: 1 Time(s)
+       //databaseadmin/scripts/setup.php: 1 Time(s)
+       //db/scripts/setup.php: 2 Time(s)
+       //dbadmin/scripts/setup.php: 2 Time(s)
+       //myadmin/scripts/setup.php: 2 Time(s)
+       //mysql-admin/scripts/setup.php: 1 Time(s)
+       //mysql/scripts/setup.php: 2 Time(s)
+       //mysqladmin/: 1 Time(s)
+       //mysqladmin/scripts/setup.php: 3 Time(s)
+       //mysqlmanager/scripts/setup.php: 1 Time(s)
+       //p/m/a/scripts/setup.php: 1 Time(s)
+       //php-my-admin/scripts/setup.php: 4 Time(s)
+       //php-myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.2.3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.2.6/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.5-pl1/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.5-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.5-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.5/index.php: 1 Time(s)
+       //phpMyAdmin-2.5.5/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.6-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.6-rc2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.6/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.7-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.5.7/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-alpha/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-alpha2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-beta1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-beta2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-pl3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-rc2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0-rc3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-pl3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1-rc2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.2-beta1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.2-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.2-rc1/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin-2.6.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.3-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.3-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.3/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin-2.6.4-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-pl3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-pl4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.6.4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-beta1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-pl1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-pl2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.7.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0-beta1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0-rc2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0.3/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0.4/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.0/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.1-rc1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.1/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2.8.2/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin-2/scripts/setup.php: 2 Time(s)
+       //phpMyAdmin/: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 4 Time(s)
+       //phpadmin/scripts/setup.php: 2 Time(s)
+       //phpmanager/scripts/setup.php: 1 Time(s)
+       //phpmy-admin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 4 Time(s)
+       //phpmyadmin1/scripts/setup.php: 2 Time(s)
+       //phpmyadmin2/scripts/setup.php: 2 Time(s)
+       //pma/scripts/setup.php: 2 Time(s)
+       //pma2005/scripts/setup.php: 1 Time(s)
+       //scripts/setup.php: 2 Time(s)
+       //sqlmanager/scripts/setup.php: 1 Time(s)
+       //sqlweb/scripts/setup.php: 1 Time(s)
+       //typo3/phpmyadmin/scripts/setup.php: 2 Time(s)
+       //web/phpMyAdmin/scripts/setup.php: 2 Time(s)
+       //web/scripts/setup.php: 2 Time(s)
+       //webadmin/scripts/setup.php: 1 Time(s)
+       //webdb/scripts/setup.php: 1 Time(s)
+       //websql/scripts/setup.php: 3 Time(s)
+       //xampp/phpmyadmin/scripts/setup.php: 2 Time(s)
+       /calendar/install/index.php: 1 Time(s)
+       /cgi-bin-sdb/printenv: 1 Time(s)
+       /cgi-bin/bash: 1 Time(s)
+       /cgi-bin/contact.cgi: 1 Time(s)
+       /cgi-bin/defaultwebpage.cgi: 1 Time(s)
+       /cgi-bin/env.cgi: 1 Time(s)
+       /cgi-bin/fire.cgi: 1 Time(s)
+       /cgi-bin/forum.cgi: 1 Time(s)
+       /cgi-bin/hello.cgi: 1 Time(s)
+       /cgi-bin/index.cgi: 1 Time(s)
+       /cgi-bin/login.cgi: 1 Time(s)
+       /cgi-bin/main.cgi: 1 Time(s)
+       /cgi-bin/meme.cgi: 1 Time(s)
+       /cgi-bin/php: 1 Time(s)
+       /cgi-bin/php4: 1 Time(s)
+       /cgi-bin/php5: 1 Time(s)
+       /cgi-bin/php5-cli: 1 Time(s)
+       /cgi-bin/recent.cgi: 1 Time(s)
+       /cgi-bin/sat-ir-web.pl: 1 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /cgi-bin/test-cgi.pl: 1 Time(s)
+       /cgi-bin/test.cgi: 1 Time(s)
+       /cgi-bin/test.sh: 1 Time(s)
+       /cgi-bin/tools/tools.pl: 1 Time(s)
+       /cgi-sys/defaultwebpage.cgi: 1 Time(s)
+       /cgi-sys/entropysearch.cgi: 1 Time(s)
+       /cgi-sys/php5: 1 Time(s)
+       /docs/funcspecs/3.jsp: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /phppath/cgi_wrapper: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       79.130.47.234 (athedsl-4374522.home.otenet.gr): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    php-mcrypt-5.3.3-4.el6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  51% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

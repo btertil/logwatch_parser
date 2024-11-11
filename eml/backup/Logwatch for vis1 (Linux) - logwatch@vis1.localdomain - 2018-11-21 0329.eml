@@ -1,0 +1,141 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:5081:0:0:0:0:0 with SMTP id m123csp1426091jab;
+        Tue, 20 Nov 2018 18:29:11 -0800 (PST)
+X-Google-Smtp-Source: AFSGD/VWeKo3iZfNnRzxfsKFZZlGeS4q8VzwKxsSkWkSX9vycEYMSsrcc918Xs4nKMmzS7O4CuAv
+X-Received: by 2002:a2e:8347:: with SMTP id l7-v6mr2662169ljh.152.1542767351680;
+        Tue, 20 Nov 2018 18:29:11 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1542767351; cv=none;
+        d=google.com; s=arc-20160816;
+        b=refSJlqbI1fmq0RtziN5O2f+ukPukzU6TKc9SLu4U0SWau8qpBOiA8mmCf9fcL60it
+         oIynYAtiQs2BiPR1rORI1G60rWr/iBboIot8XbPO0EMh1oMwYwZWfxdJgbRm40qp62+Q
+         lZfR4jFsP6VPg1q5XhJL9CRfGhhOBxfa6y5AHThiYWuKzbbx8vnV9XYOAu2TT48JGJd7
+         4Cy2K2D9Y6kZLKgmEkUujcGHOYdNmLrAmhgsOrVf5vsngYqbauwoHlXPFpBq4uFqyER1
+         s+dpcte/0feU1k6r52zR9SKaNpbTRoPg/cubx4i8bvuto5lIf+pgZdHr2S86zYwHa7R1
+         ZInw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=bw2AtwBAPvi3PJj9EryrRPI3bHnjeQq6Wdb5/10DhFY=;
+        b=X/2K+9lhOEXTNRpwmbCIOkGrx71+8T6tzmtxZqz1HZ9m6dHhGHSCCa73ujEsBEc9le
+         qt+0/hdLdf3q7oZzVqF7k/Jo3wReiSbRYZorqIVqN0YQQSk8PkJzmRjblzf5WjpPUA+k
+         pN+wmTue2n6qMpKFG8Vmf3nuS2m878lk0RFL6KJ4jvfbXp8lAlUo1dE1e80q/4O0X996
+         xpEMUitTY6cng8L4OJ6ESSJ9KnbsMlK/Gkiz63FQSgvKbuJoMNtVOtPIT60BdhiJCUGP
+         i7UO5ETW2dweLdOtC541QEXL01T6UWBHQKbNiVVDMidQZJNa8wuYRIoxYrhmt34NnweM
+         CbMA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id j13-v6si26359947lja.87.2018.11.20.18.29.11
+        for <bondiev@gmail.com>;
+        Tue, 20 Nov 2018 18:29:11 -0800 (PST)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 797244A812C4; Wed, 21 Nov 2018 03:29:10 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20181121022910.797244A812C4@vis1.localdomain>
+Date: Wed, 21 Nov 2018 03:29:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Nov 21 03:29:07 2018
+        Date Range Processed: yesterday
+                              ( 2018-Nov-20 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Nov 20 03:34:11 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25134.cdiff [100%]
+    Downloading daily-25135.cdiff [100%]
+    Downloading daily-25136.cdiff [100%]
+    daily.cld updated (version: 25136, sigs: 2155760, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6722100 signatures) from db.local.clamav.net (IP: 104.16.186.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    78.128.112.22
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /cgi-bin/nobody/Search.cgi?action=cgi_quer ... &password=admin: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /bea_wls_deployment_internal: 9 Time(s)
+       /ezon/login.do: 1 Time(s)
+       /servlet?p=login&q=loginForm&jumpto=status: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   12.197K  Bytes accepted                            12,490
+   12.197K  Bytes delivered                           12,490
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   19G   12G  64% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,112 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id BFA9411103ED0; Tue, 23 Feb 2016 03:55:16 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 42E8C11103EDB; Tue, 23 Feb 2016 03:55:12 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160223025514.42E8C11103EDB@2626.serwervps.pl>
+Date: Tue, 23 Feb 2016 03:54:18 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Feb 23 03:54:18 2016
+        Date Range Processed: yesterday
+                              ( 2016-Feb-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Feb 22 03:17:01 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-21394.cdiff [100%]
+    Downloading daily-21395.cdiff [100%]
+    Downloading daily-21396.cdiff [100%]
+    Downloading daily-21397.cdiff [100%]
+    daily.cld updated (version: 21397, sigs: 1850960, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 271, sigs: 47, f-level: 63, builder: anvilleg)
+    Database updated (4275232 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /manager/html: 1 Time(s)
+       /rom-0: 8 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /wp-admin/: 1 Time(s)
+       /wp-admin/admin-post.php?page=wysija_campaigns&action=themes: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+       http://testp2.czar.bielawa.pl/testproxy.php: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      198   *Warning: Pre-queue content-filter connection overload 
+      276   SASL authentication failed 
+ 
+    4.548M  Bytes accepted                         4,768,435
+    4.548M  Bytes delivered                        4,768,435
+ ========   ================================================
+ 
+        8   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        8   Total                                    100.00%
+ ========   ================================================
+ 
+      235   Connections made      
+      235   Disconnections        
+        8   Removed from queue    
+        6   Delivered             
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  9.4G   41G  19% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

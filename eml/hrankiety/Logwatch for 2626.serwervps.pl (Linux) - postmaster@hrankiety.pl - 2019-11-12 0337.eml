@@ -1,0 +1,134 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id AE22E9F21D58; Tue, 12 Nov 2019 03:37:10 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191112023710.AE22E9F21D58@hrankiety.pl>
+Date: Tue, 12 Nov 2019 03:37:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Nov 12 03:37:04 2019
+        Date Range Processed: yesterday
+                              ( 2019-Nov-11 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Nov 11 03:40:11 2019
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25629.cdiff [100%]
+    daily.cld updated (version: 25629, sigs: 1980145, f-level: 63, builder: raynman)
+    Can't query daily.25629.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6546488 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    66.240.236.119
+    71.6.165.200
+ 
+ Requests with error response codes
+    400 Bad Request
+       null: 14 Time(s)
+    404 Not Found
+       /.well-known/security.txt: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /blog/xmlrpc.php: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /sitemap.xml: 2 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /xmlrpc.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       19   *Warning: Pre-queue content-filter connection overload 
+    12224   SASL authentication failed 
+      288   Miscellaneous warnings 
+ 
+  597.320K  Bytes accepted                           611,656
+  591.271K  Bytes delivered                          605,461
+ ========   ================================================
+ 
+       28   Accepted                                  15.14%
+      157   Rejected                                  84.86%
+ --------   ------------------------------------------------
+      185   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                           0.64%
+      156   Reject unknown user                       99.36%
+ --------   ------------------------------------------------
+      157   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       13   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       13   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+    12271   Connections made      
+    12271   Disconnections        
+       28   Removed from queue    
+       26   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   21G   30G  42% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

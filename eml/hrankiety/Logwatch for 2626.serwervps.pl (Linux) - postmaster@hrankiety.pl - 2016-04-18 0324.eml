@@ -1,0 +1,129 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 8F9BA35A1AF5; Mon, 18 Apr 2016 03:24:04 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160418012404.8F9BA35A1AF5@hrankiety.pl>
+Date: Mon, 18 Apr 2016 03:24:03 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Apr 18 03:24:03 2016
+        Date Range Processed: yesterday
+                              ( 2016-Apr-17 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Apr 17 03:36:04 2016
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-21495.cdiff [100%]
+    daily.cld updated (version: 21495, sigs: 85311, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 277, sigs: 47, f-level: 63, builder: neo)
+    Database updated (4304148 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    104.148.71.133 -> www.baidu.com:443: 1 Time(s)
+ 
+ Requests with error response codes
+    400 Bad Request
+       /bbs/qalist.do: 1 Time(s)
+       /x: 1 Time(s)
+    404 Not Found
+       /cgi-bin/test-cgi: 1 Time(s)
+       /index.php: 1 Time(s)
+       /oceny/index.php: 1 Time(s)
+       http://proxyworld.perso.sfr.fr/azenv.php: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+       http://testp5.mielno.lubin.pl/testproxy.php: 1 Time(s)
+    405 Method Not Allowed
+       www.baidu.com:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       74   *Warning: Pre-queue content-filter connection overload 
+      183   SASL authentication failed 
+       11   Miscellaneous warnings 
+ 
+    1.084M  Bytes accepted                         1,136,412
+    1.075M  Bytes delivered                        1,127,628
+ ========   ================================================
+ 
+        6   Accepted                                  28.57%
+       15   Rejected                                  71.43%
+ --------   ------------------------------------------------
+       21   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                           6.67%
+       14   Reject sender address                     93.33%
+ --------   ------------------------------------------------
+       15   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        2   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        2   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      184   Connections made      
+      184   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        1   Excessive errors in SMTP commands dialog 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   12G   39G  24% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

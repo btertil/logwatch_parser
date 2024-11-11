@@ -1,0 +1,205 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 8DD919F2047B; Tue, 12 May 2020 03:25:15 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200512012515.8DD919F2047B@hrankiety.pl>
+Date: Tue, 12 May 2020 03:25:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue May 12 03:25:05 2020
+        Date Range Processed: yesterday
+                              ( 2020-May-11 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon May 11 03:33:20 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25808.cdiff [100%]
+    daily.cld updated (version: 25808, sigs: 2378037, f-level: 63, builder: raynman)
+    Can't query daily.25808.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6943033 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    45.13.93.82 -> ip.ws.126.net:443: 2 Time(s)
+ 
+ A total of 6 sites probed the server 
+    114.33.148.74
+    122.116.176.88
+    185.202.2.147
+    3.21.12.138
+    45.141.87.4
+    61.219.11.153
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 45 Time(s)
+       /boaform/admin/formPing: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 1 Time(s)
+       /cgi-bin/mainfunction.cgi?action=login&key ... er=a&loginPwd=a: 1 Time(s)
+       /sess-bin/login_session.cgi: 4 Time(s)
+       null: 4 Time(s)
+    404 Not Found
+       /+/: 1 Time(s)
+       /2018/: 1 Time(s)
+       /2019/: 1 Time(s)
+       /2020/: 1 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /GponForm/diag_Form?style/: 1 Time(s)
+       /TP/html/public/index.php: 2 Time(s)
+       /TP/index.php: 2 Time(s)
+       /TP/public/index.php: 2 Time(s)
+       /api.php: 1 Time(s)
+       /api/jsonws/invoke: 6 Time(s)
+       /backup/: 1 Time(s)
+       /bak/: 1 Time(s)
+       /bk/: 1 Time(s)
+       /blog/: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 6 Time(s)
+       /cgi-bin/test-cgi: 1 Time(s)
+       /client_area/: 1 Time(s)
+       /cms/: 1 Time(s)
+       /cn/cmd: 1 Time(s)
+       /console: 1 Time(s)
+       /demo/: 1 Time(s)
+       /dev/: 1 Time(s)
+       /doLogin: 5 Time(s)
+       /elrekt.php: 2 Time(s)
+       /home/: 1 Time(s)
+       /horde/imp/test.php: 1 Time(s)
+       /html/public/index.php: 2 Time(s)
+       /hudson: 1 Time(s)
+       /index.php: 3 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 6 Time(s)
+       /login.action: 1 Time(s)
+       /login.php: 1 Time(s)
+       /login/do_login: 1 Time(s)
+       /login?from=0.000000: 1 Time(s)
+       /main/: 1 Time(s)
+       /manager/html: 2 Time(s)
+       /manager/text/list: 1 Time(s)
+       /new/: 1 Time(s)
+       /old-site/: 1 Time(s)
+       /old-wp/: 1 Time(s)
+       /old/: 1 Time(s)
+       /operator/basic.shtml?id=1337: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /public/index.php: 2 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 2 Time(s)
+       /site/: 1 Time(s)
+       /sito/: 1 Time(s)
+       /slub/: 2 Time(s)
+       /slub/thumbs/a%20(34).jpg: 1 Time(s)
+       /solr/admin/info/system?wt=json: 5 Time(s)
+       /stalker_portal/c/: 1 Time(s)
+       /stalker_portal/c/version.js: 1 Time(s)
+       /streaming: 1 Time(s)
+       /streaming/clients_live.php: 2 Time(s)
+       /streaming/crLZIxTlhn.php: 1 Time(s)
+       /system_api.php: 1 Time(s)
+       /temp/: 1 Time(s)
+       /test/: 1 Time(s)
+       /thinkphp/html/public/index.php: 2 Time(s)
+       /tmp/: 1 Time(s)
+       /v1/: 1 Time(s)
+       /v2/: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 13 Time(s)
+       /web/: 1 Time(s)
+       /wordpress/: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wp/: 1 Time(s)
+       /wp1/: 1 Time(s)
+       /wp2/: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 2 Time(s)
+    408 Request Timeout
+       null: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       28   *Warning: Pre-queue content-filter connection overload 
+    22596   SASL authentication failed 
+      105   Miscellaneous warnings 
+ 
+    7.812M  Bytes accepted                         8,191,874
+    8.085M  Bytes delivered                        8,478,006
+ ========   ================================================
+ 
+       52   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       52   Total                                    100.00%
+ ========   ================================================
+ 
+    22672   Connections made      
+       21   Connections lost      
+    22675   Disconnections        
+       52   Removed from queue    
+       46   Delivered             
+       11   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        3   Timeout (inbound)     
+       25   SMTP commands dialog error 
+        5   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   27G   24G  54% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

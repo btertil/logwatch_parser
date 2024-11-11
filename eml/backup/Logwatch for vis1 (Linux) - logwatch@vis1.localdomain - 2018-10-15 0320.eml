@@ -1,0 +1,140 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:7401:0:0:0:0:0 with SMTP id o1-v6csp3476214jac;
+        Sun, 14 Oct 2018 18:20:11 -0700 (PDT)
+X-Google-Smtp-Source: ACcGV62rT2Ab/E4n575+fMACzLILh3EyQbRgBWZoJ30m9GbZg/3ZyBO9F3kO7zRS5b8HszKYHYFx
+X-Received: by 2002:a2e:651d:: with SMTP id z29-v6mr10222394ljb.36.1539566411757;
+        Sun, 14 Oct 2018 18:20:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1539566411; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ABJ7Cmk2phhhDCpAnH2/8ZjCELSIaJ4UlCQKSqXb42ELZLVYH+wQjyvUMKs52g+i28
+         f6Lr/Q5WwrxdqJ7VUs5P0N050FEirGFeOToWybjo7IifPjFWrV0tojHqiFanVrqMWOuz
+         h2hqF+GNvIMyVZdomRHI1F9dE+ftCqG5j4Enq5ZRbXu7S4e1D72jw/QA9NZFqBQmCVef
+         ohhKWQ30jnRqQipfr/fZq7o2vOHcfzQTcmIUl24y6U3FL/Nvvmop16EYnyOJqhAwGlVR
+         sSvSNcrCrq5DlgaImtU0hMx20cLtZcpan7FHpcgT+RMBaVbF0yI8O0jOVeSaCDtDEaXm
+         x2GA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=tEOAeOHfH39LoRRogoOI3omieXjzgzezsWrMie2Zt00=;
+        b=bRdQqam3GKLF62sLobAj3sNmaziFF+FKyPkBGOUAY8Bdm4qA7rYutxLvc8X/7pMRBi
+         IFUYesohW6aRmf6fLVR504cTSUKEya+xezWvjAtUzqynHGKROh6n0AICq2SVDRnYUIE7
+         pKNBwnuL4/GBE6ANdpDmAdgsk054Y9UzK6hED+mC0M8GHft69R/FWsfZz402jEBnaO9h
+         exd5QmVvZJFETEWEivxRmklw26DgKQhTpGqmefkwd1QkJEKWZhi4y3Q1D7liKN76XNqd
+         D2DOjm6IFRaGQUffnuhKyJBxa4d2GgXIvtyub7AnCGxi5KYa88x04ulfQyTHkE1xqXsk
+         DDWg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id a21-v6si7700816ljh.27.2018.10.14.18.20.11
+        for <bondiev@gmail.com>;
+        Sun, 14 Oct 2018 18:20:11 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 983344A812C5; Mon, 15 Oct 2018 03:20:10 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20181015012010.983344A812C5@vis1.localdomain>
+Date: Mon, 15 Oct 2018 03:20:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Oct 15 03:20:08 2018
+        Date Range Processed: yesterday
+                              ( 2018-Oct-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Oct 14 03:37:10 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.1 Recommended version: 0.100.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25032.cdiff [100%]
+    Downloading daily-25033.cdiff [100%]
+    Downloading daily-25034.cdiff [100%]
+    daily.cld updated (version: 25034, sigs: 2120424, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6686764 signatures) from db.local.clamav.net (IP: 104.16.186.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /GponForm/diag_Form?images/: 2 Time(s)
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /bea_wls_deployment_internal: 8 Time(s)
+       /ccvv: 1 Time(s)
+       /manager/html: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    3.751K  Bytes accepted                             3,841
+    3.751K  Bytes delivered                            3,841
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   21G  9.1G  70% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

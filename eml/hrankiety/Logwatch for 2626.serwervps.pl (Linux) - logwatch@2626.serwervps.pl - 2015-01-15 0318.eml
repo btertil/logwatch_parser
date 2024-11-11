@@ -1,0 +1,132 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 9A24311102401; Thu, 15 Jan 2015 03:19:18 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 5E2BD11102403; Thu, 15 Jan 2015 03:19:09 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150115021911.5E2BD11102403@2626.serwervps.pl>
+Date: Thu, 15 Jan 2015 03:18:49 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Jan 15 03:18:48 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jan-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Jan 14 03:21:33 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-19916.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-19916.cdiff from db.local.clamav.net
+    Downloading daily-19916.cdiff [100%]
+    Downloading daily-19917.cdiff [100%]
+    Downloading daily-19918.cdiff [100%]
+    Downloading daily-19919.cdiff [100%]
+    Downloading daily-19920.cdiff [100%]
+    Downloading daily-19921.cdiff [100%]
+    Downloading daily-19922.cdiff [100%]
+    daily.cld updated (version: 19922, sigs: 1308124, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 245, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3732392 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    82.211.223.3 -> 65.55.57.27:80: 1 Time(s)
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+    404 Not Found
+       /cgi-bin/test-cgi: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /onon/ono/on.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+    405 Method Not Allowed
+       65.55.57.27:80: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+  851.239K  Bytes accepted                           871,669
+  851.239K  Bytes delivered                          871,669
+ ========   ================================================
+ 
+       12   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       12   Total                                    100.00%
+ ========   ================================================
+ 
+        8   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+        8   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       17   Connections made      
+       17   Disconnections        
+       12   Removed from queue    
+        6   Delivered             
+        4   Sent via SMTP         
+        2   Forwarded             
+ 
+        4   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.68.96.192 (89-68-96-192.dynamic.chello.pl): 10 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   12G   39G  23% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

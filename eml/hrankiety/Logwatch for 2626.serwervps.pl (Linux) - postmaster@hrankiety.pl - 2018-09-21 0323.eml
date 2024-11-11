@@ -1,0 +1,168 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id D14F49F202E1; Fri, 21 Sep 2018 03:23:11 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180921012311.D14F49F202E1@hrankiety.pl>
+Date: Fri, 21 Sep 2018 03:23:09 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Sep 21 03:23:09 2018
+        Date Range Processed: yesterday
+                              ( 2018-Sep-20 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Sep 20 03:51:15 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24955.cdiff [100%]
+    Downloading daily-24956.cdiff [100%]
+    Downloading daily-24957.cdiff [100%]
+    Downloading daily-24958.cdiff [100%]
+    Downloading daily-24959.cdiff [100%]
+    daily.cld updated (version: 24959, sigs: 2093254, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6659594 signatures) from db.local.clamav.net (IP: 104.16.187.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       //Admin/scripts/setup.php: 1 Time(s)
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php/admin/scripts/ ... ripts/setup.php: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       //sgladmin/scripts/setup.php: 1 Time(s)
+       /HTMLEditor/editor/filemanager/connectors/uploadtest.html: 1 Time(s)
+       /admin/FCKeditor/editor/filemanager/connec ... uploadtest.html: 1 Time(s)
+       /admin/editor/editor/filemanager/connectors/uploadtest.html: 1 Time(s)
+       /admin/editor/filemanager/connectors/uploadtest.html: 1 Time(s)
+       /administrator/fckeditor/editor/filemanage ... uploadtest.html: 1 Time(s)
+       /blog/: 1 Time(s)
+       /blog/robots.txt: 1 Time(s)
+       /ckeditor/filemanager/connectors/uploadtest.html: 1 Time(s)
+       /cms/editor/filemanager/connectors/uploadtest.html: 1 Time(s)
+       /cms/editor/filemanager/connectors/uploadtest404.html: 1 Time(s)
+       /cms/fckeditor/editor/filemanager/connectors/uploadtest.html: 1 Time(s)
+       /editor/editor/filemanager/connectors/uploadtest.html: 1 Time(s)
+       /editor/editor/filemanager/upload/test.html: 1 Time(s)
+       /editor/filemanager/connectors/uploadtest.html: 1 Time(s)
+       /fckeditor/editor/filemanager/connectors/uploadtest.html: 1 Time(s)
+       /inny.py: 1 Time(s)
+       /js/fckeditor/editor/filemanager/connectors/uploadtest.html: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /modules/fckeditor/fckeditor/editor/filema ... uploadtest.html: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /phpMyAdmin/: 3 Time(s)
+       /plugins/p_fckeditor/fckeditor/editor/file ... uploadtest.html: 1 Time(s)
+       /sites/all/modules/fckeditor/fckeditor/edi ... uploadtest.html: 1 Time(s)
+       /testcgi.py: 2 Time(s)
+       /v3.0/web/assets/css/site.css: 1 Time(s)
+       /wordpress/: 1 Time(s)
+       /wp/: 1 Time(s)
+       /wysiwyg/fckeditor/editor/filemanager/conn ... uploadtest.html: 1 Time(s)
+       /xmlrpc.php?rsd: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Fatal:   General fatal 
+        2   *Warning: Pre-queue content-filter connection overload 
+     1249   SASL authentication failed 
+       62   Miscellaneous warnings 
+ 
+    1.644M  Bytes accepted                         1,723,691
+    1.638M  Bytes delivered                        1,717,485
+ ========   ================================================
+ 
+       34   Accepted                                  94.44%
+        2   Rejected                                   5.56%
+ --------   ------------------------------------------------
+       36   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     1235   Connections made      
+        1   Connections lost      
+     1233   Disconnections        
+       34   Removed from queue    
+       32   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        2   Timeout (inbound)     
+        1   SMTP commands dialog error 
+        1   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.72.8 (89-77-72-8.dynamic.chello.pl): 5 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   25G   26G  49% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

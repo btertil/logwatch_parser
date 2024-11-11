@@ -1,0 +1,151 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 3E75D11101B43; Wed,  5 Nov 2014 03:50:15 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 2EE4D11101B3F
+	for <root@2626.serwervps.pl>; Wed,  5 Nov 2014 05:50:15 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id ZwAK9GhyQZLT for <root@2626.serwervps.pl>;
+	Wed,  5 Nov 2014 03:50:12 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 21DD311101B41; Wed,  5 Nov 2014 03:50:11 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141105025012.21DD311101B41@2626.serwervps.pl>
+Date: Wed,  5 Nov 2014 03:50:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Nov  5 03:50:08 2014
+        Date Range Processed: yesterday
+                              ( 2014-Nov-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (05123-10) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:62004 [89.67.22.229] <atertil@hrankiety.pl> -> <biuro@inwenta.pl>, Queue-ID: BE88B11101C1D, Message-ID: <545897E7.9020902@hrankiety.pl>, mail_id: 5eOFxzFmKsI1, Hits: -9.988, size: 649011, queued_as: 7E12811101C1F, dkim_new=dkim:hrankiety.pl, 2418 ms
+        1   (05122-12) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:63202 [89.67.22.229] <atertil@hrankiety.pl> -> <malgorzata.kocher@interia.pl>, Queue-ID: 3679511101B0A, Message-ID: <54590FC7.8080401@hrankiety.pl>, mail_id: 84Zo1KyWTJ77, Hits: -9.988, size: 28434, queued_as: 070D411101B13, dkim_new=dkim:hrankiety.pl, 3653 ms
+        1   (05122-13) Passed CLEAN {RelayedInternal}, LOCAL [217.74.65.239]:42849 [91.226.196.12] <malgorzata.kocher@interia.pl> -> <atertil@hrankiety.pl>, Queue-ID: BA89F11101B29, Message-ID: <FABF84EC2DE74ABBA6AD38C2A0ACDB4B@Gosiadell>, mail_id: 6sckT1ACCxay, Hits: -6.147, size: 12061, queued_as: B653411101B2F, dkim_sd=biztos:interia.pl, 1913 ms
+        1   (05122-11) Passed CLEAN {RelayedInternal}, LOCAL [217.74.65.239]:37809 [91.226.196.12] <malgorzata.kocher@interia.pl> -> <atertil@hrankiety.pl>, Queue-ID: E3A7E11101C19, Message-ID: <628C0081306B4EDDB8328DBD286C2B85@Gosiadell>, mail_id: sGktrMFav4GM, Hits: 1.8, size: 21472, queued_as: 74A8211101C1F, dkim_sd=biztos:interia.pl, 2436 ms
+        1   (05122-14) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.169]:58171 [89.67.22.229] <bondiev@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: F3F5711101B34, Message-ID: <50E64B7C-9541-446C-A670-968A801390BC@gmail.com>, mail_id: 2aN8KjCMQWyY, Hits: -99.513, size: 55736, queued_as: 74FEB11101B36, dkim_sd=20120113:gmail.com, 2293 ms
+        1   (05123-09) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141104033210.6636811101C19@2626.serwervps.pl>, mail_id: CzCxj3kUA4Ol, Hits: 0, size: 5974, queued_as: 54B4211101C18, 5641 ms
+        1   (05122-09) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141104023008.DC07211101C18@2626.serwervps.pl>, mail_id: DXGJz1wnxZYn, Hits: 0.001, size: 2287, queued_as: D06D911101C17, 2935 ms
+        1   (05122-10) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:61974 [89.67.22.229] <atertil@hrankiety.pl> -> <resolutio@resolutio.pl>, Queue-ID: 0A85011101C1A, Message-ID: <5458972C.8070608@hrankiety.pl>, mail_id: si0qXd1d-ly2, Hits: -9.988, size: 649023, queued_as: 1B6CB11101C1B, dkim_new=dkim:hrankiety.pl, 4215 ms
+        1   (05123-11) Passed CLEAN {RelayedInternal}, LOCAL [83.220.96.49]:9193 [83.220.96.49] <Bartosz.Tertil@t-mobile.pl> -> <btertil@hrankiety.pl>, Queue-ID: 10EB111101B05, Message-ID: <3885C4A101C04644B7D59E882DDF05214A45DAD1@ex23.resources.local>, mail_id: QqHsSe7uX95h, Hits: 1.275, size: 6651, queued_as: 2C02211101B0A, 2039 ms
+        1   (05123-08) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.53]:59264 [89.67.22.229] <agnieszkaibartek@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: 9495C11101C16, Message-ID: <54581704.1040101@gmail.com>, mail_id: JO6Z4ZzEMdRh, Hits: -99.3, size: 8656, queued_as: EF6A111101C17, dkim_sd=20120113:gmail.com, 2283 ms
+        1   (05123-12) Passed CLEAN {RelayedInternal}, LOCAL [217.74.65.239]:49288 [91.226.196.12] <malgorzata.kocher@interia.pl> -> <atertil@hrankiety.pl>, Queue-ID: 97F3D11101B13, Message-ID: <5C8CC2BFA16045DAAC5960BE99EE10F4@Gosiadell>, mail_id: L7E4M3U6t5E1, Hits: -6.209, size: 27609, queued_as: 78B0011101B1B, dkim_sd=biztos:interia.pl, 5787 ms
+        1   (05123-13) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:64279 [89.67.22.229] <atertil@hrankiety.pl> -> <malgorzata.kocher@interia.pl>, Queue-ID: 7D27611101B2B, Message-ID: <54594299.1010400@hrankiety.pl>, mail_id: NroQKlePRc7T, Hits: -9.999, size: 1149, queued_as: D212011101B2D, dkim_new=dkim:hrankiety.pl, 1769 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Tue Nov  4 04:32:11 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19577.cdiff [100%]
+    Downloading daily-19578.cdiff [100%]
+    Downloading daily-19579.cdiff [100%]
+    Downloading daily-19580.cdiff [100%]
+    Downloading daily-19581.cdiff [100%]
+    daily.cld updated (version: 19581, sigs: 1246754, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3671025 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    198.20.69.74
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /tmUnblock.cgi: 2 Time(s)
+    404 Not Found
+       /manager/html: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /vbvb/vbv/vb.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+    2.817M  Bytes accepted                         2,953,694
+    2.817M  Bytes delivered                        2,953,694
+ ========   ================================================
+ 
+       26   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       26   Total                                    100.00%
+ ========   ================================================
+ 
+       23   Connections made      
+       23   Disconnections        
+       26   Removed from queue    
+        8   Delivered             
+       16   Sent via SMTP         
+        2   Forwarded             
+        1   Deferred              
+        1   Deferrals             
+ 
+        4   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  7.2G   43G  15% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

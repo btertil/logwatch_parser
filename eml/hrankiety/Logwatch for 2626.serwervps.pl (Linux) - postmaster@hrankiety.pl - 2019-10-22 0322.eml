@@ -1,0 +1,155 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 237A09F21C4F; Tue, 22 Oct 2019 03:22:07 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191022012207.237A09F21C4F@hrankiety.pl>
+Date: Tue, 22 Oct 2019 03:22:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Oct 22 03:22:04 2019
+        Date Range Processed: yesterday
+                              ( 2019-Oct-21 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Oct 21 03:27:09 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25608.cdiff [100%]
+    daily.cld updated (version: 25608, sigs: 1947803, f-level: 63, builder: raynman)
+    Can't query daily.25608.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6514146 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 4 sites probed the server 
+    159.65.121.162
+    41.216.186.89
+    45.136.108.64
+    5.39.219.80
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       //a2billing/customer/templates/default/footer.tpl: 1 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       /index.php: 3 Time(s)
+       /index.php?s=/index/\\\\think\\\\request/cache&key=1|phpinfo: 1 Time(s)
+       /index.php?s=/index/\\think\\app/invokefun ... nfo&vars[1][]=1: 1 Time(s)
+       /index.php?s=captcha: 6 Time(s)
+       /index.php?s=index/\\think\\Container/invo ... nfo&vars[1][]=1: 1 Time(s)
+       /index.php?s=index/\\think\\Request/input& ... =phpinfo&data=1: 1 Time(s)
+       /index.php?s=index/\\think\\app/invokefunc ... nfo&vars[1][]=1: 1 Time(s)
+       /index.php?s=index/\\think\\view\\driver\\ ... hpinfo()%3b%3f>: 1 Time(s)
+       /index.php?s=index/index/index: 1 Time(s)
+       /index.php?s=index/think\\app/invokefuncti ... [1][]=phpinfo(): 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /public/?s=/index/\\\\think\\\\request/cache&key=1|phpinfo: 1 Time(s)
+       /public/?s=/index/\\think\\app/invokefunct ... nfo&vars[1][]=1: 1 Time(s)
+       /public/?s=captcha: 1 Time(s)
+       /public/?s=captcha&test=1: 1 Time(s)
+       /public/?s=index/\\think/module/aciton/par ... THINK_VERSION)}: 1 Time(s)
+       /public/?s=index/\\think\\Container/invoke ... nfo&vars[1][]=1: 1 Time(s)
+       /public/?s=index/\\think\\Module/Action/Pa ... ${%40phpinfo()}: 1 Time(s)
+       /public/?s=index/\\think\\Request/input&fi ... =phpinfo&data=1: 1 Time(s)
+       /public/?s=index/\\think\\app/invokefuncti ... nfo&vars[1][]=1: 1 Time(s)
+       /public/?s=index/\\think\\module/action/pa ... ${%40phpinfo()}: 1 Time(s)
+       /public/?s=index/\\think\\view\\driver\\Ph ... hpinfo()%3b%3f>: 1 Time(s)
+       /public/?s=index/index/index: 1 Time(s)
+       /public/index.php: 3 Time(s)
+       /public/index.php?s=captcha: 3 Time(s)
+       /public/index.php?s=captcha&test=1: 1 Time(s)
+       /public/index.php?s=index/think\\app/invok ... [1][]=phpinfo(): 1 Time(s)
+       /public/index.php?s=index/think\\app/invok ... nfo&vars[1][]=1: 1 Time(s)
+       /remote/login: 1 Time(s)
+       /slub/: 2 Time(s)
+       /thinkphp/library/think/Request.php?c=exec ... _method=filter&: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       46   *Warning: Pre-queue content-filter connection overload 
+     4396   SASL authentication failed 
+       59   Miscellaneous warnings 
+ 
+    3.785M  Bytes accepted                         3,969,161
+    3.779M  Bytes delivered                        3,962,959
+ ========   ================================================
+ 
+       35   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       35   Total                                    100.00%
+ ========   ================================================
+ 
+     4517   Connections made      
+        1   Connections lost      
+     4517   Disconnections        
+       35   Removed from queue    
+       32   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   21G   30G  41% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

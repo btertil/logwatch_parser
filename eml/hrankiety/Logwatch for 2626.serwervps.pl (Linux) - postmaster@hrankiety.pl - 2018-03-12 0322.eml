@@ -1,0 +1,185 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 11CA935A33B2; Mon, 12 Mar 2018 03:23:03 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180312022304.11CA935A33B2@hrankiety.pl>
+Date: Mon, 12 Mar 2018 03:22:54 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Mar 12 03:22:53 2018
+        Date Range Processed: yesterday
+                              ( 2018-Mar-11 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Mar 11 03:24:40 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.3 Recommended version: 0.99.4
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    WARNING: getfile: daily-24254.cdiff not found on db.local.clamav.net (IP: 85.254.217.235)
+    WARNING: getpatch: Can't download daily-24254.cdiff from db.local.clamav.net
+    WARNING: getfile: daily-24254.cdiff not found on db.local.clamav.net (IP: 91.219.236.218)
+    WARNING: getpatch: Can't download daily-24254.cdiff from db.local.clamav.net
+    WARNING: getfile: daily-24254.cdiff not found on db.local.clamav.net (IP: 78.46.184.220)
+    WARNING: getpatch: Can't download daily-24254.cdiff from db.local.clamav.net
+    WARNING: Incremental update failed, trying to download daily.cvd
+    Downloading daily.cvd [100%]
+    daily.cvd updated (version: 24382, sigs: 1873753, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/daily.cld and /var/lib/clamav/daily.cvd. The /var/lib/clamav/daily.cld database is older and will not be loaded, you should manually remove it from the database directory.
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6440077 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Received 0 file descriptor(s) from systemd.
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Removing stale socket file /tmp/clamd.socket
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ Limits: MaxRecHWP3 limit set to 16.
+ Limits: PCREMatchLimit limit set to 10000.
+ Limits: PCRERecMatchLimit limit set to 5000.
+ Limits: PCREMaxFileSize limit set to 26214400.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       /x: 1 Time(s)
+       /zx425/defaultf/login: 1 Time(s)
+    404 Not Found
+       /admin/config.php: 1 Time(s)
+       /index.action: 1 Time(s)
+       /stats/js/sorttable.js: 1 Time(s)
+       /webdav: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      499   *Warning: Pre-queue content-filter connection overload 
+      612   SASL authentication failed 
+       25   Miscellaneous warnings 
+ 
+  400.254K  Bytes accepted                           409,860
+  391.691K  Bytes delivered                          401,092
+ ========   ================================================
+ 
+       14   Accepted                                  87.50%
+        2   Rejected                                  12.50%
+ --------   ------------------------------------------------
+       16   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      572   Connections made      
+      571   Disconnections        
+       14   Removed from queue    
+       10   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.73.82.159 (89-73-82-159.dynamic.chello.pl): 2 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    clamav-db-0.99.3-8.el6.i686
+    12:dhcp-common-4.1.1-53.P1.el6.centos.3.i686
+    clamav-0.99.3-8.el6.i686
+    12:dhclient-4.1.1-53.P1.el6.centos.3.i686
+    clamd-0.99.3-8.el6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   36G   15G  71% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

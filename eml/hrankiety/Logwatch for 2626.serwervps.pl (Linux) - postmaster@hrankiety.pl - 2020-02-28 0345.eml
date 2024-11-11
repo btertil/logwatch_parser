@@ -1,0 +1,151 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id D35BE9F20601; Fri, 28 Feb 2020 03:45:08 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200228024508.D35BE9F20601@hrankiety.pl>
+Date: Fri, 28 Feb 2020 03:45:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Feb 28 03:45:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-Feb-27 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Feb 27 03:32:08 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    daily.cld is up to date (version: 25734, sigs: 2197156, f-level: 63, builder: raynman)
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    222.186.19.221 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 1 sites probed the server 
+    139.59.43.104
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 7 Time(s)
+       /incl/image_test.shtml?camnbr=%3c%21--%23e ... mp/s%22%20--%3e: 1 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       /wp-includes/wlwmanifest.xml: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /2018/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /ReportServer: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /admin/: 1 Time(s)
+       /dns-query?dns=AAABAAABAAAAAAAAAWE-NjJjaGF ... sZQNjb20AAAEAAQ: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /news/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /owa/auth/logon.aspx: 2 Time(s)
+       /public/index.php: 1 Time(s)
+       /solr/: 1 Time(s)
+       /test/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /web/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /website/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /wp-login.php: 3 Time(s)
+       /wp/license.txt: 1 Time(s)
+       /wp2/wp-includes/wlwmanifest.xml: 1 Time(s)
+       /x: 1 Time(s)
+       /xmlrpc.php?rsd: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       10   *Warning: Pre-queue content-filter connection overload 
+     3722   SASL authentication failed 
+     3921   Miscellaneous warnings 
+ 
+    2.310M  Bytes accepted                         2,422,268
+    2.315M  Bytes delivered                        2,427,371
+ ========   ================================================
+ 
+       51   Accepted                                  22.08%
+      180   Rejected                                  77.92%
+ --------   ------------------------------------------------
+      231   Total                                    100.00%
+ ========   ================================================
+ 
+      180   Reject unknown user                      100.00%
+ --------   ------------------------------------------------
+      180   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     7449   Connections made      
+        6   Connections lost      
+     7448   Disconnections        
+       51   Removed from queue    
+       47   Delivered             
+        7   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        9   Excessive errors in SMTP commands dialog 
+        2   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   25G   26G  49% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

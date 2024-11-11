@@ -1,0 +1,129 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 68A6535A2AD6; Wed, 22 Nov 2017 03:06:13 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20171122020613.68A6535A2AD6@hrankiety.pl>
+Date: Wed, 22 Nov 2017 03:06:10 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Nov 22 03:06:10 2017
+        Date Range Processed: yesterday
+                              ( 2017-Nov-21 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Nov 21 03:18:26 2017
+ 
+ Last Status:
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24057.cdiff [100%]
+    Downloading daily-24058.cdiff [100%]
+    Downloading daily-24059.cdiff [100%]
+    daily.cld updated (version: 24059, sigs: 1785696, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 318, sigs: 75, f-level: 63, builder: raynman)
+    Database updated (6352020 signatures) from db.local.clamav.net (IP: 88.198.202.11)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 10 sites probed the server 
+    104.131.145.69
+    104.236.155.114
+    104.236.158.66
+    104.236.162.14
+    104.236.164.17
+    104.236.164.185
+    104.236.167.150
+    104.236.169.35
+    164.52.0.141
+    195.19.10.135
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+       /OWA-AUTODISCOVER-EWS: 1 Time(s)
+       STARTTLS: 2 Time(s)
+       null: 10 Time(s)
+       test: 1 Time(s)
+    404 Not Found
+       //%63%67%69%2D%62%69%6E/%70%68%70?%2D%64+% ... 70%75%74+%2D%6E: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        3   *Warning: Pre-queue content-filter connection overload 
+      574   SASL authentication failed 
+       65   Miscellaneous warnings 
+ 
+    1.715M  Bytes accepted                         1,798,768
+    1.710M  Bytes delivered                        1,792,571
+ ========   ================================================
+ 
+       33   Accepted                                  91.67%
+        3   Rejected                                   8.33%
+ --------   ------------------------------------------------
+       36   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      611   Connections made      
+      611   Disconnections        
+       33   Removed from queue    
+       31   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   36G   15G  71% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

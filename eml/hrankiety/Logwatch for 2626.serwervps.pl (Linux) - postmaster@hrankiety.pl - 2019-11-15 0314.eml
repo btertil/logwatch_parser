@@ -1,0 +1,161 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 0143B9F204E7; Fri, 15 Nov 2019 03:14:06 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191115021407.0143B9F204E7@hrankiety.pl>
+Date: Fri, 15 Nov 2019 03:14:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Nov 15 03:14:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Nov-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Nov 14 03:13:10 2019
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25632.cdiff [100%]
+    daily.cld updated (version: 25632, sigs: 1984953, f-level: 63, builder: raynman)
+    Can't query daily.25632.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6551296 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    144.217.171.229
+    193.188.22.187
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /v1/agent/self: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       ////wp-login.php: 1 Time(s)
+       //xmlrpc.php: 1 Time(s)
+       /HNAP1: 1 Time(s)
+       /Login.htm: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /admin/includes/general.js: 1 Time(s)
+       /admin/view/javascript/common.js: 1 Time(s)
+       /administrator/: 1 Time(s)
+       /administrator/help/en-GB/toc.json: 1 Time(s)
+       /administrator/language/en-GB/install.xml: 1 Time(s)
+       /blog/xmlrpc.php: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /evox/about: 1 Time(s)
+       /fckeditor/editor/filemanager/connectors/p ... .php?Type=Media: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /images/editor/separator.gif: 1 Time(s)
+       /index.php: 1 Time(s)
+       /js/header-rollup-554.js: 1 Time(s)
+       /misc/ajax.js: 1 Time(s)
+       /nmaplowercheck1573762619: 1 Time(s)
+       /plugins/system/debug/debug.xml: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /sdk: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /vendor/phpunit/phpunit/build.xml: 1 Time(s)
+       /wp-includes/js/jquery/jquery.js: 1 Time(s)
+       /xmlrpc.php: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       14   *Warning: Pre-queue content-filter connection overload 
+      618   SASL authentication failed 
+      478   Miscellaneous warnings 
+ 
+    1.945M  Bytes accepted                         2,039,373
+    1.939M  Bytes delivered                        2,033,178
+ ========   ================================================
+ 
+       49   Accepted                                  13.96%
+      302   Rejected                                  86.04%
+ --------   ------------------------------------------------
+      351   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                           0.66%
+      300   Reject unknown user                       99.34%
+ --------   ------------------------------------------------
+      302   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       13   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       13   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      704   Connections made      
+        1   Connections lost      
+      703   Disconnections        
+       49   Removed from queue    
+       47   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+       72   Timeout (inbound)     
+        1   SMTP commands dialog error 
+       15   Excessive errors in SMTP commands dialog 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   22G   29G  43% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

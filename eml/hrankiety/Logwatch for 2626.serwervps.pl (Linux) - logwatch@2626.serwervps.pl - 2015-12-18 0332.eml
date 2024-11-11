@@ -1,0 +1,131 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 602D011103A0A; Fri, 18 Dec 2015 03:32:29 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 5346111103A14; Fri, 18 Dec 2015 03:32:29 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20151218023229.5346111103A14@2626.serwervps.pl>
+Date: Fri, 18 Dec 2015 03:32:26 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Dec 18 03:32:26 2015
+        Date Range Processed: yesterday
+                              ( 2015-Dec-17 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Dec 17 03:44:57 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-21170.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-21170.cdiff from db.local.clamav.net
+    Trying host db.local.clamav.net (62.245.181.53)...
+    Downloading daily-21170.cdiff [100%]
+    Downloading daily-21171.cdiff [100%]
+    Downloading daily-21172.cdiff [100%]
+    Downloading daily-21173.cdiff [100%]
+    Downloading daily-21174.cdiff [100%]
+    Downloading daily-21175.cdiff [100%]
+    daily.cld updated (version: 21175, sigs: 1741450, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 270, sigs: 46, f-level: 63, builder: shurley)
+    Database updated (4165721 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    141.212.122.112 -> proxytest.zmap.io:80: 1 Time(s)
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /_asterisk: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 203795892659073: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 649415228724584: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 780680822189021: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 978368161601938: 1 Time(s)
+    405 Method Not Allowed
+       proxytest.zmap.io:80: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       56   *Warning: Pre-queue content-filter connection overload 
+      280   SASL authentication failed 
+ 
+    2.707M  Bytes accepted                         2,838,914
+    2.707M  Bytes delivered                        2,838,914
+ ========   ================================================
+ 
+        7   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        7   Total                                    100.00%
+ ========   ================================================
+ 
+      285   Connections made      
+      285   Disconnections        
+        7   Removed from queue    
+        5   Delivered             
+        2   Forwarded             
+ 
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  45% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

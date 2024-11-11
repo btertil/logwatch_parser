@@ -1,0 +1,144 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 017269F2064F; Wed,  8 Jul 2020 03:47:31 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200708014732.017269F2064F@hrankiety.pl>
+Date: Wed,  8 Jul 2020 03:47:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Jul  8 03:47:08 2020
+        Date Range Processed: yesterday
+                              ( 2020-Jul-07 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Jul  7 03:21:31 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25865.cdiff [100%]
+    daily.cld updated (version: 25865, sigs: 3173449, f-level: 63, builder: raynman)
+    Can't query daily.25865.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (7738445 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    143.92.32.86 -> ext.baidu.com:443: 2 Time(s)
+ 
+ A total of 9 sites probed the server 
+    103.13.244.210
+    104.197.12.57
+    116.62.147.109
+    122.51.110.102
+    132.145.111.59
+    158.101.174.249
+    185.202.2.147
+    185.209.114.65
+    61.0.172.181
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 19 Time(s)
+       /admin/login.asp: 1 Time(s)
+       /boaform/admin/formPing: 1 Time(s)
+       ext.baidu.com:443: 2 Time(s)
+       null: 9 Time(s)
+    404 Not Found
+       /a2billing/: 2 Time(s)
+       /avatar/darkgr33n: 1 Time(s)
+       /hudson: 1 Time(s)
+       /login: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /ocena360/ekran2.php: 1 Time(s)
+       /ocena360/ekran2s.ph: 1 Time(s)
+       /ocena360/ekran3s.php: 1 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       11   *Warning: Pre-queue content-filter connection overload 
+    58583   SASL authentication failed 
+      103   Miscellaneous warnings 
+ 
+    4.178M  Bytes accepted                         4,380,672
+    4.172M  Bytes delivered                        4,374,470
+ ========   ================================================
+ 
+       54   Accepted                                  90.00%
+        6   Rejected                                  10.00%
+ --------   ------------------------------------------------
+       60   Total                                    100.00%
+ ========   ================================================
+ 
+        6   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        6   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    59333   Connections made      
+    59329   Disconnections        
+       54   Removed from queue    
+       50   Delivered             
+        2   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        2   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   29G   22G  58% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,123 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 7F5F335A1E93; Sun, 22 Jan 2017 03:32:09 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170122023209.7F5F335A1E93@hrankiety.pl>
+Date: Sun, 22 Jan 2017 03:32:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Jan 22 03:32:08 2017
+        Date Range Processed: yesterday
+                              ( 2017-Jan-21 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Jan 21 03:34:11 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 62.245.181.53)
+    Trying host db.local.clamav.net (158.129.196.3)...
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    Trying host db.local.clamav.net (157.25.5.183)...
+    Downloading daily-22915.cdiff [100%]
+    Downloading daily-22916.cdiff [100%]
+    Downloading daily-22917.cdiff [100%]
+    Downloading daily-22918.cdiff [100%]
+    Downloading daily-22919.cdiff [100%]
+    Downloading daily-22920.cdiff [100%]
+    daily.cld updated (version: 22920, sigs: 1407569, f-level: 63, builder: neo)
+    Downloading bytecode-287.cdiff [100%]
+    Downloading bytecode-288.cdiff [100%]
+    bytecode.cld updated (version: 288, sigs: 58, f-level: 63, builder: bbaker)
+    Database updated (5626417 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    73.130.47.229
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /82172316237: 19 Time(s)
+       /engine/log.txt: 1 Time(s)
+       http://testp3.pospr.waw.pl/testproxy.php: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   SASL authentication failed 
+       17   Miscellaneous warnings 
+ 
+    2.158M  Bytes accepted                         2,263,090
+    2.152M  Bytes delivered                        2,256,893
+ ========   ================================================
+ 
+       10   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+        9   Connections made      
+        9   Disconnections        
+       10   Removed from queue    
+        8   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  48% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

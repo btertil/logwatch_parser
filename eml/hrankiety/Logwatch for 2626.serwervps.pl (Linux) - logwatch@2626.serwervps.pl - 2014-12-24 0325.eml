@@ -1,0 +1,118 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 5443811101E62; Wed, 24 Dec 2014 03:25:26 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id BC69111101E73; Wed, 24 Dec 2014 03:25:25 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141224022525.BC69111101E73@2626.serwervps.pl>
+Date: Wed, 24 Dec 2014 03:25:21 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Dec 24 03:25:21 2014
+        Date Range Processed: yesterday
+                              ( 2014-Dec-23 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Dec 23 03:42:19 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19820.cdiff [100%]
+    Downloading daily-19821.cdiff [100%]
+    Downloading daily-19822.cdiff [100%]
+    Downloading daily-19823.cdiff [100%]
+    Downloading daily-19824.cdiff [100%]
+    Downloading daily-19825.cdiff [100%]
+    daily.cld updated (version: 19825, sigs: 1295406, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 244, sigs: 44, f-level: 63, builder: dgoddard)
+    Database updated (3719675 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+    404 Not Found
+       /CFIDE/administrator/: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       http://s1.bdstatic.com/r/www/cache/static/ ... mi_ade5465d.png: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+      112   SASL authentication failed 
+ 
+  242.188K  Bytes accepted                           248,000
+  242.188K  Bytes delivered                          248,000
+ ========   ================================================
+ 
+        8   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        8   Total                                    100.00%
+ ========   ================================================
+ 
+       26   Connections made      
+       26   Disconnections        
+        8   Removed from queue    
+        5   Delivered             
+        1   Sent via SMTP         
+        2   Forwarded             
+        1   DSNs delivered        
+ 
+       20   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.68.96.192 (89-68-96-192.dynamic.chello.pl): 3 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  8.6G   42G  18% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

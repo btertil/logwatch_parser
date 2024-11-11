@@ -1,0 +1,358 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 2791511103812; Sun, 22 Nov 2015 03:22:25 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id B915A11103821; Sun, 22 Nov 2015 03:22:24 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20151122022224.B915A11103821@2626.serwervps.pl>
+Date: Sun, 22 Nov 2015 03:22:20 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Nov 22 03:22:20 2015
+        Date Range Processed: yesterday
+                              ( 2015-Nov-21 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Nov 21 03:40:38 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (62.245.181.53)...
+    Downloading daily-21074.cdiff [100%]
+    Downloading daily-21075.cdiff [100%]
+    Downloading daily-21076.cdiff [100%]
+    Downloading daily-21077.cdiff [100%]
+    daily.cld updated (version: 21077, sigs: 1694612, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 270, sigs: 46, f-level: 63, builder: shurley)
+    Database updated (4118883 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    89.67.185.134
+ 
+ Requests with error response codes
+    400 Bad Request
+       /../../../../../../../../../../../../../.. ... asswd/index.php: 2 Time(s)
+       /../../../../../../../../../../../../../.. ... b.xml/index.php: 2 Time(s)
+       /../../../../../../../../../../../../../.. ... m.ini/index.php: 2 Time(s)
+       //../../../../../../../../../../../../../. ... asswd/index.php: 2 Time(s)
+       //../../../../../../../../../../../../../. ... b.xml/index.php: 2 Time(s)
+       //../../../../../../../../../../../../../. ... m.ini/index.php: 2 Time(s)
+       /oplpg/../../../../../../../../../../../.. ... ./../etc/passwd: 2 Time(s)
+       /oplpg/../../../../../../../../../../../.. ... B-INF%5Cweb.xml: 2 Time(s)
+       /oplpg/../../../../../../../../../../../.. ... ws%5Csystem.ini: 2 Time(s)
+       /oplpg//../../../../../../../../../../../. ... ./../etc/passwd: 2 Time(s)
+       /oplpg//../../../../../../../../../../../. ... B-INF%5Cweb.xml: 2 Time(s)
+       /oplpg//../../../../../../../../../../../. ... ws%5Csystem.ini: 2 Time(s)
+    404 Not Found
+       /!--/index.php: 4 Time(s)
+       /$%7B@print(chr(122).chr(97).chr(112).chr( ... ))%7D/index.php: 2 Time(s)
+       /$%7B@print(chr(122).chr(97).chr(112).chr( ... 7D%5C/index.php: 2 Time(s)
+       /%22/index.php: 2 Time(s)
+       /%2B/index.php: 2 Time(s)
+       /%2Bresponse.write(%5B100%C2%A0000*100%C2% ... 0)%2B/index.php: 2 Time(s)
+       /%2Bresponse.write(%7B0%7D*%7B1%7D)%2B/index.php: 2 Time(s)
+       /%3E%3C!--/index.php: 4 Time(s)
+       /%5C%5C1077134022545916230.owasp.org/index.php: 2 Time(s)
+       /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..% ... asswd/index.php: 2 Time(s)
+       /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..% ... b.xml/index.php: 2 Time(s)
+       /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..% ... m.ini/index.php: 2 Time(s)
+       /%5CWEB-INF%5Cweb.xml/index.php: 2 Time(s)
+       /%5CWindows%5Csystem.ini/index.php: 2 Time(s)
+       /%5Cetc/passwd/index.php: 2 Time(s)
+       /%7C/index.php: 2 Time(s)
+       /'/index.php: 2 Time(s)
+       /';print(chr(122).chr(97).chr(112).chr(95) ... var='/index.php: 2 Time(s)
+       /)/index.php: 2 Time(s)
+       /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C. ... asswd/index.php: 2 Time(s)
+       /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C. ... b.xml/index.php: 2 Time(s)
+       /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C. ... m.ini/index.php: 2 Time(s)
+       ///1077134022545916230.owasp.org/index.php: 2 Time(s)
+       //WEB-INF%5Cweb.xml/index.php: 2 Time(s)
+       //Windows%5Csystem.ini/index.php: 2 Time(s)
+       //etc/passwd/index.php: 2 Time(s)
+       //index.php: 12 Time(s)
+       //p%3E%3Cscript%3Ealert(1);%3C/script%3E%3Cp/index.php: 2 Time(s)
+       /0W45pz4p/index.php: 2 Time(s)
+       /1077134022545916230.owasp.org/index.php: 2 Time(s)
+       /;/index.php: 2 Time(s)
+       /;print(chr(122).chr(97).chr(112).chr(95). ... $var=/index.php: 2 Time(s)
+       /;print(chr(122).chr(97).chr(112).chr(95). ... 10));/index.php: 2 Time(s)
+       /@/index.php: 2 Time(s)
+       /_asterisk: 1 Time(s)
+       /any%3F%250ASet-cookie:%2520Tamper=27e77f4 ... bda8b/index.php: 1 Time(s)
+       /any%3F%250ASet-cookie:%2520Tamper=c70e274 ... a1249/index.php: 1 Time(s)
+       /any%3F%250D%250ASet-cookie:%2520Tamper=27 ... bda8b/index.php: 2 Time(s)
+       /any%3F%250D%250ASet-cookie:%2520Tamper=c7 ... a1249/index.php: 2 Time(s)
+       /c:%5CWEB-INF%5Cweb.xml/index.php: 2 Time(s)
+       /c:%5CWindows%5Csystem.ini/index.php: 2 Time(s)
+       /c:%5Cetc/passwd/index.php: 2 Time(s)
+       /c:/WEB-INF%5Cweb.xml/index.php: 2 Time(s)
+       /c:/Windows%5Csystem.ini/index.php: 2 Time(s)
+       /c:/etc/passwd/index.php: 2 Time(s)
+       /doLogin.do: 1 Time(s)
+       /http:%5C%5C1077134022545916230.owasp.org/index.php: 2 Time(s)
+       /http://1077134022545916230.owasp.org/index.php: 4 Time(s)
+       /http://www.google.com//index.php: 2 Time(s)
+       /http://www.google.com/index.php: 2 Time(s)
+       /http://www.google.com/search%3Fq=OWASP%252520ZAP/index.php: 2 Time(s)
+       /http://www.google.com:80//index.php: 2 Time(s)
+       /http://www.google.com:80/search%3Fq=OWASP ... 20ZAP/index.php: 2 Time(s)
+       /https:%5C%5C1077134022545916230.owasp.org/index.php: 2 Time(s)
+       /https://1077134022545916230.owasp.org/index.php: 4 Time(s)
+       /oplpg%20AND%201=1%20--/index.php: 2 Time(s)
+       /oplpg%20AND%201=1/index.php: 2 Time(s)
+       /oplpg%20UNION%20ALL%20select%20NULL%20--/index.php: 2 Time(s)
+       /oplpg%22%20AND%20%221%22=%221%22%20--/index.php: 2 Time(s)
+       /oplpg%22%20AND%20%221%22=%221/index.php: 2 Time(s)
+       /oplpg%22%20UNION%20ALL%20select%20NULL%20--/index.php: 2 Time(s)
+       /oplpg%22%7Ctimeout%20/T%205/index.php: 2 Time(s)
+       /oplpg%22%7Ctype%20%25SYSTEMROOT%25%5Cwin.ini/index.php: 2 Time(s)
+       /oplpg%22&cat%20/etc/passwd&%22/index.php: 2 Time(s)
+       /oplpg%22&sleep%205s&%22/index.php: 2 Time(s)
+       /oplpg%22&timeout%20/T%205&%22/index.php: 2 Time(s)
+       /oplpg%22&type%20%25SYSTEMROOT%25%5Cwin.ini&%22/index.php: 2 Time(s)
+       /oplpg%22/index.php: 2 Time(s)
+       /oplpg%22;cat%20/etc/passwd;%22/index.php: 2 Time(s)
+       /oplpg%22;sleep%205s;%22/index.php: 2 Time(s)
+       /oplpg%7Ctimeout%20/T%20%7B0%7D/index.php: 2 Time(s)
+       /oplpg%7Ctimeout%20/T%205/index.php: 2 Time(s)
+       /oplpg%7Ctype%20%25SYSTEMROOT%25%5Cwin.ini/index.php: 2 Time(s)
+       /oplpg&cat%20/etc/passwd&/index.php: 2 Time(s)
+       /oplpg&sleep%20%7B0%7Ds&/index.php: 2 Time(s)
+       /oplpg&sleep%205s&/index.php: 2 Time(s)
+       /oplpg&timeout%20/T%20%7B0%7D&/index.php: 2 Time(s)
+       /oplpg&timeout%20/T%205/index.php: 2 Time(s)
+       /oplpg&type%20%25SYSTEMROOT%25%5Cwin.ini/index.php: 2 Time(s)
+       /oplpg'%20AND%20'1'='1'%20--/index.php: 2 Time(s)
+       /oplpg'%20AND%20'1'='1/index.php: 2 Time(s)
+       /oplpg'%20UNION%20ALL%20select%20NULL%20--/index.php: 2 Time(s)
+       /oplpg'%7Ctype%20%25SYSTEMROOT%25%5Cwin.ini/index.php: 2 Time(s)
+       /oplpg'&cat%20/etc/passwd&'/index.php: 2 Time(s)
+       /oplpg'&type%20%25SYSTEMROOT%25%5Cwin.ini&'/index.php: 2 Time(s)
+       /oplpg')%20UNION%20ALL%20select%20NULL%20--/index.php: 2 Time(s)
+       /oplpg'/index.php: 2 Time(s)
+       /oplpg';cat%20/etc/passwd;'/index.php: 2 Time(s)
+       /oplpg)%20UNION%20ALL%20select%20NULL%20--/index.php: 2 Time(s)
+       /oplpg)/index.php: 2 Time(s)
+       /oplpg/!--: 4 Time(s)
+       /oplpg/$%7B@print(chr(122).chr(97).chr(112 ... 1).chr(110))%7D: 2 Time(s)
+       /oplpg/$%7B@print(chr(122).chr(97).chr(112 ... chr(110))%7D%5C: 2 Time(s)
+       /oplpg/%22: 2 Time(s)
+       /oplpg/%2B: 2 Time(s)
+       /oplpg/%2Bresponse.write(%5B100%C2%A0000*100%C2%A0000)%2B: 2 Time(s)
+       /oplpg/%2Bresponse.write(%7B0%7D*%7B1%7D)%2B: 2 Time(s)
+       /oplpg/%3E%3C!--: 4 Time(s)
+       /oplpg/%5C%5C1077134022545916230.owasp.org: 2 Time(s)
+       /oplpg/%5C..%5C..%5C..%5C..%5C..%5C..%5C.. ... ..%5Cetc/passwd: 2 Time(s)
+       /oplpg/%5C..%5C..%5C..%5C..%5C..%5C..%5C.. ... B-INF%5Cweb.xml: 2 Time(s)
+       /oplpg/%5C..%5C..%5C..%5C..%5C..%5C..%5C.. ... ws%5Csystem.ini: 2 Time(s)
+       /oplpg/%5CWEB-INF%5Cweb.xml: 2 Time(s)
+       /oplpg/%5CWindows%5Csystem.ini: 2 Time(s)
+       /oplpg/%5Cetc/passwd: 2 Time(s)
+       /oplpg/%7C: 2 Time(s)
+       /oplpg/': 2 Time(s)
+       /oplpg/';print(chr(122).chr(97).chr(112).c ... hr(110));$var=': 2 Time(s)
+       /oplpg/): 2 Time(s)
+       /oplpg/..%5C..%5C..%5C..%5C..%5C..%5C..%5C ... ..%5Cetc/passwd: 2 Time(s)
+       /oplpg/..%5C..%5C..%5C..%5C..%5C..%5C..%5C ... B-INF%5Cweb.xml: 2 Time(s)
+       /oplpg/..%5C..%5C..%5C..%5C..%5C..%5C..%5C ... ws%5Csystem.ini: 2 Time(s)
+       /oplpg///1077134022545916230.owasp.org: 2 Time(s)
+       /oplpg//WEB-INF%5Cweb.xml: 2 Time(s)
+       /oplpg//Windows%5Csystem.ini: 2 Time(s)
+       /oplpg//etc/passwd: 2 Time(s)
+       /oplpg//p%3E%3Cscript%3Ealert(1);%3C/script%3E%3Cp: 2 Time(s)
+       /oplpg/0W45pz4p: 2 Time(s)
+       /oplpg/1077134022545916230.owasp.org: 2 Time(s)
+       /oplpg/;: 2 Time(s)
+       /oplpg/;print(chr(122).chr(97).chr(112).ch ... 101).chr(110));: 2 Time(s)
+       /oplpg/;print(chr(122).chr(97).chr(112).ch ... chr(110));$var=: 2 Time(s)
+       /oplpg/@: 2 Time(s)
+       /oplpg/any%3F%250ASet-cookie:%2520Tamper=2 ... 25-1256860bda8b: 1 Time(s)
+       /oplpg/any%3F%250ASet-cookie:%2520Tamper=c ... cd-764a684a1249: 1 Time(s)
+       /oplpg/any%3F%250D%250ASet-cookie:%2520Tam ... 25-1256860bda8b: 2 Time(s)
+       /oplpg/any%3F%250D%250ASet-cookie:%2520Tam ... cd-764a684a1249: 2 Time(s)
+       /oplpg/c:%5CWEB-INF%5Cweb.xml: 2 Time(s)
+       /oplpg/c:%5CWindows%5Csystem.ini: 2 Time(s)
+       /oplpg/c:%5Cetc/passwd: 2 Time(s)
+       /oplpg/c:/WEB-INF%5Cweb.xml: 2 Time(s)
+       /oplpg/c:/Windows%5Csystem.ini: 2 Time(s)
+       /oplpg/c:/etc/passwd: 2 Time(s)
+       /oplpg/http:%5C%5C1077134022545916230.owasp.org: 2 Time(s)
+       /oplpg/http://1077134022545916230.owasp.org: 4 Time(s)
+       /oplpg/http://www.google.com: 2 Time(s)
+       /oplpg/http://www.google.com/: 2 Time(s)
+       /oplpg/http://www.google.com/search%3Fq=OWASP%252520ZAP: 2 Time(s)
+       /oplpg/http://www.google.com:80/: 2 Time(s)
+       /oplpg/http://www.google.com:80/search%3Fq=OWASP%252520ZAP: 2 Time(s)
+       /oplpg/https:%5C%5C1077134022545916230.owasp.org: 2 Time(s)
+       /oplpg/https://1077134022545916230.owasp.org: 4 Time(s)
+       /oplpg/index.php%20AND%201=1: 2 Time(s)
+       /oplpg/index.php%20AND%201=1%20--: 2 Time(s)
+       /oplpg/index.php%20UNION%20ALL%20select%20NULL%20--: 2 Time(s)
+       /oplpg/index.php%22: 2 Time(s)
+       /oplpg/index.php%22%20AND%20%221%22=%221: 2 Time(s)
+       /oplpg/index.php%22%20AND%20%221%22=%221%22%20--: 2 Time(s)
+       /oplpg/index.php%22%20UNION%20ALL%20select%20NULL%20--: 2 Time(s)
+       /oplpg/index.php%22%7Ctimeout%20/T%205: 1 Time(s)
+       /oplpg/index.php%22%7Ctype%20%25SYSTEMROOT%25%5Cwin.ini: 2 Time(s)
+       /oplpg/index.php%22&cat%20/etc/passwd&%22: 2 Time(s)
+       /oplpg/index.php%22&sleep%205s&%22: 1 Time(s)
+       /oplpg/index.php%22&timeout%20/T%205&%22: 1 Time(s)
+       /oplpg/index.php%22&type%20%25SYSTEMROOT%25%5Cwin.ini&%22: 2 Time(s)
+       /oplpg/index.php%22;cat%20/etc/passwd;%22: 2 Time(s)
+       /oplpg/index.php%22;sleep%205s;%22: 1 Time(s)
+       /oplpg/index.php%7Ctimeout%20/T%20%7B0%7D: 1 Time(s)
+       /oplpg/index.php%7Ctimeout%20/T%205: 1 Time(s)
+       /oplpg/index.php%7Ctype%20%25SYSTEMROOT%25%5Cwin.ini: 2 Time(s)
+       /oplpg/index.php&cat%20/etc/passwd&: 2 Time(s)
+       /oplpg/index.php&sleep%20%7B0%7Ds&: 1 Time(s)
+       /oplpg/index.php&sleep%205s&: 2 Time(s)
+       /oplpg/index.php&timeout%20/T%20%7B0%7D&: 1 Time(s)
+       /oplpg/index.php&timeout%20/T%205: 2 Time(s)
+       /oplpg/index.php&type%20%25SYSTEMROOT%25%5Cwin.ini: 2 Time(s)
+       /oplpg/index.php': 2 Time(s)
+       /oplpg/index.php'%20AND%20'1'='1: 2 Time(s)
+       /oplpg/index.php'%20AND%20'1'='1'%20--: 2 Time(s)
+       /oplpg/index.php'%20UNION%20ALL%20select%20NULL%20--: 2 Time(s)
+       /oplpg/index.php'%7Ctype%20%25SYSTEMROOT%25%5Cwin.ini: 2 Time(s)
+       /oplpg/index.php'&cat%20/etc/passwd&': 2 Time(s)
+       /oplpg/index.php'&type%20%25SYSTEMROOT%25%5Cwin.ini&': 2 Time(s)
+       /oplpg/index.php')%20UNION%20ALL%20select%20NULL%20--: 2 Time(s)
+       /oplpg/index.php';cat%20/etc/passwd;': 2 Time(s)
+       /oplpg/index.php): 2 Time(s)
+       /oplpg/index.php)%20UNION%20ALL%20select%20NULL%20--: 2 Time(s)
+       /oplpg/index.php;: 2 Time(s)
+       /oplpg/index.php;cat%20/etc/passwd;: 2 Time(s)
+       /oplpg/index.php;sleep%20%7B0%7Ds;: 1 Time(s)
+       /oplpg/index.php;sleep%205s;: 2 Time(s)
+       /oplpg/response.write(100%C2%A0000*100%C2%A0000): 2 Time(s)
+       /oplpg/set-cookie:%20Tamper=27e77f44-fb91- ... 25-1256860bda8b: 1 Time(s)
+       /oplpg/set-cookie:%20Tamper=c70e2740-8dbf- ... cd-764a684a1249: 1 Time(s)
+       /oplpg/thishouldnotexistandhopefullyitwillnot: 2 Time(s)
+       /oplpg/www.google.com: 2 Time(s)
+       /oplpg/www.google.com/: 2 Time(s)
+       /oplpg/www.google.com/search%3Fq=OWASP%252520ZAP: 2 Time(s)
+       /oplpg/www.google.com:80/: 2 Time(s)
+       /oplpg/www.google.com:80/search%3Fq=OWASP%252520ZAP: 2 Time(s)
+       /oplpg/zApPX3sS: 1 Time(s)
+       /oplpg/zApPX5sS: 1 Time(s)
+       /oplpg;/index.php: 2 Time(s)
+       /oplpg;cat%20/etc/passwd;/index.php: 2 Time(s)
+       /oplpg;sleep%20%7B0%7Ds;/index.php: 2 Time(s)
+       /oplpg;sleep%205s;/index.php: 2 Time(s)
+       /response.write(100%C2%A0000*100%C2%A0000)/index.php: 2 Time(s)
+       /sdk/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2 ... vmInventory.xml: 2 Time(s)
+       /sdk/../../../../../..//etc/vmware/hostd/vmInventory.xml: 2 Time(s)
+       /set-cookie:%20Tamper=27e77f44-fb91-4e1e-a ... bda8b/index.php: 1 Time(s)
+       /set-cookie:%20Tamper=c70e2740-8dbf-44ca-9 ... a1249/index.php: 1 Time(s)
+       /sitemap.xml: 2 Time(s)
+       /thishouldnotexistandhopefullyitwillnot/index.php: 2 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       /www.google.com//index.php: 2 Time(s)
+       /www.google.com/index.php: 2 Time(s)
+       /www.google.com/search%3Fq=OWASP%252520ZAP/index.php: 2 Time(s)
+       /www.google.com:80//index.php: 2 Time(s)
+       /www.google.com:80/search%3Fq=OWASP%252520ZAP/index.php: 2 Time(s)
+       /zApPX2sS/index.php: 1 Time(s)
+       /zApPX4sS/index.php: 1 Time(s)
+       http://testp2.czar.bielawa.pl/testproxy.php: 1 Time(s)
+       http://zc.qq.com/cgi-bin/common/attr?id=26 ... 820851313088395: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 3 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      423   *Warning: Pre-queue content-filter connection overload 
+      443   SASL authentication failed 
+ 
+   97.103K  Bytes accepted                            99,433
+   97.854K  Bytes delivered                          100,202
+ ========   ================================================
+ 
+        6   Accepted                                  75.00%
+        2   Rejected                                  25.00%
+ --------   ------------------------------------------------
+        8   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject sender address                    100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      454   Connections made      
+        2   Connections lost      
+      454   Disconnections        
+        6   Removed from queue    
+        4   Delivered             
+        1   Sent via SMTP         
+        2   Forwarded             
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.185.134 (89-67-185-134.dynamic.chello.pl): 2 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   22G   29G  43% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

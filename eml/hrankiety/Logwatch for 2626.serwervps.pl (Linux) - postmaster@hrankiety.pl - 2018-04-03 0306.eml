@@ -1,0 +1,143 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id D61D09F20A07; Tue,  3 Apr 2018 03:06:06 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180403010606.D61D09F20A07@hrankiety.pl>
+Date: Tue,  3 Apr 2018 03:06:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Apr  3 03:06:05 2018
+        Date Range Processed: yesterday
+                              ( 2018-Apr-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Apr  2 03:36:14 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24439.cdiff [100%]
+    Downloading daily-24440.cdiff [100%]
+    Downloading daily-24441.cdiff [100%]
+    daily.cld updated (version: 24441, sigs: 1895286, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6461610 signatures) from db.local.clamav.net (IP: 88.198.202.11)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /resources/images/new_home_img/part5.png: 1 Time(s)
+       /resources/style/images/login/btn.png: 2 Time(s)
+    404 Not Found
+       /.DS_Store: 2 Time(s)
+       /.git/config: 2 Time(s)
+       /.hg/hgrc: 2 Time(s)
+       /.idea/WebServers.xml: 2 Time(s)
+       /.ssh/id_dsa: 2 Time(s)
+       /.ssh/id_ecdsa: 2 Time(s)
+       /.ssh/id_ed25519: 2 Time(s)
+       /.ssh/id_rsa: 2 Time(s)
+       /.svn/wc.db: 2 Time(s)
+       //wp-login.php: 1 Time(s)
+       /_asterisk/: 1 Time(s)
+       /a2billing/common/javascript/misc.js: 2 Time(s)
+       /index.action: 2 Time(s)
+       /index.do: 1 Time(s)
+       /lib/phpunit/Util/PHP/eval-stdin.php: 2 Time(s)
+       /lib/phpunit/phpunit/Util/PHP/eval-stdin.php: 2 Time(s)
+       /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /lib/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /manager/html: 1 Time(s)
+       /phpunit/Util/PHP/eval-stdin.php: 2 Time(s)
+       /phpunit/phpunit/Util/PHP/eval-stdin.php: 2 Time(s)
+       /phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /sftp_config.json: 2 Time(s)
+       /vendor/phpunit/Util/PHP/eval-stdin.php: 2 Time(s)
+       /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php: 2 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /vendor/phpunit/src/Util/PHP/eval-stdin.php: 2 Time(s)
+       /wls-wsat/CoordinatorPortType: 1 Time(s)
+       /wp-content/plugins/cloudflare/vendor/phpu ... /eval-stdin.php: 2 Time(s)
+       /wp-content/plugins/dzs-videogallery/class ... /eval-stdin.php: 2 Time(s)
+       /wp-content/plugins/jekyll-exporter/vendor ... /eval-stdin.php: 2 Time(s)
+       /wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      192   *Warning: Pre-queue content-filter connection overload 
+      279   SASL authentication failed 
+       20   Miscellaneous warnings 
+ 
+  351.962K  Bytes accepted                           360,409
+  345.903K  Bytes delivered                          354,205
+ ========   ================================================
+ 
+       11   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       11   Total                                    100.00%
+ ========   ================================================
+ 
+      275   Connections made      
+      275   Disconnections        
+       11   Removed from queue    
+        9   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Excessive errors in SMTP commands dialog 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   36G   15G  72% /
+ none             95G  4.0K   95G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

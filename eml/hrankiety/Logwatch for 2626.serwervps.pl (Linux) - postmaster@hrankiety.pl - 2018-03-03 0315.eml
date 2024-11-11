@@ -1,0 +1,176 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id A2F2E35A2219; Sat,  3 Mar 2018 03:15:28 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180303021528.A2F2E35A2219@hrankiety.pl>
+Date: Sat,  3 Mar 2018 03:15:06 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Mar  3 03:15:05 2018
+        Date Range Processed: yesterday
+                              ( 2018-Mar-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Mar  2 03:22:39 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.2 Recommended version: 0.99.3
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24354.cdiff [100%]
+    Downloading daily-24355.cdiff [100%]
+    daily.cld updated (version: 24355, sigs: 1864800, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    Database updated (6431124 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    91.237.196.40
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 10 Time(s)
+    404 Not Found
+       /.git/index: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /blog/wp-login.php: 1 Time(s)
+       /cgi-bin/php: 1 Time(s)
+       /cgi-bin/php-cgi: 1 Time(s)
+       /cgi-bin/php.cgi: 1 Time(s)
+       /cgi-bin/php4: 1 Time(s)
+       /cgi-bin/php5: 1 Time(s)
+       /cgi-bin/php5-cli: 1 Time(s)
+       /cgi-bin/test.cgi: 1 Time(s)
+       /cgi-sys/php5: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wordpress/wp-login.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wp/wp-login.php: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      355   *Warning: Pre-queue content-filter connection overload 
+      443   SASL authentication failed 
+       37   Miscellaneous warnings 
+ 
+    2.438M  Bytes accepted                         2,555,972
+    2.432M  Bytes delivered                        2,549,775
+ ========   ================================================
+ 
+       20   Accepted                                  90.91%
+        2   Rejected                                   9.09%
+ --------   ------------------------------------------------
+       22   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      465   Connections made      
+      465   Disconnections        
+       20   Removed from queue    
+       18   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    useradd: failed adding user 'postgres', exit code: 9: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.73.82.159 (89-73-82-159.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    p7zip-16.02-10.el6.i686
+    p7zip-plugins-16.02-10.el6.i686
+    postgresql94-contrib-9.4.17-1PGDG.rhel6.i686
+    postgresql94-9.4.17-1PGDG.rhel6.i686
+    fail2ban-0.9.6-1.el6.1.noarch
+    postgresql94-server-9.4.17-1PGDG.rhel6.i686
+    postgresql94-libs-9.4.17-1PGDG.rhel6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   35G   16G  70% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

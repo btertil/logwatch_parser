@@ -1,0 +1,143 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id BCC9C111019E1; Mon,  8 Sep 2014 03:36:12 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 881F1111019DF
+	for <root@2626.serwervps.pl>; Mon,  8 Sep 2014 05:36:12 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 6Vxxz0yxVy6o for <root@2626.serwervps.pl>;
+	Mon,  8 Sep 2014 03:36:06 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 2AA89111019DA; Mon,  8 Sep 2014 03:36:06 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140908013606.2AA89111019DA@2626.serwervps.pl>
+Date: Mon,  8 Sep 2014 03:36:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Sep  8 03:36:04 2014
+        Date Range Processed: yesterday
+                              ( 2014-Sep-07 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (11353-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140907013007.0DB9D111019C3@2626.serwervps.pl>, mail_id: VKWm1YetDD8m, Hits: 0.001, size: 2288, queued_as: A5570111019CC, 3642 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (11352-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140907013708.7E9F2111019CD@2626.serwervps.pl>, mail_id: hTLDuT_83RE7, Hits: 0, size: 5125, queued_as: 5B18C111019D0, 1866 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Sep  7 03:37:08 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19342.cdiff [100%]
+    daily.cld updated (version: 19342, sigs: 1098131, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3522402 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    66.172.99.189
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       //mysql/scripts/setup.php: 1 Time(s)
+       //phpadmin/scripts/setup.php: 1 Time(s)
+       //web/phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /bhadmin.php: 1 Time(s)
+       /js/jquery/default.aspx: 1 Time(s)
+       http://www.k2proxy.com//hello.html: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       83   *Warning: Pre-queue content-filter connection overload 
+      217   SASL authentication failed 
+        1   Miscellaneous warnings 
+ 
+   23.816K  Bytes accepted                            24,388
+   23.816K  Bytes delivered                           24,388
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+      107   Connections made      
+      107   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+       22   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.5G   44G  13% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

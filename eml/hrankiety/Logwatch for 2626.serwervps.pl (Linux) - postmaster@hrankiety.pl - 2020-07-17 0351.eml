@@ -1,0 +1,158 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 4E56C9F20475; Fri, 17 Jul 2020 03:51:17 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200717015117.4E56C9F20475@hrankiety.pl>
+Date: Fri, 17 Jul 2020 03:51:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Jul 17 03:51:05 2020
+        Date Range Processed: yesterday
+                              ( 2020-Jul-16 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Jul 16 03:08:22 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.3
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25874.cdiff [100%]
+    daily.cld updated (version: 25874, sigs: 3410927, f-level: 63, builder: raynman)
+    Can't query daily.25874.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (7975923 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    143.92.32.106 -> g.alicdn.com:443: 1 Time(s)
+    143.92.32.106 -> httpbin.org:443: 1 Time(s)
+    143.92.32.106 -> sm.bdimg.com:443: 2 Time(s)
+    143.92.32.86 -> g.alicdn.com:443: 1 Time(s)
+    143.92.32.86 -> httpbin.org:443: 1 Time(s)
+    222.186.61.19 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 4 sites probed the server 
+    115.29.220.205
+    185.202.2.147
+    5.182.210.206
+    92.63.194.47
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 26 Time(s)
+       /mMXJ: 1 Time(s)
+       g.alicdn.com:443: 2 Time(s)
+       httpbin.org:443: 2 Time(s)
+       null: 6 Time(s)
+       sm.bdimg.com:443: 2 Time(s)
+    404 Not Found
+       /ReportServer: 1 Time(s)
+       /TP/html/public/index.php: 2 Time(s)
+       /TP/index.php: 2 Time(s)
+       /TP/public/index.php: 2 Time(s)
+       /ads.txt: 1 Time(s)
+       /boaform/admin/formLogin: 1 Time(s)
+       /config/getuser?index=0: 1 Time(s)
+       /elrekt.php: 2 Time(s)
+       /html/public/index.php: 2 Time(s)
+       /humans.txt: 1 Time(s)
+       /index.php: 2 Time(s)
+       /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /public/index.php: 2 Time(s)
+       /remote/login: 1 Time(s)
+       /solr/: 2 Time(s)
+       /thinkphp/html/public/index.php: 2 Time(s)
+       /wp-login.php: 6 Time(s)
+       http://www.proxylists.net/proxyjudge.php: 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       40   *Warning: Pre-queue content-filter connection overload 
+    28320   SASL authentication failed 
+      117   Miscellaneous warnings 
+ 
+    3.155M  Bytes accepted                         3,308,420
+    3.149M  Bytes delivered                        3,302,218
+ ========   ================================================
+ 
+       61   Accepted                                  98.39%
+        1   Rejected                                   1.61%
+ --------   ------------------------------------------------
+       62   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        3   4xx Reject relay denied                  100.00%
+ --------   ------------------------------------------------
+        3   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+    28443   Connections made      
+    28446   Disconnections        
+       61   Removed from queue    
+       59   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   30G   21G  59% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

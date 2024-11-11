@@ -1,0 +1,243 @@
+From: root@2626.serwervps.pl
+To: postmaster@hrankiety.pl
+Subject: Details of this iRedMail installation
+
+Admin of domain hrankiety.pl:
+    * Account: postmaster@hrankiety.pl
+    * Password: Rotax912S
+
+    Note:
+        - This account is used for system administrations, not a mail user.
+        - You can login iRedAdmin with this account, login name
+          is full email address.
+
+First mail user:
+    * Username: postmaster@hrankiety.pl
+    * Password: Rotax912S
+    * SMTP/IMAP auth type: login
+    * Connection security: STARTTLS or SSL/TLS
+
+    Note:
+        - This account is a normal mail user.
+        - You can login webmail with this account, login name is full email address.
+
+
+SSL cert keys (size: 2048):
+    - /etc/pki/tls/certs/iRedMail_CA.pem
+    - /etc/pki/tls/private/iRedMail.key
+
+Mail Storage:
+    - Root directory: /var/vmail
+    - Mailboxes: /var/vmail/vmail1
+    - Backup scripts and copies: /var/vmail/backup
+
+Apache:
+    * Configuration files:
+        - /etc/httpd
+        - /etc/httpd/conf/httpd.conf
+        - /etc/httpd/conf.d/*
+    * Directories:
+        - /var/www
+        - /var/www/html
+    * See also:
+        - /var/www/html/index.html
+
+PHP:
+    * Configuration file: /etc/php.ini
+    * Disabled functions: show_source,system,shell_exec,passthru,exec,phpinfo,proc_open
+
+MySQL:
+    * Root user: root, Password: Rotax912S
+    * Bind account (read-only):
+        - Username: vmail, Password: tC4dW7zYWd34Fri1NDCKcuKMcxrltP
+    * Vmail admin account (read-write):
+        - Username: vmailadmin, Password: kMagB7u8MvXs7ZHfQ4RLyHCIC2RDJe
+    * RC script: /etc/init.d/mysqld
+    * See also:
+        - /root/iRedMail-0.8.5/conf/mysql_init.sql
+
+Virtual Users:
+    - /root/iRedMail-0.8.5/samples/iredmail.mysql
+    - /root/iRedMail-0.8.5/conf/mysql_vmail.sql
+
+Postfix (basic):
+    * Configuration files:
+        - /etc/postfix
+        - /etc/postfix/aliases
+        - /etc/postfix/main.cf
+        - /etc/postfix/master.cf
+
+Postfix (MySQL):
+    * Configuration files:
+        - /etc/postfix/mysql/transport_maps_domain.cf
+        - /etc/postfix/mysql/transport_maps_user.cf
+        - /etc/postfix/mysql/virtual_mailbox_domains.cf
+        - /etc/postfix/mysql/relay_domains.cf
+        - /etc/postfix/mysql/virtual_mailbox_maps.cf
+        - /etc/postfix/mysql/virtual_alias_maps.cf
+        - /etc/postfix/mysql/domain_alias_maps.cf
+        - /etc/postfix/mysql/catchall_maps.cf
+        - /etc/postfix/mysql/domain_alias_catchall_maps.cf
+        - /etc/postfix/mysql/sender_login_maps.cf
+        - /etc/postfix/mysql/sender_bcc_maps_domain.cf
+        - /etc/postfix/mysql/sender_bcc_maps_user.cf
+        - /etc/postfix/mysql/recipient_bcc_maps_domain.cf
+        - /etc/postfix/mysql/recipient_bcc_maps_user.cf
+Policyd:
+    * Configuration files:
+        - /etc/policyd.conf
+    * RC script:
+        - /etc/init.d/policyd
+    * Misc:
+        - /etc/cron.daily/policyd-cleanup
+        - crontab -l -u policyd
+
+
+Dovecot:
+    * Configuration files:
+        - /etc/dovecot/dovecot.conf
+        - /etc/dovecot/dovecot-ldap.conf (For OpenLDAP backend)
+        - /etc/dovecot/dovecot-mysql.conf (For MySQL backend)
+        - /etc/dovecot/dovecot-pgsql.conf (For PostgreSQL backend)
+        - /etc/dovecot/dovecot-used-quota.conf (For real-time quota usage)
+        - /etc/dovecot/dovecot-share-folder.conf (For IMAP sharing folder)
+    * RC script: /etc/init.d/dovecot
+    * Log files:
+        - /var/log/dovecot.log
+        - /var/log/sieve.log
+    * See also:
+        - /var/vmail/sieve/dovecot.sieve
+        - Logrotate config file: /etc/logrotate.d/dovecot
+
+ClamAV:
+    * Configuration files:
+        - /etc/clamd.conf
+        - /etc/freshclam.conf
+        - /etc/logrotate.d/clamav
+    * RC scripts:
+            + /etc/init.d/clamd
+            + /etc/init.d/freshclamd
+    * Log files:
+        - /var/log/clamav/clamd.log
+        - /var/log/clamav/freshclam.log
+
+DNS record for DKIM support:
+
+; key#1, domain hrankiety.pl, /var/lib/dkim/hrankiety.pl.pem
+dkim._domainkey.hrankiety.pl.	3600 TXT (
+  "v=DKIM1; p="
+  "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBLQMY5BZ5yBbXrds1I7Q0R1XB"
+  "pmmPYzeQBBKLBaS43zHjiUC3iSJbBlTMmDxXErehOtFKGR+2HccbtRfbI4nwL1ZM"
+  "AvGR9xfAweFCWUZao+Do/2CY1YeZnJHAyu5y7dZEPZzZtUf+1dlzs6PgFYKtW4na"
+  "oecdHJWJai4Go2Yp+wIDAQAB")
+
+Amavisd-new:
+    * Configuration files:
+        - /etc/amavisd/amavisd.conf
+        - /etc/postfix/master.cf
+        - /etc/postfix/main.cf
+    * RC script:
+        - /etc/init.d/amavisd
+    * MySQL Database:
+        - Database name: amavisd
+        - Database user: amavisd
+        - Database password: 9uacMuFkOMBNMtz5YCFmgLBDdIQgCs
+        - SQL template: /root/iRedMail-0.8.5/samples/amavisd/amavisd.mysql
+
+SpamAssassin:
+    * Configuration files and rules:
+        - /etc/mail/spamassassin
+        - /etc/mail/spamassassin/local.cf
+
+iRedAPD - Postfix Policy Daemon:
+    * Version: 1.4.1
+    * Listen address: 127.0.0.1, port: 7777
+    * Related files:
+        - /opt/iRedAPD-1.4.1/
+        - /opt/iredapd/
+        - /opt/iredapd/etc/settings.py
+iRedAdmin - official web-based admin panel:
+    * Version: 0.2.2
+    * Configuration files:
+        - /var/www/iRedAdmin-0.2.2/
+        - /var/www/iRedAdmin-0.2.2/settings.ini*
+    * URL:
+        - https://2626.serwervps.pl/iredadmin/
+    * Login account:
+        - Username: postmaster@hrankiety.pl, password: Rotax912S
+    * SQL database account:
+        - Database name: iredadmin
+        - Username: iredadmin
+        - Password: gK0h0d1xxgZoPuSPbMojywk6mhNVR1
+    * Settings:
+        - /var/www/iRedAdmin-0.2.2/settings.ini
+        - Addition settings for Policyd & Amavisd integration support in iRedAdmin-Pro:
+
+        [policyd]
+        enabled = True
+        host = 127.0.0.1
+        port = 3306
+        db = policyd
+        user = policyd
+        passwd = VHkCN2zSm4wAeTI69QgVDT8rsQvSDx
+
+        [amavisd]
+        quarantine = True
+        quarantine_port = 9998
+
+        logging_into_sql = True
+        host = 127.0.0.1
+        port = 3306
+        db = amavisd
+        user = amavisd
+        passwd = 9uacMuFkOMBNMtz5YCFmgLBDdIQgCs
+
+    * See also:
+        - /etc/httpd/conf.d/iredadmin.conf
+
+Awstats:
+    * Configuration files:
+        - /etc/awstats
+        - /etc/awstats/awstats.web.conf
+        - /etc/awstats/awstats.smtp.conf
+        - /etc/httpd/conf.d/awstats.conf
+    * Login account:
+        - Username: postmaster@hrankiety.pl, password: Rotax912S
+    * URL:
+        - https://2626.serwervps.pl/awstats/awstats.pl
+        - https://2626.serwervps.pl/awstats/awstats.pl?config=web
+        - https://2626.serwervps.pl/awstats/awstats.pl?config=smtp
+    * Crontab job:
+        shell> crontab -l root
+
+Roundcube webmail:
+    * Configuration files:
+        - /var/www/roundcubemail-0.9.2/
+        - /var/www/roundcubemail-0.9.2/config/
+    * URL:
+        - http://2626.serwervps.pl/mail/
+        - https://2626.serwervps.pl/mail/ (Over SSL/TLS)
+        - http://2626.serwervps.pl/webmail/
+        - https://2626.serwervps.pl/webmail/ (Over SSL/TLS)
+    * Login account:
+        - Username: postmaster@hrankiety.pl, password: Rotax912S
+    * See also:
+        - /etc/httpd/conf.d/roundcubemail.conf
+
+phpMyAdmin:
+    * Configuration files:
+        - /var/www/phpMyAdmin-4.0.4.1-all-languages
+        - /var/www/phpMyAdmin-4.0.4.1-all-languages/config.inc.php
+    * Login account:
+        - Username: root, password: Rotax912S
+        - Username: vmailadmin, password: kMagB7u8MvXs7ZHfQ4RLyHCIC2RDJe
+        - Username (read-only): vmail, password: tC4dW7zYWd34Fri1NDCKcuKMcxrltP
+    * URL:
+        - https://2626.serwervps.pl/phpmyadmin
+    * See also:
+        - /etc/httpd/conf.d/phpmyadmin.conf
+
+Backup MySQL database:
+    * Script: /var/vmail/backup/backup_mysql.sh
+    * See also:
+        # crontab -l -u root

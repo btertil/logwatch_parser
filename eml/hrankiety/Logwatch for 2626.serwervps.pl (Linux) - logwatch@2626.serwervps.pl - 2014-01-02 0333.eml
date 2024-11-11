@@ -1,0 +1,176 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 55D8913D81E4D; Thu,  2 Jan 2014 03:33:26 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 48D3013D81A92
+	for <root@2626.serwervps.pl>; Thu,  2 Jan 2014 05:33:26 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id e4iI_enXWyEe for <root@2626.serwervps.pl>;
+	Thu,  2 Jan 2014 03:33:07 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id C586913D81E4D; Thu,  2 Jan 2014 03:33:07 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140102023307.C586913D81E4D@2626.serwervps.pl>
+Date: Thu,  2 Jan 2014 03:33:06 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Jan  2 03:33:05 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jan-01 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        9   *Warning              
+ 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (18181-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140101040615.5536313D81AD6@2626.serwervps.pl>, mail_id: xFVB_LLXxiZX, Hits: 0, size: 859, queued_as: 87A0F13D81AD5, 19097 ms
+        1   (18182-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140101023107.D483513D81AD6@2626.serwervps.pl>, mail_id: fFTf3UjweChA, Hits: 0, size: 9719, queued_as: 4B79213D81AD5, 17396 ms
+        1   (18181-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140101023006.170EB13D81AD6@2626.serwervps.pl>, mail_id: FgwN2ezOUen9, Hits: 0.001, size: 2286, queued_as: 0E85313D81AD5, 18988 ms
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   No ext program for   .tnef, tried: tnef
+        1   No ext program for   .doc, tried: ripole
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed Jan  1 03:31:08 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18308.cdiff [100%]
+    Downloading daily-18309.cdiff [100%]
+    Downloading daily-18310.cdiff [100%]
+    Downloading daily-18311.cdiff [100%]
+    daily.cld updated (version: 18311, sigs: 633518, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (3057787 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ lstat() failed on: /var/spool/amavisd/tmp/amavis-20140101T033006-18181-6_Z47nuC/parts
+ lstat() failed on: /var/spool/amavisd/tmp/amavis-20140101T033107-18182-ZCIqHgVX/parts
+ lstat() failed on: /var/spool/amavisd/tmp/amavis-20140101T033006-18181-6_Z47nuC/parts
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    117.79.145.99
+    68.65.145.226
+    87.116.161.10
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 1 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 1 Time(s)
+       /slub/thumbs/a%20(34).jpg: 2 Time(s)
+       /vtigercrm/graph.php?current_language=../. ... Accounts&action: 2 Time(s)
+       /webdav/: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+   40.820K  Bytes accepted                            41,800
+   40.820K  Bytes delivered                           41,800
+ ========   ================================================
+ 
+        9   Accepted                                  90.00%
+        1   Rejected                                  10.00%
+ --------   ------------------------------------------------
+       10   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        4   Connections made      
+        4   Disconnections        
+        9   Removed from queue    
+        3   Delivered             
+        3   Sent via SMTP         
+        3   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 3 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.2G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

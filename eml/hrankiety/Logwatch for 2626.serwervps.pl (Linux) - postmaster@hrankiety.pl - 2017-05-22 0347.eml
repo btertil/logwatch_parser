@@ -1,0 +1,119 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 6DFE435A22FD; Mon, 22 May 2017 03:47:08 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170522014708.6DFE435A22FD@hrankiety.pl>
+Date: Mon, 22 May 2017 03:47:06 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon May 22 03:47:06 2017
+        Date Range Processed: yesterday
+                              ( 2017-May-21 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun May 21 03:32:14 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-23400.cdiff [100%]
+    Downloading daily-23401.cdiff [100%]
+    Downloading daily-23402.cdiff [100%]
+    daily.cld updated (version: 23402, sigs: 2075645, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 301, sigs: 58, f-level: 63, builder: anvilleg)
+    Database updated (6294493 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /x: 1 Time(s)
+    404 Not Found
+       /CFIDE/administrator/: 1 Time(s)
+       /admin/images/tango.png: 1 Time(s)
+       /index.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+    405 Method Not Allowed
+       /webdav/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      285   *Warning: Pre-queue content-filter connection overload 
+      346   SASL authentication failed 
+       18   Miscellaneous warnings 
+ 
+    2.545M  Bytes accepted                         2,668,656
+    2.537M  Bytes delivered                        2,659,872
+ ========   ================================================
+ 
+       11   Accepted                                  84.62%
+        2   Rejected                                  15.38%
+ --------   ------------------------------------------------
+       13   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      354   Connections made      
+      354   Disconnections        
+       11   Removed from queue    
+        7   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   30G   21G  60% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

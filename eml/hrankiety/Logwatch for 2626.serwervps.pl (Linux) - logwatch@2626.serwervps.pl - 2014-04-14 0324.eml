@@ -1,0 +1,174 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id C4AF1111015FC; Mon, 14 Apr 2014 03:24:25 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id A9629111015EC
+	for <root@2626.serwervps.pl>; Mon, 14 Apr 2014 05:24:25 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id hY-9EfzaQuRF for <root@2626.serwervps.pl>;
+	Mon, 14 Apr 2014 03:24:17 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 90AAD111015DD; Mon, 14 Apr 2014 03:24:16 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140414012416.90AAD111015DD@2626.serwervps.pl>
+Date: Mon, 14 Apr 2014 03:24:13 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Apr 14 03:24:12 2014
+        Date Range Processed: yesterday
+                              ( 2014-Apr-13 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   No ext program for   .tnef, tried: tnef
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (02442-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140413013005.13282111015F5@2626.serwervps.pl>, mail_id: Q2tmP4Mfe7_0, Hits: 0, size: 2288, queued_as: 6FD2C111015F1, 24495 ms
+        1   (02442-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN24> line 3108.
+        1   (02441-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140413012507.02B6E111015E9@2626.serwervps.pl>, mail_id: 2huphPNHknyW, Hits: -0.001, size: 5021, queued_as: 7DC58111015ED, 6124 ms
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Apr 13 03:25:07 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    Trying host db.local.clamav.net (85.254.217.235)...
+    Downloading daily-18779.cdiff [100%]
+    Downloading daily-18780.cdiff [100%]
+    Downloading daily-18781.cdiff [100%]
+    Downloading daily-18782.cdiff [100%]
+    Downloading daily-18783.cdiff [100%]
+    daily.cld updated (version: 18783, sigs: 883620, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3307888 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       //PMA/README: 1 Time(s)
+       //README: 1 Time(s)
+       //admin/README: 1 Time(s)
+       //admin/phpmyadmin/README: 1 Time(s)
+       //admin/pma/README: 1 Time(s)
+       //admm/README: 1 Time(s)
+       //databaseadmin/README: 1 Time(s)
+       //db/README: 1 Time(s)
+       //dbadmin/README: 1 Time(s)
+       //myadmin/README: 1 Time(s)
+       //mysql-admin/README: 1 Time(s)
+       //mysql/README: 1 Time(s)
+       //mysqladmin/README: 1 Time(s)
+       //mysqlmanager/README: 1 Time(s)
+       //p/m/a/README: 1 Time(s)
+       //php-my-admin/README: 1 Time(s)
+       //php-myadmin/README: 1 Time(s)
+       //phpMyAdmin/README: 1 Time(s)
+       //phpMyAdmin3/README: 1 Time(s)
+       //phpadmin/README: 1 Time(s)
+       //phpmanager/README: 1 Time(s)
+       //phpmy-admin/README: 1 Time(s)
+       //phpmyadmin/README: 1 Time(s)
+       //phpmyadmin3/README: 1 Time(s)
+       //pma/README: 1 Time(s)
+       //sqlmanager/README: 1 Time(s)
+       //sqlweb/README: 1 Time(s)
+       //typo3/phpmyadmin/README: 1 Time(s)
+       //web/README: 1 Time(s)
+       //web/phpMyAdmin/README: 1 Time(s)
+       //webadmin/README: 1 Time(s)
+       //webdb/README: 1 Time(s)
+       //websql/README: 1 Time(s)
+       //xampp/phpmyadmin/README: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       92   *Warning: Pre-queue content-filter connection overload 
+ 
+   23.512K  Bytes accepted                            24,076
+   23.512K  Bytes delivered                           24,076
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+       94   Connections made      
+       94   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 2 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.3G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,119 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9B8F935A32A6; Tue,  6 Mar 2018 03:49:15 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180306024915.9B8F935A32A6@hrankiety.pl>
+Date: Tue,  6 Mar 2018 03:49:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Mar  6 03:49:07 2018
+        Date Range Processed: yesterday
+                              ( 2018-Mar-05 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Mar  5 03:43:02 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.2 Recommended version: 0.99.4
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24362.cdiff [100%]
+    Downloading daily-24363.cdiff [100%]
+    Downloading daily-24364.cdiff [100%]
+    daily.cld updated (version: 24364, sigs: 1867256, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    Database updated (6433580 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /resources/memberCss/img/body/ocean.jpg: 1 Time(s)
+    404 Not Found
+       /a2billing/common/javascript/misc.js: 1 Time(s)
+       /webdav: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      170   *Warning: Pre-queue content-filter connection overload 
+      186   SASL authentication failed 
+       42   Miscellaneous warnings 
+ 
+  381.554K  Bytes accepted                           390,711
+  375.502K  Bytes delivered                          384,514
+ ========   ================================================
+ 
+       20   Accepted                                  86.96%
+        3   Rejected                                  13.04%
+ --------   ------------------------------------------------
+       23   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                          66.67%
+        1   Reject sender address                     33.33%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      222   Connections made      
+       11   Connections lost      
+      222   Disconnections        
+       20   Removed from queue    
+       18   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   35G   16G  70% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

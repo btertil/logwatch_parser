@@ -1,0 +1,134 @@
+Delivered-To: bondiev@gmail.com
+Received: by 10.237.48.49 with SMTP id 46csp4896019qte;
+        Mon, 4 Dec 2017 18:27:12 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMby+Hf0yT4ThBB/s//uDzv9TK75nH1dnYuZhiPzGw03Z+RW67F28g9Z/7hIqs59RnfFvJvF
+X-Received: by 10.28.249.26 with SMTP id x26mr4902985wmh.36.1512440832298;
+        Mon, 04 Dec 2017 18:27:12 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1512440832; cv=none;
+        d=google.com; s=arc-20160816;
+        b=t8LY/24+6OVz6C3XPTlzslFCVGn2LvNLWoLPRaoEx0oyKnC6EKUJMMlnkWT1A/29gu
+         06yEdOdcdPhJ/oT1/YQasFLwHSqymlJsbqkQY0tzfibfez1Wv3VBxcNyMHksy2XL/k9p
+         soA3ElMT4a7FdycoDk4pKzQsyXDfP89D9BxfbvD/4KsImHtBjRpHgq0Y97lDRL+1fABN
+         4/9MAYjQWXZFYgX6xodUdRUYTI8/LXC9l1oHk3HGv4dHE+uHmjnsx54mGooVV326YlEN
+         w1shYctEJQreY/tdw2itLu9rZ+G/uONWIjv6cqizcJQxAgPbOrzAOlalTnhRr02KLWbO
+         Snlw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to:arc-authentication-results;
+        bh=Lzz+h0PfeGIRD321gDrs1Wn1qKL81mg4JRCa23xa9U8=;
+        b=qLqdkZJ29dkVQANVbhQ0YM5r/uX8ZesTGdrRpOvyKDKTGL5g75X36TORQuExvVDV1s
+         0njDLXRu+CHA3jySM4+3LYBKM9oxfZf/wPjD+yOVchRfKD7aWj1wdSVQtoCffUuCo6Ao
+         OGQeNuLGYW/u5k4Tp4jwRf7ONeOOOlOCSwsPGah81HT9bDWu0/BrY//WfFh3YltGgKui
+         ID7qI+zEGC7L5iScaH6WLSkHEMeMqwgZXdQdKb7oR+0dxx2LzzCAd7tF1NUIhMC+zK30
+         sP93JnG92zL3LKG2qQQgeENCX7t/DlHIBSir+E1Tur5lgKbrVQXJAXzmSFnu95msurA7
+         rcpQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id h64si704649wmi.85.2017.12.04.18.27.11
+        for <bondiev@gmail.com>;
+        Mon, 04 Dec 2017 18:27:12 -0800 (PST)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id D4FD34A8395F; Tue,  5 Dec 2017 03:27:10 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20171205022710.D4FD34A8395F@vis1.localdomain>
+Date: Tue,  5 Dec 2017 03:27:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Dec  5 03:27:08 2017
+        Date Range Processed: yesterday
+                              ( 2017-Dec-04 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Dec  4 03:23:10 2017
+ 
+ Last Status:
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24096.cdiff [100%]
+    Downloading daily-24097.cdiff [100%]
+    Downloading daily-24098.cdiff [100%]
+    daily.cld updated (version: 24098, sigs: 1795630, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 318, sigs: 75, f-level: 63, builder: raynman)
+    Database updated (6361954 signatures) from db.local.clamav.net (IP: 91.219.236.218)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /a2billing/common/javascript/misc.js: 2 Time(s)
+       /ccvv: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    3.601K  Bytes accepted                             3,687
+    3.601K  Bytes delivered                            3,687
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   20G   11G  65% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

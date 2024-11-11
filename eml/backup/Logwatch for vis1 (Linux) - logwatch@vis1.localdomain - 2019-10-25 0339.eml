@@ -1,0 +1,174 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:799:0:0:0:0 with SMTP id l25csp2983567ejc;
+        Thu, 24 Oct 2019 18:39:14 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqy3L5OJVeyY0/cF11w5lBoz+oDlLCEZPSpHHa8S6D9Rwn16Zne30mbgiclItgsQ/YklWP1K
+X-Received: by 2002:ac2:5627:: with SMTP id b7mr685691lff.6.1571967554062;
+        Thu, 24 Oct 2019 18:39:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1571967554; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YDEuaXIj8JM6HzHB9uj3i2GkU36nT7OZuSIqD2Qev21sJAhdEJKvq4MWu/z85qz9vh
+         LTAdCZbwcUs7YI+djmT3/YqzxtKLGjpTEgMHdkwnPKbsmZNV/MpJlwPQL8JbT1YmQ1aK
+         QVfw1mHVh93nfnSPH8SmXZsTLQcKAP0OPjijwbc9s7qE8rCytDkxzlRqk3DiGdgecSiC
+         5CVlKj+YmwZyF/kDZyAh1TneRQ8yUL8hfa1ANV09nEA+6LnS5vT9ZJHGXCD4Wy8kYz+8
+         6WCsY6+Co1fisFADpnRUNZpW+Bpk/JFIiHG/pk46ECPChvV3H0KY8Rr6LcbCQVsD93Dq
+         y9lA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=iZYlxLP6r3NC9WEgIpvYmP0t4mP981NW9647ifPJKOw=;
+        b=P4MczHzHIzXg6YpJVeX5PSwUUIylEhTaFGAG9Rs8vkL/n2VjsM8Cq0pVFjkDJacW8z
+         iakPmcSkt9LUwBgAMGVUDgrMWIhCVIJePyZrFrD75+XSU4OT656FyJrPG8V+x30AfD1Z
+         tByDJhUvgqlM3wgJONWx98ZJmoqEOVVN1Mphz5T8PR2EU5Qt1wbXJVfBTbVlmNh+j/wb
+         BH1anAYh3MqMswhP3l8z0sO3wQtiP8T3fNMYVjO83d9WS0mKNlc9c/YyKwUt2NDu69OB
+         B6jpqyESXRXqZ5SJo9m86wlqqOKEw1nzThFHjz9+Lr6unYmz9hzDqImS4eu+srC4g0Q3
+         xkVw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id j140si320374lfj.52.2019.10.24.18.39.13
+        for <bondiev@gmail.com>;
+        Thu, 24 Oct 2019 18:39:14 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id E46CA4A812CE; Fri, 25 Oct 2019 03:39:12 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191025013912.E46CA4A812CE@vis1.localdomain>
+Date: Fri, 25 Oct 2019 03:39:11 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Oct 25 03:39:10 2019
+        Date Range Processed: yesterday
+                              ( 2019-Oct-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Oct 24 03:51:10 2019
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25611.cdiff [100%]
+    daily.cld updated (version: 25611, sigs: 1952685, f-level: 63, builder: raynman)
+    Can't query daily.25611.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6519028 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    185.153.199.7
+    193.188.22.187
+    193.188.22.76
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 6 Time(s)
+    404 Not Found
+       //a2billing/customer/templates/default/footer.tpl: 1 Time(s)
+       /HNAP1: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /corporate/webpages/login.jsp: 2 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       /evox/about: 1 Time(s)
+       /index.php: 3 Time(s)
+       /index.php?s=/index/\\\\think\\\\request/cache&key=1|phpinfo: 1 Time(s)
+       /index.php?s=/index/\\think\\app/invokefun ... nfo&vars[1][]=1: 1 Time(s)
+       /index.php?s=captcha: 6 Time(s)
+       /index.php?s=index/\\think\\Container/invo ... nfo&vars[1][]=1: 1 Time(s)
+       /index.php?s=index/\\think\\Request/input& ... =phpinfo&data=1: 1 Time(s)
+       /index.php?s=index/\\think\\app/invokefunc ... nfo&vars[1][]=1: 1 Time(s)
+       /index.php?s=index/\\think\\view\\driver\\ ... hpinfo()%3b%3f>: 1 Time(s)
+       /index.php?s=index/index/index: 1 Time(s)
+       /index.php?s=index/think\\app/invokefuncti ... [1][]=phpinfo(): 1 Time(s)
+       /nmaplowercheck1571941821: 1 Time(s)
+       /public/?s=/index/\\\\think\\\\request/cache&key=1|phpinfo: 1 Time(s)
+       /public/?s=/index/\\think\\app/invokefunct ... nfo&vars[1][]=1: 1 Time(s)
+       /public/?s=captcha: 1 Time(s)
+       /public/?s=captcha&test=1: 1 Time(s)
+       /public/?s=index/\\think/module/aciton/par ... THINK_VERSION)}: 1 Time(s)
+       /public/?s=index/\\think\\Container/invoke ... nfo&vars[1][]=1: 1 Time(s)
+       /public/?s=index/\\think\\Module/Action/Pa ... ${%40phpinfo()}: 1 Time(s)
+       /public/?s=index/\\think\\Request/input&fi ... =phpinfo&data=1: 1 Time(s)
+       /public/?s=index/\\think\\app/invokefuncti ... nfo&vars[1][]=1: 1 Time(s)
+       /public/?s=index/\\think\\module/action/pa ... ${%40phpinfo()}: 1 Time(s)
+       /public/?s=index/\\think\\view\\driver\\Ph ... hpinfo()%3b%3f>: 1 Time(s)
+       /public/?s=index/index/index: 1 Time(s)
+       /public/index.php: 3 Time(s)
+       /public/index.php?s=captcha: 3 Time(s)
+       /public/index.php?s=captcha&test=1: 1 Time(s)
+       /public/index.php?s=index/think\\app/invok ... [1][]=phpinfo(): 1 Time(s)
+       /public/index.php?s=index/think\\app/invok ... nfo&vars[1][]=1: 1 Time(s)
+       /robots.txt: 2 Time(s)
+       /sdk: 1 Time(s)
+       /thinkphp/library/think/Request.php?c=exec ... _method=filter&: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   16.039K  Bytes accepted                            16,424
+   16.039K  Bytes delivered                           16,424
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   24G  6.1G  80% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

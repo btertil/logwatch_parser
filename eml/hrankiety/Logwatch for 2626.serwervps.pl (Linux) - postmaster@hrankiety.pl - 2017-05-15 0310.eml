@@ -1,0 +1,153 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id E745535A1DEC; Mon, 15 May 2017 03:10:11 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170515011011.E745535A1DEC@hrankiety.pl>
+Date: Mon, 15 May 2017 03:10:09 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon May 15 03:10:09 2017
+        Date Range Processed: yesterday
+                              ( 2017-May-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun May 14 03:39:21 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-23382.cdiff [100%]
+    Downloading daily-23383.cdiff [100%]
+    Downloading daily-23384.cdiff [100%]
+    daily.cld updated (version: 23384, sigs: 2070046, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 298, sigs: 57, f-level: 63, builder: bbaker)
+    Database updated (6288893 signatures) from db.local.clamav.net (IP: 62.245.181.53)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    201.81.130.204
+    66.240.205.34
+ 
+ Requests with error response codes
+    400 Bad Request
+       /../../../../../../../mnt/mtd/qt: 1 Time(s)
+       /x: 1 Time(s)
+    403 Forbidden
+       /pocztatoadministrowanie/: 24 Time(s)
+       /pocztatoadministrowanie/iredadmin.py: 1 Time(s)
+       /pocztatoadministrowanie/settings.ini: 2 Time(s)
+    404 Not Found
+       //wp-login.php: 1 Time(s)
+       /a2billing/common/javascript/misc.js: 1 Time(s)
+       /hndUnblock.cgi: 1 Time(s)
+       /language/Swedish${IFS}&&echo${IFS}610cker ... {IFS}/string.js: 1 Time(s)
+       /pocztatoadministrowanie/inny: 1 Time(s)
+       /pocztatoadministrowanie/inny.pl: 1 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+       http://testp3.pospr.waw.pl/testproxy.php: 1 Time(s)
+    405 Method Not Allowed
+       /webdav/: 5 Time(s)
+    500 Internal Server Error
+       /cgi-bin/inny.py: 4 Time(s)
+       /pocztatoadministrowanie/inny.py: 3 Time(s)
+       /pocztatoadministrowanie/iredadmin.py: 15 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      445   *Warning: Pre-queue content-filter connection overload 
+      933   SASL authentication failed 
+       16   Miscellaneous warnings 
+ 
+    7.443M  Bytes accepted                         7,804,139
+    7.435M  Bytes delivered                        7,796,108
+ ========   ================================================
+ 
+       11   Accepted                                  91.67%
+        1   Rejected                                   8.33%
+ --------   ------------------------------------------------
+       12   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      918   Connections made      
+      918   Disconnections        
+       11   Removed from queue    
+        6   Delivered             
+        2   Sent via SMTP         
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+      192   Timeout (inbound)     
+        1   Excessive errors in SMTP commands dialog 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.73.65.124 (89-73-65-124.dynamic.chello.pl): 2 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   30G   21G  59% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

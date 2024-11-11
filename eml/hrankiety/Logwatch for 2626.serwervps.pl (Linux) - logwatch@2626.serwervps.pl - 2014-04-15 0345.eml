@@ -1,0 +1,146 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id C0D1D1110161B; Tue, 15 Apr 2014 03:45:13 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id B033311101614
+	for <root@2626.serwervps.pl>; Tue, 15 Apr 2014 05:45:13 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id o9Zg2TMZfcw5 for <root@2626.serwervps.pl>;
+	Tue, 15 Apr 2014 03:45:07 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id AD2DB1110161B; Tue, 15 Apr 2014 03:45:07 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140415014507.AD2DB1110161B@2626.serwervps.pl>
+Date: Tue, 15 Apr 2014 03:45:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Apr 15 03:45:05 2014
+        Date Range Processed: yesterday
+                              ( 2014-Apr-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (05577-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140414013005.B817E11101601@2626.serwervps.pl>, mail_id: CeU4OA0SxFO8, Hits: 0, size: 2288, queued_as: DA2851110160A, 7294 ms
+        1   (05577-02) Passed CLEAN {RelayedInternal}, LOCAL [83.220.101.12]:15930 [83.220.101.12] <Bartosz.Tertil@t-mobile.pl> -> <support@hrankiety.pl>, Message-ID: <3885C4A101C04644B7D59E882DDF05214A408AEF@ex23.resources.local>, mail_id: 4JBqZoBebcqU, Hits: -0.107, size: 2940, queued_as: C6E8B1110160C, 5105 ms
+        1   (05578-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN23> line 17.
+        1   (05577-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (05578-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140414012416.90AAD111015DD@2626.serwervps.pl>, mail_id: hY-9EfzaQuRF, Hits: -0.001, size: 6235, queued_as: A9629111015EC, 8535 ms
+        1   (05578-02) Passed CLEAN {RelayedInternal}, LOCAL [195.43.84.13]:57164 [91.216.25.2] <info@paczkomaty.pl> -> <atertil@hrankiety.pl>, Message-ID: <20140414141542.A78C619E6A@paczkomaty.pl>, mail_id: YWwooQ11hdhQ, Hits: 1.276, size: 211025, queued_as: DCF291110160B, 5587 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Apr 14 03:24:17 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-18784.cdiff [100%]
+    Downloading daily-18785.cdiff [100%]
+    Downloading daily-18786.cdiff [100%]
+    Downloading daily-18787.cdiff [100%]
+    Downloading daily-18788.cdiff [100%]
+    Downloading daily-18789.cdiff [100%]
+    daily.cld updated (version: 18789, sigs: 885906, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 236, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3310174 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    184.152.34.37
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /w00tw00t.at.ISC.SANS.DFind:): 1 Time(s)
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpTest/zologize/axa.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /slub/thumbs/a%20(34).jpg: 2 Time(s)
+       /vtigercrm/: 2 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       29   *Warning: Pre-queue content-filter connection overload 
+       15   SASL authentication failed 
+ 
+  445.903K  Bytes accepted                           456,605
+  445.903K  Bytes delivered                          456,605
+ ========   ================================================
+ 
+       10   Accepted                                  43.48%
+       13   Rejected                                  56.52%
+ --------   ------------------------------------------------
+       23   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject relay denied                       15.38%
+       11   Reject HELO/EHLO                          84.62%
+ --------   ------------------------------------------------
+       13   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        5   4xx Reject recipient address             100.00%
+ --------   ------------------------------------------------
+        5   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       43   Connections made      
+       43   Disconnections        
+       10   Removed from queue    
+        4   Delivered             
+        4   Sent via SMTP         
+        2   Forwarded             
+ 
+        2   Timeout (inbound)     
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.3G   26G  15% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

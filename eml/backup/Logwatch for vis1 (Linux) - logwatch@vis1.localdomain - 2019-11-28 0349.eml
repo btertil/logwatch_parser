@@ -1,0 +1,182 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:bc50:0:0:0:0 with SMTP id s16csp996029ejv;
+        Wed, 27 Nov 2019 18:49:11 -0800 (PST)
+X-Google-Smtp-Source: APXvYqz9fi+SVeQSQ0bIkR21PoNYFK0HiGCKDDytGzuS3cgAWX6CxMsjQQ9urnIUAjZdE4I/rcD5
+X-Received: by 2002:ac2:5323:: with SMTP id f3mr26901861lfh.89.1574909351216;
+        Wed, 27 Nov 2019 18:49:11 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1574909351; cv=none;
+        d=google.com; s=arc-20160816;
+        b=aAfk4jtIEgdQM99aOe3XSbIAZDuu9QzCkI8tZ2z/930VtEAwXhonoEQbm5pH6OQFwF
+         EP+6IMVsd/YbV7kpJSEVnJaTwYIPYSVrGjK4oMW42sjvyIgj1cfwLdmufYtFIzK3uJIs
+         SEa+qLkfh4CPkMuK18U/UU9gBj/zv3Nw4t3lBXVZL04l4t8/0sB21x8sVlmKDadykr6J
+         DuB8LL+koVkCgqcFFmR+CtelHrsSGxzttz5MfgpvANzPZ1CwQv5jAV/dgxZRrBrifKVa
+         dvYG8d/yK4fNg7Qvu3Ql6loYg1w4oa0Cxn9M/DAFhZWn7n/plh/fV/t6h+92YwiBTBar
+         dpkg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=Musei2w3hbGTD153ph+9er+Uj4tdERUrUM8GIWfSvmU=;
+        b=Y8cg9IRH7ItHOFbRC+BEkN/0hjYoOnTIfUL9BGcMvP9EcCfgoXUHAhkPRg9jM7Vqkg
+         cy7pyucGvIJjMvK4t2trKNB3GsRSNaxt38VmJEKSLKqmb0xPw3CGtCgiyAwBgjpfd/Xx
+         JfUegpXBIoy6cSpxcDQ/tahIJpDDQCPU+3biVLaclRHwPjBt+ErzNN8PAxcT5eEajzdg
+         Ahxgy5tB+PfpCluG6yBU7su8c9YWDMoSxKfMP8L0XjXLRRf7l3UR/pD0QG180qiwaYKM
+         9+1dcAH2hvn+By7giyfRKb9AExdwLgkG3eS3w7Tbfw0G/H0aGCW4DvyU66k1TY8eEPzL
+         aX6A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id b4si5025266lfi.29.2019.11.27.18.49.10
+        for <bondiev@gmail.com>;
+        Wed, 27 Nov 2019 18:49:11 -0800 (PST)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id C5F9C4A80049; Thu, 28 Nov 2019 03:49:09 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191128024909.C5F9C4A80049@vis1.localdomain>
+Date: Thu, 28 Nov 2019 03:49:07 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Nov 28 03:49:07 2019
+        Date Range Processed: yesterday
+                              ( 2019-Nov-27 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Nov 27 03:29:12 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25645.cdiff [100%]
+    daily.cld updated (version: 25645, sigs: 2009852, f-level: 63, builder: raynman)
+    Can't query daily.25645.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6574848 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    41.216.186.89
+    5.101.64.77
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       null: 4 Time(s)
+    404 Not Found
+       /000000000000.cfg: 1 Time(s)
+       /1/000000000000.cfg: 1 Time(s)
+       /HNAP1/: 2 Time(s)
+       /TP/html/public/index.php: 2 Time(s)
+       /TP/index.php: 2 Time(s)
+       /TP/public/index.php: 3 Time(s)
+       /axis2-admin: 1 Time(s)
+       /axis2/axis2-admin: 1 Time(s)
+       /cfg/000000000000.cfg: 1 Time(s)
+       /config/000000000000.cfg: 2 Time(s)
+       /config/polycom/000000000000.cfg: 1 Time(s)
+       /editBlackAndWhiteList: 1 Time(s)
+       /elrekt.php: 2 Time(s)
+       /html/public/index.php: 2 Time(s)
+       /index.php: 2 Time(s)
+       /index/index.php?h=KAvZPRgeOo1%3d&d=KgvxxT ... %2bGq0IK6%3d%3d: 1 Time(s)
+       /p/000000000000.cfg: 1 Time(s)
+       /pbx/000000000000.cfg: 1 Time(s)
+       /pc/000000000000.cfg: 1 Time(s)
+       /phone/polycom/000000000000.cfg: 1 Time(s)
+       /phoneprov.conf/polycom/000000000000.cfg: 1 Time(s)
+       /phones/polycom/000000000000.cfg: 1 Time(s)
+       /phprov/polycom/000000000000.cfg: 1 Time(s)
+       /polycom/000000000000.cfg: 1 Time(s)
+       /prov/000000000000.cfg: 1 Time(s)
+       /provision/000000000000.cfg: 1 Time(s)
+       /provisioner/polycom/000000000000.cfg: 1 Time(s)
+       /provisioning/000000000000.cfg: 1 Time(s)
+       /ps/000000000000.cfg: 1 Time(s)
+       /pub/polycom/000000000000.cfg: 1 Time(s)
+       /public/index.php: 2 Time(s)
+       /pv/000000000000.cfg: 1 Time(s)
+       /robots.txt: 4 Time(s)
+       /sip/000000000000.cfg: 1 Time(s)
+       /sip/polycom/000000000000.cfg: 1 Time(s)
+       /tftp/000000000000.cfg: 1 Time(s)
+       /tftp/polycom/000000000000.cfg: 1 Time(s)
+       /tftpboot/000000000000.cfg: 1 Time(s)
+       /tftpboot/polycom/000000000000.cfg: 1 Time(s)
+       /thinkphp/html/public/index.php: 2 Time(s)
+       /voice/polycom/000000000000.cfg: 1 Time(s)
+       /voip_provisioning/polycom/000000000000.cfg: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   15.987K  Bytes accepted                            16,371
+   15.987K  Bytes delivered                           16,371
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   19G   12G  62% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

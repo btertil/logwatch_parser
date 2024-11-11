@@ -1,0 +1,124 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 0A8539F201CF; Fri, 19 Oct 2018 03:24:13 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20181019012413.0A8539F201CF@hrankiety.pl>
+Date: Fri, 19 Oct 2018 03:24:09 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Oct 19 03:24:09 2018
+        Date Range Processed: yesterday
+                              ( 2018-Oct-18 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Oct 18 03:16:12 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.1 Recommended version: 0.100.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25044.cdiff [100%]
+    Downloading daily-25045.cdiff [100%]
+    Downloading daily-25046.cdiff [100%]
+    daily.cld updated (version: 25046, sigs: 2125202, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6691542 signatures) from db.local.clamav.net (IP: 104.16.186.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /index/article/lists/cid/3: 2 Time(s)
+       /static/upload/20180921/th_317a3298794099e ... 7e4f3d732a4.png: 1 Time(s)
+    404 Not Found
+       /.DS_Store: 3 Time(s)
+       /assets/fileUpload/server/php/files/index.php: 3 Time(s)
+       /cgi-bin/kerbynet?Section=NoAuthREQ&Action ... name%20-a%26%22: 1 Time(s)
+       /console/css/dashboard-min.css: 13 Time(s)
+       /status: 12 Time(s)
+       /wp-content/themes/twentyseventeen/404.php: 1 Time(s)
+       /wp-content/themes/twentyseventeen/inc/color-patterns.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       http://5.188.210.12/echo.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      218   *Warning: Pre-queue content-filter connection overload 
+     3301   SASL authentication failed 
+       53   Miscellaneous warnings 
+ 
+    3.226M  Bytes accepted                         3,382,671
+    3.220M  Bytes delivered                        3,376,465
+ ========   ================================================
+ 
+       33   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       33   Total                                    100.00%
+ ========   ================================================
+ 
+     3486   Connections made      
+        1   Connections lost      
+     3486   Disconnections        
+       33   Removed from queue    
+       31   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        7   Timeout (inbound)     
+        4   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  51% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

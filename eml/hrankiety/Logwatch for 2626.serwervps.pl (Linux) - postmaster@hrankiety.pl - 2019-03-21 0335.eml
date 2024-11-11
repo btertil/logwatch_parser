@@ -1,0 +1,301 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 723CA9F21145; Thu, 21 Mar 2019 03:35:07 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190321023507.723CA9F21145@hrankiety.pl>
+Date: Thu, 21 Mar 2019 03:35:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Mar 21 03:35:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Mar-20 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Mar 20 03:48:10 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.2 Recommended version: 0.101.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25393.cdiff [100%]
+    daily.cld updated (version: 25393, sigs: 1523747, f-level: 63, builder: raynman)
+    bytecode.cld is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6090090 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    185.142.236.34
+    46.17.47.202
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       null: 11 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       /.git/config: 1 Time(s)
+       /.well-known/security.txt: 1 Time(s)
+       /1x.php: 1 Time(s)
+       /56.php: 1 Time(s)
+       /9678.php: 1 Time(s)
+       /Alarg53.php: 1 Time(s)
+       /Drupal.php: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /MyAdmin/index.php: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /PMA/index.php: 1 Time(s)
+       /PMA2/index.php: 1 Time(s)
+       /Skri.php: 1 Time(s)
+       /_404.php: 1 Time(s)
+       /_query.php: 1 Time(s)
+       /a2billing/customer/templates/default/footer.tpl: 2 Time(s)
+       /admin/PMA/index.php: 1 Time(s)
+       /admin/index.php: 1 Time(s)
+       /admin/mysql/index.php: 1 Time(s)
+       /admin/phpMyAdmin/index.php: 1 Time(s)
+       /admin/phpmyadmin/index.php: 1 Time(s)
+       /administrator/index.php: 1 Time(s)
+       /ak47.php: 1 Time(s)
+       /ak48.php: 1 Time(s)
+       /appserv.php: 1 Time(s)
+       /blog/wp-login.php: 1 Time(s)
+       /cainiao.php: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 1 Time(s)
+       /cmd.php: 2 Time(s)
+       /cmdd.php: 1 Time(s)
+       /composer.php: 1 Time(s)
+       /conflg.php: 2 Time(s)
+       /d7.php: 1 Time(s)
+       /db/index.php: 1 Time(s)
+       /db__.init.php: 1 Time(s)
+       /db_cts.php: 1 Time(s)
+       /db_desql.php: 1 Time(s)
+       /db_pma.php: 1 Time(s)
+       /db_session.init.php: 1 Time(s)
+       /dbadmin/index.php: 1 Time(s)
+       /defect.php: 1 Time(s)
+       /desktop.ini.php: 1 Time(s)
+       /feixiang.php: 1 Time(s)
+       /hell.php: 1 Time(s)
+       /hm.php: 1 Time(s)
+       /home.php: 1 Time(s)
+       /htdocs.php: 1 Time(s)
+       /hue2.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /index.php?s=/index/\\think\\app/invokefun ... ]=HelloThinkPHP: 1 Time(s)
+       /izom.php: 2 Time(s)
+       /java.php: 1 Time(s)
+       /knal.php: 1 Time(s)
+       /l6.php: 1 Time(s)
+       /l7.php: 1 Time(s)
+       /l8.php: 1 Time(s)
+       /lala-dpr.php: 1 Time(s)
+       /lala.php: 1 Time(s)
+       /lapan.php: 1 Time(s)
+       /libraries/joomla/jmail.php?waled=1: 1 Time(s)
+       /libraries/joomla/jmails.php?waled=1: 1 Time(s)
+       /libraries/joomla/wl.php?0=1: 1 Time(s)
+       /license.php: 1 Time(s)
+       /lindex.php: 1 Time(s)
+       /log.php: 1 Time(s)
+       /logon.php: 1 Time(s)
+       /lol.php: 1 Time(s)
+       /m.php?pbid=open: 1 Time(s)
+       /min.php: 1 Time(s)
+       /muhstik-dpr.php: 1 Time(s)
+       /muhstik.php: 2 Time(s)
+       /muhstik2.php: 1 Time(s)
+       /muhstiks.php: 1 Time(s)
+       /mx.php: 1 Time(s)
+       /myadmin/index.php: 1 Time(s)
+       /myadmin2/index.php: 1 Time(s)
+       /mysql-admin/index.php: 1 Time(s)
+       /mysql/index.php: 1 Time(s)
+       /mysql/mysqlmanager/index.php: 1 Time(s)
+       /mysql_admin/index.php: 1 Time(s)
+       /mysqladmin/index.php: 1 Time(s)
+       /mz.php: 1 Time(s)
+       /new_license.php: 1 Time(s)
+       /ocena360/mailto:support@hrankiety.pl: 2 Time(s)
+       /p34ky1337.php: 1 Time(s)
+       /payload.php: 2 Time(s)
+       /pe.php: 1 Time(s)
+       /php2MyAdmin/index.php: 1 Time(s)
+       /phpAdmin/index.php: 1 Time(s)
+       /phpMyAbmin/index.php: 1 Time(s)
+       /phpMyAdm1n/index.php: 1 Time(s)
+       /phpMyAdmin+++---/index.php: 1 Time(s)
+       /phpMyAdmin-4.4.0/index.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 1 Time(s)
+       /phpMyAdmin/index.php: 2 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin/scripts/db___.init.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin1/index.php: 1 Time(s)
+       /phpMyAdmin123/index.php: 1 Time(s)
+       /phpMyAdmin__/index.php: 1 Time(s)
+       /phpMyAdmina/index.php: 1 Time(s)
+       /phpMyAdmins/index.php: 1 Time(s)
+       /phpMyAdmion/index.php: 1 Time(s)
+       /phpMyadmi/index.php: 1 Time(s)
+       /phpMyadmin_bak/index.php: 1 Time(s)
+       /phpMydmin/index.php: 1 Time(s)
+       /phpNyAdmin/index.php: 1 Time(s)
+       /phpStudy.php: 1 Time(s)
+       /phpadmin/index.php: 1 Time(s)
+       /phpiMyAdmin/index.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmy/index.php: 1 Time(s)
+       /phpmyadm1n/index.php: 1 Time(s)
+       /phpmyadmin-old/index.php: 1 Time(s)
+       /phpmyadmin/index.php: 2 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 2 Time(s)
+       /phpmyadmin0/index.php: 1 Time(s)
+       /phpmyadmin1/index.php: 1 Time(s)
+       /phpmyadmin2/index.php: 1 Time(s)
+       /phpmyadmin2222/index.php: 1 Time(s)
+       /phppma/index.php: 1 Time(s)
+       /pk1914.php: 1 Time(s)
+       /plugins/weathermap/editor.php: 1 Time(s)
+       /pma-old/index.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /pmamy/index.php: 1 Time(s)
+       /pmamy2/index.php: 1 Time(s)
+       /pmd/index.php: 1 Time(s)
+       /pmd_online.php: 1 Time(s)
+       /portal/wp-login.php: 1 Time(s)
+       /program/index.php: 1 Time(s)
+       /pwd/index.php: 1 Time(s)
+       /q.php: 2 Time(s)
+       /qaq.php: 1 Time(s)
+       /qq.php: 1 Time(s)
+       /recordings/: 2 Time(s)
+       /s.php: 1 Time(s)
+       /s/index.php: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /server-status: 1 Time(s)
+       /shaAdmin/index.php: 1 Time(s)
+       /sheep.php: 1 Time(s)
+       /shell.php: 2 Time(s)
+       /shopdb/index.php: 1 Time(s)
+       /site/wp-login.php: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /sllolx.php: 1 Time(s)
+       /spider.php: 1 Time(s)
+       /system.php: 1 Time(s)
+       /t6nv.php: 1 Time(s)
+       /text.php: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 1 Time(s)
+       /typo3/phpmyadmin/index.php: 1 Time(s)
+       /uploader.php: 1 Time(s)
+       /v/index.php: 1 Time(s)
+       /vtigercrm/vtigerservice.php: 2 Time(s)
+       /w.php: 1 Time(s)
+       /wc.php: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /webslee.php: 1 Time(s)
+       /weixiao.php: 1 Time(s)
+       /wordpress/wp-login.php: 1 Time(s)
+       /wp-admins.php: 1 Time(s)
+       /wp-config.php: 1 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+       /wp/wp-login.php: 1 Time(s)
+       /wpc.php: 1 Time(s)
+       /wpo.php: 1 Time(s)
+       /wshell.php: 1 Time(s)
+       /wuwu11.php: 1 Time(s)
+       /www/phpMyAdmin/index.php: 1 Time(s)
+       /x.php: 1 Time(s)
+       /xampp/phpmyadmin/index.php: 1 Time(s)
+       /xiao.php: 1 Time(s)
+       /xshell.php: 1 Time(s)
+       /xw.php: 1 Time(s)
+       /xw1.php: 1 Time(s)
+       /xx.php: 2 Time(s)
+       /yao.php: 1 Time(s)
+       /yumo.php: 1 Time(s)
+       /z.php: 1 Time(s)
+       /zuoshou.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       13   *Warning: Pre-queue content-filter connection overload 
+       13   SASL authentication failed 
+       81   Miscellaneous warnings 
+ 
+    2.796M  Bytes accepted                         2,932,261
+    2.791M  Bytes delivered                        2,926,064
+ ========   ================================================
+ 
+       43   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       43   Total                                    100.00%
+ ========   ================================================
+ 
+       55   Connections made      
+        1   Connections lost      
+       55   Disconnections        
+       43   Removed from queue    
+       41   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   30G   21G  59% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

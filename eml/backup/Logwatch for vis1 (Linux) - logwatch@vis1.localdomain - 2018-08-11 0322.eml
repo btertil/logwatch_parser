@@ -1,0 +1,289 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:95ea:0:0:0:0:0 with SMTP id b97-v6csp251866jai;
+        Fri, 10 Aug 2018 18:22:12 -0700 (PDT)
+X-Google-Smtp-Source: AA+uWPyGCcRzEvx2QRJ8xe3Vnow/M0dqMKioBFwAEdSqb3k5XcwYVhFS3Yzh5zbSvp7FuHXgcrtQ
+X-Received: by 2002:a2e:87da:: with SMTP id v26-v6mr6003603ljj.69.1533950532799;
+        Fri, 10 Aug 2018 18:22:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533950532; cv=none;
+        d=google.com; s=arc-20160816;
+        b=EYOwmR71cqKwEL8ThrL0OdyK1voGc2ZXJpFwK0HhQ3DhunuEJTLwhYcZtkzkFzrizj
+         gIAYwCh5tuBvU4+om0YmlYSN7h69ck4OtKjUh9ccuvrHZcVoipc2bvyZMZCXhH0prx7+
+         MARVTlOIu8KYkkURhTSs1lLByqIw9BftIrZOQSsvC68G+GsxDhySTZIR9IoF6UpZHrpU
+         P+o3bq0rCp1G89noN6im8XWsqghmV917jEIybKUcpN8dTD8Atcr7GkG/p9jY4+DOwwMD
+         WFA4RmPDRKVHBf1GBsqSui+UVUJGZ3WN22aqLSXA7ihP83MwZcryqKQhuzZ67Ae73QKv
+         Xz2g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to:arc-authentication-results;
+        bh=1om7jOJ4gHc6Dgi3LaLu2pv028Iu0DH3sO7TM/ZtKNQ=;
+        b=x5BN3RypBJS7kGLUYTo6eosBIH96l0QtkFnY4HYX2QLsoKecCzorM+j4GYQ3ZLVgOI
+         SfOWmebe78byhKMlRlVZ5pWWsRGDIeSBjOI2hBowyBradzkTlEtaZWBrs6wWhShY83fD
+         5CYqlpCTK/Ohb5jHd6WJJztpEA6clkTXKwd1oCa54Wp8Jd9cD3Ynp6CVsSXWoVNQCDn2
+         Y17JammUl/ab53imeEn9d7faZEaS/0Pdte1yXC0RdcJIT+c9bGw2rgtDvFk6Gk0W2Om1
+         GMWkEcX25pjzdJMnpQpfY3mDdnlZn4l+nzYysLsdsbRmi7mnHc81WgEQYmDv4l7J+Utv
+         sG6g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id p69-v6si5023316ljb.73.2018.08.10.18.22.12
+        for <bondiev@gmail.com>;
+        Fri, 10 Aug 2018 18:22:12 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 994804A812C3; Sat, 11 Aug 2018 03:22:11 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180811012211.994804A812C3@vis1.localdomain>
+Date: Sat, 11 Aug 2018 03:22:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Aug 11 03:22:08 2018
+        Date Range Processed: yesterday
+                              ( 2018-Aug-10 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Aug 10 03:21:12 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24826.cdiff [100%]
+    Downloading daily-24827.cdiff [100%]
+    daily.cld updated (version: 24827, sigs: 2043871, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6610211 signatures) from db.local.clamav.net (IP: 104.16.185.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    85.93.20.247
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       //%63%67%69%2D%62%69%6E/%70%68%70?%2D%64+% ... 70%75%74+%2D%6E: 1 Time(s)
+       /12.php: 3 Time(s)
+       /1213.php: 3 Time(s)
+       /3.php: 3 Time(s)
+       /56.php: 3 Time(s)
+       /9678.php: 3 Time(s)
+       /PMA/index.php: 2 Time(s)
+       /PMA2/index.php: 3 Time(s)
+       /_query.php: 3 Time(s)
+       /a2billing/admin/Public/PP_error.php?c=accessdenied: 1 Time(s)
+       /admin/PMA/index.php: 2 Time(s)
+       /admin/assets/js/views/login.js: 1 Time(s)
+       /admin/index.php: 2 Time(s)
+       /admin/mysql/index.php: 2 Time(s)
+       /admin/mysql2/index.php: 2 Time(s)
+       /admin/phpMyAdmin/index.php: 2 Time(s)
+       /admin/phpmyadmin/index.php: 3 Time(s)
+       /admin/phpmyadmin2/index.php: 3 Time(s)
+       /admin/pma/index.php: 3 Time(s)
+       /ak.php: 3 Time(s)
+       /ak47.php: 3 Time(s)
+       /ak48.php: 3 Time(s)
+       /angge.php: 3 Time(s)
+       /aotu.php: 3 Time(s)
+       /appserv.php: 3 Time(s)
+       /aw.php: 3 Time(s)
+       /bak.php: 3 Time(s)
+       /cainiao.php: 3 Time(s)
+       /claroline/phpMyAdmin/index.php: 3 Time(s)
+       /cmd.php: 8 Time(s)
+       /cmdd.php: 3 Time(s)
+       /cmv.php: 3 Time(s)
+       /cmx.php: 2 Time(s)
+       /conflg.php: 3 Time(s)
+       /data.php: 3 Time(s)
+       /db.init.php: 3 Time(s)
+       /db/index.php: 3 Time(s)
+       /db__.init.php: 3 Time(s)
+       /db_cts.php: 3 Time(s)
+       /db_dataml.php: 3 Time(s)
+       /db_desql.php: 3 Time(s)
+       /db_pma.php: 3 Time(s)
+       /db_session.init.php: 3 Time(s)
+       /dbadmin/index.php: 3 Time(s)
+       /defect.php: 3 Time(s)
+       /desktop.ini.php: 2 Time(s)
+       /fack.php: 3 Time(s)
+       /feixiang.php: 3 Time(s)
+       /h1.php: 3 Time(s)
+       /hell.php: 3 Time(s)
+       /help-e.php: 3 Time(s)
+       /help.php: 3 Time(s)
+       /hh.php: 3 Time(s)
+       /hm.php: 3 Time(s)
+       /index.php: 3 Time(s)
+       /infoo.php: 3 Time(s)
+       /ip.php: 3 Time(s)
+       /java.php: 2 Time(s)
+       /knal.php: 3 Time(s)
+       /l7.php: 3 Time(s)
+       /l8.php: 3 Time(s)
+       /lala-dpr.php: 2 Time(s)
+       /lala.php: 3 Time(s)
+       /license.php: 3 Time(s)
+       /lindex.php: 3 Time(s)
+       /log.php: 6 Time(s)
+       /logon.php: 2 Time(s)
+       /lol.php: 2 Time(s)
+       /m.php?pbid=open: 3 Time(s)
+       /min.php: 3 Time(s)
+       /muhstik-dpr.php: 3 Time(s)
+       /muhstik.php: 2 Time(s)
+       /muhstik2.php: 3 Time(s)
+       /muhstiks.php: 3 Time(s)
+       /mx.php: 3 Time(s)
+       /myadmin/index.php: 3 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /myadmin2/index.php: 2 Time(s)
+       /mysql-admin/index.php: 2 Time(s)
+       /mysql/index.php: 3 Time(s)
+       /mysqladmin/index.php: 3 Time(s)
+       /mz.php: 3 Time(s)
+       /pe.php: 3 Time(s)
+       /phpMyAdmin.old/index.php: 3 Time(s)
+       /phpMyAdmin/index.php: 3 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 3 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdminold/index.php: 3 Time(s)
+       /phpMyadmin_bak/index.php: 3 Time(s)
+       /phpStudy.php: 3 Time(s)
+       /phpadmin/index.php: 3 Time(s)
+       /phpinfi.php: 3 Time(s)
+       /phpma/index.php: 3 Time(s)
+       /phpmyadmin-old/index.php: 3 Time(s)
+       /phpmyadmin/index.php: 3 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 3 Time(s)
+       /phpmyadmin0/index.php: 3 Time(s)
+       /phpmyadmin1/index.php: 3 Time(s)
+       /phpmyadmin2/index.php: 2 Time(s)
+       /phpstudy.php: 3 Time(s)
+       /pma-old/index.php: 3 Time(s)
+       /pma/index.php: 2 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /pmamy/index.php: 3 Time(s)
+       /pmamy2/index.php: 2 Time(s)
+       /pmd/index.php: 3 Time(s)
+       /pmd_online.php: 3 Time(s)
+       /post.php: 3 Time(s)
+       /q.php: 6 Time(s)
+       /qaq.php: 9 Time(s)
+       /qq.php: 12 Time(s)
+       /qwe.php: 3 Time(s)
+       /recordings/: 1 Time(s)
+       /s.php: 3 Time(s)
+       /sheep.php: 3 Time(s)
+       /shell.php: 4 Time(s)
+       /ssaa.php: 3 Time(s)
+       /system.php: 3 Time(s)
+       /test.php: 5 Time(s)
+       /text.php: 3 Time(s)
+       /tools/phpMyAdmin/index.php: 3 Time(s)
+       /typo3/phpmyadmin/index.php: 3 Time(s)
+       /uploader.php: 3 Time(s)
+       /w.php: 3 Time(s)
+       /wan.php: 3 Time(s)
+       /wanan.php: 3 Time(s)
+       /wc.php: 3 Time(s)
+       /web/phpMyAdmin/index.php: 3 Time(s)
+       /webdav/: 3 Time(s)
+       /webslee.php: 3 Time(s)
+       /weixiao.php: 3 Time(s)
+       /wp-admins.php: 3 Time(s)
+       /wp-config.php: 2 Time(s)
+       /wpo.php: 3 Time(s)
+       /wshell.php: 3 Time(s)
+       /wuwu11.php: 3 Time(s)
+       /www/phpMyAdmin/index.php: 2 Time(s)
+       /x.php: 2 Time(s)
+       /xampp/phpmyadmin/index.php: 3 Time(s)
+       /xiao.php: 3 Time(s)
+       /xiaoma.php: 3 Time(s)
+       /xiaomae.php: 3 Time(s)
+       /xiaomar.php: 3 Time(s)
+       /xshell.php: 3 Time(s)
+       /xw.php: 3 Time(s)
+       /xw1.php: 3 Time(s)
+       /xx.php: 6 Time(s)
+       /yao.php: 3 Time(s)
+       /yumo.php: 3 Time(s)
+       /z.php: 3 Time(s)
+       /zuo.php: 3 Time(s)
+       /zuoshou.php: 3 Time(s)
+    405 Method Not Allowed
+       /: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    8.516K  Bytes accepted                             8,720
+    8.516K  Bytes delivered                            8,720
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   20G   11G  65% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

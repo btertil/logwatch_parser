@@ -1,0 +1,191 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:906:bc50:0:0:0:0 with SMTP id s16csp3720877ejv;
+        Wed, 26 Feb 2020 18:48:13 -0800 (PST)
+X-Google-Smtp-Source: ADFU+vt+JbqyoswOqrrV0roLwrVqOIksSX05SBOD14/iuy8x2DexGj+J3Fraf/yF7z+iRf3i3cLP
+X-Received: by 2002:a2e:85cd:: with SMTP id h13mr1273816ljj.191.1582771693654;
+        Wed, 26 Feb 2020 18:48:13 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1582771693; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sNEAwtb0nWBjzLHD4VM3B2GGoWGF4MhqN7vrxQlXicdyN9egr+taLBNs04t1kN7Dil
+         MpslIRY0pPnL6YFKV++ScmT6KXSYvabC9iqPibdEQZrQTlA0srX8v96nArnxtDCzhNEs
+         NzckzO1Uso31mftZ/+0Tdn9a/kH92stohO6oBGe5RQ0QglrnCwgeapbb4d8lDqa8yN5Q
+         aG7PvgJolJYcdpS12kNUHT0//e3cE8J/uONFIXNylrBrNCdDBEsSkMLNDgR2I92yRLTK
+         KOlyQ/++C9Z2ymvcvdn5tscUPebS++HO0aCAU3v2leM8b3x61RDfu9EnwpLgpOdS6wih
+         hmng==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=bgyDhpuMtWozthHAq23lTeBYko8p/OBGv0d5cqJ8TZ4=;
+        b=hqtFJdXvoXrL9gr4Er7w3qBdsJHO/xZ+433bykUfXtZ6R8L/CPXbOmRS0fV8lHmEOk
+         nmitPTG5pxRXXRF6ArdXs4Gc+y1L7Df3M12cjuwBhIkzco4d5CckDHHd3uvNDcoCAc1f
+         4m6HFsrSLJcoC3jekhN9ysVkTtfAgD5gt322n8gbb/twjS21/QfVMXAZDiuEzZvNlVw1
+         dvEF7tBEtygvRkjFj/DaVYfn2wmvxmf9Ha8hzr+O5VHcuHoXbrDTMblQy98Zc8qoKckl
+         bh1eL9uog6WkV/VX4Y9GBtxzVi1Zu6iAXjKZ8ptqzaDQdpO6xqcVbGyCHckFkq6vQPYK
+         8H5w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id t10si1616048lfp.101.2020.02.26.18.48.13
+        for <bondiev@gmail.com>;
+        Wed, 26 Feb 2020 18:48:13 -0800 (PST)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 77EDC4A80049; Thu, 27 Feb 2020 03:48:12 +0100 (CET)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200227024812.77EDC4A80049@vis1.localdomain>
+Date: Thu, 27 Feb 2020 03:48:10 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Feb 27 03:48:10 2020
+        Date Range Processed: yesterday
+                              ( 2020-Feb-26 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Feb 26 03:27:11 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25734.cdiff [100%]
+    daily.cld updated (version: 25734, sigs: 2197156, f-level: 63, builder: raynman)
+    Can't query daily.25734.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6762152 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    139.59.43.104
+    185.202.2.57
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 13 Time(s)
+       /setup.cgi?next_file=netgear.cfg&todo=sysc ... ntsetting.htm=1: 1 Time(s)
+       null: 2 Time(s)
+    404 Not Found
+       /.env: 1 Time(s)
+       //a2billing/customer/templates/default/footer.tpl: 1 Time(s)
+       /LHUt: 2 Time(s)
+       /admin/.env: 1 Time(s)
+       /api/.env: 1 Time(s)
+       /app/.env: 1 Time(s)
+       /application/.env: 1 Time(s)
+       /apps/.env: 1 Time(s)
+       /auth/.env: 1 Time(s)
+       /back/.env: 1 Time(s)
+       /backend/.env: 1 Time(s)
+       /config/.env: 1 Time(s)
+       /core/.env: 1 Time(s)
+       /cp/.env: 1 Time(s)
+       /cron/.env: 1 Time(s)
+       /dev/.env: 1 Time(s)
+       /development/.env: 1 Time(s)
+       /docker/.env: 1 Time(s)
+       /ecp/default.aspx: 1 Time(s)
+       /engine/.env: 1 Time(s)
+       /frontend/.env: 1 Time(s)
+       /inc/.env: 1 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 3 Time(s)
+       /laravel-artisan/.env: 1 Time(s)
+       /laravel/.env: 1 Time(s)
+       /local/.env: 1 Time(s)
+       /login/.env: 1 Time(s)
+       /master/.env: 1 Time(s)
+       /mods/.env: 1 Time(s)
+       /personal/.env: 1 Time(s)
+       /private/.env: 1 Time(s)
+       /project/.env: 1 Time(s)
+       /protected/.env: 1 Time(s)
+       /react/.env: 1 Time(s)
+       /rest/.env: 1 Time(s)
+       /robots.txt: 3 Time(s)
+       /routes/.env: 1 Time(s)
+       /scripts/.env: 1 Time(s)
+       /search/.env: 1 Time(s)
+       /server/.env: 1 Time(s)
+       /shared/.env: 1 Time(s)
+       /site/.env: 1 Time(s)
+       /solr/: 2 Time(s)
+       /solr/admin/info/system?wt=json: 1 Time(s)
+       /sources/.env: 1 Time(s)
+       /src/.env: 1 Time(s)
+       /system/.env: 1 Time(s)
+       /travis/.env: 1 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 3 Time(s)
+       /vod_installer/.env: 1 Time(s)
+       /web/.env: 1 Time(s)
+       /~dev/.env: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.342K  Bytes accepted                             4,446
+    4.342K  Bytes delivered                            4,446
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   21G  9.1G  70% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

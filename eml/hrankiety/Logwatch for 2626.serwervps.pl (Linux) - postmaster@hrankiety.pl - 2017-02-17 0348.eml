@@ -1,0 +1,139 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 0611135A1DE2; Fri, 17 Feb 2017 03:48:08 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170217024809.0611135A1DE2@hrankiety.pl>
+Date: Fri, 17 Feb 2017 03:48:05 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Feb 17 03:48:05 2017
+        Date Range Processed: yesterday
+                              ( 2017-Feb-16 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Feb 16 03:09:07 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    connect_error: getsockopt(SO_ERROR): fd=5 error=113: No route to host
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    Trying host db.local.clamav.net (130.133.110.67)...
+    Downloading daily-23065.cdiff [100%]
+    Downloading daily-23066.cdiff [100%]
+    Downloading daily-23067.cdiff [100%]
+    Downloading daily-23068.cdiff [100%]
+    Downloading daily-23069.cdiff [100%]
+    Downloading daily-23070.cdiff [100%]
+    daily.cld updated (version: 23070, sigs: 1600599, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 290, sigs: 55, f-level: 63, builder: neo)
+    Database updated (5819444 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /2626.serwervps.pl.rar: 1 Time(s)
+       /2626.serwervps.pl.zip: 1 Time(s)
+       /82172316237: 19 Time(s)
+       /app.rar: 1 Time(s)
+       /app.zip: 1 Time(s)
+       /db.mdb: 1 Time(s)
+       /db.rar: 1 Time(s)
+       /db.sql: 1 Time(s)
+       /db.zip: 1 Time(s)
+       /sql.rar: 1 Time(s)
+       /sql.zip: 1 Time(s)
+       /squid-reports/: 1 Time(s)
+       /web.rar: 1 Time(s)
+       /web.zip: 1 Time(s)
+       /www.rar: 1 Time(s)
+       /www.zip: 1 Time(s)
+       /wwwroot.rar: 1 Time(s)
+       /wwwroot.zip: 1 Time(s)
+       http://testp1.piwo.pila.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      820   *Warning: Pre-queue content-filter connection overload 
+      837   SASL authentication failed 
+       52   Miscellaneous warnings 
+ 
+    9.184M  Bytes accepted                         9,630,349
+    9.178M  Bytes delivered                        9,624,152
+ ========   ================================================
+ 
+       26   Accepted                                  92.86%
+        2   Rejected                                   7.14%
+ --------   ------------------------------------------------
+       28   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      863   Connections made      
+      863   Disconnections        
+       26   Removed from queue    
+       23   Delivered             
+        1   Sent via SMTP         
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        4   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   26G   25G  51% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

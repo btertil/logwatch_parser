@@ -1,0 +1,123 @@
+Delivered-To: bondiev@gmail.com
+Received: by 10.194.163.102 with SMTP id yh6csp238957wjb;
+        Wed, 18 Dec 2013 17:02:36 -0800 (PST)
+X-Received: by 10.14.87.2 with SMTP id x2mr260170eee.79.1387414955528;
+        Wed, 18 Dec 2013 17:02:35 -0800 (PST)
+Return-Path: <root@vps6.idhosting.pl>
+Received: from vps6.idhosting.pl ([91.231.140.105])
+        by mx.google.com with ESMTP id u49si2196520eep.169.2013.12.18.17.02.35
+        for <bondiev@gmail.com>;
+        Wed, 18 Dec 2013 17:02:35 -0800 (PST)
+Received-SPF: neutral (google.com: 91.231.140.105 is neither permitted nor denied by best guess record for domain of root@vps6.idhosting.pl) client-ip=91.231.140.105;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 91.231.140.105 is neither permitted nor denied by best guess record for domain of root@vps6.idhosting.pl) smtp.mail=root@vps6.idhosting.pl
+Received: by vps6.idhosting.pl (Postfix, from userid 0)
+	id B915AB823DF; Thu, 19 Dec 2013 04:02:04 +0300 (MSK)
+To: bondiev@gmail.com
+From: logwatch@test.idhosting.pl
+Subject: Logwatch for vps6.idhosting.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20131219010204.B915AB823DF@vps6.idhosting.pl>
+Date: Thu, 19 Dec 2013 04:02:03 +0300 (MSK)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Dec 19 04:02:03 2013
+        Date Range Processed: yesterday
+                              ( 2013-Dec-18 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vps6.idhosting.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Dec 18 04:02:05 2013
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: Unknown response from remote server (IP: 195.30.97.3)
+    WARNING: getpatch: Can't download daily-18252.cdiff from db.local.clamav.net
+    Downloading daily-18252.cdiff [100%]
+    daily.cld updated (version: 18252, sigs: 608958, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (3033227 signatures) from db.local.clamav.net (IP: 212.7.0.71)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    58.211.124.155
+    66.41.17.190
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 2 Time(s)
+       /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F ... 76%3D%30+%2D%6E: 2 Time(s)
+       /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 2 Time(s)
+       /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75 ... 76%3D%30+%2D%6E: 2 Time(s)
+       /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75% ... 76%3D%30+%2D%6E: 2 Time(s)
+       /vtigercrm/graph.php?current_language=../. ... Accounts&action: 1 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   22.126K  Bytes accepted                            22,657
+   22.126K  Bytes delivered                           22,657
+ ========   ================================================
+ 
+        2   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        2   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Removed from queue    
+        1   Delivered             
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       40G  1.6G   39G   4% /
+ none            256M  4.0K  256M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,284 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9940735A11A3; Wed,  1 Jun 2016 03:34:08 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20160601013408.9940735A11A3@hrankiety.pl>
+Date: Wed,  1 Jun 2016 03:34:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Jun  1 03:34:07 2016
+        Date Range Processed: yesterday
+                              ( 2016-May-31 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue May 31 03:23:07 2016
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.1 Recommended version: 0.99.2
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-21637.cdiff [100%]
+    Downloading daily-21638.cdiff [100%]
+    Downloading daily-21639.cdiff [100%]
+    Downloading daily-21640.cdiff [100%]
+    Downloading daily-21641.cdiff [100%]
+    daily.cld updated (version: 21641, sigs: 201235, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 277, sigs: 47, f-level: 63, builder: neo)
+    Database updated (4420072 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    404 Not Found
+       /HNAP1/: 1 Time(s)
+       /xmlrpc.php: 1 Time(s)
+       http://testp3.pospr.waw.pl/testproxy.php: 1 Time(s)
+       http://testp4.pospr.waw.pl/testproxy.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+       13   Miscellaneous warnings 
+ 
+  376.518K  Bytes accepted                           385,554
+  370.459K  Bytes delivered                          379,350
+ ========   ================================================
+ 
+        8   Accepted                                  88.89%
+        1   Rejected                                  11.11%
+ --------   ------------------------------------------------
+        9   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        8   Connections made      
+        8   Disconnections        
+        8   Removed from queue    
+        6   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    useradd: failed adding user 'mysql', exit code: 9: 1 Time(s)
+    useradd: failed adding user 'tcpdump', exit code: 9: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 2 Time(s)
+ 
+ SSHD Started: 4 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       188.146.67.143 (188.146.67.143.nat.umts.dynamic.t-mobile.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    libpciaccess-0.13.4-1.el6.i686
+    plymouth-scripts-0.8.3-27.el6.centos.1.i686
+    plymouth-0.8.3-27.el6.centos.1.i686
+    libdrm-2.4.65-2.el6.i686
+    plymouth-core-libs-0.8.3-27.el6.centos.1.i686
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    policycoreutils-2.0.83-29.el6.i686
+    libtdb-1.3.8-3.el6_8.2.i686
+    nspr-4.11.0-1.el6.i686
+    mysql-5.1.73-7.el6.i686
+    perl-Net-SSLeay-1.35-10.el6.i686
+    stunnel-4.29-6.el6.i686
+    1:findutils-4.4.2-9.el6.i686
+    libselinux-utils-2.0.94-7.el6.i686
+    python-pycurl-7.19.0-9.el6.i686
+    14:tcpdump-4.0.0-9.20090921gitdf3cb4.2.el6.i686
+    nss-tools-3.21.0-8.el6.i686
+    samba-3.6.23-35.el6_8.i686
+    12:dhclient-4.1.1-51.P1.el6.centos.i686
+    php-gd-5.3.3-47.el6.i686
+    screen-4.0.3-19.el6.i686
+    rpm-4.8.0-55.el6.i686
+    file-libs-5.04-30.el6.i686
+    1:cups-libs-1.4.2-74.el6.i686
+    openssl-1.0.1e-48.el6_8.1.i686
+    kernel-headers-2.6.32-642.el6.i686
+    php-mbstring-5.3.3-47.el6.i686
+    mysql-libs-5.1.73-7.el6.i686
+    coreutils-libs-8.4-43.el6.i686
+    libgomp-4.4.7-17.el6.i686
+    1:mod_ssl-2.2.15-53.el6.centos.i686
+    glib2-2.28.8-5.el6.i686
+    tcp_wrappers-libs-7.6-58.el6.i686
+    python-urlgrabber-3.9.1-11.el6.noarch
+    1:make-3.81-23.el6.i686
+    gdbm-1.8.0-39.el6.i686
+    elfutils-libelf-0.164-2.el6.i686
+    2:tar-1.23-14.el6.i686
+    rpm-python-4.8.0-55.el6.i686
+    php-mysql-5.3.3-47.el6.i686
+    pam-1.1.1-22.el6.i686
+    yum-3.2.29-73.el6.centos.noarch
+    libstdc++-devel-4.4.7-17.el6.i686
+    tmpwatch-2.9.16-6.el6.i686
+    ntsysv-1.3.49.5-1.el6.i686
+    curl-7.19.7-52.el6.i686
+    libstdc++-4.4.7-17.el6.i686
+    libselinux-2.0.94-7.el6.i686
+    32:bind-libs-9.8.2-0.47.rc1.el6.i686
+    freetype-2.3.11-17.el6.i686
+    gcc-4.4.7-17.el6.i686
+    1:net-snmp-5.5-57.el6.i686
+    nss-util-3.21.0-2.el6.i686
+    libX11-1.6.3-2.el6.i686
+    wget-1.12-8.el6.i686
+    unzip-6.0-4.el6.i686
+    samba-common-3.6.23-35.el6_8.i686
+    procps-3.2.8-36.el6.i686
+    perl-libwww-perl-5.833-3.el6.noarch
+    libxcb-1.11-2.el6.i686
+    php-common-5.3.3-47.el6.i686
+    libcurl-7.19.7-52.el6.i686
+    openldap-2.4.40-12.el6.i686
+    httpd-tools-2.2.15-53.el6.centos.i686
+    libgcc-4.4.7-17.el6.i686
+    rpm-libs-4.8.0-55.el6.i686
+    initscripts-9.03.53-1.el6.centos.i686
+    krb5-libs-1.10.3-57.el6.i686
+    portreserve-0.0.4-11.el6.i686
+    fail2ban-0.9.3-1.el6.1.noarch
+    glibc-2.12-1.192.el6.i686
+    nss-3.21.0-8.el6.i686
+    1:net-snmp-utils-5.5-57.el6.i686
+    php-cli-5.3.3-47.el6.i686
+    libblkid-2.17.2-12.24.el6.i686
+    php-5.3.3-47.el6.i686
+    openssh-5.3p1-118.1.el6_8.i686
+    centos-release-6-8.el6.centos.12.3.i686
+    php-pdo-5.3.3-47.el6.i686
+    perl-IO-Socket-SSL-1.31-3.el6.noarch
+    httpd-2.2.15-53.el6.centos.i686
+    mysql-server-5.1.73-7.el6.i686
+    openssh-server-5.3p1-118.1.el6_8.i686
+    1:net-snmp-libs-5.5-57.el6.i686
+    1:mc-4.7.0.2-6.el6.i686
+    php-pgsql-5.3.3-47.el6.i686
+    glibc-common-2.12-1.192.el6.i686
+    cpp-4.4.7-17.el6.i686
+    sudo-1.8.6p3-24.el6.i686
+    libuuid-2.17.2-12.24.el6.i686
+    audit-libs-2.4.5-3.el6.i686
+    udev-147-2.73.el6.i686
+    yum-plugin-fastestmirror-1.1.30-37.el6.noarch
+    libtirpc-0.2.1-11.el6.i686
+    glibc-devel-2.12-1.192.el6.i686
+    samba-winbind-3.6.23-35.el6_8.i686
+    libX11-common-1.6.3-2.el6.noarch
+    chkconfig-1.3.49.5-1.el6.i686
+    12:dhcp-common-4.1.1-51.P1.el6.centos.i686
+    elfutils-0.164-2.el6.i686
+    openssh-clients-5.3p1-118.1.el6_8.i686
+    logwatch-7.3.6-54.el6.noarch
+    samba-winbind-clients-3.6.23-35.el6_8.i686
+    iputils-20071127-21.el6.i686
+    2:shadow-utils-4.1.5.1-5.el6.i686
+    2:xinetd-2.3.14-40.el6.i686
+    1:perl-LDAP-0.40-2.el6.noarch
+    binutils-2.20.51.0.2-5.44.el6.i686
+    32:bind-9.8.2-0.47.rc1.el6.i686
+    nscd-2.12-1.192.el6.i686
+    rpcbind-0.2.0-12.el6.i686
+    gdbm-devel-1.8.0-39.el6.i686
+    util-linux-ng-2.17.2-12.24.el6.i686
+    coreutils-8.4-43.el6.i686
+    hwdata-0.233-16.1.el6.noarch
+    php-ldap-5.3.3-47.el6.i686
+    php-imap-5.3.3-47.el6.i686
+    glibc-headers-2.12-1.192.el6.i686
+    tcp_wrappers-7.6-58.el6.i686
+    file-5.04-30.el6.i686
+    php-xml-5.3.3-47.el6.i686
+    nss-sysinit-3.21.0-8.el6.i686
+    gcc-c++-4.4.7-17.el6.i686
+    gmp-4.3.1-10.el6.i686
+    bash-4.1.2-40.el6.i686
+    tcsh-6.17-35.el6.i686
+    passwd-0.77-7.el6.i686
+    elfutils-libs-0.164-2.el6.i686
+    samba-client-3.6.23-35.el6_8.i686
+    libxml2-2.7.6-21.el6.i686
+    upstart-0.6.5-16.el6.i686
+    iproute-2.6.32-54.el6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   13G   38G  26% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

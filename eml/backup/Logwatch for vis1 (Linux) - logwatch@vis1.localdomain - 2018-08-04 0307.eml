@@ -1,0 +1,145 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:95ea:0:0:0:0:0 with SMTP id b97-v6csp751158jai;
+        Fri, 3 Aug 2018 18:07:12 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpezoyUnPp/DLoYzXqgA333Pz1gdTaFMYhtiGl5UCGy6d9OscPVQhJ3Z5waVeB4bgLhqbn78
+X-Received: by 2002:a2e:4186:: with SMTP id d6-v6mr6615019ljf.36.1533344832723;
+        Fri, 03 Aug 2018 18:07:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1533344832; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YcYaln0UaSQxhQWw7iPapJo8dS2DHFaELDxH4RciU3mxji4El8Eu2HachslgD6BTYf
+         6es80UEhHt/2Z6hli7sOm9WB8F1lFJiqbZFzqt8jHl17EBLYmh+NGqy3ouizVQVHQH00
+         Dn7nupi7pco4xL6J/y90BB5EXQcTmr9Foa7k0yfBURXL4rvO4azBZNSGG8A2RXaiQaCO
+         DefJkMJQF7FJvOdH0n0P8YxNDuvd7oAyoP5vCOyiuRWst47Uar19b3LDGqRKw4TNIvFn
+         +Ev5C0g3en0wuHlecsTfgHYhDaAGAaOsNqauryclOE+9l0eJCDjNmVoRg6SswZGdJnAb
+         9JIQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to:arc-authentication-results;
+        bh=nfwWP6C3EqrSb0ulxN29ym8DBvJLxyANnWYGJ1Z7qzs=;
+        b=oLASD+USijQ+xmnSt5mfIadhycLi9vibIiT4Io2nb82Mikgvjhf5WjeTbQL7AiNdUw
+         E8GFOEekK6Pfc8F0r7BnRY524FHLccJQJZD1PaqQ1CPY1hNvTreyWfdwAY19HE55HMa6
+         UtAbfaju1u6E0g6CxH0X55ZnNQeZQWpkL79I0Qr1lMYXeV5a97pWmFmgolBgZ/iJpz5p
+         MLc4KKgGvR3S+Vd9vHoakGYK2/+MTRRYH/F47fr2mmRg+2bcqPO1TwvNU3y6cX1cid9b
+         jdPGUy2jMSnYoJCKqv51swt9KbwfVQaYoi1uNsMEVC1arsazzFAffoZm0M1MBufjCZDt
+         vJ0g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id m62-v6si3016844lje.93.2018.08.03.18.07.12
+        for <bondiev@gmail.com>;
+        Fri, 03 Aug 2018 18:07:12 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 3CB384A812C5; Sat,  4 Aug 2018 03:07:11 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180804010711.3CB384A812C5@vis1.localdomain>
+Date: Sat,  4 Aug 2018 03:07:08 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Aug  4 03:07:08 2018
+        Date Range Processed: yesterday
+                              ( 2018-Aug-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Aug  3 03:46:11 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24804.cdiff [100%]
+    Downloading daily-24805.cdiff [100%]
+    Downloading daily-24806.cdiff [100%]
+    Downloading daily-24807.cdiff [100%]
+    daily.cld updated (version: 24807, sigs: 2036228, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 326, sigs: 93, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6602570 signatures) from db.local.clamav.net (IP: 104.16.186.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    185.222.211.18
+    60.191.23.58
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       /CFIDE/administrator/: 1 Time(s)
+       /RPC2: 2 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.507K  Bytes accepted                             4,615
+    4.507K  Bytes delivered                            4,615
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   20G   11G  64% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

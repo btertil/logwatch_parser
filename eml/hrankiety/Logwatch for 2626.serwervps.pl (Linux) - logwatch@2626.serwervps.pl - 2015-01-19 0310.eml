@@ -1,0 +1,134 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id D67B7111024A8; Mon, 19 Jan 2015 03:10:28 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id D5130111024AA; Mon, 19 Jan 2015 03:10:24 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150119021025.D5130111024AA@2626.serwervps.pl>
+Date: Mon, 19 Jan 2015 03:10:20 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Jan 19 03:10:20 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jan-18 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Jan 18 03:22:38 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19939.cdiff [100%]
+    Downloading daily-19940.cdiff [100%]
+    Downloading daily-19941.cdiff [100%]
+    Downloading daily-19942.cdiff [100%]
+    daily.cld updated (version: 19942, sigs: 1310537, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 245, sigs: 43, f-level: 63, builder: dgoddard)
+    Database updated (3734805 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    212.227.38.247 -> 65.55.57.27:80: 1 Time(s)
+ 
+ Requests with error response codes
+    404 Not Found
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /agag/aga/ag.php: 1 Time(s)
+       /cdcd/cdc/cd.php: 1 Time(s)
+       /jwjw/jwj/jw.php: 1 Time(s)
+       /kpkp/kpk/kp.php: 1 Time(s)
+       /lwlw/lwl/lw.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /myadmin/scripts/setup.php: 6 Time(s)
+       /phpMyAdmin/scripts/setup.php: 6 Time(s)
+       /pma/scripts/setup.php: 6 Time(s)
+       /rmrm/rmr/rm.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+    405 Method Not Allowed
+       65.55.57.27:80: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        2   *Warning: Pre-queue content-filter connection overload 
+        5   SASL authentication failed 
+ 
+   14.859K  Bytes accepted                            15,216
+   14.859K  Bytes delivered                           15,216
+ ========   ================================================
+ 
+        4   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        4   Total                                    100.00%
+ ========   ================================================
+ 
+       62   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       62   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+       66   Connections made      
+       66   Disconnections        
+        4   Removed from queue    
+        2   Delivered             
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.68.96.192 (89-68-96-192.dynamic.chello.pl): 8 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 10 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   12G   39G  24% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

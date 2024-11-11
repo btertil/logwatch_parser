@@ -1,0 +1,153 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 900F111101BB4; Tue, 14 Oct 2014 03:06:11 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 570F411101BB3
+	for <root@2626.serwervps.pl>; Tue, 14 Oct 2014 05:06:11 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 34NzTQKx8n82 for <root@2626.serwervps.pl>;
+	Tue, 14 Oct 2014 03:06:08 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id A6BC611101BB4; Tue, 14 Oct 2014 03:06:07 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141014010607.A6BC611101BB4@2626.serwervps.pl>
+Date: Tue, 14 Oct 2014 03:06:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Oct 14 03:06:05 2014
+        Date Range Processed: yesterday
+                              ( 2014-Oct-13 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (24827-04) Passed CLEAN {RelayedInternal}, LOCAL [213.180.142.159]:35990 [178.42.231.212] <joannamiron@poczta.onet.pl> -> <atertil@hrankiety.pl>, Queue-ID: CCB8011101BB1, Message-ID: <29475602-cf460ccab04b9d4fcfa5513e31418aa4@pmq4v.m5r2.onet>, mail_id: wj5W6-ZJJVM4, Hits: 1.175, size: 35847, queued_as: 64A9211101BB3, dkim_sd=2011:poczta.onet.pl, 2516 ms
+        1   (24826-02) Passed CLEAN {RelayedInternal}, LOCAL [213.180.142.153]:49972 [212.160.104.81] <grazyn77@poczta.onet.pl> -> <atertil@hrankiety.pl>, Queue-ID: B80B011101BAB, Message-ID: <29394922-d170dd1556394d35955bb83efac10318@pmq4v.m5r2.onet>, mail_id: UIZ0EHQ1CF95, Hits: 1.175, size: 14337, queued_as: D843311101BAC, dkim_sd=2011:poczta.onet.pl, 2102 ms
+        1   (24826-04) Passed CLEAN {RelayedInternal}, LOCAL [217.74.65.239]:57945 [31.61.140.155] <malgorzata.kocher@interia.pl> -> <atertil@hrankiety.pl>, Queue-ID: 1EB6B11101ACC, Message-ID: <1nvekjnbcgtb6g9t0i7glgry.1413216961194@email.android.com>, mail_id: YGGoqX7itAZi, Hits: 1.176, size: 45532, queued_as: 8D7FB11101BAF, dkim_sd=biztos:interia.pl, 2451 ms
+        1   (24826-01) Passed CLEAN {RelayedInternal}, LOCAL [217.74.65.234]:34506 [31.61.140.155] <malgorzata.kocher@interia.pl> -> <atertil@hrankiety.pl>, Queue-ID: C333D11101BA7, Message-ID: <9FBD75FC684B4C7D94A89DCE7543209C@Gosiadell>, mail_id: CMg22_vBE9np, Hits: 1.186, size: 203397, queued_as: 8585411101BAA, dkim_sd=biztos:interia.pl, 3748 ms
+        1   (24827-02) Passed CLEAN {RelayedInternal}, LOCAL [217.74.65.239]:34435 [31.61.140.155] <malgorzata.kocher@interia.pl> -> <atertil@hrankiety.pl>, Queue-ID: 45C5D11101BAC, Message-ID: <95940D26EE13466FB657B50E9558056E@Gosiadell>, mail_id: qJH8q4MTD3sq, Hits: 1.176, size: 23190, queued_as: 779B811101BAD, dkim_sd=biztos:interia.pl, 1176 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (21308-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141013010914.38FD711101BA6@2626.serwervps.pl>, mail_id: MNrTVkn4lCW7, Hits: 0, size: 5358, queued_as: 170AE11101BA4, 3335 ms
+        1   (24827-01) Passed CLEAN {RelayedInternal}, LOCAL [83.167.225.169]:36236 [209.85.160.176] <r.sienkiewicz@accord-ece.com> -> <atertil@hrankiety.pl>, Queue-ID: 6039211101BAA, Message-ID: <CABKWhCxmbbDKLK4pepm3qM46zNBHWoH5+UjB4mCPMxPcuSRARQ@mail.gmail.com>, mail_id: iGVF9IkmPEWl, Hits: -4.663, size: 15554, queued_as: EFC4711101BAB, 2513 ms
+        1   (24827-03) Passed CLEAN {RelayedInternal}, LOCAL [209.85.212.177]:48760 [89.73.72.175] <miroslawdudzinski@gmail.com> -> <atertil@hrankiety.pl>, Queue-ID: 5B2EE11101BAE, Message-ID: <002701cfe6e1$92328c10$b697a430$@com>, mail_id: dDpjlQDwRUvJ, Hits: -99.524, size: 37500, queued_as: 6EC6211101BAF, dkim_sd=20120113:gmail.com, 2915 ms
+        1   (24826-03) Passed CLEAN {RelayedInternal}, LOCAL [213.180.142.159]:49690 [212.160.104.81] <grazyn77@poczta.onet.pl> -> <atertil@hrankiety.pl>, Queue-ID: BC80A11101BAD, Message-ID: <29398465-00d926153a2dbdad386a65372d6baf19@pmq4v.m5r2.onet>, mail_id: CGLsXVC-zOkR, Hits: 1.175, size: 21937, queued_as: 1454811101BAE, dkim_sd=2011:poczta.onet.pl, 1252 ms
+        1   (21309-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141013013007.52E2C11101BA7@2626.serwervps.pl>, mail_id: Q7OQaxGLm2qP, Hits: 0.001, size: 2288, queued_as: 4B6BB11101BA6, 2191 ms
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Mon Oct 13 03:09:14 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19501.cdiff [100%]
+    Downloading daily-19502.cdiff [100%]
+    Downloading daily-19503.cdiff [100%]
+    daily.cld updated (version: 19503, sigs: 1200823, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3625094 signatures) from db.local.clamav.net (IP: 85.254.217.235)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       //wp-login.php: 1 Time(s)
+       /admin/config.php: 1 Time(s)
+       /blog//wp-login.php: 1 Time(s)
+       /fdfd/fdf/fd.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 3 Time(s)
+       /phpMyAdmin/scripts/setup.php: 3 Time(s)
+       /pma/scripts/setup.php: 3 Time(s)
+       /qvqv/qvq/qv.php: 1 Time(s)
+       /tutu/tut/tu.php: 1 Time(s)
+       /user/soapCaller.bs: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /wordpress//wp-login.php: 1 Time(s)
+       /wp//wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       60   *Warning: Pre-queue content-filter connection overload 
+       63   SASL authentication failed 
+ 
+  804.833K  Bytes accepted                           824,149
+  804.833K  Bytes delivered                          824,149
+ ========   ================================================
+ 
+       22   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       22   Total                                    100.00%
+ ========   ================================================
+ 
+       84   Connections made      
+       84   Disconnections        
+       22   Removed from queue    
+       10   Delivered             
+       10   Sent via SMTP         
+        2   Forwarded             
+ 
+        6   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  6.9G   44G  14% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

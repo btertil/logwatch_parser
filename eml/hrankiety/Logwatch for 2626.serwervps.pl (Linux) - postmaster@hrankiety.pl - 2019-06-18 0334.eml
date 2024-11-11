@@ -1,0 +1,333 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id C97079F2157F; Tue, 18 Jun 2019 03:34:15 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190618013415.C97079F2157F@hrankiety.pl>
+Date: Tue, 18 Jun 2019 03:34:13 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Jun 18 03:34:13 2019
+        Date Range Processed: yesterday
+                              ( 2019-Jun-17 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Mon Jun 17 03:11:26 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25482.cdiff [100%]
+    daily.cld updated (version: 25482, sigs: 1595198, f-level: 63, builder: raynman)
+    bytecode.cvd is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6161541 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    59.36.132.222 -> www.baidu.com:443: 1 Time(s)
+ 
+ A total of 1 sites probed the server 
+    218.75.40.146
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /cgi-bin/masterCGI?ping=nomip&user=;cd: 1 Time(s)
+    404 Not Found
+       /001565000000.cfg: 1 Time(s)
+       /099.php: 1 Time(s)
+       /1.php: 2 Time(s)
+       /411.php: 1 Time(s)
+       /415.php: 1 Time(s)
+       /421.php: 1 Time(s)
+       /444.php: 1 Time(s)
+       /605.php: 1 Time(s)
+       /7o.php: 1 Time(s)
+       /887.php: 1 Time(s)
+       /888.php: 1 Time(s)
+       /9.php: 1 Time(s)
+       /9678.php: 1 Time(s)
+       /981.php: 1 Time(s)
+       /98k.php: 1 Time(s)
+       /999.php: 1 Time(s)
+       /Alarg53.php: 1 Time(s)
+       /Appb20474bc.php: 1 Time(s)
+       /Drupal.php: 1 Time(s)
+       /GponForm/diag_Form?style/: 2 Time(s)
+       /MyAdmin/index.php: 1 Time(s)
+       /Skri.php: 1 Time(s)
+       /_404.php: 1 Time(s)
+       /_query.php: 1 Time(s)
+       /a411.php: 1 Time(s)
+       /aa.php: 2 Time(s)
+       /aaa.php: 1 Time(s)
+       /aap.php: 1 Time(s)
+       /ack.php: 1 Time(s)
+       /admin1.php: 1 Time(s)
+       /app.php: 1 Time(s)
+       /b.php: 1 Time(s)
+       /bb.php: 1 Time(s)
+       /bbq.php: 1 Time(s)
+       /bbqq.php: 1 Time(s)
+       /bbr.php: 1 Time(s)
+       /bbv.php: 1 Time(s)
+       /cc.php: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 1 Time(s)
+       /composer.php: 1 Time(s)
+       /composers.php: 1 Time(s)
+       /config.php: 1 Time(s)
+       /conflg.php: 2 Time(s)
+       /db.init.php: 1 Time(s)
+       /db__.init.php: 1 Time(s)
+       /db_cts.php: 1 Time(s)
+       /db_dataml.php: 1 Time(s)
+       /db_desql.php: 1 Time(s)
+       /db_pma.php: 1 Time(s)
+       /db_session.init.php: 1 Time(s)
+       /ddd.php: 1 Time(s)
+       /desktop.ini.php: 1 Time(s)
+       /error.php: 1 Time(s)
+       /feixiang.php: 1 Time(s)
+       /ffr.php: 1 Time(s)
+       /hd.php: 1 Time(s)
+       /hell.php: 1 Time(s)
+       /help-e.php: 1 Time(s)
+       /help.php: 1 Time(s)
+       /hgx.php: 1 Time(s)
+       /hhh.php: 1 Time(s)
+       /htdocs.php: 1 Time(s)
+       /html/.env: 1 Time(s)
+       /hue2.php: 1 Time(s)
+       /huoshan.php: 1 Time(s)
+       /images/!.php: 1 Time(s)
+       /images/attari.php: 1 Time(s)
+       /images/jsspwneed.php: 1 Time(s)
+       /images/stories/cmd.php: 1 Time(s)
+       /images/stories/filemga.php?ssp=RfVbHu: 1 Time(s)
+       /images/up.php: 1 Time(s)
+       /images/vuln.php: 1 Time(s)
+       /ioi.php: 1 Time(s)
+       /izom.php: 2 Time(s)
+       /j.php: 1 Time(s)
+       /java.php: 1 Time(s)
+       /jbb.php: 1 Time(s)
+       /jj1.php: 1 Time(s)
+       /jjj.php: 1 Time(s)
+       /jsc.php.php: 1 Time(s)
+       /kpl.php: 1 Time(s)
+       /lala-dpr.php: 1 Time(s)
+       /lala.php: 1 Time(s)
+       /lang.php?f=1: 1 Time(s)
+       /laravel.php: 1 Time(s)
+       /lindex.php: 1 Time(s)
+       /log.php: 1 Time(s)
+       /logon.php: 1 Time(s)
+       /lol.php: 1 Time(s)
+       /m.php?pbid=open: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /miao.php: 1 Time(s)
+       /muhstik-dpr.php: 1 Time(s)
+       /muhstik.php: 2 Time(s)
+       /muhstik2.php: 1 Time(s)
+       /muhstiks.php: 1 Time(s)
+       /mx.php: 1 Time(s)
+       /my.php: 2 Time(s)
+       /myadmin2/index.php: 1 Time(s)
+       /mysql/admin/index.php: 1 Time(s)
+       /mysql/dbadmin/index.php: 1 Time(s)
+       /mysql/mysqlmanager/index.php: 1 Time(s)
+       /mysql/sqlmanager/index.php: 1 Time(s)
+       /nb.php: 1 Time(s)
+       /new_license.php: 1 Time(s)
+       /nnn.php: 1 Time(s)
+       /ooi.php: 1 Time(s)
+       /payload.php: 2 Time(s)
+       /phpMyAbmin/index.php: 1 Time(s)
+       /phpMyAdmin+++---/index.php: 1 Time(s)
+       /phpMyAdmin._/index.php: 1 Time(s)
+       /phpMyAdmin._2/index.php: 1 Time(s)
+       /phpMyAdmin.old/index.php: 1 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 1 Time(s)
+       /phpMyAdmin1/index.php: 1 Time(s)
+       /phpMyAdmin123/index.php: 1 Time(s)
+       /phpMyAdmin__/index.php: 1 Time(s)
+       /phpMyAdmina/index.php: 1 Time(s)
+       /phpMyAdminold/index.php: 1 Time(s)
+       /phpMyAdmins/index.php: 1 Time(s)
+       /phpMyAdmion/index.php: 1 Time(s)
+       /phpMyadmi/index.php: 1 Time(s)
+       /phpMyadmin_bak/index.php: 1 Time(s)
+       /phpMydmin/index.php: 1 Time(s)
+       /phpStudy.php: 1 Time(s)
+       /phpma/index.php: 1 Time(s)
+       /phpmy/index.php: 1 Time(s)
+       /phpmyadm1n/index.php: 1 Time(s)
+       /phpmyadmin-old/index.php: 1 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 1 Time(s)
+       /phpmyadmin2222/index.php: 1 Time(s)
+       /phpmyadmin3333/index.php: 1 Time(s)
+       /phppma/index.php: 1 Time(s)
+       /phpstudy.php: 1 Time(s)
+       /pma-old/index.php: 1 Time(s)
+       /pmd_online.php: 1 Time(s)
+       /pp.php: 1 Time(s)
+       /ppl.php: 1 Time(s)
+       /program/index.php: 1 Time(s)
+       /pwd/index.php: 1 Time(s)
+       /qaq.php: 1 Time(s)
+       /qiqi.php: 1 Time(s)
+       /qiqi1.php: 1 Time(s)
+       /qq.php: 3 Time(s)
+       /qwq.php: 1 Time(s)
+       /rrr.php: 1 Time(s)
+       /s.php: 1 Time(s)
+       /s/index.php: 1 Time(s)
+       /sbb/index.php: 1 Time(s)
+       /shaAdmin/index.php: 1 Time(s)
+       /sheep.php: 1 Time(s)
+       /shell.php: 1 Time(s)
+       /shh.php: 1 Time(s)
+       /shopdb/index.php: 1 Time(s)
+       /sllolx.php: 1 Time(s)
+       /t6nv.php: 1 Time(s)
+       /test.php: 1 Time(s)
+       /text.php: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 1 Time(s)
+       /tt.php: 1 Time(s)
+       /ttt.php: 1 Time(s)
+       /tty.php: 1 Time(s)
+       /typo3/phpmyadmin/index.php: 1 Time(s)
+       /tyrant.php: 1 Time(s)
+       /up.php: 1 Time(s)
+       /uuu.php: 1 Time(s)
+       /v/index.php: 1 Time(s)
+       /vvv.php: 1 Time(s)
+       /w.php: 1 Time(s)
+       /wc.php: 1 Time(s)
+       /webdav/: 1 Time(s)
+       /weixiao.php: 1 Time(s)
+       /whoami.php: 1 Time(s)
+       /whoami.php.php: 1 Time(s)
+       /wp-admins.php: 1 Time(s)
+       /wp-config.php: 1 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php: 1 Time(s)
+       /wp-content/plugins/si-captcha-for-wordpre ... /theme.php?up=1: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+       /wpc.php: 1 Time(s)
+       /wpo.php: 1 Time(s)
+       /wshell.php: 1 Time(s)
+       /wuwu11.php: 1 Time(s)
+       /www.php: 1 Time(s)
+       /www/phpMyAdmin/index.php: 1 Time(s)
+       /x.php: 1 Time(s)
+       /xampp/phpmyadmin/index.php: 1 Time(s)
+       /xi.php: 1 Time(s)
+       /xiaodai.php: 1 Time(s)
+       /xshell.php: 1 Time(s)
+       /xw.php: 1 Time(s)
+       /xw1.php: 1 Time(s)
+       /xx.php: 2 Time(s)
+       /yu.php: 1 Time(s)
+       /yyy.php: 1 Time(s)
+       /z.php: 1 Time(s)
+       /zhk.php: 1 Time(s)
+    405 Method Not Allowed
+       www.baidu.com:443: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       25   *Warning: Pre-queue content-filter connection overload 
+     1094   SASL authentication failed 
+      350   Miscellaneous warnings 
+ 
+    1.262M  Bytes accepted                         1,323,499
+    1.256M  Bytes delivered                        1,317,295
+ ========   ================================================
+ 
+       41   Accepted                                  15.02%
+      232   Rejected                                  84.98%
+ --------   ------------------------------------------------
+      273   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                           0.43%
+      231   Reject unknown user                       99.57%
+ --------   ------------------------------------------------
+      232   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       13   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       13   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+     1159   Connections made      
+     1159   Disconnections        
+       41   Removed from queue    
+       39   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Failed logins from:
+    89.77.70.146 (89-77-70-146.dynamic.chello.pl): 62 times
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       11T  3.8T  6.5T  37% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

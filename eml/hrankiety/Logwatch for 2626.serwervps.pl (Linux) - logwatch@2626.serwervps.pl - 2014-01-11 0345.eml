@@ -1,0 +1,160 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 761AF13D82077; Sat, 11 Jan 2014 03:45:37 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 34B1F13D82075
+	for <root@2626.serwervps.pl>; Sat, 11 Jan 2014 05:45:37 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id e2I-c0ER0Ty1 for <root@2626.serwervps.pl>;
+	Sat, 11 Jan 2014 03:45:14 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id E82FF13D82072; Sat, 11 Jan 2014 03:45:13 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140111024513.E82FF13D82072@2626.serwervps.pl>
+Date: Sat, 11 Jan 2014 03:45:09 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jan 11 03:45:08 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jan-10 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+        6   *Warning              
+ 
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Deleting db files __db.001,__db.003,__db.002,nanny.db,__db.004,snmp.db in /var/spool/amavisd/db
+        1   (08790-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140110023008.0816013D82071@2626.serwervps.pl>, mail_id: in8Qd7-ntoVg, Hits: 0, size: 2286, queued_as: E65A513D82073, 20945 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   No ext program for   .doc, tried: ripole
+        1   (08791-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140110021706.CE76C13D82071@2626.serwervps.pl>, mail_id: QNyx2O4jM9ZT, Hits: -0.001, size: 5710, queued_as: 55CF713D82070, 23536 ms
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Jan 10 03:17:07 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-18329.cdiff not found on remote server (IP: 158.129.196.3)
+    WARNING: getpatch: Can't download daily-18329.cdiff from db.local.clamav.net
+    Downloading daily-18329.cdiff [100%]
+    Downloading daily-18330.cdiff [100%]
+    Downloading daily-18331.cdiff [100%]
+    Downloading daily-18332.cdiff [100%]
+    daily.cld updated (version: 18332, sigs: 642356, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 235, sigs: 44, f-level: 63, builder: dgoddard)
+    Database updated (3066625 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- Clamav Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ lstat() failed on: /var/spool/amavisd/tmp/amavis-20140110T031706-08791-FfM_RYV2/parts
+ lstat() failed on: /var/spool/amavisd/tmp/amavis-20140110T033008-08790-y_n2i3St/parts
+ 
+ ---------------------- Clamav End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       http://www.all-free-photos.com\xc2:\xc2/im ... /PI26255-hr.jpg: 1 Time(s)
+    404 Not Found
+       //Calendar/install/: 1 Time(s)
+       //WebCalendar/install/: 1 Time(s)
+       //calendar/install/: 1 Time(s)
+       //install/: 1 Time(s)
+       //w6/install/: 1 Time(s)
+       //wc/install/: 1 Time(s)
+       //wcalendar/install/: 1 Time(s)
+       //web/install/: 1 Time(s)
+       //webc/install/: 1 Time(s)
+       //webcalendar/install/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /admin/: 1 Time(s)
+       /myadmin/: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql/: 1 Time(s)
+       /mysqladmin/: 1 Time(s)
+       /php-my-admin/: 1 Time(s)
+       /php-myadmin/: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin2/: 1 Time(s)
+       /phpmy-admin/: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/: 1 Time(s)
+       /pma/: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /sql/: 1 Time(s)
+       /sqlweb/: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /webadmin/: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   25.516K  Bytes accepted                            26,128
+   25.516K  Bytes delivered                           26,128
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Connections made      
+        2   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  2.2G   28G   8% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

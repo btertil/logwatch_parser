@@ -1,0 +1,198 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 1317135A33C5; Fri, 16 Mar 2018 03:42:44 +0100 (CET)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180316024246.1317135A33C5@hrankiety.pl>
+Date: Fri, 16 Mar 2018 03:42:16 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Mar 16 03:42:16 2018
+        Date Range Processed: yesterday
+                              ( 2018-Mar-15 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Mar 15 03:31:58 2018
+ 
+ Last Status:
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-24357.cdiff [100%]
+    Downloading daily-24358.cdiff [100%]
+    Downloading daily-24359.cdiff [100%]
+    Downloading daily-24360.cdiff [100%]
+    Downloading daily-24361.cdiff [100%]
+    Downloading daily-24362.cdiff [100%]
+    Downloading daily-24363.cdiff [100%]
+    Downloading daily-24364.cdiff [100%]
+    Downloading daily-24365.cdiff [100%]
+    Downloading daily-24366.cdiff [100%]
+    Downloading daily-24367.cdiff [100%]
+    Downloading daily-24368.cdiff [100%]
+    Downloading daily-24369.cdiff [100%]
+    Downloading daily-24370.cdiff [100%]
+    Downloading daily-24371.cdiff [100%]
+    Downloading daily-24372.cdiff [100%]
+    Downloading daily-24373.cdiff [100%]
+    Downloading daily-24374.cdiff [100%]
+    Downloading daily-24375.cdiff [100%]
+    Downloading daily-24376.cdiff [100%]
+    Downloading daily-24377.cdiff [100%]
+    Downloading daily-24378.cdiff [100%]
+    Downloading daily-24379.cdiff [100%]
+    Downloading daily-24380.cdiff [100%]
+    Downloading daily-24381.cdiff [100%]
+    Downloading daily-24382.cdiff [100%]
+    Downloading daily-24383.cdiff [100%]
+    Downloading daily-24384.cdiff [100%]
+    Downloading daily-24385.cdiff [100%]
+    Downloading daily-24386.cdiff [100%]
+    Downloading daily-24387.cdiff [100%]
+    Downloading daily-24388.cdiff [100%]
+    Downloading daily-24389.cdiff [100%]
+    Downloading daily-24390.cdiff [100%]
+    Downloading daily-24391.cdiff [100%]
+    Downloading daily-24392.cdiff [100%]
+    Downloading daily-24393.cdiff [100%]
+    Downloading daily-24394.cdiff [100%]
+    daily.cld updated (version: 24394, sigs: 1877917, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6444241 signatures) from db.local.clamav.net (IP: 129.67.1.218)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    178.162.209.133
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       /PluginView/zx425/FrontContent/images/logo.png: 1 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /PHPMYADMIN/scripts/setup.php: 1 Time(s)
+       /PMA/scripts/setup.php: 1 Time(s)
+       /PhpMyAdmin/scripts/setup.php: 1 Time(s)
+       /_PHPMYADMIN/scripts/setup.php: 1 Time(s)
+       /_pHpMyAdMiN/scripts/setup.php: 1 Time(s)
+       /_phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /_phpmyadmin/scripts/setup.php: 1 Time(s)
+       /admin/phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /admin/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /admin/scripts/setup.php: 1 Time(s)
+       /admindb/scripts/setup.php: 1 Time(s)
+       /apache-default/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /cpanelphpmyadmin/scripts/setup.php: 1 Time(s)
+       /cpphpmyadmin/scripts/setup.php: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /forum/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /php-my-admin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/Setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/_setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/db_setup.init.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup0.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup1.php: 1 Time(s)
+       /phpMyAdmin2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin_/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/Setup.php: 1 Time(s)
+       /phpmyadmin/scripts/_setup.php: 1 Time(s)
+       /phpmyadmin/scripts/db_setup.init.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup0.php: 1 Time(s)
+       /phpmyadmin/scripts/setup1.php: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /phpmyadmin_/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /sql/scripts/setup.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+       /xampp/phpmyadmin/scripts/setup.php: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      139   *Warning: Pre-queue content-filter connection overload 
+      210   SASL authentication failed 
+       64   Miscellaneous warnings 
+ 
+  846.919K  Bytes accepted                           867,245
+  840.867K  Bytes delivered                          861,048
+ ========   ================================================
+ 
+       32   Accepted                                  94.12%
+        2   Rejected                                   5.88%
+ --------   ------------------------------------------------
+       34   Total                                    100.00%
+ ========   ================================================
+ 
+        2   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        2   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      244   Connections made      
+      244   Disconnections        
+       32   Removed from queue    
+       30   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.73.82.159 (89-73-82-159.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   36G   15G  71% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

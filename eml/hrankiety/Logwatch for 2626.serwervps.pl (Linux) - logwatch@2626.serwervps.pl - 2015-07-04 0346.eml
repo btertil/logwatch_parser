@@ -1,0 +1,125 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 28EAB11102EF5; Sat,  4 Jul 2015 03:47:02 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id AC06011102F00; Sat,  4 Jul 2015 03:47:01 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20150704014701.AC06011102F00@2626.serwervps.pl>
+Date: Sat,  4 Jul 2015 03:46:52 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Jul  4 03:46:52 2015
+        Date Range Processed: yesterday
+                              ( 2015-Jul-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Jul  3 03:13:40 2015
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 158.129.196.3)
+    Trying host db.local.clamav.net (62.245.181.53)...
+    Downloading daily-20632.cdiff [100%]
+    Downloading daily-20633.cdiff [100%]
+    Downloading daily-20634.cdiff [100%]
+    Downloading daily-20635.cdiff [100%]
+    Downloading daily-20636.cdiff [100%]
+    WARNING: getfile: daily-20637.cdiff not found on remote server (IP: 62.245.181.53)
+    WARNING: getpatch: Can't download daily-20637.cdiff from db.local.clamav.net
+    Downloading daily-20637.cdiff [100%]
+    daily.cld updated (version: 20637, sigs: 1458238, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 261, sigs: 48, f-level: 63, builder: anvilleg)
+    Database updated (3882511 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    188.138.17.205
+    94.102.49.169
+ 
+ Requests with error response codes
+    400 Bad Request
+       /w00tw00t.at.ISC.SANS.DFind:): 1 Time(s)
+    404 Not Found
+       /img/snapshot.cgi?AAAAAAAAAAAAAAAAAAAAAAAA ... AAAAAAA\x88\x9b: 1 Time(s)
+       /sitemap.xml: 2 Time(s)
+    501 Not Implemented
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        8   SASL authentication failed 
+ 
+   13.441K  Bytes accepted                            13,764
+   13.441K  Bytes delivered                           13,764
+ ========   ================================================
+ 
+        4   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        4   Total                                    100.00%
+ ========   ================================================
+ 
+        5   Connections made      
+        5   Disconnections        
+        4   Removed from queue    
+        2   Delivered             
+        2   Forwarded             
+ 
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   22G   29G  44% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

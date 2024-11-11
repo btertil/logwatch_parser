@@ -1,0 +1,192 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a02:95c4:0:0:0:0:0 with SMTP id b62-v6csp300463jai;
+        Fri, 25 May 2018 19:32:14 -0700 (PDT)
+X-Received: by 2002:a2e:9e10:: with SMTP id e16-v6mr3030101ljk.108.1527301694976;
+        Fri, 25 May 2018 19:28:14 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKLnuFBctNSzmOQryPSgZdBwNTu9bwWQ/yM2wCtYMzhJEZUPKB8Gu8NwIfvMnN69PX8qxglF
+X-Received: by 2002:a2e:9e10:: with SMTP id e16-v6mr3030081ljk.108.1527301693260;
+        Fri, 25 May 2018 19:28:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1527301693; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kiK04I6ERGGdVsCEgiRZHMhTQ0cgNlOP9cTMmNk+D2xyjW1Ui6cu14/C8XBVIdriOL
+         w6Vem5R7WPnRiPF47QJSeZKZZArSafFMxan547TkIJl/SWudEJIdpFenQBeUgplsu0uN
+         f53yMQNkDIvil7HoOkkdbE6k0RiL8+08gessBr6wr0//g824l8OShgtO2+TlGHKMCp/2
+         PHvobOxSUOE4O/C3yzeUE7niYURjlYzOakVI7pvNe8pemQ9hUJHo7aGAax5RkvpGmUL0
+         DsmO3btLNa3H+Ln2VN761Ptt6x4F4Kb8+dp6Tb0xVprFYRPve+C3qDpUiP0t8rO+SMzT
+         h1KA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to:arc-authentication-results;
+        bh=EwwszFqb4oTAIisnH533XWzYYDhmOqILH2iwfmhLgYU=;
+        b=jTnLwaWr0HB8fHMtiyN1gcgwvpc2s4IqzyF0JTb3uMym0rzS77jntab279drXSzC/9
+         3TBG6iF5lykb14vy/CFwQA7jWApZbPbaVl2QwD8onrWlxrWeZ2YkmskA//HDjARU3NxJ
+         cmyaKZIUEciFKG7gPHllL3bvIvwjI5spEW/uDSm44M3PYkK7BLWVRSYRzm/fBqvV+G40
+         IugXIonvoU5C+jU5VxpcFgg/pGeveu01szzXoQUIvrYM6/W7025fgSYXoFNFM8YJKYkh
+         Ra+AqWtt5M3uZAxfWD2avMJ/281/Y7h6cevxYmvXaPLRNAFPS9B+Yz/q2n63FwJ7WXgI
+         DgWw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id w19-v6si10567651lji.357.2018.05.25.19.28.12
+        for <bondiev@gmail.com>;
+        Fri, 25 May 2018 19:28:13 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 0BC344A83AB5; Sat, 26 May 2018 04:28:11 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20180526022812.0BC344A83AB5@vis1.localdomain>
+Date: Sat, 26 May 2018 04:28:10 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat May 26 04:28:09 2018
+        Date Range Processed: yesterday
+                              ( 2018-May-25 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri May 25 03:12:11 2018
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.99.4 Recommended version: 0.100.0
+    DON'T PANIC! Read http://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    nonblock_connect: connect(): fd=5 errno=99: Cannot assign requested address
+    Can't connect to port 80 of host db.local.clamav.net (IP: 2400:cb00:2048:1::6810:bc8a)
+    Downloading daily-24598.cdiff [100%]
+    Downloading daily-24599.cdiff [100%]
+    Downloading daily-24600.cdiff [100%]
+    daily.cld updated (version: 24600, sigs: 1959521, f-level: 63, builder: neo)
+    bytecode.cvd is up to date (version: 319, sigs: 75, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6525845 signatures) from db.local.clamav.net (IP: 104.16.186.138)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /server.js: 1 Time(s)
+    404 Not Found
+       /PMA/index.php: 2 Time(s)
+       /PMA2/index.php: 3 Time(s)
+       /RPC2: 1 Time(s)
+       /admin/PMA/index.php: 3 Time(s)
+       /admin/index.php: 3 Time(s)
+       /admin/mysql/index.php: 3 Time(s)
+       /admin/mysql2/index.php: 2 Time(s)
+       /admin/phpMyAdmin/index.php: 3 Time(s)
+       /admin/phpmyadmin/index.php: 3 Time(s)
+       /admin/phpmyadmin2/index.php: 3 Time(s)
+       /admin/pma/index.php: 3 Time(s)
+       /ccvv: 1 Time(s)
+       /claroline/phpMyAdmin/index.php: 2 Time(s)
+       /db/index.php: 3 Time(s)
+       /dbadmin/index.php: 3 Time(s)
+       /getcfg.php: 2 Time(s)
+       /hndUnblock.cgi: 1 Time(s)
+       /index.php: 3 Time(s)
+       /moo: 1 Time(s)
+       /myadmin/index.php: 3 Time(s)
+       /myadmin2/index.php: 3 Time(s)
+       /mysql-admin/index.php: 3 Time(s)
+       /mysql/index.php: 2 Time(s)
+       /mysqladmin/index.php: 3 Time(s)
+       /phpMyAdmin.old/index.php: 4 Time(s)
+       /phpMyAdmin/index.php: 2 Time(s)
+       /phpMyAdmin/phpMyAdmin/index.php: 2 Time(s)
+       /phpMyAdminold/index.php: 2 Time(s)
+       /phpMyadmin_bak/index.php: 3 Time(s)
+       /phpadmin/index.php: 3 Time(s)
+       /phpma/index.php: 3 Time(s)
+       /phpmyadmin-old/index.php: 3 Time(s)
+       /phpmyadmin/index.php: 3 Time(s)
+       /phpmyadmin/phpmyadmin/index.php: 3 Time(s)
+       /phpmyadmin0/index.php: 3 Time(s)
+       /phpmyadmin1/index.php: 3 Time(s)
+       /phpmyadmin2/index.php: 3 Time(s)
+       /pma-old/index.php: 3 Time(s)
+       /pma/index.php: 2 Time(s)
+       /pmamy/index.php: 3 Time(s)
+       /pmamy2/index.php: 3 Time(s)
+       /pmd/index.php: 3 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+       /tools/phpMyAdmin/index.php: 3 Time(s)
+       /typo3/phpmyadmin/index.php: 4 Time(s)
+       /web/phpMyAdmin/index.php: 3 Time(s)
+       /webfig/roteros.info: 1 Time(s)
+       /wls-wsat/CoordinatorPortType: 3 Time(s)
+       /www/phpMyAdmin/index.php: 3 Time(s)
+       /xampp/phpmyadmin/index.php: 3 Time(s)
+    405 Method Not Allowed
+       /: 3 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    6.106K  Bytes accepted                             6,253
+    6.106K  Bytes delivered                            6,253
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 113 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 113 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   22G  8.5G  72% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

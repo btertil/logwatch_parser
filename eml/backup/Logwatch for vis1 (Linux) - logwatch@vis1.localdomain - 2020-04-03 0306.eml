@@ -1,0 +1,194 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a17:907:a9b:0:0:0:0 with SMTP id by27csp2301365ejc;
+        Thu, 2 Apr 2020 18:06:11 -0700 (PDT)
+X-Google-Smtp-Source: APiQypJ7vX0cxuhIqipDWn53mLJkIEF7chEiWHaqbfr7diR0RhaRCs9d9DYfbFzg1pZhnCRqfM0M
+X-Received: by 2002:a19:7706:: with SMTP id s6mr65630lfc.31.1585875971604;
+        Thu, 02 Apr 2020 18:06:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1585875971; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kn11RMp/a4IGlAZVZTfL36vWCK3DHHBQwN13TT5q1XhBgTqIHimCa0cPw6gwl2CSq6
+         J8+LRKFf89L8S6mlCRyikN+fDEjUCZkk4dAAi5COY49a8zWqIqPsI/0IZc2xf7Dg/OUP
+         1njZMXQIkSRn/Ya/zSc9aoDeQCSDfvmGO8A6b47jlC/Fr4hFb8y4PX4DWBld7SOxZ1ox
+         3BJhFnPsSwUK4EDeVoJGhoIjzVhB92gtN7Opap20Unq5Z6Iuo/Bo+sYh7s2LY2yFQZbX
+         kyHT7ZYobw02PVk2PnzHZUeQLj7kezJVLAbINR8aTlxpRpQ/crnVzMzjXEi2dXjv0o9s
+         2QnQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=DpVtDGyaY4IwL4Wa8RRqcB7mJ8ZR9ebMIUAvvf91zvo=;
+        b=MYCuoMZHkD7wXNOFwlcvPL7EG02A4rvRYbF8O2AgqxnLuWewHoYEPkNPQpLNlm2FH/
+         44L+djxW8rRFn+hvPcMIKGjJPBE0VIh9oEVIVwyT+qmNaAJivPiTHYTtXiMU6uQb4coy
+         2wAgSQ6ldBo0ZBc2bvwl0NsLF7Nz9SaHq5pno81JCP60rDLBgNYThJgW1jHt7IFpVS1r
+         pwq6z9eDvHOQJDIaaNunMI8qHbiwtRB4GfWuJ5a0qlzOu+bN1j2CmECKOVn1HtFisihq
+         a3irk51dX2cIAGxzY7OloqE9YvgMiozHG44YsI+KRpynuex55dj08c7zbeVe2OXKUoks
+         fmqA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id m17si4763501ljg.74.2020.04.02.18.06.11
+        for <bondiev@gmail.com>;
+        Thu, 02 Apr 2020 18:06:11 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 4A28C4A8004D; Fri,  3 Apr 2020 03:06:10 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20200403010610.4A28C4A8004D@vis1.localdomain>
+Date: Fri,  3 Apr 2020 03:06:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Apr  3 03:06:07 2020
+        Date Range Processed: yesterday
+                              ( 2020-Apr-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Thu Apr  2 03:49:10 2020
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.102.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25769.cdiff [100%]
+    daily.cld updated (version: 25769, sigs: 2244041, f-level: 63, builder: raynman)
+    Can't query daily.25769.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (6809037 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Connection attempts using mod_proxy:
+    23.225.172.10 -> ip.ws.126.net:443: 1 Time(s)
+ 
+ A total of 1 sites probed the server 
+    181.48.225.126
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+       null: 1 Time(s)
+    404 Not Found
+       //Admin/scripts/setup.php: 1 Time(s)
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //a2billing/customer/templates/default/footer.tpl: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /PMA2011/scripts/setup.php: 1 Time(s)
+       /PMA2012/scripts/setup.php: 1 Time(s)
+       /PMA2013/scripts/setup.php: 1 Time(s)
+       /PMA2014/scripts/setup.php: 1 Time(s)
+       /PMA2015/scripts/setup.php: 1 Time(s)
+       /PMA2016/scripts/setup.php: 1 Time(s)
+       /ReportServer: 1 Time(s)
+       /cgi-bin/mainfunction.cgi: 4 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /hudson: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /myadmin/scripts/setup.php: 1 Time(s)
+       /mysql/scripts/setup.php: 2 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.10.0.0/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.11.11.3/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.11.11/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-3.0.0.0-all-languages/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /phpmyadmin3/scripts/setup.php: 1 Time(s)
+       /phpmyadmin4/scripts/setup.php: 1 Time(s)
+       /phpmyadmin5/scripts/setup.php: 1 Time(s)
+       /phpmyadmin6/scripts/setup.php: 1 Time(s)
+       /phpmyadmin7/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 1 Time(s)
+       /pma2011/scripts/setup.php: 1 Time(s)
+       /pma2012/scripts/setup.php: 1 Time(s)
+       /pma2013/scripts/setup.php: 1 Time(s)
+       /pma2014/scripts/setup.php: 1 Time(s)
+       /pma2015/scripts/setup.php: 1 Time(s)
+       /pma2016/scripts/setup.php: 1 Time(s)
+       /robots.txt: 4 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 1 Time(s)
+    405 Method Not Allowed
+       ip.ws.126.net:443: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+   10.655K  Bytes accepted                            10,911
+   10.655K  Bytes delivered                           10,911
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       188.116.4.178 (h1881164178.rev.rootvps.pl): 7 times
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 4 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 11 Time(s)
+ 
+ **Unmatched Entries**
+ error: connect to 2600:1901:0:c584:: port 443 failed: Cannot assign requested address : 2 time(s)
+ error: connect to 2a00:1450:401b:802::200a port 443 failed: Cannot assign requested address : 1 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   22G  8.2G  73% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

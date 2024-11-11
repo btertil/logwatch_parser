@@ -1,0 +1,234 @@
+Delivered-To: bondiev@gmail.com
+Received: by 2002:a5b:542:0:0:0:0:0 with SMTP id r2csp5278586ybp;
+        Wed, 21 Oct 2020 18:06:15 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyA7oSL7baqrepxxGqVmHBmVN2d6r8Qjk1VrCOF6jNvBvkjEO3WAvzIhfZlOuT2H9o84Hbx
+X-Received: by 2002:a19:8ad4:: with SMTP id m203mr2350416lfd.183.1603328775394;
+        Wed, 21 Oct 2020 18:06:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1603328775; cv=none;
+        d=google.com; s=arc-20160816;
+        b=z0QEEmqTL3PlLO8SEdLLaDEX7lX4BAnzTfM/qTeaBKydBngvPjHRK1TgdFtfOpKYLB
+         QZ5CMHRr7SpA3Q+Ag04oy+3EUOB1J35Xlc7ZEroS6YJ1IMpZlrTbY/zO8OYTuXAFV++m
+         7/yKYUNR68QmnkPRwnp+H7lQ1HyBrnWc5hreP1sK6VM3eJoofF6mPttnutgWsXfrex7g
+         XUIAVCS3Rw9tOFedToQscHPp9Mq/DXBFpMKsgH2Z/1V7mFjZ3tnI7/tGpkqwF0/L5cnZ
+         MaJrWeKVpk+882BCTHeBWlAMk5FwBbMGeaIZe5OUlp8TV/PiBBhGgM5FitmXIfUqV9V+
+         ErpA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:content-transfer-encoding:mime-version:subject:from
+         :to;
+        bh=S+4sB0gxoJj5+e5ZA2Li5IUNbm+x7TwOAj4UqDRKuGs=;
+        b=gNkzNHpJSxOkVvMGIXhDSjcsB9RaDEjC2/7AkDFcNTgyRtwpMDujH/C5vwi5w63A6W
+         EeRLhubfEoVt8SDaUuegAr4J3HeDoCVCK7NzDLb8LJIOcmS2G3WoSHn4cUn7kE0kwXRk
+         74vtIppcjL/Dh9Qx49CukzEJETUnzy6jEsxfNeIIsa9iw/1mzon2srdyxRqIrYdbpOdL
+         RuzyzzXXm/JwFA3AiMFpHv5YS/QFxECvLlIJTLMTMo8en8Cr+IDC00MbXoz5zQnsI9Y6
+         CLkwIFORp5AyHrGDuA79OJtVUv0Twk6N9aqsK1lHGMnJHx2+HIXXoFpiVDfwijIu29sD
+         xCRA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Return-Path: <root@vis1.localdomain>
+Received: from vis1.localdomain (vi185-17-41-230.vibiznes.pl. [185.17.41.230])
+        by mx.google.com with ESMTP id n84si1452677lfd.101.2020.10.21.18.06.14
+        for <bondiev@gmail.com>;
+        Wed, 21 Oct 2020 18:06:15 -0700 (PDT)
+Received-SPF: neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) client-ip=185.17.41.230;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 185.17.41.230 is neither permitted nor denied by best guess record for domain of root@vis1.localdomain) smtp.mailfrom=root@vis1.localdomain
+Received: by vis1.localdomain (Postfix, from userid 0)
+	id 3AA224A8004D; Thu, 22 Oct 2020 03:06:13 +0200 (CEST)
+To: bondiev@gmail.com
+From: logwatch@vis1.localdomain
+Subject: Logwatch for vis1 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20201022010614.3AA224A8004D@vis1.localdomain>
+Date: Thu, 22 Oct 2020 03:06:11 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Oct 22 03:06:11 2020
+        Date Range Processed: yesterday
+                              ( 2020-Oct-21 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: vis1
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Wed Oct 21 03:11:12 2020
+ 
+ Last Status:
+    main.cld is up to date (version: 59, sigs: 4564902, f-level: 60, builder: sigmgr)
+    Downloading daily-25963.cdiff [100%]
+    daily.cld updated (version: 25963, sigs: 4333558, f-level: 63, builder: raynman)
+    Can't query daily.25963.93.1.0.6810DB54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    Database updated (8898554 signatures) from db.local.clamav.net (IP: 104.16.219.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 3 sites probed the server 
+    185.142.236.40
+    185.156.72.31
+    37.49.230.112
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../proc/: 1 Time(s)
+       /: 1 Time(s)
+       /HNAP1/: 1 Time(s)
+       HTTP/1.0: 2 Time(s)
+       null: 12 Time(s)
+    404 Not Found
+       /.env: 2 Time(s)
+       /.well-known/security.txt: 1 Time(s)
+       /0bef: 1 Time(s)
+       /GponForm/diag_Form?images/: 1 Time(s)
+       /TP/html/public/index.php: 2 Time(s)
+       /TP/index.php: 2 Time(s)
+       /TP/public/index.php: 2 Time(s)
+       /admin//config.php: 3 Time(s)
+       /api/jsonws/invoke: 2 Time(s)
+       /backup/order.sql: 1 Time(s)
+       /backup/orders.sql: 1 Time(s)
+       /backup/payment.sql: 1 Time(s)
+       /backup/payments.sql: 1 Time(s)
+       /backup/shop.sql: 1 Time(s)
+       /backup/store.sql: 1 Time(s)
+       /backups/order.sql: 1 Time(s)
+       /backups/orders.sql: 1 Time(s)
+       /backups/payment.sql: 1 Time(s)
+       /backups/payments.sql: 1 Time(s)
+       /backups/shop.sql: 1 Time(s)
+       /backups/store.sql: 1 Time(s)
+       /card.sql: 1 Time(s)
+       /cards.sql: 1 Time(s)
+       /credit_card.sql: 1 Time(s)
+       /credit_cards.sql: 1 Time(s)
+       /creditcard.sql: 1 Time(s)
+       /creditcards.sql: 1 Time(s)
+       /database/order.sql: 1 Time(s)
+       /database/orders.sql: 1 Time(s)
+       /database/payment.sql: 1 Time(s)
+       /database/payments.sql: 1 Time(s)
+       /database/shop.sql: 1 Time(s)
+       /database/store.sql: 1 Time(s)
+       /db/order.sql: 1 Time(s)
+       /db/orders.sql: 1 Time(s)
+       /db/payment.sql: 1 Time(s)
+       /db/payments.sql: 1 Time(s)
+       /db/shop.sql: 1 Time(s)
+       /db/store.sql: 1 Time(s)
+       /dbbackup/order.sql: 1 Time(s)
+       /dbbackup/orders.sql: 1 Time(s)
+       /dbbackup/payment.sql: 1 Time(s)
+       /dbbackup/payments.sql: 1 Time(s)
+       /dbbackup/shop.sql: 1 Time(s)
+       /dbbackup/store.sql: 1 Time(s)
+       /dump/order.sql: 1 Time(s)
+       /dump/orders.sql: 1 Time(s)
+       /dump/payment.sql: 1 Time(s)
+       /dump/payments.sql: 1 Time(s)
+       /dump/shop.sql: 1 Time(s)
+       /dump/store.sql: 1 Time(s)
+       /dumps/order.sql: 1 Time(s)
+       /dumps/orders.sql: 1 Time(s)
+       /dumps/payment.sql: 1 Time(s)
+       /dumps/payments.sql: 1 Time(s)
+       /dumps/shop.sql: 1 Time(s)
+       /dumps/store.sql: 1 Time(s)
+       /editBlackAndWhiteList: 9 Time(s)
+       /elrekt.php: 2 Time(s)
+       /html/public/index.php: 2 Time(s)
+       /index.php: 2 Time(s)
+       /index.php?s=/Index/\\think\\app/invokefun ... ]=HelloThinkPHP: 2 Time(s)
+       /mysql/order.sql: 1 Time(s)
+       /mysql/orders.sql: 1 Time(s)
+       /mysql/payment.sql: 1 Time(s)
+       /mysql/payments.sql: 1 Time(s)
+       /mysql/shop.sql: 1 Time(s)
+       /mysql/store.sql: 1 Time(s)
+       /mysql_backup/order.sql: 1 Time(s)
+       /mysql_backup/orders.sql: 1 Time(s)
+       /mysql_backup/payment.sql: 1 Time(s)
+       /mysql_backup/payments.sql: 1 Time(s)
+       /mysql_backup/shop.sql: 1 Time(s)
+       /mysql_backup/store.sql: 1 Time(s)
+       /order.sql: 1 Time(s)
+       /orders.sql: 1 Time(s)
+       /payment.sql: 1 Time(s)
+       /payments.sql: 1 Time(s)
+       /portal/redlion: 1 Time(s)
+       /public/index.php: 2 Time(s)
+       /robots.txt: 1 Time(s)
+       /shop.sql: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /solr/admin/info/system?wt=json: 1 Time(s)
+       /sql/order.sql: 1 Time(s)
+       /sql/orders.sql: 1 Time(s)
+       /sql/payment.sql: 1 Time(s)
+       /sql/payments.sql: 1 Time(s)
+       /sql/shop.sql: 1 Time(s)
+       /sql/store.sql: 1 Time(s)
+       /store.sql: 1 Time(s)
+       /thinkphp/html/public/index.php: 2 Time(s)
+       /tmUnblock.cgi: 2 Time(s)
+       /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php: 4 Time(s)
+       /wp-content/plugins/wp-file-manager/readme.txt: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    4.810K  Bytes accepted                             4,925
+    4.810K  Bytes delivered                            4,925
+ ========   ================================================
+ 
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Removed from queue    
+        1   Sent via SMTP         
+ 
+        1   Connection failure (outbound) 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.242.132.226 (2626.serwervps.pl): 7 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 7 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G   22G  8.2G  73% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

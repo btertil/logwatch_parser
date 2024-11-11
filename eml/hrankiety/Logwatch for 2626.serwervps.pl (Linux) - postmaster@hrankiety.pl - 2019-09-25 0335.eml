@@ -1,0 +1,408 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id E91F29F21A27; Wed, 25 Sep 2019 03:35:08 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190925013508.E91F29F21A27@hrankiety.pl>
+Date: Wed, 25 Sep 2019 03:35:05 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Sep 25 03:35:05 2019
+        Date Range Processed: yesterday
+                              ( 2019-Sep-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Tue Sep 24 03:44:09 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.4
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25581.cdiff [100%]
+    daily.cld updated (version: 25581, sigs: 1776056, f-level: 63, builder: raynman)
+    Can't query daily.25581.93.1.0.6810DA54.ping.clamav.net
+    bytecode.cld is up to date (version: 331, sigs: 94, f-level: 63, builder: anvilleg)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    Database updated (6342399 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 1 sites probed the server 
+    93.178.13.235
+ 
+ Requests with error response codes
+    400 Bad Request
+       ../../mnt/custom/ProductDefinition: 2 Time(s)
+       /: 2 Time(s)
+       /msdn.cpp: 1 Time(s)
+    404 Not Found
+       /2N/: 1 Time(s)
+       /2n/: 1 Time(s)
+       /ATA/: 1 Time(s)
+       /AVM/: 1 Time(s)
+       /Aastra/: 1 Time(s)
+       /Accton/: 1 Time(s)
+       /Addpac/: 1 Time(s)
+       /Akuvox/: 1 Time(s)
+       /Alcatel/: 1 Time(s)
+       /Algo/: 1 Time(s)
+       /Allworx/: 1 Time(s)
+       /Arris/: 1 Time(s)
+       /Astrocom/: 1 Time(s)
+       /Ata/: 1 Time(s)
+       /Atlinks/: 1 Time(s)
+       /Audiocodes/: 1 Time(s)
+       /Avantfax/: 1 Time(s)
+       /Avaya/: 1 Time(s)
+       /Avm/: 1 Time(s)
+       /BizTouch/: 1 Time(s)
+       /BroadWorks/: 1 Time(s)
+       /Broadsoft/: 1 Time(s)
+       /Broadworks/: 1 Time(s)
+       /CP/: 1 Time(s)
+       /Cfg/: 1 Time(s)
+       /Cisco/: 1 Time(s)
+       /Conf/: 1 Time(s)
+       /Configs/: 1 Time(s)
+       /CyberData/: 1 Time(s)
+       /Cyberdata/: 1 Time(s)
+       /DMS/: 1 Time(s)
+       /Denwa/: 1 Time(s)
+       /Digium/: 1 Time(s)
+       /Dms/: 1 Time(s)
+       /DrayTek/: 1 Time(s)
+       /Draytek/: 1 Time(s)
+       /ESpace/: 1 Time(s)
+       /Echolife/: 1 Time(s)
+       /Edgemarc/: 1 Time(s)
+       /Edgewater/: 1 Time(s)
+       /Escene/: 1 Time(s)
+       /Espace/: 1 Time(s)
+       /FRITZ!OS/: 1 Time(s)
+       /FreeSwitch/: 1 Time(s)
+       /GPON/: 1 Time(s)
+       /GS/: 1 Time(s)
+       /GVX/: 1 Time(s)
+       /GXP/: 1 Time(s)
+       /GXV/: 1 Time(s)
+       /Gigaset/: 1 Time(s)
+       /Gpon/: 1 Time(s)
+       /Grandstream/: 1 Time(s)
+       /Hanlong/: 1 Time(s)
+       /Htek/: 1 Time(s)
+       /Huawei/: 1 Time(s)
+       /Huawei_eSpace/: 1 Time(s)
+       /Kamailio/: 1 Time(s)
+       /Konftel/: 1 Time(s)
+       /Lancom/: 1 Time(s)
+       /Linksys/: 1 Time(s)
+       /MP/: 1 Time(s)
+       /MX/: 1 Time(s)
+       /Matrix/: 1 Time(s)
+       /Maxwell/: 1 Time(s)
+       /Mediant/: 1 Time(s)
+       /Mediatrix/: 1 Time(s)
+       /MiaRec/: 1 Time(s)
+       /Miarec/: 1 Time(s)
+       /Mitel/: 1 Time(s)
+       /MultiVoip/: 1 Time(s)
+       /Multitech/: 1 Time(s)
+       /NEC/: 1 Time(s)
+       /NET-DK/: 1 Time(s)
+       /NetGate/: 1 Time(s)
+       /Netgear/: 1 Time(s)
+       /Obihai/: 1 Time(s)
+       /Octtel/: 1 Time(s)
+       /PLANET/: 1 Time(s)
+       /Panasonic/: 1 Time(s)
+       /Patton/: 1 Time(s)
+       /Pirelli/: 1 Time(s)
+       /Planet/: 1 Time(s)
+       /Polycom/: 1 Time(s)
+       /Prov/: 1 Time(s)
+       /Provision/: 1 Time(s)
+       /Provisioning/: 1 Time(s)
+       /SIP/: 1 Time(s)
+       /SPA/: 1 Time(s)
+       /Samsung/: 1 Time(s)
+       /Sangoma/: 1 Time(s)
+       /Siemens/: 1 Time(s)
+       /Sip/: 1 Time(s)
+       /Sipura/: 1 Time(s)
+       /SmartNode/: 1 Time(s)
+       /Smartnode/: 1 Time(s)
+       /Snom/: 1 Time(s)
+       /Sonicwall/: 1 Time(s)
+       /Sonus/: 1 Time(s)
+       /Spa/: 1 Time(s)
+       /Spectralink/: 1 Time(s)
+       /Swissvoice/: 1 Time(s)
+       /TANDBERG/: 1 Time(s)
+       /TP/html/public/index.php: 1 Time(s)
+       /TP/index.php: 1 Time(s)
+       /TP/public/index.php: 1 Time(s)
+       /Tandberg/: 1 Time(s)
+       /Technicolor/: 1 Time(s)
+       /Temporis/: 1 Time(s)
+       /Thomson/: 1 Time(s)
+       /Tipte/: 1 Time(s)
+       /Tiptel/: 1 Time(s)
+       /Touchstone/: 1 Time(s)
+       /Unify/: 1 Time(s)
+       /VOIP/: 1 Time(s)
+       /VTech/: 1 Time(s)
+       /VTiger/: 1 Time(s)
+       /Valcom/: 1 Time(s)
+       /Vega/: 1 Time(s)
+       /VegaStream/: 1 Time(s)
+       /Vegastream/: 1 Time(s)
+       /Voip/: 1 Time(s)
+       /Vtech/: 1 Time(s)
+       /Vtiger/: 1 Time(s)
+       /Wyz070/: 1 Time(s)
+       /Yealink/: 1 Time(s)
+       /ZTE/: 1 Time(s)
+       /Zte/: 1 Time(s)
+       /Zyxel/: 1 Time(s)
+       /aastra/: 1 Time(s)
+       /accton/: 1 Time(s)
+       /addpac/: 1 Time(s)
+       /admin/index.php/dms/Cisco-SPA-122/: 1 Time(s)
+       /akuvox/: 1 Time(s)
+       /alcatel/: 1 Time(s)
+       /algo/: 1 Time(s)
+       /allworx/: 1 Time(s)
+       /api/v1/pods: 1 Time(s)
+       /app/provision/: 1 Time(s)
+       /arris/: 1 Time(s)
+       /asterisk/phoneprov/: 1 Time(s)
+       /astrocom/: 1 Time(s)
+       /ata/: 1 Time(s)
+       /atlinks/: 1 Time(s)
+       /audiocodes/: 1 Time(s)
+       /avantfax/: 1 Time(s)
+       /avaya/: 1 Time(s)
+       /avm/: 1 Time(s)
+       /broadWorks/: 1 Time(s)
+       /broadsoft/: 1 Time(s)
+       /broadworks/: 1 Time(s)
+       /cfg/: 1 Time(s)
+       /cgi-bin/config.exp: 1 Time(s)
+       /cisco/: 1 Time(s)
+       /cm/: 1 Time(s)
+       /conf/: 1 Time(s)
+       /configServlet/: 1 Time(s)
+       /config_server/: 1 Time(s)
+       /configs/: 1 Time(s)
+       /cp/: 1 Time(s)
+       /cyberData/: 1 Time(s)
+       /cyberdata/: 1 Time(s)
+       /dekstop/phone/: 1 Time(s)
+       /denwa/: 1 Time(s)
+       /deskphone/: 1 Time(s)
+       /deskphone/aastra/: 1 Time(s)
+       /desktopphone/: 1 Time(s)
+       /device/: 1 Time(s)
+       /devicecfg/: 1 Time(s)
+       /digium/: 1 Time(s)
+       /dms/: 1 Time(s)
+       /drayTek/: 1 Time(s)
+       /draytek/: 1 Time(s)
+       /eSpace/: 1 Time(s)
+       /echolife/: 1 Time(s)
+       /edgemarc/: 1 Time(s)
+       /edgewater/: 1 Time(s)
+       /elrekt.php: 1 Time(s)
+       /escene/: 1 Time(s)
+       /espace/: 1 Time(s)
+       /firmware/: 1 Time(s)
+       /fpbx/: 1 Time(s)
+       /getconf/: 1 Time(s)
+       /gigaset/: 1 Time(s)
+       /gpon/: 1 Time(s)
+       /grandstream/: 1 Time(s)
+       /gs/: 1 Time(s)
+       /gvx/: 1 Time(s)
+       /gxp/: 1 Time(s)
+       /gxp_1165/: 1 Time(s)
+       /gxv/: 1 Time(s)
+       /hanlong/: 1 Time(s)
+       /htek/: 1 Time(s)
+       /html/public/index.php: 1 Time(s)
+       /huawei/: 1 Time(s)
+       /huawei_eSpace/: 1 Time(s)
+       /index.action: 1 Time(s)
+       /index.do: 1 Time(s)
+       /index.php: 1 Time(s)
+       /inetpub/: 1 Time(s)
+       /kamailio/: 1 Time(s)
+       /konftel/: 1 Time(s)
+       /lancom/: 1 Time(s)
+       /linksys/: 1 Time(s)
+       /management/: 1 Time(s)
+       /matrix/: 1 Time(s)
+       /maxwell/: 1 Time(s)
+       /mediant/: 1 Time(s)
+       /mediatrix/: 1 Time(s)
+       /miaRec/: 1 Time(s)
+       /miarec/: 1 Time(s)
+       /mitel/: 1 Time(s)
+       /mp/: 1 Time(s)
+       /multiVoip/: 1 Time(s)
+       /multitech/: 1 Time(s)
+       /mx/: 1 Time(s)
+       /nec/: 1 Time(s)
+       /netGate/: 1 Time(s)
+       /netgear/: 1 Time(s)
+       /obihai/: 1 Time(s)
+       /octtel/: 1 Time(s)
+       /overrides/: 1 Time(s)
+       /panasonic/: 1 Time(s)
+       /pap2/: 1 Time(s)
+       /patton/: 1 Time(s)
+       /pbx/: 1 Time(s)
+       /phone/: 1 Time(s)
+       /phoneprov/: 1 Time(s)
+       /phones/: 1 Time(s)
+       /phonesprov/: 1 Time(s)
+       /phprov/: 1 Time(s)
+       /pirelli/: 1 Time(s)
+       /planet/: 1 Time(s)
+       /polycom-vvx/: 1 Time(s)
+       /polycom/: 1 Time(s)
+       /prov/: 1 Time(s)
+       /provision/: 1 Time(s)
+       /provisioning/: 1 Time(s)
+       /provisioning/p.php/: 1 Time(s)
+       /public/index.php: 1 Time(s)
+       /samsung/: 1 Time(s)
+       /sangoma/: 1 Time(s)
+       /scottch/: 1 Time(s)
+       /siemens/: 1 Time(s)
+       /simpla/: 1 Time(s)
+       /sip/: 1 Time(s)
+       /sipura/: 1 Time(s)
+       /smartNode/: 1 Time(s)
+       /smartnode/: 1 Time(s)
+       /snom/: 1 Time(s)
+       /sonicwall/: 1 Time(s)
+       /sonus/: 1 Time(s)
+       /spa/: 1 Time(s)
+       /spectralink/: 1 Time(s)
+       /struts2-rest-showcase/orders.xhtml: 1 Time(s)
+       /swissvoice/: 1 Time(s)
+       /t32/: 1 Time(s)
+       /tandberg/: 1 Time(s)
+       /technicolor/: 1 Time(s)
+       /temporis/: 1 Time(s)
+       /tftp/: 1 Time(s)
+       /tftpboot/: 1 Time(s)
+       /tftpphone/: 1 Time(s)
+       /tftproot/: 1 Time(s)
+       /thinkphp/html/public/index.php: 1 Time(s)
+       /thomson/: 1 Time(s)
+       /tipte/: 1 Time(s)
+       /tiptel/: 1 Time(s)
+       /touchstone/: 1 Time(s)
+       /trixbox/: 1 Time(s)
+       /ucs/: 1 Time(s)
+       /unauthenticated/provisioning/: 1 Time(s)
+       /unify/: 1 Time(s)
+       /vTech/: 1 Time(s)
+       /vTiger/: 1 Time(s)
+       /valcom/: 1 Time(s)
+       /vega/: 1 Time(s)
+       /vegaStream/: 1 Time(s)
+       /vegastream/: 1 Time(s)
+       /voip/: 1 Time(s)
+       /voip_provisioning/: 1 Time(s)
+       /vtech/: 1 Time(s)
+       /vtiger/: 1 Time(s)
+       /whoami.php: 1 Time(s)
+       /wyz070/: 1 Time(s)
+       /xmlservices/: 1 Time(s)
+       /yealink/: 1 Time(s)
+       /zte/: 1 Time(s)
+       /zyxel/: 1 Time(s)
+    408 Request Timeout
+       null: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        5   *Warning: Pre-queue content-filter connection overload 
+     5392   SASL authentication failed 
+       70   Miscellaneous warnings 
+ 
+    1.831M  Bytes accepted                         1,920,415
+    1.826M  Bytes delivered                        1,914,213
+ ========   ================================================
+ 
+       40   Accepted                                 100.00%
+ --------   ------------------------------------------------
+       40   Total                                    100.00%
+ ========   ================================================
+ 
+     5430   Connections made      
+        1   Connections lost      
+     5430   Disconnections        
+       40   Removed from queue    
+       38   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+        1   SMTP commands dialog error 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 46 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 48 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   20G   31G  39% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

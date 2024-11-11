@@ -1,0 +1,268 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 1D0639F20FC3; Sat, 11 May 2019 03:09:14 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20190511010914.1D0639F20FC3@hrankiety.pl>
+Date: Sat, 11 May 2019 03:09:11 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat May 11 03:09:11 2019
+        Date Range Processed: yesterday
+                              ( 2019-May-10 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri May 10 03:24:14 2019
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.100.3 Recommended version: 0.101.2
+    DON'T PANIC! Read https://www.clamav.net/documents/upgrading-clamav
+    main.cvd is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-25444.cdiff [100%]
+    daily.cld updated (version: 25444, sigs: 1566720, f-level: 63, builder: raynman)
+    bytecode.cvd is up to date (version: 328, sigs: 94, f-level: 63, builder: neo)
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/main.cvd and /var/lib/clamav/main.cld, please manually remove one of them
+    [LibClamAV] Detected duplicate databases /var/lib/clamav/bytecode.cvd and /var/lib/clamav/bytecode.cld, please manually remove one of them
+    Database updated (6133063 signatures) from db.local.clamav.net (IP: 104.16.218.84)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    1.253.176.153
+    80.158.18.218
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 4 Time(s)
+    404 Not Found
+       /2phpmyadmin/index.php?lang=en: 1 Time(s)
+       /FxCodeShell.jsp?view=FxxkMyLie1836710Aa&o ... se/download.exe: 1 Time(s)
+       /MyAdmin/index.php?lang=en: 1 Time(s)
+       /PMA/index.php?lang=en: 1 Time(s)
+       /PMA2011/index.php?lang=en: 1 Time(s)
+       /PMA2012/index.php?lang=en: 1 Time(s)
+       /PMA2013/index.php?lang=en: 1 Time(s)
+       /PMA2014/index.php?lang=en: 1 Time(s)
+       /PMA2015/index.php?lang=en: 1 Time(s)
+       /PMA2016/index.php?lang=en: 1 Time(s)
+       /PMA2017/index.php?lang=en: 1 Time(s)
+       /PMA2018/index.php?lang=en: 1 Time(s)
+       /admin/db/index.php?lang=en: 1 Time(s)
+       /admin/index.php?lang=en: 1 Time(s)
+       /admin/pMA/index.php?lang=en: 1 Time(s)
+       /admin/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /admin/phpmyadmin/index.php?lang=en: 1 Time(s)
+       /admin/sqladmin/index.php?lang=en: 1 Time(s)
+       /admin/sysadmin/index.php?lang=en: 1 Time(s)
+       /admin/web/index.php?lang=en: 1 Time(s)
+       /administrator/PMA/index.php?lang=en: 1 Time(s)
+       /administrator/admin/index.php?lang=en: 1 Time(s)
+       /administrator/db/index.php?lang=en: 1 Time(s)
+       /administrator/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /administrator/phpmyadmin/index.php?lang=en: 1 Time(s)
+       /administrator/pma/index.php?lang=en: 1 Time(s)
+       /administrator/web/index.php?lang=en: 1 Time(s)
+       /beta/wp-content/themes/AdvanceImage5/functions.php: 1 Time(s)
+       /database/index.php?lang=en: 1 Time(s)
+       /db/db-admin/index.php?lang=en: 1 Time(s)
+       /db/dbadmin/index.php?lang=en: 1 Time(s)
+       /db/dbweb/index.php?lang=en: 1 Time(s)
+       /db/index.php?lang=en: 1 Time(s)
+       /db/myadmin/index.php?lang=en: 1 Time(s)
+       /db/phpMyAdmin-3/index.php?lang=en: 1 Time(s)
+       /db/phpMyAdmin/index.php: 1 Time(s)
+       /db/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /db/phpMyAdmin3/index.php?lang=en: 1 Time(s)
+       /db/phpmyadmin/index.php?lang=en: 1 Time(s)
+       /db/phpmyadmin3/index.php?lang=en: 1 Time(s)
+       /db/webadmin/index.php?lang=en: 1 Time(s)
+       /db/webdb/index.php?lang=en: 1 Time(s)
+       /db/websql/index.php?lang=en: 1 Time(s)
+       /dbadmin/index.php?lang=en: 1 Time(s)
+       /index.php?lang=en: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /myadmin/index.php?lang=en: 1 Time(s)
+       /mysql-admin/index.php?lang=en: 1 Time(s)
+       /mysql/admin/index.php?lang=en: 2 Time(s)
+       /mysql/db/index.php?lang=en: 1 Time(s)
+       /mysql/dbadmin/index.php?lang=en: 2 Time(s)
+       /mysql/index.php?lang=en: 1 Time(s)
+       /mysql/mysqlmanager/index.php?lang=en: 1 Time(s)
+       /mysql/pMA/index.php?lang=en: 1 Time(s)
+       /mysql/pma/index.php?lang=en: 1 Time(s)
+       /mysql/sqlmanager/index.php?lang=en: 2 Time(s)
+       /mysql/web/index.php?lang=en: 1 Time(s)
+       /mysqladmin/index.php?lang=en: 1 Time(s)
+       /mysqlmanager/index.php?lang=en: 1 Time(s)
+       /php-my-admin/index.php?lang=en: 1 Time(s)
+       /php-myadmin/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin-3/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin2/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin3/index.php?lang=en: 1 Time(s)
+       /phpMyAdmin4/index.php?lang=en: 1 Time(s)
+       /phpMyadmin/index.php?lang=en: 1 Time(s)
+       /phpmy-admin/index.php?lang=en: 1 Time(s)
+       /phpmy/index.php?lang=en: 1 Time(s)
+       /phpmyAdmin/index.php?lang=en: 1 Time(s)
+       /phpmyadmin/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2011/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2012/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2013/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2014/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2015/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2016/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2017/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2018/index.php?lang=en: 1 Time(s)
+       /phpmyadmin2019/index.php?lang=en: 1 Time(s)
+       /phpmyadmin3/index.php?lang=en: 1 Time(s)
+       /phpmyadmin4/index.php?lang=en: 1 Time(s)
+       /phppma/index.php?lang=en: 1 Time(s)
+       /pma/index.php?lang=en: 1 Time(s)
+       /pma2011/index.php?lang=en: 1 Time(s)
+       /pma2012/index.php?lang=en: 1 Time(s)
+       /pma2013/index.php?lang=en: 1 Time(s)
+       /pma2014/index.php?lang=en: 1 Time(s)
+       /pma2015/index.php: 1 Time(s)
+       /pma2015/index.php?lang=en: 1 Time(s)
+       /pma2016/index.php?lang=en: 1 Time(s)
+       /pma2017/index.php?lang=en: 1 Time(s)
+       /pma2018/index.php?lang=en: 1 Time(s)
+       /pma2019/index.php?lang=en: 1 Time(s)
+       /program/index.php?lang=en: 1 Time(s)
+       /shopdb/index.php?lang=en: 1 Time(s)
+       /sql/myadmin/index.php?lang=en: 1 Time(s)
+       /sql/php-myadmin/index.php?lang=en: 1 Time(s)
+       /sql/phpMyAdmin/index.php?lang=en: 1 Time(s)
+       /sql/phpMyAdmin2/index.php?lang=en: 1 Time(s)
+       /sql/phpmanager/index.php?lang=en: 1 Time(s)
+       /sql/phpmy-admin/index.php?lang=en: 1 Time(s)
+       /sql/phpmyadmin2/index.php?lang=en: 1 Time(s)
+       /sql/sql-admin/index.php?lang=en: 1 Time(s)
+       /sql/sql/index.php?lang=en: 1 Time(s)
+       /sql/sqladmin/index.php?lang=en: 1 Time(s)
+       /sql/sqlweb/index.php?lang=en: 1 Time(s)
+       /sql/webadmin/index.php?lang=en: 1 Time(s)
+       /sql/webdb/index.php?lang=en: 1 Time(s)
+       /sql/websql/index.php?lang=en: 1 Time(s)
+       /sqlmanager/index.php?lang=en: 1 Time(s)
+       /wp-content/plugins/portable-phpmyadmin/wp ... dex.php?lang=en: 1 Time(s)
+       /wp-login.php: 1 Time(s)
+    405 Method Not Allowed
+       /FxCodeShell.jsp%20: 1 Time(s)
+       /FxCodeShell.jsp/: 1 Time(s)
+       /FxCodeShell.jsp::$DATA: 1 Time(s)
+    408 Request Timeout
+       null: 6 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       btertil (ecs-80-158-18-218.reverse.open-telekom-cloud.com): 1 Time(s)
+ 
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       28   *Warning: Pre-queue content-filter connection overload 
+      784   SASL authentication failed 
+      209   Miscellaneous warnings 
+ 
+    1.842M  Bytes accepted                         1,931,163
+    1.836M  Bytes delivered                        1,924,961
+ ========   ================================================
+ 
+       39   Accepted                                  16.46%
+      198   Rejected                                  83.54%
+ --------   ------------------------------------------------
+      237   Total                                    100.00%
+ ========   ================================================
+ 
+      198   Reject unknown user                      100.00%
+ --------   ------------------------------------------------
+      198   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       14   4xx Reject sender address                100.00%
+ --------   ------------------------------------------------
+       14   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      859   Connections made      
+      859   Disconnections        
+       39   Removed from queue    
+       37   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Failed logins from:
+    80.158.18.218 (ecs-80-158-18-218.reverse.open-telekom-cloud.com): 10 times
+ 
+ Users logging in through sshd:
+    btertil:
+       137.117.244.55: 29 times
+       80.158.18.218 (ecs-80-158-18-218.reverse.open-telekom-cloud.com): 13 times
+       89.77.70.146 (89-77-70-146.dynamic.chello.pl): 6 times
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 36 Time(s)
+ 
+ SFTP subsystem requests: 2 Time(s)
+ 
+ **Unmatched Entries**
+ PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=ecs-80-158-18-218.reverse.open-telekom-cloud.com  user=btertil : 1 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   13G   38G  25% /
+ none            1.0G  4.0K  1.0G   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

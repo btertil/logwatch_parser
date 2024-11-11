@@ -1,0 +1,150 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 2492B1110191C; Mon, 11 Aug 2014 04:48:06 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 209C71110191A
+	for <root@2626.serwervps.pl>; Mon, 11 Aug 2014 06:48:06 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id RntBWyjxlfZ9 for <root@2626.serwervps.pl>;
+	Mon, 11 Aug 2014 04:48:05 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 48FB8111018D5; Mon, 11 Aug 2014 04:48:05 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140811024805.48FB8111018D5@2626.serwervps.pl>
+Date: Mon, 11 Aug 2014 04:48:04 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Mon Aug 11 04:48:04 2014
+        Date Range Processed: yesterday
+                              ( 2014-Aug-10 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (01461-07) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140810011106.D827B111018CC@2626.serwervps.pl>, mail_id: Kch20n-Rt_dn, Hits: 0, size: 4533, queued_as: D5393111018D4, 10897 ms
+        1   (01459-08) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (01459-08) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140810013009.544961110187A@2626.serwervps.pl>, mail_id: ensiyW7mLNfW, Hits: 0.001, size: 2288, queued_as: 9F88B1110173D, 3124 ms
+        1   (01461-08) Passed CLEAN {RelayedInternal}, LOCAL [74.125.82.52]:55414 [178.180.200.216] <agnieszkaibartek@gmail.com> -> <btertil@hrankiety.pl>, Queue-ID: 29E6C1110187A, Message-ID: <D79E4CC4-938F-4E34-A82E-21E1AED15180@gmail.com>, mail_id: D4v2lKjgf-Cn, Hits: -98.534, size: 3805, queued_as: 7DC70111018CC, dkim_sd=20120113:gmail.com, 5249 ms
+        1   (01461-07) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (01461-08) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Sun Aug 10 03:11:07 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    Downloading daily-19271.cdiff [100%]
+    Downloading daily-19272.cdiff [100%]
+    daily.cld updated (version: 19272, sigs: 1089352, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3513623 signatures) from db.local.clamav.net (IP: 157.25.5.183)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       HTTP/1.1: 1 Time(s)
+    404 Not Found
+       /.well-known/autoconfig/mail/config-v1.1.x ... %40hrankiety.pl: 1 Time(s)
+       /cgi-bin/php: 1 Time(s)
+       /cgi-bin/php-cgi: 1 Time(s)
+       /cgi-bin/php.cgi: 1 Time(s)
+       /cgi-bin/php4: 1 Time(s)
+       /cgi-bin/php5: 1 Time(s)
+       /mail/config-v1.1.xml?emailaddress=btertil%40hrankiety.pl: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Pre-queue content-filter connection overload 
+ 
+   30.068K  Bytes accepted                            30,790
+   30.068K  Bytes delivered                           30,790
+ ========   ================================================
+ 
+        8   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        8   Total                                    100.00%
+ ========   ================================================
+ 
+       18   Connections made      
+       18   Disconnections        
+        8   Removed from queue    
+        3   Delivered             
+        3   Sent via SMTP         
+        2   Forwarded             
+ 
+       10   SMTP protocol violations 
+ 
+        1   Postfix start         
+        1   Postfix stop          
+ 
+ 
+ 
+ **Unmatched Entries**
+        1   Aug 10 21:59:27 2626 postfix/postfix-script[15529]: warning: /var/spool/postfix/etc/hosts and /etc/hosts differ
+        1   Aug 10 21:59:27 2626 postfix/postfix-script[15531]: warning: /var/spool/postfix/etc/services and /etc/services differ
+        1   Aug 10 21:59:27 2626 postfix/postfix-script[15527]: warning: /var/spool/postfix/etc/localtime and /etc/localtime differ
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 8 times
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  5.5G   45G  11% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,165 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 002DD35A1A0A; Sat, 13 May 2017 03:34:08 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170513013409.002DD35A1A0A@hrankiety.pl>
+Date: Sat, 13 May 2017 03:34:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat May 13 03:34:07 2017
+        Date Range Processed: yesterday
+                              ( 2017-May-12 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri May 12 03:31:13 2017
+ 
+ Last Status:
+    main.cvd is up to date (version: 57, sigs: 4218790, f-level: 60, builder: amishhammer)
+    Downloading daily-23376.cdiff [100%]
+    Downloading daily-23377.cdiff [100%]
+    Downloading daily-23378.cdiff [100%]
+    daily.cld updated (version: 23378, sigs: 2068337, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 298, sigs: 57, f-level: 63, builder: bbaker)
+    Database updated (6287184 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 1 Time(s)
+    404 Not Found
+       /a2billing/common/javascript/misc.js: 1 Time(s)
+       /cgi/common.cgi: 1 Time(s)
+       /command.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /sitemap.xml: 1 Time(s)
+       /stssys.htm: 1 Time(s)
+    405 Method Not Allowed
+       /webdav/: 2 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      115   *Warning: Pre-queue content-filter connection overload 
+      297   SASL authentication failed 
+       49   Miscellaneous warnings 
+ 
+    7.816M  Bytes accepted                         8,196,120
+    7.811M  Bytes delivered                        8,189,914
+ ========   ================================================
+ 
+       20   Accepted                                  95.24%
+        1   Rejected                                   4.76%
+ --------   ------------------------------------------------
+       21   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject client host                       100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+        1   4xx Reject relay denied                    7.69%
+       12   4xx Reject sender address                 92.31%
+ --------   ------------------------------------------------
+       13   Total 4xx Rejects                        100.00%
+ ========   ================================================
+ 
+      390   Connections made      
+      390   Disconnections        
+       20   Removed from queue    
+       18   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+        1   Timeout (inbound)     
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    useradd: failed adding user 'postgres', exit code: 9: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.73.65.124 (89-73-65-124.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Installed:
+    fail2ban-0.8.8-2.el6.noarch
+ 
+ Packages Updated:
+    32:bind-libs-9.8.2-0.62.rc1.el6_9.2.i686
+    postgresql94-server-9.4.12-1PGDG.rhel6.i686
+    postgresql94-contrib-9.4.12-1PGDG.rhel6.i686
+    32:bind-9.8.2-0.62.rc1.el6_9.2.i686
+    postgresql94-9.4.12-1PGDG.rhel6.i686
+    fail2ban-0.9.6-1.el6.1.noarch
+    postgresql94-libs-9.4.12-1PGDG.rhel6.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   30G   21G  59% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

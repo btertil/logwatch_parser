@@ -1,0 +1,152 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id A32D81110185E; Thu, 26 Jun 2014 03:37:11 +0200 (CEST)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 8247B11101672
+	for <root@2626.serwervps.pl>; Thu, 26 Jun 2014 05:37:11 +0400 (MSD)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id H7Eiw5xSQFm9 for <root@2626.serwervps.pl>;
+	Thu, 26 Jun 2014 03:37:08 +0200 (CEST)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 846161110185D; Thu, 26 Jun 2014 03:37:08 +0200 (CEST)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20140626013708.846161110185D@2626.serwervps.pl>
+Date: Thu, 26 Jun 2014 03:37:07 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Thu Jun 26 03:37:06 2014
+        Date Range Processed: yesterday
+                              ( 2014-Jun-25 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   No ext program for   .tnef, tried: tnef
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (03729-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140625013008.886191110185A@2626.serwervps.pl>, mail_id: gCHAyd6KwHq3, Hits: 0.001, size: 2288, queued_as: 5835D11101859, 3642 ms
+        1   (03728-01) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20140625014109.997841110185B@2626.serwervps.pl>, mail_id: kugMT190Prrg, Hits: 0.001, size: 5312, queued_as: 03D6F1110185A, 2387 ms
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Wed Jun 25 03:41:09 2014
+ 
+ Last Status:
+    WARNING: Your ClamAV installation is OUTDATED!
+    WARNING: Local version: 0.98.3 Recommended version: 0.98.4
+    DON'T PANIC! Read http://www.clamav.net/support/faq
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    daily.cld is up to date (version: 19125, sigs: 1000939, f-level: 63, builder: mcd)
+    nonblock_connect: connect timing out (30 secs)
+    Can't connect to port 80 of host db.local.clamav.net (IP: 212.7.0.71)
+    WARNING: getfile: bytecode-242.cdiff not found on remote server (IP: 158.129.196.3)
+    WARNING: getpatch: Can't download bytecode-242.cdiff from db.local.clamav.net
+    Downloading bytecode-242.cdiff [100%]
+    bytecode.cld updated (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3425210 signatures) from db.local.clamav.net (IP: 130.133.110.67)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 3 Time(s)
+       HTTP/1.1: 1 Time(s)
+       http://www.baidu.com/: 1 Time(s)
+    404 Not Found
+       /MyAdmin/scripts/setup.php: 1 Time(s)
+       /admin/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /admin/pma/scripts/setup.php: 1 Time(s)
+       /admin/scripts/setup.php: 1 Time(s)
+       /db/scripts/setup.php: 1 Time(s)
+       /dbadmin/scripts/setup.php: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /mysql/scripts/setup.php: 1 Time(s)
+       /mysqladmin/: 1 Time(s)
+       /mysqladmin/scripts/setup.php: 1 Time(s)
+       /php-my-admin/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin-2.5.5-pl1/index.php: 1 Time(s)
+       /phpMyAdmin-2.5.5/index.php: 1 Time(s)
+       /phpMyAdmin-2/scripts/setup.php: 1 Time(s)
+       /phpMyAdmin/: 1 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /phpadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /phpmyadmin1/scripts/setup.php: 1 Time(s)
+       /phpmyadmin2/scripts/setup.php: 1 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /rutorrent: 1 Time(s)
+       /scripts/setup.php: 1 Time(s)
+       /typo3/phpmyadmin/scripts/setup.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       /w00tw00t.at.blackhats.romanian.anti-sec:): 2 Time(s)
+       /web/phpMyAdmin/scripts/setup.php: 1 Time(s)
+       /web/scripts/setup.php: 1 Time(s)
+       /websql/scripts/setup.php: 1 Time(s)
+       /xampp/phpmyadmin/scripts/setup.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+       65   SASL authentication failed 
+ 
+   24.367K  Bytes accepted                            24,952
+   24.367K  Bytes delivered                           24,952
+ ========   ================================================
+ 
+        6   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        6   Total                                    100.00%
+ ========   ================================================
+ 
+       67   Connections made      
+       67   Disconnections        
+        6   Removed from queue    
+        2   Delivered             
+        2   Sent via SMTP         
+        2   Forwarded             
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       30G  4.6G   26G  16% /
+ none            384M  4.0K  384M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

@@ -1,0 +1,203 @@
+Return-Path: <root@2626.serwervps.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by 2626.serwervps.pl (Postfix)
+	id 7DD1E11101C3D; Sat, 15 Nov 2014 03:08:16 +0100 (CET)
+Delivered-To: root@2626.serwervps.pl
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by 2626.serwervps.pl (Postfix) with ESMTP id 3A82F11100D9B
+	for <root@2626.serwervps.pl>; Sat, 15 Nov 2014 05:08:16 +0300 (MSK)
+X-Virus-Scanned: amavisd-new at 2626.serwervps.pl
+Received: from 2626.serwervps.pl ([127.0.0.1])
+	by localhost (2626.serwervps.pl [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id TsHHCIsx_Yxl for <root@2626.serwervps.pl>;
+	Sat, 15 Nov 2014 03:08:10 +0100 (CET)
+Received: by 2626.serwervps.pl (Postfix, from userid 0)
+	id 8CCFB11101C3A; Sat, 15 Nov 2014 03:08:10 +0100 (CET)
+To: root@2626.serwervps.pl
+From: logwatch@2626.serwervps.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20141115020810.8CCFB11101C3A@2626.serwervps.pl>
+Date: Sat, 15 Nov 2014 03:08:08 +0100 (CET)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Nov 15 03:08:07 2014
+        Date Range Processed: yesterday
+                              ( 2014-Nov-14 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- Amavisd-new Begin ------------------------ 
+
+ **Unmatched Entries**
+        1   (21309-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN24> line 8353.
+        1   (24539-02) Passed CLEAN {RelayedOutbound}, MYUSERS LOCAL [89.67.22.229]:55767 [89.67.22.229] <atertil@hrankiety.pl> -> <k.dessoulavy@resolutio.pl>, Queue-ID: 40E7511100B08, Message-ID: <54664B8C.8030109@hrankiety.pl>, mail_id: jmC9uOEzhHKO, Hits: -9.999, size: 4329, queued_as: DF2EB11101C3A, dkim_new=dkim:hrankiety.pl, 6559 ms
+        1   No decoder for       .doc 
+        1   No ext program for   .rar, tried: unrar, rar
+        1   (21309-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141114025010.EBDCD11101C2F@2626.serwervps.pl>, mail_id: yqA9QOmtziHA, Hits: 0, size: 6651, queued_as: E3E0F11101C2C, 2739 ms
+        1   No ext program for   .tnef, tried: tnef
+        1   (24540-01) Passed CLEAN {RelayedInternal}, LOCAL [212.91.26.26]:37105 [89.67.92.237] <k.dessoulavy@resolutio.pl> -> <atertil@hrankiety.pl>, Queue-ID: 33C4D11101B15, Message-ID: <!&!AAAAAAAAAAAYAAAAAAAAADEZ8IPP8M9DqMJT/C5TfCHCgAAAEAAAAHaEmZPTKmBFmubnPaOCvBgBAAAAAA==@resolutio.pl>, mail_id: jHOlufwR5rus, Hits: -2.536, size: 36090, queued_as: 11C6711101C3A, 3708 ms
+        1   (21308-02) Passed CLEAN {RelayedInternal}, MYUSERS <root@2626.serwervps.pl> -> <root@2626.serwervps.pl>, Message-ID: <20141114023008.019E711101C2C@2626.serwervps.pl>, mail_id: sbtMwvdYG_sN, Hits: 0.001, size: 2287, queued_as: 815D311101C29, 2344 ms
+        1   (24539-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172.
+        1   (21308-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 113) line 172, <GEN24> line 4464.
+        1   (24539-01) Passed CLEAN {RelayedInternal}, LOCAL [212.77.101.7]:37826 [212.77.101.240] <aszylanska@wp.pl> -> <atertil@hrankiety.pl>, Queue-ID: 0865311101C2F, Message-ID: <5465c88ce1a7d5.25612360@wp.pl>, mail_id: AyhcXf7TVIRU, Hits: 1.04, size: 66895, queued_as: CD50D11101C36, dkim_sd=1024a:wp.pl, 2630 ms
+        1   No ext program for   .doc, tried: ripole
+        1   Deleting db files nanny.db,__db.004,snmp.db,__db.002,__db.003,__db.001 in /var/spool/amavisd/db
+ 
+ ---------------------- Amavisd-new End ------------------------- 
+
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ 
+ Last ClamAV update process started at Fri Nov 14 03:50:11 2014
+ 
+ Last Status:
+    main.cvd is up to date (version: 55, sigs: 2424225, f-level: 60, builder: neo)
+    WARNING: getfile: daily-19622.cdiff not found on remote server (IP: 217.18.205.108)
+    WARNING: getpatch: Can't download daily-19622.cdiff from db.local.clamav.net
+    Trying host db.local.clamav.net (195.30.97.3)...
+    Downloading daily-19622.cdiff [100%]
+    Downloading daily-19623.cdiff [100%]
+    Downloading daily-19624.cdiff [100%]
+    Downloading daily-19625.cdiff [100%]
+    daily.cld updated (version: 19625, sigs: 1259699, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 242, sigs: 46, f-level: 63, builder: dgoddard)
+    Database updated (3683970 signatures) from db.local.clamav.net (IP: 195.30.97.3)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 2 Time(s)
+       /tmUnblock.cgi: 2 Time(s)
+    404 Not Found
+       /checkupdate.asmx: 1 Time(s)
+       /kckc/kck/kc.php: 1 Time(s)
+       /manager/html: 1 Time(s)
+       /myadmin/scripts/setup.php: 2 Time(s)
+       /phpMyAdmin/scripts/setup.php: 2 Time(s)
+       /pma/scripts/setup.php: 2 Time(s)
+       /rsrs/rsr/rs.php: 1 Time(s)
+       /vtigercrm/: 1 Time(s)
+       http://yazoodle.net/azenv.php: 1 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ su:
+    Sessions Opened:
+       btertil -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        3   *Warning: Pre-queue content-filter connection overload 
+ 
+  243.615K  Bytes accepted                           249,462
+  243.615K  Bytes delivered                          249,462
+ ========   ================================================
+ 
+       13   Accepted                                  92.86%
+        1   Rejected                                   7.14%
+ --------   ------------------------------------------------
+       14   Total                                    100.00%
+ ========   ================================================
+ 
+        1   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        1   Total Rejects                            100.00%
+ ========   ================================================
+ 
+       12   Connections made      
+       12   Disconnections        
+       13   Removed from queue    
+        4   Delivered             
+        7   Sent via SMTP         
+        2   Forwarded             
+        1   DSNs delivered        
+ 
+        1   SASL authenticated messages 
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 2 Time(s)
+ 
+ SSHD Started: 4 Time(s)
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+       89.67.22.229 (89-67-22-229.dynamic.chello.pl): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- yum Begin ------------------------ 
+
+ 
+ Packages Updated:
+    openssh-server-5.3p1-104.el6_6.1.i686
+    1:perl-Compress-Raw-Zlib-2.021-136.el6_6.1.i686
+    openssh-clients-5.3p1-104.el6_6.1.i686
+    perl-IO-Compress-Base-2.021-136.el6_6.1.i686
+    3:perl-version-0.77-136.el6_6.1.i686
+    perl-ExtUtils-MakeMaker-6.55-136.el6_6.1.i686
+    openssh-5.3p1-104.el6_6.1.i686
+    1:perl-ExtUtils-ParseXS-2.2003.0-136.el6_6.1.i686
+    perl-Test-Harness-3.17-136.el6_6.1.i686
+    1:perl-Module-Pluggable-3.90-136.el6_6.1.i686
+    1:perl-Pod-Simple-3.13-136.el6_6.1.i686
+    4:perl-devel-5.10.1-136.el6_6.1.i686
+    perl-Compress-Zlib-2.021-136.el6_6.1.i686
+    1:perl-Package-Constants-0.02-136.el6_6.1.i686
+    perl-Archive-Tar-1.58-136.el6_6.1.i686
+    1:perl-Pod-Escapes-1.04-136.el6_6.1.i686
+    4:perl-Time-HiRes-1.9721-136.el6_6.1.i686
+    4:perl-5.10.1-136.el6_6.1.i686
+    4:perl-libs-5.10.1-136.el6_6.1.i686
+    1:perl-Digest-SHA-5.47-136.el6_6.1.i686
+    1:perl-IO-Zlib-1.09-136.el6_6.1.i686
+    perl-IO-Compress-Zlib-2.021-136.el6_6.1.i686
+ 
+ ---------------------- yum End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G  7.3G   43G  15% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 

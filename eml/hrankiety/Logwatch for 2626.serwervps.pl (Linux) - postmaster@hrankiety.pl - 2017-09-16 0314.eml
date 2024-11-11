@@ -1,0 +1,137 @@
+Return-Path: <root@hrankiety.pl>
+Delivered-To: postmaster@hrankiety.pl
+Received: by hrankiety.pl (Postfix, from userid 0)
+	id 9555935A250A; Sat, 16 Sep 2017 03:14:42 +0200 (CEST)
+To: postmaster@hrankiety.pl
+From: postmaster@hrankiety.pl
+Subject: Logwatch for 2626.serwervps.pl (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20170916011442.9555935A250A@hrankiety.pl>
+Date: Sat, 16 Sep 2017 03:14:40 +0200 (CEST)
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Sat Sep 16 03:14:39 2017
+        Date Range Processed: yesterday
+                              ( 2017-Sep-15 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: 2626.serwervps.pl
+  ################################################################## 
+ 
+ --------------------- clam-update Begin ------------------------ 
+
+ Last ClamAV update process started at Fri Sep 15 03:33:43 2017
+ 
+ Last Status:
+    main.cld is up to date (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr)
+    Downloading daily-23827.cdiff [100%]
+    Downloading daily-23828.cdiff [100%]
+    Downloading daily-23829.cdiff [100%]
+    Downloading daily-23830.cdiff [100%]
+    Downloading daily-23831.cdiff [100%]
+    Downloading daily-23832.cdiff [100%]
+    daily.cld updated (version: 23832, sigs: 1743014, f-level: 63, builder: neo)
+    bytecode.cld is up to date (version: 311, sigs: 74, f-level: 63, builder: neo)
+    Database updated (6309337 signatures) from db.local.clamav.net (IP: 5.9.202.115)
+ 
+ ---------------------- clam-update End ------------------------- 
+
+ 
+ --------------------- httpd Begin ------------------------ 
+
+ 
+ A total of 2 sites probed the server 
+    164.52.0.141
+    60.191.40.196
+ 
+ Requests with error response codes
+    400 Bad Request
+       /: 9 Time(s)
+       null: 1 Time(s)
+       test: 1 Time(s)
+    404 Not Found
+       //MyAdmin/scripts/setup.php: 1 Time(s)
+       //a2billing/admin/Public/index.php: 1 Time(s)
+       //myadmin/scripts/setup.php: 1 Time(s)
+       //phpMyAdmin/scripts/setup.php: 1 Time(s)
+       //phpmyadmin/scripts/setup.php: 1 Time(s)
+       //pma/scripts/setup.php: 1 Time(s)
+       /hndUnblock.cgi: 1 Time(s)
+       /manager/html: 2 Time(s)
+       /moo: 1 Time(s)
+       /muieblackcat: 1 Time(s)
+       /oneshotimage1?COUNTER: 1 Time(s)
+       /phpmyadmin/scripts/setup.php: 1 Time(s)
+       /recordings/: 1 Time(s)
+       /sftp-config.json: 1 Time(s)
+       /tmUnblock.cgi: 1 Time(s)
+    408 Request Timeout
+       null: 4 Time(s)
+ 
+ ---------------------- httpd End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+      338   *Warning: Pre-queue content-filter connection overload 
+      677   SASL authentication failed 
+       39   Miscellaneous warnings 
+ 
+  258.063K  Bytes accepted                           264,257
+  252.003K  Bytes delivered                          258,051
+ ========   ================================================
+ 
+       21   Accepted                                  87.50%
+        3   Rejected                                  12.50%
+ --------   ------------------------------------------------
+       24   Total                                    100.00%
+ ========   ================================================
+ 
+        3   Reject HELO/EHLO                         100.00%
+ --------   ------------------------------------------------
+        3   Total Rejects                            100.00%
+ ========   ================================================
+ 
+      636   Connections made      
+      636   Disconnections        
+       21   Removed from queue    
+       19   Delivered             
+        2   Bounce (remote)       
+        1   DSNs undeliverable    
+ 
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    btertil:
+       185.17.41.230 (backup): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/simfs       50G   34G   17G  67% /
+ none            512M  4.0K  512M   1% /dev
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 
